@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro);
+
+
+
+:root {
+  --sansFontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monoFontFamily: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
+  --serifFontFamily: Lora, Georgia, "Times New Roman", Times, serif;
+  --serifHeadingFontFamily: "Bree Serif", Baskerville, Garamond, Georgia,
+    "DejaVu Serif", "Times New Roman", Times, serif;
+}
+
+
+
+
+.site-name{
+    color: darkred;
+    font-family: "Bree Serif", var(--sansFontFamily);
+}
+
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:focus {
+    color: coral;
+}
+
+.navbar .nav>li>a {
+    font-size:1.2rem;
+    color: darkred;
+}
+
