@@ -1,1 +1,0 @@
-.. include:: ../MIT.rst 

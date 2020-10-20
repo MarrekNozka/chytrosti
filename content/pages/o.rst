@@ -1,11 +1,11 @@
 O
 ####################################
 
-Nacházíte se na webových stránkách jednono šíleného 
+Nacházíte se na webových stránkách jednoho šíleného 
 učitele z `VOŠ a SPŠE Olomouc <https://www.spseol.cz>`_.
 Tyto stránky jsou určeny pro podporu mojí výuky.
 
-Každý téma, které aktuálně vyučuji tu má svou stránku.
+Každé téma, které aktuálně vyučuji, tady má svou stránku.
 Některé stránky podávají souhrnné informace, některé jsou jen sbírkou odkazů na
 jiná místa na internetu. Pokud vám tu něco chybí, napište mi. Pokud najdete
 chybu, napište mi.

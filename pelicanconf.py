@@ -9,6 +9,13 @@ SITEURL = ""
 PATH = "content"
 
 THEME = "../elegant/"
+RECENT_ARTICLES_COUNT = 42
+USE_SHORTCUT_ICONS = True
+RECENT_ARTICLE_SUMMARY = True
+SOCIAL_PROFILE_LABEL = "Kontakt"
+LANDING_PAGE_TITLE = "Marrekovi chytrosti"
+PROJECTS_TITLE = "Moje projekty"
+TYPOGRIFY = True
 
 TAG_CLOUD_STEPS = 6
 TAG_CLOUD_MAX_ITEMS = 200
@@ -24,31 +31,68 @@ TRANSLATION_FEED_ATOM = None
 # AUTHOR_FEED_ATOM = None
 # AUTHOR_FEED_RSS = None
 
-# PLUGIN_PATHS = ["../pelican-plugins"]
-# PLUGINS = ["tipue_search", "seo", "jinja2content"]
-# PLUGINS = ["tipue_search", "jinja2content"]
-# JINJA2CONTENT_TEMPLATES = [".", "content"]
+PLUGIN_PATHS = ["../pelican-plugins"]
+PLUGINS = ["extract_toc"]
 
-PLUGINS = ["tipue_search"]
-# DIRECT_TEMPLATES = ["index", "authors", "categories", "tags", "archives"]
+PLUGINS += ["tipue_search"]
 DIRECT_TEMPLATES = ["index", "categories", "tags", "archives"]
 DIRECT_TEMPLATES += ["search"]
 
+PLUGINS.append("jinja2content")
+JINJA2CONTENT_TEMPLATES = ["."]
+
+PLUGINS += ["liquid_tags", "liquid_tags.include_code"]
+CODE_DIR = "code"
+
+PLUGINS += ["related_posts"]
+RELATED_POSTS_MAX = 12
+RELATED_POSTS_LABEL = "Související posty"
+
+PLUGINS += ["series"]
+SERIES_TITLE = "Další posty v této sérii"
+
+PLUGINS += ["render_math"]
+
 # Blogroll
 LINKS = (
+    ("VOŠ a SPŠE Olomouc", "https://www.spseol.cz/"),
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("GitHub", "https://github.com/MarrekNozka"),
+    ("email", "n&#111;zk&#97;&#64;spseol&#46;cz"),
     ("GitHub", "https://github.com/spseol"),
+    ("GitLab", "https://gitlab.com/MarrekNozka"),
+    ("GitHub", "https://github.com/MarrekNozka"),
     ("Twitter", "https://twitter.com/MarrekNozka"),
+    ("YouTube", "https://www.youtube.com/c/MarekNožka"),
+    ("reddit", "https://www.reddit.com/user/MarrekNozka"),
+    ("StackOverflow", "https://stackoverflow.com/users/2188314/marreknožka"),
+    ("Telegram", "https://t.me/MarrekNozka"),
+    ("flicker", "https://www.flickr.com/photos/tlapicka/"),
     ("Wikipedia", "http://cs.wikipedia.org/wiki/Wikipedista:Tlapicka"),
+    (
+        "Commons",
+        "https://commons.wikimedia.org/wiki/Special:ListFiles/Tlapicka",
+    ),
+    # ("", ""),
 )
+
+PROJECTS = [
+    {
+        "name": "i3-jinja-config",
+        "url": "https://github.com/MarrekNozka/i3-jinja-config",
+        "description": "Vytvoření konfigurace pro i3 window manager z Jinja2 šablony.",
+    },
+    {
+        "name": "JupyterNotebooks",
+        "url": "https://github.com/MarrekNozka/IPythonNotebooks",
+        "description": "Technické výpočty a grafy pomocí MatPlotLib.",
+    },
+]
 
 DEFAULT_PAGINATION = True
 DEFAULT_PAGINATION = 12
@@ -58,28 +102,32 @@ RELATIVE_URLS = True
 
 MARKDOWN = {
     "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.codehilite": {
+            "css_class": "highlight",
+            "linenums": True,
+        },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {},
+        "markdown.extensions.toc": {"permalink": "true", "baselevel": 2},
+        "markdown.extensions.admonition": {},
+        "mdx_include": {"base_path": PATH},
     },
     "output_format": "html5",
 }
 
-USE_SHORTCUT_ICONS = True
-
-STATIC_PATHS = ["extra", "src"]
-STATIC_PATHS += ["theme/images", "theme/css", "images"]
-
+PYGMENTS_RST_OPTIONS = {"linenos": "table"}
 
 DOCUTILS_SETTINGS = {
     "smart_quotes": "yes",
     "initial_header_level": 3,
 }
 
+STATIC_PATHS = ["extra", "code"]
+STATIC_PATHS += ["theme/images", "theme/css", "images"]
 EXTRA_PATH_METADATA = {
     "extra/README": {"path": "README.md"},
     "extra/.nojekyll": {"path": ".nojekyll"},
+    "extra/CNAME": {"path": "CNAME"},
 }
 
 # PIWIK_URL = 'yanek.cz/piwik'
