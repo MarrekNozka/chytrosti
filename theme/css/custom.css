@@ -38,3 +38,33 @@ h1#recent-posts {
 .navbar .nav>li.menupost>a  {
     color: #6a5b7c
 }
+
+
+div.blog-archives div,
+div.recent-posts-article, 
+ul.list-articles-under-tag-category li 
+{
+    font-size: 1.5rem;
+}
+
+
+div.recent-posts-article {
+    margin-top: 1.2rem;
+}
+div.recent-posts-posted {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.list-of-tags {
+    font-size: 1.2rem;
+}
+
+
+ul.list-projects li {
+    font-size: 1.3rem;
+}
+.proj-desc {
+    font-size: 1.1rem;
+}
