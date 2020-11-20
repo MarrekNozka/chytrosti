@@ -1,7 +1,7 @@
 title: PSK
 subtitle: Počítačové sítě a komunikační technika
 category: PSKáčko 
-tags: PSK, Linux
+tags: PSK, Linux, STM8
 menu: true
 
 

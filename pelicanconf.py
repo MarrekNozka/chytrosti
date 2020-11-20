@@ -11,11 +11,12 @@ PATH = "content"
 THEME = "../elegant/"
 RECENT_ARTICLES_COUNT = 42
 USE_SHORTCUT_ICONS = True
-RECENT_ARTICLE_SUMMARY = True
 SOCIAL_PROFILE_LABEL = "Kontakt"
-LANDING_PAGE_TITLE = "Marrekovi chytrosti"
+LANDING_PAGE_TITLE = "Marrkovi chytrosti"
 PROJECTS_TITLE = "Moje projekty"
 TYPOGRIFY = True
+
+RECENT_ARTICLE_SUMMARY = True
 
 TAG_CLOUD_STEPS = 6
 TAG_CLOUD_MAX_ITEMS = 200
@@ -63,7 +64,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("email", "n&#111;zk&#97;&#64;spseol&#46;cz"),
+    ("email", "n&#111;zk&#97; z#64;vináč spseol tečka cz"),
     ("GitHub", "https://github.com/spseol"),
     ("GitLab", "https://gitlab.com/MarrekNozka"),
     ("GitHub", "https://github.com/MarrekNozka"),
@@ -78,6 +79,7 @@ SOCIAL = (
         "Commons",
         "https://commons.wikimedia.org/wiki/Special:ListFiles/Tlapicka",
     ),
+    ("RSS", "/feeds/all.atom.xml")
     # ("", ""),
 )
 
@@ -85,13 +87,33 @@ PROJECTS = [
     {
         "name": "i3-jinja-config",
         "url": "https://github.com/MarrekNozka/i3-jinja-config",
-        "description": "Vytvoření konfigurace pro i3 window manager z Jinja2 šablony.",
+        "description": "Vytvoření konfigurace pro i3 window manager"
+        " z Jinja2 šablony.",
     },
     {
         "name": "JupyterNotebooks",
         "url": "https://github.com/MarrekNozka/IPythonNotebooks",
         "description": "Technické výpočty a grafy pomocí MatPlotLib.",
     },
+    {
+        "name": "pyOdorik",
+        "url": "https://github.com/MarrekNozka/pyOdorik",
+        "description": "Klientská aplikace příkazového řádku pro snadné "
+        "vyhledání kontaktu "
+        "a obědnání zpětného volání u VoIP operátora Odorik.",
+    },
+    {
+        "name": "pwscly",
+        "url": "https://github.com/MarrekNozka/pwscly",
+        "description": "Aplikace příkazové rádky s fuzzy(fzy) vyhledáváním. "
+        "pwscly najde příslušné heslo v souboru formátu .pwsafe3 a "
+        "uloží ho do clipboardu.",
+    },
+    # {
+    #     "name": "",
+    #     "url": "",
+    #     "description": "",
+    # },
 ]
 
 DEFAULT_PAGINATION = True

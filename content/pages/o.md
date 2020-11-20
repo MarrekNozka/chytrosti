@@ -1,8 +1,7 @@
-O
-####################################
+Title: O mně
 
 Nacházíte se na webových stránkách jednoho šíleného 
-učitele z `VOŠ a SPŠE Olomouc <https://www.spseol.cz>`_.
+učitele z [VOŠ a SPŠE Olomouc](https://www.spseol.cz).
 Tyto stránky jsou určeny pro podporu mojí výuky.
 
 Každé téma, které aktuálně vyučuji, tady má svou stránku.
@@ -11,7 +10,7 @@ jiná místa na internetu. Pokud vám tu něco chybí, napište mi. Pokud najdet
 chybu, napište mi.
 
 Motto
--------------------------------
+==================================
 
 *Nikdo nevěděl, odkud přišli, ale najednou byli v Lese: Klokanice a Klokánek.
 Když se Pú zeptal Kryštůfka Robina: „Jak se sem dostali?", Kryštůfek Robin
@@ -20,5 +19,5 @@ nevěděl, řekl: „Aha!" Pak dvakrát kývl hlavou a řekl: „Obvyklým způs
 tak!"*
 
 Marek Nožka
---------------------------------
-
+==================================
+i

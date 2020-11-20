@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro);
 
 
@@ -12,8 +12,18 @@
     "DejaVu Serif", "Times New Roman", Times, serif;
 }
 
+body {
+    overflow-y:  scroll;
+}
 
+pre code {
+    white-space: pre;
+    overflow-x: auto;
+}
 
+.search-query {
+    margin-left: 1em;
+}
 
 .site-name{
     color: darkred;
@@ -36,5 +46,51 @@ h1#recent-posts {
 }
 
 .navbar .nav>li.menupost>a  {
-    color: #6a5b7c
+    color: #6a5b7c;
+}
+
+
+div.blog-archives div,
+div.recent-posts-article, 
+ul.list-articles-under-tag-category li 
+{
+    font-size: 1.5rem;
+}
+
+
+div.recent-posts-article {
+    margin-top: 1.2rem;
+}
+div.recent-posts-posted {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.list-of-tags {
+    font-size: 1.2rem;
+}
+
+
+ul.list-projects li {
+    font-size: 1.3rem;
+}
+.proj-desc {
+    font-size: 1.1rem;
+}
+
+footer div#fpowered {
+    margin-right: 1ex;
+}
+
+
+div.table-of-content nav h2 {
+    font-size: 1rem;
+}
+
+div.table-of-content ul.related-posts-list {
+    margin: 0;
+    padding: 0 0 0 .2rem;
+    list-style-type: none;
+    list-style: symbols inside none;
 }
