@@ -23,7 +23,7 @@ endif
 
 SERVER ?= "0.0.0.0"
 
-PORT ?= 0
+PORT ?= 8001
 ifneq ($(PORT), 0)
 	PELICANOPTS += -p $(PORT)
 endif
@@ -37,9 +37,9 @@ help:
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
-	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
+	@echo '   make serve [PORT=8001]              serve site at http://localhost:8000'
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
-	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
+	@echo '   make devserver [PORT=8001]          serve and regenerate together      '
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '   make github                         upload the web site via gh-pages   '

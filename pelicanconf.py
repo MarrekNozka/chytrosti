@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 
-AUTHOR = "MarrekNozka"
+AUTHOR = "Marrek Nožka"
 SITENAME = "Chytrosti"
 SITEURL = ""
 
@@ -38,6 +38,7 @@ PLUGINS = ["extract_toc"]
 PLUGINS += ["tipue_search"]
 DIRECT_TEMPLATES = ["index", "categories", "tags", "archives"]
 DIRECT_TEMPLATES += ["search"]
+DIRECT_TEMPLATES += ["authors"]
 
 PLUGINS.append("jinja2content")
 JINJA2CONTENT_TEMPLATES = ["."]
@@ -132,6 +133,7 @@ MARKDOWN = {
         "markdown.extensions.meta": {},
         "markdown.extensions.toc": {"permalink": "true", "baselevel": 2},
         "markdown.extensions.admonition": {},
+        "markdown.extensions.smarty": {},
         "mdx_include": {"base_path": PATH},
     },
     "output_format": "html5",
@@ -145,7 +147,8 @@ DOCUTILS_SETTINGS = {
 }
 
 STATIC_PATHS = ["extra", "code"]
-STATIC_PATHS += ["theme/images", "theme/css", "images"]
+STATIC_PATHS += ["theme/images", "theme/css"]
+STATIC_PATHS += ["images", "img"]
 EXTRA_PATH_METADATA = {
     "extra/README": {"path": "README.md"},
     "extra/.nojekyll": {"path": ".nojekyll"},
@@ -154,3 +157,16 @@ EXTRA_PATH_METADATA = {
 
 # PIWIK_URL = 'yanek.cz/piwik'
 # PIWIK_SITE_ID = 6
+
+AUTHORS = {
+    "Marek Nožka": {
+        "avatar": "https://avatars.githubusercontent.com/u/721748",
+        "blurb": "autor těchto stránek",
+        "url": "https://marrek.cz/",
+    },
+    "Jakub Zahálka": {
+        "avatar": "https://robohash.org/Jakub",
+        "blurb": "studen SPŠE Olomouc",
+        "url": SITEURL + "/author/jakub-zahalka.html",
+    },
+}
