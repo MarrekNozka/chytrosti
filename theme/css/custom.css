@@ -16,6 +16,11 @@ body {
     overflow-y:  scroll;
 }
 
+pre code {
+    white-space: pre;
+    overflow-x: auto;
+}
+
 .search-query {
     margin-left: 1em;
 }

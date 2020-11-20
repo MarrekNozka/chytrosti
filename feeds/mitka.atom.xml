@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2020-10-20T23:55:30+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2020-10-20T23:55:30+02:00</published><updated>2020-10-20T23:55:30+02:00</updated><author><name>MarrekNozka</name></author><id>tag:chytrosti.marrek.cz,2020-10-20:/mit.html</id><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2020-11-20T15:58:18+01:00</updated><entry><title>Udělátka do CIT a MIT</title><link href="https://chytrosti.marrek.cz/udelatka-do-cit-a-mit.html" rel="alternate"></link><published>2020-11-20T15:58:18+01:00</published><updated>2020-11-20T15:58:18+01:00</updated><author><name>MarrekNozka</name></author><id>tag:chytrosti.marrek.cz,2020-11-20:/udelatka-do-cit-a-mit.html</id><content type="html">&lt;h2 id="takto-se-dela-nadpis"&gt;Takto se dělá nadpis&lt;a class="headerlink" href="#takto-se-dela-nadpis" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Toto je text napsaný pomocí &lt;a href="https://cs.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt;. &lt;strong&gt;Tučný text&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nový odstavec se dělá prázdným řádkem. 
+Takto se dělá &lt;a href="https://marrek.cz/"&gt;odkaz&lt;/a&gt;.
+Takto se dělá&amp;nbsp;obrázek: &lt;/p&gt;
+&lt;p&gt;&lt;img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;hellip; a takto odkaz pomocí&amp;nbsp;obrázku:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://easyeda.com/"&gt; &lt;img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Všechny obrázky nahrajte do adresáře &lt;code&gt;img&lt;/code&gt;.&lt;/p&gt;</content><category term="MITka"></category><category term="MIT"></category><category term="PCB"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2020-10-20T23:55:30+02:00</published><updated>2020-10-20T23:55:30+02:00</updated><author><name>MarrekNozka</name></author><id>tag:chytrosti.marrek.cz,2020-10-20:/mit.html</id><content type="html">
 &lt;h2 id="nastroje-kity-prostredi"&gt;Nástroje, kity, prostředí&lt;a class="headerlink" href="#nastroje-kity-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
