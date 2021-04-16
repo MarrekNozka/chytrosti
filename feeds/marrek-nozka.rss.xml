@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 16 Apr 2021 16:51:33 +0200</lastBuildDate><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 16 Apr 2021 16:52:56 +0200</lastBuildDate><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
 /1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
 čítat – tedy nastavuje strop časovače.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/img/tim4.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nastavení se děje pomocí …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 16 Apr 2021 16:51:33 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-16:/zakladni-pouziti-casovace.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;p&gt;Nastavení se děje pomocí …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 16 Apr 2021 16:52:56 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-16:/zakladni-pouziti-casovace.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
