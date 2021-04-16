@@ -15,17 +15,17 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="MIT, Céčko, STM8, MITka, " />
+<meta name="keywords" content="Céčko, STM8, MITka, " />
 
 <meta property="og:title" content="MIT  - Mikroprocesorová technika "/>
 <meta property="og:url" content="https://chytrosti.marrek.cz/mit.html" />
-<meta property="og:description" content="Nástroje, kity, prostředí¶ Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Jako vývojové prostředí používáme STVD s komipilátorem Cosmic. Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel nejsou ani jeden OpenSource. Céčko¶ Programuje v jazyce C." />
+<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu: STM8S208 …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2020-10-20T23:55:30.253285+02:00" />
-<meta property="og:article:modified_time" content="2020-10-20T23:55:30.253285+02:00" />
+<meta property="og:article:published_time" content="2021-04-16T15:42:17.655643+02:00" />
+<meta property="og:article:modified_time" content="2021-04-16T15:42:17.655643+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
-<meta name="twitter:description" content="Nástroje, kity, prostředí¶ Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Jako vývojové prostředí používáme STVD s komipilátorem Cosmic. Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel nejsou ani jeden OpenSource. Céčko¶ Programuje v jazyce C.">
+<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu: STM8S208 …">
 
         <title>MIT  - Mikroprocesorová technika  · Chytrosti
 </title>
@@ -64,14 +64,14 @@
                                        https://chytrosti.marrek.cz
                                     >Index</a>
                                 </li>
+                                <li class="menupost active">
+                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
+                                </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/sit.html" ><span class="caps">SIT</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost active">
-                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
@@ -108,18 +108,21 @@
 <div class="row-fluid">
     <div class="span2 table-of-content">
         <nav>
-        <h2>Obsah</h2>
+        <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#nastroje-kity-prostredi">Nástroje, kity, prostředí</a></li>
-<li><a href="#cecko">Céčko</a></li>
+<li><a href="#par-odkazu-souvisejicich-s-jazykem-c">Pár odkazů souvisejících s jazykem C</a></li>
+<li><a href="#periferie">Periferie</a></li>
+<li><a href="#opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux</a></li>
+<li><a href="#nastroje-pro-widle">Nástroje pro Widle</a></li>
 </ul>
 </div>
 <section>
-    <h2>Související posty</h2>
+    <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
-<li><a href="https://chytrosti.marrek.cz/udelatka-do-cit-a-mit.html" title="Udělátka do CIT a MIT">Udělátka do CIT a MIT</a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 </ul>
 <hr />
 </section>
@@ -129,12 +132,43 @@
             
 
             
-<h2 id="nastroje-kity-prostredi">Nástroje, kity, prostředí<a class="headerlink" href="#nastroje-kity-prostredi" title="Permanent link">¶</a></h2>
+<p>Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+<a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
+s mikroprocesorem 
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</p>
+<p>Celá řada <span class="caps">STM8S</span> používá stejnou sadu periferií. Jejich popis najdete
+v <a href="https://duckduckgo.com/?q=STM8S+reference+manual">reference manuálu</a>
+<a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf">zde</a>.</p>
+<p>Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:</p>
 <ul>
-<li>Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-  <a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
-  s mikroprocesorem 
-  <a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</li>
+<li><a href="https://duckduckgo.com/?q=STM8S208+datasheet"><span class="caps">STM8S208</span></a> <a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf">zde</a></li>
+<li><a href="https://duckduckgo.com/?q=STM8S103+datasheet"><span class="caps">STM8S103</span></a> <a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf">zde</a></li>
+<li><a href="https://duckduckgo.com/?q=STM8S105+datasheet"><span class="caps">STM8S105</span></a> <a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf">zde</a></li>
+</ul>
+<h2 id="par-odkazu-souvisejicich-s-jazykem-c">Pár odkazů souvisejících s jazykem C<a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="http://www.fit.vutbr.cz/~martinek/clang/">http://www.fit.vutbr.cz/~martinek/clang/</a></li>
+<li><a href="http://jaknaprojekty.davidm.cz/">http://jaknaprojekty.davidm.cz/</a></li>
+<li><a href="https://www.tutorialspoint.com/cprogramming/">https://www.tutorialspoint.com/cprogramming/</a></li>
+<li>Wikibook <a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)">Programuje v jazyce C</a>.</li>
+</ul>
+<h2 id="periferie">Periferie<a class="headerlink" href="#periferie" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
+</ul>
+<h2 id="opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux<a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link">¶</a></h2>
+<ul>
+<li>Kompilátor <a href="http://sdcc.sourceforge.net/"><span class="caps">SDCC</span></a></li>
+<li>Jako vývojové prostředí doporučuji <a href="https://vscodium.com/">VSCodium</a></li>
+<li>Starší anglický návod s několika mouchama: <a href="https://github.com/hbendalibraham/stm8_started">https://github.com/hbendalibraham/stm8_started</a></li>
+<li>Kompletní a novější český návod: <a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html">připravuje se :)</a></li>
+<li>… a moje <span class="caps">STM8S</span> šablona <a href="https://github.com/spseol/start-stm8">https://github.com/spseol/start-stm8</a></li>
+</ul>
+<h2 id="nastroje-pro-widle">Nástroje pro Widle<a class="headerlink" href="#nastroje-pro-widle" title="Permanent link">¶</a></h2>
+<ul>
+<li>Vše velmi hezky zpracoval 
+  <a href="http://elektromys.eu/stm8.php">Michal Dudka na Elektromyši</a>.</li>
 <li>Jako vývojové prostředí používáme 
   <a href="https://www.st.com/en/development-tools/stvd-stm8.html"><span class="caps">STVD</span></a>
   s komipilátorem
@@ -142,10 +176,6 @@
 <li>Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
   nejsou ani jeden 
   <a href="https://cs.wikipedia.org/wiki/Otevřený_software">OpenSource</a>.</li>
-</ul>
-<h2 id="cecko">Céčko<a class="headerlink" href="#cecko" title="Permanent link">¶</a></h2>
-<ul>
-<li>Programuje v <a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)">jazyce C</a>.</li>
 </ul>
 
 
@@ -161,20 +191,21 @@
 
 
 
-            <hr/>
+            <hr class="elegant-hr" />
 <section>
-    <h2>Související posty</h2>
+    <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
-<li><a href="https://chytrosti.marrek.cz/udelatka-do-cit-a-mit.html" title="Udělátka do CIT a MIT">Udělátka do CIT a MIT</a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2020-10-20T23:55:30+02:00">
-              20. říj 2020 23:55
+            <time itemprop="dateCreated" datetime="2021-04-16T15:42:17+02:00">
+              16. dub 2021 15:42
             </time>
 
             <h4>Kategorie</h4>
@@ -182,13 +213,10 @@
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="https://chytrosti.marrek.cz/tags.html#mit-ref">MIT
                     <span class="superscript">2</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
-                    <span class="superscript">2</span>
+                    <span class="superscript">4</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

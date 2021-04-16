@@ -10,24 +10,24 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-        <meta name="author" content="Jakub Zahálka" />
+        <meta name="author" content="Marrek Nožka" />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="MIT, PCB, MITka, " />
+<meta name="keywords" content="STM8, MITka, " />
 
-<meta property="og:title" content="Udělátka do CIT a MIT "/>
-<meta property="og:url" content="https://chytrosti.marrek.cz/udelatka-do-cit-a-mit.html" />
-<meta property="og:description" content="Takto se dělá nadpis¶ Toto je text napsaný pomocí Markdown. Tučný text. Nový odstavec se dělá prázdným řádkem. Takto se dělá odkaz. Takto se dělá obrázek: … a takto odkaz pomocí obrázku: Všechny obrázky nahrajte do adresáře img. Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru pelicanconf.py …" />
+<meta property="og:title" content="Vývoj STM8 s OpenSource nástroji "/>
+<meta property="og:url" content="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" />
+<meta property="og:description" content="https://github.com/hbendalibraham/stm8_started Flashing¶ Kompilace¶ Debug¶" />
 <meta property="og:site_name" content="Chytrosti" />
-<meta property="og:article:author" content="Jakub Zahálka" />
-<meta property="og:article:published_time" content="2020-11-20T16:51:41.218472+01:00" />
-<meta property="og:article:modified_time" content="2020-11-20T16:51:41.218472+01:00" />
-<meta name="twitter:title" content="Udělátka do CIT a MIT ">
-<meta name="twitter:description" content="Takto se dělá nadpis¶ Toto je text napsaný pomocí Markdown. Tučný text. Nový odstavec se dělá prázdným řádkem. Takto se dělá odkaz. Takto se dělá obrázek: … a takto odkaz pomocí obrázku: Všechny obrázky nahrajte do adresáře img. Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru pelicanconf.py …">
+<meta property="og:article:author" content="Marrek Nožka" />
+<meta property="og:article:published_time" content="2021-04-16T14:56:33.631841+02:00" />
+<meta property="og:article:modified_time" content="2021-04-16T14:56:33.631841+02:00" />
+<meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
+<meta name="twitter:description" content="https://github.com/hbendalibraham/stm8_started Flashing¶ Kompilace¶ Debug¶">
 
-        <title>Udělátka do CIT a MIT  · Chytrosti
+        <title>Vývoj STM8 s OpenSource nástroji  · Chytrosti
 </title>
         <link rel="shortcut icon" href="https://chytrosti.marrek.cz/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://chytrosti.marrek.cz/theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -65,13 +65,13 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
+                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
+                                </li>
+                                <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/sit.html" ><span class="caps">SIT</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost">
-                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
@@ -95,8 +95,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://chytrosti.marrek.cz/udelatka-do-cit-a-mit.html">
-                Udělátka do <span class="caps">CIT</span> a <span class="caps">MIT</span>
+            <a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html">
+                Vývoj <span class="caps">STM8</span> s OpenSource&nbsp;nástroji
             </a>
         </h1>
     </header>
@@ -105,17 +105,20 @@
 <div class="row-fluid">
     <div class="span2 table-of-content">
         <nav>
-        <h2>Obsah</h2>
+        <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#takto-se-dela-nadpis">Takto se dělá nadpis</a></li>
-<li><a href="#dalsi-nadpis">Další nadpis</a></li>
+<li><a href="#flashing">Flashing</a></li>
+<li><a href="#kompilace">Kompilace</a></li>
+<li><a href="#debug">Debug</a></li>
 </ul>
 </div>
 <section>
-    <h2>Související posty</h2>
+    <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
+<li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 </ul>
 <hr />
 </section>
@@ -125,33 +128,18 @@
             
 
             
-<h2 id="takto-se-dela-nadpis">Takto se dělá nadpis<a class="headerlink" href="#takto-se-dela-nadpis" title="Permanent link">¶</a></h2>
-<p>Toto je text napsaný pomocí <a href="https://cs.wikipedia.org/wiki/Markdown">Markdown</a>. <strong>Tučný text</strong>.</p>
-<p>Nový odstavec se dělá prázdným řádkem. 
-Takto se dělá <a href="https://marrek.cz/">odkaz</a>.
-Takto se dělá obrázek: </p>
-<p><img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"/></p>
-<p>… a takto odkaz pomocí obrázku:</p>
-<p><a href="https://easyeda.com/"> <img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"/> </a></p>
-<p>Všechny obrázky nahrajte do adresáře <code>img</code>.</p>
-<p>Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru
-<code>pelicanconf.py</code></p>
-<h2 id="dalsi-nadpis">Další nadpis<a class="headerlink" href="#dalsi-nadpis" title="Permanent link">¶</a></h2>
-<p>konec</p>
+<ul>
+<li><a href="https://github.com/hbendalibraham/stm8_started">https://github.com/hbendalibraham/stm8_started</a></li>
+</ul>
+<h2 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">¶</a></h2>
+<h2 id="kompilace">Kompilace<a class="headerlink" href="#kompilace" title="Permanent link">¶</a></h2>
+<h2 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">¶</a></h2>
 
 
              
  
             
-                <hr />
-    <div class="author-blurb">
-        <a href="/author/jakub-zahalka.html" target="_blank" rel="nofollow noopener noreferrer">
-            <img src=https://robohash.org/Jakub alt="Jakub Zahálka Avatar" title="Jakub Zahálka">
-            <span class="author-name">Jakub Zahálka</span>
-        </a>
-        studen SPŠE Olomouc
-    </div>
-
+            
             
 
 
@@ -160,30 +148,29 @@ Takto se dělá obrázek: </p>
 
 
 
-            <hr/>
+            <hr class="elegant-hr" />
 <section>
-    <h2>Související posty</h2>
+    <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
+<li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2020-11-20T16:51:41+01:00">
-              20. lis 2020 16:51
+            <time itemprop="dateCreated" datetime="2021-04-16T14:56:33+02:00">
+              16. dub 2021 14:56
             </time>
 
             <h4>Kategorie</h4>
             <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#mitka-ref">MITka</a>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://chytrosti.marrek.cz/tags.html#mit-ref">MIT
-                    <span class="superscript">2</span>
-</a></li>
-                <li><a href="https://chytrosti.marrek.cz/tags.html#pcb-ref">PCB
-                    <span class="superscript">1</span>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
+                    <span class="superscript">4</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

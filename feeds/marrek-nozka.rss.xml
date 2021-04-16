@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 17 Nov 2020 20:52:20 +0100</lastBuildDate><item><title>SIT</title><link>https://chytrosti.marrek.cz/sit.html</link><description>&lt;p&gt;Totot&amp;nbsp;tuje &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 17 Nov 2020 20:52:20 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-11-17:/sit.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;p&gt;kokodák&amp;nbsp;lalal&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 17 Nov 2020 20:49:24 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-11-17:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category><category>STM8</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
-&lt;h2 id="nastroje-kity-prostredi"&gt;Nástroje, kity, prostředí&lt;a class="headerlink" href="#nastroje-kity-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 16 Apr 2021 16:43:52 +0200</lastBuildDate><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
+&lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
+/1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
+čítat – tedy nastavuje strop časovače.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/img/tim4.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nastavení se děje pomocí …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 16 Apr 2021 16:43:52 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-16:/zakladni-pouziti-casovace.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-  &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-  s mikroprocesorem 
-  &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí používáme 
-  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
-  s komipilátorem
-  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
-  nejsou ani jeden 
-  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208 …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 16 Apr 2021 15:42:17 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-16:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html</link><description>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="cecko"&gt;Céčko&lt;a class="headerlink" href="#cecko" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Programuje v &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 20 Oct 2020 23:55:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-10-20:/mit.html</guid><category>MITka</category><category>MIT</category><category>Céčko</category><category>STM8</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>&lt;h2 id="jak-na-to"&gt;Jak na to?&lt;a class="headerlink" href="#jak-na-to" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="flashing"&gt;Flashing&lt;a class="headerlink" href="#flashing" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="kompilace"&gt;Kompilace&lt;a class="headerlink" href="#kompilace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="debug"&gt;Debug&lt;a class="headerlink" href="#debug" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 16 Apr 2021 14:56:33 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-16:/vyvoj-stm8-s-opensource-nastroji.html</guid><category>MITka</category><category>STM8</category></item><item><title>SIT</title><link>https://chytrosti.marrek.cz/sit.html</link><description>&lt;p&gt;Totot&amp;nbsp;tuje &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 17 Nov 2020 20:52:20 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-11-17:/sit.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;p&gt;kokodák&amp;nbsp;lalal&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 17 Nov 2020 20:49:24 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-11-17:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category><category>STM8</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>&lt;h2 id="jak-na-to"&gt;Jak na to?&lt;a class="headerlink" href="#jak-na-to" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;jednoduše&amp;nbsp;:-)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 20 Oct 2020 23:55:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2020-10-20:/prg.html</guid><category>Programování</category><category>Python</category></item></channel></rss>

@@ -16,6 +16,42 @@ body {
     overflow-y:  scroll;
 }
 
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h3 {
+    margin-top: 0.7em;
+    font-size: 1.8rem;
+    margin-bottom: 0.7em;
+}
+h4 {
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
+blockquote a:not(.ampl) {
+    color: darkred;
+}
+
+/*.related-post-header {*/
+/*    color: darkred;*/
+/*}*/
+
+.elegant-hr {
+    color: darkred;
+    border: 3px solid darkred;
+    border-radius: 4px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+
 pre code {
     white-space: pre;
     overflow-x: auto;
