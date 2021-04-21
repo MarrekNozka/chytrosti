@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-04-16T16:52:56+02:00</updated><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-04-16T16:52:56+02:00</published><updated>2021-04-16T16:52:56+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/zakladni-pouziti-casovace.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-04-21T08:27:18+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-04-21T08:27:18+02:00</published><updated>2021-04-21T08:27:18+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-21:/mit.html</id><summary type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208 …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="periferie"&gt;Periferie&lt;a class="headerlink" href="#periferie" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kompletní a novější český návod: &lt;a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html"&gt;připravuje se :)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;… a moje &lt;span class="caps"&gt;STM8S&lt;/span&gt; šablona &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="nastroje-pro-widle"&gt;Nástroje pro Widle&lt;a class="headerlink" href="#nastroje-pro-widle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vše velmi hezky zpracoval 
+  &lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí používáme 
+  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
+  s komipilátorem
+  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
+  nejsou ani jeden 
+  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-04-20T20:08:46+02:00</published><updated>2021-04-20T20:08:46+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-20:/generovani-zvuku-zaklady.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký &amp;ldquo;vlnič&amp;rdquo; &amp;ndash; tedy elektro-akustický&amp;nbsp;měnič. &lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&amp;nbsp;takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz …&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký &amp;ldquo;vlnič&amp;rdquo; &amp;ndash; tedy elektro-akustický&amp;nbsp;měnič. &lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&amp;nbsp;takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
+bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
+pískají a pípají a my vstáváme potom&amp;nbsp;naštvaní.)&lt;/p&gt;
+&lt;p&gt;Zapojení může vypadat například&amp;nbsp;takto: &lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-04-19T17:00:11+02:00</published><updated>2021-04-19T17:00:11+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-19:/zakladni-pouziti-casovace.html</id><summary type="html">
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
@@ -49,63 +132,14 @@ přerušení od časovače &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Tento kód je například použito v knihovně
 &lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;milis&lt;/a&gt;,
 která umožňuje zjistit počet milisekund uplynulých od “spuštění programu”.&lt;/p&gt;
-&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-04-16T15:42:17+02:00</published><updated>2021-04-16T15:42:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/mit.html</id><summary type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208 …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="periferie"&gt;Periferie&lt;a class="headerlink" href="#periferie" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kompletní a novější český návod: &lt;a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html"&gt;připravuje se :)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;… a moje &lt;span class="caps"&gt;STM8S&lt;/span&gt; šablona &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="nastroje-pro-widle"&gt;Nástroje pro Widle&lt;a class="headerlink" href="#nastroje-pro-widle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Vše velmi hezky zpracoval 
-  &lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí používáme 
-  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
-  s komipilátorem
-  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
-  nejsou ani jeden 
-  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-04-16T14:56:33+02:00</published><updated>2021-04-16T14:56:33+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/vyvoj-stm8-s-opensource-nastroji.html</id><content type="html">
+&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt; je trochu složitější, ale my si ukážeme jen jeho základní použití.
+(&lt;a href="https://cs.wikipedia.org/wiki/Pulzn%C4%9B_%C5%A1%C3%AD%C5%99kov%C3%A1_modulace"&gt;&lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt; necháme na samostatný post: 
+&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;)
+&lt;span class="caps"&gt;TIM2&lt;/span&gt;/3 je 16 bitový – může tedy čítat do 65535 a předdělička umožňuje dělit
+/1, /2, /4, /8, /16, /32, /64, /128, /256, /512, /1024, /2048, /4096, /8192,
+/16384 a /32768.&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Použití časovače jako generátoru PWM</title><link href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" rel="alternate"></link><published>2021-04-18T10:57:41+02:00</published><updated>2021-04-18T10:57:41+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-18:/pouziti-casovace-jako-generatoru-pwm.html</id><content type="html">
+&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="pwm"></category></entry><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-04-16T14:56:33+02:00</published><updated>2021-04-16T14:56:33+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/vyvoj-stm8-s-opensource-nastroji.html</id><content type="html">
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

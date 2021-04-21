@@ -15,19 +15,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="STM8, MITka, " />
+<meta name="keywords" content="Céčko, STM8, zvuk, MITka, " />
 
-<meta property="og:title" content="Vývoj STM8 s OpenSource nástroji "/>
-<meta property="og:url" content="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" />
-<meta property="og:description" content="https://github.com/hbendalibraham/stm8_started Flashing¶ Kompilace¶ Debug¶" />
+<meta property="og:title" content="Generování zvuku — základy "/>
+<meta property="og:url" content="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" />
+<meta property="og:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-16T14:56:33.631841+02:00" />
-<meta property="og:article:modified_time" content="2021-04-16T14:56:33.631841+02:00" />
-<meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
-<meta name="twitter:description" content="https://github.com/hbendalibraham/stm8_started Flashing¶ Kompilace¶ Debug¶">
+<meta property="og:article:published_time" content="2021-04-20T20:08:46.998046+02:00" />
+<meta property="og:article:modified_time" content="2021-04-20T20:08:46.998046+02:00" />
+<meta name="twitter:title" content="Generování zvuku — základy ">
+<meta name="twitter:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …">
 
-        <title>Vývoj STM8 s OpenSource nástroji  · Chytrosti
+        <title>Generování zvuku — základy  · Chytrosti
 </title>
         <link rel="shortcut icon" href="https://chytrosti.marrek.cz/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://chytrosti.marrek.cz/theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -95,47 +95,31 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html">
-                Vývoj <span class="caps">STM8</span> s OpenSource&nbsp;nástroji
+            <a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html">
+                Generování zvuku &#8212;&nbsp;základy
             </a>
         </h1>
     </header>
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h2 class="related-post-header">Obsah</h2>
-        <div class="toc">
-<ul>
-<li><a href="#flashing">Flashing</a></li>
-<li><a href="#kompilace">Kompilace</a></li>
-<li><a href="#debug">Debug</a></li>
-</ul>
-</div>
-<section>
-    <h2 class="related-post-header">Související posty</h2>
-<ul class="related-posts-list">
-<li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
-<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
-<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
-</ul>
-<hr />
-</section>
-        </nav>
-    </div>
-    <div class="span8 article-content">
+        <div class="span8 offset2 article-content">
             
 
-            
-<ul>
-<li><a href="https://github.com/hbendalibraham/stm8_started">https://github.com/hbendalibraham/stm8_started</a></li>
-</ul>
-<h2 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">¶</a></h2>
-<h2 id="kompilace">Kompilace<a class="headerlink" href="#kompilace" title="Permanent link">¶</a></h2>
-<h2 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">¶</a></h2>
+            <div class="toc">
+<ul></ul>
+</div>
+<p><img alt="&gt;&gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"></p>
+<p><a href="https://cs.wikipedia.org/wiki/Zvuk">Zvuk</a> je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký &ldquo;vlnič&rdquo; &ndash; tedy elektro-akustický&nbsp;měnič. </p>
+<p>Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&nbsp;takto:</p>
+<p><img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"></p>
+<p>(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
+bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
+pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
+<p>Zapojení může vypadat například&nbsp;takto: </p>
 
 
              
@@ -155,9 +139,9 @@
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -165,16 +149,22 @@
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-16T14:56:33+02:00">
-              16. dub 2021 14:56
+            <time itemprop="dateCreated" datetime="2021-04-20T20:08:46+02:00">
+              20. dub 2021 20:08
             </time>
 
             <h4>Kategorie</h4>
             <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#mitka-ref">MITka</a>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
+                <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
+                    <span class="superscript">4</span>
+</a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
                     <span class="superscript">6</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#zvuk-ref">zvuk
+                    <span class="superscript">1</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

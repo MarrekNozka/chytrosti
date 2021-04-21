@@ -38,6 +38,10 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
 blockquote a:not(.ampl) {
     color: darkred;
 }
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),
+a:not(.ampl) {
+    display: inline;
+}
 
 /*.related-post-header {*/
 /*    color: darkred;*/
@@ -129,4 +133,23 @@ div.table-of-content ul.related-posts-list {
     padding: 0 0 0 .2rem;
     list-style-type: none;
     list-style: symbols inside none;
+}
+
+
+img[alt*=">>"] {
+  float: right;
+  margin: 1ex;
+}
+
+img[alt*="<<"] {
+  float: left;
+  margin: 1ex;
+}
+
+img[alt*="|=|"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
 }
