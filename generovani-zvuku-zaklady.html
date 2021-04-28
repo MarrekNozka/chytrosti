@@ -22,8 +22,8 @@
 <meta property="og:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-20T20:08:46.998046+02:00" />
-<meta property="og:article:modified_time" content="2021-04-20T20:08:46.998046+02:00" />
+<meta property="og:article:published_time" content="2021-04-23T19:57:31.567751+02:00" />
+<meta property="og:article:modified_time" content="2021-04-23T19:57:31.567751+02:00" />
 <meta name="twitter:title" content="Generování zvuku — základy ">
 <meta name="twitter:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …">
 
@@ -109,9 +109,9 @@
             <div class="toc">
 <ul></ul>
 </div>
-<p><img alt="&gt;&gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"></p>
 <p><a href="https://cs.wikipedia.org/wiki/Zvuk">Zvuk</a> je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký &ldquo;vlnič&rdquo; &ndash; tedy elektro-akustický&nbsp;měnič. </p>
+<p><img alt="&gt;&gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"></p>
 <p>Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&nbsp;takto:</p>
 <p><img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"></p>
@@ -119,7 +119,151 @@ frekvenční rozsah. Jeho frekvenční charakteristika může vypadat napříkla
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
 bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
 pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
-<p>Zapojení může vypadat například&nbsp;takto: </p>
+<p>Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
+tranzistorem. Zapojení tedy může vypadat například&nbsp;takto: </p>
+<p><img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/stm8-zvuk-1.png"></p>
+<p>Tranzistor je ve spínacím režimu a membrána reproduktoru má tedy pouze dvě
+polohy. Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému
+proudu. Do výchylky odpovídající zápornému proudu se membrána nedostane,
+protože proud protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru,
+při sestupné&nbsp;hraně.</p>
+<p>Program, který nám vyloudí frekvenci <span class="math">\(500\,\mathrm{Hz}\)</span> může vypadat například takto. 
+Perioda je <span class="math">\(2\,\mathrm{ms}\)</span>. Půl periody tedy <span class="math">\(1\,\mathrm{ms}\)</span>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">init</span><span class="p">();</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">PZ_UP</span><span class="p">;</span>
+        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="n">PZ_DOWN</span><span class="p">;</span>
+        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p><img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/obdelnik.png"></p>
+<p>Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
+membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 2\,\mathrm{ms}\)</span>) a pak nechám chvilku&nbsp;ticho.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">init</span><span class="p">();</span>
+
+    <span class="kt">uint16_t</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">PZ_UP</span><span class="p">;</span>
+            <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+            <span class="n">PZ_DOWN</span><span class="p">;</span>
+            <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">60</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p><img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/pipani.png"></p>
+<p>Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
+vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
+<a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">multitasking</a> a 
+<a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">stavový automat</a>
+<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c">knihovna milis</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
 
              
@@ -142,6 +286,7 @@ pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihivny.html" title="Oddělená kompilace a vlastní knihivny">Oddělená kompilace a vlastní knihivny</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -149,8 +294,8 @@ pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-20T20:08:46+02:00">
-              20. dub 2021 20:08
+            <time itemprop="dateCreated" datetime="2021-04-23T19:57:31+02:00">
+              23. dub 2021 19:57
             </time>
 
             <h4>Kategorie</h4>
@@ -158,10 +303,10 @@ pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">4</span>
+                    <span class="superscript">5</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
-                    <span class="superscript">6</span>
+                    <span class="superscript">7</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#zvuk-ref">zvuk
                     <span class="superscript">1</span>
@@ -348,6 +493,10 @@ pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
             {
                 return (query.length > 0);
             }
+        </script>
+        <script src="https://chytrosti.marrek.cz/theme/js/medium-zoom.min.js"></script>
+        <script>
+          mediumZoom('img[alt*="%%"]', {background: '#00111111',});
         </script>
 
     <script>

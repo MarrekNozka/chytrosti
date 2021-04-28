@@ -60,6 +60,9 @@ pre code {
     white-space: pre;
     overflow-x: auto;
 }
+.codecopy button.codecopy-btn {
+    z-index: auto;
+}
 
 .search-query {
     margin-left: 1em;
@@ -153,3 +156,4 @@ img[alt*="|=|"] {
   margin: auto;
   float: none!important;
 }
+

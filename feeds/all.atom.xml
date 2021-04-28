@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-04-21T08:27:18+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-04-21T08:27:18+02:00</published><updated>2021-04-21T08:27:18+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-21:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-04-23T20:08:53+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-04-23T20:08:53+02:00</published><updated>2021-04-23T20:08:53+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/mit.html</id><summary type="html">
+&lt;h2 id="nucleo"&gt;Nucleo&lt;a class="headerlink" href="#nucleo" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;h3 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
 v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208 …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="nucleo"&gt;Nucleo&lt;a class="headerlink" href="#nucleo" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;h3 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
 v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
@@ -27,13 +29,22 @@ kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&g
 &lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="elektromys"&gt;Elektromyš&lt;a class="headerlink" href="#elektromys" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
+&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
+najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="sablona-pro-zalozeni-projektu"&gt;Šablona pro založení projektu&lt;a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id="periferie"&gt;Periferie&lt;a class="headerlink" href="#periferie" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
@@ -59,12 +70,19 @@ kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&g
 &lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
   nejsou ani jeden 
   &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-04-20T20:08:46+02:00</published><updated>2021-04-20T20:08:46+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-20:/generovani-zvuku-zaklady.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;/ul&gt;
+&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-04-23T19:57:31+02:00</published><updated>2021-04-23T19:57:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/generovani-zvuku-zaklady.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;&lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký &amp;ldquo;vlnič&amp;rdquo; &amp;ndash; tedy elektro-akustický&amp;nbsp;měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
 &lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&amp;nbsp;takto:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"&gt;&lt;/p&gt;
@@ -72,9 +90,9 @@ frekvenční rozsah. Jeho frekvenční charakteristika může vypadat napříkla
 budík je 100 Hz …&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;&lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký &amp;ldquo;vlnič&amp;rdquo; &amp;ndash; tedy elektro-akustický&amp;nbsp;měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
 &lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&amp;nbsp;takto:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"&gt;&lt;/p&gt;
@@ -82,7 +100,151 @@ frekvenční rozsah. Jeho frekvenční charakteristika může vypadat napříkla
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
 bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
 pískají a pípají a my vstáváme potom&amp;nbsp;naštvaní.)&lt;/p&gt;
-&lt;p&gt;Zapojení může vypadat například&amp;nbsp;takto: &lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-04-19T17:00:11+02:00</published><updated>2021-04-19T17:00:11+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-19:/zakladni-pouziti-casovace.html</id><summary type="html">
+&lt;p&gt;Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
+tranzistorem. Zapojení tedy může vypadat například&amp;nbsp;takto: &lt;/p&gt;
+&lt;p&gt;&lt;img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/stm8-zvuk-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;Tranzistor je ve spínacím režimu a membrána reproduktoru má tedy pouze dvě
+polohy. Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému
+proudu. Do výchylky odpovídající zápornému proudu se membrána nedostane,
+protože proud protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru,
+při sestupné&amp;nbsp;hraně.&lt;/p&gt;
+&lt;p&gt;Program, který nám vyloudí frekvenci &lt;span class="math"&gt;\(500\,\mathrm{Hz}\)&lt;/span&gt; může vypadat například takto. 
+Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl periody tedy &lt;span class="math"&gt;\(1\,\mathrm{ms}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
+&lt;span class="normal"&gt; 2&lt;/span&gt;
+&lt;span class="normal"&gt; 3&lt;/span&gt;
+&lt;span class="normal"&gt; 4&lt;/span&gt;
+&lt;span class="normal"&gt; 5&lt;/span&gt;
+&lt;span class="normal"&gt; 6&lt;/span&gt;
+&lt;span class="normal"&gt; 7&lt;/span&gt;
+&lt;span class="normal"&gt; 8&lt;/span&gt;
+&lt;span class="normal"&gt; 9&lt;/span&gt;
+&lt;span class="normal"&gt;10&lt;/span&gt;
+&lt;span class="normal"&gt;11&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/obdelnik.png"&gt;&lt;/p&gt;
+&lt;p&gt;Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
+membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 \cdot 2\,\mathrm{ms}\)&lt;/span&gt;) a pak nechám chvilku&amp;nbsp;ticho.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
+&lt;span class="normal"&gt; 2&lt;/span&gt;
+&lt;span class="normal"&gt; 3&lt;/span&gt;
+&lt;span class="normal"&gt; 4&lt;/span&gt;
+&lt;span class="normal"&gt; 5&lt;/span&gt;
+&lt;span class="normal"&gt; 6&lt;/span&gt;
+&lt;span class="normal"&gt; 7&lt;/span&gt;
+&lt;span class="normal"&gt; 8&lt;/span&gt;
+&lt;span class="normal"&gt; 9&lt;/span&gt;
+&lt;span class="normal"&gt;10&lt;/span&gt;
+&lt;span class="normal"&gt;11&lt;/span&gt;
+&lt;span class="normal"&gt;12&lt;/span&gt;
+&lt;span class="normal"&gt;13&lt;/span&gt;
+&lt;span class="normal"&gt;14&lt;/span&gt;
+&lt;span class="normal"&gt;15&lt;/span&gt;
+&lt;span class="normal"&gt;16&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+    &lt;span class="kt"&gt;uint16_t&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/pipani.png"&gt;&lt;/p&gt;
+&lt;p&gt;Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
+vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
+&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;multitasking&lt;/a&gt; a 
+&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;stavový automat&lt;/a&gt;
+&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;knihovna milis&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Oddělená kompilace a vlastní knihivny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihivny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2021-04-23T11:32:59+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihivny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázat&lt;/p&gt;</summary><content type="html">&lt;p&gt;a&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-04-19T17:00:11+02:00</published><updated>2021-04-19T17:00:11+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-19:/zakladni-pouziti-casovace.html</id><summary type="html">
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
