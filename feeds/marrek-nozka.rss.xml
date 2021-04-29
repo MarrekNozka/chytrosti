@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 23 Apr 2021 20:08:53 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
-&lt;h2 id="nucleo"&gt;Nucleo&lt;a class="headerlink" href="#nucleo" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Thu, 29 Apr 2021 18:46:55 +0200</lastBuildDate><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 29 Apr 2021 18:46:55 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-29:/generovani-zvuku-zaklady.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>zvuk</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
-&lt;h3 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
 v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 23 Apr 2021 20:08:53 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-23:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category></item><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>&lt;div class="toc"&gt;
-&lt;ul&gt;&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
-Pro jeho vyloudění tedy potřebujeme nějaký &amp;ldquo;vlnič&amp;rdquo; &amp;ndash; tedy elektro-akustický&amp;nbsp;měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"&gt;&lt;/p&gt;
-&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
-frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&amp;nbsp;takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"&gt;&lt;/p&gt;
-&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
-budík je 100 Hz …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 23 Apr 2021 19:57:31 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-23:/generovani-zvuku-zaklady.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>zvuk</category></item><item><title>Oddělená kompilace a vlastní knihivny</title><link>https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihivny.html</link><description>&lt;p&gt;Zde se pokusím&amp;nbsp;ukázat&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 23 Apr 2021 07:44:00 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihivny.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category></item><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
+kterém čipu (plus další specifické věci) lze najít v datasheetu …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 28 Apr 2021 13:58:43 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-28:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category></item><item><title>Oddělená kompilace a vlastní knihivny</title><link>https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihivny.html</link><description>&lt;p&gt;Zde se pokusím&amp;nbsp;ukázat&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 23 Apr 2021 07:44:00 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihivny.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category></item><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet

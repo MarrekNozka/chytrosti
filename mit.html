@@ -19,13 +19,13 @@
 
 <meta property="og:title" content="MIT  - Mikroprocesorová technika "/>
 <meta property="og:url" content="https://chytrosti.marrek.cz/mit.html" />
-<meta property="og:description" content="Nucleo¶ Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v …" />
+<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-23T20:08:53.709009+02:00" />
-<meta property="og:article:modified_time" content="2021-04-23T20:08:53.709009+02:00" />
+<meta property="og:article:published_time" content="2021-04-28T13:58:43.063271+02:00" />
+<meta property="og:article:modified_time" content="2021-04-28T13:58:43.063271+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
-<meta name="twitter:description" content="Nucleo¶ Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v …">
+<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …">
 
         <title>MIT  - Mikroprocesorová technika  · Chytrosti
 </title>
@@ -111,15 +111,17 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#nucleo">Nucleo</a><ul>
-<li><a href="#dokumentace">Dokumentace</a></li>
+<li><a href="#dokumentace">Dokumentace</a><ul>
 <li><a href="#elektromys">Elektromyš</a></li>
+<li><a href="#periferie">Periferie</a></li>
 </ul>
 </li>
+<li><a href="#soucastky">Součástky</a></li>
 <li><a href="#sablona-pro-zalozeni-projektu">Šablona pro založení projektu</a></li>
-<li><a href="#periferie">Periferie</a></li>
-<li><a href="#opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux</a></li>
+<li><a href="#opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux</a><ul>
 <li><a href="#nastroje-pro-widle">Nástroje pro Widle</a></li>
+</ul>
+</li>
 <li><a href="#par-odkazu-souvisejicich-s-jazykem-c">Pár odkazů souvisejících s jazykem C</a></li>
 </ul>
 </div>
@@ -141,13 +143,12 @@
             
 
             
-<h2 id="nucleo">Nucleo<a class="headerlink" href="#nucleo" title="Permanent link">¶</a></h2>
 <p>Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 <a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
 s mikroprocesorem 
 <a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</p>
 <p><img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/></p>
-<h3 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">¶</a></h3>
+<h2 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">¶</a></h2>
 <p>Celá řada <span class="caps">STM8S</span> používá stejnou sadu periferií. Jejich popis najdete
 v <a href="https://duckduckgo.com/?q=STM8S+reference+manual">reference manuálu</a>
 <a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf">zde</a>.</p>
@@ -168,17 +169,42 @@ najdete spoustu pro nás zajímavých věcí:</p>
 <li><a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html">Vstupy a výstupy 3 – logické úrovně</a></li>
 <li><a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html">Vstupy a výstupy 4 – PullUp rezistory</a></li>
 <li><a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html">Vstupy a výstupy 5 – Open-Drain</a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html">Ovládání displeje s <span class="caps">MAX7219</span></a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html">Clock</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html">Alfanumerické <span class="caps">LCD</span></a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">Knihovna milis – “Multitasking”</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">Stavový automat</a></li>
 </ul>
-<h2 id="sablona-pro-zalozeni-projektu">Šablona pro založení projektu<a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link">¶</a></h2>
-<h2 id="periferie">Periferie<a class="headerlink" href="#periferie" title="Permanent link">¶</a></h2>
+<p>Další velice cenné informace nejdete v sekcích:</p>
 <ul>
+<li><a href="http://elektromys.eu/elektro.php">Elektro</a></li>
+<li><a href="http://elektromys.eu/kratke.php">Různé krátké poznámky</a></li>
+</ul>
+<p>Ze stejné dílny pochází tyto pro nás zajímavé články:</p>
+<ul>
+<li><a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"><span class="caps">I2C</span> – Relativně jednoduše</a></li>
+</ul>
+<h3 id="periferie">Periferie<a class="headerlink" href="#periferie" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></li>
-<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
+</ul>
+<h2 id="soucastky">Součástky<a class="headerlink" href="#soucastky" title="Permanent link">¶</a></h2>
+<p>Seznam součástek, které se můžou hodit pro naše projekty:
+<a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html">https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html</a>
+Na váš návrh rád seznam doplním.</p>
+<h2 id="sablona-pro-zalozeni-projektu">Šablona pro založení projektu<a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link">¶</a></h2>
+<ul>
+<li>moje šablona pro vývoj <span class="caps">SDCC</span> a <span class="caps">GNU</span> Make<ul>
+<li><a href="https://github.com/spseol/start-stm8">https://github.com/spseol/start-stm8</a></li>
+</ul>
+</li>
+<li>vzorový projekt Michala Dudky<ul>
+<li><a href="http://www.elektromys.eu/stm8s208_vzor.rar">http://www.elektromys.eu/stm8s208_vzor.rar</a> (případně zip)</li>
+<li><a href="http://www.elektromys.eu/stm8s105_vzor.rar">http://www.elektromys.eu/stm8s105_vzor.rar</a> (případně zip)</li>
+</ul>
+</li>
 </ul>
 <h2 id="opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux<a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link">¶</a></h2>
 <ul>
@@ -188,7 +214,7 @@ najdete spoustu pro nás zajímavých věcí:</p>
 <li>Kompletní a novější český návod: <a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html">připravuje se :)</a></li>
 <li>… a moje <span class="caps">STM8S</span> šablona <a href="https://github.com/spseol/start-stm8">https://github.com/spseol/start-stm8</a></li>
 </ul>
-<h2 id="nastroje-pro-widle">Nástroje pro Widle<a class="headerlink" href="#nastroje-pro-widle" title="Permanent link">¶</a></h2>
+<h3 id="nastroje-pro-widle">Nástroje pro Widle<a class="headerlink" href="#nastroje-pro-widle" title="Permanent link">¶</a></h3>
 <ul>
 <li>Vše velmi hezky zpracoval 
   <a href="http://elektromys.eu/stm8.php">Michal Dudka na Elektromyši</a>.</li>
@@ -237,8 +263,8 @@ najdete spoustu pro nás zajímavých věcí:</p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-23T20:08:53+02:00">
-              23. dub 2021 20:08
+            <time itemprop="dateCreated" datetime="2021-04-28T13:58:43+02:00">
+              28. dub 2021 13:58
             </time>
 
             <h4>Kategorie</h4>
