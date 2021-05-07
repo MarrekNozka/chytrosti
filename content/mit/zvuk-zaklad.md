@@ -10,13 +10,13 @@ category: MITka
 Pro jeho vyloudění tedy potřebujeme nějaký "vlnič" -- tedy elektro-akustický
 měnič. 
 
-![>>]({static}./piezo_obr.png)
+![>>]({static}./img/piezo_obr.png)
 
 Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například
 takto:
 
-![|=|]({static}./piezo_f_ch.png)
+![|=|]({static}./img/piezo_f_ch.png)
 
 (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
@@ -26,7 +26,7 @@ pískají a pípají a my vstáváme potom naštvaní.)
 Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
 tranzistorem. Zapojení tedy může vypadat například takto: 
 
-![micro-controller, piezo, repro]({static}./stm8-zvuk-1.png)
+![micro-controller, piezo, repro]({static}./img/stm8-zvuk-1.png)
 
 Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
 Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
@@ -53,7 +53,7 @@ void main(void)
 }
 ```
 
-![obdélníkový časový průběh %%]({static}./obdelnik.png)
+![obdélníkový časový průběh %%]({static}./img/obdelnik.png)
 
 Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
 membránou do nekonečna, ale pouze několikrát ($20 \cdot 2\,\mathrm{ms}$) a pak nechám chvilku
@@ -78,7 +78,7 @@ void main()
 }
 ```
 
-![Pípání %%]({static}./pipani.png)
+![Pípání %%]({static}./img/pipani.png)
 
 Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
 vlastně pořádně nemůže dělat nic jiného. Proto použijeme 

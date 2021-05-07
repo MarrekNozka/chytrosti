@@ -13,7 +13,7 @@ TIM4 je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje děl
 /1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
 čítat -- tedy nastavuje strop časovače.
 
-![TIM4]({static}./tim4.png)
+![TIM4]({static}./img/tim4.png)
 
 Nastavení se děje pomocí funkce `TIM4_TimeBaseInit(PRESCALER, PERIOD)`, kde
 `PRESCALER` je makro, pro nastavení děličky a `PERIOD` je 8-bitové číslo.

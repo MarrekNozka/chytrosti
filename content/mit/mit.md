@@ -13,7 +13,7 @@ Pro výuku mikroprocesorové techniky používáme vývojovou desku
 s mikroprocesorem 
 [STM8S208RB](https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html).
 
-![Nucleo-8S208RB %%]({static}./Nucleo-S208RB.png)
+![Nucleo-8S208RB %%]({static}./img/Nucleo-S208RB.png)
 
 
 Dokumentace
@@ -65,6 +65,7 @@ Periferie
 * [Generování zvuku -- základy]({filename}./zvuk-zaklad.md)
 * [Základní použití časovače]({filename}./casovace.md)
 * [Použití časovače jako generátoru PWM]({filename}./pwm.md)
+* [Ultrazvukový měřič vzdálenosti pomocí timeru TIM2]({filename}./tim2_ultrasonic.md)
 
 Součástky
 ==============
