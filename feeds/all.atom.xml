@@ -1,220 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-04-29T22:03:58+02:00</updated><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-04-29T22:03:58+02:00</published><updated>2021-04-29T22:03:58+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-29:/zakladni-pouziti-casovace.html</id><summary type="html">
-&lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
-/1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
-čítat – tedy nastavuje strop časovače.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/mit/tim4.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nastavení se děje pomocí …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
-/1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
-čítat – tedy nastavuje strop časovače.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/mit/tim4.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nastavení se děje pomocí funkce &lt;code&gt;TIM4_TimeBaseInit(PRESCALER, PERIOD)&lt;/code&gt;, kde
-&lt;code&gt;PRESCALER&lt;/code&gt; je makro, pro nastavení děličky a &lt;code&gt;PERIOD&lt;/code&gt; je 8-bitové číslo.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;TIM4_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_PRESCALER_128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;125&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;Takže pokud máme nastaven kmitočet na 16MHz znamená to že čítač čítá do hodnoty
-125 (respektive 124 protože čítáme od nuly) s frekvencí &lt;code&gt;16MHz/128 == 125 kHz&lt;/code&gt;.
-Znamená to tedy, že každou milisekundu dojde k auto-reloadu a je vyvoláno
-přerušení od časovače &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Aby vše fungovalo musíme:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;povolit &lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;povolit přerušení od &lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;globálně povolit přerušení&lt;/li&gt;
-&lt;li&gt;napsat tělo obslužné rutiny přerušení.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;
-&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;TIM4_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                       &lt;span class="c1"&gt;// povolí TIM4&lt;/span&gt;
-  &lt;span class="n"&gt;TIM4_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// povolí přerušení od TIM4&lt;/span&gt;
-  &lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;                     &lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
-  &lt;span class="p"&gt;......&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;Rutina přerušení se standardně nachází v souboru &lt;code&gt;stm8_it.c&lt;/code&gt;. Stačí ji najít
-přepsat. Pokud potřebujete v rutině přerušení pracovat s proměnnou definovanou
-v &lt;code&gt;main.c&lt;/code&gt; (což je myslím téměř vždy) je třeba tuto proměnnou označit
-direktivou &lt;code&gt;extern&lt;/code&gt; nebo rutinu přesunout přímo do souboru &lt;code&gt;main.c&lt;/code&gt;.
-Více o tom se dočtete v postu
-&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Kompilace a knihovny&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;
-&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*---        rutina obsluhy přerušení         ---*/&lt;/span&gt;
-&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_UPD_OVF_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;TIM4_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// vymažu vlajku signalizující přerušení&lt;/span&gt;
-    &lt;span class="n"&gt;miliseconds&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                    &lt;span class="c1"&gt;// udělám co je třeba....&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;Všimněte si prosím, že první, co se v rutině přerušení dělá, je, že se &lt;strong&gt;vymaže
-vlajka&lt;/strong&gt;, která označuje, že k přerušení došlo.&lt;/p&gt;
-&lt;p&gt;Tento kód je například použito v knihovně
-&lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;milis&lt;/a&gt;,
-která umožňuje zjistit počet milisekund uplynulých od “spuštění programu”.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-05-07T12:30:25+02:00</updated><entry><title>Použití časovače jako generátoru PWM</title><link href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" rel="alternate"></link><published>2021-05-07T12:30:25+02:00</published><updated>2021-05-07T12:30:25+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/pouziti-casovace-jako-generatoru-pwm.html</id><content type="html">
 &lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt; je trochu složitější, ale zde ukážeme jen jeho základní použití.
-(&lt;a href="https://cs.wikipedia.org/wiki/Pulzn%C4%9B_%C5%A1%C3%AD%C5%99kov%C3%A1_modulace"&gt;&lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt; necháme na samostatný post: 
-&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt;/3 je 16 bitový – může tedy čítat do 65535 a předdělička umožňuje dělit
-/1, /2, /4, /8, /16, /32, /64, /128, /256, /512, /1024, /2048, /4096, /8192,
-/16384 a /32768.&lt;/p&gt;
-&lt;p&gt;Takže například pokud vytváříme cokoli, co pracuje s časem a potřebujeme
-spustit určitý kód vždy přesně v intervalu &lt;span class="math"&gt;\(1\,\mathrm{s}\)&lt;/span&gt;, může inicializace
-časovače vypadat například takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM2 setup           ---------*/&lt;/span&gt;
-&lt;span class="n"&gt;TIM2_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_PRESCALER_512&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;31250&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// 16MHz/512/31250 == 1Hz&lt;/span&gt;
-&lt;span class="n"&gt;TIM2_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                       &lt;span class="c1"&gt;// povolí TIM2&lt;/span&gt;
-&lt;span class="n"&gt;TIM2_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// povolí přerušení od TIM2&lt;/span&gt;
-&lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;                     &lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;nastavení &lt;span class="caps"&gt;TIM3&lt;/span&gt; je analogické:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM3 setup           ---------*/&lt;/span&gt;
-&lt;span class="n"&gt;TIM3_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_PRESCALER_16&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;12345&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// ~81Hz&lt;/span&gt;
-&lt;span class="n"&gt;TIM3_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="n"&gt;TIM3_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;No a ještě rutiny přerušení… Opět platí, že &lt;strong&gt;rutiny přerušení buď necháme v souboru
-&lt;code&gt;stm8_it.c&lt;/code&gt; a proměnné označíme pomocí direktivy &lt;code&gt;extern&lt;/code&gt; nebo si rutiny
-přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
-&lt;span class="normal"&gt; 2&lt;/span&gt;
-&lt;span class="normal"&gt; 3&lt;/span&gt;
-&lt;span class="normal"&gt; 4&lt;/span&gt;
-&lt;span class="normal"&gt; 5&lt;/span&gt;
-&lt;span class="normal"&gt; 6&lt;/span&gt;
-&lt;span class="normal"&gt; 7&lt;/span&gt;
-&lt;span class="normal"&gt; 8&lt;/span&gt;
-&lt;span class="normal"&gt; 9&lt;/span&gt;
-&lt;span class="normal"&gt;10&lt;/span&gt;
-&lt;span class="normal"&gt;11&lt;/span&gt;
-&lt;span class="normal"&gt;12&lt;/span&gt;
-&lt;span class="normal"&gt;13&lt;/span&gt;
-&lt;span class="normal"&gt;14&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;TIM2_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   &lt;span class="c1"&gt;// vymažu vlaku signalizující &lt;/span&gt;
-
-    &lt;span class="n"&gt;udelam_neco_zajimaveho&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-    &lt;span class="n"&gt;sec&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;a_jeste_neco_jineho&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;TIM3_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-    &lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;G&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
-&lt;a href="https://github.com/spseol/STM8-TIM23-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;TIM23&lt;/span&gt;-zaklad&lt;/a&gt;&lt;/p&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-04-29T22:03:23+02:00</published><updated>2021-04-29T22:03:23+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-29:/generovani-zvuku-zaklady.html</id><summary type="html">
+&lt;p&gt;Kompletní zdrojové kódy naleznete v 
+&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/"&gt;repositáři&lt;/a&gt; na GitHubu:    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class="caps"&gt;RGB&lt;/span&gt; &lt;span class="caps"&gt;LED&lt;/span&gt; – &lt;a href="https://github.com/spseol/STM8-TIM2-PWM/tree/RGB_LED"&gt;RGB_LED&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/blob/RGB_LED/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="pwm"></category></entry><entry><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" rel="alternate"></link><published>2021-05-07T12:26:31+02:00</published><updated>2021-05-07T12:26:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</id><content type="html">
+&lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
+&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Kompletní zdrojové kódy naleznete v 
+&lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic"&gt;repositáři&lt;/a&gt; na GitHubu:   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;základní princip – 
+  &lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/tree/princip"&gt;větev princip&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/blob/princip/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;řešení typu stavový automat – &lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/tree/stav_automat"&gt;větev stav_automat&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/blob/stav_automat/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="senzor"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-05-07T12:22:06+02:00</published><updated>2021-05-07T12:22:06+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/mit.html</id><summary type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="elektromys"&gt;Elektromyš&lt;a class="headerlink" href="#elektromys" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
+&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
+najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;Stavový automat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Další velice cenné informace nejdete v sekcích:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ze stejné dílny pochází tyto pro nás zajímavé články:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"&gt;&lt;span class="caps"&gt;IR&lt;/span&gt; senzor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"&gt;&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="periferie"&gt;Periferie&lt;a class="headerlink" href="#periferie" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="soucastky"&gt;Součástky&lt;a class="headerlink" href="#soucastky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Seznam součástek, které se můžou hodit pro naše projekty:
+&lt;a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html"&gt;https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html&lt;/a&gt;
+Na váš návrh rád seznam doplním.&lt;/p&gt;
+&lt;h2 id="sablona-pro-zalozeni-projektu"&gt;Šablona pro založení projektu&lt;a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vzorový projekt Michala Dudky&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s208_vzor.rar"&gt;http://www.elektromys.eu/stm8s208_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s105_vzor.rar"&gt;http://www.elektromys.eu/stm8s105_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kompletní a novější český návod: &lt;a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html"&gt;připravuje se :)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;… a moje &lt;span class="caps"&gt;STM8S&lt;/span&gt; šablona &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="nastroje-pro-widle"&gt;Nástroje pro Widle&lt;a class="headerlink" href="#nastroje-pro-widle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vše velmi hezky zpracoval 
+  &lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí používáme 
+  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
+  s komipilátorem
+  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
+  nejsou ani jeden 
+  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-05-07T11:37:15+02:00</published><updated>2021-05-07T11:37:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/generovani-zvuku-zaklady.html</id><summary type="html">
 &lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
 &lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
 budík je 100 Hz …&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
 &lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
 bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
 pískají a pípají a my vstáváme potom naštvaní.)&lt;/p&gt;
 &lt;p&gt;Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
 tranzistorem. Zapojení tedy může vypadat například takto: &lt;/p&gt;
-&lt;p&gt;&lt;img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/stm8-zvuk-1.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/img/stm8-zvuk-1.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
 Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
 Do výchylky odpovídající zápornému proudu se membrána nedostane, protože proud
@@ -244,7 +179,7 @@ Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl period
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/obdelnik.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
 membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 \cdot 2\,\mathrm{ms}\)&lt;/span&gt;) a pak nechám chvilku ticho.&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
@@ -280,7 +215,7 @@ membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/pipani.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
 vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
 &lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;multitasking&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; a &lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;stavový automat&lt;/a&gt;.&lt;/p&gt;
@@ -465,109 +400,201 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-04-28T13:58:43+02:00</published><updated>2021-04-28T13:58:43+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-28:/mit.html</id><summary type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-05-07T11:36:34+02:00</published><updated>2021-05-07T11:36:34+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/zakladni-pouziti-casovace.html</id><summary type="html">
+&lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
+/1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
+čítat – tedy nastavuje strop časovače.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/mit/img/tim4.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nastavení se děje pomocí …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet
+/1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude 
+čítat – tedy nastavuje strop časovače.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/mit/img/tim4.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nastavení se děje pomocí funkce &lt;code&gt;TIM4_TimeBaseInit(PRESCALER, PERIOD)&lt;/code&gt;, kde
+&lt;code&gt;PRESCALER&lt;/code&gt; je makro, pro nastavení děličky a &lt;code&gt;PERIOD&lt;/code&gt; je 8-bitové číslo.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;TIM4_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_PRESCALER_128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;125&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;Takže pokud máme nastaven kmitočet na 16MHz znamená to že čítač čítá do hodnoty
+125 (respektive 124 protože čítáme od nuly) s frekvencí &lt;code&gt;16MHz/128 == 125 kHz&lt;/code&gt;.
+Znamená to tedy, že každou milisekundu dojde k auto-reloadu a je vyvoláno
+přerušení od časovače &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Aby vše fungovalo musíme:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://duckduckgo.com/?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt; &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;povolit &lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;povolit přerušení od &lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;globálně povolit přerušení&lt;/li&gt;
+&lt;li&gt;napsat tělo obslužné rutiny přerušení.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="elektromys"&gt;Elektromyš&lt;a class="headerlink" href="#elektromys" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
-&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
-najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;Stavový automat&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Další velice cenné informace nejdete v sekcích:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ze stejné dílny pochází tyto pro nás zajímavé články:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"&gt;&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="periferie"&gt;Periferie&lt;a class="headerlink" href="#periferie" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="soucastky"&gt;Součástky&lt;a class="headerlink" href="#soucastky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Seznam součástek, které se můžou hodit pro naše projekty:
-&lt;a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html"&gt;https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html&lt;/a&gt;
-Na váš návrh rád seznam doplním.&lt;/p&gt;
-&lt;h2 id="sablona-pro-zalozeni-projektu"&gt;Šablona pro založení projektu&lt;a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;vzorový projekt Michala Dudky&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s208_vzor.rar"&gt;http://www.elektromys.eu/stm8s208_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s105_vzor.rar"&gt;http://www.elektromys.eu/stm8s105_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kompletní a novější český návod: &lt;a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html"&gt;připravuje se :)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;… a moje &lt;span class="caps"&gt;STM8S&lt;/span&gt; šablona &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="nastroje-pro-widle"&gt;Nástroje pro Widle&lt;a class="headerlink" href="#nastroje-pro-widle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Vše velmi hezky zpracoval 
-  &lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí používáme 
-  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
-  s komipilátorem
-  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
-  nejsou ani jeden 
-  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="par-odkazu-souvisejicich-s-jazykem-c"&gt;Pár odkazů souvisejících s jazykem C&lt;a class="headerlink" href="#par-odkazu-souvisejicich-s-jazykem-c" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Oddělená kompilace a vlastní knihovny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2021-04-29T21:53:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihovny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázat&lt;/p&gt;</summary><content type="html">&lt;p&gt;aaa&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Použití časovače jako generátoru PWM</title><link href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" rel="alternate"></link><published>2021-04-18T10:57:41+02:00</published><updated>2021-04-18T10:57:41+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-18:/pouziti-casovace-jako-generatoru-pwm.html</id><content type="html">
-&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="pwm"></category></entry><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-04-16T14:56:33+02:00</published><updated>2021-04-16T14:56:33+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/vyvoj-stm8-s-opensource-nastroji.html</id><content type="html">
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;
+&lt;span class="normal"&gt;4&lt;/span&gt;
+&lt;span class="normal"&gt;5&lt;/span&gt;
+&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;TIM4_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                       &lt;span class="c1"&gt;// povolí TIM4&lt;/span&gt;
+  &lt;span class="n"&gt;TIM4_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// povolí přerušení od TIM4&lt;/span&gt;
+  &lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;                     &lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
+  &lt;span class="p"&gt;......&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;Rutina přerušení se standardně nachází v souboru &lt;code&gt;stm8_it.c&lt;/code&gt;. Stačí ji najít
+přepsat. Pokud potřebujete v rutině přerušení pracovat s proměnnou definovanou
+v &lt;code&gt;main.c&lt;/code&gt; (což je myslím téměř vždy) je třeba tuto proměnnou označit
+direktivou &lt;code&gt;extern&lt;/code&gt; nebo rutinu přesunout přímo do souboru &lt;code&gt;main.c&lt;/code&gt;.
+Více o tom se dočtete v postu
+&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Kompilace a knihovny&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;
+&lt;span class="normal"&gt;4&lt;/span&gt;
+&lt;span class="normal"&gt;5&lt;/span&gt;
+&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*---        rutina obsluhy přerušení         ---*/&lt;/span&gt;
+&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_UPD_OVF_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;TIM4_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// vymažu vlajku signalizující přerušení&lt;/span&gt;
+    &lt;span class="n"&gt;miliseconds&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                    &lt;span class="c1"&gt;// udělám co je třeba....&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;Všimněte si prosím, že první, co se v rutině přerušení dělá, je, že se &lt;strong&gt;vymaže
+vlajka&lt;/strong&gt;, která označuje, že k přerušení došlo.&lt;/p&gt;
+&lt;p&gt;Tento kód je například použito v knihovně
+&lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;milis&lt;/a&gt;,
+která umožňuje zjistit počet milisekund uplynulých od “spuštění programu”.&lt;/p&gt;
+&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt; je trochu složitější, ale zde ukážeme jen jeho základní použití.
+(&lt;a href="https://cs.wikipedia.org/wiki/Pulzn%C4%9B_%C5%A1%C3%AD%C5%99kov%C3%A1_modulace"&gt;&lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt; necháme na samostatný post: 
+&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt;/3 je 16 bitový – může tedy čítat do 65535 a předdělička umožňuje dělit
+/1, /2, /4, /8, /16, /32, /64, /128, /256, /512, /1024, /2048, /4096, /8192,
+/16384 a /32768.&lt;/p&gt;
+&lt;p&gt;Takže například pokud vytváříme cokoli, co pracuje s časem a potřebujeme
+spustit určitý kód vždy přesně v intervalu &lt;span class="math"&gt;\(1\,\mathrm{s}\)&lt;/span&gt;, může inicializace
+časovače vypadat například takto:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;
+&lt;span class="normal"&gt;4&lt;/span&gt;
+&lt;span class="normal"&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM2 setup           ---------*/&lt;/span&gt;
+&lt;span class="n"&gt;TIM2_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_PRESCALER_512&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;31250&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// 16MHz/512/31250 == 1Hz&lt;/span&gt;
+&lt;span class="n"&gt;TIM2_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                       &lt;span class="c1"&gt;// povolí TIM2&lt;/span&gt;
+&lt;span class="n"&gt;TIM2_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// povolí přerušení od TIM2&lt;/span&gt;
+&lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;                     &lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;nastavení &lt;span class="caps"&gt;TIM3&lt;/span&gt; je analogické:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;
+&lt;span class="normal"&gt;4&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM3 setup           ---------*/&lt;/span&gt;
+&lt;span class="n"&gt;TIM3_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_PRESCALER_16&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;12345&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// ~81Hz&lt;/span&gt;
+&lt;span class="n"&gt;TIM3_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;TIM3_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;No a ještě rutiny přerušení… Opět platí, že &lt;strong&gt;rutiny přerušení buď necháme v souboru
+&lt;code&gt;stm8_it.c&lt;/code&gt; a proměnné označíme pomocí direktivy &lt;code&gt;extern&lt;/code&gt; nebo si rutiny
+přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
+&lt;span class="normal"&gt; 2&lt;/span&gt;
+&lt;span class="normal"&gt; 3&lt;/span&gt;
+&lt;span class="normal"&gt; 4&lt;/span&gt;
+&lt;span class="normal"&gt; 5&lt;/span&gt;
+&lt;span class="normal"&gt; 6&lt;/span&gt;
+&lt;span class="normal"&gt; 7&lt;/span&gt;
+&lt;span class="normal"&gt; 8&lt;/span&gt;
+&lt;span class="normal"&gt; 9&lt;/span&gt;
+&lt;span class="normal"&gt;10&lt;/span&gt;
+&lt;span class="normal"&gt;11&lt;/span&gt;
+&lt;span class="normal"&gt;12&lt;/span&gt;
+&lt;span class="normal"&gt;13&lt;/span&gt;
+&lt;span class="normal"&gt;14&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;TIM2_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   &lt;span class="c1"&gt;// vymažu vlaku signalizující &lt;/span&gt;
+
+    &lt;span class="n"&gt;udelam_neco_zajimaveho&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="n"&gt;sec&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;a_jeste_neco_jineho&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;TIM3_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
+    &lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;G&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
+&lt;a href="https://github.com/spseol/STM8-TIM23-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;TIM23&lt;/span&gt;-zaklad&lt;/a&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Oddělená kompilace a vlastní knihovny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2021-04-29T21:53:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihovny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázat&lt;/p&gt;</summary><content type="html">&lt;p&gt;aaa&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-04-16T14:56:33+02:00</published><updated>2021-04-16T14:56:33+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-16:/vyvoj-stm8-s-opensource-nastroji.html</id><content type="html">
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

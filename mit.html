@@ -22,8 +22,8 @@
 <meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-28T13:58:43.063271+02:00" />
-<meta property="og:article:modified_time" content="2021-04-28T13:58:43.063271+02:00" />
+<meta property="og:article:published_time" content="2021-05-07T12:22:06.901189+02:00" />
+<meta property="og:article:modified_time" content="2021-05-07T12:22:06.901189+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
 <meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …">
 
@@ -130,10 +130,11 @@
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 </ul>
 <hr />
 </section>
@@ -147,7 +148,7 @@
 <a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
 s mikroprocesorem 
 <a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</p>
-<p><img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/Nucleo-S208RB.png"/></p>
+<p><img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/></p>
 <h2 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">¶</a></h2>
 <p>Celá řada <span class="caps">STM8S</span> používá stejnou sadu periferií. Jejich popis najdete
 v <a href="https://duckduckgo.com/?q=STM8S+reference+manual">reference manuálu</a>
@@ -182,6 +183,7 @@ najdete spoustu pro nás zajímavých věcí:</p>
 </ul>
 <p>Ze stejné dílny pochází tyto pro nás zajímavé články:</p>
 <ul>
+<li><a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"><span class="caps">IR</span> senzor</a></li>
 <li><a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"><span class="caps">I2C</span> – Relativně jednoduše</a></li>
 </ul>
 <h3 id="periferie">Periferie<a class="headerlink" href="#periferie" title="Permanent link">¶</a></h3>
@@ -189,6 +191,7 @@ najdete spoustu pro nás zajímavých věcí:</p>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></li>
 </ul>
 <h2 id="soucastky">Součástky<a class="headerlink" href="#soucastky" title="Permanent link">¶</a></h2>
 <p>Seznam součástek, které se můžou hodit pro naše projekty:
@@ -253,18 +256,19 @@ Na váš návrh rád seznam doplním.</p>
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-28T13:58:43+02:00">
-              28. dub 2021 13:58
+            <time itemprop="dateCreated" datetime="2021-05-07T12:22:06+02:00">
+              7. kvě 2021 12:22
             </time>
 
             <h4>Kategorie</h4>
@@ -272,10 +276,10 @@ Na váš návrh rád seznam doplním.</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">5</span>
+                    <span class="superscript">6</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
-                    <span class="superscript">7</span>
+                    <span class="superscript">8</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

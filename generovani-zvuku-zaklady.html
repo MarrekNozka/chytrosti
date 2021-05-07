@@ -22,8 +22,8 @@
 <meta property="og:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-29T22:03:23.810816+02:00" />
-<meta property="og:article:modified_time" content="2021-04-29T22:03:23.810816+02:00" />
+<meta property="og:article:published_time" content="2021-05-07T11:37:15.976664+02:00" />
+<meta property="og:article:modified_time" content="2021-05-07T11:37:15.976664+02:00" />
 <meta name="twitter:title" content="Generování zvuku — základy ">
 <meta name="twitter:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …">
 
@@ -116,10 +116,11 @@
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 </ul>
 <hr />
 </section>
@@ -131,17 +132,17 @@
             
 <p><a href="https://cs.wikipedia.org/wiki/Zvuk">Zvuk</a> je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. </p>
-<p><img alt="&gt;&gt;" src="https://chytrosti.marrek.cz/mit/piezo_obr.png"/></p>
+<p><img alt="&gt;&gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/></p>
 <p>Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
 frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:</p>
-<p><img alt="|=|" src="https://chytrosti.marrek.cz/mit/piezo_f_ch.png"/></p>
+<p><img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/></p>
 <p>(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
 bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
 pískají a pípají a my vstáváme potom naštvaní.)</p>
 <p>Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
 tranzistorem. Zapojení tedy může vypadat například takto: </p>
-<p><img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/stm8-zvuk-1.png"/></p>
+<p><img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/img/stm8-zvuk-1.png"/></p>
 <p>Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
 Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
 Do výchylky odpovídající zápornému proudu se membrána nedostane, protože proud
@@ -171,7 +172,7 @@ Perioda je <span class="math">\(2\,\mathrm{ms}\)</span>. Půl periody tedy <span
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p><img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/obdelnik.png"/></p>
+<p><img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/></p>
 <p>Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
 membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 2\,\mathrm{ms}\)</span>) a pak nechám chvilku ticho.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -207,7 +208,7 @@ membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p><img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/pipani.png"/></p>
+<p><img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/></p>
 <p>Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
 vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
 <a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">multitasking</a> <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> a <a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">stavový automat</a>.</p>
@@ -413,18 +414,19 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/psk.html" title="PSK - Počítačové sítě a komunikační technika">PSK <small>Počítačové sítě a komunikační technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-29T22:03:23+02:00">
-              29. dub 2021 22:03
+            <time itemprop="dateCreated" datetime="2021-05-07T11:37:15+02:00">
+              7. kvě 2021 11:37
             </time>
 
             <h4>Kategorie</h4>
@@ -432,10 +434,10 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">5</span>
+                    <span class="superscript">6</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
-                    <span class="superscript">7</span>
+                    <span class="superscript">8</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#zvuk-ref">zvuk
                     <span class="superscript">1</span>
