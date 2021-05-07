@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 07 May 2021 12:30:25 +0200</lastBuildDate><item><title>Použití časovače jako generátoru PWM</title><link>https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html</link><description>
-&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
-&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Kompletní zdrojové kódy naleznete v 
-&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/"&gt;repositáři&lt;/a&gt; na GitHubu:    &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class="caps"&gt;RGB&lt;/span&gt; &lt;span class="caps"&gt;LED&lt;/span&gt; – &lt;a href="https://github.com/spseol/STM8-TIM2-PWM/tree/RGB_LED"&gt;RGB_LED&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/blob/RGB_LED/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:30:25 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/pouziti-casovace-jako-generatoru-pwm.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>pwm</category></item><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 07 May 2021 12:34:30 +0200</lastBuildDate><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
 &lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Kompletní zdrojové kódy naleznete v 
@@ -21,11 +10,22 @@
 &lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/blob/princip/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;řešení typu stavový automat – &lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/tree/stav_automat"&gt;větev stav_automat&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;řešení typu Stavový automat – &lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/tree/stav_automat"&gt;větev stav_automat&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-ultrasonic/blob/stav_automat/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:26:31 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>senzor</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:34:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>senzor</category></item><item><title>Použití časovače jako generátoru PWM</title><link>https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html</link><description>
+&lt;h2 id="tim2-a-tim3"&gt;&lt;span class="caps"&gt;TIM2&lt;/span&gt; a &lt;span class="caps"&gt;TIM3&lt;/span&gt;&lt;a class="headerlink" href="#tim2-a-tim3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
+&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Kompletní zdrojové kódy naleznete v 
+&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/"&gt;repositáři&lt;/a&gt; na GitHubu:    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class="caps"&gt;RGB&lt;/span&gt; &lt;span class="caps"&gt;LED&lt;/span&gt; – &lt;a href="https://github.com/spseol/STM8-TIM2-PWM/tree/RGB_LED"&gt;RGB_LED&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/blob/RGB_LED/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:30:25 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/pouziti-casovace-jako-generatoru-pwm.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>pwm</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
