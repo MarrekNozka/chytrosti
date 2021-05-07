@@ -2,3 +2,6 @@ pelican
 typogrify
 bs4
 beautifulsoup4
+mdx_include
+invoke
+livereload

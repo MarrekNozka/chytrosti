@@ -4,7 +4,7 @@
 
 AUTHOR = "Marrek Nožka"
 SITENAME = "Chytrosti"
-SITEURL = ""
+SITEURL = "https://chytrosti.marrek.cz/"
 
 PATH = "content"
 
@@ -86,35 +86,39 @@ SOCIAL = (
 
 PROJECTS = [
     {
+        "name": "Marrek.cz",
+        "url": "https://marrek.cz/",
+        "description": "-- osobní webové stránky a blog.",
+    },
+    {
+        "name": "OpenZone",
+        "url": "https://mamut.spseol.cz/openzone/",
+        "description": "-- volnočasové aktivity související se vším, "
+        "čím se zabývám.",
+    },
+    {
         "name": "i3-jinja-config",
         "url": "https://github.com/MarrekNozka/i3-jinja-config",
-        "description": "Vytvoření konfigurace pro i3 window manager"
-        " z Jinja2 šablony.",
+        "description": "-- konfigurace pro i3wm " " z Jinja2 šablony.",
     },
     {
         "name": "JupyterNotebooks",
         "url": "https://github.com/MarrekNozka/IPythonNotebooks",
-        "description": "Technické výpočty a grafy pomocí MatPlotLib.",
+        "description": "-- technické výpočty a grafy pomocí MatPlotLib.",
     },
     {
         "name": "pyOdorik",
         "url": "https://github.com/MarrekNozka/pyOdorik",
-        "description": "Klientská aplikace příkazového řádku pro snadné "
+        "description": "-- klientská CLI aplikace pro snadné "
         "vyhledání kontaktu "
-        "a obědnání zpětného volání u VoIP operátora Odorik.",
+        "a obědnání zpětného volání u VoIP operátora Odorik.cz.",
     },
     {
         "name": "pwscly",
         "url": "https://github.com/MarrekNozka/pwscly",
-        "description": "Aplikace příkazové rádky s fuzzy(fzy) vyhledáváním. "
-        "pwscly najde příslušné heslo v souboru formátu .pwsafe3 a "
-        "uloží ho do clipboardu.",
+        "description": "-- CLI aplikace s fuzzy(fzy) vyhledáváním "
+        "pro snadnou práci s hesly ve formátu .pwsafe3",
     },
-    # {
-    #     "name": "",
-    #     "url": "",
-    #     "description": "",
-    # },
 ]
 
 DEFAULT_PAGINATION = True
@@ -168,5 +172,11 @@ AUTHORS = {
         "avatar": "https://robohash.org/Jakub",
         "blurb": "studen SPŠE Olomouc",
         "url": SITEURL + "/author/jakub-zahalka.html",
+    },
+    "Michal Dudka": {
+        "avatar": "https://robohash.org/Mišák",
+        "blurb": "",
+        # "url": SITEURL + "/author/michal-dudka.html",
+        "url": "https://www.root.cz/autori/michal-dudka/",
     },
 }

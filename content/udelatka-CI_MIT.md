@@ -2,6 +2,7 @@ Title: Udělátka do CIT a MIT
 Author: Jakub Zahálka
 Tags: MIT, PCB
 Category: MITka
+Status: draft
 
 [TOC]
 

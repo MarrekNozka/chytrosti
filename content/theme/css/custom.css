@@ -16,9 +16,52 @@ body {
     overflow-y:  scroll;
 }
 
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h3 {
+    margin-top: 0.7em;
+    font-size: 1.8rem;
+    margin-bottom: 0.7em;
+}
+h4 {
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
+blockquote a:not(.ampl) {
+    color: darkred;
+}
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),
+a:not(.ampl) {
+    display: inline;
+}
+
+/*.related-post-header {*/
+/*    color: darkred;*/
+/*}*/
+
+.elegant-hr {
+    color: darkred;
+    border: 3px solid darkred;
+    border-radius: 4px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+
 pre code {
     white-space: pre;
     overflow-x: auto;
+}
+.codecopy button.codecopy-btn {
+    z-index: auto;
 }
 
 .search-query {
@@ -94,3 +137,23 @@ div.table-of-content ul.related-posts-list {
     list-style-type: none;
     list-style: symbols inside none;
 }
+
+
+img[alt*=">>"] {
+  float: right;
+  margin: 1ex;
+}
+
+img[alt*="<<"] {
+  float: left;
+  margin: 1ex;
+}
+
+img[alt*="|=|"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+
