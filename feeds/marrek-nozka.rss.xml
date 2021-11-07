@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 07 Nov 2021 19:59:56 +0100</lastBuildDate><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 07 Nov 2021 20:02:15 +0100</lastBuildDate><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
+&lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
+sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
+používáme VSCode/Codium.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
+z dílny firmy Microsoft s vestavěnou podporou pro systém
+&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 19:11:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category><category>STM8</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -19,14 +26,7 @@ z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt
 co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
 &lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:56:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
-&lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
-sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
-používáme VSCode/Codium.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
-z dílny firmy Microsoft s vestavěnou podporou pro systém
-&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:56:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:56:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
 &lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:54:36 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
