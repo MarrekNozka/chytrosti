@@ -1,3 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2020-10-20T23:55:30+02:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2020-10-20T23:55:30+02:00</published><updated>2020-10-20T23:55:30+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2020-10-20:/prg.html</id><content type="html">&lt;h2 id="jak-na-to"&gt;Jak na to?&lt;a class="headerlink" href="#jak-na-to" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;jednoduše&amp;nbsp;:-)&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-07T17:43:24+01:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2021-11-07T17:43:24+01:00</published><updated>2021-11-07T17:43:24+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/prg.html</id><summary type="html">
+&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
+výbavě. Tyto texty lze číst buď na 
+&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
+nebo 
+&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="editor"&gt;Editor&lt;a class="headerlink" href="#editor" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Základní instalace Pythonu už sama v sobě obsahuje jednoduché vývojové
+prostředí a jednoduchou interaktivní konzolu &lt;span class="caps"&gt;IDLE&lt;/span&gt;. Toto prostředí je poměrně …&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
+výbavě. Tyto texty lze číst buď na 
+&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
+nebo 
+&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="editor"&gt;Editor&lt;a class="headerlink" href="#editor" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Základní instalace Pythonu už sama v sobě obsahuje jednoduché vývojové
+prostředí a jednoduchou interaktivní konzolu &lt;span class="caps"&gt;IDLE&lt;/span&gt;. Toto prostředí je poměrně
+jednoduché, ale rozhodně se nedá říct, že by se v něm nedalo pracovat. Existuje
+ale celá řada hezčích a propracovanějších 
+&lt;a href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments"&gt;vývojových prostředí&lt;/a&gt;.
+Já doporučuji VSCode/Codium.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
+z dílny firmy Microsoft. Pokud do něj doinstalujete doplněk 
+&lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"&gt;ms-python.python&lt;/a&gt; 
+získáte vývojové prostředí, ve kterém vám s největší pravděpodobností nebude nic chybět.&lt;/p&gt;
+&lt;p&gt;Jen ještě doplním, že pokud by vám (stejně jako mně) vadilo, že Microsoft do 
+balíčku s VSCode zabalí i telemetrii (dřív se tomu říkalo špehování), tak existuje 
+projekt &lt;a href="https://vscodium.com/"&gt;Codium&lt;/a&gt;, který tímto neduhem netrpí. Codium má 
+marketplace nasměrovaný trošku &lt;a href="https://open-vsx.org/extension/ms-python/python"&gt;jinam&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
+    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
+kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
+&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ještě jedna drobnost: pokud se vám nechce pořád dokola zadávat při nahrávání
+své práce na &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt; uživatelské jméno a heslo použijte 
+&lt;a href="https://duckduckgo.com/?q=ssh+kl%C3%AD%C4%8De&amp;amp;t=opera&amp;amp;ia=web"&gt;ssh klíče&lt;/a&gt;.
+K tomu se dobře hodí například 
+&lt;a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"&gt;putty&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="Git"></category><category term="programování"></category></entry></feed>

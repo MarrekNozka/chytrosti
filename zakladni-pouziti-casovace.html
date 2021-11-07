@@ -65,6 +65,9 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
+                                  <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
+                                </li>
+                                <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
                                 </li>
                                 <li class="menupost">
@@ -72,9 +75,6 @@
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost">
-                                  <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
                                 </li>
 
                                 <li ><a href="https://chytrosti.marrek.cz/pages/o-mne.html">O&nbsp;mně</a></li>
@@ -120,9 +120,9 @@
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>
@@ -140,7 +140,7 @@
 <p><img alt="TIM4" src="https://chytrosti.marrek.cz/mit/img/tim4.png"/></p>
 <p>Nastavení se děje pomocí funkce <code>TIM4_TimeBaseInit(PRESCALER, PERIOD)</code>, kde
 <code>PRESCALER</code> je makro, pro nastavení děličky a <code>PERIOD</code> je 8-bitové číslo.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">TIM4_TimeBaseInit</span><span class="p">(</span><span class="n">TIM4_PRESCALER_128</span><span class="p">,</span> <span class="mi">125</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">TIM4_TimeBaseInit</span><span class="p">(</span><span class="n">TIM4_PRESCALER_128</span><span class="p">,</span><span class="w"> </span><span class="mi">125</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p>Takže pokud máme nastaven kmitočet na 16MHz znamená to že čítač čítá do hodnoty
@@ -159,12 +159,12 @@ přerušení od časovače <span class="caps">TIM4</span>.</p>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">TIM4_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span>                       <span class="c1">// povolí TIM4</span>
-  <span class="n">TIM4_ITConfig</span><span class="p">(</span><span class="n">TIM4_IT_UPDATE</span><span class="p">,</span> <span class="n">ENABLE</span><span class="p">);</span>  <span class="c1">// povolí přerušení od TIM4</span>
-  <span class="n">enableInterrupts</span><span class="p">();</span>                     <span class="c1">// globálně povolí přerušení</span>
-  <span class="p">......</span>
-<span class="p">}</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">TIM4_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w">                       </span><span class="c1">// povolí TIM4</span>
+<span class="w">  </span><span class="n">TIM4_ITConfig</span><span class="p">(</span><span class="n">TIM4_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w">  </span><span class="c1">// povolí přerušení od TIM4</span>
+<span class="w">  </span><span class="n">enableInterrupts</span><span class="p">();</span><span class="w">                     </span><span class="c1">// globálně povolí přerušení</span>
+<span class="w">  </span><span class="p">......</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p>Rutina přerušení se standardně nachází v souboru <code>stm8_it.c</code>. Stačí ji najít
@@ -178,12 +178,12 @@ Více o tom se dočtete v postu
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*---        rutina obsluhy přerušení         ---*/</span>
-<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM4_UPD_OVF_IRQHandler</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">TIM4_ClearFlag</span><span class="p">(</span><span class="n">TIM4_FLAG_UPDATE</span><span class="p">);</span> <span class="c1">// vymažu vlajku signalizující přerušení</span>
-    <span class="n">miliseconds</span><span class="o">++</span><span class="p">;</span>                    <span class="c1">// udělám co je třeba....</span>
-<span class="p">}</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*---        rutina obsluhy přerušení         ---*/</span><span class="w"></span>
+<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM4_UPD_OVF_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">23</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TIM4_ClearFlag</span><span class="p">(</span><span class="n">TIM4_FLAG_UPDATE</span><span class="p">);</span><span class="w"> </span><span class="c1">// vymažu vlajku signalizující přerušení</span>
+<span class="w">    </span><span class="n">miliseconds</span><span class="o">++</span><span class="p">;</span><span class="w">                    </span><span class="c1">// udělám co je třeba....</span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p>Všimněte si prosím, že první, co se v rutině přerušení dělá, je, že se <strong>vymaže
@@ -205,21 +205,21 @@ spustit určitý kód vždy přesně v intervalu <span class="math">\(1\,\mathrm
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM2 setup           ---------*/</span>
-<span class="n">TIM2_TimeBaseInit</span><span class="p">(</span><span class="n">TIM2_PRESCALER_512</span><span class="p">,</span> <span class="mi">31250</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">);</span>  <span class="c1">// 16MHz/512/31250 == 1Hz</span>
-<span class="n">TIM2_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span>                       <span class="c1">// povolí TIM2</span>
-<span class="n">TIM2_ITConfig</span><span class="p">(</span><span class="n">TIM2_IT_UPDATE</span><span class="p">,</span> <span class="n">ENABLE</span><span class="p">);</span>  <span class="c1">// povolí přerušení od TIM2</span>
-<span class="n">enableInterrupts</span><span class="p">();</span>                     <span class="c1">// globálně povolí přerušení</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM2 setup           ---------*/</span><span class="w"></span>
+<span class="n">TIM2_TimeBaseInit</span><span class="p">(</span><span class="n">TIM2_PRESCALER_512</span><span class="p">,</span><span class="w"> </span><span class="mi">31250</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">);</span><span class="w">  </span><span class="c1">// 16MHz/512/31250 == 1Hz</span>
+<span class="n">TIM2_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w">                       </span><span class="c1">// povolí TIM2</span>
+<span class="n">TIM2_ITConfig</span><span class="p">(</span><span class="n">TIM2_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w">  </span><span class="c1">// povolí přerušení od TIM2</span>
+<span class="n">enableInterrupts</span><span class="p">();</span><span class="w">                     </span><span class="c1">// globálně povolí přerušení</span>
 </code></pre></div>
 </td></tr></table>
 <p>nastavení <span class="caps">TIM3</span> je analogické:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM3 setup           ---------*/</span>
-<span class="n">TIM3_TimeBaseInit</span><span class="p">(</span><span class="n">TIM3_PRESCALER_16</span><span class="p">,</span> <span class="mi">12345</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">);</span> <span class="c1">// ~81Hz</span>
-<span class="n">TIM3_ITConfig</span><span class="p">(</span><span class="n">TIM3_IT_UPDATE</span><span class="p">,</span> <span class="n">ENABLE</span><span class="p">);</span>
-<span class="n">TIM3_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM3 setup           ---------*/</span><span class="w"></span>
+<span class="n">TIM3_TimeBaseInit</span><span class="p">(</span><span class="n">TIM3_PRESCALER_16</span><span class="p">,</span><span class="w"> </span><span class="mi">12345</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">);</span><span class="w"> </span><span class="c1">// ~81Hz</span>
+<span class="n">TIM3_ITConfig</span><span class="p">(</span><span class="n">TIM3_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w"></span>
+<span class="n">TIM3_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p>No a ještě rutiny přerušení… Opět platí, že <strong>rutiny přerušení buď necháme v souboru
@@ -238,20 +238,20 @@ přesuneme do modulu/souboru ve kterém je proměnná definována</strong>.</p>
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM2_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">TIM2_ClearFlag</span><span class="p">(</span><span class="n">TIM2_FLAG_UPDATE</span><span class="p">);</span>   <span class="c1">// vymažu vlaku signalizující </span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM2_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TIM2_ClearFlag</span><span class="p">(</span><span class="n">TIM2_FLAG_UPDATE</span><span class="p">);</span><span class="w">   </span><span class="c1">// vymažu vlaku signalizující </span>
 
-    <span class="n">udelam_neco_zajimaveho</span><span class="p">();</span>
-    <span class="n">sec</span><span class="o">++</span><span class="p">;</span>
-    <span class="n">a_jeste_neco_jineho</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">udelam_neco_zajimaveho</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">sec</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">a_jeste_neco_jineho</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM3_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">TIM3_ClearFlag</span><span class="p">(</span><span class="n">TIM3_FLAG_UPDATE</span><span class="p">);</span> 
-    <span class="n">LED_REVERSE</span><span class="p">(</span><span class="n">G</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM3_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">TIM3_ClearFlag</span><span class="p">(</span><span class="n">TIM3_FLAG_UPDATE</span><span class="p">);</span><span class="w"> </span>
+<span class="w">    </span><span class="n">LED_REVERSE</span><span class="p">(</span><span class="n">G</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="zdrojove-kody">Zdrojové kódy<a class="headerlink" href="#zdrojove-kody" title="Permanent link">¶</a></h2>
@@ -341,9 +341,9 @@ přesuneme do modulu/souboru ve kterém je proměnná definována</strong>.</p>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>

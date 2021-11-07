@@ -65,6 +65,9 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
+                                  <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
+                                </li>
+                                <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
                                 </li>
                                 <li class="menupost">
@@ -72,9 +75,6 @@
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost">
-                                  <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
                                 </li>
 
                                 <li ><a href="https://chytrosti.marrek.cz/pages/o-mne.html">O&nbsp;mně</a></li>
@@ -118,9 +118,9 @@
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>
@@ -159,17 +159,17 @@ Perioda je <span class="math">\(2\,\mathrm{ms}\)</span>. Půl periody tedy <span
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">init</span><span class="p">();</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">PZ_UP</span><span class="p">;</span>
-        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-        <span class="n">PZ_DOWN</span><span class="p">;</span>
-        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">PZ_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">PZ_DOWN</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p><img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/></p>
@@ -190,22 +190,22 @@ membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 
 <span class="normal">13</span>
 <span class="normal">14</span>
 <span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">init</span><span class="p">();</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-    <span class="kt">uint16_t</span> <span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"></span>
 
-    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">PZ_UP</span><span class="p">;</span>
-            <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-            <span class="n">PZ_DOWN</span><span class="p">;</span>
-            <span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="n">delay_ms</span><span class="p">(</span><span class="mi">60</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">PZ_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="n">PZ_DOWN</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">60</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <p><img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/></p>
@@ -265,60 +265,60 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 <span class="normal">51</span>
 <span class="normal">52</span>
 <span class="normal">53</span>
-<span class="normal">54</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">uint32_t</span> <span class="n">timeL</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">uint32_t</span> <span class="n">lastTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kt">uint16_t</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">enum</span> <span class="n">state_of</span> <span class="p">{</span>
-        <span class="n">STATE_PAUSE</span><span class="p">,</span>
-        <span class="n">STATE_UP</span><span class="p">,</span>
-        <span class="n">STATE_DOWN</span>
-    <span class="p">}</span> <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_UP</span><span class="p">;</span>
-    <span class="kt">uint32_t</span> <span class="n">time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="normal">54</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">timeL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">lastTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="n">state_of</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">STATE_PAUSE</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">STATE_UP</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">STATE_DOWN</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 
-    <span class="n">init</span><span class="p">();</span>
+<span class="w">    </span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">switch</span> <span class="p">(</span><span class="n">state</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="nl">STATE_PAUSE</span><span class="p">:</span>
-            <span class="n">PZ_DOWN</span><span class="p">;</span>            <span class="c1">// v pauze dám repráček do klodového stavu</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">milis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastTime</span> <span class="o">&gt;</span> <span class="mi">4321</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">lastTime</span> <span class="o">=</span> <span class="n">milis</span><span class="p">();</span>
-                <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_UP</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="nl">STATE_UP</span><span class="p">:</span>
-            <span class="n">PZ_UP</span><span class="p">;</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">milis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastTime</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">lastTime</span> <span class="o">=</span> <span class="n">milis</span><span class="p">();</span>
-                <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_DOWN</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="nl">STATE_DOWN</span><span class="p">:</span>
-            <span class="n">PZ_DOWN</span><span class="p">;</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-                <span class="n">lastTime</span> <span class="o">=</span> <span class="n">milis</span><span class="p">();</span>
-                <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_PAUSE</span><span class="p">;</span>
-                <span class="k">break</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">milis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastTime</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">lastTime</span> <span class="o">=</span> <span class="n">milis</span><span class="p">();</span>
-                <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-                <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_UP</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="k">default</span><span class="o">:</span>
-            <span class="n">state</span> <span class="o">=</span> <span class="n">STATE_PAUSE</span><span class="p">;</span>
-        <span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="nl">STATE_PAUSE</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">PZ_DOWN</span><span class="p">;</span><span class="w">            </span><span class="c1">// v pauze dám repráček do klodového stavu</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lastTime</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4321</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">lastTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">                </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="nl">STATE_UP</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">PZ_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lastTime</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">lastTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">                </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_DOWN</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="nl">STATE_DOWN</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">PZ_DOWN</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">                </span><span class="n">lastTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">                </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_PAUSE</span><span class="p">;</span><span class="w"></span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lastTime</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">lastTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">                </span><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">                </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_UP</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"></span>
+<span class="w">            </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">STATE_PAUSE</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
 
-        <span class="k">if</span> <span class="p">(</span><span class="n">milis</span><span class="p">()</span> <span class="o">-</span> <span class="n">timeL</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">timeL</span> <span class="o">=</span> <span class="n">milis</span><span class="p">();</span>
-            <span class="n">LED_REVERSE</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">timeL</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">500</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">timeL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">            </span><span class="n">LED_REVERSE</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="zdrojove-kody">Zdrojové kódy<a class="headerlink" href="#zdrojove-kody" title="Permanent link">¶</a></h2>
@@ -416,9 +416,9 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>
