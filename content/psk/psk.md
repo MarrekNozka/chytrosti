@@ -1,10 +1,17 @@
 title: PSK
 subtitle: Počítačové sítě a komunikační technika
 category: PSKáčko 
-tags: PSK, Linux, STM8
+tags: PSK, Linux
 menu: true
 
 
+Linux
+========
 
-kokodák
-lalal
+![blik :-O]({static}/images/matrix.jpg)
+
+
+Základy počítačových sítí
+============================
+
+
