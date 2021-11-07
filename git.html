@@ -10,24 +10,24 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-        <meta name="author" content="Jakub Zahálka" />
+        <meta name="author" content="Marrek Nožka" />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="MIT, PCB, MITka, " />
+<meta name="keywords" content="programování, Git, Python, Céčko, Programování, " />
 
-<meta property="og:title" content="Udělátka do CIT a MIT "/>
-<meta property="og:url" content="https://chytrosti.marrek.cz/drafts/udelatka-do-cit-a-mit.html" />
-<meta property="og:description" content="Takto se dělá nadpis¶ Toto je text napsaný pomocí Markdown. Tučný text. Nový odstavec se dělá prázdným řádkem. Takto se dělá odkaz. Takto se dělá obrázek: … a takto odkaz pomocí obrázku: Všechny obrázky nahrajte do adresáře img. Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru pelicanconf.py …" />
+<meta property="og:title" content="Git  - Distribuovaný systém správy verzí "/>
+<meta property="og:url" content="https://chytrosti.marrek.cz/git.html" />
+<meta property="og:description" content="Git najdete na https://git-scm.com/. Ovládá se z příkazové řádky. Pokud toužíte po nějakém grafickém ovládání stačí si vybrat z dlouhého seznamu ten, co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou aplikaci. Vynikajícím začátkem s Gitem je volně šiřitelná kniha Pro Git, ve které najdete vše …" />
 <meta property="og:site_name" content="Chytrosti" />
-<meta property="og:article:author" content="Jakub Zahálka" />
-<meta property="og:article:published_time" content="2021-04-16T14:03:04.565771+02:00" />
-<meta property="og:article:modified_time" content="2021-04-16T14:03:04.565771+02:00" />
-<meta name="twitter:title" content="Udělátka do CIT a MIT ">
-<meta name="twitter:description" content="Takto se dělá nadpis¶ Toto je text napsaný pomocí Markdown. Tučný text. Nový odstavec se dělá prázdným řádkem. Takto se dělá odkaz. Takto se dělá obrázek: … a takto odkaz pomocí obrázku: Všechny obrázky nahrajte do adresáře img. Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru pelicanconf.py …">
+<meta property="og:article:author" content="Marrek Nožka" />
+<meta property="og:article:published_time" content="2021-11-07T17:56:00+01:00" />
+<meta property="og:article:modified_time" content="2021-11-07T18:14:25.655609+01:00" />
+<meta name="twitter:title" content="Git  - Distribuovaný systém správy verzí ">
+<meta name="twitter:description" content="Git najdete na https://git-scm.com/. Ovládá se z příkazové řádky. Pokud toužíte po nějakém grafickém ovládání stačí si vybrat z dlouhého seznamu ten, co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou aplikaci. Vynikajícím začátkem s Gitem je volně šiřitelná kniha Pro Git, ve které najdete vše …">
 
-        <title>Udělátka do CIT a MIT  · Chytrosti
+        <title>Git  - Distribuovaný systém správy verzí  · Chytrosti
 </title>
         <link rel="shortcut icon" href="https://chytrosti.marrek.cz/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://chytrosti.marrek.cz/theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -95,8 +95,11 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://chytrosti.marrek.cz/drafts/udelatka-do-cit-a-mit.html">
-                Udělátka do <span class="caps">CIT</span> a <span class="caps">MIT</span>
+            <a href="https://chytrosti.marrek.cz/git.html">
+                Git
+                <small class="subtitle">
+                    Distribuovaný systém správy verzí
+                </small>
             </a>
         </h1>
     </header>
@@ -108,43 +111,77 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#takto-se-dela-nadpis">Takto se dělá nadpis</a></li>
-<li><a href="#dalsi-nadpis">Další nadpis</a></li>
+<li><a href="#webove-sluzby">Webové služby</a></li>
+<li><a href="#pokusy-a-hracicky">Pokusy a hračičky</a></li>
 </ul>
 </div>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+</ul>
+<hr />
+</section>
         </nav>
     </div>
     <div class="span8 article-content">
             
 
             
-<h2 id="takto-se-dela-nadpis">Takto se dělá nadpis<a class="headerlink" href="#takto-se-dela-nadpis" title="Permanent link">¶</a></h2>
-<p>Toto je text napsaný pomocí <a href="https://cs.wikipedia.org/wiki/Markdown">Markdown</a>. <strong>Tučný text</strong>.</p>
-<p>Nový odstavec se dělá prázdným řádkem. 
-Takto se dělá <a href="https://marrek.cz/">odkaz</a>.
-Takto se dělá obrázek: </p>
-<p><img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"/></p>
-<p>… a takto odkaz pomocí obrázku:</p>
-<p><a href="https://easyeda.com/"> <img alt="alternativní text" src="https://chytrosti.marrek.cz/img/photo.jpg"/> </a></p>
-<p>Všechny obrázky nahrajte do adresáře <code>img</code>.</p>
-<p>Jak bude vypadat Jakub Zahálka si můžete nakonfigurovat na konci souboru
-<code>pelicanconf.py</code></p>
-<h2 id="dalsi-nadpis">Další nadpis<a class="headerlink" href="#dalsi-nadpis" title="Permanent link">¶</a></h2>
-<p>konec</p>
+<p>Git najdete na <a href="https://git-scm.com/">https://git-scm.com/</a>. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z <a href="https://git-scm.com/downloads/guis/">dlouhého seznamu</a> ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+<a href="https://desktop.github.com">aplikaci</a>.</p>
+<p>Vynikajícím začátkem s Gitem je volně šiřitelná kniha <a href="https://knihy.nic.cz/#ProGit">Pro Git</a>,
+ve které najdete vše potřebné v češtině. Lze číst i na webu: </p>
+<ul>
+<li><a href="https://git-scm.com/book/cs/v1">první vydání</a> – celé v češtině</li>
+<li><a href="https://git-scm.com/book/cs/v2">druhé vydání</a> – není přeloženo celé;
+    můžete se tedy <a href="https://github.com/pepr/progit2-cs">zapojit do překladu</a>.</li>
+</ul>
+<p>Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si <strong>první tři
+kapitoly</strong>. Nenechte se tedy odradit, stojí to jistě za to.</p>
+<p>Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):</p>
+<ul>
+<li><a href="http://naucse.python.cz/lessons/git/basics/">Git</a></li>
+<li><a href="http://naucse.python.cz/lessons/git/install/">Instalace gitu</a></li>
+<li><a href="http://naucse.python.cz/lessons/git/branching/">Větvení v Gitu</a></li>
+<li><a href="http://naucse.python.cz/lessons/git/ignoring/">Ignorování souborů</a></li>
+<li><a href="http://naucse.python.cz/lessons/git/collaboration/">Spolupráce a Open source</a></li>
+<li><a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/">Spolupráce a Git</a></li>
+</ul>
+<p>Ještě jedna drobnost: pokud se vám nechce pořád dokola zadávat při nahrávání
+své práce na <a href="https://cs.wikipedia.org/wiki/GitHub">GitHub</a> uživatelské jméno a heslo použijte 
+<a href="https://duckduckgo.com/?q=ssh+kl%C3%AD%C4%8De&amp;t=opera&amp;ia=web">ssh klíče</a>.
+K tomu se dobře hodí například 
+<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</a>.</p>
+<h3 id="webove-sluzby">Webové služby<a class="headerlink" href="#webove-sluzby" title="Permanent link">¶</a></h3>
+<p>Nejznámější veřejná úložiště pro Git jsou asi tyto:</p>
+<ul>
+<li><a href="https://github.com">https://github.com</a></li>
+<li><a href="https://gitlab.com">https://gitlab.com</a></li>
+<li><a href="https://bitbucket.org">https://bitbucket.org</a></li>
+</ul>
+<p>Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
+Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.</p>
+<h3 id="pokusy-a-hracicky">Pokusy a hračičky<a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
+<li>Oh my Git: <a href="https://ohmygit.org/">https://ohmygit.org/</a></li>
+</ul>
 
 
              
  
             
-                <hr />
-    <div class="author-blurb">
-        <a href="https://chytrosti.marrek.cz//author/jakub-zahalka.html" target="_blank" rel="nofollow noopener noreferrer">
-            <img src=https://robohash.org/Jakub alt="Jakub Zahálka Avatar" title="Jakub Zahálka">
-            <span class="author-name">Jakub Zahálka</span>
-        </a>
-        studen SPŠE Olomouc
-    </div>
-
+            
             
 
 
@@ -154,20 +191,46 @@ Takto se dělá obrázek: </p>
 
 
             <hr class="elegant-hr" />
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+</ul>
+<hr />
+</section>
         </div>
         <section id="article-sidebar" class="span2">
-              <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-04-16T14:03:04+02:00">
-              16. dub 2021 14:03
+              <h4>Publikováno</h4> 
+            <time itemprop="dateCreated" datetime="2021-11-07T17:56:00+01:00">
+              7. lis 2021 17:56
             </time>
+<h4>Aktualizováno</h4>
+<time datetime="2021-11-07T18:14:25+01:00">
+  07. lis 2021 18:14
+
+</time>
 
             <h4>Kategorie</h4>
-            <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#mitka-ref">MITka</a>
+            <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#programovani-ref">Programování</a>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://chytrosti.marrek.cz/tags.html#mit-ref">MIT
+                <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
+                    <span class="superscript">7</span>
 </a></li>
-                <li><a href="https://chytrosti.marrek.cz/tags.html#pcb-ref">PCB
+                <li><a href="https://chytrosti.marrek.cz/tags.html#git-ref">Git
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
+                    <span class="superscript">2</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>
