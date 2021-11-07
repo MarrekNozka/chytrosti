@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-07T19:57:31+01:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2021-11-07T18:54:33+01:00</published><updated>2021-11-07T18:54:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/prg.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-07T19:59:56+01:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2021-11-07T18:54:33+01:00</published><updated>2021-11-07T18:54:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/prg.html</id><summary type="html">
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -81,7 +81,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="Céčko"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-07T17:56:00+01:00</published><updated>2021-11-07T19:57:31+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="Céčko"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-07T17:56:00+01:00</published><updated>2021-11-07T19:59:56+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</id><summary type="html">
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
 sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium.&lt;/p&gt;
@@ -108,15 +108,15 @@ Pokud se v této situaci ocitnete a opravdu moc toužíte po onom úžasném dop
 na &lt;a href="https://open-vsx.org/"&gt;open-vsx.org&lt;/a&gt; prostě není, stačí ho 
 z  &lt;a href="https://marketplace.visualstudio.com/vscode"&gt;oficiálním maktetplacu&lt;/a&gt; stáhnout
 a v Codiu ručně nainstalovat.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/images/vscode_marketplace.png"/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/images/install-VSIX.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="cliknu na download" src="https://chytrosti.marrek.cz/images/vscode_marketplace.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="a potom na ..." src="https://chytrosti.marrek.cz/images/install-VSIX.png"/&gt;&lt;/p&gt;
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pokud si doinstalujete doplněk 
 &lt;code&gt;ms-python.python&lt;/code&gt;
 (&lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"&gt;zde&lt;/a&gt; nebo
 &lt;a href=""&gt;zde&lt;/a&gt;)
 získáte vývojové prostředí, ve kterém vám s největší pravděpodobností nebude nic chybět.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/images/ms-python.png"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="do vyhledávacího políčka zadám Python" src="https://chytrosti.marrek.cz/images/ms-python.png"/&gt;&lt;/p&gt;
 &lt;h2 id="cecko"&gt;Céčko&lt;a class="headerlink" href="#cecko" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id="stm8"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;a class="headerlink" href="#stm8" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="Céčko"></category></entry><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2021-11-07T17:54:36+01:00</published><updated>2021-11-07T17:54:36+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/psk.html</id><content type="html">&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
