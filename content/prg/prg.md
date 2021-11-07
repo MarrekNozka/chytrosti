@@ -29,18 +29,7 @@ prostředí a jednoduchou interaktivní konzolu IDLE. Toto prostředí je poměr
 jednoduché, ale rozhodně se nedá říct, že by se v něm nedalo pracovat. Existuje
 ale celá řada hezčích a propracovanějších 
 [vývojových prostředí](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
-Já doporučuji VSCode/Codium.
-
-[Visual Studio Code](https://code.visualstudio.com) je brilantní open-source editor 
-z dílny firmy Microsoft. Pokud do něj doinstalujete doplněk 
-[ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 
-získáte vývojové prostředí, ve kterém vám s největší pravděpodobností nebude nic 
-chybět.
-
-Jen ještě doplním, že pokud by vám (stejně jako mně) vadilo, že Microsoft do 
-balíčku s VSCode zabalí i telemetrii (dřív se tomu říkalo špehování), tak existuje 
-projekt [Codium](https://vscodium.com/), který tímto neduhem netrpí. Codium má 
-marketplace nasměrovaný trošku [jinam](https://open-vsx.org/extension/ms-python/python).
+Já doporučuji [VSCode/Codium]({filename}/codium.md).
 
 
 
