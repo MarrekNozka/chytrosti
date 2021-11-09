@@ -2,6 +2,9 @@ output
 # vim
 .*.swp
 
+.stare_virtualni_prostredi-.venv-pelican/
+pip.list
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
