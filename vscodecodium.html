@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-07T19:11:00+01:00" />
-<meta property="og:article:modified_time" content="2021-11-07T20:02:15.230353+01:00" />
+<meta property="og:article:modified_time" content="2021-11-09T18:41:49.858696+01:00" />
 <meta name="twitter:title" content="VSCode/Codium  - Pokročilý editor zdrojových kódů ">
 <meta name="twitter:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Pokud by vám (stejně jako mně) vadilo, že …">
 
@@ -112,9 +112,9 @@
         <div class="toc">
 <ul>
 <li><a href="#python">Python</a></li>
+<li><a href="#git">Git</a></li>
 <li><a href="#cecko">Céčko</a></li>
 <li><a href="#stm8"><span class="caps">STM8</span></a></li>
-<li><a href="#git">Git</a></li>
 </ul>
 </div>
 <section>
@@ -129,6 +129,7 @@
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 </ul>
 <hr />
 </section>
@@ -147,6 +148,12 @@ z dílny firmy Microsoft s vestavěnou podporou pro systém
 <p>Pokud by vám (stejně jako mně) vadilo, že Microsoft do balíčku s VSCode zabalí
 i telemetrii (dřív se tomu říkalo špehování), tak existuje projekt
 <a href="https://vscodium.com/">Codium</a>, který tímto neduhem netrpí.</p>
+<p>Nejjednodušší způsob instalace je pomocí <a href="https://chytrosti.marrek.cz/chocolatey.html">chocolatey</a>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>choco install vscodium
+choco install vscode
+</code></pre></div>
+</td></tr></table>
 <p>Oba projekty pochází ze stejných zdrojových kódů. Liší se pouze v tom, jak jsou
 zabaleny. <a href="https://vscodium.com/">Codium</a> neobsahuje telemetrii a má marketplace nasměrovaný trošku
 <a href="https://open-vsx.org/extension/ms-python/python">jinam</a>. Z toho vyplývá, že pokud 
@@ -166,9 +173,19 @@ a v Codiu ručně nainstalovat.</p>
 <a href="">zde</a>)
 získáte vývojové prostředí, ve kterém vám s největší pravděpodobností nebude nic chybět.</p>
 <p><img alt="do vyhledávacího políčka zadám Python" src="https://chytrosti.marrek.cz/images/ms-python.png"/></p>
+<h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
+<p>Git je v Codiu již integrován v základní podobě. Vše další po čem byst mohli
+v této oblasti toužit dostanete instalací doplňku 
+<a href="https://open-vsx.org/extension/pinage404/git-extension-pack">pinage404.git-extension-pack</a>. 
+Ten v instaluje sadu doplňků:</p>
+<ul>
+<li><a href="https://open-vsx.org/extension/eamodio/gitlens">eamodio.gitlens</a></li>
+<li><a href="https://open-vsx.org/extension/mhutchie/git-graph">mhutchie.git-graph</a></li>
+<li><a href="https://open-vsx.org/extension/felipecaputo/git-project-manager">felipecaputo.git-project-manager</a></li>
+<li><a href="https://open-vsx.org/extension/reduckted/vscode-gitweblinks">reduckted.vscode-gitweblinks</a></li>
+</ul>
 <h2 id="cecko">Céčko<a class="headerlink" href="#cecko" title="Permanent link">¶</a></h2>
 <h2 id="stm8"><span class="caps">STM8</span><a class="headerlink" href="#stm8" title="Permanent link">¶</a></h2>
-<h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
 
 
              
@@ -196,6 +213,7 @@ získáte vývojové prostředí, ve kterém vám s největší pravděpodobnost
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 </ul>
 <hr />
 </section>
@@ -206,8 +224,8 @@ získáte vývojové prostředí, ve kterém vám s největší pravděpodobnost
               7. lis 2021 19:11
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2021-11-07T20:02:15+01:00">
-  07. lis 2021 20:02
+<time datetime="2021-11-09T18:41:49+01:00">
+  09. lis 2021 18:41
 
 </time>
 
@@ -219,16 +237,16 @@ získáte vývojové prostředí, ve kterém vám s největší pravděpodobnost
                     <span class="superscript">8</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#git-ref">Git
-                    <span class="superscript">2</span>
-</a></li>
-                <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
-                    <span class="superscript">4</span>
-</a></li>
-                <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
                     <span class="superscript">3</span>
 </a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
+                    <span class="superscript">5</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
+                    <span class="superscript">4</span>
+</a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
-                    <span class="superscript">8</span>
+                    <span class="superscript">9</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

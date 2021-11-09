@@ -15,19 +15,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Céčko, STM8, MITka, " />
+<meta name="keywords" content="programování, Git, Python, STM8, Programování, " />
 
-<meta property="og:title" content="Oddělená kompilace a vlastní knihovny "/>
-<meta property="og:url" content="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" />
-<meta property="og:description" content="Zde se pokusím ukázatttt" />
+<meta property="og:title" content="Chocolatey  - The package manager for Windows "/>
+<meta property="og:url" content="https://chytrosti.marrek.cz/chocolatey.html" />
+<meta property="og:description" content="Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí. Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte SW nikde dlouze hledat instalovat atd. Například instalaci VSCodia …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
-<meta property="og:article:modified_time" content="2021-05-12T19:49:26.934902+02:00" />
-<meta name="twitter:title" content="Oddělená kompilace a vlastní knihovny ">
-<meta name="twitter:description" content="Zde se pokusím ukázatttt">
+<meta property="og:article:published_time" content="2021-11-09T17:28:00+01:00" />
+<meta property="og:article:modified_time" content="2021-11-09T18:11:32.483746+01:00" />
+<meta name="twitter:title" content="Chocolatey  - The package manager for Windows ">
+<meta name="twitter:description" content="Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí. Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte SW nikde dlouze hledat instalovat atd. Například instalaci VSCodia …">
 
-        <title>Oddělená kompilace a vlastní knihovny  · Chytrosti
+        <title>Chocolatey  - The package manager for Windows  · Chytrosti
 </title>
         <link rel="shortcut icon" href="https://chytrosti.marrek.cz/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="https://chytrosti.marrek.cz/theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -95,21 +95,109 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html">
-                Oddělená kompilace a vlastní&nbsp;knihovny
+            <a href="https://chytrosti.marrek.cz/chocolatey.html">
+                Chocolatey
+                <small class="subtitle">
+                    The package manager for Windows
+                </small>
             </a>
         </h1>
     </header>
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
+    <div class="span2 table-of-content">
+        <nav>
+        <h2 class="related-post-header">Obsah</h2>
+        <div class="toc">
+<ul>
+<li><a href="#instalace-chocolatey">Instalace chocolatey</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#stm8"><span class="caps">STM8</span></a></li>
+</ul>
+</div>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+</ul>
+<hr />
+</section>
+        </nav>
+    </div>
+    <div class="span8 article-content">
             
 
-            <p>ahoj aaa
-aaa&nbsp;bbb</p>
-<p>dfjdk</p>
-<p>konec</p>
+            
+<p>Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží
+o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.</p>
+<p>Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte <span class="caps">SW</span> nikde
+dlouze hledat instalovat atd. 
+Například instalaci VSCodia a Pythonu zajistí tyto dva příkazy:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>choco install vscodium
+choco install python
+</code></pre></div>
+</td></tr></table>
+<p>Pokud vás zajímá co všechno v repositáři balíčků najdete koukněte se na 
+<a href="https://community.chocolatey.org/packages">https://community.chocolatey.org/packages</a>.</p>
+<h2 id="instalace-chocolatey">Instalace chocolatey<a class="headerlink" href="#instalace-chocolatey" title="Permanent link">¶</a></h2>
+<p>Celý projekt na jdete na stránce <a href="https://chocolatey.org">https://chocolatey.org</a>. Pokyny 
+jak to celá nainstalovat potom na <a href="https://chocolatey.org/install">https://chocolatey.org/install</a>.
+Když to hodně zjednoduším:</p>
+<p>Pomocí <code>Win+X</code> a spustíte PowerShell jako Administrátor
+a zadáte příkaz:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Set</span><span class="o">-</span><span class="n">ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-</span><span class="n">Scope</span> <span class="n">Process</span> <span class="o">-</span><span class="n">Force</span><span class="p">;</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">=</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">-</span><span class="n">bor</span> <span class="mi">3072</span><span class="p">;</span> <span class="n">iex</span> <span class="p">((</span><span class="n">New</span><span class="o">-</span><span class="nb nb-Type">Object</span> <span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">WebClient</span><span class="p">)</span><span class="o">.</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table>
+<p>Pokud chcete nějaké klikátko tak ho doinstalujete příkazem:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>choco install chocolateygui
+</code></pre></div>
+</td></tr></table>
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">¶</a></h2>
+<p>Pokud pracujete s <a href="https://chytrosti.marrek.cz/prg.html">Pythonem</a> stačí nainstalovat VSCodium
+<a href="https://chytrosti.marrek.cz/vscodecodium.html">nebo</a> VScode… a Python a taky asi Git</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>choco install vscodium
+choco install vscode
+
+choco install python
+choco install git
+</code></pre></div>
+</td></tr></table>
+<h2 id="stm8"><span class="caps">STM8</span><a class="headerlink" href="#stm8" title="Permanent link">¶</a></h2>
+<p>Pokud pracujete v <a href="https://chytrosti.marrek.cz/mit.html"><span class="caps">MIT</span></a> s <span class="caps">STM8</span> nainstalujete VSCodium
+<a href="https://chytrosti.marrek.cz/vscodecodium.html">nebo</a> VScode… a Git a <span class="caps">GNU</span> Make a OpenOCD. No a <span class="caps">GCC</span> a Python
+se taky docela hodí.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>choco install vscodium
+choco install vscode
+
+choco install git
+choco install make
+choco install openocd
+choco install mingw
+choco install python
+</code></pre></div>
+</td></tr></table>
 
 
              
@@ -129,35 +217,42 @@ aaa&nbsp;bbb</p>
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Publikováno</h4> 
-            <time itemprop="dateCreated" datetime="2021-04-23T07:44:00+02:00">
-              23. dub 2021 7:44
+            <time itemprop="dateCreated" datetime="2021-11-09T17:28:00+01:00">
+              9. lis 2021 17:28
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2021-05-12T19:49:26+02:00">
-  12. kvě 2021 19:49
+<time datetime="2021-11-09T18:11:32+01:00">
+  09. lis 2021 18:11
 
 </time>
 
             <h4>Kategorie</h4>
-            <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#mitka-ref">MITka</a>
+            <a class="category-link" href="https://chytrosti.marrek.cz/categories.html#programovani-ref">Programování</a>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">8</span>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#git-ref">Git
+                    <span class="superscript">3</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
+                    <span class="superscript">5</span>
+</a></li>
+                <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
+                    <span class="superscript">4</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#stm8-ref">STM8
                     <span class="superscript">9</span>

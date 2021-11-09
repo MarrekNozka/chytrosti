@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 07 Nov 2021 20:02:15 +0100</lastBuildDate><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 09 Nov 2021 18:41:49 +0100</lastBuildDate><item><title>Chocolatey</title><link>https://chytrosti.marrek.cz/chocolatey.html</link><description>
+&lt;p&gt;Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží
+o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
+&lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
+dlouze hledat instalovat atd. 
+Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 17:28:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
 sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium.&lt;/p&gt;
