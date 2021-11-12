@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-07T19:11:00+01:00" />
-<meta property="og:article:modified_time" content="2021-11-09T18:41:49.858696+01:00" />
+<meta property="og:article:modified_time" content="2021-11-12T16:34:21.607625+01:00" />
 <meta name="twitter:title" content="VSCode/Codium  - Pokročilý editor zdrojových kódů ">
 <meta name="twitter:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Pokud by vám (stejně jako mně) vadilo, že …">
 
@@ -65,13 +65,13 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
+                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
+                                </li>
+                                <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/prg.html" ><span class="caps">PRG</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost">
-                                  <a href="https://chytrosti.marrek.cz/mit.html" ><span class="caps">MIT</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="https://chytrosti.marrek.cz/sit.html" ><span class="caps">SIT</span></a>
@@ -120,16 +120,16 @@
 <section>
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
-<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>
@@ -156,10 +156,10 @@ choco install vscode
 </td></tr></table>
 <p>Oba projekty pochází ze stejných zdrojových kódů. Liší se pouze v tom, jak jsou
 zabaleny. <a href="https://vscodium.com/">Codium</a> neobsahuje telemetrii a má marketplace nasměrovaný trošku
-<a href="https://open-vsx.org/extension/ms-python/python">jinam</a>. Z toho vyplývá, že pokud 
-u Codia mohou nastat problémy při instalaci některých doplňků, protože
+<a href="https://open-vsx.org/extension/ms-python/python">jinam</a>. Z toho vyplývá, že 
+mohou nastat problémy při instalaci některých doplňků, protože
 na <a href="https://open-vsx.org/">open-vsx.org</a> nejsou všechny doplňky, které najdete
-na <a href="https://marketplace.visualstudio.com/vscode">oficiálním maktetplacu</a>.
+na <a href="https://marketplace.visualstudio.com/vscode">oficiálním maktetplacu</a> a naopak.
 Pokud se v této situaci ocitnete a opravdu moc toužíte po onom úžasném doplňku, který
 na <a href="https://open-vsx.org/">open-vsx.org</a> prostě není, stačí ho 
 z  <a href="https://marketplace.visualstudio.com/vscode">oficiálním maktetplacu</a> stáhnout
@@ -176,13 +176,13 @@ získáte vývojové prostředí, ve kterém vám s největší pravděpodobnost
 <h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
 <p>Git je v Codiu již integrován v základní podobě. Vše další po čem byst mohli
 v této oblasti toužit dostanete instalací doplňku 
-<a href="https://open-vsx.org/extension/pinage404/git-extension-pack">pinage404.git-extension-pack</a>. 
+Git Extension Pack <a href="https://open-vsx.org/extension/pinage404/git-extension-pack">pinage404.git-extension-pack</a>. 
 Ten v instaluje sadu doplňků:</p>
 <ul>
-<li><a href="https://open-vsx.org/extension/eamodio/gitlens">eamodio.gitlens</a></li>
-<li><a href="https://open-vsx.org/extension/mhutchie/git-graph">mhutchie.git-graph</a></li>
-<li><a href="https://open-vsx.org/extension/felipecaputo/git-project-manager">felipecaputo.git-project-manager</a></li>
-<li><a href="https://open-vsx.org/extension/reduckted/vscode-gitweblinks">reduckted.vscode-gitweblinks</a></li>
+<li>GitLens <a href="https://open-vsx.org/extension/eamodio/gitlens">eamodio.gitlens</a></li>
+<li>Git Graph <a href="https://open-vsx.org/extension/mhutchie/git-graph">mhutchie.git-graph</a></li>
+<li>Git Project Manager <a href="https://open-vsx.org/extension/felipecaputo/git-project-manager">felipecaputo.git-project-manager</a></li>
+<li>Git Web Links <a href="https://open-vsx.org/extension/reduckted/vscode-gitweblinks">reduckted.vscode-gitweblinks</a></li>
 </ul>
 <h2 id="cecko">Céčko<a class="headerlink" href="#cecko" title="Permanent link">¶</a></h2>
 <h2 id="stm8"><span class="caps">STM8</span><a class="headerlink" href="#stm8" title="Permanent link">¶</a></h2>
@@ -204,16 +204,16 @@ Ten v instaluje sadu doplňků:</p>
 <section>
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
-<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
-<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
 </section>
@@ -224,8 +224,8 @@ Ten v instaluje sadu doplňků:</p>
               7. lis 2021 19:11
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2021-11-09T18:41:49+01:00">
-  09. lis 2021 18:41
+<time datetime="2021-11-12T16:34:21+01:00">
+  12. lis 2021 16:34
 
 </time>
 
@@ -234,13 +234,13 @@ Ten v instaluje sadu doplňků:</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://chytrosti.marrek.cz/tags.html#cecko-ref">Céčko
-                    <span class="superscript">8</span>
+                    <span class="superscript">9</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#git-ref">Git
                     <span class="superscript">3</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
-                    <span class="superscript">5</span>
+                    <span class="superscript">6</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
                     <span class="superscript">4</span>

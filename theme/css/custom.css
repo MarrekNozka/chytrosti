@@ -20,18 +20,25 @@ body {
 h2 {
     font-size: 2.2rem;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1ex;
 }
 h3 {
     margin-top: 0.7em;
     font-size: 1.8rem;
-    margin-bottom: 0.7em;
+    border-bottom: 0px solid black;
+    margin-bottom: 1ex;
 }
 h4 {
     margin-top: 0.5em;
     font-size: 1.5rem;
-    margin-bottom: 0.5em;
+    border-bottom: 0px solid black;
+    margin-bottom: 1ex;
 }
+
+.article-content p {
+    margin-bottom: 0.8ex;
+}
+
 
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
