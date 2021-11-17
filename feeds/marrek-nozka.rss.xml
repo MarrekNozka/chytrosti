@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 20:27:46 +0100</lastBuildDate><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 20:51:04 +0100</lastBuildDate><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
+&lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
+sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
+používáme VSCode/Codium.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
+z dílny firmy Microsoft s vestavěnou podporou pro systém
+&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 20:51:04 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category><category>STM8</category></item><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
@@ -54,14 +61,7 @@ kontrola licence, je fakt opruz; a …&lt;/p&gt;</description><dc:creator xmlns:
 o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
 &lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
 dlouze hledat instalovat atd. 
-Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 17:28:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
-&lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
-sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
-používáme VSCode/Codium.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
-z dílny firmy Microsoft s vestavěnou podporou pro systém
-&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 19:11:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category><category>STM8</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 17:28:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
