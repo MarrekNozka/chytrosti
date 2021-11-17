@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-07T17:56:00+01:00" />
-<meta property="og:article:modified_time" content="2021-11-17T14:04:41.014697+01:00" />
+<meta property="og:article:modified_time" content="2021-11-17T20:23:49.565463+01:00" />
 <meta name="twitter:title" content="Git  - Distribuovaný systém správy verzí ">
 <meta name="twitter:description" content="Git najdete na https://git-scm.com/. Ovládá se z příkazové řádky. Pokud toužíte po nějakém grafickém ovládání stačí si vybrat z dlouhého seznamu ten, co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou aplikaci. Vynikajícím začátkem s Gitem je volně šiřitelná kniha Pro Git, ve které najdete vše …">
 
@@ -115,7 +115,12 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#instalace">Instalace</a></li>
+<li><a href="#instalace">Instalace</a><ul>
+<li><a href="#pocatecni-nastaveni">Počáteční nastavení</a></li>
+<li><a href="#ssh"><span class="caps">SSH</span></a></li>
+<li><a href="#https"><span class="caps">HTTPS</span></a></li>
+</ul>
+</li>
 <li><a href="#webove-sluzby">Webové služby</a></li>
 <li><a href="#pokusy-a-hracicky">Pokusy a hračičky</a></li>
 </ul>
@@ -134,6 +139,7 @@
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 </ul>
 <hr />
 </section>
@@ -173,6 +179,54 @@ K tomu se dobře hodí například
 <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</a>.</p>
 <h3 id="instalace">Instalace<a class="headerlink" href="#instalace" title="Permanent link">¶</a></h3>
 <p>Doporučuji použít <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatey</a></p>
+<div class="highlight"><pre><span></span><code>choco install git
+</code></pre></div>
+<h4 id="pocatecni-nastaveni">Počáteční nastavení<a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link">¶</a></h4>
+<p>Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
+jméno a e-mail autora je součástí každého snímku – commitu.</p>
+<div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">"John Doe"</span>
+git config --global user.email john@doe.name
+</code></pre></div>
+<p>Parametr <code>--global</code> říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
+nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.</p>
+<h4 id="ssh"><span class="caps">SSH</span><a class="headerlink" href="#ssh" title="Permanent link">¶</a></h4>
+<p>Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. <a href="https://cs.wikipedia.org/wiki/GitHub">GitHub</a>
+nebo <a href="https://cs.wikipedia.org/wiki/GitLab">GitLab</a>), je <a href="https://cs.wikipedia.org/wiki/SSH"><span class="caps">SSH</span></a> jeden se způsobů jak (pohodlně) přenášet data mezi
+lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
+<a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie">key-pair</a>.</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen
+</code></pre></div>
+<p>nebo</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519
+</code></pre></div>
+<p>Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu nechcete
+použít a stačí vám utajení klíče, který bude ležet na vašem disku, dejte jen dvakrát Enter.</p>
+<p>Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
+<code>~/.ssh/id_ed25519</code> pro tajný/privátní klíč a <code>~/.ssh/id_ed25519.pub</code> pro veřejný klíč.</p>
+<p>Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou <code>.pub</code>,
+uložíte do svého profilu na GitHub/GitLab: <code>Settings -&gt; SSH and GPG keys</code>.</p>
+<p>Další detaily naleznete například v <a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne">tomto článku na AbcLinuxu</a>.</p>
+<h4 id="https"><span class="caps">HTTPS</span><a class="headerlink" href="#https" title="Permanent link">¶</a></h4>
+<p>Druhým, alternativním způsobem přenosu dat je protokol <span class="caps">HTTPS</span>. Zde je třeba při
+každém přenosu <a href="https://git-scm.com/docs/gitcredentials">zadávat</a> jméno a
+heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Git říct takto:</p>
+<div class="highlight"><pre><span></span><code>git config --global credential.helper klicenka_cmd
+</code></pre></div>
+<p>Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
+přímo Git v <a href="https://git-scm.com/docs/git-credential-store">nešifrované podobě</a>, je
+to tento příkaz:</p>
+<div class="highlight"><pre><span></span><code>git config --global credential.helper store
+</code></pre></div>
+<p>Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
+<code>~/.git-credentials</code>. Ten může vypadat třeba takto:</p>
+<div class="highlight"><pre><span></span><code>https://jmeno:personal_token@github.com
+https://jmeno:heslo_nebo_token@gitlab.com
+</code></pre></div>
+<p>Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
+<a href="https://git-scm.com/docs/git-credential-cache">nastaví se</a> <code>.helper</code> na <code>cache</code>.</p>
+<p>Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
+vygenerovat <a href="https://github.com/settings/tokens">Personal access token</a>.
+(Až ho budete generovat, tak v právech odfajfkujte <code>workflow</code>.)</p>
 <h3 id="webove-sluzby">Webové služby<a class="headerlink" href="#webove-sluzby" title="Permanent link">¶</a></h3>
 <p>Nejznámější veřejná úložiště pro Git jsou asi tyto:</p>
 <ul>
@@ -216,6 +270,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 </ul>
 <hr />
 </section>
@@ -226,8 +281,8 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
               7. lis 2021 17:56
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2021-11-17T14:04:41+01:00">
-  17. lis 2021 14:04
+<time datetime="2021-11-17T20:23:49+01:00">
+  17. lis 2021 20:23
 
 </time>
 
@@ -242,10 +297,10 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
                     <span class="superscript">3</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
-                    <span class="superscript">7</span>
+                    <span class="superscript">8</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
-                    <span class="superscript">5</span>
+                    <span class="superscript">6</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

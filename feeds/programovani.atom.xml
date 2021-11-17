@@ -1,33 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-17T15:30:06+01:00</updated><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2021-11-17T15:30:06+01:00</published><updated>2021-11-17T15:30:06+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/dbi.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-17T20:27:46+01:00</updated><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2021-11-17T16:54:52+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
+&lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
+nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
+spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
+&lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
+prostředí …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
+nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
+spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
+&lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
+prostředí nebo jen pro jednoho uživatele? &lt;/p&gt;
+&lt;p&gt;Dále je dobré si všímat žlutých varovných hlášení a řídit se jejich radou:&lt;/p&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;WARNING&lt;/span&gt;: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the ‘/usr/bin/python3.9 -m pip install 
+–upgrade pip’ command.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Hodně zásadní je chybové hlášení, které může vypadat například takto:&lt;/p&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;WARNING&lt;/span&gt;: The scripts pip, pip3 and pip3.9 are installed in
+‘/home/marek/.local/bin’ which is not on &lt;span class="caps"&gt;PATH&lt;/span&gt;. Consider adding this directory
+to &lt;span class="caps"&gt;PATH&lt;/span&gt; or, if you prefer to suppress this warning, use –no-warn-script-location.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Spustitelný skript se nainstaloval tam, kde ho váš shell nenajde. Je třeba toto místo
+přidat do proměnné &lt;code&gt;PATH&lt;/code&gt;. Ve Windows to musíte naklikat, v Linuxu je to soubor
+&lt;code&gt;~/.profile&lt;/code&gt; nebo &lt;code&gt;~/.zprofile&lt;/code&gt; (podle toho, jaký používáte shell).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PATH=~.local/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="globalni-instalace"&gt;Globální instalace&lt;a class="headerlink" href="#globalni-instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pokud budete balíček instalovat globálně pro celý systém potřebujete administrátorská
+práva. Je třeba se ujistit, že si tím nepokazíte něco, co už nainstalované máte. Mohlo
+by se stát, že máte nainstalovanou nějakou aplikaci, která potřebuje knihovnu verze 
+&lt;code&gt;x.y&lt;/code&gt; a vy nyní nainstalujete tu stejnou knihovnu verze &lt;code&gt;y.z&lt;/code&gt;. Na windows toto většinou
+řešit nemusíte, na Linuxu typicky ano. (Na druhou stranu v Linuxu můžete spoustu
+knihoven nainstalovat i bez pipu z repositářů vaší distribuce: 
+&lt;code&gt;apt install pytho3-flask&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Takže spustíte si příkazový řádek jako superuživatel a zadáte něco jako:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+pip install pyglet
+pip install jmeno_balicku
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="uzivatelska-instalace"&gt;Uživatelská instalace&lt;a class="headerlink" href="#uzivatelska-instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;K uživatelské instalaci nepotřebujete administrátorská práva, protože balíčky se
+instalují do vašeho domovského adresáře (profilu). Na Linuxu je to typicky adresář
+&lt;code&gt;~/.local/lib/python3.X&lt;/code&gt; pro balíčky a &lt;code&gt;~/.local/bin&lt;/code&gt; pro spustitelné skripty.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install --user flask 
+pip install --user pyglet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="virtualni-prostredi"&gt;Virtuální prostředí?&lt;a class="headerlink" href="#virtualni-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments"&gt;Virtuální prostředí&lt;/a&gt;
+umožňuje mít instalaci Pythonu (jakoby) oddělenou od instalace
+v systému. Pro každý projekt si vytvoříte vlastní virtuální prostředí a do něj
+instalujete potřebné balíčky v potřebné verzi. Ostatní systém a ostatní balíčky si
+toho vůbec nevšimnou.&lt;/p&gt;
+&lt;h3 id="vytvoreni"&gt;Vytvoření&lt;a class="headerlink" href="#vytvoreni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Nejprve je třeba virtuální prostředí vytvořit. Např. do adresáře &lt;code&gt;.venv-projekt1&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3 -m venv .venv-projekt1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="aktivace"&gt;Aktivace&lt;a class="headerlink" href="#aktivace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Před začátkem práce je třeba vždy prostředí aktivovat.&lt;/p&gt;
+&lt;p&gt;V Linuxu:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;source .venv-projekt1/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ve Windows&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.venv-projekt1&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="no"&gt;Scripts&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="no"&gt;activate.bat&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="prace"&gt;Práce&lt;a class="headerlink" href="#prace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Prostředí je aktivováno a pokud tu pustíte Python bude bude vidět jen to, co je
+zahrnuto v tomto virtuálním prostředí. Pokud pustíte &lt;code&gt;pip&lt;/code&gt;, bude instalovat do tohoto prostředí.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U pip
+pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="deaktivace"&gt;Deaktivace&lt;a class="headerlink" href="#deaktivace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="aktualizace"&gt;Aktualizace&lt;a class="headerlink" href="#aktualizace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Aktualizace balíčků na nejnovější dostupnou verzi provedete parametrem &lt;code&gt;-U&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U pip
+pip install -U flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install --user -U pip
+pip install --user -U pyglet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2021-11-17T15:30:06+01:00</published><updated>2021-11-17T15:30:06+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/dbi.html</id><summary type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
 zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="{filename}/pip.md"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary><content type="html">
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro …&lt;/p&gt;</summary><content type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
 zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="{filename}/pip.md"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
 &lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
@@ -56,7 +143,7 @@ nebo
 &lt;ul&gt;
 &lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="{filename}/pip.md"&gt;pip&lt;/a&gt; a přidat si Python do 
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
 proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
@@ -68,7 +155,7 @@ nebo
 &lt;ul&gt;
 &lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="{filename}/pip.md"&gt;pip&lt;/a&gt; a přidat si Python do 
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
 proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment variables&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="editor"&gt;Editor&lt;a class="headerlink" href="#editor" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Základní instalace Pythonu už sama v sobě obsahuje jednoduché vývojové
@@ -90,7 +177,7 @@ za dobré zmínit, že Python má svou vlastní – docela dobrou –
 &lt;a href="https://doc.python.org/"&gt;dokumentaci&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="knihovny"&gt;Knihovny&lt;a class="headerlink" href="#knihovny" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Knihovny se nejlépe instalují pomocí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Tématu se věnuji
-v &lt;a href="{filename}/pip.md"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>Chocolatey</title><link href="https://chytrosti.marrek.cz/chocolatey.html" rel="alternate"></link><published>2021-11-09T17:28:00+01:00</published><updated>2021-11-09T18:11:32+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</id><summary type="html">
+v &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>Chocolatey</title><link href="https://chytrosti.marrek.cz/chocolatey.html" rel="alternate"></link><published>2021-11-09T17:28:00+01:00</published><updated>2021-11-17T20:27:46+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</id><summary type="html">
 &lt;p&gt;Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží
 o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
 &lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
@@ -101,11 +188,9 @@ o co nejjednodušší instalaci software. Podobný způsob instalace je znám z 
 &lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
 dlouze hledat instalovat atd. 
 Například instalaci VSCodia a Pythonu zajistí tyto dva příkazy:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
 choco install python
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Pokud vás zajímá co všechno v repositáři balíčků najdete koukněte se na 
 &lt;a href="https://community.chocolatey.org/packages"&gt;https://community.chocolatey.org/packages&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-chocolatey"&gt;Instalace chocolatey&lt;a class="headerlink" href="#instalace-chocolatey" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -114,39 +199,25 @@ jak to celá nainstalovat potom na &lt;a href="https://chocolatey.org/install"&g
 Když to hodně zjednoduším:&lt;/p&gt;
 &lt;p&gt;Pomocí &lt;code&gt;Win+X&lt;/code&gt; a spustíte PowerShell jako Administrátor
 a zadáte příkaz:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ExecutionPolicy&lt;/span&gt; &lt;span class="n"&gt;Bypass&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Scope&lt;/span&gt; &lt;span class="n"&gt;Process&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Force&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bor&lt;/span&gt; &lt;span class="mi"&gt;3072&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;iex&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;New&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb nb-Type"&gt;Object&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WebClient&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DownloadString&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'https://community.chocolatey.org/install.ps1'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ExecutionPolicy&lt;/span&gt; &lt;span class="n"&gt;Bypass&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Scope&lt;/span&gt; &lt;span class="n"&gt;Process&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Force&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bor&lt;/span&gt; &lt;span class="mi"&gt;3072&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;iex&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;New&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb nb-Type"&gt;Object&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WebClient&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DownloadString&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'https://community.chocolatey.org/install.ps1'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Pokud chcete nějaké klikátko tak ho doinstalujete příkazem:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install chocolateygui
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install chocolateygui
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pokud pracujete s &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;Pythonem&lt;/a&gt; stačí nainstalovat VSCodium
 &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html"&gt;nebo&lt;/a&gt; VScode… a Python a taky asi Git&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
 choco install vscode
 
 choco install python
 choco install git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;h2 id="stm8"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;a class="headerlink" href="#stm8" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pokud pracujete v &lt;a href="https://chytrosti.marrek.cz/mit.html"&gt;&lt;span class="caps"&gt;MIT&lt;/span&gt;&lt;/a&gt; s &lt;span class="caps"&gt;STM8&lt;/span&gt; nainstalujete VSCodium
 &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html"&gt;nebo&lt;/a&gt; VScode… a Git a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make a OpenOCD. No a &lt;span class="caps"&gt;GCC&lt;/span&gt; a Python
 se taky docela hodí.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;
-&lt;span class="normal"&gt;6&lt;/span&gt;
-&lt;span class="normal"&gt;7&lt;/span&gt;
-&lt;span class="normal"&gt;8&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
 choco install vscode
 
 choco install git
@@ -154,8 +225,7 @@ choco install make
 choco install openocd
 choco install mingw
 choco install python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-07T19:11:00+01:00</published><updated>2021-11-17T14:02:52+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-07T19:11:00+01:00</published><updated>2021-11-17T14:02:52+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/vscodecodium.html</id><summary type="html">
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
 sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium.&lt;/p&gt;
@@ -173,11 +243,9 @@ z dílny firmy Microsoft s vestavěnou podporou pro systém
 i telemetrii (dřív se tomu říkalo špehování), tak existuje projekt
 &lt;a href="https://vscodium.com/"&gt;Codium&lt;/a&gt;, který tímto neduhem netrpí.&lt;/p&gt;
 &lt;p&gt;Nejjednodušší způsob instalace je pomocí &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;chocolatey&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium
 choco install vscode
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Oba projekty pochází ze stejných zdrojových kódů. Liší se pouze v tom, jak jsou
 zabaleny. &lt;a href="https://vscodium.com/"&gt;Codium&lt;/a&gt; neobsahuje telemetrii a má marketplace nasměrovaný trošku
 &lt;a href="https://open-vsx.org/extension/ms-python/python"&gt;jinam&lt;/a&gt;. Z toho vyplývá, že 
@@ -209,7 +277,7 @@ Ten v instaluje sadu doplňků:&lt;/p&gt;
 &lt;li&gt;Git Web Links &lt;a href="https://open-vsx.org/extension/reduckted/vscode-gitweblinks"&gt;reduckted.vscode-gitweblinks&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="cecko"&gt;Céčko&lt;a class="headerlink" href="#cecko" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id="stm8"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;a class="headerlink" href="#stm8" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2021-11-07T17:56:00+01:00</published><updated>2021-11-17T14:04:41+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/git.html</id><summary type="html">
+&lt;h2 id="stm8"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;a class="headerlink" href="#stm8" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2021-11-07T17:56:00+01:00</published><updated>2021-11-17T20:23:49+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -247,6 +315,54 @@ K tomu se dobře hodí například
 &lt;a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"&gt;putty&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
+jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
+git config --global user.email john@doe.name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
+nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
+&lt;h4 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
+nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
+lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
+&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu nechcete
+použít a stačí vám utajení klíče, který bude ležet na vašem disku, dejte jen dvakrát Enter.&lt;/p&gt;
+&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
+&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
+&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
+uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
+každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
+heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Git říct takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
+přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
+to tento příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
+&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
+https://jmeno:heslo_nebo_token@gitlab.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
+&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
+vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
+(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)&lt;/p&gt;
 &lt;h3 id="webove-sluzby"&gt;Webové služby&lt;a class="headerlink" href="#webove-sluzby" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
 &lt;ul&gt;

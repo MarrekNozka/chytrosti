@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 15:30:06 +0100</lastBuildDate><item><title>DBI</title><link>https://chytrosti.marrek.cz/dbi.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 20:27:46 +0100</lastBuildDate><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
+&lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
+nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
+spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
+&lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
+prostředí …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 15:35:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/pip.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>DBI</title><link>https://chytrosti.marrek.cz/dbi.html</link><description>
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
 zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="{filename}/pip.md"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 15:30:06 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/dbi.html</guid><category>Programování</category><category>Python</category><category>programování</category><category>web</category><category>databáze</category><category>Flask</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 15:30:06 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/dbi.html</guid><category>Programování</category><category>Python</category><category>programování</category><category>web</category><category>databáze</category><category>Flask</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -23,7 +31,7 @@ nebo
 &lt;ul&gt;
 &lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="{filename}/pip.md"&gt;pip&lt;/a&gt; a přidat si Python do 
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
 proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 14:27:44 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/prg.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;

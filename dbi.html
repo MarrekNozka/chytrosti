@@ -19,13 +19,13 @@
 
 <meta property="og:title" content="DBI  - Databázové a informační systémy "/>
 <meta property="og:url" content="https://chytrosti.marrek.cz/dbi.html" />
-<meta property="og:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu. Ve Windows to může vypadat třeba takto: 1pip install flask V Linuxu spíš takto: 1pip3 install --user flask …" />
+<meta property="og:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu. Ve Windows to může vypadat třeba takto: pip install flask V Linuxu spíš takto: pip3 install --user flask Git¶ Pro …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-17T15:30:06.418621+01:00" />
 <meta property="og:article:modified_time" content="2021-11-17T15:30:06.418621+01:00" />
 <meta name="twitter:title" content="DBI  - Databázové a informační systémy ">
-<meta name="twitter:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu. Ve Windows to může vypadat třeba takto: 1pip install flask V Linuxu spíš takto: 1pip3 install --user flask …">
+<meta name="twitter:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu. Ve Windows to může vypadat třeba takto: pip install flask V Linuxu spíš takto: pip3 install --user flask Git¶ Pro …">
 
         <title>DBI  - Databázové a informační systémy  · Chytrosti
 </title>
@@ -130,6 +130,7 @@
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 </ul>
 <hr />
 </section>
@@ -145,15 +146,13 @@ co pro <a href="https://chytrosti.marrek.cz/prg.html"><span class="caps">PRG</sp
 <h2 id="instalace-knihoven">Instalace knihoven<a class="headerlink" href="#instalace-knihoven" title="Permanent link">¶</a></h2>
 <p>Budeme potřebovat modul <a href="https://flask.palletsprojects.com/">Flask</a>. Jeho instalaci 
 zajistí <a href="https://pip.pypa.io">pip</a>. Doporučuji přečíst si celý 
-<a href="{filename}/pip.md">post věnovaný pipu</a>.</p>
+<a href="https://chytrosti.marrek.cz/pip.html">post věnovaný pipu</a>.</p>
 <p>Ve Windows to může vypadat třeba takto:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pip install flask
+<div class="highlight"><pre><span></span><code>pip install flask
 </code></pre></div>
-</td></tr></table>
 <p>V Linuxu spíš takto:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pip3 install --user flask
+<div class="highlight"><pre><span></span><code>pip3 install --user flask
 </code></pre></div>
-</td></tr></table>
 <h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
 <p>Pro sdílení práce a odevzdávání domácích úkolů používáme systém
 <a href="https://git-scm.org">Git</a> a server <a href="https://github.com">GitHub</a>.
@@ -196,6 +195,7 @@ o <a href="https://education.github.com/">GitHub programu pro vzdělávání</a>
 <li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 </ul>
 <hr />
 </section>
@@ -217,10 +217,10 @@ o <a href="https://education.github.com/">GitHub programu pro vzdělávání</a>
                     <span class="superscript">1</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#programovani-ref">programování
-                    <span class="superscript">7</span>
+                    <span class="superscript">8</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#python-ref">Python
-                    <span class="superscript">5</span>
+                    <span class="superscript">6</span>
 </a></li>
                 <li><a href="https://chytrosti.marrek.cz/tags.html#web-ref">web
                     <span class="superscript">1</span>

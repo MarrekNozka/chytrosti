@@ -217,17 +217,7 @@ Do výchylky odpovídající zápornému proudu se membrána nedostane, protože
 protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru, při sestupné hraně.&lt;/p&gt;
 &lt;p&gt;Program, který nám vyloudí frekvenci &lt;span class="math"&gt;\(500\,\mathrm{Hz}\)&lt;/span&gt; může vypadat například takto. 
 Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl periody tedy &lt;span class="math"&gt;\(1\,\mathrm{ms}\)&lt;/span&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
-&lt;span class="normal"&gt; 2&lt;/span&gt;
-&lt;span class="normal"&gt; 3&lt;/span&gt;
-&lt;span class="normal"&gt; 4&lt;/span&gt;
-&lt;span class="normal"&gt; 5&lt;/span&gt;
-&lt;span class="normal"&gt; 6&lt;/span&gt;
-&lt;span class="normal"&gt; 7&lt;/span&gt;
-&lt;span class="normal"&gt; 8&lt;/span&gt;
-&lt;span class="normal"&gt; 9&lt;/span&gt;
-&lt;span class="normal"&gt;10&lt;/span&gt;
-&lt;span class="normal"&gt;11&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
@@ -239,26 +229,10 @@ Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl period
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
 membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 \cdot 2\,\mathrm{ms}\)&lt;/span&gt;) a pak nechám chvilku ticho.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
-&lt;span class="normal"&gt; 2&lt;/span&gt;
-&lt;span class="normal"&gt; 3&lt;/span&gt;
-&lt;span class="normal"&gt; 4&lt;/span&gt;
-&lt;span class="normal"&gt; 5&lt;/span&gt;
-&lt;span class="normal"&gt; 6&lt;/span&gt;
-&lt;span class="normal"&gt; 7&lt;/span&gt;
-&lt;span class="normal"&gt; 8&lt;/span&gt;
-&lt;span class="normal"&gt; 9&lt;/span&gt;
-&lt;span class="normal"&gt;10&lt;/span&gt;
-&lt;span class="normal"&gt;11&lt;/span&gt;
-&lt;span class="normal"&gt;12&lt;/span&gt;
-&lt;span class="normal"&gt;13&lt;/span&gt;
-&lt;span class="normal"&gt;14&lt;/span&gt;
-&lt;span class="normal"&gt;15&lt;/span&gt;
-&lt;span class="normal"&gt;16&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
@@ -275,65 +249,11 @@ membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
 vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
 &lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;multitasking&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; a &lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;stavový automat&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
-&lt;span class="normal"&gt; 2&lt;/span&gt;
-&lt;span class="normal"&gt; 3&lt;/span&gt;
-&lt;span class="normal"&gt; 4&lt;/span&gt;
-&lt;span class="normal"&gt; 5&lt;/span&gt;
-&lt;span class="normal"&gt; 6&lt;/span&gt;
-&lt;span class="normal"&gt; 7&lt;/span&gt;
-&lt;span class="normal"&gt; 8&lt;/span&gt;
-&lt;span class="normal"&gt; 9&lt;/span&gt;
-&lt;span class="normal"&gt;10&lt;/span&gt;
-&lt;span class="normal"&gt;11&lt;/span&gt;
-&lt;span class="normal"&gt;12&lt;/span&gt;
-&lt;span class="normal"&gt;13&lt;/span&gt;
-&lt;span class="normal"&gt;14&lt;/span&gt;
-&lt;span class="normal"&gt;15&lt;/span&gt;
-&lt;span class="normal"&gt;16&lt;/span&gt;
-&lt;span class="normal"&gt;17&lt;/span&gt;
-&lt;span class="normal"&gt;18&lt;/span&gt;
-&lt;span class="normal"&gt;19&lt;/span&gt;
-&lt;span class="normal"&gt;20&lt;/span&gt;
-&lt;span class="normal"&gt;21&lt;/span&gt;
-&lt;span class="normal"&gt;22&lt;/span&gt;
-&lt;span class="normal"&gt;23&lt;/span&gt;
-&lt;span class="normal"&gt;24&lt;/span&gt;
-&lt;span class="normal"&gt;25&lt;/span&gt;
-&lt;span class="normal"&gt;26&lt;/span&gt;
-&lt;span class="normal"&gt;27&lt;/span&gt;
-&lt;span class="normal"&gt;28&lt;/span&gt;
-&lt;span class="normal"&gt;29&lt;/span&gt;
-&lt;span class="normal"&gt;30&lt;/span&gt;
-&lt;span class="normal"&gt;31&lt;/span&gt;
-&lt;span class="normal"&gt;32&lt;/span&gt;
-&lt;span class="normal"&gt;33&lt;/span&gt;
-&lt;span class="normal"&gt;34&lt;/span&gt;
-&lt;span class="normal"&gt;35&lt;/span&gt;
-&lt;span class="normal"&gt;36&lt;/span&gt;
-&lt;span class="normal"&gt;37&lt;/span&gt;
-&lt;span class="normal"&gt;38&lt;/span&gt;
-&lt;span class="normal"&gt;39&lt;/span&gt;
-&lt;span class="normal"&gt;40&lt;/span&gt;
-&lt;span class="normal"&gt;41&lt;/span&gt;
-&lt;span class="normal"&gt;42&lt;/span&gt;
-&lt;span class="normal"&gt;43&lt;/span&gt;
-&lt;span class="normal"&gt;44&lt;/span&gt;
-&lt;span class="normal"&gt;45&lt;/span&gt;
-&lt;span class="normal"&gt;46&lt;/span&gt;
-&lt;span class="normal"&gt;47&lt;/span&gt;
-&lt;span class="normal"&gt;48&lt;/span&gt;
-&lt;span class="normal"&gt;49&lt;/span&gt;
-&lt;span class="normal"&gt;50&lt;/span&gt;
-&lt;span class="normal"&gt;51&lt;/span&gt;
-&lt;span class="normal"&gt;52&lt;/span&gt;
-&lt;span class="normal"&gt;53&lt;/span&gt;
-&lt;span class="normal"&gt;54&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -388,7 +308,6 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
 &lt;a href="https://github.com/spseol/STM8-zvuk-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-zvuk-zaklad&lt;/a&gt;&lt;/p&gt;
@@ -477,9 +396,8 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 &lt;p&gt;&lt;img alt="TIM4" src="https://chytrosti.marrek.cz/mit/img/tim4.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Nastavení se děje pomocí funkce &lt;code&gt;TIM4_TimeBaseInit(PRESCALER, PERIOD)&lt;/code&gt;, kde
 &lt;code&gt;PRESCALER&lt;/code&gt; je makro, pro nastavení děličky a &lt;code&gt;PERIOD&lt;/code&gt; je 8-bitové číslo.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;TIM4_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_PRESCALER_128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;125&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;TIM4_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_PRESCALER_128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;125&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Takže pokud máme nastaven kmitočet na 16MHz znamená to že čítač čítá do hodnoty
 125 (respektive 124 protože čítáme od nuly) s frekvencí &lt;code&gt;16MHz/128 == 125 kHz&lt;/code&gt;.
 Znamená to tedy, že každou milisekundu dojde k auto-reloadu a je vyvoláno
@@ -491,38 +409,26 @@ přerušení od časovače &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;li&gt;globálně povolit přerušení&lt;/li&gt;
 &lt;li&gt;napsat tělo obslužné rutiny přerušení.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;
-&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;TIM4_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                       &lt;/span&gt;&lt;span class="c1"&gt;// povolí TIM4&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;TIM4_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;// povolí přerušení od TIM4&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;                     &lt;/span&gt;&lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;......&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Rutina přerušení se standardně nachází v souboru &lt;code&gt;stm8_it.c&lt;/code&gt;. Stačí ji najít
 přepsat. Pokud potřebujete v rutině přerušení pracovat s proměnnou definovanou
 v &lt;code&gt;main.c&lt;/code&gt; (což je myslím téměř vždy) je třeba tuto proměnnou označit
 direktivou &lt;code&gt;extern&lt;/code&gt; nebo rutinu přesunout přímo do souboru &lt;code&gt;main.c&lt;/code&gt;.
 Více o tom se dočtete v postu
 &lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Kompilace a knihovny&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;
-&lt;span class="normal"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*---        rutina obsluhy přerušení         ---*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*---        rutina obsluhy přerušení         ---*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_UPD_OVF_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;TIM4_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM4_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// vymažu vlajku signalizující přerušení&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;miliseconds&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="c1"&gt;// udělám co je třeba....&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;Všimněte si prosím, že první, co se v rutině přerušení dělá, je, že se &lt;strong&gt;vymaže
 vlajka&lt;/strong&gt;, která označuje, že k přerušení došlo.&lt;/p&gt;
 &lt;p&gt;Tento kód je například použito v knihovně
@@ -538,44 +444,22 @@ která umožňuje zjistit počet milisekund uplynulých od “spuštění progr
 &lt;p&gt;Takže například pokud vytváříme cokoli, co pracuje s časem a potřebujeme
 spustit určitý kód vždy přesně v intervalu &lt;span class="math"&gt;\(1\,\mathrm{s}\)&lt;/span&gt;, může inicializace
 časovače vypadat například takto:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;
-&lt;span class="normal"&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM2 setup           ---------*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM2 setup           ---------*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;TIM2_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_PRESCALER_512&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;31250&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;// 16MHz/512/31250 == 1Hz&lt;/span&gt;
 &lt;span class="n"&gt;TIM2_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                       &lt;/span&gt;&lt;span class="c1"&gt;// povolí TIM2&lt;/span&gt;
 &lt;span class="n"&gt;TIM2_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;// povolí přerušení od TIM2&lt;/span&gt;
 &lt;span class="n"&gt;enableInterrupts&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;                     &lt;/span&gt;&lt;span class="c1"&gt;// globálně povolí přerušení&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;nastavení &lt;span class="caps"&gt;TIM3&lt;/span&gt; je analogické:&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
-&lt;span class="normal"&gt;2&lt;/span&gt;
-&lt;span class="normal"&gt;3&lt;/span&gt;
-&lt;span class="normal"&gt;4&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM3 setup           ---------*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*----           TIM3 setup           ---------*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;TIM3_TimeBaseInit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_PRESCALER_16&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;12345&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// ~81Hz&lt;/span&gt;
 &lt;span class="n"&gt;TIM3_ITConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM3_IT_UPDATE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;TIM3_Cmd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ENABLE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;p&gt;No a ještě rutiny přerušení… Opět platí, že &lt;strong&gt;rutiny přerušení buď necháme v souboru
 &lt;code&gt;stm8_it.c&lt;/code&gt; a proměnné označíme pomocí direktivy &lt;code&gt;extern&lt;/code&gt; nebo si rutiny
 přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;.&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt; 1&lt;/span&gt;
-&lt;span class="normal"&gt; 2&lt;/span&gt;
-&lt;span class="normal"&gt; 3&lt;/span&gt;
-&lt;span class="normal"&gt; 4&lt;/span&gt;
-&lt;span class="normal"&gt; 5&lt;/span&gt;
-&lt;span class="normal"&gt; 6&lt;/span&gt;
-&lt;span class="normal"&gt; 7&lt;/span&gt;
-&lt;span class="normal"&gt; 8&lt;/span&gt;
-&lt;span class="normal"&gt; 9&lt;/span&gt;
-&lt;span class="normal"&gt;10&lt;/span&gt;
-&lt;span class="normal"&gt;11&lt;/span&gt;
-&lt;span class="normal"&gt;12&lt;/span&gt;
-&lt;span class="normal"&gt;13&lt;/span&gt;
-&lt;span class="normal"&gt;14&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;INTERRUPT_HANDLER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_UPD_OVF_BRK_IRQHandler&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;TIM2_ClearFlag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TIM2_FLAG_UPDATE&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="c1"&gt;// vymažu vlaku signalizující &lt;/span&gt;
 
@@ -590,7 +474,6 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;G&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
 &lt;a href="https://github.com/spseol/STM8-TIM23-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;TIM23&lt;/span&gt;-zaklad&lt;/a&gt;&lt;/p&gt;
