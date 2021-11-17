@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 20:51:04 +0100</lastBuildDate><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 17 Nov 2021 21:17:50 +0100</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 21:17:50 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category></item><item><title>Chocolatey</title><link>https://chytrosti.marrek.cz/chocolatey.html</link><description>
+&lt;p&gt;Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží
+o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
+&lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
+dlouze hledat instalovat atd. 
+Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 21:17:37 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
 sice používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://code.visualstudio.com"&gt;Visual Studio Code&lt;/a&gt; je brilantní open-source editor 
 z dílny firmy Microsoft s vestavěnou podporou pro systém
 &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 20:51:04 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category><category>STM8</category></item><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
+&lt;p&gt;Pokud by vám (stejně jako mně) vadilo, že …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 21:17:15 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/vscodecodium.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category><category>STM8</category></item><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
@@ -56,19 +68,7 @@ dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt;
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
 které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
 na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
-kontrola licence, je fakt opruz; a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 18:45:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/vyvoj-stm8-s-opensource-nastroji.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Chocolatey</title><link>https://chytrosti.marrek.cz/chocolatey.html</link><description>
-&lt;p&gt;Chocolatey je správce balíčků pro operační systém windows. Dá se říct, že se snaží
-o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
-&lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
-dlouze hledat instalovat atd. 
-Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 17:28:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:56:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>Céčko</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+kontrola licence, je fakt opruz; a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 09 Nov 2021 18:45:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-09:/vyvoj-stm8-s-opensource-nastroji.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
 &lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:54:36 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category></item><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
 &lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
