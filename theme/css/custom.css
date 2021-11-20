@@ -39,6 +39,9 @@ h4 {
     margin-bottom: 0.8ex;
 }
 
+.article-content, div.recent-posts p {
+    text-align: left;
+}
 
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
@@ -162,5 +165,16 @@ img[alt*="|=|"] {
   height: auto;
   margin: auto;
   float: none!important;
+}
+
+
+.center {
+    text-align: center;
+}
+.floatright {
+    float: right;
+}
+.floatleft {
+    float: left;
 }
 

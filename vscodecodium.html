@@ -19,13 +19,13 @@
 
 <meta property="og:title" content="VSCode/Codium  - Pokročilý editor zdrojových kódů "/>
 <meta property="og:url" content="https://chytrosti.marrek.cz/vscodecodium.html" />
-<meta property="og:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Pokud by vám (stejně jako mně) vadilo, že …" />
+<meta property="og:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Editor je multiplatformní, takže je jedno jestli používáte …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-11-17T21:17:15.097174+01:00" />
-<meta property="og:article:modified_time" content="2021-11-17T21:17:15.097174+01:00" />
+<meta property="og:article:published_time" content="2021-11-20T16:48:54.783923+01:00" />
+<meta property="og:article:modified_time" content="2021-11-20T16:48:54.783923+01:00" />
 <meta name="twitter:title" content="VSCode/Codium  - Pokročilý editor zdrojových kódů ">
-<meta name="twitter:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Pokud by vám (stejně jako mně) vadilo, že …">
+<meta name="twitter:description" content="V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice používáme VIm, ale ve výuce a se studenty používáme VSCode/Codium. Visual Studio Code je brilantní open-source editor z dílny firmy Microsoft s vestavěnou podporou pro systém Git. Editor je multiplatformní, takže je jedno jestli používáte …">
 
         <title>VSCode/Codium  - Pokročilý editor zdrojových kódů  · Chytrosti
 </title>
@@ -115,6 +115,7 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
+<li><a href="#instalace">Instalace</a></li>
 <li><a href="#python">Python</a><ul>
 <li><a href="#flaskjinaja2">Flask/Jinaja2</a></li>
 </ul>
@@ -132,13 +133,13 @@
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
-<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 </ul>
 <hr />
 </section>
@@ -148,19 +149,16 @@
             
 
             
-<p>V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně
-sice používáme <a href="https://cs.wikipedia.org/wiki/Vim">VIm</a>, ale ve výuce a se studenty
-používáme VSCode/Codium.</p>
-<p><a href="https://code.visualstudio.com">Visual Studio Code</a> je brilantní open-source editor 
-z dílny firmy Microsoft s vestavěnou podporou pro systém
-<a href="https://chytrosti.marrek.cz/git.html">Git</a>.</p>
+<p>V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice
+používáme <a href="https://cs.wikipedia.org/wiki/Vim">VIm</a>, ale ve výuce a se studenty
+používáme VSCode/Codium. </p>
+<p><a href="https://code.visualstudio.com">Visual Studio Code</a> je brilantní open-source
+editor z dílny firmy Microsoft s vestavěnou podporou pro systém
+<a href="https://chytrosti.marrek.cz/git.html">Git</a>. Editor je multiplatformní, takže je jedno jestli
+používáte MacOS, Linux nebo (nechápu proč by to někdo nělal…) Windows.</p>
 <p>Pokud by vám (stejně jako mně) vadilo, že Microsoft do balíčku s VSCode zabalí
 i telemetrii (dřív se tomu říkalo špehování), tak existuje projekt
 <a href="https://vscodium.com/">Codium</a>, který tímto neduhem netrpí.</p>
-<p>Nejjednodušší způsob instalace je pomocí <a href="https://chytrosti.marrek.cz/chocolatey.html">chocolatey</a>.</p>
-<div class="highlight"><pre><span></span><code>choco install vscodium
-choco install vscode
-</code></pre></div>
 <p>Oba projekty pochází ze stejných zdrojových kódů. Liší se pouze v tom, jak jsou
 zabaleny. <a href="https://vscodium.com/">Codium</a> neobsahuje telemetrii a má marketplace nasměrovaný trošku
 <a href="https://open-vsx.org/extension/ms-python/python">jinam</a>. Z toho vyplývá, že 
@@ -173,6 +171,20 @@ z  <a href="https://marketplace.visualstudio.com/vscode">oficiálním maktetplac
 a v Codiu ručně nainstalovat.</p>
 <p><img alt="cliknu na download" src="https://chytrosti.marrek.cz/images/vscode_marketplace.png"/></p>
 <p><img alt="a potom na ..." src="https://chytrosti.marrek.cz/images/install-VSIX.png"/></p>
+<h2 id="instalace">Instalace<a class="headerlink" href="#instalace" title="Permanent link">¶</a></h2>
+<p><strong>V Linuxu</strong> závisí instalace hodně na konkrétní distribuci. Například na Ubuntu
+se to prý dělá takto:</p>
+<div class="highlight"><pre><span></span><code>sudo apt install snapd
+sudo snap install codium --classic
+</code></pre></div>
+<p>Nebo můžete použít například 
+<a href="https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo">vscodium-deb-rpm-repo</a>.</p>
+<p>… a nebo všechno udělat <a href="https://github.com/VSCodium/vscodium/releases">růčo</a>.</p>
+<p>Nejjednodušší způsob instalace <strong>ve Windows</strong> je pomocí
+<a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatey</a>.</p>
+<div class="highlight"><pre><span></span><code>choco install vscodium
+choco install vscode
+</code></pre></div>
 <h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">¶</a></h2>
 <p>Pokud si doinstalujete doplněk 
 <code>ms-python.python</code>
@@ -242,21 +254,21 @@ Ten v instaluje sadu doplňků:</p>
 <li><a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
-<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="https://chytrosti.marrek.cz/mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/pip.html" title="pip - Jak nainstalovat balíček pro Python">pip <small>Jak nainstalovat balíček pro Python</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="https://chytrosti.marrek.cz/git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 </ul>
 <hr />
 </section>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-11-17T21:17:15+01:00">
-              17. lis 2021 21:17
+            <time itemprop="dateCreated" datetime="2021-11-20T16:48:54+01:00">
+              20. lis 2021 16:48
             </time>
 
             <h4>Kategorie</h4>
