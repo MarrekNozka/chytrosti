@@ -22,8 +22,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-11-20T18:42:03.139799+01:00" />
-<meta property="og:article:modified_time" content="2021-11-20T18:42:03.139799+01:00" />
+<meta property="og:article:published_time" content="2021-11-20T20:44:19.658698+01:00" />
+<meta property="og:article:modified_time" content="2021-11-20T20:44:19.658698+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -122,13 +122,13 @@
 </ul>
 </li>
 <li><a href="#flashing">Flashing</a><ul>
-<li><a href="#windows">Windows</a></li>
-<li><a href="#linux">Linux</a></li>
+<li><a href="#openocd">OpenOCD</a></li>
+<li><a href="#stm8flash">stm8flash</a></li>
 </ul>
 </li>
 <li><a href="#debug">Debug</a><ul>
-<li><a href="#windows_1">Windows</a></li>
-<li><a href="#linux_1">Linux</a></li>
+<li><a href="#stm8-gdb">stm8-gdb</a></li>
+<li><a href="#stm8-debugger-for-vscodecodium"><span class="caps">STM8</span> Debugger for vsCode/Codium</a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +216,7 @@ dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli byste si ji
 <a href="https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&amp;t=vivaldi&amp;ia=software">najít</a>
 a <a href="https://www.st.com/en/embedded-software/stsw-stm8069.html">stáhnout</a>. Pak je třeba 
 ještě aplikovat <a href="https://github.com/gicking/STM8-SPL_SDCC_patch">patch</a>, který knihovnu
-předělá tak, aby se dala použít s naším <em>sdcc</em> kompilátorem. No prostě:  </p>
+předělá tak, aby se dala použít s naším <em><span class="caps">SDCC</span></em> kompilátorem. No prostě:  </p>
 <p class="center">ve svém prvním projektu zadáte příkaz: <code>make spl</code></p>
 <h2 id="vyvojove-prostredi">Vývojové prostředí<a class="headerlink" href="#vyvojove-prostredi" title="Permanent link">¶</a></h2>
 <p>Jako editor a vývojové prostředí doporučuji 
@@ -283,12 +283,101 @@ soubory zavoláte <code>make</code>.</p>
 make
 </code></pre></div>
 <h3 id="reseni-3-sdcc-gas">Řešení 3: sdcc-gas<a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link">¶</a></h3>
+<p class="center"><a href="https://github.com/XaviDCR92/sdcc-gas">https://github.com/XaviDCR92/sdcc-gas</a></p>
+<p>Toto je asi nejlepší řešení. Vzniklo přidáním podpory <a href="https://cs.wikipedia.org/wiki/GNU_Assembler"><span class="caps">GNU</span>
+Assembleru</a> tedy -gas do <span class="caps">SDCC</span>
+3.9.0; gas je výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že
+můžeme používat klasické nástroje z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span>
+binutils</a>, na druhou stranu to
+znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v
+assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+stane, že nějaká vnitřní funkcionalita (například násobení 32-bitových
+integerů) je napsaná jen v <span class="caps">STM8</span> assembleru a vám nezbude, než to nějak obejít nebo
+danou funkci přepsat do <span class="caps">GNU</span> assembleru.</p>
+<p>Pokud vás to zajímá více můžete si počíst
+<a href="https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397">zde</a>
+a 
+<a href="https://github.com/XaviDCR92/stm8-dce-example/issues/2#issuecomment-700907460">zde</a></p>
+<p>Toto je důvod proč v <em>Makefile</em> sdcc-gas jsou tyto řádky:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">SDCC_LIB_SRC_DIR</span> <span class="o">=</span> /usr/local/stow/sdcc-gas/share/sdcc/lib/src/
+<span class="nv">SDCC_LIB_SOURCE</span> <span class="o">=</span> _mullong.c _divulong.c _mulint.c _modsint.c
+<span class="c">#SDCC_LIB_SOURCE  = $(notdir $(wildcard /usr/local/stow/sdcc-gas/share/sdcc/lib/src/_*.c))</span>
+<span class="nv">SDCC_LIB_OBJECTS</span> <span class="o">:=</span> <span class="k">$(</span>addprefix <span class="k">$(</span>OUTPUT_DIR<span class="k">)</span>/, <span class="k">$(</span>SDCC_LIB_SOURCE:.c<span class="o">=</span>.o<span class="k">))</span>
+</code></pre></div>
+<p>Případné problémy chybějících funkcí lze tedy vyřešit doplněním jména souboru
+do proměnné <code>SDCC_LIB_SOURCE</code>.</p>
+<p>Aby vše fungovalo musíte si <a href="https://github.com/XaviDCR92/sdcc-gas">stáhnout</a>
+výše zmíněné zdrojové kódy a buildnout je. Já to dělám takto (používám
+<a href="https://packages.debian.org/stable/stow">stow</a>):</p>
+<div class="highlight"><pre><span></span><code>sudo apt install stow
+sudo apt build-dep sdcc
+
+<span class="nb">cd</span> sdcc-gas
+./configure --prefix<span class="o">=</span>/usr/local/stow/sdcc-gas
+make
+sudo make install
+
+<span class="nb">cd</span> /usr/local/stow
+sudo stow sdcc-gas
+</code></pre></div>
+<p>Podobný postup použijete pro 
+<a href="https://stm8-binutils-gdb.sourceforge.io/"><span class="caps">STM8</span> port</a> <span class="caps">GNU</span> binutils, který 
+je potřeba pro <a href="https://cs.wikipedia.org/wiki/Linker">linkování</a> a 
+<a href="https://cs.wikipedia.org/wiki/GNU_Debugger">debug</a>.:</p>
+<div class="highlight"><pre><span></span><code>tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
+<span class="nb">cd</span> stm8-binutils-gdb-sources
+<span class="nb">export</span> <span class="nv">PREFIX</span><span class="o">=</span>/usr/local/stow/stm8-binutils-gdb
+./patch_binutils.sh
+<span class="nb">cd</span> binutils-2.30
+make
+sudo make install
+
+<span class="nb">cd</span> /usr/local/stow
+sudo stow  stm8-binutils-gdb
+</code></pre></div>
+<p>Tato výše popsaná kompilace ze zdrojových je teoreticky možná i na Windows,
+pomocí projektu <a href="https://www.cygwin.com/">Cygwin</a>. Prakticky jsem to nikdy
+nezkoušel. Osobně bych šel (tedy pokud by mě někdo donutil používat Widows)
+spíše cestou
+<a href="https://cs.wikipedia.org/wiki/Windows_Subsystem_for_Linux">Windows Subsystem for 
+Linux</a>.
+Instalace <span class="caps">WSL</span> 2 je 
+<a href="https://docs.microsoft.com/en-us/windows/wsl/install">velice jednoduchá</a>.
+Bohužel do <span class="caps">WSL</span> se nativně nedá připojit <span class="caps">USB</span> – ale dá se to
+<a href="https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/">řešit</a>.</p>
 <h2 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">¶</a></h2>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">¶</a></h3>
-<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h3>
+<h3 id="openocd">OpenOCD<a class="headerlink" href="#openocd" title="Permanent link">¶</a></h3>
+<p><a href="https://openocd.org">Open On-Chip Debugger</a> je nástroj pro debug a krokování
+programu přímo na čipu. <code>openocd</code> umí i nahrát program do paměti zařízení.</p>
+<p>Instalaci zajistí na Linuxu jednoduchý příkaz:</p>
+<div class="highlight"><pre><span></span><code>sudo apt install openocd
+</code></pre></div>
+<p>na Windows je to díky <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatye</a> podobně jednoduché.</p>
+<div class="highlight"><pre><span></span><code>choco install openodc
+</code></pre></div>
+<p>jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
+dostupná verze 0.11).</p>
+<p>Aby <code>openodc</code> umělo i pouhé flashování 
+<a href="https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0">je třeba přidat</a>
+na konec konfiguračního souboru <code>stm8s.cfg</code> tyto řádky:</p>
+<div class="highlight"><pre><span></span><code><span class="k">proc</span> <span class="nv">program_device</span> <span class="err">{</span><span class="nv">filename</span> <span class="nv">flashstart</span><span class="err">}</span> <span class="err">{</span>
+  <span class="nf">halt</span>
+  <span class="nf">wait_halt</span>
+  <span class="nf">load_image</span> <span class="kc">$</span><span class="nv">filename</span> <span class="kc">$</span><span class="nv">flashstart</span>
+  <span class="nf">sleep</span> <span class="mi">10</span>
+  <span class="nf">reset</span> <span class="nv">halt</span>
+  <span class="nf">resume</span>
+  <span class="nf">sleep</span> <span class="mi">10</span>
+  <span class="nf">shutdown</span>
+<span class="err">}</span><span class="c1">;</span>
+</code></pre></div>
+<p>V Linuxu by celá cesta mohla vypadat takto: <code>/usr/share/openocd/scripts/target/stm8s.cfg</code>. 
+Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato cesta:
+<code>C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20190828-0.10.0\share\openocd\scripts\target\stm8s.cfg</code>.</p>
+<h3 id="stm8flash">stm8flash<a class="headerlink" href="#stm8flash" title="Permanent link">¶</a></h3>
 <h2 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">¶</a></h2>
-<h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">¶</a></h3>
-<h3 id="linux_1">Linux<a class="headerlink" href="#linux_1" title="Permanent link">¶</a></h3>
+<h3 id="stm8-gdb">stm8-gdb<a class="headerlink" href="#stm8-gdb" title="Permanent link">¶</a></h3>
+<h3 id="stm8-debugger-for-vscodecodium"><span class="caps">STM8</span> Debugger for vsCode/Codium<a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link">¶</a></h3>
 
 
              
@@ -325,8 +414,8 @@ make
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-11-20T18:42:03+01:00">
-              20. lis 2021 18:42
+            <time itemprop="dateCreated" datetime="2021-11-20T20:44:19+01:00">
+              20. lis 2021 20:44
             </time>
 
             <h4>Kategorie</h4>

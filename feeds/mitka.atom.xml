@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-20T18:42:03+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-11-20T18:42:03+01:00</published><updated>2021-11-20T18:42:03+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-20T20:44:19+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-11-20T20:44:19+01:00</published><updated>2021-11-20T20:44:19+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -65,7 +65,7 @@ dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli byste si ji
 &lt;a href="https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&amp;amp;t=vivaldi&amp;amp;ia=software"&gt;najít&lt;/a&gt;
 a &lt;a href="https://www.st.com/en/embedded-software/stsw-stm8069.html"&gt;stáhnout&lt;/a&gt;. Pak je třeba 
 ještě aplikovat &lt;a href="https://github.com/gicking/STM8-SPL_SDCC_patch"&gt;patch&lt;/a&gt;, který knihovnu
-předělá tak, aby se dala použít s naším &lt;em&gt;sdcc&lt;/em&gt; kompilátorem. No prostě:  &lt;/p&gt;
+předělá tak, aby se dala použít s naším &lt;em&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/em&gt; kompilátorem. No prostě:  &lt;/p&gt;
 &lt;p class="center"&gt;ve svém prvním projektu zadáte příkaz: &lt;code&gt;make spl&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="vyvojove-prostredi"&gt;Vývojové prostředí&lt;a class="headerlink" href="#vyvojove-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Jako editor a vývojové prostředí doporučuji 
@@ -132,12 +132,101 @@ soubory zavoláte &lt;code&gt;make&lt;/code&gt;.&lt;/p&gt;
 make
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="reseni-3-sdcc-gas"&gt;Řešení 3: sdcc-gas&lt;a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdcc-gas"&gt;https://github.com/XaviDCR92/sdcc-gas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Toto je asi nejlepší řešení. Vzniklo přidáním podpory &lt;a href="https://cs.wikipedia.org/wiki/GNU_Assembler"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
+Assembleru&lt;/a&gt; tedy -gas do &lt;span class="caps"&gt;SDCC&lt;/span&gt;
+3.9.0; gas je výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že
+můžeme používat klasické nástroje z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
+binutils&lt;/a&gt;, na druhou stranu to
+znamená, že nelze použít ty části &lt;code&gt;sdcc-libraries&lt;/code&gt;, které jsou napsané v
+assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+stane, že nějaká vnitřní funkcionalita (například násobení 32-bitových
+integerů) je napsaná jen v &lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a vám nezbude, než to nějak obejít nebo
+danou funkci přepsat do &lt;span class="caps"&gt;GNU&lt;/span&gt; assembleru.&lt;/p&gt;
+&lt;p&gt;Pokud vás to zajímá více můžete si počíst
+&lt;a href="https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397"&gt;zde&lt;/a&gt;
+a 
+&lt;a href="https://github.com/XaviDCR92/stm8-dce-example/issues/2#issuecomment-700907460"&gt;zde&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Toto je důvod proč v &lt;em&gt;Makefile&lt;/em&gt; sdcc-gas jsou tyto řádky:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;SDCC_LIB_SRC_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; /usr/local/stow/sdcc-gas/share/sdcc/lib/src/
+&lt;span class="nv"&gt;SDCC_LIB_SOURCE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; _mullong.c _divulong.c _mulint.c _modsint.c
+&lt;span class="c"&gt;#SDCC_LIB_SOURCE  = $(notdir $(wildcard /usr/local/stow/sdcc-gas/share/sdcc/lib/src/_*.c))&lt;/span&gt;
+&lt;span class="nv"&gt;SDCC_LIB_OBJECTS&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;addprefix &lt;span class="k"&gt;$(&lt;/span&gt;OUTPUT_DIR&lt;span class="k"&gt;)&lt;/span&gt;/, &lt;span class="k"&gt;$(&lt;/span&gt;SDCC_LIB_SOURCE:.c&lt;span class="o"&gt;=&lt;/span&gt;.o&lt;span class="k"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Případné problémy chybějících funkcí lze tedy vyřešit doplněním jména souboru
+do proměnné &lt;code&gt;SDCC_LIB_SOURCE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Aby vše fungovalo musíte si &lt;a href="https://github.com/XaviDCR92/sdcc-gas"&gt;stáhnout&lt;/a&gt;
+výše zmíněné zdrojové kódy a buildnout je. Já to dělám takto (používám
+&lt;a href="https://packages.debian.org/stable/stow"&gt;stow&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install stow
+sudo apt build-dep sdcc
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; sdcc-gas
+./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/stow/sdcc-gas
+make
+sudo make install
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/stow
+sudo stow sdcc-gas
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Podobný postup použijete pro 
+&lt;a href="https://stm8-binutils-gdb.sourceforge.io/"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; port&lt;/a&gt; &lt;span class="caps"&gt;GNU&lt;/span&gt; binutils, který 
+je potřeba pro &lt;a href="https://cs.wikipedia.org/wiki/Linker"&gt;linkování&lt;/a&gt; a 
+&lt;a href="https://cs.wikipedia.org/wiki/GNU_Debugger"&gt;debug&lt;/a&gt;.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
+&lt;span class="nb"&gt;cd&lt;/span&gt; stm8-binutils-gdb-sources
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PREFIX&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/stow/stm8-binutils-gdb
+./patch_binutils.sh
+&lt;span class="nb"&gt;cd&lt;/span&gt; binutils-2.30
+make
+sudo make install
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/stow
+sudo stow  stm8-binutils-gdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tato výše popsaná kompilace ze zdrojových je teoreticky možná i na Windows,
+pomocí projektu &lt;a href="https://www.cygwin.com/"&gt;Cygwin&lt;/a&gt;. Prakticky jsem to nikdy
+nezkoušel. Osobně bych šel (tedy pokud by mě někdo donutil používat Widows)
+spíše cestou
+&lt;a href="https://cs.wikipedia.org/wiki/Windows_Subsystem_for_Linux"&gt;Windows Subsystem for 
+Linux&lt;/a&gt;.
+Instalace &lt;span class="caps"&gt;WSL&lt;/span&gt; 2 je 
+&lt;a href="https://docs.microsoft.com/en-us/windows/wsl/install"&gt;velice jednoduchá&lt;/a&gt;.
+Bohužel do &lt;span class="caps"&gt;WSL&lt;/span&gt; se nativně nedá připojit &lt;span class="caps"&gt;USB&lt;/span&gt; – ale dá se to
+&lt;a href="https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/"&gt;řešit&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="flashing"&gt;Flashing&lt;a class="headerlink" href="#flashing" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="windows"&gt;Windows&lt;a class="headerlink" href="#windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;h3 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="openocd"&gt;OpenOCD&lt;a class="headerlink" href="#openocd" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://openocd.org"&gt;Open On-Chip Debugger&lt;/a&gt; je nástroj pro debug a krokování
+programu přímo na čipu. &lt;code&gt;openocd&lt;/code&gt; umí i nahrát program do paměti zařízení.&lt;/p&gt;
+&lt;p&gt;Instalaci zajistí na Linuxu jednoduchý příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install openocd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;na Windows je to díky &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt; podobně jednoduché.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install openodc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
+dostupná verze 0.11).&lt;/p&gt;
+&lt;p&gt;Aby &lt;code&gt;openodc&lt;/code&gt; umělo i pouhé flashování 
+&lt;a href="https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0"&gt;je třeba přidat&lt;/a&gt;
+na konec konfiguračního souboru &lt;code&gt;stm8s.cfg&lt;/code&gt; tyto řádky:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;proc&lt;/span&gt; &lt;span class="nv"&gt;program_device&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="nv"&gt;flashstart&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="nf"&gt;halt&lt;/span&gt;
+  &lt;span class="nf"&gt;wait_halt&lt;/span&gt;
+  &lt;span class="nf"&gt;load_image&lt;/span&gt; &lt;span class="kc"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="kc"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;flashstart&lt;/span&gt;
+  &lt;span class="nf"&gt;sleep&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+  &lt;span class="nf"&gt;reset&lt;/span&gt; &lt;span class="nv"&gt;halt&lt;/span&gt;
+  &lt;span class="nf"&gt;resume&lt;/span&gt;
+  &lt;span class="nf"&gt;sleep&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+  &lt;span class="nf"&gt;shutdown&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu by celá cesta mohla vypadat takto: &lt;code&gt;/usr/share/openocd/scripts/target/stm8s.cfg&lt;/code&gt;. 
+Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato cesta:
+&lt;code&gt;C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20190828-0.10.0\share\openocd\scripts\target\stm8s.cfg&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="stm8flash"&gt;stm8flash&lt;a class="headerlink" href="#stm8flash" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;h2 id="debug"&gt;Debug&lt;a class="headerlink" href="#debug" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="windows_1"&gt;Windows&lt;a class="headerlink" href="#windows_1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;h3 id="linux_1"&gt;Linux&lt;a class="headerlink" href="#linux_1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-11-12T15:37:57+01:00</published><updated>2021-11-12T15:37:57+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-12:/mit.html</id><summary type="html">
+&lt;h3 id="stm8-gdb"&gt;stm8-gdb&lt;a class="headerlink" href="#stm8-gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="stm8-debugger-for-vscodecodium"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Debugger for vsCode/Codium&lt;a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2021-11-12T15:37:57+01:00</published><updated>2021-11-12T15:37:57+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-12:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 
