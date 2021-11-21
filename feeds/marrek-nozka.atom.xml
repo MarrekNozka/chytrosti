@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-20T20:44:19+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-11-20T20:44:19+01:00</published><updated>2021-11-20T20:44:19+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-21T19:51:15+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-11-21T19:51:15+01:00</published><updated>2021-11-21T19:51:15+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-21:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -33,12 +33,23 @@ nainstalovat &lt;a href="https://www.virtualbox.org/"&gt;VirtualBox&lt;/a&gt; a 
 I tak si ale přečtěte následující text ať víte, jak to máte použít.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova"&gt;https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-&lt;span class="caps"&gt;OVA&lt;/span&gt;/Devuan-X-&lt;span class="caps"&gt;MIT&lt;/span&gt;.ova&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="startovaci-toolset"&gt;Startovací toolset&lt;a class="headerlink" href="#startovaci-toolset" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Také jsem pro vás připravil startovací &lt;em&gt;strom zdrojových kódů&lt;/em&gt; a 
+&lt;p&gt;Připravil jsem startovací &lt;em&gt;strom zdrojových kódů&lt;/em&gt; a 
 &lt;a href="https://cs.wikipedia.org/wiki/Make"&gt;Makefile&lt;/a&gt;.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Toolset se spoléhá na několik nástrojů, které je třeba nainstalovat: To je popsáno na
-následujících řádcích. Aby vše, co je zde popsáno fungovalo k vaší spokojenosti,
-je třeba dodržet následující schéma:&lt;/p&gt;
+&lt;p&gt;Tento toolset se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
+&lt;a href="https://cs.wikipedia.org/wiki/Make"&gt;Make&lt;/a&gt;,
+&lt;a href="https://cs.wikipedia.org/wiki/Bash"&gt;Bash&lt;/a&gt; a také se docela dobře hodí 
+&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;V Linuxu zavoláte něco jako:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install make git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ve Windows je nejsnadnější instalovat pomocí &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install make
+choco install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(Bash je součásti balíčku Git.)&lt;/p&gt;
+&lt;p&gt;Aby vše, co je zde popsáno fungovalo k vaší spokojenosti, je třeba dodržet
+následující schéma:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;MIT
 ├── Projekt-1
 │   ├── inc
@@ -117,14 +128,18 @@ Windows oblíbeným, klikáním.&lt;/p&gt;
 &lt;p&gt;sdccrm je nástroj pro optimalizaci mrtvého kódu pro port stm8 sdcc, který
 odstraňuje nepoužívané funkce.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm"&gt;https://github.com/XaviDCR92/sdccrm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale je
-nutné ručně zadat funkce, které nechcete “optimalizovat” – vyhodit. Tato
+&lt;p&gt;Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale tato
 možnost &lt;strong&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm#known-issues"&gt;vylučuje použití
 debugeru&lt;/a&gt;&lt;/strong&gt;. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.&lt;/p&gt;
+&lt;p&gt;Dále je nutné ručně zadat funkce, které nechcete “optimalizovat” – vyhodit.
+Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
+souboru &lt;code&gt;.make/exclude_reference&lt;/code&gt; uvnitř projektového adresáře.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Pomocí
 &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt; nainstalujete &lt;code&gt;gcc&lt;/code&gt; a v adresáři se zdrojovými 
-soubory zavoláte &lt;code&gt;make&lt;/code&gt;.&lt;/p&gt;
+soubory zavoláte &lt;code&gt;make&lt;/code&gt;. Už jsem to udělal za vás a binárka je 
+součástí &lt;a href="#startovaci-toolset"&gt;startovacího toolsetu&lt;/a&gt; a je v souboru
+&lt;code&gt;.make/sdccrm.exe&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;choco&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mingw&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;a pak&lt;/p&gt;
@@ -139,7 +154,7 @@ Assembleru&lt;/a&gt; tedy -gas do &lt;span class="caps"&gt;SDCC&lt;/span&gt;
 můžeme používat klasické nástroje z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
 binutils&lt;/a&gt;, na druhou stranu to
 znamená, že nelze použít ty části &lt;code&gt;sdcc-libraries&lt;/code&gt;, které jsou napsané v
-assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+&lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
 stane, že nějaká vnitřní funkcionalita (například násobení 32-bitových
 integerů) je napsaná jen v &lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a vám nezbude, než to nějak obejít nebo
 danou funkci přepsat do &lt;span class="caps"&gt;GNU&lt;/span&gt; assembleru.&lt;/p&gt;
@@ -204,7 +219,7 @@ programu přímo na čipu. &lt;code&gt;openocd&lt;/code&gt; umí i nahrát progr
 &lt;p&gt;na Windows je to díky &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt; podobně jednoduché.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install openodc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
+&lt;p&gt;… jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
 dostupná verze 0.11).&lt;/p&gt;
 &lt;p&gt;Aby &lt;code&gt;openodc&lt;/code&gt; umělo i pouhé flashování 
 &lt;a href="https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0"&gt;je třeba přidat&lt;/a&gt;
@@ -224,6 +239,9 @@ na konec konfiguračního souboru &lt;code&gt;stm8s.cfg&lt;/code&gt; tyto řád
 Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato cesta:
 &lt;code&gt;C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20190828-0.10.0\share\openocd\scripts\target\stm8s.cfg&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id="stm8flash"&gt;stm8flash&lt;a class="headerlink" href="#stm8flash" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Druhá možnost je program &lt;code&gt;stm8flash&lt;/code&gt;. Ve většině linuxových distribucí je třeba
+ho ručně buildnout.&lt;/p&gt;
+&lt;p class="center"&gt;&lt;a href="https://github.com/vdudouyt/stm8flash"&gt;https://github.com/vdudouyt/stm8flash&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="debug"&gt;Debug&lt;a class="headerlink" href="#debug" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="stm8-gdb"&gt;stm8-gdb&lt;a class="headerlink" href="#stm8-gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;h3 id="stm8-debugger-for-vscodecodium"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Debugger for vsCode/Codium&lt;a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-20T16:48:54+01:00</published><updated>2021-11-20T16:48:54+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vscodecodium.html</id><summary type="html">

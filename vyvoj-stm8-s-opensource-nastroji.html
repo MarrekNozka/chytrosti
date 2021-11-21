@@ -22,8 +22,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-11-20T20:44:19.658698+01:00" />
-<meta property="og:article:modified_time" content="2021-11-20T20:44:19.658698+01:00" />
+<meta property="og:article:published_time" content="2021-11-21T19:51:15.605753+01:00" />
+<meta property="og:article:modified_time" content="2021-11-21T19:51:15.605753+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -184,12 +184,23 @@ nainstalovat <a href="https://www.virtualbox.org/">VirtualBox</a> a stáhnout si
 I tak si ale přečtěte následující text ať víte, jak to máte použít.</p>
 <p class="center"><a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova">https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-<span class="caps">OVA</span>/Devuan-X-<span class="caps">MIT</span>.ova</a></p>
 <h2 id="startovaci-toolset">Startovací toolset<a class="headerlink" href="#startovaci-toolset" title="Permanent link">¶</a></h2>
-<p>Také jsem pro vás připravil startovací <em>strom zdrojových kódů</em> a 
+<p>Připravil jsem startovací <em>strom zdrojových kódů</em> a 
 <a href="https://cs.wikipedia.org/wiki/Make">Makefile</a>.</p>
 <p class="center"><a href="https://github.com/spseol/start-stm8">https://github.com/spseol/start-stm8</a></p>
-<p>Toolset se spoléhá na několik nástrojů, které je třeba nainstalovat: To je popsáno na
-následujících řádcích. Aby vše, co je zde popsáno fungovalo k vaší spokojenosti,
-je třeba dodržet následující schéma:</p>
+<p>Tento toolset se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
+<a href="https://cs.wikipedia.org/wiki/Make">Make</a>,
+<a href="https://cs.wikipedia.org/wiki/Bash">Bash</a> a také se docela dobře hodí 
+<a href="https://chytrosti.marrek.cz/git.html">Git</a>.</p>
+<p>V Linuxu zavoláte něco jako:</p>
+<div class="highlight"><pre><span></span><code>apt install make git
+</code></pre></div>
+<p>Ve Windows je nejsnadnější instalovat pomocí <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatye</a>:</p>
+<div class="highlight"><pre><span></span><code>choco install make
+choco install git
+</code></pre></div>
+<p>(Bash je součásti balíčku Git.)</p>
+<p>Aby vše, co je zde popsáno fungovalo k vaší spokojenosti, je třeba dodržet
+následující schéma:</p>
 <div class="highlight"><pre><span></span><code>MIT
 ├── Projekt-1
 │   ├── inc
@@ -268,14 +279,18 @@ Windows oblíbeným, klikáním.</p>
 <p>sdccrm je nástroj pro optimalizaci mrtvého kódu pro port stm8 sdcc, který
 odstraňuje nepoužívané funkce.</p>
 <p class="center"><a href="https://github.com/XaviDCR92/sdccrm">https://github.com/XaviDCR92/sdccrm</a></p>
-<p>Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale je
-nutné ručně zadat funkce, které nechcete “optimalizovat” – vyhodit. Tato
+<p>Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale tato
 možnost <strong><a href="https://github.com/XaviDCR92/sdccrm#known-issues">vylučuje použití
 debugeru</a></strong>. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.</p>
+<p>Dále je nutné ručně zadat funkce, které nechcete “optimalizovat” – vyhodit.
+Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
+souboru <code>.make/exclude_reference</code> uvnitř projektového adresáře.</p>
 <p><code>sdccrm</code> si musíte buildnout ze zdrojových kódů. Pomocí
 <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatye</a> nainstalujete <code>gcc</code> a v adresáři se zdrojovými 
-soubory zavoláte <code>make</code>.</p>
+soubory zavoláte <code>make</code>. Už jsem to udělal za vás a binárka je 
+součástí <a href="#startovaci-toolset">startovacího toolsetu</a> a je v souboru
+<code>.make/sdccrm.exe</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">mingw</span>
 </code></pre></div>
 <p>a pak</p>
@@ -290,7 +305,7 @@ Assembleru</a> tedy -gas do <span class="caps">SDCC</span>
 můžeme používat klasické nástroje z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span>
 binutils</a>, na druhou stranu to
 znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v
-assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+<span class="caps">STM8</span> assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
 stane, že nějaká vnitřní funkcionalita (například násobení 32-bitových
 integerů) je napsaná jen v <span class="caps">STM8</span> assembleru a vám nezbude, než to nějak obejít nebo
 danou funkci přepsat do <span class="caps">GNU</span> assembleru.</p>
@@ -355,7 +370,7 @@ programu přímo na čipu. <code>openocd</code> umí i nahrát program do pamět
 <p>na Windows je to díky <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatye</a> podobně jednoduché.</p>
 <div class="highlight"><pre><span></span><code>choco install openodc
 </code></pre></div>
-<p>jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
+<p>… jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
 dostupná verze 0.11).</p>
 <p>Aby <code>openodc</code> umělo i pouhé flashování 
 <a href="https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0">je třeba přidat</a>
@@ -375,6 +390,9 @@ na konec konfiguračního souboru <code>stm8s.cfg</code> tyto řádky:</p>
 Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato cesta:
 <code>C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20190828-0.10.0\share\openocd\scripts\target\stm8s.cfg</code>.</p>
 <h3 id="stm8flash">stm8flash<a class="headerlink" href="#stm8flash" title="Permanent link">¶</a></h3>
+<p>Druhá možnost je program <code>stm8flash</code>. Ve většině linuxových distribucí je třeba
+ho ručně buildnout.</p>
+<p class="center"><a href="https://github.com/vdudouyt/stm8flash">https://github.com/vdudouyt/stm8flash</a></p>
 <h2 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">¶</a></h2>
 <h3 id="stm8-gdb">stm8-gdb<a class="headerlink" href="#stm8-gdb" title="Permanent link">¶</a></h3>
 <h3 id="stm8-debugger-for-vscodecodium"><span class="caps">STM8</span> Debugger for vsCode/Codium<a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link">¶</a></h3>
@@ -414,8 +432,8 @@ Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato ces
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-11-20T20:44:19+01:00">
-              20. lis 2021 20:44
+            <time itemprop="dateCreated" datetime="2021-11-21T19:51:15+01:00">
+              21. lis 2021 19:51
             </time>
 
             <h4>Kategorie</h4>
