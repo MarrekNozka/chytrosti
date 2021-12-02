@@ -22,8 +22,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-11-21T19:51:15.605753+01:00" />
-<meta property="og:article:modified_time" content="2021-11-21T19:51:15.605753+01:00" />
+<meta property="og:article:published_time" content="2021-12-02T09:58:08.924869+01:00" />
+<meta property="og:article:modified_time" content="2021-12-02T09:58:08.924869+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -113,6 +113,11 @@
         <div class="toc">
 <ul>
 <li><a href="#predpripravena-instalace">Předpřipravená instalace</a></li>
+<li><a href="#rychla-instalace">Rychlá instalace</a><ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#linux">Linux</a></li>
+</ul>
+</li>
 <li><a href="#startovaci-toolset">Startovací toolset</a></li>
 <li><a href="#vyvojove-prostredi">Vývojové prostředí</a></li>
 <li><a href="#kompilace">Kompilace</a><ul>
@@ -179,10 +184,32 @@ mrknout: <a href="https://github.com/hbendalibraham/stm8_started">https://github
 <h2 id="predpripravena-instalace">Předpřipravená instalace<a class="headerlink" href="#predpripravena-instalace" title="Permanent link">¶</a></h2>
 <p>Připravil jsem pro vás výukovou image systému <a href="https://devuan.org/">Devuan Linux</a>,
 kde je vše již nastaveno a nainstalováno. Nemusíte tedy vše ručně instalovat, stačí 
-nainstalovat <a href="https://www.virtualbox.org/">VirtualBox</a> a stáhnout si image:
-<a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova">Devuan-X-<span class="caps">MIT</span>.ova</a>
+nainstalovat <a href="https://www.virtualbox.org/">VirtualBox</a> – včetně 
+<a href="https://www.virtualbox.org/wiki/Downloads">Extension Pack</a>
+a stáhnout si image:
+<a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova">Devuan-X-<span class="caps">MIT</span>.ova</a>.
 I tak si ale přečtěte následující text ať víte, jak to máte použít.</p>
 <p class="center"><a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova">https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-<span class="caps">OVA</span>/Devuan-X-<span class="caps">MIT</span>.ova</a></p>
+<h2 id="rychla-instalace">Rychlá instalace<a class="headerlink" href="#rychla-instalace" title="Permanent link">¶</a></h2>
+<p>Dále v textu jsou popsány detaily. Zde je na jednom místě sepsána rychlá instalace
+nástrojů, které budete potřebovat.</p>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">¶</a></h3>
+<p>Nejprve nainstalujte <a href="https://chytrosti.marrek.cz/chocolatey.html">Chocolatye</a>. Tedy:</p>
+<p>Pomocí <code>Win+X</code> a spustíte PowerShell jako Administrátor
+a zadáte příkaz:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Set</span><span class="o">-</span><span class="n">ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-</span><span class="n">Scope</span> <span class="n">Process</span> <span class="o">-</span><span class="n">Force</span><span class="p">;</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">=</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">-</span><span class="n">bor</span> <span class="mi">3072</span><span class="p">;</span> <span class="n">iex</span> <span class="p">((</span><span class="n">New</span><span class="o">-</span><span class="nb nb-Type">Object</span> <span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">WebClient</span><span class="p">)</span><span class="o">.</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="p">))</span>
+</code></pre></div>
+<p>Potom doinstalujte další potřebné nástroje:</p>
+<div class="highlight"><pre><span></span><code>choco install vscodium git make mingw openocd
+</code></pre></div>
+<p>Pokud ještě nemáte Python, můžete i Python:</p>
+<div class="highlight"><pre><span></span><code>choco install python
+</code></pre></div>
+<p>Instalace <span class="caps">SDCC</span> se musí naklikat. Instalátor stáhnete zde:
+<a href="https://sourceforge.net/projects/sdcc/files/sdcc-win64/">https://sourceforge.net/projects/sdcc/files/sdcc-win64/</a></p>
+<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code>sudo apt install sdcc sdcc-libraries git make openocd
+</code></pre></div>
 <h2 id="startovaci-toolset">Startovací toolset<a class="headerlink" href="#startovaci-toolset" title="Permanent link">¶</a></h2>
 <p>Připravil jsem startovací <em>strom zdrojových kódů</em> a 
 <a href="https://cs.wikipedia.org/wiki/Make">Makefile</a>.</p>
@@ -432,8 +459,8 @@ ho ručně buildnout.</p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2021-11-21T19:51:15+01:00">
-              21. lis 2021 19:51
+            <time itemprop="dateCreated" datetime="2021-12-02T09:58:08+01:00">
+              2. pro 2021 9:58
             </time>
 
             <h4>Kategorie</h4>

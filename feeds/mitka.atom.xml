@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-21T19:51:15+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-11-21T19:51:15+01:00</published><updated>2021-11-21T19:51:15+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-21:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-12-02T09:58:08+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-12-02T09:58:08+01:00</published><updated>2021-12-02T09:58:08+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-12-02:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -28,10 +28,32 @@ mrknout: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://
 &lt;h2 id="predpripravena-instalace"&gt;Předpřipravená instalace&lt;a class="headerlink" href="#predpripravena-instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Připravil jsem pro vás výukovou image systému &lt;a href="https://devuan.org/"&gt;Devuan Linux&lt;/a&gt;,
 kde je vše již nastaveno a nainstalováno. Nemusíte tedy vše ručně instalovat, stačí 
-nainstalovat &lt;a href="https://www.virtualbox.org/"&gt;VirtualBox&lt;/a&gt; a stáhnout si image:
-&lt;a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova"&gt;Devuan-X-&lt;span class="caps"&gt;MIT&lt;/span&gt;.ova&lt;/a&gt;
+nainstalovat &lt;a href="https://www.virtualbox.org/"&gt;VirtualBox&lt;/a&gt; – včetně 
+&lt;a href="https://www.virtualbox.org/wiki/Downloads"&gt;Extension Pack&lt;/a&gt;
+a stáhnout si image:
+&lt;a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova"&gt;Devuan-X-&lt;span class="caps"&gt;MIT&lt;/span&gt;.ova&lt;/a&gt;.
 I tak si ale přečtěte následující text ať víte, jak to máte použít.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova"&gt;https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-&lt;span class="caps"&gt;OVA&lt;/span&gt;/Devuan-X-&lt;span class="caps"&gt;MIT&lt;/span&gt;.ova&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="rychla-instalace"&gt;Rychlá instalace&lt;a class="headerlink" href="#rychla-instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dále v textu jsou popsány detaily. Zde je na jednom místě sepsána rychlá instalace
+nástrojů, které budete potřebovat.&lt;/p&gt;
+&lt;h3 id="windows"&gt;Windows&lt;a class="headerlink" href="#windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Nejprve nainstalujte &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;. Tedy:&lt;/p&gt;
+&lt;p&gt;Pomocí &lt;code&gt;Win+X&lt;/code&gt; a spustíte PowerShell jako Administrátor
+a zadáte příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ExecutionPolicy&lt;/span&gt; &lt;span class="n"&gt;Bypass&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Scope&lt;/span&gt; &lt;span class="n"&gt;Process&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Force&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ServicePointManager&lt;/span&gt;&lt;span class="p"&gt;]::&lt;/span&gt;&lt;span class="n"&gt;SecurityProtocol&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bor&lt;/span&gt; &lt;span class="mi"&gt;3072&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;iex&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;New&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb nb-Type"&gt;Object&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Net&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WebClient&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DownloadString&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'https://community.chocolatey.org/install.ps1'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Potom doinstalujte další potřebné nástroje:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install vscodium git make mingw openocd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud ještě nemáte Python, můžete i Python:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install python
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Instalace &lt;span class="caps"&gt;SDCC&lt;/span&gt; se musí naklikat. Instalátor stáhnete zde:
+&lt;a href="https://sourceforge.net/projects/sdcc/files/sdcc-win64/"&gt;https://sourceforge.net/projects/sdcc/files/sdcc-win64/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install sdcc sdcc-libraries git make openocd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="startovaci-toolset"&gt;Startovací toolset&lt;a class="headerlink" href="#startovaci-toolset" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Připravil jsem startovací &lt;em&gt;strom zdrojových kódů&lt;/em&gt; a 
 &lt;a href="https://cs.wikipedia.org/wiki/Make"&gt;Makefile&lt;/a&gt;.&lt;/p&gt;
