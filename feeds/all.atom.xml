@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-12-02T09:58:08+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-12-02T09:58:08+01:00</published><updated>2021-12-02T09:58:08+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-12-02:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-12-29T21:40:14+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2021-12-02T09:58:08+01:00</published><updated>2021-12-02T09:58:08+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-12-02:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -502,17 +502,47 @@ choco install make
 choco install openocd
 choco install mingw
 choco install python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2021-11-17T16:54:52+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2021-12-29T21:40:14+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
 &lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
-prostředí …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Někdy se stane, že při zadání příkazu &lt;code&gt;pip&lt;/code&gt; obdržíte pouze hlášení, že příkaz
+neexistuje …&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
 &lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Někdy se stane, že při zadání příkazu &lt;code&gt;pip&lt;/code&gt; obdržíte pouze hlášení, že příkaz
+neexistuje. Buď jste při instalaci nezadali, že se má nainstalovat, nebo 
+nejsou příslušné cesty obsaženy v proměnné &lt;code&gt;PATH&lt;/code&gt;. V obou dvou případech doporučuji
+znovu &lt;a href="https://github.com/spseol/PRG-No/blob/master/instalace.md"&gt;spustit instalátor&lt;/a&gt;
+a zaškrtnou příslušná políčka.&lt;/p&gt;
+&lt;p&gt;V Linuxu potom stačí něco jako: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install python3-pip python3-venv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="admonition notice"&gt;
+&lt;p class="admonition-title"&gt;Notice&lt;/p&gt;
+&lt;p&gt;Ještě jedna poznánka k Linuxu: V Linuxových distribucích bývá Python
+většinou už nainstalován – a to dokonce dvakrát. Příkazem &lt;code&gt;python&lt;/code&gt;
+spustíte &lt;strong&gt;Python2&lt;/strong&gt; a příkazem &lt;code&gt;python3&lt;/code&gt; spustíte &lt;strong&gt;Python3&lt;/strong&gt;. Obdobně
+to platí pro příkaz &lt;code&gt;pip&lt;/code&gt; a &lt;code&gt;pip3&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Také se může stát, že modul pip nainstalován je, ale příkaz &lt;code&gt;pip&lt;/code&gt; ne.
+Pro tyto případy a také pro vysvětlení některých nejasností: místo příkazu &lt;code&gt;pip&lt;/code&gt;
+můžete zadat delší příkaz&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python -m pip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;případně…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3 -m pip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;celý příkaz může tedy vypadat například takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3 -m pip install -U --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;namísto…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr/&gt;
 &lt;p&gt;Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
 prostředí nebo jen pro jednoho uživatele? &lt;/p&gt;
 &lt;p&gt;Dále je dobré si všímat žlutých varovných hlášení a řídit se jejich radou:&lt;/p&gt;
@@ -535,14 +565,15 @@ přidat do proměnné &lt;code&gt;PATH&lt;/code&gt;. Ve Windows to musíte nakli
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PATH=~.local/bin:$PATH
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="globalni-instalace"&gt;Globální instalace&lt;a class="headerlink" href="#globalni-instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pokud budete balíček instalovat globálně pro celý systém potřebujete administrátorská
-práva. Je třeba se ujistit, že si tím nepokazíte něco, co už nainstalované máte. Mohlo
-by se stát, že máte nainstalovanou nějakou aplikaci, která potřebuje knihovnu verze 
-&lt;code&gt;x.y&lt;/code&gt; a vy nyní nainstalujete tu stejnou knihovnu verze &lt;code&gt;y.z&lt;/code&gt;. Na windows toto většinou
-řešit nemusíte, na Linuxu typicky ano. (Na druhou stranu v Linuxu můžete spoustu
-knihoven nainstalovat i bez pipu z repositářů vaší distribuce: 
-&lt;code&gt;apt install pytho3-flask&lt;/code&gt;.)&lt;/p&gt;
-&lt;p&gt;Takže spustíte si příkazový řádek jako superuživatel a zadáte něco jako:&lt;/p&gt;
+&lt;p&gt;Pokud budete balíček instalovat globálně pro celý systém potřebujete
+administrátorská práva. Je třeba se ujistit, že si tím nepokazíte něco, co už
+nainstalované máte. Mohlo by se stát, že máte nainstalovanou nějakou aplikaci,
+která potřebuje knihovnu verze &lt;code&gt;x.y&lt;/code&gt; a vy nyní nainstalujete tu stejnou
+knihovnu verze &lt;code&gt;y.z&lt;/code&gt;. Na Windows toto většinou (někdy tedy ano) řešit nemusíte,
+na Linuxu typicky ano. (Na druhou stranu v Linuxu můžete spoustu knihoven
+nainstalovat i bez &lt;code&gt;pip&lt;/code&gt;u z repositářů vaší distribuce: &lt;code&gt;apt install
+pytho3-flask&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Takže spustíte si příkazový řádek a jako superuživatel a zadáte něco jako:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 pip install pyglet
 pip install jmeno_balicku
@@ -553,6 +584,11 @@ instalují do vašeho domovského adresáře (profilu). Na Linuxu je to typicky 
 &lt;code&gt;~/.local/lib/python3.X&lt;/code&gt; pro balíčky a &lt;code&gt;~/.local/bin&lt;/code&gt; pro spustitelné skripty.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install --user flask 
 pip install --user pyglet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud už je daný balíček nainstalován v systému a vy chcete novější verzi jen
+do uživatelského profilu, je třeba to vynutit parametrem &lt;code&gt;-U&lt;/code&gt;, který říká, že má
+balíček povýšit/instalovat na nejnovější dostupnou verzi.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U --user flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="virtualni-prostredi"&gt;Virtuální prostředí?&lt;a class="headerlink" href="#virtualni-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments"&gt;Virtuální prostředí&lt;/a&gt;
@@ -573,15 +609,16 @@ toho vůbec nevšimnou.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.venv-projekt1&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="no"&gt;Scripts&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="no"&gt;activate.bat&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="prace"&gt;Práce&lt;a class="headerlink" href="#prace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Prostředí je aktivováno a pokud tu pustíte Python bude bude vidět jen to, co je
-zahrnuto v tomto virtuálním prostředí. Pokud pustíte &lt;code&gt;pip&lt;/code&gt;, bude instalovat do tohoto prostředí.&lt;/p&gt;
+&lt;p&gt;Prostředí je aktivováno a pokud tu pustíte Python bude vidět jen to, co je
+zahrnuto v tomto virtuálním prostředí. Pokud pustíte &lt;code&gt;pip&lt;/code&gt;, bude instalovat do
+tohoto prostředí.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U pip
 pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="deaktivace"&gt;Deaktivace&lt;a class="headerlink" href="#deaktivace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;deactivate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="aktualizace"&gt;Aktualizace&lt;a class="headerlink" href="#aktualizace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="aktualizace-balicku"&gt;Aktualizace Balíčků&lt;a class="headerlink" href="#aktualizace-balicku" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Aktualizace balíčků na nejnovější dostupnou verzi provedete parametrem &lt;code&gt;-U&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U pip
 pip install -U flask
