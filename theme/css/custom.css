@@ -178,3 +178,8 @@ img[alt*="|=|"] {
     float: left;
 }
 
+.nic, .nic:hover {
+    text-decoration: none;
+    cursor: text;
+    color: black;
+}
