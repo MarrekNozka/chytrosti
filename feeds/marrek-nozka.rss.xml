@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Thu, 30 Dec 2021 18:27:54 +0100</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 30 Jan 2022 20:26:20 +0100</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 30 Jan 2022 20:26:20 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-01-30:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -57,18 +68,7 @@ nebo
 &lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
-proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 14:27:44 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/prg.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nucleo-8S208RB %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 12 Nov 2021 15:37:57 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-12:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 14:27:44 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/prg.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>PSK</title><link>https://chytrosti.marrek.cz/psk.html</link><description>&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
 &lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 07 Nov 2021 17:54:36 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-07:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category></item><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
 &lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
