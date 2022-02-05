@@ -1,6 +1,5 @@
 Title: Chocolatey
 Subtitle: The package manager for Windows
-Date: 2021-11-09 17:28
 Category: Programování
 Tags: programování, Git, Python, STM8
 

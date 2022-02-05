@@ -21,6 +21,9 @@ Instalace
 
 * návod [zde](https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb).
 
+Klíčové je nainstalovat i [pip]({filename}/pip.md) a přidat si Python do 
+proměnné prostředí `PATH`: `Add Python to PATH`, `add Python to enviroment variables`.
+
 Editor
 ================
 
@@ -36,7 +39,26 @@ Já doporučuji [VSCode/Codium]({filename}/codium.md).
 Git
 ==============
 
-Pro sdílení práce a odevzdávání domácích úkolů používáme systým
-[Git]({filename}/git.md) a server [GitHub](https://github.com).
+Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+[Git](https://git-scm.org) a server [GitHub](https://github.com).
+Stojí také za to, zmínit se 
+o [GitHub programu pro vzdělávání](https://education.github.com/).
 
+Gitu se věnuji v [samostatném postu Git]({filename}/git.md).
+
+
+Dokumentace
+===============
+
+Naprostou většinu všech vašich dotazů vyřeší `Kačer`
+[prostým dotazem](https://duckduckgo.com/?q=how+to+python). Nicméně považuji
+za dobré zmínit, že Python má svou vlastní -- docela dobrou -- 
+[dokumentaci](https://doc.python.org/).
+
+
+Knihovny
+======================
+
+Knihovny se nejlépe instalují pomocí [pip](https://pip.pypa.io). Tématu se věnuji
+v [samostatném postu Pip]({filename}/pip.md).
 

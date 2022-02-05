@@ -1,0 +1,53 @@
+Title: DBI
+Subtitle: Databázové a informační systémy
+Category: Programování
+Tags: Python, programování, web, databáze, Flask
+menu: true
+
+[TOC]
+
+
+Python
+============================
+
+Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro [PRG]({filename}/prg/prg.md).
+
+Instalace knihoven
+==================
+
+Budeme potřebovat modul [Flask](https://flask.palletsprojects.com/). Jeho instalaci 
+zajistí [pip](https://pip.pypa.io). Doporučuji přečíst si celý 
+[post věnovaný pipu]({filename}/pip.md).
+
+Ve Windows to může vypadat třeba takto:
+```
+pip install flask
+```
+
+V Linuxu spíš takto:
+```
+pip3 install --user flask
+```
+
+Git
+==============
+
+Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+[Git](https://git-scm.org) a server [GitHub](https://github.com).
+Stojí také za to, zmínit se 
+o [GitHub programu pro vzdělávání](https://education.github.com/).
+
+Gitu se věnuji v [samostatném postu]({filename}/git.md).
+
+
+Dokumentace
+==============
+
+* Python: <https://docs.python.org/>
+* Flask: <https://flask.palletsprojects.com/>
+    * [Quickstart](https://flask.palletsprojects.com/quickstart/)
+    * [Message Flashing](https://flask.palletsprojects.com/patterns/flashing/)
+    * [Incoming Request Data](https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data)
+    * [Patterns](https://flask.palletsprojects.com/patterns/)
+* Jinja2: <https://jinja.palletsprojects.com/templates/>

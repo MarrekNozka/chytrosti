@@ -12,7 +12,7 @@ THEME = "../elegant/"
 RECENT_ARTICLES_COUNT = 42
 USE_SHORTCUT_ICONS = True
 SOCIAL_PROFILE_LABEL = "Kontakt"
-LANDING_PAGE_TITLE = "Marrkovi chytrosti"
+LANDING_PAGE_TITLE = "Marrkovy chytrosti"
 PROJECTS_TITLE = "Moje projekty"
 TYPOGRIFY = True
 
@@ -131,7 +131,7 @@ MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.codehilite": {
             "css_class": "highlight",
-            "linenums": True,
+            "linenums": False,
         },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},

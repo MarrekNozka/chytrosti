@@ -6,8 +6,8 @@ Tyto stránky jsou určeny pro podporu mojí výuky.
 
 Každé téma, které aktuálně vyučuji, tady má svou stránku.
 Některé stránky podávají souhrnné informace, některé jsou jen sbírkou odkazů na
-jiná místa na internetu. Pokud vám tu něco chybí, napište mi. Pokud najdete
-chybu, napište mi.
+jiná místa na Internetu. Pokud vám tu něco chybí, napište mi. Pokud najdete
+[chybu]({filename}/pages/chyba.md), napište mi.
 
 Motto
 ==================================
@@ -21,3 +21,4 @@ tak!"*
 Marek Nožka
 ==================================
 
+![MarrekNožka](https://spseol.cz/images/kontakty/nozka.jpg)

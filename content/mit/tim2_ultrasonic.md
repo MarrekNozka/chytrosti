@@ -15,5 +15,5 @@ Kompletní zdrojové kódy naleznete v
 * základní princip -- 
   [větev princip](https://github.com/spseol/STM8-TIM2-ultrasonic/tree/princip)
     * [main.c](https://github.com/spseol/STM8-TIM2-ultrasonic/blob/princip/src/main.c)
-* řešení typu stavový automat -- [větev stav_automat](https://github.com/spseol/STM8-TIM2-ultrasonic/tree/stav_automat)
+* řešení typu Stavový automat -- [větev stav_automat](https://github.com/spseol/STM8-TIM2-ultrasonic/tree/stav_automat)
     * [main.c](https://github.com/spseol/STM8-TIM2-ultrasonic/blob/stav_automat/src/main.c)
