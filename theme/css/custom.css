@@ -35,6 +35,13 @@ h4 {
     margin-bottom: 1ex;
 }
 
+a {
+    color: darkred;
+}
+a:hover {
+    color: indianred;
+}
+
 .article-content p {
     margin-bottom: 0.8ex;
 }
@@ -47,11 +54,17 @@ article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
 blockquote a:not(.ampl) {
     color: darkred;
+    display: inline-block;
 }
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),
-a:not(.ampl) {
-    display: inline;
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl):hover, 
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a:hover,
+blockquote a:not(.ampl):hover {
+    color: indianred;
 }
+/*article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),*/
+/*a:not(.ampl) {*/
+/*    display: inline;*/
+/*}*/
 
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="http://"]::after,
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="https://"]::after,
