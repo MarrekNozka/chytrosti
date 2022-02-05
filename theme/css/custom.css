@@ -55,11 +55,14 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
 blockquote a:not(.ampl) {
     color: darkred;
     display: inline-block;
+    border-bottom: 1px solid #8B000011;
 }
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl):hover, 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a:hover,
 blockquote a:not(.ampl):hover {
     color: indianred;
+    border-bottom: 1px solid #00000000;
+    /*background-color: #eee5;*/
 }
 /*article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),*/
 /*a:not(.ampl) {*/
@@ -85,6 +88,18 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
   background-color: white;
   /*color: dodgerblue; */
   /*display: inline-block;*/
+}
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="http://"]:hover::after,
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="https://"]:hover::after,
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="http://"]:hover::after,
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="https://"]:hover::after
+{
+  content: "⤴";
+  margin-left: 1px;
+  color: darkred;
+  position: relative;
+  top: -1.1ex;
+  background-color: white;
 }
 
 
