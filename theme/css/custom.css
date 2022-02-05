@@ -50,9 +50,15 @@ a:hover {
     text-align: left;
 }
 
+article p:not(#list-of-translations):not(#post-share-links)
+{
+    text-indent: 1em;
+}
+
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
 blockquote a:not(.ampl) {
+    text-indent: 0;
     color: darkred;
     display: inline-block;
     border-bottom: 1px solid #8B000011;
@@ -60,9 +66,10 @@ blockquote a:not(.ampl) {
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl):hover, 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a:hover,
 blockquote a:not(.ampl):hover {
+    text-indent: 0;
     color: indianred;
     border-bottom: 1px solid #00000000;
-    /*background-color: #eee5;*/
+    /*background-color: #f3f3f3;*/
 }
 /*article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),*/
 /*a:not(.ampl) {*/
