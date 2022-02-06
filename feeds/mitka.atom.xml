@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-05T17:32:57+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2022-02-05T17:32:57+01:00</published><updated>2022-02-05T17:32:57+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-05:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-06T14:53:25+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2022-02-06T14:53:25+01:00</published><updated>2022-02-06T14:53:25+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-06:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -278,9 +278,48 @@ Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato ces
 &lt;p&gt;Druhá možnost je program &lt;code&gt;stm8flash&lt;/code&gt;. Ve většině linuxových distribucí je třeba
 ho ručně buildnout.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/vdudouyt/stm8flash"&gt;https://github.com/vdudouyt/stm8flash&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="debug"&gt;Debug&lt;a class="headerlink" href="#debug" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="stm8-gdb"&gt;stm8-gdb&lt;a class="headerlink" href="#stm8-gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;h3 id="stm8-debugger-for-vscodecodium"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Debugger for vsCode/Codium&lt;a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-01-30T20:26:20+01:00</published><updated>2022-01-30T20:26:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-01-30:/mit.html</id><summary type="html">
+&lt;h2 id="debuging-ladeni"&gt;Debuging – Ladění&lt;a class="headerlink" href="#debuging-ladeni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="GDB maskot &amp;gt;&amp;gt;" src="https://sourceware.org/gdb/images/archer.svg"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;GDB&lt;/span&gt; (&lt;a href="https://cs.wikipedia.org/wiki/GNU_Debugger"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt; Debugger&lt;/a&gt;) je standardní
+nástroj na hledání chyb v software. Pokud budeme chtít program krokovat a  za
+běhu se dívat do proměnných budeme potřebovat právě upravený 
+&lt;a href="https://stm8-binutils-gdb.sourceforge.io/"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;GDB&lt;/span&gt;&lt;/a&gt;
+z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt; binutils&lt;/a&gt;
+a &lt;a href="#openocd"&gt;OpenOCD&lt;/a&gt; (Open On Chip Debuger).&lt;/p&gt;
+&lt;h3 id="stm8-gdb"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;GDB&lt;/span&gt;&lt;a class="headerlink" href="#stm8-gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;-&lt;span class="caps"&gt;GDB&lt;/span&gt; je součástí &lt;span class="caps"&gt;GNU&lt;/span&gt; binutils. Instalaci jsem popsal výše. Pro přehlednost
+ještě jednou:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
+&lt;span class="nb"&gt;cd&lt;/span&gt; stm8-binutils-gdb-sources
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PREFIX&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/local/stow/stm8-binutils-gdb
+./patch_binutils.sh
+&lt;span class="nb"&gt;cd&lt;/span&gt; binutils-2.30
+make
+sudo make install
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/stow
+sudo stow  stm8-binutils-gdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No a teď samotný postup ladění:&lt;/p&gt;
+&lt;h4 id="openocd_1"&gt;openocd&lt;a class="headerlink" href="#openocd_1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Nejprve je třeba pustit komunikaci s &lt;span class="caps"&gt;STM8&lt;/span&gt; čipem pomocí &lt;code&gt;openocd&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;openocd -f interface/stlink-dap.cfg -f target/stm8s.cfg -c "init" -c "reset halt"
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nebojte nemusíte to vždy znovu vypisovat. Je to napsané v &lt;em&gt;Makefile&lt;/em&gt;, takže
+stačí zavolat&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make openocd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="gdb"&gt;gdb&lt;a class="headerlink" href="#gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;…. a teď v dalším terminálu otevřem &lt;code&gt;gdb&lt;/code&gt; a dáme se do ladění. &lt;strong&gt;Než
+provedete toto, ujistěte se, že openocd již běží&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;stm8-gdb --tui build-STM8S208/out-STM8S208.elf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;opět stačí zavolat &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make debug
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="http://www.gdbtutorial.com/tutorial/commands"&gt;&lt;span class="caps"&gt;GDB&lt;/span&gt; příkazy&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="stm8-debugger-for-vscodecodium"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Debugger for vsCode/Codium&lt;a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug"&gt;https://marketplace.visualstudio.com/items?itemName=&lt;span class="caps"&gt;CL&lt;/span&gt;.stm8-debug&lt;/a&gt;&lt;/p&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-01-30T20:26:20+01:00</published><updated>2022-01-30T20:26:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-01-30:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 

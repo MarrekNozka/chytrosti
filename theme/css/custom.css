@@ -96,25 +96,36 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
   /*color: dodgerblue; */
   /*display: inline-block;*/
 }
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="http://"]:hover::after,
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="https://"]:hover::after,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="http://"]:hover::after,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="https://"]:hover::after
+/*article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="http://"]:hover::after,*/
+/*article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href^="https://"]:hover::after,*/
+/*article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="http://"]:hover::after,*/
+/*article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href^="https://"]:hover::after*/
+/*{*/
+/*  content: "⤴";*/
+/*  margin-left: 1px;*/
+/*  color: darkred;*/
+/*  position: relative;*/
+/*  top: -1.1ex;*/
+/*  background-color: white;*/
+/*}*/
+
+
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href*="wikipedia.org"]::after,
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href*="wikipedia.org"]::after
 {
-  content: "⤴";
-  margin-left: 1px;
-  color: darkred;
-  position: relative;
-  top: -1.1ex;
-  background-color: white;
+    /*content: "➙W";*/
+    content: "W";
+    color: black;
+}
+
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href*="duckduckgo.com"]::after,
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href*="duckduckgo.com"]::after
+{
+    content: "D";
+    color: red;
 }
 
 
-
-
-/*.related-post-header {*/
-/*    color: darkred;*/
-/*}*/
 
 .elegant-hr {
     color: darkred;
