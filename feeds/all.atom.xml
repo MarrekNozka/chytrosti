@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T15:54:57+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-02-07T15:54:57+01:00</published><updated>2022-02-07T15:54:57+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/stm8oss.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T19:48:40+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-02-07T19:48:40+01:00</published><updated>2022-02-07T19:48:40+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/stm8oss.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -61,16 +61,22 @@ a zadáte příkaz:&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/spseol/STM8-start-toolchain"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-start-toolchain&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Tento toolchain se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
 &lt;a href="https://cs.wikipedia.org/wiki/Make"&gt;Make&lt;/a&gt;,
-&lt;a href="https://cs.wikipedia.org/wiki/Bash"&gt;Bash&lt;/a&gt; a/také 
-&lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://cs.wikipedia.org/wiki/Bash"&gt;Bash&lt;/a&gt; a/také &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;V Linuxu zavoláte něco jako:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install make git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ve Windows je nejsnadnější instalovat pomocí &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install make
-choco install git
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install make git 
+choco install openocd
+choco install python
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;(Bash je součásti balíčku Git.)&lt;/p&gt;
+&lt;p&gt;Bash je součásti balíčku Git. Ve Windows ještě stojí za to malinko si Bash připravit,
+aby fungoval dobře s &lt;code&gt;make&lt;/code&gt;. Proto si si nakopírujte konfiguraci s &lt;code&gt;.make/bashrc&lt;/code&gt; do
+domovského adresáře.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cp .make/bashrc ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="projekty-a-knihovna-spl"&gt;Projekty a knihovna &lt;span class="caps"&gt;SPL&lt;/span&gt;&lt;a class="headerlink" href="#projekty-a-knihovna-spl" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Adresářová struktura jednotlivých projektů vypadá takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;MIT
 ├── Projekt-1
@@ -80,6 +86,9 @@ choco install git
 ├── Projekt-2
 │   ├── inc
 │   ├── lib
+│   └── src
+├── SPL
+│   ├── inc
 │   └── src
 ├── SPL-STM8S103
 │   ├── inc
@@ -91,40 +100,51 @@ choco install git
     ├── inc
     └── src
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Udělejte si adresář, kde budou všechny vaše projekty. V tom stejném adresáři
-budou i adresáře nazvané &lt;code&gt;SPL&lt;/code&gt;. V &lt;code&gt;SPL&lt;/code&gt; adresářích je 
-&lt;em&gt;Standard peripheral library&lt;/em&gt; od firmy &lt;a href="https://st.com/"&gt;&lt;span class="caps"&gt;ST&lt;/span&gt;&lt;/a&gt;. Tato knihovna má
-dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli byste si ji 
+&lt;p&gt;Udělejte si adresář, kde budou všechny vaše projekty – v uvedeném příkladu je
+to &lt;code&gt;MIT&lt;/code&gt;. V tom stejném adresáři budou i adresáře nazvané &lt;code&gt;SPL&lt;/code&gt;. V &lt;code&gt;SPL&lt;/code&gt;
+adresářích je &lt;em&gt;Standard peripheral library&lt;/em&gt; od firmy &lt;a href="https://st.com/"&gt;&lt;span class="caps"&gt;ST&lt;/span&gt;&lt;/a&gt;.
+Tato knihovna má dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli
+byste si ji
 &lt;a href="https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&amp;amp;t=vivaldi&amp;amp;ia=software"&gt;najít&lt;/a&gt;
-a &lt;a href="https://www.st.com/en/embedded-software/stsw-stm8069.html"&gt;stáhnout&lt;/a&gt;. Pak je třeba 
-ještě aplikovat &lt;a href="https://github.com/gicking/STM8-SPL_SDCC_patch"&gt;patch&lt;/a&gt;, který knihovnu
-předělá tak, aby se dala použít s naším &lt;em&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/em&gt; kompilátorem. No prostě:  &lt;/p&gt;
-&lt;p class="center"&gt;ve svém prvním projektu zadáte příkaz: &lt;code&gt;make spl&lt;/code&gt;&lt;/p&gt;
+a &lt;a href="https://www.st.com/en/embedded-software/stsw-stm8069.html"&gt;stáhnout&lt;/a&gt;. Pak je
+třeba ještě aplikovat &lt;a href="https://github.com/gicking/STM8-SPL_SDCC_patch"&gt;patch&lt;/a&gt;,
+který knihovnu předělá tak, aby se dala použít s naším &lt;em&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/em&gt; kompilátorem. Celé je
+to docela pracné, ale zkuste napsat &lt;code&gt;make spl&lt;/code&gt; třeba se to zařídí samo.&lt;/p&gt;
+&lt;h4 id="pouziti"&gt;Použití&lt;a class="headerlink" href="#pouziti" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make spl&lt;/code&gt; – stáhne a nachystá knihovny&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make&lt;/code&gt; – provede kompilaci&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make flash&lt;/code&gt; – nahraje program do chipu&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make clean&lt;/code&gt; – smaže všechno, co nakompiloval&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make rebuild&lt;/code&gt; – smaže vše a znovu zkompiluje&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make openocd&lt;/code&gt; – spustí &lt;code&gt;openocd&lt;/code&gt; pro debug&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make debug&lt;/code&gt; – spustí &lt;span class="caps"&gt;STM8&lt;/span&gt;-gdb&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id="konkurence"&gt;Konkurence :)&lt;a class="headerlink" href="#konkurence" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;Ještě bych měl zmínit, že kolega Wykis vytvořil také toolchain, který je o dost
-jednodušší a tím pádem i přehlednějíší:&lt;/p&gt;
+&lt;p&gt;Ještě bych měl zmínit, že kolega &lt;strong&gt;Wykys&lt;/strong&gt; vytvořil také toolchain, který je o dost
+jednodušší a tím pádem i přehlednější:&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://gitlab.com/wykys/stm8-tools"&gt;https://gitlab.com/wykys/stm8-tools&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="vyvojove-prostredi"&gt;Vývojové prostředí&lt;a class="headerlink" href="#vyvojove-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Jako editor a vývojové prostředí doporučuji 
 &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html"&gt;VScodium/VScode&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Instalace je popsána &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html#instalace"&gt;zde&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Instalace je popsána &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html#instalace"&gt;zde&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="kompilace"&gt;Kompilace&lt;a class="headerlink" href="#kompilace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Popíšu tu celkem tři různá, mezi sebou se prolínající řešení. Špatná zpráva je,
 že ani jedno z nich není 100%. Dobrá zpráva je, že při troše snahy se těm 100%
-můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make switch-sdcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;respektive&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make switch-sdccrm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;respektive&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make switch-sdcc-gas
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout.&lt;/p&gt;
 &lt;p&gt;K dispozici jsou tedy celkem tři &lt;code&gt;Makefile&lt;/code&gt; v adresáři 
 &lt;a href="https://github.com/spseol/STM8-start-toolchain/tree/main/.make"&gt;&lt;code&gt;.make&lt;/code&gt;&lt;/a&gt;.
-Přepnutí jen znamená, že se udělá symlink do root-adresáře projektu.
-Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
-takže tato operace může být ztrátová.&lt;/p&gt;
+Přepnutí jen realizováno jako symlink &lt;code&gt;Makefile&lt;/code&gt; do root-adresáře projektu.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ls -l
+lrwx &lt;span class="m"&gt;1&lt;/span&gt; mar &lt;span class="m"&gt;23&lt;/span&gt; &lt;span class="m"&gt;14&lt;/span&gt;. led &lt;span class="m"&gt;21&lt;/span&gt;.14 Makefile -&amp;gt; .make/Makefile-sdcc-gas
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
+takže tato operace může být ztrátová. V &lt;em&gt;Makefile&lt;/em&gt; je vše připraveno, takže
+stačí volat &lt;code&gt;make&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    make switch-sdcc      &lt;span class="c1"&gt;# respektive&lt;/span&gt;
+    make switch-sdccrm    &lt;span class="c1"&gt;# respektive&lt;/span&gt;
+    make switch-sdcc-gas  &lt;span class="c1"&gt;# respektive&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id="reseni-1-sdcc"&gt;Řešení 1: &lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;a class="headerlink" href="#reseni-1-sdcc" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt; - Small Device C Compiler&lt;/a&gt; je kompilátor
 pro různé, více či méně známé 8-bitové architektury. Z hlediska &lt;span class="caps"&gt;STM8&lt;/span&gt; má jednu
@@ -167,7 +187,7 @@ Windows oblíbeným klikáním.&lt;/p&gt;
 odstraňuje nepoužívané funkce.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm"&gt;https://github.com/XaviDCR92/sdccrm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
-&lt;a href="#reseni-1-sdcc"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;, poté se pomocí &lt;code&gt;sdccrm&lt;/code&gt; vymaže kód, který se nepoužívá a 
+&lt;a href="#reseni-1-sdcc"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;, poté se pomocí &lt;code&gt;sdccrm&lt;/code&gt; vymaže kód, který se nepoužívá,
 celý proces se dokončí a kód se převede z assembleru do strojového kódu.&lt;/p&gt;
 &lt;p&gt;Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
 ale tato možnost &lt;strong&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm#known-issues"&gt;vylučuje použití
@@ -176,15 +196,18 @@ vadit může, jindy jinému to vadit nemusí.&lt;/p&gt;
 &lt;p&gt;Dále je nutné &lt;strong&gt;ručně zadat&lt;/strong&gt; funkce, které nechcete “optimalizovat” – tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
 souboru &lt;code&gt;.make/exclude_reference&lt;/code&gt; uvnitř projektového adresáře.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Nainstalujete (např. pomocí
-&lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;) &lt;code&gt;gcc&lt;/code&gt; a v adresáři se zdrojovými soubory zavoláte &lt;code&gt;make&lt;/code&gt;.
-&lt;code&gt;sdccrm&lt;/code&gt; je celkem malý program bez závislostí, takže jde jednoduše kompilovat
-v Linuxu i ve Windows – nicméně pro jistotu je Windows binárka
-součástí &lt;a href="#startovaci-toolchain"&gt;startovacího toolsetu&lt;/a&gt; a je v souboru
-&lt;code&gt;.make/sdccrm.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id="instalace_1"&gt;Instalace&lt;a class="headerlink" href="#instalace_1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
+závislostí, takže jde jednoduše kompilovat v Linuxu i ve Windows –
+nicméně pro jistotu je Windows binárka součástí &lt;a href="#startovaci-toolchain"&gt;startovacího
+toolsetu&lt;/a&gt; a je v souboru &lt;code&gt;.make/sdccrm.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;choco&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mingw&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;a pak&lt;/p&gt;
+&lt;p&gt;nebo v Linuxu:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install gcc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;a pak jen:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; sdccrm
 make
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -192,7 +215,7 @@ make
 &lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdcc-gas"&gt;https://github.com/XaviDCR92/sdcc-gas&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Toto je asi nejlepší řešení optimalizace (vyhození) mrtvého kódu. Vzniklo
 přidáním podpory &lt;a href="https://cs.wikipedia.org/wiki/GNU_Assembler"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt; Assembleru&lt;/a&gt;
-tedy &lt;em&gt;gas&lt;/em&gt; do &lt;span class="caps"&gt;SDCC&lt;/span&gt; 3.9.0; &lt;a href="https://codedocs.org/what-is/gnu-assembler"&gt;gas&lt;/a&gt; je
+tedy &lt;em&gt;gas&lt;/em&gt; do &lt;span class="caps"&gt;SDCC&lt;/span&gt; 3.9.0. &lt;a href="https://codedocs.org/what-is/gnu-assembler"&gt;gas&lt;/a&gt; je
 výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že můžeme
 používat klasické nástroje z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
 binutils&lt;/a&gt;, na druhou stranu to
