@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-06T14:53:25+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2022-02-06T14:53:25+01:00</published><updated>2022-02-06T14:53:25+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-06:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T12:45:28+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2022-02-07T12:45:28+01:00</published><updated>2022-02-07T12:45:28+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -14,6 +14,7 @@ na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kom
 kontrola licence, je fakt opruz; … a jeho chybová hlášení mi taky
 nepřišly úplně srozumitelná.  &lt;br/&gt;
 A to jsem ještě nezmínil to hlavní: &lt;strong&gt;Na Linuxu to nejede!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="tools %%" src="https://chytrosti.marrek.cz/mit/img/tools.jpg"/&gt;&lt;/p&gt;
 &lt;p&gt;Takže, co s tím? Použijeme
 &lt;a href="https://cs.wikipedia.org/wiki/Otev%C5%99en%C3%BD_software"&gt;OpenSource&lt;/a&gt;
 nástroje! Co je potřeba?&lt;/p&gt;
@@ -120,22 +121,26 @@ můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno�
 Přepnutí jen znamená, že se udělá symlink do root-adresáře projektu.
 Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
 takže tato operace může být ztrátová.&lt;/p&gt;
-&lt;h3 id="reseni-1-sdcc"&gt;Řešení 1: sdcc&lt;a class="headerlink" href="#reseni-1-sdcc" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="reseni-1-sdcc"&gt;Řešení 1: &lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;a class="headerlink" href="#reseni-1-sdcc" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt; - Small Device C Compiler&lt;/a&gt; je kompilátor
 pro různé, více či méně známé 8-bitové architektury. Z hlediska &lt;span class="caps"&gt;STM8&lt;/span&gt; má jednu
 zásadní nevýhodu: &lt;strong&gt;nedokáže odstranit nepoužívaný kód&lt;/strong&gt;. Co to znamená? No…
 pokud si všechno píšete sami, tak to prakticky neznamená nic. Pokud ovšem
-použijete nějakou knihovnu (jako například &lt;span class="caps"&gt;SPL&lt;/span&gt;), tak už vám to začne hodně
+použijete nějakou knihovnu (jako například &lt;em&gt;&lt;span class="caps"&gt;SPL&lt;/span&gt;&lt;/em&gt;), tak už vám to začne hodně
 vadit, protože výsledný strojový kód obsahuje spoustu funkcí, které jste
 kompilovali jen proto, že byli součástí knihovny a ne proto, že jste je chtěli
 použít. Tyto funkce nejsou nikde volány a proto by je měl 
 &lt;a href="https://cs.wikipedia.org/wiki/Linker"&gt;linker&lt;/a&gt; odstranit. No a to je přesně to, co
 se nestane &lt;code&gt;:-(&lt;/code&gt;.
 Ve výsledku program, který by mohl mít cca 2-3 kB má 30 kB.&lt;/p&gt;
-&lt;p&gt;To se dá částečně vyřešit tím, že budete kompilovat jen ty části &lt;span class="caps"&gt;SPL&lt;/span&gt;, které
-právě v tomto projektu potřebujete. Velikost výsledného binárního souboru se
-tak rapidně zmenší, ale pokud budete pracovat s čipem, který má jen 8 kB 
-paměti programu, obávám se, že to nemusí stačit….&lt;/p&gt;
+&lt;p&gt;Jediné skutečné řešení tohoto problému je použít níže uvedené 
+&lt;a href="#reseni-2-sdccrm"&gt;sdccrm&lt;/a&gt; nebo
+&lt;a href="#reseni-3-sdcc-gas"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;-gas&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pokud zůstanete u &lt;span class="caps"&gt;SDCC&lt;/span&gt; dá se tento problém částečně obejít tím, že budete
+kompilovat jen ty části &lt;em&gt;&lt;span class="caps"&gt;SPL&lt;/span&gt;&lt;/em&gt;, které právě v tomto projektu potřebujete.
+Velikost výsledného binárního souboru se tak rapidně zmenší, ale pokud budete
+pracovat s čipem, který má jen 8 kB paměti programu, obávám se, že to
+nemusí stačit….&lt;/p&gt;
 &lt;p&gt;V &lt;em&gt;Makefile&lt;/em&gt; někde kolem řádku 77 najdete toto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;SPL_SOURCE&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; stm8s_gpio.c stm8s_clk.c stm8s_tim4.c stm8s_itc.c 
 &lt;span class="c"&gt;#SPL_SOURCE += stm8s_uart1.c&lt;/span&gt;
@@ -146,7 +151,7 @@ paměti programu, obávám se, že to nemusí stačit….&lt;/p&gt;
 &lt;span class="c"&gt;#SPL_SOURCE += stm8s_tim3.c&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;… měli byste zakomentovat to, co nepotřebujete a odkomentovat jen to, co potřebujete.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Instalace v Linuxu&lt;/strong&gt; je poměrně snadná, protože &lt;span class="caps"&gt;SDCC&lt;/span&gt; je součásti většiny
+&lt;p&gt;&lt;strong&gt;Instalace &lt;span class="caps"&gt;SDCC&lt;/span&gt; v Linuxu&lt;/strong&gt; je poměrně snadná, protože &lt;span class="caps"&gt;SDCC&lt;/span&gt; je součásti většiny
 Linuxových distribucí; takže zavoláte něco jako:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install sdcc sdcc-libraries
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -154,39 +159,44 @@ Linuxových distribucí; takže zavoláte něco jako:&lt;/p&gt;
 instalátor&lt;/a&gt; a pokračujte, ve
 Windows oblíbeným klikáním.&lt;/p&gt;
 &lt;h3 id="reseni-2-sdccrm"&gt;Řešení 2: sdccrm&lt;a class="headerlink" href="#reseni-2-sdccrm" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;sdccrm je nástroj pro optimalizaci mrtvého kódu pro port stm8 &lt;span class="caps"&gt;SDCC&lt;/span&gt;, který
+&lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; je nástroj pro optimalizaci mrtvého kódu pro port stm8 &lt;span class="caps"&gt;SDCC&lt;/span&gt;, který
 odstraňuje nepoužívané funkce.&lt;/p&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm"&gt;https://github.com/XaviDCR92/sdccrm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale tato
-možnost &lt;strong&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm#known-issues"&gt;vylučuje použití
+&lt;p&gt;Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
+&lt;a href="#reseni-1-sdcc"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;, poté se pomocí &lt;code&gt;sdccrm&lt;/code&gt; vymaže kód, který se nepoužívá a 
+celý proces se dokončí a kód se převede z assembleru do strojového kódu.&lt;/p&gt;
+&lt;p&gt;Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
+ale tato možnost &lt;strong&gt;&lt;a href="https://github.com/XaviDCR92/sdccrm#known-issues"&gt;vylučuje použití
 debugeru&lt;/a&gt;&lt;/strong&gt;. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.&lt;/p&gt;
-&lt;p&gt;Dále je nutné ručně zadat funkce, které nechcete “optimalizovat” – tedy vyhodit.
+&lt;p&gt;Dále je nutné &lt;strong&gt;ručně zadat&lt;/strong&gt; funkce, které nechcete “optimalizovat” – tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
 souboru &lt;code&gt;.make/exclude_reference&lt;/code&gt; uvnitř projektového adresáře.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Pomocí &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;
-nainstalujete &lt;code&gt;gcc&lt;/code&gt; a v adresáři se zdrojovými soubory zavoláte &lt;code&gt;make&lt;/code&gt;. sdccrm
-je celkem malý program bez závislostí, takže jde jednoduše kompilovat
-v Linuxu i ve Windows – nicméně pro jistotu je Windows binárka součástí
-&lt;a href="#startovaci-toolchain"&gt;startovacího toolsetu&lt;/a&gt; a je v souboru &lt;code&gt;.make/sdccrm.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Nainstalujete (např. pomocí
+&lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatye&lt;/a&gt;) &lt;code&gt;gcc&lt;/code&gt; a v adresáři se zdrojovými soubory zavoláte &lt;code&gt;make&lt;/code&gt;.
+&lt;code&gt;sdccrm&lt;/code&gt; je celkem malý program bez závislostí, takže jde jednoduše kompilovat
+v Linuxu i ve Windows – nicméně pro jistotu je Windows binárka
+součástí &lt;a href="#startovaci-toolchain"&gt;startovacího toolsetu&lt;/a&gt; a je v souboru
+&lt;code&gt;.make/sdccrm.exe&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;choco&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mingw&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;a pak&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; sdccrm
 make
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id="reseni-3-sdcc-gas"&gt;Řešení 3: sdcc-gas&lt;a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="reseni-3-sdcc-gas"&gt;Řešení 3: &lt;span class="caps"&gt;SDCC&lt;/span&gt;-gas&lt;a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p class="center"&gt;&lt;a href="https://github.com/XaviDCR92/sdcc-gas"&gt;https://github.com/XaviDCR92/sdcc-gas&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Toto je asi nejlepší řešení. Vzniklo přidáním podpory &lt;a href="https://cs.wikipedia.org/wiki/GNU_Assembler"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
-Assembleru&lt;/a&gt; tedy -gas do &lt;span class="caps"&gt;SDCC&lt;/span&gt;
-3.9.0; &lt;a href="https://codedocs.org/what-is/gnu-assembler"&gt;gas&lt;/a&gt; je výhodou i nevýhodou
-tohoto řešení. Na jednu stranu to znamená, že můžeme používat klasické nástroje
-z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt; binutils&lt;/a&gt;, na druhou stranu
-to znamená, že nelze použít ty části &lt;code&gt;sdcc-libraries&lt;/code&gt;, které jsou napsané v
-&lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a je nutné použít méně optimální kód napsaný v C. …no a
-zřídka se stane, že nějaká vnitřní funkcionalita (například násobení
-64-bitových integerů) je napsaná jen v &lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a vám nezbude, než to
-nějak obejít nebo danou funkci přepsat do &lt;span class="caps"&gt;GNU&lt;/span&gt; assembleru.&lt;/p&gt;
+&lt;p&gt;Toto je asi nejlepší řešení optimalizace (vyhození) mrtvého kódu. Vzniklo
+přidáním podpory &lt;a href="https://cs.wikipedia.org/wiki/GNU_Assembler"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt; Assembleru&lt;/a&gt;
+tedy &lt;em&gt;gas&lt;/em&gt; do &lt;span class="caps"&gt;SDCC&lt;/span&gt; 3.9.0; &lt;a href="https://codedocs.org/what-is/gnu-assembler"&gt;gas&lt;/a&gt; je
+výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že můžeme
+používat klasické nástroje z &lt;a href="https://cs.wikipedia.org/wiki/GNU_binutils"&gt;&lt;span class="caps"&gt;GNU&lt;/span&gt;
+binutils&lt;/a&gt;, na druhou stranu to
+znamená, že nelze použít ty části &lt;code&gt;sdcc-libraries&lt;/code&gt;, které jsou napsané v &lt;span class="caps"&gt;STM8&lt;/span&gt;
+assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+stane, že nějaká vnitřní funkcionalita (například násobení 64-bitových
+integerů) je napsaná jen v &lt;span class="caps"&gt;STM8&lt;/span&gt; assembleru a vám nezbude, než to nějak obejít
+nebo danou funkci přepsat do &lt;span class="caps"&gt;GNU&lt;/span&gt; assembleru.&lt;/p&gt;
 &lt;p&gt;Pokud vás to zajímá více můžete si počíst
 &lt;a href="https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397"&gt;zde&lt;/a&gt;
 a 
@@ -310,8 +320,8 @@ stačí zavolat&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make openocd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id="gdb"&gt;gdb&lt;a class="headerlink" href="#gdb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;…. a teď v dalším terminálu otevřem &lt;code&gt;gdb&lt;/code&gt; a dáme se do ladění. &lt;strong&gt;Než
-provedete toto, ujistěte se, že openocd již běží&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;…. a teď v dalším terminálu otevřeme &lt;code&gt;gdb&lt;/code&gt; a dáme se do ladění. &lt;strong&gt;Než
+provedete toto, ujistěte se, že &lt;a href="#openocd_1"&gt;openocd&lt;/a&gt; již běží&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;stm8-gdb --tui build-STM8S208/out-STM8S208.elf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;opět stačí zavolat &lt;/p&gt;

@@ -22,8 +22,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-02-06T14:53:25.261059+01:00" />
-<meta property="og:article:modified_time" content="2022-02-06T14:53:25.261059+01:00" />
+<meta property="og:article:published_time" content="2022-02-07T12:45:28.627107+01:00" />
+<meta property="og:article:modified_time" content="2022-02-07T12:45:28.627107+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -121,9 +121,9 @@
 <li><a href="#startovaci-toolchain">Startovací toolchain</a></li>
 <li><a href="#vyvojove-prostredi">Vývojové prostředí</a></li>
 <li><a href="#kompilace">Kompilace</a><ul>
-<li><a href="#reseni-1-sdcc">Řešení 1: sdcc</a></li>
+<li><a href="#reseni-1-sdcc">Řešení 1: <span class="caps">SDCC</span></a></li>
 <li><a href="#reseni-2-sdccrm">Řešení 2: sdccrm</a></li>
-<li><a href="#reseni-3-sdcc-gas">Řešení 3: sdcc-gas</a></li>
+<li><a href="#reseni-3-sdcc-gas">Řešení 3: <span class="caps">SDCC</span>-gas</a></li>
 </ul>
 </li>
 <li><a href="#flashing">Flashing</a><ul>
@@ -174,6 +174,7 @@ na nějakém <span class="caps">PC</span> je problém to rozjet. Kompilátor Cos
 kontrola licence, je fakt opruz; … a jeho chybová hlášení mi taky
 nepřišly úplně srozumitelná.  <br/>
 A to jsem ještě nezmínil to hlavní: <strong>Na Linuxu to nejede!</strong></p>
+<p><img alt="tools %%" src="./mit/img/tools.jpg"/></p>
 <p>Takže, co s tím? Použijeme
 <a href="https://cs.wikipedia.org/wiki/Otev%C5%99en%C3%BD_software">OpenSource</a>
 nástroje! Co je potřeba?</p>
@@ -280,22 +281,26 @@ můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno�
 Přepnutí jen znamená, že se udělá symlink do root-adresáře projektu.
 Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
 takže tato operace může být ztrátová.</p>
-<h3 id="reseni-1-sdcc">Řešení 1: sdcc<a class="headerlink" href="#reseni-1-sdcc" title="Permanent link">¶</a></h3>
+<h3 id="reseni-1-sdcc">Řešení 1: <span class="caps">SDCC</span><a class="headerlink" href="#reseni-1-sdcc" title="Permanent link">¶</a></h3>
 <p><a href="http://sdcc.sourceforge.net/"><span class="caps">SDCC</span> - Small Device C Compiler</a> je kompilátor
 pro různé, více či méně známé 8-bitové architektury. Z hlediska <span class="caps">STM8</span> má jednu
 zásadní nevýhodu: <strong>nedokáže odstranit nepoužívaný kód</strong>. Co to znamená? No…
 pokud si všechno píšete sami, tak to prakticky neznamená nic. Pokud ovšem
-použijete nějakou knihovnu (jako například <span class="caps">SPL</span>), tak už vám to začne hodně
+použijete nějakou knihovnu (jako například <em><span class="caps">SPL</span></em>), tak už vám to začne hodně
 vadit, protože výsledný strojový kód obsahuje spoustu funkcí, které jste
 kompilovali jen proto, že byli součástí knihovny a ne proto, že jste je chtěli
 použít. Tyto funkce nejsou nikde volány a proto by je měl 
 <a href="https://cs.wikipedia.org/wiki/Linker">linker</a> odstranit. No a to je přesně to, co
 se nestane <code>:-(</code>.
 Ve výsledku program, který by mohl mít cca 2-3 kB má 30 kB.</p>
-<p>To se dá částečně vyřešit tím, že budete kompilovat jen ty části <span class="caps">SPL</span>, které
-právě v tomto projektu potřebujete. Velikost výsledného binárního souboru se
-tak rapidně zmenší, ale pokud budete pracovat s čipem, který má jen 8 kB 
-paměti programu, obávám se, že to nemusí stačit….</p>
+<p>Jediné skutečné řešení tohoto problému je použít níže uvedené 
+<a href="#reseni-2-sdccrm">sdccrm</a> nebo
+<a href="#reseni-3-sdcc-gas"><span class="caps">SDCC</span>-gas</a>.</p>
+<p>Pokud zůstanete u <span class="caps">SDCC</span> dá se tento problém částečně obejít tím, že budete
+kompilovat jen ty části <em><span class="caps">SPL</span></em>, které právě v tomto projektu potřebujete.
+Velikost výsledného binárního souboru se tak rapidně zmenší, ale pokud budete
+pracovat s čipem, který má jen 8 kB paměti programu, obávám se, že to
+nemusí stačit….</p>
 <p>V <em>Makefile</em> někde kolem řádku 77 najdete toto:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">SPL_SOURCE</span>  <span class="o">=</span> stm8s_gpio.c stm8s_clk.c stm8s_tim4.c stm8s_itc.c 
 <span class="c">#SPL_SOURCE += stm8s_uart1.c</span>
@@ -306,7 +311,7 @@ paměti programu, obávám se, že to nemusí stačit….</p>
 <span class="c">#SPL_SOURCE += stm8s_tim3.c</span>
 </code></pre></div>
 <p>… měli byste zakomentovat to, co nepotřebujete a odkomentovat jen to, co potřebujete.</p>
-<p><strong>Instalace v Linuxu</strong> je poměrně snadná, protože <span class="caps">SDCC</span> je součásti většiny
+<p><strong>Instalace <span class="caps">SDCC</span> v Linuxu</strong> je poměrně snadná, protože <span class="caps">SDCC</span> je součásti většiny
 Linuxových distribucí; takže zavoláte něco jako:</p>
 <div class="highlight"><pre><span></span><code>apt install sdcc sdcc-libraries
 </code></pre></div>
@@ -314,39 +319,44 @@ Linuxových distribucí; takže zavoláte něco jako:</p>
 instalátor</a> a pokračujte, ve
 Windows oblíbeným klikáním.</p>
 <h3 id="reseni-2-sdccrm">Řešení 2: sdccrm<a class="headerlink" href="#reseni-2-sdccrm" title="Permanent link">¶</a></h3>
-<p>sdccrm je nástroj pro optimalizaci mrtvého kódu pro port stm8 <span class="caps">SDCC</span>, který
+<p><code>sdccrm</code> je nástroj pro optimalizaci mrtvého kódu pro port stm8 <span class="caps">SDCC</span>, který
 odstraňuje nepoužívané funkce.</p>
 <p class="center"><a href="https://github.com/XaviDCR92/sdccrm">https://github.com/XaviDCR92/sdccrm</a></p>
-<p>Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale tato
-možnost <strong><a href="https://github.com/XaviDCR92/sdccrm#known-issues">vylučuje použití
+<p>Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
+<a href="#reseni-1-sdcc"><span class="caps">SDCC</span></a>, poté se pomocí <code>sdccrm</code> vymaže kód, který se nepoužívá a 
+celý proces se dokončí a kód se převede z assembleru do strojového kódu.</p>
+<p>Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
+ale tato možnost <strong><a href="https://github.com/XaviDCR92/sdccrm#known-issues">vylučuje použití
 debugeru</a></strong>. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.</p>
-<p>Dále je nutné ručně zadat funkce, které nechcete “optimalizovat” – tedy vyhodit.
+<p>Dále je nutné <strong>ručně zadat</strong> funkce, které nechcete “optimalizovat” – tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
 souboru <code>.make/exclude_reference</code> uvnitř projektového adresáře.</p>
-<p><code>sdccrm</code> si musíte buildnout ze zdrojových kódů. Pomocí <a href="./chocolatey.html">Chocolatye</a>
-nainstalujete <code>gcc</code> a v adresáři se zdrojovými soubory zavoláte <code>make</code>. sdccrm
-je celkem malý program bez závislostí, takže jde jednoduše kompilovat
-v Linuxu i ve Windows – nicméně pro jistotu je Windows binárka součástí
-<a href="#startovaci-toolchain">startovacího toolsetu</a> a je v souboru <code>.make/sdccrm.exe</code>.</p>
+<p><code>sdccrm</code> si musíte buildnout ze zdrojových kódů. Nainstalujete (např. pomocí
+<a href="./chocolatey.html">Chocolatye</a>) <code>gcc</code> a v adresáři se zdrojovými soubory zavoláte <code>make</code>.
+<code>sdccrm</code> je celkem malý program bez závislostí, takže jde jednoduše kompilovat
+v Linuxu i ve Windows – nicméně pro jistotu je Windows binárka
+součástí <a href="#startovaci-toolchain">startovacího toolsetu</a> a je v souboru
+<code>.make/sdccrm.exe</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">mingw</span>
 </code></pre></div>
 <p>a pak</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> sdccrm
 make
 </code></pre></div>
-<h3 id="reseni-3-sdcc-gas">Řešení 3: sdcc-gas<a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link">¶</a></h3>
+<h3 id="reseni-3-sdcc-gas">Řešení 3: <span class="caps">SDCC</span>-gas<a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link">¶</a></h3>
 <p class="center"><a href="https://github.com/XaviDCR92/sdcc-gas">https://github.com/XaviDCR92/sdcc-gas</a></p>
-<p>Toto je asi nejlepší řešení. Vzniklo přidáním podpory <a href="https://cs.wikipedia.org/wiki/GNU_Assembler"><span class="caps">GNU</span>
-Assembleru</a> tedy -gas do <span class="caps">SDCC</span>
-3.9.0; <a href="https://codedocs.org/what-is/gnu-assembler">gas</a> je výhodou i nevýhodou
-tohoto řešení. Na jednu stranu to znamená, že můžeme používat klasické nástroje
-z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span> binutils</a>, na druhou stranu
-to znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v
-<span class="caps">STM8</span> assembleru a je nutné použít méně optimální kód napsaný v C. …no a
-zřídka se stane, že nějaká vnitřní funkcionalita (například násobení
-64-bitových integerů) je napsaná jen v <span class="caps">STM8</span> assembleru a vám nezbude, než to
-nějak obejít nebo danou funkci přepsat do <span class="caps">GNU</span> assembleru.</p>
+<p>Toto je asi nejlepší řešení optimalizace (vyhození) mrtvého kódu. Vzniklo
+přidáním podpory <a href="https://cs.wikipedia.org/wiki/GNU_Assembler"><span class="caps">GNU</span> Assembleru</a>
+tedy <em>gas</em> do <span class="caps">SDCC</span> 3.9.0; <a href="https://codedocs.org/what-is/gnu-assembler">gas</a> je
+výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že můžeme
+používat klasické nástroje z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span>
+binutils</a>, na druhou stranu to
+znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v <span class="caps">STM8</span>
+assembleru a je nutné použít méně optimální kód napsaný v C. …no a zřídka se
+stane, že nějaká vnitřní funkcionalita (například násobení 64-bitových
+integerů) je napsaná jen v <span class="caps">STM8</span> assembleru a vám nezbude, než to nějak obejít
+nebo danou funkci přepsat do <span class="caps">GNU</span> assembleru.</p>
 <p>Pokud vás to zajímá více můžete si počíst
 <a href="https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397">zde</a>
 a 
@@ -470,8 +480,8 @@ stačí zavolat</p>
 <div class="highlight"><pre><span></span><code>make openocd
 </code></pre></div>
 <h4 id="gdb">gdb<a class="headerlink" href="#gdb" title="Permanent link">¶</a></h4>
-<p>…. a teď v dalším terminálu otevřem <code>gdb</code> a dáme se do ladění. <strong>Než
-provedete toto, ujistěte se, že openocd již běží</strong>.</p>
+<p>…. a teď v dalším terminálu otevřeme <code>gdb</code> a dáme se do ladění. <strong>Než
+provedete toto, ujistěte se, že <a href="#openocd_1">openocd</a> již běží</strong>.</p>
 <div class="highlight"><pre><span></span><code>stm8-gdb --tui build-STM8S208/out-STM8S208.elf
 </code></pre></div>
 <p>opět stačí zavolat </p>
@@ -516,8 +526,8 @@ provedete toto, ujistěte se, že openocd již běží</strong>.</p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2022-02-06T14:53:25+01:00">
-              Ne 6. úno 2022 14:53
+            <time itemprop="dateCreated" datetime="2022-02-07T12:45:28+01:00">
+              Po 7. úno 2022 12:45
             </time>
 
             <h4>Kategorie</h4>

@@ -60,7 +60,7 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
 blockquote a:not(.ampl) {
     text-indent: 0;
     color: darkred;
-    display: inline-block;
+    /*display: inline-block;*/
     border-bottom: 1px solid #8B000011;
 }
 article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl):hover, 
