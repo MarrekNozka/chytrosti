@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T14:33:41+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html" rel="alternate"></link><published>2022-02-07T14:33:41+01:00</published><updated>2022-02-07T14:33:41+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/vyvoj-stm8-s-opensource-nastroji.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T15:54:57+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-02-07T15:54:57+01:00</published><updated>2022-02-07T15:54:57+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/stm8oss.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -462,7 +462,7 @@ ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span 
 Doporučuji si ho nainstalovat. Není nijak klíčový, ale hodí se.&lt;/p&gt;
 &lt;h3 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Celou problematiku jsem zpracoval v samostatném návodu: 
-&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/vyvoj-stm8-s-opensource-nastroji.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
+&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/stm8oss.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
 Ve zkratce to vypadá takto: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
