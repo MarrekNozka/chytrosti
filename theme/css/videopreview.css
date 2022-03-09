@@ -1,0 +1,31 @@
+.video-preview {
+    display: inline-block;
+    position: relative;
+    background: #ddd;
+    overflow: hidden;
+    height: 270px;
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px #bbb;
+    padding: 0px;
+    text-indent: 0em;
+}
+
+.video-preview span {
+    display: inline-block;
+    color: red;
+    padding: 5px 9px;
+    margin-top: 1em;
+    margin-left: 0%;
+    width: 98%;
+    font-size: 120%;
+    color: white;
+    background-color: #333;
+    opacity: 88%;
+    box-shadow: 0 0 6px #bbb;
+    border-radius: 3px;
+}
+
+.video-preview span:hover {
+    opacity: 0%;
+}

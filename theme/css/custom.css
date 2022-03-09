@@ -50,30 +50,30 @@ a:hover {
     text-align: left;
 }
 
-article p:not(#list-of-translations):not(#post-share-links)
+article p:not(#list-of-translations):not(#post-share-links):not(.video-preview)
 {
     text-indent: 1em;
 }
 
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl), 
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl, .video-preview), 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a,
-blockquote a:not(.ampl) {
+blockquote a:not(.ampl, .video-preview) {
     text-indent: 0;
     color: darkred;
     display: inline;
     border-bottom: 1px solid #8B000011;
 }
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl):hover, 
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl, .video-preview):hover, 
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a:hover,
-blockquote a:not(.ampl):hover {
+blockquote a:not(.ampl, .video-preview):hover {
     text-indent: 0;
     color: indianred;
     border-bottom: 1px solid #00000000;
     /*background-color: #f3f3f3;*/
 }
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)::after,
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl, .video-preview)::after,
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a::after,
-blockquote a:not(.ampl)::after 
+blockquote a:not(.ampl, .video-preview)::after 
 {
   content: none;
 }
