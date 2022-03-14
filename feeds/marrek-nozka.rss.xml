@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 09 Mar 2022 18:10:34 +0100</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sat, 12 Mar 2022 09:31:24 +0100</lastBuildDate><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
+&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
+dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
+(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
+které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
+na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
+kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sat, 12 Mar 2022 09:31:24 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-03-12:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
 co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
 &lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 09 Mar 2022 18:10:34 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-03-09:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Céčko</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
-&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
-dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
-(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
-které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
-na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
-kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Mon, 07 Feb 2022 19:48:40 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-02-07:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sat, 05 Feb 2022 16:07:08 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-02-05:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 09 Mar 2022 18:10:34 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-03-09:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Céčko</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sat, 05 Feb 2022 16:07:08 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-02-05:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme vývojovou desku 
 &lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
 s mikroprocesorem 

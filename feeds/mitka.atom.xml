@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-02-07T19:48:40+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-02-07T19:48:40+01:00</published><updated>2022-02-07T19:48:40+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-02-07:/stm8oss.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-03-12T09:31:24+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-03-12T09:31:24+01:00</published><updated>2022-03-12T09:31:24+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-03-12:/stm8oss.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -195,7 +195,7 @@ debugeru&lt;/a&gt;&lt;/strong&gt;. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.&lt;/p&gt;
 &lt;p&gt;Dále je nutné &lt;strong&gt;ručně zadat&lt;/strong&gt; funkce, které nechcete “optimalizovat” – tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
-souboru &lt;code&gt;.make/exclude_reference&lt;/code&gt; uvnitř projektového adresáře.&lt;/p&gt;
+souboru &lt;code&gt;exclude_reference&lt;/code&gt; uvnitř projektového adresáře.&lt;/p&gt;
 &lt;h4 id="instalace_1"&gt;Instalace&lt;a class="headerlink" href="#instalace_1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;sdccrm&lt;/code&gt; si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
 závislostí, takže jde jednoduše kompilovat v Linuxu i ve Windows –
