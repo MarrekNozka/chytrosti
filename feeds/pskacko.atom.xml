@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - PSKáčko</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/pskacko.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2021-11-07T17:54:36+01:00</updated><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2021-11-07T17:54:36+01:00</published><updated>2021-11-07T17:54:36+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/psk.html</id><content type="html">&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - PSKáčko</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/pskacko.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-09-13T22:12:20+02:00</updated><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2022-09-13T22:12:20+02:00</published><updated>2022-09-13T22:12:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-13:/psk.html</id><summary type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
+&lt;a href="https://mamut.spseol.cz/nozka/psk"&gt;https://mamut.spseol.cz/nozka/psk&lt;/a&gt;. Snad se mi podaří tento obsah v nějaké 
+dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
+&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
-&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</content><category term="PSKáčko"></category><category term="PSK"></category><category term="Linux"></category></entry></feed>
+&lt;p&gt;Mnou vytvořené studijní materiály o příkazovém řádku najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_3"&gt;https://mamut.spseol.cz/nozka/psk/#_3&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
+&lt;a href="https://mamut.spseol.cz/nozka/psk"&gt;https://mamut.spseol.cz/nozka/psk&lt;/a&gt;. Snad se mi podaří tento obsah v nějaké 
+dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
+&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Mnou vytvořené studijní materiály o příkazovém řádku najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_3"&gt;https://mamut.spseol.cz/nozka/psk/#_3&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mnou vytvořené studijní materiály o počítačových sítí najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_2"&gt;https://mamut.spseol.cz/nozka/psk/#_2&lt;/a&gt;&lt;/p&gt;</content><category term="PSKáčko"></category><category term="PSK"></category><category term="Linux"></category></entry></feed>

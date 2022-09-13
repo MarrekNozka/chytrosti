@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-03-12T09:31:24+01:00</updated><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-03-12T09:31:24+01:00</published><updated>2022-03-12T09:31:24+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-03-12:/stm8oss.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-09-13T22:12:20+02:00</updated><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2022-09-13T22:12:20+02:00</published><updated>2022-09-13T22:12:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-13:/psk.html</id><summary type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
+&lt;a href="https://mamut.spseol.cz/nozka/psk"&gt;https://mamut.spseol.cz/nozka/psk&lt;/a&gt;. Snad se mi podaří tento obsah v nějaké 
+dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
+&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Mnou vytvořené studijní materiály o příkazovém řádku najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_3"&gt;https://mamut.spseol.cz/nozka/psk/#_3&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
+&lt;a href="https://mamut.spseol.cz/nozka/psk"&gt;https://mamut.spseol.cz/nozka/psk&lt;/a&gt;. Snad se mi podaří tento obsah v nějaké 
+dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
+&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Mnou vytvořené studijní materiály o příkazovém řádku najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_3"&gt;https://mamut.spseol.cz/nozka/psk/#_3&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mnou vytvořené studijní materiály o počítačových sítí najdete zde:
+&lt;a href="https://mamut.spseol.cz/nozka/psk/#_2"&gt;https://mamut.spseol.cz/nozka/psk/#_2&lt;/a&gt;&lt;/p&gt;</content><category term="PSKáčko"></category><category term="PSK"></category><category term="Linux"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-04-11T19:47:00+02:00</published><updated>2022-04-11T19:47:00+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-04-11:/dbi.html</id><summary type="html">
+&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
+zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
+&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro …&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
+zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
+&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
+Stojí také za to, zmínit se 
+o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python: &lt;a href="https://docs.python.org/"&gt;https://docs.python.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Flask: &lt;a href="https://flask.palletsprojects.com/"&gt;https://flask.palletsprojects.com/&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/quickstart/"&gt;Quickstart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/flashing/"&gt;Message Flashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data"&gt;Incoming Request Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/"&gt;Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Jinja2: &lt;a href="https://jinja.palletsprojects.com/templates/"&gt;https://jinja.palletsprojects.com/templates/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sqlite"&gt;SQLite&lt;a class="headerlink" href="#sqlite" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;klikátko: &lt;a href="https://sqlitebrowser.org/dl/"&gt;https://sqlitebrowser.org/dl/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;textový auto-completion client: &lt;a href="https://litecli.com"&gt;https://litecli.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="repositare-nejen-z-vyuky"&gt;Repositáře nejen z výuky&lt;a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol?q=DBI-&amp;amp;type=all&amp;amp;language=&amp;amp;sort="&gt;https://github.com/spseol?q=&lt;span class="caps"&gt;DBI&lt;/span&gt;-&amp;amp;type=all&amp;amp;language=&amp;amp;sort=&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>Vývoj STM8 s OpenSource nástroji</title><link href="https://chytrosti.marrek.cz/stm8oss.html" rel="alternate"></link><published>2022-03-12T09:31:24+01:00</published><updated>2022-03-12T09:31:24+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-03-12:/stm8oss.html</id><summary type="html">
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -885,53 +956,7 @@ pip install -U flask
 &lt;p&gt;nebo &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install --user -U pip
 pip install --user -U pyglet
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2021-11-17T15:30:06+01:00</published><updated>2021-11-17T15:30:06+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/dbi.html</id><summary type="html">
-&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
-co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
-zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro …&lt;/p&gt;</summary><content type="html">
-&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
-co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
-zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
-&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
-Stojí také za to, zmínit se 
-o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Python: &lt;a href="https://docs.python.org/"&gt;https://docs.python.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Flask: &lt;a href="https://flask.palletsprojects.com/"&gt;https://flask.palletsprojects.com/&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/quickstart/"&gt;Quickstart&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/flashing/"&gt;Message Flashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data"&gt;Incoming Request Data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/"&gt;Patterns&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Jinja2: &lt;a href="https://jinja.palletsprojects.com/templates/"&gt;https://jinja.palletsprojects.com/templates/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2021-11-17T14:27:44+01:00</published><updated>2021-11-17T14:27:44+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/prg.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2021-11-17T14:27:44+01:00</published><updated>2021-11-17T14:27:44+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/prg.html</id><summary type="html">
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -976,9 +1001,7 @@ za dobré zmínit, že Python má svou vlastní – docela dobrou –
 &lt;a href="https://doc.python.org/"&gt;dokumentaci&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="knihovny"&gt;Knihovny&lt;a class="headerlink" href="#knihovny" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Knihovny se nejlépe instalují pomocí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Tématu se věnuji
-v &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2021-11-07T17:54:36+01:00</published><updated>2021-11-07T17:54:36+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-07:/psk.html</id><content type="html">&lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
-&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových sítí&lt;a class="headerlink" href="#zaklady-pocitacovych-siti" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</content><category term="PSKáčko"></category><category term="PSK"></category><category term="Linux"></category></entry><entry><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" rel="alternate"></link><published>2021-05-07T12:34:30+02:00</published><updated>2021-05-07T12:34:30+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</id><content type="html">
+v &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" rel="alternate"></link><published>2021-05-07T12:34:30+02:00</published><updated>2021-05-07T12:34:30+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</id><content type="html">
 &lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Kompletní zdrojové kódy naleznete v 
