@@ -1,5 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-04-11T19:47:00+02:00</updated><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-04-11T19:47:00+02:00</published><updated>2022-04-11T19:47:00+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-04-11:/dbi.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-09-14T21:07:29+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
+    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
+kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
+&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt;li&gt;… nebo jeden &lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git"&gt;stručný návod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/BzrRey7McSk"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/uk_5dGlWLnQ"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
+jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
+git config --global user.email john@doe.name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
+nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
+&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
+nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
+lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
+&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
+nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
+dejte jen dvakrát Enter. Já passphrase zadávám a používám 
+&lt;a href="https://en.wikipedia.org/wiki/Ssh-agent"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt; agenta&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
+&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
+&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
+uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
+každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
+heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
+přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
+to tento příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
+&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
+https://jmeno:heslo_nebo_token@gitlab.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
+&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
+vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
+(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)
+Návod &lt;a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
+Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
+&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-09-14T19:45:55+02:00</published><updated>2022-09-14T19:45:55+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/dbi.html</id><summary type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -35,6 +140,8 @@ Stojí také za to, zmínit se
 o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Krátkou českou dokumentaci najdete na adrese
+&lt;a href="http://spseol.github.io/CzechFlaskDoc/"&gt;http://spseol.github.io/CzechFlaskDoc/&lt;/a&gt;. Dále poslouží oficiální dokumentace:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python: &lt;a href="https://docs.python.org/"&gt;https://docs.python.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Flask: &lt;a href="https://flask.palletsprojects.com/"&gt;https://flask.palletsprojects.com/&lt;/a&gt;&lt;ul&gt;
@@ -54,109 +161,7 @@ o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzděláván
 &lt;h2 id="repositare-nejen-z-vyuky"&gt;Repositáře nejen z výuky&lt;a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/spseol?q=DBI-&amp;amp;type=all&amp;amp;language=&amp;amp;sort="&gt;https://github.com/spseol?q=&lt;span class="caps"&gt;DBI&lt;/span&gt;-&amp;amp;type=all&amp;amp;language=&amp;amp;sort=&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-03-09T18:10:34+01:00</published><updated>2022-03-09T18:10:34+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-03-09:/git.html</id><summary type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
-    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
-kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
-&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ještě jedna drobnost: pokud se vám nechce pořád dokola zadávat při nahrávání
-své práce na &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt; uživatelské jméno a heslo použijte 
-&lt;a href="https://duckduckgo.com/?q=ssh+kl%C3%AD%C4%8De&amp;amp;t=opera&amp;amp;ia=web"&gt;ssh klíče&lt;/a&gt;.
-K tomu se dobře hodí například 
-&lt;a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"&gt;putty&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/BzrRey7McSk"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/uk_5dGlWLnQ"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
-jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
-git config --global user.email john@doe.name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
-nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
-&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
-nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
-lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
-&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;nebo&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu nechcete
-použít a stačí vám utajení klíče, který bude ležet na vašem disku, dejte jen dvakrát Enter.&lt;/p&gt;
-&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
-&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
-&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
-uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
-každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
-heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
-přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
-to tento příkaz:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
-&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
-https://jmeno:heslo_nebo_token@gitlab.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
-&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
-vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
-(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)&lt;/p&gt;
-&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
-Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
-&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-20T16:48:54+01:00</published><updated>2021-11-20T16:48:54+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vscodecodium.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>VSCode/Codium</title><link href="https://chytrosti.marrek.cz/vscodecodium.html" rel="alternate"></link><published>2021-11-20T16:48:54+01:00</published><updated>2021-11-20T16:48:54+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-20:/vscodecodium.html</id><summary type="html">
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice
 používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium. &lt;/p&gt;

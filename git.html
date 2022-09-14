@@ -23,8 +23,8 @@
 <meta property="og:description" content="Git najdete na https://git-scm.com/. Ovládá se z příkazové řádky. Pokud toužíte po nějakém grafickém ovládání stačí si vybrat z dlouhého seznamu ten, co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou aplikaci. Vynikajícím začátkem s Gitem je volně šiřitelná kniha Pro Git, ve které najdete vše …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-03-09T18:10:34.147145+01:00" />
-<meta property="og:article:modified_time" content="2022-03-09T18:10:34.147145+01:00" />
+<meta property="og:article:published_time" content="2022-09-14T21:07:29.836224+02:00" />
+<meta property="og:article:modified_time" content="2022-09-14T21:07:29.836224+02:00" />
 <meta name="twitter:title" content="Git  - Distribuovaný systém správy verzí ">
 <meta name="twitter:description" content="Git najdete na https://git-scm.com/. Ovládá se z příkazové řádky. Pokud toužíte po nějakém grafickém ovládání stačí si vybrat z dlouhého seznamu ten, co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou aplikaci. Vynikajícím začátkem s Gitem je volně šiřitelná kniha Pro Git, ve které najdete vše …">
 
@@ -66,10 +66,10 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./psk.html" ><span class="caps">PSK</span></a>
+                                  <a href="./dbi.html" ><span class="caps">DBI</span></a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./dbi.html" ><span class="caps">DBI</span></a>
+                                  <a href="./psk.html" ><span class="caps">PSK</span></a>
                                 </li>
                                 <li class="menupost">
                                   <a href="./site.html" >Sítě</a>
@@ -172,16 +172,16 @@ kapitoly</strong>. Nenechte se tedy odradit, stojí to jistě za to.</p>
 <li><a href="http://naucse.python.cz/lessons/git/collaboration/">Spolupráce a Open source</a></li>
 <li><a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/">Spolupráce a Git</a></li>
 </ul>
-<p>Ještě jedna drobnost: pokud se vám nechce pořád dokola zadávat při nahrávání
-své práce na <a href="https://cs.wikipedia.org/wiki/GitHub">GitHub</a> uživatelské jméno a heslo použijte 
-<a href="https://duckduckgo.com/?q=ssh+kl%C3%AD%C4%8De&amp;t=opera&amp;ia=web">ssh klíče</a>.
-K tomu se dobře hodí například 
-<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</a>.</p>
+<hr/>
+<ul>
+<li>… nebo jeden <a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git">stručný návod</a></li>
+</ul>
+<p>Zde referenční příručka: <a href="https://git-scm.com/docs">https://git-scm.com/docs</a></p>
 <h2 id="videa">Videa<a class="headerlink" href="#videa" title="Permanent link">¶</a></h2>
 <p><a class="video-preview" href="https://youtu.be/BzrRey7McSk"><img alt="Základy systému Git" data-frames="16" src="./images/git-zaklad_preview.jpg"/></a></p>
 <p><a class="video-preview" href="https://youtu.be/uk_5dGlWLnQ"><img alt="Git a GitHub" data-frames="16" src="./images/git-github-2_preview.jpg"/></a></p>
 <h2 id="instalace">Instalace<a class="headerlink" href="#instalace" title="Permanent link">¶</a></h2>
-<p>Doporučuji použít <a href="./chocolatey.html">Chocolatey</a></p>
+<p>Ve Windows doporučuji použít <a href="./chocolatey.html">Chocolatey</a></p>
 <div class="highlight"><pre><span></span><code>choco install git
 </code></pre></div>
 <h2 id="pocatecni-nastaveni">Počáteční nastavení<a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link">¶</a></h2>
@@ -202,8 +202,10 @@ lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat
 <p>nebo</p>
 <div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519
 </code></pre></div>
-<p>Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu nechcete
-použít a stačí vám utajení klíče, který bude ležet na vašem disku, dejte jen dvakrát Enter.</p>
+<p>Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
+nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
+dejte jen dvakrát Enter. Já passphrase zadávám a používám 
+<a href="https://en.wikipedia.org/wiki/Ssh-agent"><span class="caps">SSH</span> agenta</a>.</p>
 <p>Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
 <code>~/.ssh/id_ed25519</code> pro tajný/privátní klíč a <code>~/.ssh/id_ed25519.pub</code> pro veřejný klíč.</p>
 <p>Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou <code>.pub</code>,
@@ -229,7 +231,8 @@ https://jmeno:heslo_nebo_token@gitlab.com
 <a href="https://git-scm.com/docs/git-credential-cache">nastaví se</a> <code>.helper</code> na <code>cache</code>.</p>
 <p>Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
 vygenerovat <a href="https://github.com/settings/tokens">Personal access token</a>.
-(Až ho budete generovat, tak v právech odfajfkujte <code>workflow</code>.)</p>
+(Až ho budete generovat, tak v právech odfajfkujte <code>workflow</code>.)
+Návod <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">zde</a>.</p>
 <h2 id="verejna-webova-uloziste">Veřejná (webová) úložiště<a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link">¶</a></h2>
 <p>Nejznámější veřejná úložiště pro Git jsou asi tyto:</p>
 <ul>
@@ -280,8 +283,8 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2022-03-09T18:10:34+01:00">
-              St 9. bře 2022 18:10
+            <time itemprop="dateCreated" datetime="2022-09-14T21:07:29+02:00">
+              St 14. zář 2022 21:07
             </time>
 
             <h4>Kategorie</h4>
