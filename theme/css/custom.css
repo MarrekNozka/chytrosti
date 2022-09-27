@@ -119,8 +119,8 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
     color: red;
     font-weight: bold;
 }
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href*="github"]::after,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href*="github"]::after
+article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl)[href*="github.com"]::after,
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a[href*="github.com"]::after
 {
     background-image: url("../images/github2.png");
     background-repeat: no-repeat;
