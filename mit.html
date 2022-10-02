@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="MIT  - Mikroprocesorová technika "/>
 <meta property="og:url" content="./mit.html" />
-<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …" />
+<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-01-30T20:26:20.224127+01:00" />
-<meta property="og:article:modified_time" content="2022-01-30T20:26:20.224127+01:00" />
+<meta property="og:article:published_time" content="2022-10-02T21:49:50.524633+02:00" />
+<meta property="og:article:modified_time" content="2022-10-02T21:49:50.524633+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
-<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme vývojovou desku Nucleo-8S208RB s mikroprocesorem STM8S208RB. Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v datasheetu …">
+<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …">
 
         <title>MIT  - Mikroprocesorová technika  · Chytrosti
 </title>
@@ -65,6 +65,12 @@
                                        .
                                     >Index</a>
                                 </li>
+                                <li class="menupost active">
+                                  <a href="./mit.html" ><span class="caps">MIT</span></a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./site.html" >Sítě</a>
+                                </li>
                                 <li class="menupost">
                                   <a href="./prg.html" ><span class="caps">PRG</span></a>
                                 </li>
@@ -73,12 +79,6 @@
                                 </li>
                                 <li class="menupost">
                                   <a href="./psk.html" ><span class="caps">PSK</span></a>
-                                </li>
-                                <li class="menupost">
-                                  <a href="./site.html" >Sítě</a>
-                                </li>
-                                <li class="menupost active">
-                                  <a href="./mit.html" ><span class="caps">MIT</span></a>
                                 </li>
 
                                 <li ><a href="./pages/chyba.html">Chyba&nbsp;&#128027;</a></li>
@@ -116,9 +116,15 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#dokumentace">Dokumentace</a></li>
 <li><a href="#navody">Návody</a></li>
-<li><a href="#projekty">Projekty</a></li>
+<li><a href="#dokumentace">Dokumentace</a></li>
+<li><a href="#hardware">Hardware</a><ul>
+<li><a href="#deroboard">DeroBoard</a></li>
+<li><a href="#usb-to-uart-bridge"><span class="caps">USB</span> to <span class="caps">UART</span> Bridge</a></li>
+<li><a href="#univerzalni-pcb">Univerzální <span class="caps">PCB</span></a></li>
+<li><a href="#nakupni-seznamy">Nákupní seznamy</a></li>
+</ul>
+</li>
 <li><a href="#nastroje">Nástroje</a><ul>
 <li><a href="#opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux</a></li>
 <li><a href="#nastroje-pro-widle">Nástroje pro Widle</a></li>
@@ -152,11 +158,50 @@
             
 
             
-<p>Pro výuku mikroprocesorové techniky používáme vývojovou desku 
-<a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
-s mikroprocesorem 
-<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</p>
-<p><img alt="Nucleo-8S208RB %%" src="./mit/img/Nucleo-S208RB.png"/></p>
+<p>Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"><span class="caps">STM8S</span></a>.</p>
+<h2 id="navody">Návody<a class="headerlink" href="#navody" title="Permanent link">¶</a></h2>
+<p>Michal Dudka píše skvělý web o programování mikrokontrokérů:
+<a href="http://elektromys.eu">http://elektromys.eu</a>. V sekci <a href="http://elektromys.eu/stm8.php"><span class="caps">STM8</span></a>
+najdete spoustu pro nás zajímavých věcí:</p>
+<ul>
+<li><a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"><span class="caps">STM8</span> Programátory a Debuggery</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html">Vstupy a výstupy 1 – základy</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html">Vstupy a výstupy 2 – tlačítko</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html">Vstupy a výstupy 3 – logické úrovně</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html">Vstupy a výstupy 4 – PullUp rezistory</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html">Vstupy a výstupy 5 – Open-Drain</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html">Ovládání displeje s <span class="caps">MAX7219</span></a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html">Clock</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html">Alfanumerické <span class="caps">LCD</span></a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">Knihovna milis – “Multitasking”</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">Stavový automat</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html">Nábojová pumpa</a></li>
+<li><a href="Buzení 7segmentového displeje">Buzení 7segmentového displeje</a></li>
+<li><a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"><span class="caps">AD</span> převodník</a></li>
+</ul>
+<p>Honza Vykydal pak napsal:</p>
+<ul>
+<li><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti">Externí přerušení - <span class="caps">EXTI</span></a></li>
+<li><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim">Čítače / Časovače</a></li>
+</ul>
+<p>Pro potřeby svojí výuky jsem sestavil následující:</p>
+<ul>
+<li><a href="./generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
+<li><a href="./zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
+<li><a href="./pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></li>
+<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></li>
+</ul>
+<p>Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:</p>
+<ul>
+<li><a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"><span class="caps">IR</span> senzor</a></li>
+<li><a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"><span class="caps">I2C</span> – Relativně jednoduše</a></li>
+</ul>
+<p>Další velice cenné informace nejdete v sekcích:</p>
+<ul>
+<li><a href="http://elektromys.eu/elektro.php">Elektro</a></li>
+<li><a href="http://elektromys.eu/kratke.php">Různé krátké poznámky</a></li>
+</ul>
 <h2 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">¶</a></h2>
 <p>Celá řada <span class="caps">STM8S</span> používá stejnou sadu periferií. Jejich popis najdete
 v <a href="https://duckduckgo.com/?q=STM8S+reference+manual">reference manuálu</a>
@@ -164,11 +209,11 @@ v <a href="https://duckduckgo.com/?q=STM8S+reference+manual">reference manuálu<
 <p>Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
 kterém čipu (plus další specifické věci) lze najít v datasheetu:</p>
 <ul>
-<li><a href="https://duckduckgo.com/?q=STM8S208+datasheet"><span class="caps">STM8S208</span></a>
+<li><a href="https://search.brave.com/search?q=STM8S208+datasheet"><span class="caps">STM8S208</span></a>
 <a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf">zde</a></li>
-<li><a href="https://duckduckgo.com/?q=STM8S103+datasheet"><span class="caps">STM8S103</span></a>
+<li><a href="https://search.brave.com/search?q=STM8S103+datasheet"><span class="caps">STM8S103</span></a>
 <a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf">zde</a></li>
-<li><a href="https://duckduckgo.com/?q=STM8S105+datasheet"><span class="caps">STM8S105</span></a>
+<li><a href="https://search.brave.com/search?q=STM8S105+datasheet"><span class="caps">STM8S105</span></a>
 <a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf">zde</a></li>
 </ul>
 <p><img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/9b/96/4a/79/08/65/40/b6/STM8S103105_line_LN754.jpg/files/STM8S103105_line_LN754.jpg/_jcr_content/translations/en.STM8S103105_line_LN754.jpg"/></p>
@@ -181,40 +226,55 @@ pak najdete zde:</p>
 <li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s103-105.html"><span class="caps">STM8S103</span>/105</a></li>
 <li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"><span class="caps">STM8S207</span>/208</a></li>
 </ul>
-<h2 id="navody">Návody<a class="headerlink" href="#navody" title="Permanent link">¶</a></h2>
-<p>Michal Dudka píše skvělý web o programování mikrokontrokérů:
-<a href="http://elektromys.eu">http://elektromys.eu</a>. V sekci <a href="http://elektromys.eu/stm8.php"><span class="caps">STM8</span></a>
-najdete spoustu pro nás zajímavých věcí:</p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html">Vstupy a výstupy 1 – základy</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html">Vstupy a výstupy 2 – tlačítko</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html">Vstupy a výstupy 3 – logické úrovně</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html">Vstupy a výstupy 4 – PullUp rezistory</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html">Vstupy a výstupy 5 – Open-Drain</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html">Ovládání displeje s <span class="caps">MAX7219</span></a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html">Clock</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html">Alfanumerické <span class="caps">LCD</span></a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">Knihovna milis – “Multitasking”</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">Stavový automat</a></li>
-</ul>
-<p>Pro potřeby svojí výuky jsem napsal následující:</p>
-<ul>
-<li><a href="./generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
-<li><a href="./zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
-<li><a href="./pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></li>
-<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></li>
-</ul>
-<p>Ze dílny Michala Dudky najdete pochází tyto pro nás zajímavé články:</p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"><span class="caps">IR</span> senzor</a></li>
-<li><a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"><span class="caps">I2C</span> – Relativně jednoduše</a></li>
-</ul>
-<p>Další velice cenné informace nejdete v sekcích:</p>
-<ul>
-<li><a href="http://elektromys.eu/elektro.php">Elektro</a></li>
-<li><a href="http://elektromys.eu/kratke.php">Různé krátké poznámky</a></li>
-</ul>
-<h2 id="projekty">Projekty<a class="headerlink" href="#projekty" title="Permanent link">¶</a></h2>
+<h2 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">¶</a></h2>
+<p>Ve výuce používáme vývojovou desku
+<a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
+s mikroprocesorem
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.
+Tato deska je (ale nemusí být) napájena z <span class="caps">USB</span>. Obsahuje programátor s <span class="caps">HW</span>
+debugerem a <span class="caps">USB2UART</span> bridge. Můžete si zvolit pinout, který je
+Arduino-kompatibilní nebo plnohodnotný pinout, který sedí na univerzální <span class="caps">PCB</span>.
+Je tu tedy vše, co pro začátek potřebujete.</p>
+<p><img alt="Nucleo-8S208RB pinout %%" src="./mit/img/Nucleo-S208RB.png"/></p>
+<p>Při řešení samostatných projektů budeme ale postupně přecházíme k vlastnímu
+hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
+spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
+aplikaci a standalone programátor/debuger, pomocí kterého bude možné program
+ladit a nahrát. Možností je vícero – moc hezky to má <a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html">popsáno
+Michal</a>. Doporučuji přečíst!</p>
+<p>(Jen bych doplním, že existuje ještě jeden klon <span class="caps">ST</span>-Linku, který se mně osobně
+osvědčil: <a href="https://www.aliexpress.com/wholesale?SearchText=ST-LINK+V2+STM8+emulator+download+super+procection">mini <span class="caps">ST</span>-<span class="caps">LINK</span>/V2 <span class="caps">STM8</span> <span class="caps">STM32</span> emulator download super protection</a>)</p>
+<h3 id="deroboard">DeroBoard<a class="headerlink" href="#deroboard" title="Permanent link">¶</a></h3>
+<p><img alt="DeroBoard photo %%" src="./mit/img/deroboard-photo.jpg"/></p>
+<p>V rámci dílenské praxe si stavíte vývojovou desku <a href="https://gitlab.com/wykys/stm8s-dero-board"><span class="caps">STM8S</span> Dero
+Board</a>. Tuto desku můžete použít i
+pro svoje samostatné projekty. Je osazena procesorem <span class="caps">STM8S103F3</span>. K dispozici
+máte všechny <a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design">zdrojové soubory pro
+KiCad</a> a 
+hezkou <a href="https://wykys.gitlab.io/stm8s-dero-board/ibom.html">rozpisku součástek</a>.</p>
+<p>Něco podobného, se stejným procesorem lze zakoupit i od čínských výrobců:
+<a href="https://www.aliexpress.com/wholesale?SearchText=STM8S103F3P6+development+board"><span class="caps">STM8S103F3P6</span> development
+board</a>.</p>
+<p><img alt="STM8S103F3P6 photo %%" src="./mit/img/STM8S103F3P6.jpeg"/></p>
+<p>Pokud poptáváte vybavenější procesor existuje podobná vývojová deska:
+<a href="https://www.aliexpress.com/wholesale?SearchText=STM8S105K4T6+Developmen+Board"><span class="caps">STM8S105K4T6</span> Developmen
+Board</a>.
+Ta vám může posloužit podobně jako oficiální <a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"><span class="caps">STM8</span>
+Discovery</a>.</p>
+<p><img alt="STM8S105K4T6 photo %%" src="./mit/img/STM8S105K4T6.jpg"/></p>
+<h3 id="usb-to-uart-bridge"><span class="caps">USB</span> to <span class="caps">UART</span> Bridge<a class="headerlink" href="#usb-to-uart-bridge" title="Permanent link">¶</a></h3>
+<p>Pokud plánujete projekt, kde μprocesor komunikuje s PCčkem, bude se vám hodit
+<a href="https://www.aliexpress.com/wholesale?SearchText=usb+uart+convertor">převodník
+<span class="caps">USB</span>/<span class="caps">UART</span></a>.
+Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, že ne
+každý operační systém automaticky komunikuje s každým čipem, proto je dobré
+věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
+zakoupit a zda se váš <span class="caps">OS</span> s tímto čipem kamarádí.</p>
+<h3 id="univerzalni-pcb">Univerzální <span class="caps">PCB</span><a class="headerlink" href="#univerzalni-pcb" title="Permanent link">¶</a></h3>
+<p>Na projekty a  můžete s výhodou využít <a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb">univerzální prototypovou
+desku</a>.</p>
+<p>…….. ..</p>
+<h3 id="nakupni-seznamy">Nákupní seznamy<a class="headerlink" href="#nakupni-seznamy" title="Permanent link">¶</a></h3>
 <p>Toto by se vám mohlo hodit:</p>
 <ul>
 <li><a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html">seznam na <span class="caps">TME</span></a></li>
@@ -303,8 +363,8 @@ Ve zkratce to vypadá takto: </p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2022-01-30T20:26:20+01:00">
-              Ne 30. led 2022 20:26
+            <time itemprop="dateCreated" datetime="2022-10-02T21:49:50+02:00">
+              Ne 2. říj 2022 21:49
             </time>
 
             <h4>Kategorie</h4>
