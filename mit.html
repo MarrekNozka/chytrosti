@@ -23,8 +23,8 @@
 <meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-10-02T21:49:50.524633+02:00" />
-<meta property="og:article:modified_time" content="2022-10-02T21:49:50.524633+02:00" />
+<meta property="og:article:published_time" content="2022-10-03T19:49:53.509072+02:00" />
+<meta property="og:article:modified_time" content="2022-10-03T19:49:53.509072+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
 <meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …">
 
@@ -119,10 +119,17 @@
 <li><a href="#navody">Návody</a></li>
 <li><a href="#dokumentace">Dokumentace</a></li>
 <li><a href="#hardware">Hardware</a><ul>
-<li><a href="#deroboard">DeroBoard</a></li>
+<li><a href="#nucleo-8s208rb">Nucleo-<span class="caps">8S208RB</span></a></li>
+<li><a href="#stm8s-discovery"><span class="caps">STM8S</span> Discovery</a></li>
+<li><a href="#standalone-programator">Standalone programátor</a></li>
+<li><a href="#deroboard">DeroBoard</a><ul>
+<li><a href="#nebo">Nebo…</a></li>
+</ul>
+</li>
 <li><a href="#usb-to-uart-bridge"><span class="caps">USB</span> to <span class="caps">UART</span> Bridge</a></li>
 <li><a href="#univerzalni-pcb">Univerzální <span class="caps">PCB</span></a></li>
 <li><a href="#nakupni-seznamy">Nákupní seznamy</a></li>
+<li><a href="#hotove-moduly">Hotové moduly</a></li>
 </ul>
 </li>
 <li><a href="#nastroje">Nástroje</a><ul>
@@ -227,15 +234,26 @@ pak najdete zde:</p>
 <li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"><span class="caps">STM8S207</span>/208</a></li>
 </ul>
 <h2 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">¶</a></h2>
+<h3 id="nucleo-8s208rb">Nucleo-<span class="caps">8S208RB</span><a class="headerlink" href="#nucleo-8s208rb" title="Permanent link">¶</a></h3>
 <p>Ve výuce používáme vývojovou desku
 <a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html">Nucleo-<span class="caps">8S208RB</span></a>
 s mikroprocesorem
-<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.
-Tato deska je (ale nemusí být) napájena z <span class="caps">USB</span>. Obsahuje programátor s <span class="caps">HW</span>
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"><span class="caps">STM8S208RB</span></a>.</p>
+<p><img alt="Nucleo-8S208RB pinout %%" src="./mit/img/Nucleo-S208RB.png"/></p>
+<p>Tato deska je (ale nemusí být) napájena z <span class="caps">USB</span>. Obsahuje programátor s <span class="caps">HW</span>
 debugerem a <span class="caps">USB2UART</span> bridge. Můžete si zvolit pinout, který je
 Arduino-kompatibilní nebo plnohodnotný pinout, který sedí na univerzální <span class="caps">PCB</span>.
-Je tu tedy vše, co pro začátek potřebujete.</p>
-<p><img alt="Nucleo-8S208RB pinout %%" src="./mit/img/Nucleo-S208RB.png"/></p>
+Je tu tedy vše, co pro začátek potřebujete. Vyčerpávající popis najdete v
+článku <a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"><span class="caps">STM8S208</span> Nucleo</a>
+nebo v <a href="https://www.st.com/resource/en/user_manual/dm00477617-stm8s208rbt6-nucleo64-board-stmicroelectronics.pdf">uživatelském manuálu</a>.</p>
+<h3 id="stm8s-discovery"><span class="caps">STM8S</span> Discovery<a class="headerlink" href="#stm8s-discovery" title="Permanent link">¶</a></h3>
+<p>Dalším zajímavým vývojovým kitem je
+<a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"><span class="caps">STM8S</span> <span class="caps">DISCOVERY</span></a>.
+Kit obsahuje i maličkou bastl desku a programátor lze použít k programování
+libovolného procesoru <span class="caps">STM8S</span>. Více opět 
+v <a href="https://www.st.com/resource/en/user_manual/cd00250600-stm8s-discovery-stmicroelectronics.pdf">uživatelském manuálu</a>.</p>
+<p><img alt="STM8S Discovery kit %%" src="./mit/img/STM8S-Discovery-kit.jpg"/></p>
+<h3 id="standalone-programator">Standalone programátor<a class="headerlink" href="#standalone-programator" title="Permanent link">¶</a></h3>
 <p>Při řešení samostatných projektů budeme ale postupně přecházíme k vlastnímu
 hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
 spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
@@ -252,6 +270,7 @@ pro svoje samostatné projekty. Je osazena procesorem <span class="caps">STM8S10
 máte všechny <a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design">zdrojové soubory pro
 KiCad</a> a 
 hezkou <a href="https://wykys.gitlab.io/stm8s-dero-board/ibom.html">rozpisku součástek</a>.</p>
+<h4 id="nebo">Nebo…<a class="headerlink" href="#nebo" title="Permanent link">¶</a></h4>
 <p>Něco podobného, se stejným procesorem lze zakoupit i od čínských výrobců:
 <a href="https://www.aliexpress.com/wholesale?SearchText=STM8S103F3P6+development+board"><span class="caps">STM8S103F3P6</span> development
 board</a>.</p>
@@ -270,8 +289,9 @@ Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, 
 každý operační systém automaticky komunikuje s každým čipem, proto je dobré
 věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
 zakoupit a zda se váš <span class="caps">OS</span> s tímto čipem kamarádí.</p>
+<p><img alt="USB to TTL UART photo %%" src="./mit/img/USB2UART.jpg"/></p>
 <h3 id="univerzalni-pcb">Univerzální <span class="caps">PCB</span><a class="headerlink" href="#univerzalni-pcb" title="Permanent link">¶</a></h3>
-<p>Na projekty a  můžete s výhodou využít <a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb">univerzální prototypovou
+<p>Na projektové prototypování můžete s výhodou využít <a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb">univerzální prototypovou
 desku</a>.</p>
 <p>…….. ..</p>
 <h3 id="nakupni-seznamy">Nákupní seznamy<a class="headerlink" href="#nakupni-seznamy" title="Permanent link">¶</a></h3>
@@ -282,6 +302,7 @@ desku</a>.</p>
 </ul>
 <p>Podmínky a zadání najdete na
 <a href="https://drive.google.com/drive/folders/1D_nvCIefrjFCYaNKQlhDobg3o234JTww?usp=sharing">školním drajvu</a>.</p>
+<h3 id="hotove-moduly">Hotové moduly<a class="headerlink" href="#hotove-moduly" title="Permanent link">¶</a></h3>
 <h2 id="nastroje">Nástroje<a class="headerlink" href="#nastroje" title="Permanent link">¶</a></h2>
 <p>Vývojové nástroje jsou <span class="caps">IMHO</span> největší slabina platformy <span class="caps">STM8</span>,
 ale při troše snahy se to dá <code>:)</code>. Co se ale <span class="caps">ST</span> povedlo, to je nástrtoj
@@ -363,8 +384,8 @@ Ve zkratce to vypadá takto: </p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2022-10-02T21:49:50+02:00">
-              Ne 2. říj 2022 21:49
+            <time itemprop="dateCreated" datetime="2022-10-03T19:49:53+02:00">
+              Po 3. říj 2022 19:49
             </time>
 
             <h4>Kategorie</h4>
