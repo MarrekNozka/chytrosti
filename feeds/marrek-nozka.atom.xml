@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-03T19:49:53+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-03T19:49:53+02:00</published><updated>2022-10-03T19:49:53+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-03:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-04T18:41:58+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-04T18:41:58+02:00</published><updated>2022-10-04T18:41:58+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-04:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -94,23 +94,25 @@ Je tu tedy vše, co pro začátek potřebujete. Vyčerpávající popis najdete
 nebo v &lt;a href="https://www.st.com/resource/en/user_manual/dm00477617-stm8s208rbt6-nucleo64-board-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id="stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;a class="headerlink" href="#stm8s-discovery" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Dalším zajímavým vývojovým kitem je
-&lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; &lt;span class="caps"&gt;DISCOVERY&lt;/span&gt;&lt;/a&gt;.
+&lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; &lt;span class="caps"&gt;DISCOVERY&lt;/span&gt;&lt;/a&gt;
+s procesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s105c6.html"&gt;&lt;span class="caps"&gt;STM8S105C6&lt;/span&gt;&lt;/a&gt;.
 Kit obsahuje i maličkou bastl desku a programátor lze použít k programování
 libovolného procesoru &lt;span class="caps"&gt;STM8S&lt;/span&gt;. Více opět 
 v &lt;a href="https://www.st.com/resource/en/user_manual/cd00250600-stm8s-discovery-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="STM8S Discovery kit %%" src="https://chytrosti.marrek.cz/mit/img/STM8S-Discovery-kit.jpg"/&gt;&lt;/p&gt;
 &lt;h3 id="standalone-programator"&gt;Standalone programátor&lt;a class="headerlink" href="#standalone-programator" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Při řešení samostatných projektů budeme ale postupně přecházíme k vlastnímu
+&lt;p&gt;Při řešení samostatných projektů budeme postupně přecházíme k vlastnímu
 hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
 spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
-aplikaci a standalone programátor/debuger, pomocí kterého bude možné program
+aplikaci a standalone programátor-debuger, pomocí kterého bude možné program
 ladit a nahrát. Možností je vícero – moc hezky to má &lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;popsáno
 Michal&lt;/a&gt;. Doporučuji přečíst!&lt;/p&gt;
 &lt;p&gt;(Jen bych doplním, že existuje ještě jeden klon &lt;span class="caps"&gt;ST&lt;/span&gt;-Linku, který se mně osobně
 osvědčil: &lt;a href="https://www.aliexpress.com/wholesale?SearchText=ST-LINK+V2+STM8+emulator+download+super+procection"&gt;mini &lt;span class="caps"&gt;ST&lt;/span&gt;-&lt;span class="caps"&gt;LINK&lt;/span&gt;/V2 &lt;span class="caps"&gt;STM8&lt;/span&gt; &lt;span class="caps"&gt;STM32&lt;/span&gt; emulator download super protection&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="deroboard"&gt;DeroBoard&lt;a class="headerlink" href="#deroboard" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="DeroBoard photo %%" src="https://chytrosti.marrek.cz/mit/img/deroboard-photo.jpg"/&gt;&lt;/p&gt;
-&lt;p&gt;V rámci dílenské praxe si stavíte vývojovou desku &lt;a href="https://gitlab.com/wykys/stm8s-dero-board"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Dero
+&lt;p&gt;V rámci dílenské praxe si ubastlíte vývojovou desku &lt;a href="https://gitlab.com/wykys/stm8s-dero-board"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Dero
 Board&lt;/a&gt;. Tuto desku můžete použít i
 pro svoje samostatné projekty. Je osazena procesorem &lt;span class="caps"&gt;STM8S103F3&lt;/span&gt;. K dispozici
 máte všechny &lt;a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design"&gt;zdrojové soubory pro
@@ -129,18 +131,48 @@ Discovery&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="STM8S105K4T6 photo %%" src="https://chytrosti.marrek.cz/mit/img/STM8S105K4T6.jpg"/&gt;&lt;/p&gt;
 &lt;h3 id="usb-to-uart-bridge"&gt;&lt;span class="caps"&gt;USB&lt;/span&gt; to &lt;span class="caps"&gt;UART&lt;/span&gt; Bridge&lt;a class="headerlink" href="#usb-to-uart-bridge" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Pokud plánujete projekt, kde μprocesor komunikuje s PCčkem, bude se vám hodit
-&lt;a href="https://www.aliexpress.com/wholesale?SearchText=usb+uart+convertor"&gt;převodník
-&lt;span class="caps"&gt;USB&lt;/span&gt;/&lt;span class="caps"&gt;UART&lt;/span&gt;&lt;/a&gt;.
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=USB+TTL+UART+convertor"&gt;převodník &lt;span class="caps"&gt;USB&lt;/span&gt; &lt;span class="caps"&gt;TTL&lt;/span&gt;
+&lt;span class="caps"&gt;UART&lt;/span&gt;&lt;/a&gt;.
 Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, že ne
 každý operační systém automaticky komunikuje s každým čipem, proto je dobré
 věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
 zakoupit a zda se váš &lt;span class="caps"&gt;OS&lt;/span&gt; s tímto čipem kamarádí.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="USB to TTL UART photo %%" src="https://chytrosti.marrek.cz/mit/img/USB2UART.jpg"/&gt;&lt;/p&gt;
 &lt;h3 id="univerzalni-pcb"&gt;Univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt;&lt;a class="headerlink" href="#univerzalni-pcb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Na projektové prototypování můžete s výhodou využít &lt;a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb"&gt;univerzální prototypovou
-desku&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;…….. ..&lt;/p&gt;
-&lt;h3 id="nakupni-seznamy"&gt;Nákupní seznamy&lt;a class="headerlink" href="#nakupni-seznamy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Na projektové prototypování můžete s výhodou využít &lt;a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb"&gt;univerzální (prototypovou)
+desku&lt;/a&gt;.
+Existuje celá řada variant a vzorů (třeba 
+&lt;a href="https://www.tme.eu/cz/katalog/univerzalni-plosne-spoje_100110/?s_field=1000014&amp;amp;s_order=asc&amp;amp;limit=40&amp;amp;currency=CZK&amp;amp;page=1"&gt;tu&lt;/a&gt;
+nebo &lt;a href="https://www.aliexpress.com/wholesale?SearchText=universal+prototipe+PCB+board"&gt;tam&lt;/a&gt;)
+universálních bastl-desek; zde bych rád upozornil na některé – pro nás zajímavé:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;řady po třech: 
+  &lt;a href="https://www.tme.eu/cz/details/rad-790-1/univerzalni-plosne-spoje/rademacher/790-1/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/1005002838248764.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;jen body:
+  &lt;a href="https://www.tme.eu/cz/details/rad-811-6/univerzalni-plosne-spoje/rademacher/811-6/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/1005002838214518.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s rozvodem napájení:
+  &lt;a href="https://www.tme.eu/cz/details/pc-12/univerzalni-plosne-spoje/sci/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32947164794.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s roztečí Arduino shield:
+  &lt;a href="https://www.tme.eu/cz/details/a000080/reseni-arduino/arduino/shield-mega-proto-pcb-rev3/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=arduino+prototipe+PCB+board"&gt;2&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32841354009.html"&gt;3&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32814326060.html?"&gt;4&lt;/a&gt;.
+  Tuto desku můžete použít s Nucleo-kitem Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="admonition hint"&gt;
+&lt;p class="admonition-title"&gt;Dutinkové a kolíkové lišty&lt;/p&gt;
+&lt;p&gt;K univerzálním deskám se vám budou hodit &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL262&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;dutinkové
+lišty&lt;/a&gt;
+a &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL201&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;pinové
+řady&lt;/a&gt;,
+(&lt;a href="https://www.tme.eu/cz/katalog/?search=ZL211&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;také zde&lt;/a&gt;)
+s jejichž pomocí můžete svou univerzální desku posadit na
+&lt;a href="#nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt; nebo &lt;a href="#stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="dalsi-soucastky"&gt;Další součástky&lt;a class="headerlink" href="#dalsi-soucastky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Toto by se vám mohlo hodit:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html"&gt;seznam na &lt;span class="caps"&gt;TME&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -982,7 +1014,7 @@ choco install make
 choco install openocd
 choco install mingw
 choco install python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2021-12-29T21:40:14+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2022-10-04T18:40:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
@@ -1001,9 +1033,9 @@ a zaškrtnou příslušná políčka.&lt;/p&gt;
 &lt;p&gt;V Linuxu potom stačí něco jako: &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install python3-pip python3-venv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="admonition notice"&gt;
-&lt;p class="admonition-title"&gt;Notice&lt;/p&gt;
-&lt;p&gt;Ještě jedna poznánka k Linuxu: V Linuxových distribucích bývá Python
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Malá poznámka k Linuxu&lt;/p&gt;
+&lt;p&gt;V Linuxových distribucích bývá Python
 většinou už nainstalován – a to dokonce dvakrát. Příkazem &lt;code&gt;python&lt;/code&gt;
 spustíte &lt;strong&gt;Python2&lt;/strong&gt; a příkazem &lt;code&gt;python3&lt;/code&gt; spustíte &lt;strong&gt;Python3&lt;/strong&gt;. Obdobně
 to platí pro příkaz &lt;code&gt;pip&lt;/code&gt; a &lt;code&gt;pip3&lt;/code&gt;.&lt;/p&gt;

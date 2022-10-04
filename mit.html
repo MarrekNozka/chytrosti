@@ -23,8 +23,8 @@
 <meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-10-03T19:49:53.509072+02:00" />
-<meta property="og:article:modified_time" content="2022-10-03T19:49:53.509072+02:00" />
+<meta property="og:article:published_time" content="2022-10-04T18:41:58.443763+02:00" />
+<meta property="og:article:modified_time" content="2022-10-04T18:41:58.443763+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
 <meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Michal Dudka píše skvělý web o programování mikrokontrokérů: http://elektromys.eu. V sekci STM8 najdete spoustu pro nás zajímavých věcí: STM8 Programátory a Debuggery Vstupy a výstupy 1 – základy Vstupy a výstupy 2 – tlačítko Vstupy a výstupy 3 …">
 
@@ -128,7 +128,7 @@
 </li>
 <li><a href="#usb-to-uart-bridge"><span class="caps">USB</span> to <span class="caps">UART</span> Bridge</a></li>
 <li><a href="#univerzalni-pcb">Univerzální <span class="caps">PCB</span></a></li>
-<li><a href="#nakupni-seznamy">Nákupní seznamy</a></li>
+<li><a href="#dalsi-soucastky">Další součástky</a></li>
 <li><a href="#hotove-moduly">Hotové moduly</a></li>
 </ul>
 </li>
@@ -248,23 +248,25 @@ Je tu tedy vše, co pro začátek potřebujete. Vyčerpávající popis najdete
 nebo v <a href="https://www.st.com/resource/en/user_manual/dm00477617-stm8s208rbt6-nucleo64-board-stmicroelectronics.pdf">uživatelském manuálu</a>.</p>
 <h3 id="stm8s-discovery"><span class="caps">STM8S</span> Discovery<a class="headerlink" href="#stm8s-discovery" title="Permanent link">¶</a></h3>
 <p>Dalším zajímavým vývojovým kitem je
-<a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"><span class="caps">STM8S</span> <span class="caps">DISCOVERY</span></a>.
+<a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"><span class="caps">STM8S</span> <span class="caps">DISCOVERY</span></a>
+s procesorem 
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s105c6.html"><span class="caps">STM8S105C6</span></a>.
 Kit obsahuje i maličkou bastl desku a programátor lze použít k programování
 libovolného procesoru <span class="caps">STM8S</span>. Více opět 
 v <a href="https://www.st.com/resource/en/user_manual/cd00250600-stm8s-discovery-stmicroelectronics.pdf">uživatelském manuálu</a>.</p>
 <p><img alt="STM8S Discovery kit %%" src="./mit/img/STM8S-Discovery-kit.jpg"/></p>
 <h3 id="standalone-programator">Standalone programátor<a class="headerlink" href="#standalone-programator" title="Permanent link">¶</a></h3>
-<p>Při řešení samostatných projektů budeme ale postupně přecházíme k vlastnímu
+<p>Při řešení samostatných projektů budeme postupně přecházíme k vlastnímu
 hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
 spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
-aplikaci a standalone programátor/debuger, pomocí kterého bude možné program
+aplikaci a standalone programátor-debuger, pomocí kterého bude možné program
 ladit a nahrát. Možností je vícero – moc hezky to má <a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html">popsáno
 Michal</a>. Doporučuji přečíst!</p>
 <p>(Jen bych doplním, že existuje ještě jeden klon <span class="caps">ST</span>-Linku, který se mně osobně
 osvědčil: <a href="https://www.aliexpress.com/wholesale?SearchText=ST-LINK+V2+STM8+emulator+download+super+procection">mini <span class="caps">ST</span>-<span class="caps">LINK</span>/V2 <span class="caps">STM8</span> <span class="caps">STM32</span> emulator download super protection</a>)</p>
 <h3 id="deroboard">DeroBoard<a class="headerlink" href="#deroboard" title="Permanent link">¶</a></h3>
 <p><img alt="DeroBoard photo %%" src="./mit/img/deroboard-photo.jpg"/></p>
-<p>V rámci dílenské praxe si stavíte vývojovou desku <a href="https://gitlab.com/wykys/stm8s-dero-board"><span class="caps">STM8S</span> Dero
+<p>V rámci dílenské praxe si ubastlíte vývojovou desku <a href="https://gitlab.com/wykys/stm8s-dero-board"><span class="caps">STM8S</span> Dero
 Board</a>. Tuto desku můžete použít i
 pro svoje samostatné projekty. Je osazena procesorem <span class="caps">STM8S103F3</span>. K dispozici
 máte všechny <a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design">zdrojové soubory pro
@@ -283,18 +285,48 @@ Discovery</a>.</p>
 <p><img alt="STM8S105K4T6 photo %%" src="./mit/img/STM8S105K4T6.jpg"/></p>
 <h3 id="usb-to-uart-bridge"><span class="caps">USB</span> to <span class="caps">UART</span> Bridge<a class="headerlink" href="#usb-to-uart-bridge" title="Permanent link">¶</a></h3>
 <p>Pokud plánujete projekt, kde μprocesor komunikuje s PCčkem, bude se vám hodit
-<a href="https://www.aliexpress.com/wholesale?SearchText=usb+uart+convertor">převodník
-<span class="caps">USB</span>/<span class="caps">UART</span></a>.
+<a href="https://www.aliexpress.com/wholesale?SearchText=USB+TTL+UART+convertor">převodník <span class="caps">USB</span> <span class="caps">TTL</span>
+<span class="caps">UART</span></a>.
 Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, že ne
 každý operační systém automaticky komunikuje s každým čipem, proto je dobré
 věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
 zakoupit a zda se váš <span class="caps">OS</span> s tímto čipem kamarádí.</p>
 <p><img alt="USB to TTL UART photo %%" src="./mit/img/USB2UART.jpg"/></p>
 <h3 id="univerzalni-pcb">Univerzální <span class="caps">PCB</span><a class="headerlink" href="#univerzalni-pcb" title="Permanent link">¶</a></h3>
-<p>Na projektové prototypování můžete s výhodou využít <a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb">univerzální prototypovou
-desku</a>.</p>
-<p>…….. ..</p>
-<h3 id="nakupni-seznamy">Nákupní seznamy<a class="headerlink" href="#nakupni-seznamy" title="Permanent link">¶</a></h3>
+<p>Na projektové prototypování můžete s výhodou využít <a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb">univerzální (prototypovou)
+desku</a>.
+Existuje celá řada variant a vzorů (třeba 
+<a href="https://www.tme.eu/cz/katalog/univerzalni-plosne-spoje_100110/?s_field=1000014&amp;s_order=asc&amp;limit=40&amp;currency=CZK&amp;page=1">tu</a>
+nebo <a href="https://www.aliexpress.com/wholesale?SearchText=universal+prototipe+PCB+board">tam</a>)
+universálních bastl-desek; zde bych rád upozornil na některé – pro nás zajímavé:</p>
+<ul>
+<li>řady po třech: 
+  <a href="https://www.tme.eu/cz/details/rad-790-1/univerzalni-plosne-spoje/rademacher/790-1/">1</a>
+<a href="https://www.aliexpress.com/item/1005002838248764.html">2</a></li>
+<li>jen body:
+  <a href="https://www.tme.eu/cz/details/rad-811-6/univerzalni-plosne-spoje/rademacher/811-6/">1</a>
+<a href="https://www.aliexpress.com/item/1005002838214518.html">2</a></li>
+<li>s rozvodem napájení:
+  <a href="https://www.tme.eu/cz/details/pc-12/univerzalni-plosne-spoje/sci/">1</a>
+<a href="https://www.aliexpress.com/item/32947164794.html">2</a></li>
+<li>s roztečí Arduino shield:
+  <a href="https://www.tme.eu/cz/details/a000080/reseni-arduino/arduino/shield-mega-proto-pcb-rev3/">1</a>
+<a href="https://www.aliexpress.com/wholesale?SearchText=arduino+prototipe+PCB+board">2</a>
+<a href="https://www.aliexpress.com/item/32841354009.html">3</a>
+<a href="https://www.aliexpress.com/item/32814326060.html?">4</a>.
+  Tuto desku můžete použít s Nucleo-kitem Nucleo-<span class="caps">8S208RB</span>.</li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Dutinkové a kolíkové lišty</p>
+<p>K univerzálním deskám se vám budou hodit <a href="https://www.tme.eu/cz/katalog/?search=ZL262&amp;s_field=1000011&amp;s_order=desc">dutinkové
+lišty</a>
+a <a href="https://www.tme.eu/cz/katalog/?search=ZL201&amp;s_field=1000011&amp;s_order=desc">pinové
+řady</a>,
+(<a href="https://www.tme.eu/cz/katalog/?search=ZL211&amp;s_field=1000011&amp;s_order=desc">také zde</a>)
+s jejichž pomocí můžete svou univerzální desku posadit na
+<a href="#nucleo-8s208rb">Nucleo-<span class="caps">8S208RB</span></a> nebo <a href="#stm8s-discovery"><span class="caps">STM8S</span> Discovery</a>.</p>
+</div>
+<h3 id="dalsi-soucastky">Další součástky<a class="headerlink" href="#dalsi-soucastky" title="Permanent link">¶</a></h3>
 <p>Toto by se vám mohlo hodit:</p>
 <ul>
 <li><a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html">seznam na <span class="caps">TME</span></a></li>
@@ -384,8 +416,8 @@ Ve zkratce to vypadá takto: </p>
         </div>
         <section id="article-sidebar" class="span2">
               <h4>Aktualizováno</h4>
-            <time itemprop="dateCreated" datetime="2022-10-03T19:49:53+02:00">
-              Po 3. říj 2022 19:49
+            <time itemprop="dateCreated" datetime="2022-10-04T18:41:58+02:00">
+              Út 4. říj 2022 18:41
             </time>
 
             <h4>Kategorie</h4>

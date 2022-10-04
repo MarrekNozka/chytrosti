@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-09-27T19:22:44+02:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-09-27T19:22:44+02:00</published><updated>2022-09-27T19:22:44+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-27:/prg.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-04T18:40:31+02:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-09-27T19:22:44+02:00</published><updated>2022-09-27T19:22:44+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-27:/prg.html</id><summary type="html">
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -375,7 +375,7 @@ choco install make
 choco install openocd
 choco install mingw
 choco install python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2021-12-29T21:40:14+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2022-10-04T18:40:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
@@ -394,9 +394,9 @@ a zaškrtnou příslušná políčka.&lt;/p&gt;
 &lt;p&gt;V Linuxu potom stačí něco jako: &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt install python3-pip python3-venv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="admonition notice"&gt;
-&lt;p class="admonition-title"&gt;Notice&lt;/p&gt;
-&lt;p&gt;Ještě jedna poznánka k Linuxu: V Linuxových distribucích bývá Python
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Malá poznámka k Linuxu&lt;/p&gt;
+&lt;p&gt;V Linuxových distribucích bývá Python
 většinou už nainstalován – a to dokonce dvakrát. Příkazem &lt;code&gt;python&lt;/code&gt;
 spustíte &lt;strong&gt;Python2&lt;/strong&gt; a příkazem &lt;code&gt;python3&lt;/code&gt; spustíte &lt;strong&gt;Python3&lt;/strong&gt;. Obdobně
 to platí pro příkaz &lt;code&gt;pip&lt;/code&gt; a &lt;code&gt;pip3&lt;/code&gt;.&lt;/p&gt;
