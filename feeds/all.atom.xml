@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-04T18:41:58+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-04T18:41:58+02:00</published><updated>2022-10-04T18:41:58+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-04:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-05T21:17:17+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-05T21:17:17+02:00</published><updated>2022-10-05T21:17:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-05:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -162,7 +162,7 @@ universálních bastl-desek; zde bych rád upozornil na některé – pro nás 
 &lt;a href="https://www.aliexpress.com/item/32814326060.html?"&gt;4&lt;/a&gt;.
   Tuto desku můžete použít s Nucleo-kitem Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="admonition hint"&gt;
+&lt;div class="admonition tip"&gt;
 &lt;p class="admonition-title"&gt;Dutinkové a kolíkové lišty&lt;/p&gt;
 &lt;p&gt;K univerzálním deskám se vám budou hodit &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL262&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;dutinkové
 lišty&lt;/a&gt;
@@ -172,15 +172,15 @@ a &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL201&amp;amp;s_field=100001
 s jejichž pomocí můžete svou univerzální desku posadit na
 &lt;a href="#nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt; nebo &lt;a href="#stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id="dalsi-soucastky"&gt;Další součástky&lt;a class="headerlink" href="#dalsi-soucastky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Toto by se vám mohlo hodit:&lt;/p&gt;
+&lt;h3 id="dalsi-soucastky-a-hotove-moduly"&gt;Další součástky a hotové moduly&lt;a class="headerlink" href="#dalsi-soucastky-a-hotove-moduly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Je ještě spousta dalších udělátek, které stojí za to zmínit. Omezím se jen na nákupní
+seznamy. Je asi jasné, že mi nejde o konkrétní obchod, ale spíše o zboží, které
+se jistě dá zakoupit i někde jinde.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.tme.eu/cz/parking/b76826f5b8a05c725adc67a6c5509e9dcd24e9ff.html"&gt;seznam na &lt;span class="caps"&gt;TME&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.laskarduino.cz/oblibene/b3a1739aaf1195342c2b34bbaf4e3aaa544ee875"&gt;seznam na LaskArduno&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tme.eu/cz/parking/c9f279be1feb850079cc8bdf88943222467af88d.html"&gt;seznam na &lt;span class="caps"&gt;TME&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.laskakit.cz/oblibene/89af72c11f9e5e738f3074e7aa8a0bba4200e647"&gt;seznam na LaskKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.aliexpress.com/p/wishlist/shareReflux.html?groupId=dGW2uj4YNVGDbjN2VCLzOJhU39eDkEz4y9Z4CGz2UIM%3D"&gt;seznam na AliExpressu&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Podmínky a zadání najdete na
-&lt;a href="https://drive.google.com/drive/folders/1D_nvCIefrjFCYaNKQlhDobg3o234JTww?usp=sharing"&gt;školním drajvu&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id="hotove-moduly"&gt;Hotové moduly&lt;a class="headerlink" href="#hotove-moduly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;h2 id="nastroje"&gt;Nástroje&lt;a class="headerlink" href="#nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
 ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
@@ -193,12 +193,18 @@ Ve zkratce to vypadá takto: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="nastroje-pro-widle"&gt;Nástroje pro Widle&lt;a class="headerlink" href="#nastroje-pro-widle" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="cosmic-stm8eclipse-balicek-pro-linux"&gt;Cosmic &lt;span class="caps"&gt;STM8&lt;/span&gt;+Eclipse balíček pro Linux&lt;a class="headerlink" href="#cosmic-stm8eclipse-balicek-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Zatím je vše ve fázi testování. Zveřejněno v lednu 2022:
+&lt;a href="https://www.cosmicsoftware.com/download_stm8_eclipse.php"&gt;https://www.cosmicsoftware.com/download_stm8_eclipse.php&lt;/a&gt;
+Projekt vypadá velmi slibně.&lt;/p&gt;
+&lt;h3 id="nastroje-pro-m-windows"&gt;Nástroje pro M$ Windows&lt;a class="headerlink" href="#nastroje-pro-m-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Vše velmi hezky zpracoval 
-  &lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.&lt;/li&gt;
+  &lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.
+  Součástí je i vzorový projekt s knihovnami pro &lt;span class="caps"&gt;STM8S103&lt;/span&gt;, &lt;span class="caps"&gt;STM8S105&lt;/span&gt; a &lt;span class="caps"&gt;STM8S208&lt;/span&gt;.&lt;/li&gt;
 &lt;li&gt;Jako vývojové prostředí leze použít
   &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
   s komipilátorem
@@ -206,18 +212,6 @@ Ve zkratce to vypadá takto: &lt;/p&gt;
 &lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
   nejsou ani jeden 
   &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="sablona-pro-zalozeni-projektu"&gt;Šablona pro založení projektu&lt;a class="headerlink" href="#sablona-pro-zalozeni-projektu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;vzorový projekt Michala Dudky (&lt;span class="caps"&gt;STVD&lt;/span&gt;)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s208_vzor.rar"&gt;http://www.elektromys.eu/stm8s208_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.elektromys.eu/stm8s105_vzor.rar"&gt;http://www.elektromys.eu/stm8s105_vzor.rar&lt;/a&gt; (případně zip)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
