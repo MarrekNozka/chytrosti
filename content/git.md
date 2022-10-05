@@ -37,16 +37,25 @@ Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):
 * [Spolupráce a Open source](http://naucse.python.cz/lessons/git/collaboration/)
 * [Spolupráce a Git](http://naucse.python.cz/lessons/git/git-collaboration-2in1/)
 
-Ještě jedna drobnost: pokud se vám nechce pořád dokola zadávat při nahrávání
-své práce na [GitHub][] uživatelské jméno a heslo použijte 
-[ssh klíče](https://duckduckgo.com/?q=ssh+kl%C3%AD%C4%8De&t=opera&ia=web).
-K tomu se dobře hodí například 
-[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+----------------
+
+* ... nebo jeden [stručný návod](https://gitlab.com/wykys/stm8-xikon/-/tree/main/git)
+
+Zde referenční příručka: <https://git-scm.com/docs>
+
+Videa
+================
+
+[![Základy systému Git]({static}images/git-zaklad_preview.jpg){data-frames="16"}](https://youtu.be/BzrRey7McSk){.video-preview}
+
+[![Git a GitHub]({static}images/git-github-2_preview.jpg){data-frames="16"}](https://youtu.be/uk_5dGlWLnQ){.video-preview}
+
+
 
 Instalace
 ======================
 
-Doporučuji použít [Chocolatey]({filename}/chocolatey.md)
+Ve Windows doporučuji použít [Chocolatey]({filename}/chocolatey.md)
 
     choco install git
 
@@ -80,8 +89,10 @@ nebo
 
     ssh-keygen -t ed25519 
 
-Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu nechcete
-použít a stačí vám utajení klíče, který bude ležet na vašem disku, dejte jen dvakrát Enter.
+Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
+nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
+dejte jen dvakrát Enter. Já passphrase zadávám a používám 
+[SSH agenta](https://en.wikipedia.org/wiki/Ssh-agent).
 
 Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
 `~/.ssh/id_ed25519` pro tajný/privátní klíč a `~/.ssh/id_ed25519.pub` pro veřejný
@@ -123,6 +134,7 @@ Pokud si má Git přihlašovací údaje pamatovat jen dočasně
 Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
 vygenerovat [Personal access token](https://github.com/settings/tokens).
 (Až ho budete generovat, tak v právech odfajfkujte `workflow`.)
+Návod [zde](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 
 Veřejná (webová) úložiště

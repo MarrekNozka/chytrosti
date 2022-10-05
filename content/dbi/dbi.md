@@ -44,6 +44,9 @@ Gitu se věnuji v [samostatném postu]({filename}/git.md).
 Dokumentace
 ==============
 
+Krátkou českou dokumentaci najdete na adrese
+<http://spseol.github.io/CzechFlaskDoc/>. Dále poslouží oficiální dokumentace:
+
 * Python: <https://docs.python.org/>
 * Flask: <https://flask.palletsprojects.com/>
     * [Quickstart](https://flask.palletsprojects.com/quickstart/)
@@ -51,3 +54,16 @@ Dokumentace
     * [Incoming Request Data](https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data)
     * [Patterns](https://flask.palletsprojects.com/patterns/)
 * Jinja2: <https://jinja.palletsprojects.com/templates/>
+
+
+SQLite
+=============
+
+* klikátko: <https://sqlitebrowser.org/dl/>
+* textový auto-completion client: <https://litecli.com>
+
+
+Repositáře nejen z výuky
+=====================
+
+* <https://github.com/spseol?q=DBI-&type=all&language=&sort=>

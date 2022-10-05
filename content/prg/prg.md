@@ -6,6 +6,7 @@ menu: true
 
 [TOC]
 
+[pip]: {filename}/pip.md
 Tahák
 ============================
 
@@ -33,6 +34,57 @@ jednoduché, ale rozhodně se nedá říct, že by se v něm nedalo pracovat. Ex
 ale celá řada hezčích a propracovanějších 
 [vývojových prostředí](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
 Já doporučuji [VSCode/Codium]({filename}/codium.md).
+
+
+Interaktivní interpret shell
+===============================
+
+Pro různé zkoušení a testování se se hodí Python v režimu interaktivním režimu
+([REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)).
+Nejjednodušší je napsat do příkazové řádky příkaz `python` nebo `python3`.
+Tento shell je ale poměrně chudý a nepohodlný. Pokud chcete trochu více
+pohodlíčka doporučuji jeden z následujících.
+
+ptpython
+-------------
+
+[ptpython](https://github.com/prompt-toolkit/ptpython) se instaluje se přes
+[pip]({filename}/pip.md):
+
+    pip install ptpython
+
+a spouští se příkazem `ptpython` případně (viz níže) `ptipython`.
+Vše z příkazové řádky. (Ve Windows ❖Win+X, PowerShell)
+
+
+IPython
+---------------------
+
+[IPython](http://ipython.org/) se instaluje také pomocí
+[pip][] buď přímo nebo jako součást balíčku
+[Jupyter](https://jupyter.org). V Linuxu můžete místo `pip` s výhodou použít
+balíčkovací systém.
+
+    pip install ptpython ipython
+
+Interpret se spouští příkazem `ptipython` nebo `ipython`. Někdy (na Windows
+člověk nikdy neví) si musíte dát práci a najít spustitelný soubor `ipython.exe`.
+
+Jupyter (Qt)Console
+----------------------------
+
+V Linuxu můžete opět použít balíčkovací systém. Jinak opět [pip][].
+
+Pokud vám stačí rozhraní příkazového řádku:
+
+    pip install jupyter-console
+
+Pokud požadujete myšovaté grafické rozhraní:
+
+    pip install qtconsole pyqt5
+
+Samotné spuštění se děje zavolání příkazu `jupyter-console` nebo
+`jupyter-qtconsole`.
 
 
 

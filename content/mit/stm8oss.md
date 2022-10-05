@@ -1,6 +1,7 @@
 title: Vývoj STM8 s OpenSource nástroji
 tags:  STM8, programování, Céčko
 category: MITka
+slug: stm8oss
 
 [TOC]
 
@@ -16,6 +17,8 @@ nepřišly úplně srozumitelná.
 A to jsem ještě nezmínil to hlavní: **Na Linuxu to
 nejede!**
 
+![tools %%]({static}./img/tools.jpg)
+
 Takže, co s tím? Použijeme
 [OpenSource](https://cs.wikipedia.org/wiki/Otev%C5%99en%C3%BD_software)
 nástroje! Co je potřeba?
@@ -27,6 +30,7 @@ nástroje! Co je potřeba?
 
 Když jsem to celé tvořil hodně mi pomohla tato stránka, tak se tam můžete
 mrknout: <https://github.com/hbendalibraham/stm8_started>.
+
 
 Předpřipravená instalace
 ==========================
@@ -79,19 +83,21 @@ Linux
     sudo apt install sdcc sdcc-libraries git make openocd
 
 
-Startovací toolset
+Startovací toolchain
 ====================
 
 Připravil jsem startovací *strom zdrojových kódů* a 
 [Makefile](https://cs.wikipedia.org/wiki/Make).
 
-<https://github.com/spseol/start-stm8>
+<https://github.com/spseol/STM8-start-toolchain>
 {: .center }
 
-Tento toolset se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
+
+Tento toolchain se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
 [Make](https://cs.wikipedia.org/wiki/Make),
-[Bash](https://cs.wikipedia.org/wiki/Bash) a také se docela dobře hodí 
-[Git]({filename}/git.md).
+[Bash](https://cs.wikipedia.org/wiki/Bash) a/také [Git]({filename}/git.md).
+
+### Instalace
 
 V Linuxu zavoláte něco jako:
 
@@ -99,14 +105,19 @@ V Linuxu zavoláte něco jako:
 
 Ve Windows je nejsnadnější instalovat pomocí [Chocolatye][]:
 
-    choco install make
-    choco install git 
+    choco install make git 
+    choco install openocd
+    choco install python
 
-(Bash je součásti balíčku Git.)
+Bash je součásti balíčku Git. Ve Windows ještě stojí za to malinko si Bash připravit,
+aby fungoval dobře s `make`. Proto si si nakopírujte konfiguraci s `.make/bashrc` do
+domovského adresáře.
 
-Aby vše, co je zde popsáno fungovalo k vaší spokojenosti, je třeba dodržet
-následující schéma:
+    cp .make/bashrc ~/.bashrc
 
+### Projekty a knihovna SPL
+
+Adresářová struktura jednotlivých projektů vypadá takto:
 
 ```
 MIT
@@ -117,6 +128,9 @@ MIT
 ├── Projekt-2
 │   ├── inc
 │   ├── lib
+│   └── src
+├── SPL
+│   ├── inc
 │   └── src
 ├── SPL-STM8S103
 │   ├── inc
@@ -129,19 +143,36 @@ MIT
     └── src
 ```
 
-Udělejte si adresář, kde budou všechny vaše projekty. V tom stejném adresáři
-budou i adresáře nazvané `SPL`. V `SPL` adresářích je 
-*Standard peripheral library* od firmy [ST](https://st.com/). Tato knihovna má
-dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli byste si ji 
+Udělejte si adresář, kde budou všechny vaše projekty -- v uvedeném příkladu je
+to `MIT`. V tom stejném adresáři budou i adresáře nazvané `SPL`. V `SPL`
+adresářích je *Standard peripheral library* od firmy [ST](https://st.com/).
+Tato knihovna má dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli
+byste si ji
 [najít](https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&t=vivaldi&ia=software)
-a [stáhnout](https://www.st.com/en/embedded-software/stsw-stm8069.html). Pak je třeba 
-ještě aplikovat [patch](https://github.com/gicking/STM8-SPL_SDCC_patch), který knihovnu
-předělá tak, aby se dala použít s naším *SDCC* kompilátorem. No prostě:  
+a [stáhnout](https://www.st.com/en/embedded-software/stsw-stm8069.html). Pak je
+třeba ještě aplikovat [patch](https://github.com/gicking/STM8-SPL_SDCC_patch),
+který knihovnu předělá tak, aby se dala použít s naším *SDCC* kompilátorem. Celé je
+to docela pracné, ale zkuste napsat `make spl` třeba se to zařídí samo.
 
-ve svém prvním projektu zadáte příkaz: `make spl`
+
+### Použití
+
+* `make spl` -- stáhne a nachystá knihovny
+* `make` -- provede kompilaci
+* `make flash` -- nahraje program do chipu
+* `make clean` -- smaže všechno, co nakompiloval
+* `make rebuild` -- smaže vše a znovu zkompiluje
+* `make openocd` -- spustí `openocd` pro debug
+* `make debug` -- spustí STM8-gdb
+
+
+### Konkurence :)
+
+Ještě bych měl zmínit, že kolega **Wykys** vytvořil také toolchain, který je o dost
+jednodušší a tím pádem i přehlednější:
+
+<https://gitlab.com/wykys/stm8-tools>
 {: .center }
-
-
 
 
 Vývojové prostředí
@@ -150,41 +181,56 @@ Vývojové prostředí
 Jako editor a vývojové prostředí doporučuji 
 [VScodium/VScode]({filename}/codium.md).
 
-Instalace je popsána [zde]({filename}/codium.md#instalace)
+Instalace je popsána [zde]({filename}/codium.md#instalace).
 
 Kompilace
 =============
 
 Popíšu tu celkem tři různá, mezi sebou se prolínající řešení. Špatná zpráva je,
 že ani jedno z nich není 100%. Dobrá zpráva je, že při troše snahy se těm 100%
-můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout:
+můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout.
 
-    make switch-sdcc
-respektive
+K dispozici jsou tedy celkem tři `Makefile` v adresáři 
+[`.make`](https://github.com/spseol/STM8-start-toolchain/tree/main/.make).
+Přepnutí jen realizováno jako symlink `Makefile` do root-adresáře projektu.
 
-    make switch-sdccrm
-respektive
+    $ ls -l
+    lrwx 1 mar 23 14. led 21.14 Makefile -> .make/Makefile-sdcc-gas
 
-    make switch-sdcc-gas
+Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
+takže tato operace může být ztrátová. V *Makefile* je vše připraveno, takže
+stačí volat `make`.
 
+```bash
+    make switch-sdcc      # respektive
+    make switch-sdccrm    # respektive
+    make switch-sdcc-gas  # respektive
+```
 
-Řešení 1: sdcc
+Řešení 1: SDCC
 --------------------
 
 [SDCC - Small Device C Compiler](http://sdcc.sourceforge.net/) je kompilátor
-pro různé více či méně známé 8-bitové architektury. Z&nbsp;hlediska STM8 má jednu
+pro různé, více či méně známé 8-bitové architektury. Z&nbsp;hlediska STM8 má jednu
 zásadní nevýhodu: **nedokáže odstranit nepoužívaný kód**. Co to znamená? No...
 pokud si všechno píšete sami, tak to prakticky neznamená nic. Pokud ovšem
-použijete nějakou knihovnu (jako například SPL), tak už vám to začne hodně
+použijete nějakou knihovnu (jako například *SPL*), tak už vám to začne hodně
 vadit, protože výsledný strojový kód obsahuje spoustu funkcí, které jste
 kompilovali jen proto, že byli součástí knihovny a ne proto, že jste je chtěli
-použít. Ve výsledku program, který by mohl mít cca 2-3&nbsp;kB má 30&nbsp;kB.
+použít. Tyto funkce nejsou nikde volány a proto by je měl 
+[linker](https://cs.wikipedia.org/wiki/Linker) odstranit. No a to je přesně to, co
+se nestane `:-(`.
+Ve výsledku program, který by mohl mít cca 2-3&nbsp;kB má 30&nbsp;kB.
 
-To se dá částečně vyřešit tím, že budete kompilovat jen ty části SPL, které
-právě v tomto projektu potřebujete. Velikost výsledného binárního souboru se
-tak rapidně zmenší, ale pokud budete pracovat s čipem, který má jen 8&nbsp;kB 
-paměti programu, obávám se, že to nemusí stačit....
+Jediné skutečné řešení tohoto problému je použít níže uvedené 
+[sdccrm](#reseni-2-sdccrm) nebo
+[SDCC-gas](#reseni-3-sdcc-gas).
 
+Pokud zůstanete u SDCC dá se tento problém částečně obejít tím, že budete
+kompilovat jen ty části *SPL*, které právě v tomto projektu potřebujete.
+Velikost výsledného binárního souboru se tak rapidně zmenší, ale pokud budete
+pracovat s čipem, který má jen 8&nbsp;kB paměti programu, obávám se, že to
+nemusí stačit....
 
 V *Makefile* někde kolem řádku 77 najdete toto:
 
@@ -197,47 +243,60 @@ V *Makefile* někde kolem řádku 77 najdete toto:
     #SPL_SOURCE += stm8s_tim2.c
     #SPL_SOURCE += stm8s_tim3.c
 
-... měli byste zapoznámkovat to, co nepotřebujete a odpoznámkovat to, co potřebujete.
+... měli byste zakomentovat to, co nepotřebujete a odkomentovat jen to, co potřebujete.
 
-**Instalace v Linuxu** je poměrně snadná, protože SDCC je součásti většiny
+
+
+**Instalace SDCC v Linuxu** je poměrně snadná, protože SDCC je součásti většiny
 Linuxových distribucí; takže zavoláte něco jako:
 
     apt install sdcc sdcc-libraries
 
 **Ve Windows** si [stáhnete
 instalátor](https://sourceforge.net/projects/sdcc/files/) a pokračujte, ve
-Windows oblíbeným, klikáním.
+Windows oblíbeným klikáním.
 
 
 Řešení 2: sdccrm
 --------------------
 
-sdccrm je nástroj pro optimalizaci mrtvého kódu pro port stm8 sdcc, který
+`sdccrm` je nástroj pro optimalizaci mrtvého kódu pro port stm8 SDCC, který
 odstraňuje nepoužívané funkce.
 
 <https://github.com/XaviDCR92/sdccrm>
 {: .center }
 
-Je to řešení tak nějak na půl cesty: Funguje, kód je opravdu menší, ale tato
-možnost **[vylučuje použití
+Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
+[SDCC](#reseni-1-sdcc), poté se pomocí `sdccrm` vymaže kód, který se nepoužívá,
+celý proces se dokončí a kód se převede z assembleru do strojového kódu.
+
+Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
+ale tato možnost **[vylučuje použití
 debugeru](https://github.com/XaviDCR92/sdccrm#known-issues)**. To někdy, někomu
 vadit může, jindy jinému to vadit nemusí.
 
-Dále je nutné ručně zadat funkce, které nechcete "optimalizovat" -- vyhodit.
+Dále je nutné **ručně zadat** funkce, které nechcete "optimalizovat" -- tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
-souboru `.make/exclude_reference ` uvnitř projektového adresáře.
+souboru `exclude_reference ` uvnitř projektového adresáře.
 
+### Instalace
 
-`sdccrm` si musíte buildnout ze zdrojových kódů. Pomocí
-[Chocolatye][] nainstalujete `gcc` a v adresáři se zdrojovými 
-soubory zavoláte `make`. Už jsem to udělal za vás a binárka je 
-součástí [startovacího toolsetu](#startovaci-toolset) a je v souboru
-`.make/sdccrm.exe`.
+`sdccrm` si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
+závislostí, takže jde jednoduše kompilovat v&nbsp;Linuxu i ve&nbsp;Windows --
+nicméně pro jistotu je Windows binárka součástí [startovacího
+toolsetu](#startovaci-toolchain) a je v souboru `.make/sdccrm.exe`.
     
+Ve Windows:
+
     :::powershell
     choco install mingw
 
-a pak
+nebo v Linuxu:
+
+    :::bash
+    apt install gcc
+
+a pak jen:
       
     :::bash
     cd sdccrm
@@ -245,22 +304,24 @@ a pak
 
 
 
-Řešení 3: sdcc-gas
+Řešení 3: SDCC-gas
 --------------------
 
 <https://github.com/XaviDCR92/sdcc-gas>
 {: .center }
 
-Toto je asi nejlepší řešení. Vzniklo přidáním podpory [GNU
-Assembleru](https://cs.wikipedia.org/wiki/GNU_Assembler) tedy -gas do SDCC
-3.9.0; gas je výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že
-můžeme používat klasické nástroje z [GNU
+Toto je asi nejlepší řešení optimalizace (vyhození) mrtvého kódu. Vzniklo
+přidáním podpory [GNU Assembleru](https://cs.wikipedia.org/wiki/GNU_Assembler)
+tedy *gas* do SDCC 3.9.0. [gas](https://codedocs.org/what-is/gnu-assembler) je
+výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že můžeme
+používat klasické nástroje z [GNU
 binutils](https://cs.wikipedia.org/wiki/GNU_binutils), na druhou stranu to
-znamená, že nelze použít ty části `sdcc-libraries`, které jsou napsané v
-STM8 assembleru a je nutné použít méně optimální kód napsaný v C. ...no a zřídka se
-stane, že nějaká vnitřní funkcionalita (například násobení 32-bitových
-integerů) je napsaná jen v STM8 assembleru a vám nezbude, než to nějak obejít nebo
-danou funkci přepsat do GNU assembleru.
+znamená, že nelze použít ty části `sdcc-libraries`, které jsou napsané v STM8
+assembleru a je nutné použít méně optimální kód napsaný v C nebo STM8 assembler
+přepsat do GNU assembleru. ...no a zřídka se stane, že nějaká vnitřní
+funkcionalita (například násobení 64-bitových integerů) je napsaná jen v STM8
+assembleru a vám nezbude, než to nějak obejít nebo danou funkci přepsat do GNU
+assembleru.
 
 Pokud vás to zajímá více můžete si počíst
 [zde](https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397)
@@ -315,7 +376,7 @@ je potřeba pro [linkování](https://cs.wikipedia.org/wiki/Linker) a
     cd /usr/local/stow
     sudo stow  stm8-binutils-gdb
 
-Tato výše popsaná kompilace ze zdrojových je teoreticky možná i na Windows,
+Tato výše popsaná kompilace ze zdrojových kódů je teoreticky možná i na Windows,
 pomocí projektu [Cygwin](https://www.cygwin.com/). Prakticky jsem to nikdy
 nezkoušel. Osobně bych šel (tedy pokud by mě někdo donutil používat Widows)
 spíše cestou
@@ -345,12 +406,20 @@ na Windows je to díky [Chocolatye][] podobně jednoduché.
 
     choco install openodc
 
-... jen je škoda, že Chocolatye nabízí jen verzi 0.10 (V Linuxu je většinou
-dostupná verze 0.11).
+Zdá se, že
+[Chocolatye už nabízí](https://community.chocolatey.org/packages?q=openocd)
+verzi 0.11. Dříve to bylo jen 0.10. Tyto verze používají trochu jiné názvy
+souborů, proto i příkaz vypadá jinak.     
+Verze 0.10: `openocd  -f interface/stlink.cfg -f target/stm8s.cfg`      
+Verze 0.11: `openocd  -f interface/stlink-dap.cfg -f target/stm8s.cfg`     
 
-Aby `openodc` umělo i pouhé flashování 
-[je třeba přidat](https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0)
-na konec konfiguračního souboru `stm8s.cfg` tyto řádky:
+Toto se řeší v *Makefile* pomocí proměnné `OPENOCD`, takže si ji případně upravte.
+
+Aby `openodc` umělo i pouhé flashování, je třeba přidat 
+[skript](https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0),
+který to umí. Ten je buď součástí
+[startovacího toolsetu](#startovaci-toolchain) nebo ho můžete přidat
+na konec konfiguračního souboru `stm8s.cfg`:
 
     proc program_device {filename flashstart} {
       halt
@@ -376,15 +445,132 @@ ho ručně buildnout.
 <https://github.com/vdudouyt/stm8flash>
 {: .center }
 
-Debug
-===========
+Debuging -- Ladění
+====================
 
-stm8-gdb
+![GDB maskot >>](https://sourceware.org/gdb/images/archer.svg)
+
+GDB ([GNU Debugger](https://cs.wikipedia.org/wiki/GNU_Debugger)) je standardní
+nástroj na hledání chyb v software. Pokud budeme chtít program krokovat a  za
+běhu se dívat do proměnných budeme potřebovat právě upravený 
+[STM8-GDB](https://stm8-binutils-gdb.sourceforge.io/)
+z [GNU binutils](https://cs.wikipedia.org/wiki/GNU_binutils)
+a [OpenOCD](#openocd) (Open On Chip Debuger).
+
+
+STM8-GDB
 -----------
 
+STM8-GDB je součástí GNU binutils. Instalaci jsem popsal výše. Pro přehlednost
+ještě jednou:
+
+    #!bash
+    tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
+    cd stm8-binutils-gdb-sources
+    export PREFIX=/usr/local/stow/stm8-binutils-gdb
+    ./patch_binutils.sh
+    cd binutils-2.30
+    make
+    sudo make install
+
+    cd /usr/local/stow
+    sudo stow  stm8-binutils-gdb
+
+
+No a teď samotný postup ladění:
+
+### OpenOCD
+
+Nejprve je třeba pustit komunikaci s STM8 čipem pomocí `openocd`
+
+    openocd -f interface/stlink-dap.cfg -f target/stm8s.cfg -c "init" -c "reset halt"
+
+Nebojte nemusíte to vždy znovu vypisovat. Je to napsané v *Makefile*, takže
+stačí zavolat
+
+    make openocd
+
+
+### GDB
+
+.... a teď v dalším terminálu otevřeme `gdb` a dáme se do ladění. **Než
+provedete toto, ujistěte se, že [openocd](#openocd_1) již běží**.
+
+
+    stm8-gdb --tui build-STM8S208/out-STM8S208.elf
+
+opět stačí zavolat `make`
+
+    make debug
+
+Ano, je to textové rozhraní, žádná klikátka ani pouťové efekty. Pouze [textové
+příkazy](https://sourceware.org/gdb/onlinedocs/gdb/Continuing-and-Stepping.html).
+
+
+### Rychlokurz STM8-GDB
+
+V programu funguje **tabulátor**. To znamená, že při stisku klávesy `TAB` se
+GDB pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná.
+
+
+`b main`, `break main`
+: nastaví breakpoint na vstup do funkce `main`
+
+`b 48`, `break 48`
+: nastaví breakpoint na řádek 48
+
+`b milis.c:48`, `break milis.c:48`
+: nastaví breakpoint na řádek 48 v souboru `milis.c`
+
+`info b`, `info breakpoints`
+: vypíše informace o breakpointech
+
+`info sources`
+: vypíše seznam zdrojových souborů
+
+`d 2`. `delete 2`
+: vymaže breakpoint 2
+
+`r`, `run`
+: spustí program
+
+`interrupt`, Ctrl+C
+: přeruší program, program se zastaví tam, kde zrovna teď je
+
+`n`, `next`
+: vykoná jeden řádek zdrojového kódu
+
+`fin`, `finish`
+: dokončí funkci, ve které se program právě nachází (pokud v ní není další breakpoint)
+
+`c`, `cont`, `continue`
+: pokračuje v běhu programu, dokud nenarazí na breakpoint
+
+`p time`, `print time`
+: vypíše obsah proměnné `time`
+
+`p time`, `print time`
+: vypíše obsah proměnné `time`
+
+`display time`
+: vypíše obsah proměnné `time` pokaždé, když se program zastaví
+
+`undisplay 2`
+: už nebude vypisovat řádek 2, když se program zastaví
+
+
+Zde něco málo více k příkazům 
+[print](https://visualgdb.com/gdbreference/commands/print)
+a [display](https://visualgdb.com/gdbreference/commands/display).
+
+
+![GDB %%]({static}./img/gdb.png)
 
 
 STM8 Debugger for vsCode/Codium
-----------
+-----------------------------------
 
 
+
+<https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug>
+{: .center }

@@ -21,9 +21,9 @@ V Linuxu potom stačí něco jako:
 
     apt install python3-pip python3-venv
 
-!!! notice
+!!! note "Malá poznámka k Linuxu"
 
-    Ještě jedna poznánka k Linuxu: V Linuxových distribucích bývá Python
+    V Linuxových distribucích bývá Python
     většinou už nainstalován -- a to dokonce dvakrát. Příkazem `python`
     spustíte **Python2** a příkazem `python3` spustíte **Python3**. Obdobně
     to platí pro příkaz `pip` a `pip3`.
