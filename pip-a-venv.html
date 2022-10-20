@@ -18,17 +18,17 @@
 
 <meta name="keywords" content="Python, programování, Programování, " />
 
-<meta property="og:title" content="pip  - Jak nainstalovat balíček pro Python "/>
-<meta property="og:url" content="./pip.html" />
+<meta property="og:title" content="pip a venv  - Jak nainstalovat balíček pro Python "/>
+<meta property="og:url" content="./pip-a-venv.html" />
 <meta property="og:description" content="pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy se stane, že při zadání příkazu pip obdržíte pouze hlášení, že příkaz neexistuje …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-17T15:35:00+01:00" />
-<meta property="og:article:modified_time" content="2022-10-04T18:40:31.827534+02:00" />
-<meta name="twitter:title" content="pip  - Jak nainstalovat balíček pro Python ">
+<meta property="og:article:modified_time" content="2022-10-20T06:38:20.864286+02:00" />
+<meta name="twitter:title" content="pip a venv  - Jak nainstalovat balíček pro Python ">
 <meta name="twitter:description" content="pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy se stane, že při zadání příkazu pip obdržíte pouze hlášení, že příkaz neexistuje …">
 
-        <title>pip  - Jak nainstalovat balíček pro Python  · Chytrosti
+        <title>pip a venv  - Jak nainstalovat balíček pro Python  · Chytrosti
 </title>
         <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -100,8 +100,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="./pip.html">
-                pip
+            <a href="./pip-a-venv.html">
+                pip a&nbsp;venv
                 <small class="subtitle">
                     Jak nainstalovat balíček pro Python
                 </small>
@@ -118,7 +118,7 @@
 <ul>
 <li><a href="#globalni-instalace">Globální instalace</a></li>
 <li><a href="#uzivatelska-instalace">Uživatelská instalace</a></li>
-<li><a href="#virtualni-prostredi">Virtuální prostředí?</a><ul>
+<li><a href="#virtualni-prostredi-venv">Virtuální prostředí? venv</a><ul>
 <li><a href="#vytvoreni">Vytvoření</a></li>
 <li><a href="#aktivace">Aktivace</a></li>
 <li><a href="#prace">Práce</a></li>
@@ -136,8 +136,8 @@
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
-<li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 </ul>
 <hr />
 </section>
@@ -228,7 +228,7 @@ do uživatelského profilu, je třeba to vynutit parametrem <code>-U</code>, kte
 balíček povýšit/instalovat na nejnovější dostupnou verzi.</p>
 <div class="highlight"><pre><span></span><code>pip install -U --user flask
 </code></pre></div>
-<h2 id="virtualni-prostredi">Virtuální prostředí?<a class="headerlink" href="#virtualni-prostredi" title="Permanent link">¶</a></h2>
+<h2 id="virtualni-prostredi-venv">Virtuální prostředí? venv<a class="headerlink" href="#virtualni-prostredi-venv" title="Permanent link">¶</a></h2>
 <p><a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments">Virtuální prostředí</a>
 umožňuje mít instalaci Pythonu (jakoby) oddělenou od instalace
 v systému. Pro každý projekt si vytvoříte vlastní virtuální prostředí a do něj
@@ -288,8 +288,8 @@ pip install --user -U pyglet
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
-<li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 </ul>
 <hr />
 </section>
@@ -300,8 +300,8 @@ pip install --user -U pyglet
               St 17. lis 2021 15:35
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2022-10-04T18:40:31+02:00">
-  Út 4. říj 2022 18:40
+<time datetime="2022-10-20T06:38:20+02:00">
+  Čt 20. říj 2022 06:38
 </time>
 
             <h4>Kategorie</h4>

@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 16 Oct 2022 20:43:30 +0200</lastBuildDate><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Thu, 20 Oct 2022 17:44:15 +0200</lastBuildDate><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Všechny pracovní listy v jediném souboru: 
+&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;vse.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="nastaveni-site-linuxovem-shell"&gt;Nastavení sítě (Linuxovém shell):&lt;a class="headerlink" href="#nastaveni-site-linuxovem-shell" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="pripojeni-do-site"&gt;Připojení do sítě:&lt;a class="headerlink" href="#pripojeni-do-site" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="smerovani"&gt;Směrování:&lt;a class="headerlink" href="#smerovani" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="smerovani-bez-prikazu"&gt;Směrování (bez příkazů):&lt;a class="headerlink" href="#smerovani-bez-prikazu" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 20 Oct 2022 17:44:15 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-20:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>DBI</title><link>https://chytrosti.marrek.cz/dbi.html</link><description>
+&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
+zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 20 Oct 2022 06:59:37 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-20:/dbi.html</guid><category>Programování</category><category>Python</category><category>programování</category><category>web</category><category>databáze</category><category>Flask</category></item><item><title>PRG</title><link>https://chytrosti.marrek.cz/prg.html</link><description>
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -10,23 +42,8 @@ nebo
 &lt;ul&gt;
 &lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
-proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 16 Oct 2022 20:43:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-16:/prg.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>DBI</title><link>https://chytrosti.marrek.cz/dbi.html</link><description>
-&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
-co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
-zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 16 Oct 2022 20:41:37 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-16:/dbi.html</guid><category>Programování</category><category>Python</category><category>programování</category><category>web</category><category>databáze</category><category>Flask</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt; a přidat si Python do 
+proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 20 Oct 2022 06:56:05 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-20:/prg.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -37,7 +54,7 @@ najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 16 Oct 2022 20:24:17 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-16:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 27 Sep 2022 20:07:09 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-09-27:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 16 Oct 2022 20:24:17 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-10-16:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -69,13 +86,13 @@ používáte …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc
 o co nejjednodušší instalaci software. Podobný způsob instalace je znám z linuxových distribucí.&lt;/p&gt;
 &lt;p&gt;Já tento způsob instalace doporučuji a zatím se mi jen a jen osvědčil. Nemusíte &lt;span class="caps"&gt;SW&lt;/span&gt; nikde
 dlouze hledat instalovat atd. 
-Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 21:17:37 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>pip</title><link>https://chytrosti.marrek.cz/pip.html</link><description>
+Například instalaci VSCodia …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 21:17:37 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/chocolatey.html</guid><category>Programování</category><category>programování</category><category>Git</category><category>Python</category><category>STM8</category></item><item><title>pip a venv</title><link>https://chytrosti.marrek.cz/pip-a-venv.html</link><description>
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
 &lt;code&gt;list&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Někdy se stane, že při zadání příkazu &lt;code&gt;pip&lt;/code&gt; obdržíte pouze hlášení, že příkaz
-neexistuje …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 15:35:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/pip.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
+neexistuje …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 17 Nov 2021 15:35:00 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-11-17:/pip-a-venv.html</guid><category>Programování</category><category>Python</category><category>programování</category></item><item><title>Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</title><link>https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html</link><description>
 &lt;p&gt;zde se časem objeví zajímavý text :)&lt;/p&gt;
 &lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Kompletní zdrojové kódy naleznete v 

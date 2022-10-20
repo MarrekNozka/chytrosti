@@ -1,112 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-16T20:43:30+02:00</updated><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-10-16T20:43:30+02:00</published><updated>2022-10-16T20:43:30+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-16:/prg.html</id><summary type="html">
-&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
-výbavě. Tyto texty lze číst buď na 
-&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
-nebo 
-&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
-proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">
-&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
-výbavě. Tyto texty lze číst buď na 
-&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
-nebo 
-&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; a přidat si Python do 
-proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment variables&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="editor"&gt;Editor&lt;a class="headerlink" href="#editor" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Základní instalace Pythonu už sama v sobě obsahuje jednoduché vývojové
-prostředí a jednoduchou interaktivní konzolu &lt;span class="caps"&gt;IDLE&lt;/span&gt;. Toto prostředí je poměrně
-jednoduché, ale rozhodně se nedá říct, že by se v něm nedalo pracovat. Existuje
-ale celá řada hezčích a propracovanějších 
-&lt;a href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments"&gt;vývojových prostředí&lt;/a&gt;.
-Já doporučuji &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html"&gt;VSCode/Codium&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="interaktivni-interpret-shell"&gt;Interaktivní interpret shell&lt;a class="headerlink" href="#interaktivni-interpret-shell" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro různé zkoušení a testování se se hodí Python v režimu interaktivním režimu
-(&lt;a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"&gt;&lt;span class="caps"&gt;REPL&lt;/span&gt;&lt;/a&gt;).
-Nejjednodušší je napsat do příkazové řádky příkaz &lt;code&gt;python&lt;/code&gt; nebo &lt;code&gt;python3&lt;/code&gt;.
-Tento shell je ale poměrně chudý a nepohodlný. Pokud chcete trochu více
-pohodlíčka doporučuji jeden z následujících.&lt;/p&gt;
-&lt;h3 id="ptpython"&gt;ptpython&lt;a class="headerlink" href="#ptpython" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/prompt-toolkit/ptpython"&gt;ptpython&lt;/a&gt; se instaluje se přes
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install ptpython
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;a spouští se příkazem &lt;code&gt;ptpython&lt;/code&gt; případně (viz níže) &lt;code&gt;ptipython&lt;/code&gt;.
-Vše z příkazové řádky. (Ve Windows ❖Win+X, PowerShell)&lt;/p&gt;
-&lt;h3 id="ipython"&gt;IPython&lt;a class="headerlink" href="#ipython" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; se instaluje také pomocí
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt; buď přímo nebo jako součást balíčku
-&lt;a href="https://jupyter.org"&gt;Jupyter&lt;/a&gt;. V Linuxu můžete místo &lt;code&gt;pip&lt;/code&gt; s výhodou použít
-balíčkovací systém.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install ptpython ipython
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Interpret se spouští příkazem &lt;code&gt;ptipython&lt;/code&gt; nebo &lt;code&gt;ipython&lt;/code&gt;. Někdy (na Windows
-člověk nikdy neví) si musíte dát práci a najít spustitelný soubor &lt;code&gt;ipython.exe&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id="jupyter-qtconsole"&gt;Jupyter (Qt)Console&lt;a class="headerlink" href="#jupyter-qtconsole" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;V Linuxu můžete opět použít balíčkovací systém. Jinak opět &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;pip&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pokud vám stačí rozhraní příkazového řádku:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install jupyter-console
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud požadujete myšovaté grafické rozhraní:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install qtconsole pyqt5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Samotné spuštění se děje zavolání příkazu &lt;code&gt;jupyter-console&lt;/code&gt; nebo
-&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
-&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
-Stojí také za to, zmínit se 
-o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu Git&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Naprostou většinu všech vašich dotazů vyřeší vyhledávač
-&lt;a href="https://search.brave.com/search?q=how+to+python"&gt;prostým dotazem&lt;/a&gt;. Nicméně považuji
-za dobré zmínit, že Python má svou vlastní – docela dobrou – 
-&lt;a href="https://doc.python.org/"&gt;dokumentaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Velmi užitečná je i best practices kniha 
-&lt;a href="https://docs.python-guide.org"&gt;Stopařův průvodce Pythontem&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="knihovny"&gt;Knihovny&lt;a class="headerlink" href="#knihovny" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Knihovny se nejlépe instalují pomocí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Tématu se věnuji
-v &lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-10-16T20:41:37+02:00</published><updated>2022-10-16T20:41:37+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-16:/dbi.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-20T17:44:15+02:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-10-20T17:44:15+02:00</published><updated>2022-10-20T17:44:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/site.html</id><content type="html">&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Všechny pracovní listy v jediném souboru: 
+&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;vse.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="nastaveni-site-linuxovem-shell"&gt;Nastavení sítě (Linuxovém shell):&lt;a class="headerlink" href="#nastaveni-site-linuxovem-shell" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="pripojeni-do-site"&gt;Připojení do sítě:&lt;a class="headerlink" href="#pripojeni-do-site" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="smerovani"&gt;Směrování:&lt;a class="headerlink" href="#smerovani" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="smerovani-bez-prikazu"&gt;Směrování (bez příkazů):&lt;a class="headerlink" href="#smerovani-bez-prikazu" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-10-20T06:59:37+02:00</published><updated>2022-10-20T06:59:37+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/dbi.html</id><summary type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
 zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro …&lt;/p&gt;</summary><content type="html">
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
 zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip.html"&gt;post věnovaný pipu&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="video-jak-to-rozjet-na-windows"&gt;Video – jak to rozjet na Windows&lt;a class="headerlink" href="#video-jak-to-rozjet-na-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/QMW7LSf4uBg"&gt;&lt;img alt="Jak rozjet Flask na Windows" data-frames="16" src="https://chytrosti.marrek.cz/dbi/img/flask-run_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
 &lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
@@ -137,7 +77,86 @@ a &lt;a href="https://docs.python-guide.org"&gt;Stopařův průvodce Pythontem&l
 &lt;h2 id="repositare-nejen-z-vyuky"&gt;Repositáře nejen z výuky&lt;a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/spseol?q=DBI-&amp;amp;type=all&amp;amp;language=&amp;amp;sort="&gt;https://github.com/spseol?q=&lt;span class="caps"&gt;DBI&lt;/span&gt;-&amp;amp;type=all&amp;amp;language=&amp;amp;sort=&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-16T20:24:17+02:00</published><updated>2022-10-16T20:24:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-16:/mit.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-10-20T06:56:05+02:00</published><updated>2022-10-20T06:56:05+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/prg.html</id><summary type="html">
+&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
+výbavě. Tyto texty lze číst buď na 
+&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
+nebo 
+&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt; a přidat si Python do 
+proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
+výbavě. Tyto texty lze číst buď na 
+&lt;a href="https://github.com/spseol/PRG-No/blob/master/README.md"&gt;Githubu&lt;/a&gt;
+nebo 
+&lt;a href="http://nbviewer.jupyter.org/github/spseol/PRG-NO/blob/master/README.ipynb"&gt;nbvieweru&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;návod &lt;a href="https://nbviewer.org/github/spseol/PRG-NO/blob/master/instalace.ipynb"&gt;zde&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Klíčové je nainstalovat i &lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt; a přidat si Python do 
+proměnné prostředí &lt;code&gt;PATH&lt;/code&gt;: &lt;code&gt;Add Python to PATH&lt;/code&gt;, &lt;code&gt;add Python to enviroment variables&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="editor"&gt;Editor&lt;a class="headerlink" href="#editor" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Základní instalace Pythonu už sama v sobě obsahuje jednoduché vývojové
+prostředí a jednoduchou interaktivní konzolu &lt;span class="caps"&gt;IDLE&lt;/span&gt;. Toto prostředí je poměrně
+jednoduché, ale rozhodně se nedá říct, že by se v něm nedalo pracovat. Existuje
+ale celá řada hezčích a propracovanějších 
+&lt;a href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments"&gt;vývojových prostředí&lt;/a&gt;.
+Já doporučuji &lt;a href="https://chytrosti.marrek.cz/vscodecodium.html"&gt;VSCode/Codium&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
+Stojí také za to, zmínit se 
+o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu Git&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Naprostou většinu všech vašich dotazů vyřeší vyhledávač
+&lt;a href="https://search.brave.com/search?q=how+to+python"&gt;prostým dotazem&lt;/a&gt;. Nicméně považuji
+za dobré zmínit, že Python má svou vlastní – docela dobrou – 
+&lt;a href="https://doc.python.org/"&gt;dokumentaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Velmi užitečná je i best practices kniha 
+&lt;a href="https://docs.python-guide.org"&gt;Stopařův průvodce Pythontem&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="knihovny"&gt;Knihovny&lt;a class="headerlink" href="#knihovny" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Knihovny se nejlépe instalují pomocí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Tématu se věnuji
+v &lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;samostatném postu Pip&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="interaktivni-interpret-shell"&gt;Interaktivní interpret shell&lt;a class="headerlink" href="#interaktivni-interpret-shell" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro různé zkoušení a testování se se hodí Python v režimu interaktivním režimu
+(&lt;a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"&gt;&lt;span class="caps"&gt;REPL&lt;/span&gt;&lt;/a&gt;).
+Nejjednodušší je napsat do příkazové řádky příkaz &lt;code&gt;python&lt;/code&gt; nebo &lt;code&gt;python3&lt;/code&gt;.
+Tento shell je ale poměrně chudý a nepohodlný. Pokud chcete trochu více
+pohodlíčka doporučuji jeden z následujících.&lt;/p&gt;
+&lt;h3 id="ptpython"&gt;ptpython&lt;a class="headerlink" href="#ptpython" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/prompt-toolkit/ptpython"&gt;ptpython&lt;/a&gt; se instaluje se přes
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install ptpython
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;a spouští se příkazem &lt;code&gt;ptpython&lt;/code&gt; případně (viz níže) &lt;code&gt;ptipython&lt;/code&gt;.
+Vše z příkazové řádky. (Ve Windows ❖Win+X, PowerShell)&lt;/p&gt;
+&lt;h3 id="ipython"&gt;IPython&lt;a class="headerlink" href="#ipython" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; se instaluje také pomocí
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt; buď přímo nebo jako součást balíčku
+&lt;a href="https://jupyter.org"&gt;Jupyter&lt;/a&gt;. V Linuxu můžete místo &lt;code&gt;pip&lt;/code&gt; s výhodou použít
+balíčkovací systém.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install ptpython ipython
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Interpret se spouští příkazem &lt;code&gt;ptipython&lt;/code&gt; nebo &lt;code&gt;ipython&lt;/code&gt;. Někdy (na Windows
+člověk nikdy neví) si musíte dát práci a najít spustitelný soubor &lt;code&gt;ipython.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="jupyter-qtconsole"&gt;Jupyter (Qt)Console&lt;a class="headerlink" href="#jupyter-qtconsole" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;V Linuxu můžete opět použít balíčkovací systém. Jinak opět &lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;pip&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pokud vám stačí rozhraní příkazového řádku:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install jupyter-console
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud požadujete myšovaté grafické rozhraní:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install qtconsole pyqt5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Samotné spuštění se děje zavolání příkazu &lt;code&gt;jupyter-console&lt;/code&gt; nebo
+&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-16T20:24:17+02:00</published><updated>2022-10-16T20:24:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-16:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -357,7 +376,7 @@ Projekt vypadá velmi slibně.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-09-27T20:07:09+02:00</published><updated>2022-09-27T20:07:09+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-27:/site.html</id><content type="html">&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -1012,7 +1031,7 @@ choco install make
 choco install openocd
 choco install mingw
 choco install python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip</title><link href="https://chytrosti.marrek.cz/pip.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2022-10-04T18:40:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip.html</id><summary type="html">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Python"></category><category term="STM8"></category></entry><entry><title>pip a venv</title><link href="https://chytrosti.marrek.cz/pip-a-venv.html" rel="alternate"></link><published>2021-11-17T15:35:00+01:00</published><updated>2022-10-20T06:38:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-11-17:/pip-a-venv.html</id><summary type="html">
 &lt;p&gt;&lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt; je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce &lt;code&gt;install&lt;/code&gt; existuje i akce &lt;code&gt;unistall&lt;/code&gt; nebo 
@@ -1100,7 +1119,7 @@ do uživatelského profilu, je třeba to vynutit parametrem &lt;code&gt;-U&lt;/c
 balíček povýšit/instalovat na nejnovější dostupnou verzi.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U --user flask
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="virtualni-prostredi"&gt;Virtuální prostředí?&lt;a class="headerlink" href="#virtualni-prostredi" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="virtualni-prostredi-venv"&gt;Virtuální prostředí? venv&lt;a class="headerlink" href="#virtualni-prostredi-venv" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments"&gt;Virtuální prostředí&lt;/a&gt;
 umožňuje mít instalaci Pythonu (jakoby) oddělenou od instalace
 v systému. Pro každý projekt si vytvoříte vlastní virtuální prostředí a do něj
