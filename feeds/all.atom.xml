@@ -1,5 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-10-20T17:44:15+02:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-10-20T17:44:15+02:00</published><updated>2022-10-20T17:44:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/site.html</id><content type="html">&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-11-07T12:09:20+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-11-07T12:09:20+01:00</published><updated>2022-11-07T12:09:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-11-07:/mit.html</id><summary type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
+&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
+najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
+&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
+najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;Stavový automat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html"&gt;Nábojová pumpa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="Buzení 7segmentového displeje"&gt;Buzení 7segmentového displeje&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"&gt;&lt;span class="caps"&gt;AD&lt;/span&gt; převodník&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Honza Vykydal pak napsal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti"&gt;Externí přerušení - &lt;span class="caps"&gt;EXTI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim"&gt;Čítače / Časovače&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro potřeby svojí výuky jsem sestavil následující:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"&gt;&lt;span class="caps"&gt;IR&lt;/span&gt; senzor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"&gt;&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Další velice cenné informace nejdete v sekcích:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg"/&gt;&lt;/p&gt;
+&lt;p&gt;Přehled jednotlivých čipů jednotlivých řad
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;rodiny &lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;
+pak najdete zde:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-application-specific-line.html"&gt; Application Specific Line&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-value-line.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Value line&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s103-105.html"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;/105&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"&gt;&lt;span class="caps"&gt;STM8S207&lt;/span&gt;/208&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hardware"&gt;Hardware&lt;a class="headerlink" href="#hardware" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;a class="headerlink" href="#nucleo-8s208rb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Ve výuce používáme vývojovou desku
+&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
+s mikroprocesorem
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nucleo-8S208RB pinout %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Tato deska je (ale nemusí být) napájena z &lt;span class="caps"&gt;USB&lt;/span&gt;. Obsahuje programátor s &lt;span class="caps"&gt;HW&lt;/span&gt;
+debugerem a &lt;span class="caps"&gt;USB2UART&lt;/span&gt; bridge. Můžete si zvolit pinout, který je
+Arduino-kompatibilní nebo plnohodnotný pinout, který sedí na univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt;.
+Je tu tedy vše, co pro začátek potřebujete. Vyčerpávající popis najdete v
+článku &lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;
+nebo v &lt;a href="https://www.st.com/resource/en/user_manual/dm00477617-stm8s208rbt6-nucleo64-board-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;a class="headerlink" href="#stm8s-discovery" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Dalším zajímavým vývojovým kitem je
+&lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; &lt;span class="caps"&gt;DISCOVERY&lt;/span&gt;&lt;/a&gt;
+s procesorem 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s105c6.html"&gt;&lt;span class="caps"&gt;STM8S105C6&lt;/span&gt;&lt;/a&gt;.
+Kit obsahuje i maličkou bastl desku a programátor lze použít k programování
+libovolného procesoru &lt;span class="caps"&gt;STM8S&lt;/span&gt;. Více opět 
+v &lt;a href="https://www.st.com/resource/en/user_manual/cd00250600-stm8s-discovery-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="STM8S Discovery kit %%" src="https://chytrosti.marrek.cz/mit/img/STM8S-Discovery-kit.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="standalone-programator"&gt;Standalone programátor&lt;a class="headerlink" href="#standalone-programator" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Při řešení samostatných projektů budeme postupně přecházíme k vlastnímu
+hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
+spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
+aplikaci a standalone programátor-debuger, pomocí kterého bude možné program
+ladit a nahrát. Možností je vícero – moc hezky to má &lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;popsáno
+Michal&lt;/a&gt;. Doporučuji přečíst!&lt;/p&gt;
+&lt;p&gt;(Jen bych doplním, že existuje ještě jeden klon &lt;span class="caps"&gt;ST&lt;/span&gt;-Linku, který se mně osobně
+osvědčil: &lt;a href="https://www.aliexpress.com/wholesale?SearchText=ST-LINK+V2+STM8+emulator+download+super+procection"&gt;mini &lt;span class="caps"&gt;ST&lt;/span&gt;-&lt;span class="caps"&gt;LINK&lt;/span&gt;/V2 &lt;span class="caps"&gt;STM8&lt;/span&gt; &lt;span class="caps"&gt;STM32&lt;/span&gt; emulator download super protection&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id="deroboard"&gt;DeroBoard&lt;a class="headerlink" href="#deroboard" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="DeroBoard photo %%" src="https://chytrosti.marrek.cz/mit/img/deroboard-photo.jpg"/&gt;&lt;/p&gt;
+&lt;p&gt;V rámci dílenské praxe si ubastlíte vývojovou desku &lt;a href="https://gitlab.com/wykys/stm8s-dero-board"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Dero
+Board&lt;/a&gt;. Tuto desku můžete použít i
+pro svoje samostatné projekty. Je osazena procesorem &lt;span class="caps"&gt;STM8S103F3&lt;/span&gt;. K dispozici
+máte všechny &lt;a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design"&gt;zdrojové soubory pro
+KiCad&lt;/a&gt; a 
+hezkou &lt;a href="https://wykys.gitlab.io/stm8s-dero-board/ibom.html"&gt;rozpisku součástek&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id="nebo"&gt;Nebo…&lt;a class="headerlink" href="#nebo" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Něco podobného, se stejným procesorem lze zakoupit i od čínských výrobců:
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=STM8S103F3P6+development+board"&gt;&lt;span class="caps"&gt;STM8S103F3P6&lt;/span&gt; development
+board&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="STM8S103F3P6 photo %%" src="https://chytrosti.marrek.cz/mit/img/STM8S103F3P6.jpeg"/&gt;&lt;/p&gt;
+&lt;p&gt;Pokud poptáváte vybavenější procesor existuje podobná vývojová deska:
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=STM8S105K4T6+Developmen+Board"&gt;&lt;span class="caps"&gt;STM8S105K4T6&lt;/span&gt; Developmen
+Board&lt;/a&gt;.
+Ta vám může posloužit podobně jako oficiální &lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;
+Discovery&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="STM8S105K4T6 photo %%" src="https://chytrosti.marrek.cz/mit/img/STM8S105K4T6.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="usb-to-uart-bridge"&gt;&lt;span class="caps"&gt;USB&lt;/span&gt; to &lt;span class="caps"&gt;UART&lt;/span&gt; Bridge&lt;a class="headerlink" href="#usb-to-uart-bridge" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Pokud plánujete projekt, kde μprocesor komunikuje s PCčkem, bude se vám hodit
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=USB+TTL+UART+convertor"&gt;převodník &lt;span class="caps"&gt;USB&lt;/span&gt; &lt;span class="caps"&gt;TTL&lt;/span&gt;
+&lt;span class="caps"&gt;UART&lt;/span&gt;&lt;/a&gt;.
+Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, že ne
+každý operační systém automaticky komunikuje s každým čipem, proto je dobré
+věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
+zakoupit a zda se váš &lt;span class="caps"&gt;OS&lt;/span&gt; s tímto čipem kamarádí.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="USB to TTL UART photo %%" src="https://chytrosti.marrek.cz/mit/img/USB2UART.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="univerzalni-pcb"&gt;Univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt;&lt;a class="headerlink" href="#univerzalni-pcb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Na projektové prototypování můžete s výhodou využít &lt;a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb"&gt;univerzální (prototypovou)
+desku&lt;/a&gt;.
+Existuje celá řada variant a vzorů (třeba 
+&lt;a href="https://www.tme.eu/cz/katalog/univerzalni-plosne-spoje_100110/?s_field=1000014&amp;amp;s_order=asc&amp;amp;limit=40&amp;amp;currency=CZK&amp;amp;page=1"&gt;tu&lt;/a&gt;
+nebo &lt;a href="https://www.aliexpress.com/wholesale?SearchText=universal+prototipe+PCB+board"&gt;tam&lt;/a&gt;)
+universálních bastl-desek; zde bych rád upozornil na některé – pro nás zajímavé:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;řady po třech: 
+  &lt;a href="https://www.tme.eu/cz/details/rad-790-1/univerzalni-plosne-spoje/rademacher/790-1/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/1005002838248764.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;jen body:
+  &lt;a href="https://www.tme.eu/cz/details/rad-811-6/univerzalni-plosne-spoje/rademacher/811-6/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/1005002838214518.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s rozvodem napájení:
+  &lt;a href="https://www.tme.eu/cz/details/pc-12/univerzalni-plosne-spoje/sci/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32947164794.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;s roztečí Arduino shield:
+  &lt;a href="https://www.tme.eu/cz/details/a000080/reseni-arduino/arduino/shield-mega-proto-pcb-rev3/"&gt;1&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/wholesale?SearchText=arduino+prototipe+PCB+board"&gt;2&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32841354009.html"&gt;3&lt;/a&gt;
+&lt;a href="https://www.aliexpress.com/item/32814326060.html?"&gt;4&lt;/a&gt;.
+  Tuto desku můžete použít s Nucleo-kitem Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Dutinkové a kolíkové lišty&lt;/p&gt;
+&lt;p&gt;K univerzálním deskám se vám budou hodit &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL262&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;dutinkové
+lišty&lt;/a&gt;
+a &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL201&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;pinové
+řady&lt;/a&gt;,
+(&lt;a href="https://www.tme.eu/cz/katalog/?search=ZL211&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;také zde&lt;/a&gt;)
+s jejichž pomocí můžete svou univerzální desku posadit na
+&lt;a href="#nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt; nebo &lt;a href="#stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="dalsi-soucastky-a-hotove-moduly"&gt;Další součástky a hotové moduly&lt;a class="headerlink" href="#dalsi-soucastky-a-hotove-moduly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Je ještě spousta dalších udělátek, které stojí za to zmínit. Omezím se jen na nákupní
+seznamy. Je asi jasné, že mi nejde o konkrétní obchod, ale spíše o zboží, které
+se jistě dá zakoupit i někde jinde.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.tme.eu/cz/parking/c9f279be1feb850079cc8bdf88943222467af88d.html"&gt;seznam na &lt;span class="caps"&gt;TME&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.laskakit.cz/oblibene/89af72c11f9e5e738f3074e7aa8a0bba4200e647"&gt;seznam na LaskKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.aliexpress.com/p/wishlist/shareReflux.html?groupId=dGW2uj4YNVGDbjN2VCLzOJhU39eDkEz4y9Z4CGz2UIM%3D"&gt;seznam na AliExpressu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="nastroje"&gt;Nástroje&lt;a class="headerlink" href="#nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
+ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
+&lt;a href="https://www.st.com/en/development-tools/stm8cubemx.html"&gt;STM8CubeMX&lt;/a&gt;.
+Doporučuji si ho nainstalovat. Není nijak klíčový, ale hodí se.&lt;/p&gt;
+&lt;h3 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Celou problematiku jsem zpracoval v samostatném návodu: 
+&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/stm8oss.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
+Ve zkratce to vypadá takto: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="cosmic-stm8eclipse-balicek-pro-linux"&gt;Cosmic &lt;span class="caps"&gt;STM8&lt;/span&gt;+Eclipse balíček pro Linux&lt;a class="headerlink" href="#cosmic-stm8eclipse-balicek-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Zatím je vše ve fázi testování. Zveřejněno v lednu 2022:
+&lt;a href="https://www.cosmicsoftware.com/download_stm8_eclipse.php"&gt;https://www.cosmicsoftware.com/download_stm8_eclipse.php&lt;/a&gt;
+Projekt vypadá velmi slibně.&lt;/p&gt;
+&lt;h3 id="nastroje-pro-m-windows"&gt;Nástroje pro M$ Windows&lt;a class="headerlink" href="#nastroje-pro-m-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vše velmi hezky zpracoval 
+  &lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.
+  Součástí je i vzorový projekt s knihovnami pro &lt;span class="caps"&gt;STM8S103&lt;/span&gt;, &lt;span class="caps"&gt;STM8S105&lt;/span&gt; a &lt;span class="caps"&gt;STM8S208&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí leze použít
+  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
+  s komipilátorem
+  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
+  nejsou ani jeden 
+  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-10-20T17:44:15+02:00</published><updated>2022-10-20T17:44:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/site.html</id><content type="html">&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Všechny pracovní listy v jediném souboru: 
 &lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
 &lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;vse.pdf&lt;/a&gt;.&lt;/p&gt;
@@ -156,227 +376,7 @@ balíčkovací systém.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install qtconsole pyqt5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Samotné spuštění se děje zavolání příkazu &lt;code&gt;jupyter-console&lt;/code&gt; nebo
-&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-10-16T20:24:17+02:00</published><updated>2022-10-16T20:24:17+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-16:/mit.html</id><summary type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
-&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
-najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
-&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
-najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;Stavový automat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html"&gt;Nábojová pumpa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="Buzení 7segmentového displeje"&gt;Buzení 7segmentového displeje&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"&gt;&lt;span class="caps"&gt;AD&lt;/span&gt; převodník&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Honza Vykydal pak napsal:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti"&gt;Externí přerušení - &lt;span class="caps"&gt;EXTI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim"&gt;Čítače / Časovače&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro potřeby svojí výuky jsem sestavil následující:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"&gt;&lt;span class="caps"&gt;IR&lt;/span&gt; senzor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/"&gt;&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Další velice cenné informace nejdete v sekcích:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/9b/96/4a/79/08/65/40/b6/STM8S103105_line_LN754.jpg/files/STM8S103105_line_LN754.jpg/_jcr_content/translations/en.STM8S103105_line_LN754.jpg"/&gt;&lt;/p&gt;
-&lt;p&gt;Přehled jednotlivých čipů jednotlivých řad
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;rodiny &lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;
-pak najdete zde:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-application-specific-line.html"&gt; Application Specific Line&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-value-line.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Value line&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s103-105.html"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;/105&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"&gt;&lt;span class="caps"&gt;STM8S207&lt;/span&gt;/208&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="hardware"&gt;Hardware&lt;a class="headerlink" href="#hardware" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;a class="headerlink" href="#nucleo-8s208rb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Ve výuce používáme vývojovou desku
-&lt;a href="https://www.st.com/en/evaluation-tools/nucleo-8s208rb.html"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt;
-s mikroprocesorem
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s208rb.html"&gt;&lt;span class="caps"&gt;STM8S208RB&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nucleo-8S208RB pinout %%" src="https://chytrosti.marrek.cz/mit/img/Nucleo-S208RB.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Tato deska je (ale nemusí být) napájena z &lt;span class="caps"&gt;USB&lt;/span&gt;. Obsahuje programátor s &lt;span class="caps"&gt;HW&lt;/span&gt;
-debugerem a &lt;span class="caps"&gt;USB2UART&lt;/span&gt; bridge. Můžete si zvolit pinout, který je
-Arduino-kompatibilní nebo plnohodnotný pinout, který sedí na univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt;.
-Je tu tedy vše, co pro začátek potřebujete. Vyčerpávající popis najdete v
-článku &lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;
-nebo v &lt;a href="https://www.st.com/resource/en/user_manual/dm00477617-stm8s208rbt6-nucleo64-board-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id="stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;a class="headerlink" href="#stm8s-discovery" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Dalším zajímavým vývojovým kitem je
-&lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; &lt;span class="caps"&gt;DISCOVERY&lt;/span&gt;&lt;/a&gt;
-s procesorem 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s105c6.html"&gt;&lt;span class="caps"&gt;STM8S105C6&lt;/span&gt;&lt;/a&gt;.
-Kit obsahuje i maličkou bastl desku a programátor lze použít k programování
-libovolného procesoru &lt;span class="caps"&gt;STM8S&lt;/span&gt;. Více opět 
-v &lt;a href="https://www.st.com/resource/en/user_manual/cd00250600-stm8s-discovery-stmicroelectronics.pdf"&gt;uživatelském manuálu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="STM8S Discovery kit %%" src="https://chytrosti.marrek.cz/mit/img/STM8S-Discovery-kit.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="standalone-programator"&gt;Standalone programátor&lt;a class="headerlink" href="#standalone-programator" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Při řešení samostatných projektů budeme postupně přecházíme k vlastnímu
-hardware, který by už neměl být na nepájivém poli, ale spíše na desce plošných
-spojů. V těchto případech budeme potřebovat μprocesor, který bude přímo v
-aplikaci a standalone programátor-debuger, pomocí kterého bude možné program
-ladit a nahrát. Možností je vícero – moc hezky to má &lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;popsáno
-Michal&lt;/a&gt;. Doporučuji přečíst!&lt;/p&gt;
-&lt;p&gt;(Jen bych doplním, že existuje ještě jeden klon &lt;span class="caps"&gt;ST&lt;/span&gt;-Linku, který se mně osobně
-osvědčil: &lt;a href="https://www.aliexpress.com/wholesale?SearchText=ST-LINK+V2+STM8+emulator+download+super+procection"&gt;mini &lt;span class="caps"&gt;ST&lt;/span&gt;-&lt;span class="caps"&gt;LINK&lt;/span&gt;/V2 &lt;span class="caps"&gt;STM8&lt;/span&gt; &lt;span class="caps"&gt;STM32&lt;/span&gt; emulator download super protection&lt;/a&gt;)&lt;/p&gt;
-&lt;h3 id="deroboard"&gt;DeroBoard&lt;a class="headerlink" href="#deroboard" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="DeroBoard photo %%" src="https://chytrosti.marrek.cz/mit/img/deroboard-photo.jpg"/&gt;&lt;/p&gt;
-&lt;p&gt;V rámci dílenské praxe si ubastlíte vývojovou desku &lt;a href="https://gitlab.com/wykys/stm8s-dero-board"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Dero
-Board&lt;/a&gt;. Tuto desku můžete použít i
-pro svoje samostatné projekty. Je osazena procesorem &lt;span class="caps"&gt;STM8S103F3&lt;/span&gt;. K dispozici
-máte všechny &lt;a href="https://gitlab.com/wykys/stm8s-dero-board/-/tree/main/design"&gt;zdrojové soubory pro
-KiCad&lt;/a&gt; a 
-hezkou &lt;a href="https://wykys.gitlab.io/stm8s-dero-board/ibom.html"&gt;rozpisku součástek&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id="nebo"&gt;Nebo…&lt;a class="headerlink" href="#nebo" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;Něco podobného, se stejným procesorem lze zakoupit i od čínských výrobců:
-&lt;a href="https://www.aliexpress.com/wholesale?SearchText=STM8S103F3P6+development+board"&gt;&lt;span class="caps"&gt;STM8S103F3P6&lt;/span&gt; development
-board&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="STM8S103F3P6 photo %%" src="https://chytrosti.marrek.cz/mit/img/STM8S103F3P6.jpeg"/&gt;&lt;/p&gt;
-&lt;p&gt;Pokud poptáváte vybavenější procesor existuje podobná vývojová deska:
-&lt;a href="https://www.aliexpress.com/wholesale?SearchText=STM8S105K4T6+Developmen+Board"&gt;&lt;span class="caps"&gt;STM8S105K4T6&lt;/span&gt; Developmen
-Board&lt;/a&gt;.
-Ta vám může posloužit podobně jako oficiální &lt;a href="https://www.st.com/en/evaluation-tools/stm8s-discovery.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;
-Discovery&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="STM8S105K4T6 photo %%" src="https://chytrosti.marrek.cz/mit/img/STM8S105K4T6.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="usb-to-uart-bridge"&gt;&lt;span class="caps"&gt;USB&lt;/span&gt; to &lt;span class="caps"&gt;UART&lt;/span&gt; Bridge&lt;a class="headerlink" href="#usb-to-uart-bridge" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Pokud plánujete projekt, kde μprocesor komunikuje s PCčkem, bude se vám hodit
-&lt;a href="https://www.aliexpress.com/wholesale?SearchText=USB+TTL+UART+convertor"&gt;převodník &lt;span class="caps"&gt;USB&lt;/span&gt; &lt;span class="caps"&gt;TTL&lt;/span&gt;
-&lt;span class="caps"&gt;UART&lt;/span&gt;&lt;/a&gt;.
-Dá se běžně zakoupit i na českých e-shopech. Ještě je dobré upozornit, že ne
-každý operační systém automaticky komunikuje s každým čipem, proto je dobré
-věnovat pozornost tomu, jakým čipem, je osazen převodník, který hodláte
-zakoupit a zda se váš &lt;span class="caps"&gt;OS&lt;/span&gt; s tímto čipem kamarádí.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="USB to TTL UART photo %%" src="https://chytrosti.marrek.cz/mit/img/USB2UART.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="univerzalni-pcb"&gt;Univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt;&lt;a class="headerlink" href="#univerzalni-pcb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Na projektové prototypování můžete s výhodou využít &lt;a href="https://electronics.stackexchange.com/questions/55236/how-to-make-traces-on-an-universal-pcb"&gt;univerzální (prototypovou)
-desku&lt;/a&gt;.
-Existuje celá řada variant a vzorů (třeba 
-&lt;a href="https://www.tme.eu/cz/katalog/univerzalni-plosne-spoje_100110/?s_field=1000014&amp;amp;s_order=asc&amp;amp;limit=40&amp;amp;currency=CZK&amp;amp;page=1"&gt;tu&lt;/a&gt;
-nebo &lt;a href="https://www.aliexpress.com/wholesale?SearchText=universal+prototipe+PCB+board"&gt;tam&lt;/a&gt;)
-universálních bastl-desek; zde bych rád upozornil na některé – pro nás zajímavé:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;řady po třech: 
-  &lt;a href="https://www.tme.eu/cz/details/rad-790-1/univerzalni-plosne-spoje/rademacher/790-1/"&gt;1&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/item/1005002838248764.html"&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;jen body:
-  &lt;a href="https://www.tme.eu/cz/details/rad-811-6/univerzalni-plosne-spoje/rademacher/811-6/"&gt;1&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/item/1005002838214518.html"&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;s rozvodem napájení:
-  &lt;a href="https://www.tme.eu/cz/details/pc-12/univerzalni-plosne-spoje/sci/"&gt;1&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/item/32947164794.html"&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;s roztečí Arduino shield:
-  &lt;a href="https://www.tme.eu/cz/details/a000080/reseni-arduino/arduino/shield-mega-proto-pcb-rev3/"&gt;1&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/wholesale?SearchText=arduino+prototipe+PCB+board"&gt;2&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/item/32841354009.html"&gt;3&lt;/a&gt;
-&lt;a href="https://www.aliexpress.com/item/32814326060.html?"&gt;4&lt;/a&gt;.
-  Tuto desku můžete použít s Nucleo-kitem Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="admonition tip"&gt;
-&lt;p class="admonition-title"&gt;Dutinkové a kolíkové lišty&lt;/p&gt;
-&lt;p&gt;K univerzálním deskám se vám budou hodit &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL262&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;dutinkové
-lišty&lt;/a&gt;
-a &lt;a href="https://www.tme.eu/cz/katalog/?search=ZL201&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;pinové
-řady&lt;/a&gt;,
-(&lt;a href="https://www.tme.eu/cz/katalog/?search=ZL211&amp;amp;s_field=1000011&amp;amp;s_order=desc"&gt;také zde&lt;/a&gt;)
-s jejichž pomocí můžete svou univerzální desku posadit na
-&lt;a href="#nucleo-8s208rb"&gt;Nucleo-&lt;span class="caps"&gt;8S208RB&lt;/span&gt;&lt;/a&gt; nebo &lt;a href="#stm8s-discovery"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Discovery&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id="dalsi-soucastky-a-hotove-moduly"&gt;Další součástky a hotové moduly&lt;a class="headerlink" href="#dalsi-soucastky-a-hotove-moduly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Je ještě spousta dalších udělátek, které stojí za to zmínit. Omezím se jen na nákupní
-seznamy. Je asi jasné, že mi nejde o konkrétní obchod, ale spíše o zboží, které
-se jistě dá zakoupit i někde jinde.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.tme.eu/cz/parking/c9f279be1feb850079cc8bdf88943222467af88d.html"&gt;seznam na &lt;span class="caps"&gt;TME&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.laskakit.cz/oblibene/89af72c11f9e5e738f3074e7aa8a0bba4200e647"&gt;seznam na LaskKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.aliexpress.com/p/wishlist/shareReflux.html?groupId=dGW2uj4YNVGDbjN2VCLzOJhU39eDkEz4y9Z4CGz2UIM%3D"&gt;seznam na AliExpressu&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="nastroje"&gt;Nástroje&lt;a class="headerlink" href="#nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
-ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
-&lt;a href="https://www.st.com/en/development-tools/stm8cubemx.html"&gt;STM8CubeMX&lt;/a&gt;.
-Doporučuji si ho nainstalovat. Není nijak klíčový, ale hodí se.&lt;/p&gt;
-&lt;h3 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Celou problematiku jsem zpracoval v samostatném návodu: 
-&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/stm8oss.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
-Ve zkratce to vypadá takto: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Moje šablona pro vývoj &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make &lt;a href="https://github.com/spseol/start-stm8"&gt;https://github.com/spseol/start-stm8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="cosmic-stm8eclipse-balicek-pro-linux"&gt;Cosmic &lt;span class="caps"&gt;STM8&lt;/span&gt;+Eclipse balíček pro Linux&lt;a class="headerlink" href="#cosmic-stm8eclipse-balicek-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Zatím je vše ve fázi testování. Zveřejněno v lednu 2022:
-&lt;a href="https://www.cosmicsoftware.com/download_stm8_eclipse.php"&gt;https://www.cosmicsoftware.com/download_stm8_eclipse.php&lt;/a&gt;
-Projekt vypadá velmi slibně.&lt;/p&gt;
-&lt;h3 id="nastroje-pro-m-windows"&gt;Nástroje pro M$ Windows&lt;a class="headerlink" href="#nastroje-pro-m-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Vše velmi hezky zpracoval 
-  &lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.
-  Součástí je i vzorový projekt s knihovnami pro &lt;span class="caps"&gt;STM8S103&lt;/span&gt;, &lt;span class="caps"&gt;STM8S105&lt;/span&gt; a &lt;span class="caps"&gt;STM8S208&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí leze použít
-  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
-  s komipilátorem
-  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
-  nejsou ani jeden 
-  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
+&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
