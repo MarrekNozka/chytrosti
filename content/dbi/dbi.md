@@ -18,7 +18,7 @@ Instalace knihoven
 
 Budeme potřebovat modul [Flask](https://flask.palletsprojects.com/). Jeho instalaci 
 zajistí [pip](https://pip.pypa.io). Doporučuji přečíst si celý 
-[post věnovaný pipu]({filename}/pip.md).
+[post věnovaný pipu a virtuálnímu prostředí]({filename}/pip.md).
 
 Ve Windows to může vypadat třeba takto:
 ```
@@ -29,6 +29,14 @@ V Linuxu spíš takto:
 ```
 pip3 install --user flask
 ```
+
+Video -- jak to rozjet na Windows
+------------------------------------
+
+
+[![Jak rozjet Flask na Windows]({static}img/flask-run_preview.jpg){data-frames="16"}](https://youtu.be/QMW7LSf4uBg){.video-preview}
+
+
 
 Git
 ==============
@@ -55,6 +63,8 @@ Krátkou českou dokumentaci najdete na adrese
     * [Patterns](https://flask.palletsprojects.com/patterns/)
 * Jinja2: <https://jinja.palletsprojects.com/templates/>
 
+Velmi užitečná je i best practices kniha [Explore Flask](http://exploreflask.com/)
+a [Stopařův průvodce Pythontem](https://docs.python-guide.org).
 
 SQLite
 =============

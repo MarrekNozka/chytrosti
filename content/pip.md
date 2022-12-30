@@ -1,4 +1,4 @@
-Title: pip
+Title: pip a venv
 Subtitle: Jak nainstalovat balíček pro Python
 Date: 2021-11-17 15:35
 Category: Programování 
@@ -115,7 +115,7 @@ balíček povýšit/instalovat na nejnovější dostupnou verzi.
     pip install -U --user flask
 
 
-Virtuální prostředí?
+Virtuální prostředí? venv
 ======================
 
 [Virtuální prostředí](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)

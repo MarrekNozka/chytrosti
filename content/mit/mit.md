@@ -21,11 +21,19 @@ Michal Dudka píše skvělý web o programování mikrokontrokérů:
 najdete spoustu pro nás zajímavých věcí:
 
 * [STM8 Programátory a Debuggery](http://elektromys.eu/clanky/stm8_0_stvp/clanek.html)
+* [Instalace a vytvoření projektu ve Windows](http://elektromys.eu/clanky/stm8_2_stvd/clanek.html)
+* [STM8S208 Nucleo](http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html)
+
+&nbsp;
+
 * [Vstupy a výstupy 1 -- základy](http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html)
 * [Vstupy a výstupy 2 -- tlačítko](http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html)
 * [Vstupy a výstupy 3 -- logické úrovně](http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html)
 * [Vstupy a výstupy 4 -- PullUp rezistory](http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html)
 * [Vstupy a výstupy 5 -- Open-Drain](http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html)
+
+&nbsp;
+
 * [Ovládání displeje s MAX7219](http://elektromys.eu/clanky/stm8_8_max7219/clanek.html)
 * [Clock](http://elektromys.eu/clanky/stm8_9_clock/clanek.html)
 * [Alfanumerické LCD](http://elektromys.eu/clanky/stm8_10_lcd/clanek.html)
@@ -67,14 +75,14 @@ v [reference manuálu](https://duckduckgo.com/?q=STM8S+reference+manual)
 Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
 kterém čipu (plus další specifické věci) lze najít v datasheetu:
 
-* [STM8S208](https://search.brave.com/search?q=STM8S208+datasheet)
-  [zde](https://www.st.com/resource/en/datasheet/stm8s207mb.pdf)
 * [STM8S103](https://search.brave.com/search?q=STM8S103+datasheet)
   [zde](https://www.st.com/resource/en/datasheet/stm8s103f2.pdf)
 * [STM8S105](https://search.brave.com/search?q=STM8S105+datasheet)
   [zde](https://www.st.com/resource/en/datasheet/stm8s105c4.pdf)
+* [STM8S208](https://search.brave.com/search?q=STM8S208+datasheet)
+  [zde](https://www.st.com/resource/en/datasheet/stm8s207mb.pdf)
 
-![103/105 line](https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/9b/96/4a/79/08/65/40/b6/STM8S103105_line_LN754.jpg/files/STM8S103105_line_LN754.jpg/_jcr_content/translations/en.STM8S103105_line_LN754.jpg)
+![103/105 line](https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg)
 
 Přehled jednotlivých čipů jednotlivých řad
 [rodiny STM8S](https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html)

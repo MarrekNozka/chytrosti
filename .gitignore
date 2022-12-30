@@ -1,4 +1,5 @@
-output
+output/
+cache/
 # vim
 .*.swp
 

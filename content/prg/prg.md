@@ -35,6 +35,34 @@ ale celá řada hezčích a propracovanějších
 [vývojových prostředí](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
 Já doporučuji [VSCode/Codium]({filename}/codium.md).
 
+Git
+==============
+
+Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+[Git](https://git-scm.org) a server [GitHub](https://github.com).
+Stojí také za to, zmínit se 
+o [GitHub programu pro vzdělávání](https://education.github.com/).
+
+Gitu se věnuji v [samostatném postu Git]({filename}/git.md).
+
+
+Dokumentace
+===============
+
+Naprostou většinu všech vašich dotazů vyřeší vyhledávač
+[prostým dotazem](https://search.brave.com/search?q=how+to+python). Nicméně považuji
+za dobré zmínit, že Python má svou vlastní -- docela dobrou -- 
+[dokumentaci](https://doc.python.org/).
+
+Velmi užitečná je i best practices kniha 
+[Stopařův průvodce Pythontem](https://docs.python-guide.org).
+
+
+Knihovny
+======================
+
+Knihovny se nejlépe instalují pomocí [pip](https://pip.pypa.io). Tématu se věnuji
+v [samostatném postu Pip]({filename}/pip.md).
 
 Interaktivní interpret shell
 ===============================
@@ -88,29 +116,4 @@ Samotné spuštění se děje zavolání příkazu `jupyter-console` nebo
 
 
 
-Git
-==============
-
-Pro sdílení práce a odevzdávání domácích úkolů používáme systém
-[Git](https://git-scm.org) a server [GitHub](https://github.com).
-Stojí také za to, zmínit se 
-o [GitHub programu pro vzdělávání](https://education.github.com/).
-
-Gitu se věnuji v [samostatném postu Git]({filename}/git.md).
-
-
-Dokumentace
-===============
-
-Naprostou většinu všech vašich dotazů vyřeší `Kačer`
-[prostým dotazem](https://duckduckgo.com/?q=how+to+python). Nicméně považuji
-za dobré zmínit, že Python má svou vlastní -- docela dobrou -- 
-[dokumentaci](https://doc.python.org/).
-
-
-Knihovny
-======================
-
-Knihovny se nejlépe instalují pomocí [pip](https://pip.pypa.io). Tématu se věnuji
-v [samostatném postu Pip]({filename}/pip.md).
 
