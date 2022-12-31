@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-11-07T12:09:20+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-11-07T12:09:20+01:00</published><updated>2022-11-07T12:09:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-11-07:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-12-08T18:07:26+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-12-08T18:07:26+01:00</published><updated>2022-12-08T18:07:26+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-08:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -8,9 +8,13 @@
 najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -19,11 +23,19 @@ najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -62,12 +74,12 @@ v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference man
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
 kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg"/&gt;&lt;/p&gt;
 &lt;p&gt;Přehled jednotlivých čipů jednotlivých řad

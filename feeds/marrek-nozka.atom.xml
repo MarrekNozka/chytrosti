@@ -1,5 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-11-07T12:09:20+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-11-07T12:09:20+01:00</published><updated>2022-11-07T12:09:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-11-07:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-12-31T18:36:17+01:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-12-31T18:36:17+01:00</published><updated>2022-12-31T18:36:17+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/site.html</id><summary type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/01-maska_site:c?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/02-maska-rozdeleni_na_podsite:d?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;Toto je více méně …&lt;/dt&gt;&lt;/dl&gt;</summary><content type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/01-maska_site:c?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/02-maska-rozdeleni_na_podsite:d?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/VirtualBox-sitova_laborator:0?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="VirtualBox jako malá síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/virtualbox-nat:1?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="VirtualBoxu a NAT" data-frames="16" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/virutalbox2:d?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Host-only, Network bridge, Internal network" data-frames="16" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/pripojeni-do-site:b?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Připojení do sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/smerovani:5?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Směrování. Jak funguje Internet" data-frames="16" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/ARP:0?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="ARP" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/VirtualBox-sitova_laborator:0?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/DHCP:6?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="DHCP server" data-frames="16" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-12-31T17:36:26+01:00</published><updated>2022-12-31T17:36:26+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/git.html</id><summary type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
+    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
+kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
+&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt;li&gt;… nebo jeden &lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git"&gt;stručný návod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/git-zaklad:6?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka:c/git-remote:0?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
+jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
+git config --global user.email john@doe.name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
+nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
+&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
+nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
+lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
+&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
+nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
+dejte jen dvakrát Enter. Já passphrase zadávám a používám 
+&lt;a href="https://en.wikipedia.org/wiki/Ssh-agent"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt; agenta&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
+&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
+&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
+uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
+každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
+heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
+přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
+to tento příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
+&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
+https://jmeno:heslo_nebo_token@gitlab.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
+&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
+vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
+(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)
+Návod &lt;a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
+Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
+&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-12-08T18:07:26+01:00</published><updated>2022-12-08T18:07:26+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-08:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -8,9 +207,13 @@
 najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -19,11 +222,19 @@ najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -62,12 +273,12 @@ v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference man
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
 kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg"/&gt;&lt;/p&gt;
 &lt;p&gt;Přehled jednotlivých čipů jednotlivých řad
@@ -219,27 +430,7 @@ Projekt vypadá velmi slibně.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-10-20T17:44:15+02:00</published><updated>2022-10-20T17:44:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/site.html</id><content type="html">&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Všechny pracovní listy v jediném souboru: 
-&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;vse.pdf&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id="nastaveni-site-linuxovem-shell"&gt;Nastavení sítě (Linuxovém shell):&lt;a class="headerlink" href="#nastaveni-site-linuxovem-shell" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="pripojeni-do-site"&gt;Připojení do sítě:&lt;a class="headerlink" href="#pripojeni-do-site" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="smerovani"&gt;Směrování:&lt;a class="headerlink" href="#smerovani" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani.png"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="smerovani-bez-prikazu"&gt;Směrování (bez příkazů):&lt;a class="headerlink" href="#smerovani-bez-prikazu" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-10-20T06:59:37+02:00</published><updated>2022-10-20T06:59:37+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/dbi.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-10-20T06:59:37+02:00</published><updated>2022-10-20T06:59:37+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/dbi.html</id><summary type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -376,112 +567,7 @@ balíčkovací systém.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install qtconsole pyqt5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Samotné spuštění se děje zavolání příkazu &lt;code&gt;jupyter-console&lt;/code&gt; nebo
-&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-09-14T21:07:29+02:00</published><updated>2022-09-14T21:07:29+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-14:/git.html</id><summary type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
-    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
-kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
-&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;ul&gt;
-&lt;li&gt;… nebo jeden &lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git"&gt;stručný návod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/BzrRey7McSk"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://youtu.be/uk_5dGlWLnQ"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
-jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
-git config --global user.email john@doe.name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
-nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
-&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
-nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
-lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
-&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;nebo&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
-nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
-dejte jen dvakrát Enter. Já passphrase zadávám a používám 
-&lt;a href="https://en.wikipedia.org/wiki/Ssh-agent"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt; agenta&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
-&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
-&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
-uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
-každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
-heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
-přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
-to tento příkaz:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
-&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
-https://jmeno:heslo_nebo_token@gitlab.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
-&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
-vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
-(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)
-Návod &lt;a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
-Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
-&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2022-09-13T22:12:20+02:00</published><updated>2022-09-13T22:12:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-13:/psk.html</id><summary type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
+&lt;code&gt;jupyter-qtconsole&lt;/code&gt;.&lt;/p&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category></entry><entry><title>PSK</title><link href="https://chytrosti.marrek.cz/psk.html" rel="alternate"></link><published>2022-09-13T22:12:20+02:00</published><updated>2022-09-13T22:12:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-09-13:/psk.html</id><summary type="html">&lt;p&gt;Vše, co se týká &lt;span class="caps"&gt;PSK&lt;/span&gt; najdete zatím ma mém starším webu
 &lt;a href="https://mamut.spseol.cz/nozka/psk"&gt;https://mamut.spseol.cz/nozka/psk&lt;/a&gt;. Snad se mi podaří tento obsah v nějaké 
 dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
 &lt;h2 id="linux"&gt;Linux&lt;a class="headerlink" href="#linux" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
