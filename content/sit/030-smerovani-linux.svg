@@ -2,21 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1052.3622"
    height="744.09448"
    id="svg2"
    inkscape:label="Pozadí"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="PL-smerovani.svg">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="030-smerovani.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -1428,19 +1428,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0079365"
-     inkscape:cx="779.37936"
-     inkscape:cy="601.95084"
+     inkscape:zoom="1"
+     inkscape:cx="526.5"
+     inkscape:cy="362"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1274"
-     inkscape:window-height="968"
+     inkscape:window-width="1916"
+     inkscape:window-height="1040"
      inkscape:window-x="0"
-     inkscape:window-y="30"
-     inkscape:window-maximized="0" />
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata6">
     <rdf:RDF>
@@ -1449,7 +1450,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1472,15 +1473,15 @@
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
        xml:space="preserve"
-       style="font-size:51.24291611px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       x="391.92587"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="247.92587"
        y="381.35526"
-       id="text3872"
-       sodipodi:linespacing="125%"><tspan
+       id="text3872"><tspan
          sodipodi:role="line"
          id="tspan3874"
-         x="391.92587"
-         y="381.35526">Směrování</tspan></text>
+         x="247.92587"
+         y="381.35526"
+         style="font-size:51.2429px;line-height:1.25">Směrování -- Linux router</tspan></text>
     <g
        id="g4295"
        transform="translate(294.10795,-282.71235)">
@@ -1494,13 +1495,12 @@
          style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.80266833;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          rx="11.446487" />
       <text
-         sodipodi:linespacing="125%"
          id="text4460"
          y="718.50702"
          x="207.67134"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-size:12px"
+           style="font-size:12px;line-height:1.25"
            y="718.50702"
            x="207.67134"
            id="tspan4462"
@@ -1784,25 +1784,24 @@
          d="m 354.63041,839.6353 c 5.03347,0 10.06693,0 15.10039,0"
          style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <text
-         sodipodi:linespacing="125%"
          id="text4328"
          y="855.16742"
          x="362.28918"
-         style="font-size:8.5374527px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="855.16742"
            x="362.28918"
            id="tspan4330"
-           sodipodi:role="line">DNS</tspan></text>
+           sodipodi:role="line"
+           style="font-size:8.53745px;line-height:1.25">DNS</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="442.02118"
        y="498.41663"
-       id="text4343"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text4343"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan4345"
          x="442.02118"
@@ -1819,15 +1818,15 @@
        transform="translate(-42.09234,320.8954)" />
     <text
        xml:space="preserve"
-       style="font-size:21.60907936px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="654.51276"
        y="446.49048"
-       id="text3507"
-       sodipodi:linespacing="125%"><tspan
+       id="text3507"><tspan
          sodipodi:role="line"
          id="tspan3509"
          x="654.51276"
-         y="446.49048">NAT</tspan></text>
+         y="446.49048"
+         style="font-size:21.6091px;line-height:1.25">NAT</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.99999999, 4, 2, 4;stroke-dashoffset:0"
        d="m 649.32733,454.82441 20.51119,76.99701"
@@ -1845,23 +1844,22 @@
          id="rect3538"
          style="color:#000000;fill:#ffe7d3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.80997406999999999;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text5127"
          y="394.51178"
          x="34.864426"
-         style="font-size:17.22384262px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            y="394.51178"
            x="34.864426"
            sodipodi:role="line"
            id="tspan5137">startqemu.local L main <tspan
    id="tspan5159"
-   style="font-style:italic;-inkscape-font-specification:Latin Modern Mono Italic">X</tspan> L <tspan
+   style="font-style:italic;-inkscape-font-specification:'Latin Modern Mono Italic'">X</tspan> L <tspan
    id="tspan5157"
-   style="font-style:italic;-inkscape-font-specification:Latin Modern Mono Italic">X</tspan> W <tspan
+   style="font-style:italic;-inkscape-font-specification:'Latin Modern Mono Italic'">X</tspan> W <tspan
    id="tspan5155"
-   style="font-style:italic;-inkscape-font-specification:Latin Modern Mono Italic">X</tspan></tspan></text>
+   style="font-style:italic;-inkscape-font-specification:'Latin Modern Mono Italic'">X</tspan></tspan></text>
     </g>
     <g
        id="g5169"
@@ -1875,31 +1873,34 @@
          x="17.31315"
          y="321.73221" />
       <text
-         sodipodi:linespacing="125%"
          id="text5147"
          y="337.41141"
          x="28.895205"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="337.41141"
            x="28.895205"
            id="tspan5149"
-           sodipodi:role="line">   X = tvoje číslo</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25">   X = tvoje číslo</tspan><tspan
            id="tspan5151"
            y="352.41141"
            x="28.895205"
-           sodipodi:role="line">Y,Z = čísla tvých spolužáků</tspan></text>
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25">Y,Z = čísla tvých spolužáků</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="165.36276"
        y="475.62317"
        id="text5175"
-       sodipodi:linespacing="125%"
        transform="translate(0,308.2677)"><tspan
          sodipodi:role="line"
-         id="tspan5177" /></text>
+         id="tspan5177"
+         x="167.03076"
+         y="475.62317"
+         style="font-size:12px;line-height:1.25"> </tspan></text>
     <path
        style="color:#000000;fill:#f3f3f3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.57000017;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 433.45872,836.26937 C 455.80514,959.37559 361.11494,957.51274 239.05548,959.18179 136.44811,960.58485 117.22043,938.76109 114.96454,842.75702 112.31182,729.86495 141.81785,699.72524 245.85981,710.7203 367.89358,723.61672 415.70567,738.468 433.45872,836.26937 z"
@@ -2029,17 +2030,16 @@
          ry="14.347038" />
     </g>
     <text
-       sodipodi:linespacing="125%"
        id="text4487"
        y="941.36536"
        x="202.94774"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="941.36536"
          x="202.94774"
          id="tspan4489"
          sodipodi:role="line"
-         style="font-size:12px">172.30.X.2</tspan></text>
+         style="font-size:12px;line-height:1.25">172.30.X.2</tspan></text>
     <g
        id="Switch"
        inkscape:label="Switch"
@@ -2162,8 +2162,7 @@
     <text
        id="Text"
        inkscape:label="Text"
-       sodipodi:linespacing="100%"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:0%;font-family:'Bitstream Vera Sans';writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="333.07553"
        xml:space="preserve"
        y="815.70929"><tspan
@@ -2182,12 +2181,11 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="318.66388"
        y="783.78455"
-       id="text4580"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text4580"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan4582"
          x="318.66388"
@@ -2272,16 +2270,15 @@
          ry="11.446487" />
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          x="207.67134"
          y="718.50702"
-         id="text5355"
-         sodipodi:linespacing="125%"><tspan
+         id="text5355"><tspan
            sodipodi:role="line"
            id="tspan5357"
            x="207.67134"
            y="718.50702"
-           style="font-size:12px">172.30.X.0/28</tspan></text>
+           style="font-size:12px;line-height:1.25">172.30.X.0/28</tspan></text>
     </g>
     <path
        sodipodi:nodetypes="sssss"
@@ -2395,12 +2392,11 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="524.90234"
        y="782.36792"
-       id="text5468"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text5468"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan5470"
          x="524.90234"
@@ -2528,8 +2524,7 @@
        y="810.28796"
        xml:space="preserve"
        x="692.02032"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       sodipodi:linespacing="100%"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:0%;font-family:'Bitstream Vera Sans';writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:label="Text"
        id="text5502"><tspan
          id="tspan5504">Switch Y</tspan></text>
@@ -2564,17 +2559,16 @@
        d="m 576.43951,678.34982 c 50.41047,101.67837 140.88951,7.60144 131.32166,102.83687"
        style="fill:none;stroke:#7d7d7d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
-       sodipodi:linespacing="125%"
        id="text5510"
        y="691.70258"
        x="589.57239"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="691.70258"
          x="589.57239"
          id="tspan5512"
          sodipodi:role="line"
-         style="font-size:12px">172.30.Y.1</tspan></text>
+         style="font-size:12px;line-height:1.25">172.30.Y.1</tspan></text>
     <g
        transform="matrix(0.07684084,0,0,0.07684084,610.22522,825.28677)"
        id="g5516">
@@ -2654,13 +2648,12 @@
          id="rect5546"
          style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.80266833;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text5548"
          y="718.50702"
          x="207.67134"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-size:12px"
+           style="font-size:12px;line-height:1.25"
            y="718.50702"
            x="207.67134"
            id="tspan5550"
@@ -2668,52 +2661,48 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="145.12015"
        y="826.10468"
-       id="text5745"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text5745"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan5747"
          x="145.12015"
          y="826.10468">172.30.X.3</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text5749"
        y="537.43604"
        x="416.99847"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="537.43604"
          x="416.99847"
          id="tspan5751"
          sodipodi:role="line"
-         style="font-size:12px">172.30.0.Z</tspan></text>
+         style="font-size:12px;line-height:1.25">172.30.0.Z</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="556.61847"
        y="633.72571"
-       id="text5753"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text5753"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan5755"
          x="556.61847"
          y="633.72571">172.30.0.Y</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text5757"
        y="895.16437"
        x="604.68518"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="895.16437"
          x="604.68518"
          id="tspan5759"
          sodipodi:role="line"
-         style="font-size:12px">172.30.Y.2</tspan></text>
+         style="font-size:12px;line-height:1.25">172.30.Y.2</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -2724,8 +2713,7 @@
        y="609.49481"
        xml:space="preserve"
        x="437.93045"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       sodipodi:linespacing="100%"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:0%;font-family:'Bitstream Vera Sans';writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:label="Text"
        id="text4024"><tspan
          id="tspan4026">Switch main</tspan></text>
@@ -2864,85 +2852,84 @@
          y="533.76917" />
       <text
          xml:space="preserve"
-         style="font-size:17.22384262px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          x="113.21238"
          y="534.55127"
-         id="text3477"
-         sodipodi:linespacing="125%"><tspan
+         id="text3477"><tspan
            sodipodi:role="line"
            x="113.21238"
            y="534.55127"
            id="tspan3495"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono" /><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"> </tspan><tspan
            id="tspan3536"
            sodipodi:role="line"
            x="113.21238"
-           y="548.36981"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold">Router X</tspan><tspan
+           y="556.91565"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Bold'">Router X</tspan><tspan
            id="tspan5911"
            sodipodi:role="line"
            x="113.21238"
-           y="562.05127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono">ip link set dev eth0 up</tspan><tspan
+           y="579.91803"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'">ip link set dev eth0 up</tspan><tspan
            id="tspan5909"
            sodipodi:role="line"
            x="113.21238"
-           y="575.80127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono">ip link set dev eth1 up</tspan><tspan
+           y="602.28247"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'">ip link set dev eth1 up</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="589.55127"
+           y="624.64685"
            id="tspan3497"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono">ip address add 172.30.0.X/24 dev eth0</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'">ip address add 172.30.0.X/24 dev eth0</tspan><tspan
            id="tspan4273"
            sodipodi:role="line"
            x="113.21238"
-           y="603.30127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono">ip route add default via 172.30.0.222</tspan><tspan
+           y="647.01123"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'">ip route add default via 172.30.0.222</tspan><tspan
            id="tspan4275"
            sodipodi:role="line"
            x="113.21238"
-           y="617.05127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono">mcedit /etc/resolv.conf </tspan><tspan
+           y="669.37561"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'">mcedit /etc/resolv.conf </tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="630.80127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="691.73999"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4276">-------------------------------------</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="644.55127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="714.10443"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4274">ip address add 172.30.X.1/28 dev eth1</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="658.30127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="736.46881"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4290">ping 172.30.X.2</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="672.05127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="758.83319"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4278">-------------------------------------</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="685.80127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="781.19757"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan3489">echo 1 &gt; /proc/sys/net/ipv4/ip_forward</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="699.55127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="803.56195"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4280">ip route add 172.30.Y.0/28 via 172.30.0.Y</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="713.30127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="825.92639"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4292">ping 172.30.Y.1</tspan><tspan
            sodipodi:role="line"
            x="113.21238"
-           y="727.05127"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           y="848.29077"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4403">ping 172.30.Y.2</tspan></text>
     </g>
     <g
@@ -2958,16 +2945,15 @@
          ry="11.446487" />
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          x="207.67134"
          y="718.50702"
-         id="text5835"
-         sodipodi:linespacing="125%"><tspan
+         id="text5835"><tspan
            sodipodi:role="line"
            id="tspan5837"
            x="207.67134"
            y="718.50702"
-           style="font-size:12px">172.30.Z.0/28</tspan></text>
+           style="font-size:12px;line-height:1.25">172.30.Z.0/28</tspan></text>
     </g>
     <g
        transform="matrix(0.36319975,0,0,0.37629075,356.462,175.60659)"
@@ -3012,36 +2998,34 @@
          inkscape:connector-curvature="0" />
     </g>
     <text
-       sodipodi:linespacing="125%"
        id="text5879"
        y="691.20685"
        x="377.3158"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="691.20685"
          x="377.3158"
          id="tspan5881"
          sodipodi:role="line"
-         style="font-size:12px">172.30.0.X</tspan></text>
+         style="font-size:12px;line-height:1.25">172.30.0.X</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:29.20845222px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="861.96326"
        y="429.02737"
-       id="text5883"
-       sodipodi:linespacing="125%"><tspan
+       id="text5883"><tspan
          sodipodi:role="line"
          id="tspan5885"
          x="861.96326"
-         y="429.02737">Internet</tspan></text>
+         y="429.02737"
+         style="font-size:29.2085px;line-height:1.25">Internet</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="576.34985"
        y="536.0694"
-       id="text5915"
-       sodipodi:linespacing="125%"><tspan
-         style="font-size:12px"
+       id="text5915"><tspan
+         style="font-size:12px;line-height:1.25"
          sodipodi:role="line"
          id="tspan5917"
          x="576.34985"
@@ -3057,49 +3041,48 @@
          id="rect5939"
          style="opacity:0.9;color:#000000;fill:#ffe7d3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.74523354;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text5941"
          y="624.11462"
          x="110.87846"
-         style="font-size:17.22384262px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan5943"
            y="624.11462"
            x="110.87846"
-           sodipodi:role="line" /><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-           y="637.93317"
+           sodipodi:role="line"> </tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Bold'"
+           y="646.479"
            x="110.87846"
            sodipodi:role="line"
            id="tspan5945">Linux X</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="651.61462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="669.48138"
            x="110.87846"
            sodipodi:role="line"
            id="tspan5949">ip link set dev eth0 up</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="665.36462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="691.84583"
            x="110.87846"
            sodipodi:role="line"
            id="tspan5953">ip address add 172.30.X.2/28 dev eth0</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="679.11462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="714.21021"
            x="110.87846"
            sodipodi:role="line"
            id="tspan4286">ping 172.30.X.1</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="692.86462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="736.57458"
            x="110.87846"
            sodipodi:role="line"
            id="tspan5957">ip route add default via 172.30.X.1</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="706.61462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="758.93896"
            x="110.87846"
            sodipodi:role="line"
            id="tspan4288">ping 172.30.0.230</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="720.36462"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="781.30334"
            x="110.87846"
            sodipodi:role="line"
            id="tspan4282">mcedit /etc/resolv.conf</tspan></text>
@@ -3119,16 +3102,16 @@
          transform="matrix(0.67578125,0,0,0.8409091,51.3527,367.98241)" />
       <text
          xml:space="preserve"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
          x="176.76031"
          y="372.00369"
          id="text4242"
-         sodipodi:linespacing="125%"
          transform="translate(0,308.2677)"><tspan
            sodipodi:role="line"
            id="tspan4244"
            x="176.76031"
-           y="372.00369">eth0</tspan></text>
+           y="372.00369"
+           style="font-size:12px;line-height:1.25">eth0</tspan></text>
     </g>
     <g
        id="g4256"
@@ -3145,16 +3128,16 @@
          sodipodi:type="arc" />
       <text
          transform="translate(0,308.2677)"
-         sodipodi:linespacing="125%"
          id="text4260"
          y="372.00369"
          x="176.76031"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="372.00369"
            x="176.76031"
            id="tspan4262"
-           sodipodi:role="line">eth0</tspan></text>
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25">eth0</tspan></text>
     </g>
     <g
        id="g4264"
@@ -3171,16 +3154,16 @@
          sodipodi:type="arc" />
       <text
          transform="translate(0,308.2677)"
-         sodipodi:linespacing="125%"
          id="text4268"
          y="372.00369"
          x="176.76031"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="372.00369"
            x="176.76031"
            id="tspan4270"
-           sodipodi:role="line">eth1</tspan></text>
+           sodipodi:role="line"
+           style="font-size:12px;line-height:1.25">eth1</tspan></text>
     </g>
     <g
        transform="translate(617.61117,121.55436)"
@@ -3193,34 +3176,33 @@
          id="rect4298"
          style="opacity:0.9;color:#000000;fill:#ffe7d3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.47877836;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text4300"
          y="534.55127"
          x="113.21238"
-         style="font-size:17.22384262px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
            id="tspan4302"
            y="534.55127"
            x="113.21238"
-           sodipodi:role="line" /><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-           y="548.36981"
+           sodipodi:role="line"> </tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'URW Palladio L';-inkscape-font-specification:'URW Palladio L Bold'"
+           y="556.91565"
            x="113.21238"
            sodipodi:role="line"
            id="tspan4304">Router Y</tspan><tspan
            id="tspan4326"
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="562.05127"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="579.91803"
            x="113.21238"
            sodipodi:role="line">........</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="575.80127"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="602.28247"
            x="113.21238"
            sodipodi:role="line"
            id="tspan4397">........</tspan><tspan
-           style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
-           y="589.55127"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:1.25;font-family:'Latin Modern Mono';-inkscape-font-specification:'Latin Modern Mono'"
+           y="624.64685"
            x="113.21238"
            sodipodi:role="line"
            id="tspan4399">ip route add 172.30.X.0/28 via 172.30.0.X </tspan></text>

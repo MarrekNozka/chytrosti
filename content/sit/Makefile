@@ -1,3 +1,4 @@
+MAKEFLAGS += -j1
 # Makefile
 # Makefile: Obsah nalezen porůznu na webu a upraven. (říjen 2010)
 # 	http://kvik.sh.cvut.cz/~fidlej/cecko/makefile/referat.html (Ivo Danihelka)
@@ -74,7 +75,7 @@
 ###############################################
 SOURCES = $(wildcard *.svg)
 PDFS = $(SOURCES:.svg=.pdf) 
-all: 010-prikazy pdf png vse.pdf
+all: 010-prikazy pdf png vse.pdf 
 
 clean:
 	rm -f ./*.png
@@ -84,9 +85,14 @@ clean:
 
 010-prikazy.pdf: 010-prikazy.odt
 	lowriter --nologo --convert-to pdf $<
-
 010-prikazy.png: 010-prikazy.pdf
-	gm convert -resize 200x $< $@
+	gm convert -resize 300x300 $< $@
+
+subnet_cheat.pdf: subnet_cheat.ods
+	localc --nologo --convert-to pdf $<
+subnet_cheat.png: subnet_cheat.pdf
+	gm convert -resize 300x300 $< $@
+
 
 %.pdf: %.svg
 	inkscape --export-pdf=$@ $<
@@ -97,7 +103,7 @@ pdf: $(SOURCES)
 vse.pdf: 010-prikazy.pdf $(PDFS)
 	pdftk [0-9][0-9][0-9]-*.pdf cat output vse.pdf
 
-%.png: %.svg
+%.png: %.svg subnet_cheat.png
 	inkscape -y 1 -w 200 --export-png=$@ $<
 
 png: $(SOURCES)
