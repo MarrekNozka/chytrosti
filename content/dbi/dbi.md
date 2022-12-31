@@ -34,7 +34,7 @@ Video -- jak to rozjet na Windows
 ------------------------------------
 
 
-[![Jak rozjet Flask na Windows]({static}img/flask-run_preview.jpg){data-frames="16"}](https://youtu.be/QMW7LSf4uBg){.video-preview}
+[![Jak rozjet Flask na Windows]({static}img/flask-run_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/flask-run){.video-preview}
 
 
 
