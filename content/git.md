@@ -46,9 +46,9 @@ Zde referenční příručka: <https://git-scm.com/docs>
 Videa
 ================
 
-[![Základy systému Git]({static}images/git-zaklad_preview.jpg){data-frames="16"}](https://youtu.be/BzrRey7McSk){.video-preview}
+[![Základy systému Git]({static}images/git-zaklad_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka:c/git-zaklad:6?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k){.video-preview}
 
-[![Git a GitHub]({static}images/git-github-2_preview.jpg){data-frames="16"}](https://youtu.be/uk_5dGlWLnQ){.video-preview}
+[![Git a GitHub]({static}images/git-github-2_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka:c/git-remote:0?r=9av6M23Tq5nTib3NYH5jBmP6oAY4AG3k){.video-preview}
 
 
 
