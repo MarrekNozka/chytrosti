@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout "/>
 <meta property="og:url" content="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" />
-<meta property="og:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …" />
+<meta property="og:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
-<meta property="og:article:modified_time" content="2023-01-02T17:45:20.537255+01:00" />
+<meta property="og:article:modified_time" content="2023-01-02T21:38:33.046973+01:00" />
 <meta name="twitter:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout ">
-<meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …">
+<meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …">
 
         <title>Céčko — pác věcí, kterých byste si fakt měli všimnout  · Chytrosti
 </title>
@@ -116,7 +116,11 @@
 <li><a href="#funkce-main-a-ostatni-funkce">Funkce main a ostatní funkce</a></li>
 <li><a href="#jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?</a></li>
 <li><a href="#zakladni-datovy-typy">Základní datový typy</a></li>
-<li><a href="#cisla-a-operace">Čísla a operace</a></li>
+<li><a href="#cisla-a-operace">Čísla a operace</a><ul>
+<li><a href="#pravda-a-nepravda">Pravda a nepravda</a></li>
+<li><a href="#navratova-hodnota">Návratová hodnota</a></li>
+</ul>
+</li>
 <li><a href="#rizeni-behu-programu">Řízení běhu programu</a><ul>
 <li><a href="#vetveni">Větvení</a></li>
 <li><a href="#cykly">Cykly</a></li>
@@ -151,10 +155,12 @@
 
             
 <p>Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
-psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
-mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý
-náš student měl během 3. ročníku zvládnout.</p>
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý náš
+student měl během 3. ročníku zvládnout.</p>
+<p>Nebo možná naopak: To, co je zde zmíněno (i to, na co se jen odkazuji) byste
+fakt měli znát! Bez toho se nehnete.</p>
 <p>Nejlepší <a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;source=web">učebnice jazyka C je ta od Pavla Herouta</a>. 
 Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.</p>
 <p><img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="./mit/market1.jpg"/></p>
@@ -385,6 +391,10 @@ proměnné můžeme tedy ukládat pouze kladná čísla.</p>
 </tr>
 </tbody>
 </table>
+<p>Je myslím také dobré zmínit, že <code>int8_t</code> je ekvivalent k <code>char</code> a <code>uint8_t</code> je
+ekvivalent k <code>unsigned char</code>. Rozdíl je ale v čitelnosti programu. Pokud
+proměnnou deklaruji jako <code>char</code> bude její hodnota zřejmě představovat nějaký
+znak, jehož číselná hodnota je v ní uložena.</p>
 <h2 id="cisla-a-operace">Čísla a operace<a class="headerlink" href="#cisla-a-operace" title="Permanent link">¶</a></h2>
 <p>Čísla a
 <a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm">konstanty</a> je
@@ -395,10 +405,19 @@ datový typ.</p>
 <span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span><span class="w"></span>
 <span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span><span class="w"></span>
 <span class="mi">30</span><span class="w">         </span><span class="cm">/* int */</span><span class="w"></span>
-<span class="mi">30u</span><span class="w">        </span><span class="cm">/* unsigned int */</span><span class="w"></span>
-<span class="mf">30l</span><span class="w">        </span><span class="cm">/* long */</span><span class="w"></span>
-<span class="mi">30ul</span><span class="w">       </span><span class="cm">/* unsigned long */</span><span class="w"></span>
+<span class="mi">30U</span><span class="w">        </span><span class="cm">/* unsigned int */</span><span class="w"></span>
+<span class="mf">30L</span><span class="w">        </span><span class="cm">/* long */</span><span class="w"></span>
+<span class="mi">30UL</span><span class="w">       </span><span class="cm">/* unsigned long */</span><span class="w"></span>
 <span class="mb">0b100101</span><span class="w">   </span><span class="cm">/* binar */</span><span class="w"></span>
+</code></pre></div>
+<p><strong>Znaková konstanta</strong> je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
+hodnota konkrétního znaku je dána <a href="https://cs.wikipedia.org/wiki/ASCII">Ascii
+tabulkou</a>. Zapisuje se do apostrofů.</p>
+<p>Oba tyto zápisy jsou ekvivalentní:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">znak</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'@'</span><span class="p">;</span><span class="w"></span>
+<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p><a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm">Operátory</a> zde
 nebudu zevrubně popisovat ale jen zdůrazním následující:</p>
@@ -422,6 +441,8 @@ s čísly.</p>
 <span class="w">               </span><span class="c1">//----------- &lt;&lt; --</span>
 <span class="mi">3</span><span class="o">&lt;&lt;</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">12</span><span class="w">    </span><span class="c1">//  00001100</span>
 </code></pre></div>
+<h3 id="pravda-a-nepravda">Pravda a nepravda<a class="headerlink" href="#pravda-a-nepravda" title="Permanent link">¶</a></h3>
+<h3 id="navratova-hodnota">Návratová hodnota<a class="headerlink" href="#navratova-hodnota" title="Permanent link">¶</a></h3>
 <h2 id="rizeni-behu-programu">Řízení běhu programu<a class="headerlink" href="#rizeni-behu-programu" title="Permanent link">¶</a></h2>
 <h3 id="vetveni">Větvení<a class="headerlink" href="#vetveni" title="Permanent link">¶</a></h3>
 <p>Pro
@@ -474,8 +495,8 @@ používá výraz:</p>
               Pá 23. dub 2021 7:44
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2023-01-02T17:45:20+01:00">
-  Po 2. led 2023 17:45
+<time datetime="2023-01-02T21:38:33+01:00">
+  Po 2. led 2023 21:38
 </time>
 
             <h4>Kategorie</h4>

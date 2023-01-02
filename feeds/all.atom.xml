@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T17:45:20+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T21:38:33+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -1614,16 +1614,18 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T17:45:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T21:38:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
-psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
-mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …&lt;/p&gt;</summary><content type="html">
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
-psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
-mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý
-náš student měl během 3. ročníku zvládnout.&lt;/p&gt;
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý náš
+student měl během 3. ročníku zvládnout.&lt;/p&gt;
+&lt;p&gt;Nebo možná naopak: To, co je zde zmíněno (i to, na co se jen odkazuji) byste
+fakt měli znát! Bez toho se nehnete.&lt;/p&gt;
 &lt;p&gt;Nejlepší &lt;a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;amp;source=web"&gt;učebnice jazyka C je ta od Pavla Herouta&lt;/a&gt;. 
 Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="https://chytrosti.marrek.cz/mit/market1.jpg"/&gt;&lt;/p&gt;
@@ -1854,6 +1856,10 @@ proměnné můžeme tedy ukládat pouze kladná čísla.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;Je myslím také dobré zmínit, že &lt;code&gt;int8_t&lt;/code&gt; je ekvivalent k &lt;code&gt;char&lt;/code&gt; a &lt;code&gt;uint8_t&lt;/code&gt; je
+ekvivalent k &lt;code&gt;unsigned char&lt;/code&gt;. Rozdíl je ale v čitelnosti programu. Pokud
+proměnnou deklaruji jako &lt;code&gt;char&lt;/code&gt; bude její hodnota zřejmě představovat nějaký
+znak, jehož číselná hodnota je v ní uložena.&lt;/p&gt;
 &lt;h2 id="cisla-a-operace"&gt;Čísla a operace&lt;a class="headerlink" href="#cisla-a-operace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Čísla a
 &lt;a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm"&gt;konstanty&lt;/a&gt; je
@@ -1864,10 +1870,19 @@ datový typ.&lt;/p&gt;
 &lt;span class="mo"&gt;0213&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* octal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mh"&gt;0x4b&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* hexadecimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;30u&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;30l&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;30ul&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;30U&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mf"&gt;30L&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;30UL&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mb"&gt;0b100101&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="cm"&gt;/* binar */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Znaková konstanta&lt;/strong&gt; je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
+hodnota konkrétního znaku je dána &lt;a href="https://cs.wikipedia.org/wiki/ASCII"&gt;Ascii
+tabulkou&lt;/a&gt;. Zapisuje se do apostrofů.&lt;/p&gt;
+&lt;p&gt;Oba tyto zápisy jsou ekvivalentní:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;znak&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;znak&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sc"&gt;'@'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;znak&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm"&gt;Operátory&lt;/a&gt; zde
 nebudu zevrubně popisovat ale jen zdůrazním následující:&lt;/p&gt;
@@ -1891,6 +1906,8 @@ s čísly.&lt;/p&gt;
 &lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;//----------- &amp;lt;&amp;lt; --&lt;/span&gt;
 &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;//  00001100&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="pravda-a-nepravda"&gt;Pravda a nepravda&lt;a class="headerlink" href="#pravda-a-nepravda" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="navratova-hodnota"&gt;Návratová hodnota&lt;a class="headerlink" href="#navratova-hodnota" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;h2 id="rizeni-behu-programu"&gt;Řízení běhu programu&lt;a class="headerlink" href="#rizeni-behu-programu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="vetveni"&gt;Větvení&lt;a class="headerlink" href="#vetveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Pro
