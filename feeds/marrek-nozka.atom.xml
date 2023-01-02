@@ -1,280 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-12-31T20:56:22+01:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-12-31T20:56:22+01:00</published><updated>2022-12-31T20:56:22+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/site.html</id><summary type="html">
-&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;dl&gt;
-&lt;dt&gt;Toto je více méně …&lt;/dt&gt;&lt;/dl&gt;</summary><content type="html">
-&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;dl&gt;
-&lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="VirtualBox jako malá síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;&lt;img alt="VirtualBoxu a NAT" data-frames="16" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;&lt;img alt="Host-only, Network bridge, Internal network" data-frames="16" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;&lt;img alt="Připojení do sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/smerovani"&gt;&lt;img alt="Směrování. Jak funguje Internet" data-frames="16" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;img alt="ARP" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="Síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;img alt="DHCP server" data-frames="16" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-12-31T20:51:13+01:00</published><updated>2022-12-31T20:51:13+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/git.html</id><summary type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
-    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
-kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
-&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;ul&gt;
-&lt;li&gt;… nebo jeden &lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git"&gt;stručný návod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-remote"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
-jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
-git config --global user.email john@doe.name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
-nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
-&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
-nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
-lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
-&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;nebo&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
-nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
-dejte jen dvakrát Enter. Já passphrase zadávám a používám 
-&lt;a href="https://en.wikipedia.org/wiki/Ssh-agent"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt; agenta&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
-&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
-&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
-uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
-každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
-heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
-přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
-to tento příkaz:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
-&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
-https://jmeno:heslo_nebo_token@gitlab.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
-&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
-vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
-(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)
-Návod &lt;a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
-Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
-&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-12-31T20:44:51+01:00</published><updated>2022-12-31T20:44:51+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/dbi.html</id><summary type="html">
-&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
-co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
-zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
-&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
-co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
-zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
-&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id="video-jak-to-rozjet-na-windows"&gt;Video – jak to rozjet na Windows&lt;a class="headerlink" href="#video-jak-to-rozjet-na-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/flask-run"&gt;&lt;img alt="Jak rozjet Flask na Windows" data-frames="16" src="https://chytrosti.marrek.cz/dbi/img/flask-run_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
-&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
-Stojí také za to, zmínit se 
-o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Krátkou českou dokumentaci najdete na adrese
-&lt;a href="http://spseol.github.io/CzechFlaskDoc/"&gt;http://spseol.github.io/CzechFlaskDoc/&lt;/a&gt;. Dále poslouží oficiální dokumentace:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Python: &lt;a href="https://docs.python.org/"&gt;https://docs.python.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Flask: &lt;a href="https://flask.palletsprojects.com/"&gt;https://flask.palletsprojects.com/&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/quickstart/"&gt;Quickstart&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/flashing/"&gt;Message Flashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data"&gt;Incoming Request Data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/"&gt;Patterns&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Jinja2: &lt;a href="https://jinja.palletsprojects.com/templates/"&gt;https://jinja.palletsprojects.com/templates/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Velmi užitečná je i best practices kniha &lt;a href="http://exploreflask.com/"&gt;Explore Flask&lt;/a&gt;
-a &lt;a href="https://docs.python-guide.org"&gt;Stopařův průvodce Pythontem&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="sqlite"&gt;SQLite&lt;a class="headerlink" href="#sqlite" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;klikátko: &lt;a href="https://sqlitebrowser.org/dl/"&gt;https://sqlitebrowser.org/dl/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;textový auto-completion client: &lt;a href="https://litecli.com"&gt;https://litecli.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="repositare-nejen-z-vyuky"&gt;Repositáře nejen z výuky&lt;a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/spseol?q=DBI-&amp;amp;type=all&amp;amp;language=&amp;amp;sort="&gt;https://github.com/spseol?q=&lt;span class="caps"&gt;DBI&lt;/span&gt;-&amp;amp;type=all&amp;amp;language=&amp;amp;sort=&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2022-12-08T18:07:26+01:00</published><updated>2022-12-08T18:07:26+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-08:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T17:45:20+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
-&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
-najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
+&lt;p&gt;Pro potřeby svojí výuky jsem sestavil následující:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"&gt;Céčko –  pác věcí, kterých byste si fakt měli všimnout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Oddělená kompilace a vlastní knihovny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2 …&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro potřeby svojí výuky jsem sestavil následující:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"&gt;Céčko –  pác věcí, kterých byste si fakt měli všimnout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Oddělená kompilace a vlastní knihovny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Michal Dudka píše skvělý web o programování mikrokontrokérů:
 &lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
 najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
@@ -306,13 +54,6 @@ najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti"&gt;Externí přerušení - &lt;span class="caps"&gt;EXTI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim"&gt;Čítače / Časovače&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro potřeby svojí výuky jsem sestavil následující:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní použití časovače&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:&lt;/p&gt;
 &lt;ul&gt;
@@ -488,7 +229,264 @@ Projekt vypadá velmi slibně.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-10-20T06:56:05+02:00</published><updated>2022-10-20T06:56:05+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/prg.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2023-01-02T11:37:37+01:00</published><updated>2023-01-02T11:37:37+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/git.html</id><summary type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše potřebné v češtině. Lze číst i na webu: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v1"&gt;první vydání&lt;/a&gt; – celé v češtině&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/book/cs/v2"&gt;druhé vydání&lt;/a&gt; – není přeloženo celé;
+    můžete se tedy &lt;a href="https://github.com/pepr/progit2-cs"&gt;zapojit do překladu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro efektivní používaní tohoto skvělého nástroje vám stačí přečíst si &lt;strong&gt;první tři
+kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/p&gt;
+&lt;p&gt;Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/basics/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/install/"&gt;Instalace gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/branching/"&gt;Větvení v Gitu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/ignoring/"&gt;Ignorování souborů&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/collaboration/"&gt;Spolupráce a Open source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://naucse.python.cz/lessons/git/git-collaboration-2in1/"&gt;Spolupráce a Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt;li&gt;… nebo jeden &lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/git"&gt;stručný návod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-remote"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="pocatecni-nastaveni"&gt;Počáteční nastavení&lt;a class="headerlink" href="#pocatecni-nastaveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Než budete Git používat, je třeba nakonfigurovat vaše jméno a e-mail. Je to proto,
+jméno a e-mail autora je součástí každého snímku – commitu.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;
+git config --global user.email john@doe.name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Parametr &lt;code&gt;--global&lt;/code&gt; říká, že je to nastavení pro celý uživatelský účet. Pokud ho 
+nepoužijete, bude se nastavení týkat jen toho repositáře, ve kterém příkaz spustíte.&lt;/p&gt;
+&lt;h2 id="ssh"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;a class="headerlink" href="#ssh" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pokud chcete (ano chcete) používat nějaké vzdálené úložiště (např. &lt;a href="https://cs.wikipedia.org/wiki/GitHub"&gt;GitHub&lt;/a&gt;
+nebo &lt;a href="https://cs.wikipedia.org/wiki/GitLab"&gt;GitLab&lt;/a&gt;), je &lt;a href="https://cs.wikipedia.org/wiki/SSH"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt;&lt;/a&gt; jeden se způsobů jak (pohodlně) přenášet data mezi
+lokálním a vzdáleným repositářem. Nejprve je třeba si vygenerovat 
+&lt;a href="https://cs.wikipedia.org/wiki/Asymetrick%C3%A1_kryptografie"&gt;key-pair&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ssh-keygen -t ed25519
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Během generování budete dotazování na passphrase. Pokud tuto doplňkovou ochranu
+nechcete použít a stačí vám utajení klíče, který bude ležet na vašem disku,
+dejte jen dvakrát Enter. Já passphrase zadávám a používám 
+&lt;a href="https://en.wikipedia.org/wiki/Ssh-agent"&gt;&lt;span class="caps"&gt;SSH&lt;/span&gt; agenta&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pozorně sledujte kam se klíče uloží. Třeba v Linuxu je to
+&lt;code&gt;~/.ssh/id_ed25519&lt;/code&gt; pro tajný/privátní klíč a &lt;code&gt;~/.ssh/id_ed25519.pub&lt;/code&gt; pro veřejný klíč.&lt;/p&gt;
+&lt;p&gt;Celá akce končí tím, že svůj veřejný klíč – tedy obsah souboru s příponou &lt;code&gt;.pub&lt;/code&gt;,
+uložíte do svého profilu na GitHub/GitLab: &lt;code&gt;Settings -&amp;gt; SSH and GPG keys&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Další detaily naleznete například v &lt;a href="https://www.abclinuxu.cz/clanky/bezpecnost/openssh-bezpecne-a-pohodlne"&gt;tomto článku na AbcLinuxu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="https"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;&lt;a class="headerlink" href="#https" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Druhým, alternativním způsobem přenosu dat je protokol &lt;span class="caps"&gt;HTTPS&lt;/span&gt;. Zde je třeba při
+každém přenosu &lt;a href="https://git-scm.com/docs/gitcredentials"&gt;zadávat&lt;/a&gt; jméno a
+heslo. Pokud používáte nějakou klíčenku pro ukládání hesel můžete to Gitu říct takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper klicenka_cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud klíčenku nepoužíváte nebo chcete, aby vaše přihlašovací údaje uchovával
+přímo Git v &lt;a href="https://git-scm.com/docs/git-credential-store"&gt;nešifrované podobě&lt;/a&gt;, je
+to tento příkaz:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git se vás pak na vaše přihlašovací údaje zeptá jen jednou a uloží se je do souboru 
+&lt;code&gt;~/.git-credentials&lt;/code&gt;. Ten může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;https://jmeno:personal_token@github.com
+https://jmeno:heslo_nebo_token@gitlab.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud si má Git přihlašovací údaje pamatovat jen dočasně 
+&lt;a href="https://git-scm.com/docs/git-credential-cache"&gt;nastaví se&lt;/a&gt; &lt;code&gt;.helper&lt;/code&gt; na &lt;code&gt;cache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Je ještě dobré podotknout, že GitHub neumožňuje přihlášení pomocí hesla: je nutné si
+vygenerovat &lt;a href="https://github.com/settings/tokens"&gt;Personal access token&lt;/a&gt;.
+(Až ho budete generovat, tak v právech odfajfkujte &lt;code&gt;workflow&lt;/code&gt;.)
+Návod &lt;a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="verejna-webova-uloziste"&gt;Veřejná (webová) úložiště&lt;a class="headerlink" href="#verejna-webova-uloziste" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Nejznámější veřejná úložiště pro Git jsou asi tyto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com"&gt;https://gitlab.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org"&gt;https://bitbucket.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
+Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.&lt;/p&gt;
+&lt;h2 id="pokusy-a-hracicky"&gt;Pokusy a hračičky&lt;a class="headerlink" href="#pokusy-a-hracicky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-12-31T20:56:22+01:00</published><updated>2022-12-31T20:56:22+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/site.html</id><summary type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;Toto je více méně …&lt;/dt&gt;&lt;/dl&gt;</summary><content type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="VirtualBox jako malá síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;&lt;img alt="VirtualBoxu a NAT" data-frames="16" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;&lt;img alt="Host-only, Network bridge, Internal network" data-frames="16" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;&lt;img alt="Připojení do sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/smerovani"&gt;&lt;img alt="Směrování. Jak funguje Internet" data-frames="16" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;img alt="ARP" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="Síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;img alt="DHCP server" data-frames="16" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-12-31T20:44:51+01:00</published><updated>2022-12-31T20:44:51+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/dbi.html</id><summary type="html">
+&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
+zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">
+&lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
+co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="instalace-knihoven"&gt;Instalace knihoven&lt;a class="headerlink" href="#instalace-knihoven" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Budeme potřebovat modul &lt;a href="https://flask.palletsprojects.com/"&gt;Flask&lt;/a&gt;. Jeho instalaci 
+zajistí &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;. Doporučuji přečíst si celý 
+&lt;a href="https://chytrosti.marrek.cz/pip-a-venv.html"&gt;post věnovaný pipu a virtuálnímu prostředí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ve Windows to může vypadat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;V Linuxu spíš takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip3 install --user flask
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="video-jak-to-rozjet-na-windows"&gt;Video – jak to rozjet na Windows&lt;a class="headerlink" href="#video-jak-to-rozjet-na-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/flask-run"&gt;&lt;img alt="Jak rozjet Flask na Windows" data-frames="16" src="https://chytrosti.marrek.cz/dbi/img/flask-run_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="git"&gt;Git&lt;a class="headerlink" href="#git" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pro sdílení práce a odevzdávání domácích úkolů používáme systém
+&lt;a href="https://git-scm.org"&gt;Git&lt;/a&gt; a server &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;.
+Stojí také za to, zmínit se 
+o &lt;a href="https://education.github.com/"&gt;GitHub programu pro vzdělávání&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Gitu se věnuji v &lt;a href="https://chytrosti.marrek.cz/git.html"&gt;samostatném postu&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Krátkou českou dokumentaci najdete na adrese
+&lt;a href="http://spseol.github.io/CzechFlaskDoc/"&gt;http://spseol.github.io/CzechFlaskDoc/&lt;/a&gt;. Dále poslouží oficiální dokumentace:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python: &lt;a href="https://docs.python.org/"&gt;https://docs.python.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Flask: &lt;a href="https://flask.palletsprojects.com/"&gt;https://flask.palletsprojects.com/&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/quickstart/"&gt;Quickstart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/flashing/"&gt;Message Flashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data"&gt;Incoming Request Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://flask.palletsprojects.com/patterns/"&gt;Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Jinja2: &lt;a href="https://jinja.palletsprojects.com/templates/"&gt;https://jinja.palletsprojects.com/templates/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Velmi užitečná je i best practices kniha &lt;a href="http://exploreflask.com/"&gt;Explore Flask&lt;/a&gt;
+a &lt;a href="https://docs.python-guide.org"&gt;Stopařův průvodce Pythontem&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="sqlite"&gt;SQLite&lt;a class="headerlink" href="#sqlite" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;klikátko: &lt;a href="https://sqlitebrowser.org/dl/"&gt;https://sqlitebrowser.org/dl/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;textový auto-completion client: &lt;a href="https://litecli.com"&gt;https://litecli.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="repositare-nejen-z-vyuky"&gt;Repositáře nejen z výuky&lt;a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spseol?q=DBI-&amp;amp;type=all&amp;amp;language=&amp;amp;sort="&gt;https://github.com/spseol?q=&lt;span class="caps"&gt;DBI&lt;/span&gt;-&amp;amp;type=all&amp;amp;language=&amp;amp;sort=&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Programování"></category><category term="Python"></category><category term="programování"></category><category term="web"></category><category term="databáze"></category><category term="Flask"></category></entry><entry><title>PRG</title><link href="https://chytrosti.marrek.cz/prg.html" rel="alternate"></link><published>2022-10-20T06:56:05+02:00</published><updated>2022-10-20T06:56:05+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-10-20:/prg.html</id><summary type="html">
 &lt;h2 id="tahak"&gt;Tahák&lt;a class="headerlink" href="#tahak" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vytvořil jsem tahák, kde je z Pythonu více-méně vše, co byste měli mít v pohotovostní
 výbavě. Tyto texty lze číst buď na 
@@ -1616,7 +1614,298 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Oddělená kompilace a vlastní knihovny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2021-05-12T19:49:26+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihovny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázatttt&lt;/p&gt;</summary><content type="html">&lt;p&gt;ahoj aaa
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T17:45:20+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
+psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+napsat malý přehled toho, co byste měli v souvislosti s programováním
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
+psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+napsat malý přehled toho, co byste měli v souvislosti s programováním
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý
+náš student měl během 3. ročníku zvládnout.&lt;/p&gt;
+&lt;p&gt;Nejlepší &lt;a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;amp;source=web"&gt;učebnice jazyka C je ta od Pavla Herouta&lt;/a&gt;. 
+Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="https://chytrosti.marrek.cz/mit/market1.jpg"/&gt;&lt;/p&gt;
+&lt;p&gt;Pokud hledáte nějaký online návod nebo referenční příručku, můžete začít třeba tu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/"&gt;https://www.sallyx.org/sally/c/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.w3schools.com/c/"&gt;https://www.w3schools.com/c/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/index.htm"&gt;https://www.tutorialspoint.com/cprogramming/index.htm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="funkce-main-a-ostatni-funkce"&gt;Funkce &lt;code&gt;main&lt;/code&gt; a ostatní funkce&lt;a class="headerlink" href="#funkce-main-a-ostatni-funkce" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hlavní program se nachází v funkci &lt;code&gt;main&lt;/code&gt;. Funkce main tedy musí být v každém
+programu/projektu. V našem případě by funkce &lt;code&gt;main&lt;/code&gt; měla obsahovat nekonečnou
+smyčku hlavního programu. Procesor musí stále něco dělat, proto musí běžet v
+nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu &lt;code&gt;while&lt;/code&gt; nebo &lt;code&gt;for&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_to&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_tohle&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(;;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_to&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_tohle&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Obecně vypadá hlavička &lt;a href="https://www.w3schools.com/c/c_functions.php"&gt;funkce&lt;/a&gt; takto:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;konkrétně pak takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;int16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;prevod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int8_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Funkce jménem &lt;code&gt;prevod&lt;/code&gt; vrací 16-bitové číslo datového typu &lt;code&gt;int16_t&lt;/code&gt;. Jako
+parametry funkce přebírá dvě 8-bitová čísla &lt;code&gt;a&lt;/code&gt; a &lt;code&gt;b&lt;/code&gt; typu &lt;code&gt;int8_t&lt;/code&gt;.
+Funkci potom můžeme volat třeba takto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;int16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;prevod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pokud funkce nic nevrací, nebo nemá žádné parametry použijeme klíčové slovo
+&lt;code&gt;void&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;delay_1ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;_delay_us&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;_delay_us&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;_delay_us&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;_delay_us&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;248&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Když funkci voláme, musíme vždy uvést závorky, i když nepřebírá žádné parametry:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;delay_1ms&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="jak-je-to-vlastne-s-kompilaci"&gt;Jak je to vlastně s kompilací?&lt;a class="headerlink" href="#jak-je-to-vlastne-s-kompilaci" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mějme tento zdrojový text:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cpf"&gt;"stm8s.h"&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cpf"&gt;"milis.h"&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="cp"&gt;#define LED_PORT GPIOC&lt;/span&gt;
+&lt;span class="cp"&gt;#define LED_PIN  GPIO_PIN_5&lt;/span&gt;
+&lt;span class="cp"&gt;#define LED_HIGH   GPIO_WriteHigh(LED_PORT, LED_PIN)&lt;/span&gt;
+&lt;span class="cp"&gt;#define LED_LOW  GPIO_WriteLow(LED_PORT, LED_PIN)&lt;/span&gt;
+&lt;span class="cp"&gt;#define LED_REVERSE GPIO_WriteReverse(LED_PORT, LED_PIN)&lt;/span&gt;
+
+&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;CLK_HSIPrescalerConfig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;CLK_PRESCALER_HSIDIV1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="c1"&gt;// taktovani MCU na 16MHz&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;GPIO_Init&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LED_PORT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED_PIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GPIO_MODE_OUT_PP_LOW_SLOW&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;GPIO_Init&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BTN_PORT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;BTN_PIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GPIO_MODE_IN_FL_NO_IT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init_milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;333&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
+několika fázích.&lt;/p&gt;
+&lt;p&gt;Nejprve se zdrojový text předzpracuje pomocí &lt;strong&gt;preprocesoru&lt;/strong&gt; – ten vloží do
+zdrojového textu hlavičkové soubory a expanduje všechna makra. Všechny direktivy, 
+kterým rozumí preprocesor začínají znakem &lt;code&gt;#&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="překlad %%" src="https://chytrosti.marrek.cz/mit/compilation.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Následuje zpravování &lt;strong&gt;kompilátorem&lt;/strong&gt;. Ten převede zdrojový text do podoby
+&lt;strong&gt;relativního objektového kódu&lt;/strong&gt; příslušného mikroprocesoru. To je již téměř
+hotový program ve strojovém kódu, ale adresy použitých &lt;em&gt;proměnný&lt;/em&gt; a &lt;em&gt;funkcí&lt;/em&gt;
+ještě nejsou známé a jsou tedy jen relativní. Výsledkem je objektový soubor s
+příponou &lt;code&gt;.o&lt;/code&gt; nebo &lt;code&gt;.obj&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;V našem příkladu je volána funkce &lt;code&gt;GPIO_Init&lt;/code&gt;, jejíž tělo (definice) je ale
+uvedena v jiném souboru, který se překládá samostatně. &lt;strong&gt;Kompilátor&lt;/strong&gt; tedy v
+tuto chvíli nezná konkrétní adresu, na které se funkce nachází – proto/protože
+neví na jaké konkrétní adrese v paměti mikropočítače bude funkce uložena.&lt;/p&gt;
+&lt;p&gt;V poslední fázi se relativní adresy proměnných a funkcí nahradí skutečnými
+adresami na kterých budou tyto proměnné a funkce uloženy v paměti
+mikropočítače. Tato fáze se označuje jako &lt;strong&gt;linkování (linking time)&lt;/strong&gt; a
+provádí je &lt;strong&gt;linker&lt;/strong&gt;. Jsou k tomu potřeba všechny objektové soubory celého
+projektu: tedy zdrojový text s funkcí &lt;code&gt;main&lt;/code&gt; a všechny knihovny, které také
+museli projít procesem kompilace. Teď už bude možné zavolat funkci &lt;code&gt;GPIO_Init&lt;/code&gt;,
+protože linker do strojového kódu vloží její skutečnou adresu.&lt;/p&gt;
+&lt;h2 id="zakladni-datovy-typy"&gt;Základní datový typy&lt;a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Při embeded programování potřebuje v naprosté většině případů pracovat s celými
+čísly nebo s reálnými čísly pomocí &lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;pevné řádové
+čárky&lt;/a&gt;. Je tedy třeba si
+vystačit s celočíselnými datovými typy. C sice nabízí datový typ &lt;code&gt;float&lt;/code&gt;, ten
+pro nás ale z důvodů omezené paměti není většinou vhodný.&lt;/p&gt;
+&lt;p&gt;Klasické C nabízí 
+&lt;a href="https://www.tutorialspoint.com/cprogramming/c_variables.htm"&gt;datové typy&lt;/a&gt;
+&lt;code&gt;char&lt;/code&gt;, &lt;code&gt;short int&lt;/code&gt;, &lt;code&gt;int&lt;/code&gt;, &lt;code&gt;long int&lt;/code&gt;, &lt;code&gt;long long int&lt;/code&gt;.
+Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
+použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
+Jedná zaručená věc je toto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Operátor &lt;a href="https://www.tutorialspoint.com/sizeof-operator-in-c"&gt;&lt;code&gt;sizeof&lt;/code&gt;&lt;/a&gt;
+vrací počet bytů, použitých v paměti pro danou proměnnou.&lt;/p&gt;
+&lt;p&gt;Například kompilátor &lt;span class="caps"&gt;SDCC&lt;/span&gt; to má takto:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;type&lt;/th&gt;
+&lt;th align="left"&gt;počet bit&lt;/th&gt;
+&lt;th align="left"&gt;počet byte&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;char&lt;/td&gt;
+&lt;td align="left"&gt;8 bits&lt;/td&gt;
+&lt;td align="left"&gt;1 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;short&lt;/td&gt;
+&lt;td align="left"&gt;16 bits&lt;/td&gt;
+&lt;td align="left"&gt;2 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;int&lt;/td&gt;
+&lt;td align="left"&gt;16 bits&lt;/td&gt;
+&lt;td align="left"&gt;2 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;long&lt;/td&gt;
+&lt;td align="left"&gt;32 bit&lt;/td&gt;
+&lt;td align="left"&gt;4 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;long long&lt;/td&gt;
+&lt;td align="left"&gt;64 bit&lt;/td&gt;
+&lt;td align="left"&gt;8 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Protože každý kompilátor je trošku jiný nikdy si nemůžete být jistí, kolik
+paměti kompilátor proměnné přiřadil používají se v embeded programování
+datové typy které to zaručují a kde je vše jasné hned na první pohled.
+My je máme definovány v knihovně &lt;span class="caps"&gt;SPL&lt;/span&gt; a jsou dostupné jakmile zavoláme
+&lt;code&gt;#include stm8s.h&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Je pravidlem, že vlastní/uživatelské datové typy užívají posfix &lt;code&gt;_t&lt;/code&gt;. Déle
+písmenu &lt;code&gt;u&lt;/code&gt; na začátku znamená &lt;code&gt;unsigned&lt;/code&gt; – tedy bez znaménka. Do takové
+proměnné můžeme tedy ukládat pouze kladná čísla.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="right"&gt;type&lt;/th&gt;
+&lt;th align="center"&gt;znaménko&lt;/th&gt;
+&lt;th align="center"&gt;počet bit&lt;/th&gt;
+&lt;th align="center"&gt;číselný rozsah&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;int8_t&lt;/td&gt;
+&lt;td align="center"&gt;kladná i záporná&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td align="center"&gt;-128 až 127&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;uint8_t&lt;/td&gt;
+&lt;td align="center"&gt;nezáporná&lt;/td&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td align="center"&gt;0 až 255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;int16_t&lt;/td&gt;
+&lt;td align="center"&gt;kladná i záporná&lt;/td&gt;
+&lt;td align="center"&gt;16&lt;/td&gt;
+&lt;td align="center"&gt;-32.768 až 32.767&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;uint16_t&lt;/td&gt;
+&lt;td align="center"&gt;nezáporná&lt;/td&gt;
+&lt;td align="center"&gt;16&lt;/td&gt;
+&lt;td align="center"&gt;0 až 65335&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;int32_t&lt;/td&gt;
+&lt;td align="center"&gt;kladná i záporná&lt;/td&gt;
+&lt;td align="center"&gt;32&lt;/td&gt;
+&lt;td align="center"&gt;-2.147.483.648 až 2.147.483.647&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;uint32_t&lt;/td&gt;
+&lt;td align="center"&gt;nezáporná&lt;/td&gt;
+&lt;td align="center"&gt;32&lt;/td&gt;
+&lt;td align="center"&gt;0 až 4.294.967.295&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="cisla-a-operace"&gt;Čísla a operace&lt;a class="headerlink" href="#cisla-a-operace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Čísla a
+&lt;a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm"&gt;konstanty&lt;/a&gt; je
+možné zapisovat v desítkové, osmičkové (prefix &lt;code&gt;0&lt;/code&gt;), šestnáctkové (prefix &lt;code&gt;0x&lt;/code&gt;)
+nebo dvojkové (prefix &lt;code&gt;0b&lt;/code&gt;)soustavě. Přičemž písmenko na konci čísla udává
+datový typ.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mi"&gt;85&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* decimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mo"&gt;0213&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* octal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mh"&gt;0x4b&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* hexadecimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;30u&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mf"&gt;30l&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;30ul&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mb"&gt;0b100101&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="cm"&gt;/* binar */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm"&gt;Operátory&lt;/a&gt; zde
+nebudu zevrubně popisovat ale jen zdůrazním následující:&lt;/p&gt;
+&lt;p&gt;Operátor &lt;code&gt;/&lt;/code&gt; je dělení a jeho výsledek závisí na tom, s jakým datovým typem je
+proveden. My používáme většinou celá čísla. Je to tedy &lt;strong&gt;celočíselné&lt;/strong&gt; dělení.
+Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže výraz
+&lt;code&gt;40 / 21&lt;/code&gt; bude &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Operátor &lt;code&gt;%&lt;/code&gt; je zbytek po celočíselném dělení takže &lt;code&gt;40 % 21&lt;/code&gt; je &lt;code&gt;19&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dále je třeba si dát pozor a neplést si &lt;em&gt;bitové&lt;/em&gt; a &lt;em&gt;logické&lt;/em&gt; operátory.
+Logické operátory &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; &lt;span class="caps"&gt;AND&lt;/span&gt;, &lt;code&gt;||&lt;/code&gt; &lt;span class="caps"&gt;OR&lt;/span&gt; a &lt;code&gt;!&lt;/code&gt; &lt;span class="caps"&gt;NOT&lt;/span&gt; pracují s pravdivostní hodnotou.&lt;/p&gt;
+&lt;p&gt;Bitové operátory &lt;code&gt;&amp;amp;&lt;/code&gt; &lt;span class="caps"&gt;AND&lt;/span&gt;, &lt;code&gt;|&lt;/code&gt; &lt;span class="caps"&gt;OR&lt;/span&gt;, &lt;code&gt;^&lt;/code&gt; &lt;span class="caps"&gt;EXOR&lt;/span&gt; a &lt;code&gt;~&lt;/code&gt; &lt;span class="caps"&gt;NOT&lt;/span&gt;, &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; provádí bitové
+s čísly.&lt;/p&gt;
+&lt;p&gt;Například:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 1010&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 0010&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;//------ &amp;amp; --&lt;/span&gt;
+&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;// 0010&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nebo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 00000011&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;//----------- &amp;lt;&amp;lt; --&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;//  00001100&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="rizeni-behu-programu"&gt;Řízení běhu programu&lt;a class="headerlink" href="#rizeni-behu-programu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="vetveni"&gt;Větvení&lt;a class="headerlink" href="#vetveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Pro
+&lt;a href="https://www.tutorialspoint.com/cprogramming/c_decision_making.htm"&gt;větvení&lt;/a&gt; se
+používá výraz:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;if&lt;/code&gt; &lt;a href="https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;if .. else&lt;/code&gt; &lt;a href="https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;switch&lt;/code&gt; &lt;a href="https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="cykly"&gt;Cykly&lt;a class="headerlink" href="#cykly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id="pole"&gt;Pole&lt;a class="headerlink" href="#pole" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="retezce"&gt;Řetězce&lt;a class="headerlink" href="#retezce" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id="ukazatele"&gt;Ukazatele&lt;a class="headerlink" href="#ukazatele" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%" src="https://chytrosti.marrek.cz/mit/market2.jpg"/&gt;&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Oddělená kompilace a vlastní knihovny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T12:17:45+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihovny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázatttt&lt;/p&gt;</summary><content type="html">&lt;p&gt;ahoj aaa
 aaa&amp;nbsp;bbb&lt;/p&gt;
 &lt;p&gt;dfjdk&lt;/p&gt;
 &lt;p&gt;konec&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry></feed>

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/videopreview.css" >
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="Marrek Nožka" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="Céčko, STM8, MITka, " />
+
+<meta property="og:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout "/>
+<meta property="og:url" content="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" />
+<meta property="og:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …" />
+<meta property="og:site_name" content="Chytrosti" />
+<meta property="og:article:author" content="Marrek Nožka" />
+<meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
+<meta property="og:article:modified_time" content="2023-01-02T17:45:20.537255+01:00" />
+<meta name="twitter:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout ">
+<meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý …">
+
+        <title>Céčko — pác věcí, kterých byste si fakt měli všimnout  · Chytrosti
+</title>
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./theme/images/apple-touch-icon-180x180.png" type="image/png" />
+        <link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chytrosti - Full Atom Feed" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="./">
+                          <img title="#site logo" src="./theme/images/favicon.ico" />
+                          <span class=site-name>Chytrosti</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       .
+                                    >Index</a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./dbi.html" ><span class="caps">DBI</span></a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./mit.html" ><span class="caps">MIT</span></a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./prg.html" ><span class="caps">PRG</span></a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./psk.html" ><span class="caps">PSK</span></a>
+                                </li>
+                                <li class="menupost">
+                                  <a href="./site.html" >Sítě</a>
+                                </li>
+
+                                <li ><a href="./pages/chyba.html">Chyba&nbsp;&#128027;</a></li>
+                                <li ><a href="./pages/o-mne.html">O&nbsp;mně</a></li>
+                                <li ><a href="./categories.html">Kategorie</a></li>
+                                <li ><a href="./tags.html">Tagy</a></li>
+                                <li ><a href="./archives.html">Vše</a></li>
+                                <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Hledat" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html">
+                Céčko &#8212;  pác věcí, kterých byste si fakt měli&nbsp;všimnout
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h2 class="related-post-header">Obsah</h2>
+        <div class="toc">
+<ul>
+<li><a href="#funkce-main-a-ostatni-funkce">Funkce main a ostatní funkce</a></li>
+<li><a href="#jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?</a></li>
+<li><a href="#zakladni-datovy-typy">Základní datový typy</a></li>
+<li><a href="#cisla-a-operace">Čísla a operace</a></li>
+<li><a href="#rizeni-behu-programu">Řízení běhu programu</a><ul>
+<li><a href="#vetveni">Větvení</a></li>
+<li><a href="#cykly">Cykly</a></li>
+</ul>
+</li>
+<li><a href="#pole">Pole</a><ul>
+<li><a href="#retezce">Řetězce</a></li>
+</ul>
+</li>
+<li><a href="#ukazatele">Ukazatele</a></li>
+</ul>
+</div>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+</ul>
+<hr />
+</section>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+
+            
+<p>Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
+psát učebnici, protože je jich napsaných spousta. Cítím ale, že je potřeba
+napsat malý přehled toho, co byste měli v souvislosti s programováním
+mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý
+náš student měl během 3. ročníku zvládnout.</p>
+<p>Nejlepší <a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;source=web">učebnice jazyka C je ta od Pavla Herouta</a>. 
+Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.</p>
+<p><img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="./mit/market1.jpg"/></p>
+<p>Pokud hledáte nějaký online návod nebo referenční příručku, můžete začít třeba tu:</p>
+<ul>
+<li><a href="https://www.sallyx.org/sally/c/">https://www.sallyx.org/sally/c/</a></li>
+<li><a href="https://www.w3schools.com/c/">https://www.w3schools.com/c/</a></li>
+<li><a href="https://www.tutorialspoint.com/cprogramming/index.htm">https://www.tutorialspoint.com/cprogramming/index.htm</a></li>
+</ul>
+<h2 id="funkce-main-a-ostatni-funkce">Funkce <code>main</code> a ostatní funkce<a class="headerlink" href="#funkce-main-a-ostatni-funkce" title="Permanent link">¶</a></h2>
+<p>Hlavní program se nachází v funkci <code>main</code>. Funkce main tedy musí být v každém
+programu/projektu. V našem případě by funkce <code>main</code> měla obsahovat nekonečnou
+smyčku hlavního programu. Procesor musí stále něco dělat, proto musí běžet v
+nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</code> nebo <code>for</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Obecně vypadá hlavička <a href="https://www.w3schools.com/c/c_functions.php">funkce</a> takto:</p>
+<p><code>datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)</code></p>
+<p>konkrétně pak takto:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="nf">prevod</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">c</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Funkce jménem <code>prevod</code> vrací 16-bitové číslo datového typu <code>int16_t</code>. Jako
+parametry funkce přebírá dvě 8-bitová čísla <code>a</code> a <code>b</code> typu <code>int8_t</code>.
+Funkci potom můžeme volat třeba takto:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span><span class="w"></span>
+<span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prevod</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<p>Pokud funkce nic nevrací, nebo nemá žádné parametry použijeme klíčové slovo
+<code>void</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">delay_1ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">248</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Když funkci voláme, musíme vždy uvést závorky, i když nepřebírá žádné parametry:</p>
+<div class="highlight"><pre><span></span><code><span class="n">delay_1ms</span><span class="p">();</span><span class="w"></span>
+</code></pre></div>
+<h2 id="jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?<a class="headerlink" href="#jak-je-to-vlastne-s-kompilaci" title="Permanent link">¶</a></h2>
+<p>Mějme tento zdrojový text:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stm8s.h"</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"milis.h"</span><span class="cp"></span>
+
+<span class="cp">#define LED_PORT GPIOC</span>
+<span class="cp">#define LED_PIN  GPIO_PIN_5</span>
+<span class="cp">#define LED_HIGH   GPIO_WriteHigh(LED_PORT, LED_PIN)</span>
+<span class="cp">#define LED_LOW  GPIO_WriteLow(LED_PORT, LED_PIN)</span>
+<span class="cp">#define LED_REVERSE GPIO_WriteReverse(LED_PORT, LED_PIN)</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">CLK_HSIPrescalerConfig</span><span class="p">(</span><span class="n">CLK_PRESCALER_HSIDIV1</span><span class="p">);</span><span class="w">      </span><span class="c1">// taktovani MCU na 16MHz</span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">LED_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">BTN_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">BTN_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">init_milis</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">setup</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">333</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">LED_REVERSE</span><span class="p">;</span><span class="w"> </span>
+<span class="w">            </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
+několika fázích.</p>
+<p>Nejprve se zdrojový text předzpracuje pomocí <strong>preprocesoru</strong> – ten vloží do
+zdrojového textu hlavičkové soubory a expanduje všechna makra. Všechny direktivy, 
+kterým rozumí preprocesor začínají znakem <code>#</code>.</p>
+<p><img alt="překlad %%" src="./mit/compilation.png"/></p>
+<p>Následuje zpravování <strong>kompilátorem</strong>. Ten převede zdrojový text do podoby
+<strong>relativního objektového kódu</strong> příslušného mikroprocesoru. To je již téměř
+hotový program ve strojovém kódu, ale adresy použitých <em>proměnný</em> a <em>funkcí</em>
+ještě nejsou známé a jsou tedy jen relativní. Výsledkem je objektový soubor s
+příponou <code>.o</code> nebo <code>.obj</code>.</p>
+<p>V našem příkladu je volána funkce <code>GPIO_Init</code>, jejíž tělo (definice) je ale
+uvedena v jiném souboru, který se překládá samostatně. <strong>Kompilátor</strong> tedy v
+tuto chvíli nezná konkrétní adresu, na které se funkce nachází – proto/protože
+neví na jaké konkrétní adrese v paměti mikropočítače bude funkce uložena.</p>
+<p>V poslední fázi se relativní adresy proměnných a funkcí nahradí skutečnými
+adresami na kterých budou tyto proměnné a funkce uloženy v paměti
+mikropočítače. Tato fáze se označuje jako <strong>linkování (linking time)</strong> a
+provádí je <strong>linker</strong>. Jsou k tomu potřeba všechny objektové soubory celého
+projektu: tedy zdrojový text s funkcí <code>main</code> a všechny knihovny, které také
+museli projít procesem kompilace. Teď už bude možné zavolat funkci <code>GPIO_Init</code>,
+protože linker do strojového kódu vloží její skutečnou adresu.</p>
+<h2 id="zakladni-datovy-typy">Základní datový typy<a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link">¶</a></h2>
+<p>Při embeded programování potřebuje v naprosté většině případů pracovat s celými
+čísly nebo s reálnými čísly pomocí <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">pevné řádové
+čárky</a>. Je tedy třeba si
+vystačit s celočíselnými datovými typy. C sice nabízí datový typ <code>float</code>, ten
+pro nás ale z důvodů omezené paměti není většinou vhodný.</p>
+<p>Klasické C nabízí 
+<a href="https://www.tutorialspoint.com/cprogramming/c_variables.htm">datové typy</a>
+<code>char</code>, <code>short int</code>, <code>int</code>, <code>long int</code>, <code>long long int</code>.
+Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
+použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
+Jedná zaručená věc je toto:</p>
+<div class="highlight"><pre><span></span><code><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"></span>
+</code></pre></div>
+<p>Operátor <a href="https://www.tutorialspoint.com/sizeof-operator-in-c"><code>sizeof</code></a>
+vrací počet bytů, použitých v paměti pro danou proměnnou.</p>
+<p>Například kompilátor <span class="caps">SDCC</span> to má takto:</p>
+<table>
+<thead>
+<tr>
+<th align="left">type</th>
+<th align="left">počet bit</th>
+<th align="left">počet byte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">char</td>
+<td align="left">8 bits</td>
+<td align="left">1 byte</td>
+</tr>
+<tr>
+<td align="left">short</td>
+<td align="left">16 bits</td>
+<td align="left">2 bytes</td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td align="left">16 bits</td>
+<td align="left">2 bytes</td>
+</tr>
+<tr>
+<td align="left">long</td>
+<td align="left">32 bit</td>
+<td align="left">4 bytes</td>
+</tr>
+<tr>
+<td align="left">long long</td>
+<td align="left">64 bit</td>
+<td align="left">8 bytes</td>
+</tr>
+</tbody>
+</table>
+<p>Protože každý kompilátor je trošku jiný nikdy si nemůžete být jistí, kolik
+paměti kompilátor proměnné přiřadil používají se v embeded programování
+datové typy které to zaručují a kde je vše jasné hned na první pohled.
+My je máme definovány v knihovně <span class="caps">SPL</span> a jsou dostupné jakmile zavoláme
+<code>#include stm8s.h</code>.</p>
+<p>Je pravidlem, že vlastní/uživatelské datové typy užívají posfix <code>_t</code>. Déle
+písmenu <code>u</code> na začátku znamená <code>unsigned</code> – tedy bez znaménka. Do takové
+proměnné můžeme tedy ukládat pouze kladná čísla.</p>
+<table>
+<thead>
+<tr>
+<th align="right">type</th>
+<th align="center">znaménko</th>
+<th align="center">počet bit</th>
+<th align="center">číselný rozsah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">int8_t</td>
+<td align="center">kladná i záporná</td>
+<td align="center">8</td>
+<td align="center">-128 až 127</td>
+</tr>
+<tr>
+<td align="right">uint8_t</td>
+<td align="center">nezáporná</td>
+<td align="center">8</td>
+<td align="center">0 až 255</td>
+</tr>
+<tr>
+<td align="right">int16_t</td>
+<td align="center">kladná i záporná</td>
+<td align="center">16</td>
+<td align="center">-32.768 až 32.767</td>
+</tr>
+<tr>
+<td align="right">uint16_t</td>
+<td align="center">nezáporná</td>
+<td align="center">16</td>
+<td align="center">0 až 65335</td>
+</tr>
+<tr>
+<td align="right">int32_t</td>
+<td align="center">kladná i záporná</td>
+<td align="center">32</td>
+<td align="center">-2.147.483.648 až 2.147.483.647</td>
+</tr>
+<tr>
+<td align="right">uint32_t</td>
+<td align="center">nezáporná</td>
+<td align="center">32</td>
+<td align="center">0 až 4.294.967.295</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cisla-a-operace">Čísla a operace<a class="headerlink" href="#cisla-a-operace" title="Permanent link">¶</a></h2>
+<p>Čísla a
+<a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm">konstanty</a> je
+možné zapisovat v desítkové, osmičkové (prefix <code>0</code>), šestnáctkové (prefix <code>0x</code>)
+nebo dvojkové (prefix <code>0b</code>)soustavě. Přičemž písmenko na konci čísla udává
+datový typ.</p>
+<div class="highlight"><pre><span></span><code><span class="mi">85</span><span class="w">         </span><span class="cm">/* decimal */</span><span class="w"></span>
+<span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span><span class="w"></span>
+<span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span><span class="w"></span>
+<span class="mi">30</span><span class="w">         </span><span class="cm">/* int */</span><span class="w"></span>
+<span class="mi">30u</span><span class="w">        </span><span class="cm">/* unsigned int */</span><span class="w"></span>
+<span class="mf">30l</span><span class="w">        </span><span class="cm">/* long */</span><span class="w"></span>
+<span class="mi">30ul</span><span class="w">       </span><span class="cm">/* unsigned long */</span><span class="w"></span>
+<span class="mb">0b100101</span><span class="w">   </span><span class="cm">/* binar */</span><span class="w"></span>
+</code></pre></div>
+<p><a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm">Operátory</a> zde
+nebudu zevrubně popisovat ale jen zdůrazním následující:</p>
+<p>Operátor <code>/</code> je dělení a jeho výsledek závisí na tom, s jakým datovým typem je
+proveden. My používáme většinou celá čísla. Je to tedy <strong>celočíselné</strong> dělení.
+Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže výraz
+<code>40 / 21</code> bude <code>1</code>.</p>
+<p>Operátor <code>%</code> je zbytek po celočíselném dělení takže <code>40 % 21</code> je <code>19</code>.</p>
+<p>Dále je třeba si dát pozor a neplést si <em>bitové</em> a <em>logické</em> operátory.
+Logické operátory <code>&amp;&amp;</code> <span class="caps">AND</span>, <code>||</code> <span class="caps">OR</span> a <code>!</code> <span class="caps">NOT</span> pracují s pravdivostní hodnotou.</p>
+<p>Bitové operátory <code>&amp;</code> <span class="caps">AND</span>, <code>|</code> <span class="caps">OR</span>, <code>^</code> <span class="caps">EXOR</span> a <code>~</code> <span class="caps">NOT</span>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code> provádí bitové
+s čísly.</p>
+<p>Například:</p>
+<div class="highlight"><pre><span></span><code><span class="w">               </span><span class="c1">// 1010</span>
+<span class="w">               </span><span class="c1">// 0010</span>
+<span class="w">               </span><span class="c1">//------ &amp; --</span>
+<span class="mi">10</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w">    </span><span class="c1">// 0010</span>
+</code></pre></div>
+<p>nebo</p>
+<div class="highlight"><pre><span></span><code><span class="w">               </span><span class="c1">// 00000011</span>
+<span class="w">               </span><span class="c1">//----------- &lt;&lt; --</span>
+<span class="mi">3</span><span class="o">&lt;&lt;</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">12</span><span class="w">    </span><span class="c1">//  00001100</span>
+</code></pre></div>
+<h2 id="rizeni-behu-programu">Řízení běhu programu<a class="headerlink" href="#rizeni-behu-programu" title="Permanent link">¶</a></h2>
+<h3 id="vetveni">Větvení<a class="headerlink" href="#vetveni" title="Permanent link">¶</a></h3>
+<p>Pro
+<a href="https://www.tutorialspoint.com/cprogramming/c_decision_making.htm">větvení</a> se
+používá výraz:</p>
+<ul>
+<li><code>if</code> <a href="https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm">https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm</a></li>
+<li><code>if .. else</code> <a href="https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm">https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm</a></li>
+<li><code>switch</code> <a href="https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm">https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm</a></li>
+</ul>
+<h3 id="cykly">Cykly<a class="headerlink" href="#cykly" title="Permanent link">¶</a></h3>
+<h2 id="pole">Pole<a class="headerlink" href="#pole" title="Permanent link">¶</a></h2>
+<h3 id="retezce">Řetězce<a class="headerlink" href="#retezce" title="Permanent link">¶</a></h3>
+<h2 id="ukazatele">Ukazatele<a class="headerlink" href="#ukazatele" title="Permanent link">¶</a></h2>
+<p><img alt="Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%" src="./mit/market2.jpg"/></p>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr class="elegant-hr" />
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+</ul>
+<hr />
+</section>
+        </div>
+        <section id="article-sidebar" class="span2">
+              <h4>Publikováno</h4> 
+            <time itemprop="dateCreated" datetime="2021-04-23T07:44:00+02:00">
+              Pá 23. dub 2021 7:44
+            </time>
+<h4>Aktualizováno</h4>
+<time datetime="2023-01-02T17:45:20+01:00">
+  Po 2. led 2023 17:45
+</time>
+
+            <h4>Kategorie</h4>
+            <a class="category-link" href="./categories.html#mitka-ref">MITka</a>
+            <h4>Tagy</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="./tags.html#cecko-ref">Céčko
+                    <span class="superscript">9</span>
+</a></li>
+                <li><a href="./tags.html#stm8-ref">STM8
+                    <span class="superscript">10</span>
+</a></li>
+            </ul>
+<h4>Kontakt</h4>
+<div id="sidebar-social-link">
+    <a href="mailto:n&#111;zk&#97; z#64;vináč spseol tečka cz" title="" target="_blank" rel="nofollow noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Email" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="teal"/><rect width="356" height="256" x="78" y="128" fill="#fff" rx="8%"/><path fill="none" stroke="teal" stroke-width="20" d="M434 128L269 292c-7 8-19 8-26 0L78 128m0 256l129-128m227 128L305 256"/></svg>
+    </a>
+
+    <a href="https://github.com/spseol" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+
+    <a href="https://gitlab.com/MarrekNozka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitLab" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#30353e"/><path fill="#e24329" d="M84 215l43-133c2-7 12-7 14 0l115 353L371 82c2-7 12-7 14 0l43 133"/><path fill="#fc6d26" d="M256 435L84 215h100.4zm71.7-220H428L256 435l71.6-220z"/><path fill="#fca326" d="M84 215l-22 67c-2 6 0 13 6 16l188 137zm344 0l22 67c2 6 0 13-6 16L256 435z"/></svg>
+    </a>
+
+    <a href="https://github.com/MarrekNozka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+
+    <a href="https://twitter.com/MarrekNozka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Twitter" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1da1f3"/><path fill="#fff" d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+    </a>
+
+    <a href="https://www.youtube.com/c/MarekNožka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="YouTube" role="img" viewBox="0 0 512 512" fill="#ed1d24"><rect width="512" height="512" rx="15%"/><path d="m427 169c-4-15-17-27-32-31-34-9-239-10-278 0-15 4-28 16-32 31-9 38-10 135 0 174 4 15 17 27 32 31 36 10 241 10 278 0 15-4 28-16 32-31 9-36 9-137 0-174" fill="#fff"/><path d="m220 203v106l93-53"/></svg>
+    </a>
+
+    <a href="https://www.reddit.com/user/MarrekNozka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Reddit" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f40"/><g fill="#fff"><ellipse cx="256" cy="307" rx="166" ry="117"/><circle cx="106" cy="256" r="42"/><circle cx="407" cy="256" r="42"/><circle cx="375" cy="114" r="32"/></g><g stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="m256 196 23-101 73 15" stroke="#fff" stroke-width="16"/><path d="m191 359c33 25 97 26 130 0" stroke="#f40" stroke-width="13"/></g><g fill="#f40"><circle cx="191" cy="287" r="31"/><circle cx="321" cy="287" r="31"/></g></svg>
+    </a>
+
+    <a href="https://stackoverflow.com/users/2188314/marreknožka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Stack Overflow" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f58025"/><path stroke="#fff" stroke-width="30" fill="none" d="M293 89l90 120zm-53 50l115 97zm-41 65l136 64zm-23 69l148 31zm-6 68h150zm-45-44v105h241V297"/></svg>
+    </a>
+
+    <a href="https://t.me/MarrekNozka" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Telegram" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"/><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"/><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"/><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"/></svg>
+    </a>
+
+    <a href="https://www.flickr.com/photos/tlapicka/" title="" target="_blank" rel="nofollow noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Flickr" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><circle cx="157" cy="256" fill="#0063dc" r="79"/><circle cx="355" cy="256" fill="#ff0084" r="79"/></svg>
+    </a>
+
+    <a href="http://cs.wikipedia.org/wiki/Wikipedista:Tlapicka" title="" target="_blank" rel="nofollow noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Wikipedia" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><path d="m65 152v8c0 2 1 3 4 3 20 1 20 5 28 23l90 196c7 14 16 16 25-1l45-88 42 88c8 15 16 16 24 0l86-194c8-17 19-24 36-24 2 0 2-1 2-3v-8h-80l-1 1v7c0 2 2 3 4 3 10 0 29 2 21 19l-70 166-3-1-43-88 37-72c8-15 10-24 25-24 2 0 4-1 4-3v-7l-1-1h-64l-1 1v7c0 3 4 3 7 3 18 1 16 8 10 19l-27 56-25-52c-9-16-11-21 2-22 3-1 8-1 8-4v-7l-1-1h-69l-1 1v8c0 2 2 2 5 2 12 2 12 3 23 26l40 84-37 75-3-1-76-167c-8-17 2-16 18-17 3 0 3-1 3-3v-7l-1-1z" fill="#000"/></svg>
+    </a>
+
+    <a href="https://commons.wikimedia.org/wiki/Special:ListFiles/Tlapicka" title="" target="_blank" rel="nofollow noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1024" height="1376" viewBox="-305 -516 610 820">
+      <title>Wikimedia Commons Logo</title>
+      <rect x="-512" y="-686" width="1024" height="1376" rx="50%" fill="#fff"/>
+      <defs>
+        <clipPath id="c"><circle r="298"/></clipPath>
+      </defs>
+      <circle r="100" fill="#900"/>
+      <g fill="#069">
+        <g id="arrow" clip-path="url(#c)">
+          <path d="m-11 180v118h22v-118"/>
+          <path d="m-43 185l43-75 43 75"/>
+        </g>
+        <g id="arrows3">
+          <use xlink:href="#arrow" transform="rotate(45)"/>
+          <use xlink:href="#arrow" transform="rotate(90)"/>
+          <use xlink:href="#arrow" transform="rotate(135)"/>
+        </g>
+        <use xlink:href="#arrows3" transform="scale(-1 1)"/>
+        <path id="blue_path" transform="rotate(-45)" stroke="#069" stroke-width="84" fill="none" d="M 0,-256 A 256 256 0 1 0 256,0 C 256,-100 155,-150 250,-275"/>
+        <path id="arrow_top" d="m-23-515s-36 135-80 185 116-62 170-5-90-180-90-180z"/>
+      </g>
+      </svg>
+    </a>
+
+    <a href="/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme:
+        <a href="https://github.com/MarrekNozka/elegant/" title="my Elegant GitHub" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+        forked from
+        <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>.
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="./theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+        <script src="./theme/js/medium-zoom.min.js"></script>
+        <script>
+          mediumZoom('img[alt*="%%"]', {background: '#00111111',});
+        </script>
+        <script>
+          
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

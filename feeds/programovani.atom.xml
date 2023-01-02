@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-12-31T20:51:13+01:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2022-12-31T20:51:13+01:00</published><updated>2022-12-31T20:51:13+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/git.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T11:37:37+01:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2023-01-02T11:37:37+01:00</published><updated>2023-01-02T11:37:37+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -104,7 +104,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://learngitbranching.js.org/"&gt;https://learngitbranching.js.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Oh my Git: &lt;a href="https://ohmygit.org/"&gt;https://ohmygit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category><category term="Céčko"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-12-31T20:44:51+01:00</published><updated>2022-12-31T20:44:51+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/dbi.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>DBI</title><link href="https://chytrosti.marrek.cz/dbi.html" rel="alternate"></link><published>2022-12-31T20:44:51+01:00</published><updated>2022-12-31T20:44:51+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/dbi.html</id><summary type="html">
 &lt;h2 id="python"&gt;Python&lt;a class="headerlink" href="#python" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro &lt;a href="https://chytrosti.marrek.cz/prg.html"&gt;&lt;span class="caps"&gt;PRG&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
