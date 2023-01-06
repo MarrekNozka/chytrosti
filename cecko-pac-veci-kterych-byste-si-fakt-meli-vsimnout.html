@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
-<meta property="og:article:modified_time" content="2023-01-02T21:38:33.046973+01:00" />
+<meta property="og:article:modified_time" content="2023-01-05T14:44:19.881181+01:00" />
 <meta name="twitter:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout ">
 <meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …">
 
@@ -263,7 +263,7 @@ Funkci potom můžeme volat třeba takto:</p>
 <p>U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
 několika fázích.</p>
 <p>Nejprve se zdrojový text předzpracuje pomocí <strong>preprocesoru</strong> – ten vloží do
-zdrojového textu hlavičkové soubory a expanduje všechna makra. Všechny direktivy, 
+zdrojového textu hlavičkové soubory a expanduje všechna <em>makra</em>. Všechny <em>direktivy</em>, 
 kterým rozumí preprocesor začínají znakem <code>#</code>.</p>
 <p><img alt="překlad %%" src="./mit/compilation.png"/></p>
 <p>Následuje zpravování <strong>kompilátorem</strong>. Ten převede zdrojový text do podoby
@@ -282,6 +282,8 @@ provádí je <strong>linker</strong>. Jsou k tomu potřeba všechny objektové s
 projektu: tedy zdrojový text s funkcí <code>main</code> a všechny knihovny, které také
 museli projít procesem kompilace. Teď už bude možné zavolat funkci <code>GPIO_Init</code>,
 protože linker do strojového kódu vloží její skutečnou adresu.</p>
+<p>Více je toto téma rozvedeno v postu
+<a href="./oddelena-kompilace-a-vlastni-knihovny.html">Oddělená kompilace a vlastní knihovny</a>.</p>
 <h2 id="zakladni-datovy-typy">Základní datový typy<a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link">¶</a></h2>
 <p>Při embeded programování potřebuje v naprosté většině případů pracovat s celými
 čísly nebo s reálnými čísly pomocí <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">pevné řádové
@@ -293,7 +295,7 @@ pro nás ale z důvodů omezené paměti není většinou vhodný.</p>
 <code>char</code>, <code>short int</code>, <code>int</code>, <code>long int</code>, <code>long long int</code>.
 Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
 použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
-Jedná zaručená věc je toto:</p>
+Jediná zaručená věc je toto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"></span>
 </code></pre></div>
 <p>Operátor <a href="https://www.tutorialspoint.com/sizeof-operator-in-c"><code>sizeof</code></a>
@@ -340,8 +342,8 @@ paměti kompilátor proměnné přiřadil používají se v embeded programován
 datové typy které to zaručují a kde je vše jasné hned na první pohled.
 My je máme definovány v knihovně <span class="caps">SPL</span> a jsou dostupné jakmile zavoláme
 <code>#include stm8s.h</code>.</p>
-<p>Je pravidlem, že vlastní/uživatelské datové typy užívají posfix <code>_t</code>. Déle
-písmenu <code>u</code> na začátku znamená <code>unsigned</code> – tedy bez znaménka. Do takové
+<p>Je pravidlem, že vlastní/uživatelské datové typy užívají posfix <code>_t</code>.
+Písmeno <code>u</code> na začátku znamená <code>unsigned</code> – tedy bez znaménka. Do takové
 proměnné můžeme tedy ukládat pouze kladná čísla.</p>
 <table>
 <thead>
@@ -399,8 +401,8 @@ znak, jehož číselná hodnota je v ní uložena.</p>
 <p>Čísla a
 <a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm">konstanty</a> je
 možné zapisovat v desítkové, osmičkové (prefix <code>0</code>), šestnáctkové (prefix <code>0x</code>)
-nebo dvojkové (prefix <code>0b</code>)soustavě. Přičemž písmenko na konci čísla udává
-datový typ.</p>
+nebo dvojkové (prefix <code>0b</code>)soustavě. Přičemž písmenko na konci čísla (<code>U</code>, <code>L</code>)
+udává datový typ.</p>
 <div class="highlight"><pre><span></span><code><span class="mi">85</span><span class="w">         </span><span class="cm">/* decimal */</span><span class="w"></span>
 <span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span><span class="w"></span>
 <span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span><span class="w"></span>
@@ -495,8 +497,8 @@ používá výraz:</p>
               Pá 23. dub 2021 7:44
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2023-01-02T21:38:33+01:00">
-  Po 2. led 2023 21:38
+<time datetime="2023-01-05T14:44:19+01:00">
+  Čt 5. led 2023 14:44
 </time>
 
             <h4>Kategorie</h4>

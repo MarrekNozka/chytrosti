@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T21:38:33+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-05T14:44:19+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -1614,7 +1614,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T21:38:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-05T14:44:19+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
@@ -1728,7 +1728,7 @@ Funkci potom můžeme volat třeba takto:&lt;/p&gt;
 &lt;p&gt;U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
 několika fázích.&lt;/p&gt;
 &lt;p&gt;Nejprve se zdrojový text předzpracuje pomocí &lt;strong&gt;preprocesoru&lt;/strong&gt; – ten vloží do
-zdrojového textu hlavičkové soubory a expanduje všechna makra. Všechny direktivy, 
+zdrojového textu hlavičkové soubory a expanduje všechna &lt;em&gt;makra&lt;/em&gt;. Všechny &lt;em&gt;direktivy&lt;/em&gt;, 
 kterým rozumí preprocesor začínají znakem &lt;code&gt;#&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="překlad %%" src="https://chytrosti.marrek.cz/mit/compilation.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Následuje zpravování &lt;strong&gt;kompilátorem&lt;/strong&gt;. Ten převede zdrojový text do podoby
@@ -1747,6 +1747,8 @@ provádí je &lt;strong&gt;linker&lt;/strong&gt;. Jsou k tomu potřeba všechny 
 projektu: tedy zdrojový text s funkcí &lt;code&gt;main&lt;/code&gt; a všechny knihovny, které také
 museli projít procesem kompilace. Teď už bude možné zavolat funkci &lt;code&gt;GPIO_Init&lt;/code&gt;,
 protože linker do strojového kódu vloží její skutečnou adresu.&lt;/p&gt;
+&lt;p&gt;Více je toto téma rozvedeno v postu
+&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Oddělená kompilace a vlastní knihovny&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="zakladni-datovy-typy"&gt;Základní datový typy&lt;a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Při embeded programování potřebuje v naprosté většině případů pracovat s celými
 čísly nebo s reálnými čísly pomocí &lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;pevné řádové
@@ -1758,7 +1760,7 @@ pro nás ale z důvodů omezené paměti není většinou vhodný.&lt;/p&gt;
 &lt;code&gt;char&lt;/code&gt;, &lt;code&gt;short int&lt;/code&gt;, &lt;code&gt;int&lt;/code&gt;, &lt;code&gt;long int&lt;/code&gt;, &lt;code&gt;long long int&lt;/code&gt;.
 Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
 použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
-Jedná zaručená věc je toto:&lt;/p&gt;
+Jediná zaručená věc je toto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Operátor &lt;a href="https://www.tutorialspoint.com/sizeof-operator-in-c"&gt;&lt;code&gt;sizeof&lt;/code&gt;&lt;/a&gt;
@@ -1805,8 +1807,8 @@ paměti kompilátor proměnné přiřadil používají se v embeded programován
 datové typy které to zaručují a kde je vše jasné hned na první pohled.
 My je máme definovány v knihovně &lt;span class="caps"&gt;SPL&lt;/span&gt; a jsou dostupné jakmile zavoláme
 &lt;code&gt;#include stm8s.h&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Je pravidlem, že vlastní/uživatelské datové typy užívají posfix &lt;code&gt;_t&lt;/code&gt;. Déle
-písmenu &lt;code&gt;u&lt;/code&gt; na začátku znamená &lt;code&gt;unsigned&lt;/code&gt; – tedy bez znaménka. Do takové
+&lt;p&gt;Je pravidlem, že vlastní/uživatelské datové typy užívají posfix &lt;code&gt;_t&lt;/code&gt;.
+Písmeno &lt;code&gt;u&lt;/code&gt; na začátku znamená &lt;code&gt;unsigned&lt;/code&gt; – tedy bez znaménka. Do takové
 proměnné můžeme tedy ukládat pouze kladná čísla.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1864,8 +1866,8 @@ znak, jehož číselná hodnota je v ní uložena.&lt;/p&gt;
 &lt;p&gt;Čísla a
 &lt;a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm"&gt;konstanty&lt;/a&gt; je
 možné zapisovat v desítkové, osmičkové (prefix &lt;code&gt;0&lt;/code&gt;), šestnáctkové (prefix &lt;code&gt;0x&lt;/code&gt;)
-nebo dvojkové (prefix &lt;code&gt;0b&lt;/code&gt;)soustavě. Přičemž písmenko na konci čísla udává
-datový typ.&lt;/p&gt;
+nebo dvojkové (prefix &lt;code&gt;0b&lt;/code&gt;)soustavě. Přičemž písmenko na konci čísla (&lt;code&gt;U&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt;)
+udává datový typ.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mi"&gt;85&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* decimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mo"&gt;0213&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* octal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mh"&gt;0x4b&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* hexadecimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
