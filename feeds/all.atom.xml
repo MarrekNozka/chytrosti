@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-05T14:44:19+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-06T09:38:44+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-02T12:21:48+01:00</published><updated>2023-01-02T12:21:48+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -1614,7 +1614,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-05T14:44:19+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-06T09:38:44+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
@@ -1842,7 +1842,7 @@ proměnné můžeme tedy ukládat pouze kladná čísla.&lt;/p&gt;
 &lt;td align="right"&gt;uint16_t&lt;/td&gt;
 &lt;td align="center"&gt;nezáporná&lt;/td&gt;
 &lt;td align="center"&gt;16&lt;/td&gt;
-&lt;td align="center"&gt;0 až 65335&lt;/td&gt;
+&lt;td align="center"&gt;0 až 65535&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="right"&gt;int32_t&lt;/td&gt;
@@ -1871,11 +1871,11 @@ udává datový typ.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mi"&gt;85&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* decimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mo"&gt;0213&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* octal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mh"&gt;0x4b&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* hexadecimal */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mb"&gt;0b100101&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="cm"&gt;/* binar */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="cm"&gt;/* int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mi"&gt;30U&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mf"&gt;30L&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mi"&gt;30UL&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mb"&gt;0b100101&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="cm"&gt;/* binar */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Znaková konstanta&lt;/strong&gt; je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
 hodnota konkrétního znaku je dána &lt;a href="https://cs.wikipedia.org/wiki/ASCII"&gt;Ascii
@@ -1892,14 +1892,20 @@ nebudu zevrubně popisovat ale jen zdůrazním následující:&lt;/p&gt;
 proveden. My používáme většinou celá čísla. Je to tedy &lt;strong&gt;celočíselné&lt;/strong&gt; dělení.
 Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže výraz
 &lt;code&gt;40 / 21&lt;/code&gt; bude &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Zaokrouhlování&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Operátor &lt;code&gt;%&lt;/code&gt; je zbytek po celočíselném dělení takže &lt;code&gt;40 % 21&lt;/code&gt; je &lt;code&gt;19&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Dále je třeba si dát pozor a neplést si &lt;em&gt;bitové&lt;/em&gt; a &lt;em&gt;logické&lt;/em&gt; operátory.
 Logické operátory &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; &lt;span class="caps"&gt;AND&lt;/span&gt;, &lt;code&gt;||&lt;/code&gt; &lt;span class="caps"&gt;OR&lt;/span&gt; a &lt;code&gt;!&lt;/code&gt; &lt;span class="caps"&gt;NOT&lt;/span&gt; pracují s pravdivostní hodnotou.&lt;/p&gt;
+&lt;p&gt;Například:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"%d je cislo mezi 13 a 23"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Bitové operátory &lt;code&gt;&amp;amp;&lt;/code&gt; &lt;span class="caps"&gt;AND&lt;/span&gt;, &lt;code&gt;|&lt;/code&gt; &lt;span class="caps"&gt;OR&lt;/span&gt;, &lt;code&gt;^&lt;/code&gt; &lt;span class="caps"&gt;EXOR&lt;/span&gt; a &lt;code&gt;~&lt;/code&gt; &lt;span class="caps"&gt;NOT&lt;/span&gt;, &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; provádí bitové
 s čísly.&lt;/p&gt;
 &lt;p&gt;Například:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 1010&lt;/span&gt;
-&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 0010&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;// 0111&lt;/span&gt;
 &lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="c1"&gt;//------ &amp;amp; --&lt;/span&gt;
 &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;// 0010&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
