@@ -1,7 +1,7 @@
 Title: Git
 Subtitle: Distribuovaný systém správy verzí
 Category: Programování
-Tags: programování, Git, Céčko
+Tags: programování, Git,
 
 [TOC]
 

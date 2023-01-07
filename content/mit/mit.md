@@ -16,6 +16,15 @@ Pro výuku mikroprocesorové techniky používáme v současné době mikroproce
 Návody
 ==============================
 
+Pro potřeby svojí výuky jsem sestavil následující:
+
+* [Céčko --  pác věcí, kterých byste si fakt měli všimnout]({filename}./Cecko.md)
+* [Oddělená kompilace a vlastní knihovny]({filename}./kompilace_knihovny.md)
+* [Generování zvuku -- základy]({filename}./zvuk-zaklad.md)
+* [Základní použití časovače]({filename}./casovace.md)
+* [Použití časovače jako generátoru PWM]({filename}./pwm.md)
+* [Ultrazvukový měřič vzdálenosti pomocí timeru TIM2]({filename}./tim2_ultrasonic.md)
+
 Michal Dudka píše skvělý web o programování mikrokontrokérů:
 <http://elektromys.eu>. V sekci [STM8](http://elektromys.eu/stm8.php)
 najdete spoustu pro nás zajímavých věcí:
@@ -48,17 +57,11 @@ Honza Vykydal pak napsal:
 * [Externí přerušení - EXTI](https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti)
 * [Čítače / Časovače](https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim)
 
-Pro potřeby svojí výuky jsem sestavil následující:
-
-* [Generování zvuku -- základy]({filename}./zvuk-zaklad.md)
-* [Základní použití časovače]({filename}./casovace.md)
-* [Použití časovače jako generátoru PWM]({filename}./pwm.md)
-* [Ultrazvukový měřič vzdálenosti pomocí timeru TIM2]({filename}./tim2_ultrasonic.md)
 
 Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:
 
 * [IR senzor](http://elektromys.eu/clanky/avr1_adc2/clanek.html)
-* [I2C – Relativně jednoduše](http://www.tajned.cz/2016/10/i2c-relativne-jednoduse/)
+* [I2C – Relativně jednoduše](http://elektromys.eu/clanky/ele_i2c/clanek.html)
 
 Další velice cenné informace nejdete v sekcích:
 
