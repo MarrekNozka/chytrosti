@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-07T19:33:19+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-07T19:33:19+01:00</published><updated>2023-01-07T19:33:19+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-07:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-11T17:10:32+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-01-09T18:13:22+01:00</published><updated>2023-01-09T18:13:22+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-09:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -191,7 +191,7 @@ se jistě dá zakoupit i někde jinde.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://www.laskakit.cz/oblibene/89af72c11f9e5e738f3074e7aa8a0bba4200e647"&gt;seznam na LaskKit&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.aliexpress.com/p/wishlist/shareReflux.html?groupId=dGW2uj4YNVGDbjN2VCLzOJhU39eDkEz4y9Z4CGz2UIM%3D"&gt;seznam na AliExpressu&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="nastroje"&gt;Nástroje&lt;a class="headerlink" href="#nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="vyvojove-nastroje"&gt;Vývojové nástroje&lt;a class="headerlink" href="#vyvojove-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
 ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
 &lt;a href="https://www.st.com/en/development-tools/stm8cubemx.html"&gt;STM8CubeMX&lt;/a&gt;.
@@ -223,6 +223,12 @@ Projekt vypadá velmi slibně.&lt;/p&gt;
   nejsou ani jeden 
   &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="dalsi-uzitecne-nastroje"&gt;Další užitečné nástroje&lt;a class="headerlink" href="#dalsi-uzitecne-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;The Dot Factory&lt;/dt&gt;
+&lt;dd&gt;Generátor obrázků a fontů pro maticové displaye&lt;/dd&gt;
+&lt;dd&gt;&lt;a href="http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/"&gt;http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
@@ -1001,7 +1007,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-06T09:38:44+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-11T17:10:32+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
@@ -1011,10 +1017,16 @@ psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je pot
 napsat malý přehled toho, co byste měli v souvislosti s programováním
 mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý náš
 student měl během 3. ročníku zvládnout.&lt;/p&gt;
-&lt;p&gt;Nebo možná naopak: To, co je zde zmíněno (i to, na co se jen odkazuji) byste
-fakt měli znát! Bez toho se nehnete.&lt;/p&gt;
-&lt;p&gt;Nejlepší &lt;a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;amp;source=web"&gt;učebnice jazyka C je ta od Pavla Herouta&lt;/a&gt;. 
-Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.&lt;/p&gt;
+&lt;p&gt;Nebo možná jinak: Vše, co je zde zmíněno (i to, na co se jen odkazuji) byste
+fakt měli znát! Bez toho se nehnete. Buď je to zde přímo vysvětleno, nebo je 
+zde odkaz na zdroj ze kterého byste to měli pochopit, ale v každém případě byste 
+se tím měli vážně zabývat. &lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Učebnice:&lt;/dt&gt;
+&lt;dd&gt;Klasika je &lt;a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;amp;source=web"&gt;učebnice jazyka C je ta od Pavla Herouta&lt;/a&gt;. Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.&lt;/dd&gt;
+&lt;dd&gt;Další je &lt;a href="https://search.brave.com/search?q=kniha+%22C+pro+mikrokontrolery%22&amp;amp;source=web"&gt;C pro mikrokontrolery&lt;/a&gt;&lt;/dd&gt;
+&lt;dd&gt;… a &lt;a href="https://search.brave.com/search?q=kniha+%22Programovac%C3%AD+jazyk+C+pro+zelen%C3%A1%C4%8De%22&amp;amp;source=web"&gt;Programovací jazyk C pro zelenáče&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;&lt;img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="https://chytrosti.marrek.cz/mit/market1.jpg"/&gt;&lt;/p&gt;
 &lt;p&gt;Pokud hledáte nějaký online návod nebo referenční příručku, můžete začít třeba tu:&lt;/p&gt;
 &lt;ul&gt;

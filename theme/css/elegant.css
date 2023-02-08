@@ -127,12 +127,12 @@ div.recent-posts p {
   margin: 20px 0 20px 20px;
 }
 .article-content dd {
-  line-height: 1.7em;
+  line-height: 1.5em;
   margin: 1px 0 1px 20px;
   padding: 3px 0;
 }
 .article-content dt {
-  font-size: inherit;
+  font-size: 105%;
 }
 h1,
 h2,
