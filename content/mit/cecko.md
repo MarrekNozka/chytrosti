@@ -11,11 +11,15 @@ napsat malý přehled toho, co byste měli v souvislosti s programováním
 mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý náš
 student měl během 3. ročníku zvládnout.
 
-Nebo možná naopak: To, co je zde zmíněno (i to, na co se jen odkazuji) byste
-fakt měli znát! Bez toho se nehnete.
+Nebo možná jinak: Vše, co je zde zmíněno (i to, na co se jen odkazuji) byste
+fakt měli znát! Bez toho se nehnete. Buď je to zde přímo vysvětleno, nebo je 
+zde odkaz na zdroj ze kterého byste to měli pochopit, ale v každém případě byste 
+se tím měli vážně zabývat. 
 
-Nejlepší [učebnice jazyka C je ta od Pavla Herouta](https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&source=web). 
-Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.
+Učebnice:
+: Klasika je [učebnice jazyka C je ta od Pavla Herouta](https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&source=web). Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.
+: Další je [C pro mikrokontrolery]( https://search.brave.com/search?q=kniha+%22C+pro+mikrokontrolery%22&source=web)
+: ... a [Programovací jazyk C pro zelenáče](https://search.brave.com/search?q=kniha+%22Programovac%C3%AD+jazyk+C+pro+zelen%C3%A1%C4%8De%22&source=web)
 
 ![Nejlepší učebnice jazyka C je ta od Pavla Herouta %%]({static}./market1.jpg)
 
@@ -149,8 +153,8 @@ U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děj
 několika fázích.
 
 Nejprve se zdrojový text předzpracuje pomocí **preprocesoru** -- ten vloží do
-zdrojového textu hlavičkové soubory a expanduje všechna *makra*. Všechny *direktivy*, 
-kterým rozumí preprocesor začínají znakem `#`.
+zdrojového textu hlavičkové soubory a expanduje všechna [*makra*](#makra).
+Všechny *direktivy*, kterým rozumí preprocesor začínají znakem `#`.
 
 ![překlad %%]({static}./compilation.png)
 
@@ -234,6 +238,29 @@ ekvivalent k `unsigned char`. Rozdíl je ale v čitelnosti programu. Pokud
 proměnnou deklaruji jako `char` bude její hodnota zřejmě představovat nějaký
 znak, jehož číselná hodnota je v ní uložena.
 
+Řízení běhu programu
+=======================
+
+Větvení
+------------
+ 
+Pro
+[větvení](https://www.tutorialspoint.com/cprogramming/c_decision_making.htm) se
+používá výraz:
+
+* `if`: <https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm>
+* `if .. else`: <https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm>
+* `switch`: <https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm>
+
+
+Cykly
+----------------
+
+* <https://www.tutorialspoint.com/cprogramming/c_loops.htm>
+* `while`: <https://www.tutorialspoint.com/cprogramming/c_while_loop.htm>
+* `do while`: <https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm>
+* `for`: <https://www.tutorialspoint.com/cprogramming/c_for_loop.htm>
+
 
 Čísla a operace
 ==================
@@ -273,12 +300,12 @@ znak = 64;
 [Operátory](https://www.tutorialspoint.com/cprogramming/c_operators.htm) zde
 nebudu zevrubně popisovat ale jen zdůrazním následující:
 
+**Zaokrouhlování:**
 Operátor `/` je dělení a jeho výsledek závisí na tom, s jakým datovým typem je
 proveden. My používáme většinou celá čísla. Je to tedy **celočíselné** dělení.
 Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže výraz
 `40 / 21` bude `1`.
 
-**Zaokrouhlování**
 
 Operátor `%` je zbytek po celočíselném dělení takže `40 % 21` je `19`.
 
@@ -317,40 +344,255 @@ nebo
 Pravda a nepravda
 ---------------------
 
+Pravdivostní hodnota je reprezentována čísly `0` a `1`. To ale není vše.
+**Každé číslo může být použito jako pravdivostní hodnota.** Jako Nepravda --
+False se interpretuje pouze číslo `0`. Všechna další čísla od nuly různá se
+interpretují jako Pravda -- True. Tohoto se často využívá. Typické je to
+například, když překládáme *masku* přes číslo, abychom zjistili stav
+jednotlivých bitů.
+
+```c
+// tisk binární podoby čísla
+cislo = 0x5A;
+maska = 0b1000000;
+printf("0b");
+while (maska) {
+  if (cislo & maska) {
+    printf("1");
+  } else {
+    printf("0");
+  }
+  maska = maska >> 1;
+}
+printf("\n");
+
+```
 
 Návratová hodnota
 ---------------------
 
+V Céčku má každý výraz vždy sou návratovou hodnotu a tuto návratovou hodnotu
+lze uložit do proměnné.
 
-Řízení běhu programu
-=======================
+Například `i++`  nebo `++i` přičítá k proměnné jedna. Rozdíl je ale právě v
+návratové hodnotě. Pokud použijete `i++`, nejprve se je vrácena hodnota `i` a
+potom teprve se přičte jedna. Pokud použijete `++i`, nejprve se přičte jedna a
+potom teprve se vrátí hodnota již inkrementovaného `i`. Analogicky platí totéž pro
+`i--` a `--i`;
+
+```c
+i = 3;
+j = i++; // v j bude 3, v i bude 4
+
+i = 3;
+j = ++i; // v j bude 4, v i bude 4
+
+```
+
+Podobně lze  návratovou hodnotu použít jako pravdivostní výraz v podmínkách a
+cyklech. Například takto:
+
+```c
+// tisk binární podoby čísla
+i = 0
+while (i++ > 5) {
+  printf("%d\n", i);
+}
+```
 
 
+Ukazatele, pole, řetězce
+=======================================
+
+**Ukazatel** je proměnná, která neobsahuje data, ale adresu na které se nachází
+data. Prostě a jednoduše ukazatel je proměnná obsahující adresu proměnné.
+Proměnná typu 'ukazatel na `int`' obsahuje adresu, na které se v paměti nachází
+číslo typu `int`. Ukazatel se deklaruje a vyhodnocuje pomocí operátoru `*`.
+Adresa paměti se získá pomocí operátoru `&`.
+
+```c
+int cislo;
+int *ukazatel_cislo;
+int *ukazatel_dalsi;
+
+cislo = 77;              // do proměnné cislo uložím 77
+ukazatel_cislo = &cislo; // ukazatel_cislo má v sobě uloženou adresu proměnné cislo
+
+*ukazatel_cislo = 123;   // v proměnné cislo je 123
+                         // (protože ukazatel_cislo ma v sobě adresu promenne cislo)
+
+ukazatel_dalsi = ukazatel_cislo;
+
+printf("%d\n", cislo);             // vytiskne 123
+printf("%d\n", *ukazatel_dalsi);   // vytiskne 123
+```
+<a href="https://replit.com/@MarrekNozka/ukazatel#main.c">Vyzkoušet</a>
 
 
-Větvení
-------------
- 
-Pro
-[větvení](https://www.tutorialspoint.com/cprogramming/c_decision_making.htm) se
-používá výraz:
+Ukazatelů se dá použít, když mám například 32-bitovou proměnnou a potřebuji z
+ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat například
+takto:
 
-* `if` <https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm>
-* `if .. else` <https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm>
-* `switch` <https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm>
+```c
+unsigned int cislo = 0x12345678;
+unsigned char *ukazatel;
 
+// ukazatel na int přetypujeme na ukazatel na char
+// tím se jedna velká buňka rozdělí na 4 malé buňky
+ukazatel = (unsigned char *)&cislo;
 
-Cykly
+printf("Bytes: %02X %02X %02X %02X\n", *ukazatel, *(ukazatel + 1),
+        *(ukazatel + 2), *(ukazatel + 3));
+```
+<a href="https://replit.com/@MarrekNozka/bajty#main.c">Vyzkoušet</a>
+
+Pole -- array
 ----------------
 
-Pole
-==============
+**Pole** představuje kolekci několika hodnot stejného datového typu umístěného
+v paměti vedle sebe jednu položku po druhé. Ke každé položce této kolekce lze
+přistupovat zvlášť pomocí indexu.
 
-Řetězce
-------------
+```c
+int cislo[10];
+int *pole;
 
-Ukazatele
-===============
+int i = 0;
+while (i < 10) {
+  cislo[i++] = i * i;
+}
 
+pole = cislo;
+
+for (i = 0; i < 10; i++) {
+  printf("%d\n", pole[i]);
+}
+
+printf("Indexace pomocí []: %d\n", pole[7]);
+printf("Indexace ukazatele:  %d\n", *(pole + 7));
+```
+<a href="https://replit.com/@MarrekNozka/pole#main.c">Vyzkoušet</a>
+
+**Pole a ukazatel jsou v Céčku velmi úzce svázané**. Proměnná `cislo` je typově
+kompatibilní s ukazatelem na int `int *`. V proměnné `cislo` je uložena adresa,
+na&nbsp;které začíná kolekce deseti po sobě jdoucích hodnot.
+
+Ještě je potřeba říct, že Céčko nijak nehlídá jestli náhodou index nepřesáhl
+stanovenou mez. Takže výraz `cislo[22] = 51;` se normálně provede, ale přepíše
+se část pamětí ve které se v danou chvíli nachází třeba jiná proměnná. To může
+vést k naprosto neočekávanému pseudonáhodnému chování.
+
+
+Řetězec -- string
+--------------------
+
+**Řetězec** je "jen" pole znaků. Dá se s ním tedy pracovat stejně jako s polem.
+
+```c
+char retezec[22] = "Cecko je nejlepsi.";
+
+for (int i=0; i<20; i++) {
+  printf("%c, %d\n", retezec[i], retezec[i]);
+}
+printf("KONEC");
+```
+<a href="https://replit.com/@MarrekNozka/retezec#main.c">Vyzkoušet</a>
+
+Každý správný řetězec v Céčku končí znakem `\0` s ascii hodnou 0 (nula). Podle
+tohoto se dá spolehlivě rozpoznat, že řetězec už na konci -- přestože paměť je
+alokovaná pro více znaků než řetězec obsahuje.
+
+Makra
+======================
+
+**Makra** [preprocesoru](#jak-je-to-vlastne-s-kompilaci) představují velmi
+mocný nástroj jak si zpřehlednit zdrojový kód. Při programování mikrokontrolérů
+představuje definice správných maker více-méně nutnost, bez které se v kódu
+velmi rychle ztratíte. Poměrně dobře jsou možnosti preprocesoru popsány 
+na [www.sallyx.org](https://www.sallyx.org/sally/c/c11.php).
+
+V nejjednodušším případě je makro nějaká zkratka nebo konstanta. Všude, kde se
+ve zdrojovém kódu vyskytne toto makro, je nahrazeno jeho obsahem. Případná
+*změna* tedy proběhne jen jednom místě -- při definici. **Makra se provádí
+(expandují) ještě před zahájením kompilace**. To je velký a zásadní rozdíl
+oproti proměnným, které se nachází v paměti.
+
+```c
+#include <stdio.h>
+
+#define MAX 12
+
+int data[MAX];
+
+int main(void) {
+
+  for (int i=0; i < MAX; i++) {
+    data[i] = i * i;
+  }
+
+  for (int i=0; i < MAX; i++) {
+    printf("%d ", data[i]);
+  }
+  putchar('\n');
+
+  return 0;
+}
+```
+<a href="https://replit.com/@MarrekNozka/makro#main.c">Vyzkoušet</a>
+
+V našem případě budeme marka používat pro pojmenování jednotlivých pinů. To je
+velmi užitečné, protože budeme moci s minimálním zásahem do kódu přemístit
+jednotlivé periferie nebo portovat projekt na jiný mikrokontroler.
+
+```c
+
+#define LED_PORT GPIOC
+#define LED_PIN  GPIO_PIN_5
+#define NCODER_CLK_PORT GPIOB
+#define NCODER_CLK_PIN GPIO_PIN_5
+#define NCODER_DATA_PORT GPIOB
+#define NCODER_DATA_PIN GPIO_PIN_4
+
+void setup(void)
+{
+    GPIO_Init(LED_PORT, LED_PIN, GPIO_MODE_OUT_PP_LOW_SLOW);
+
+    GPIO_Init(NCODER_CLK_PORT, NCODER_CLK_PIN, GPIO_MODE_IN_FL_NO_IT);
+    GPIO_Init(NCODER_DATA_PORT, NCODER_DATA_PIN, GPIO_MODE_IN_FL_NO_IT);
+}
+```
+
+Já osobně si ještě dělám vždy sadu maker s parametrem, která mi umožňuje
+efektivně číst a zapisovat stav jednotlivých pinů (operátor `##` provádí
+sřetězení):
+
+```c
+#define LOW(BAGR) GPIO_WriteLow(BAGR##_PORT, BAGR##_PIN)
+#define HIGH(BAGR) GPIO_WriteHigh(BAGR##_PORT, BAGR##_PIN)
+#define REVERSE(BAGR) GPIO_WriteReverse(BAGR##_PORT, BAGR##_PIN)
+
+#define READ(BAGR) GPIO_ReadInputPin(BAGR##_PORT, BAGR##_PIN) 
+#define PUSH(BAGR) (GPIO_ReadInputPin(BAGR##_PORT, BAGR##_PIN)==RESET) 
+```
+
+Místo poměrně těžkopádného:
+
+    GPIO_WriteHigh(CLK_PORT, CLK_PIN);
+
+... můžu napsat 
+
+    HIGH(CLK);
+
+Kód se tak lépe zapisuje, čte i portuje na jinou platformu.
+
+
+Struktury a Uniony
+===========================
+
+```c
+```
+<a href="https://replit.com/@MarrekNozka/union#main.c">Vyzkoušet</a>
+
+-----------------------------------------------------
 
 ![Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%]({static}./market2.jpg)

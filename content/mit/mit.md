@@ -18,7 +18,7 @@ Návody
 
 Pro potřeby svojí výuky jsem sestavil následující:
 
-* [Céčko --  pác věcí, kterých byste si fakt měli všimnout]({filename}./Cecko.md)
+* [Céčko --  pác věcí, kterých byste si fakt měli všimnout]({filename}./cecko.md)
 * [Oddělená kompilace a vlastní knihovny]({filename}./kompilace_knihovny.md)
 * [Generování zvuku -- základy]({filename}./zvuk-zaklad.md)
 * [Základní použití časovače]({filename}./casovace.md)
@@ -236,7 +236,7 @@ se jistě dá zakoupit i někde jinde.
 
 
 
-Nástroje
+Vývojové nástroje
 =====================================
 
 Vývojové nástroje jsou IMHO největší slabina platformy STM8,
@@ -279,6 +279,12 @@ Nástroje pro M$ Windows
   [OpenSource](https://cs.wikipedia.org/wiki/Otevřený_software).
 
 
+Další užitečné nástroje
+===============================
+
+The Dot Factory
+: Generátor obrázků a fontů pro maticové displaye
+: <http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/>
 
 Odkazy
 ============================================
