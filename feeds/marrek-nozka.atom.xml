@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-03-23T20:47:09+01:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-03-23T18:47:33+01:00</published><updated>2023-03-23T18:47:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-03-23:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Marrek Nožka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/marrek-nozka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-03-29T13:58:44+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-03-23T18:47:33+01:00</published><updated>2023-03-23T18:47:33+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-03-23:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -1620,7 +1620,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-03-23T20:47:09+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-03-29T13:58:44+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
@@ -1654,6 +1654,7 @@ smyčku hlavního programu. Procesor musí stále něco dělat, proto musí bě�
 nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu &lt;code&gt;while&lt;/code&gt; nebo &lt;code&gt;for&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_to&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -1663,6 +1664,7 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu &lt;code&gt;w
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(;;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;udelej_to&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -1670,7 +1672,10 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu &lt;code&gt;w
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Obecně vypadá hlavička &lt;a href="https://www.w3schools.com/c/c_functions.php"&gt;funkce&lt;/a&gt; takto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c04.php"&gt;více o struktuře programu a funkci &lt;code&gt;main&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obecně vypadá hlavička &lt;a href="https://www.sallyx.org/sally/c/c13.php"&gt;funkce&lt;/a&gt; takto:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;konkrétně pak takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;int16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;prevod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int8_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -1819,7 +1824,7 @@ paměti kompilátor proměnné přiřadil používají se v embeded programován
 datové typy které to zaručují a kde je vše jasné hned na první pohled.
 My je máme definovány v knihovně &lt;span class="caps"&gt;SPL&lt;/span&gt; a jsou dostupné jakmile zavoláme
 &lt;code&gt;#include stm8s.h&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Je pravidlem, že vlastní/uživatelské datové typy užívají posfix &lt;code&gt;_t&lt;/code&gt;.
+&lt;p&gt;Je pravidlem, že vlastní/uživatelské datové typy užívají postfix &lt;code&gt;_t&lt;/code&gt;.
 Písmeno &lt;code&gt;u&lt;/code&gt; na začátku znamená &lt;code&gt;unsigned&lt;/code&gt; – tedy bez znaménka. Do takové
 proměnné můžeme tedy ukládat pouze kladná čísla.&lt;/p&gt;
 &lt;table&gt;
@@ -1875,21 +1880,19 @@ ekvivalent k &lt;code&gt;unsigned char&lt;/code&gt;. Rozdíl je ale v čitelnost
 proměnnou deklaruji jako &lt;code&gt;char&lt;/code&gt; bude její hodnota zřejmě představovat nějaký
 znak, jehož číselná hodnota je v ní uložena.&lt;/p&gt;
 &lt;h2 id="rizeni-behu-programu"&gt;Řízení běhu programu&lt;a class="headerlink" href="#rizeni-behu-programu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="vetveni"&gt;Větvení&lt;a class="headerlink" href="#vetveni" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Pro
-&lt;a href="https://www.tutorialspoint.com/cprogramming/c_decision_making.htm"&gt;větvení&lt;/a&gt; se
-používá výraz:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;if&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;if .. else&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;switch&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm"&gt;https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="cykly"&gt;Cykly&lt;a class="headerlink" href="#cykly" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/c_loops.htm"&gt;https://www.tutorialspoint.com/cprogramming/c_loops.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;while&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/c_while_loop.htm"&gt;https://www.tutorialspoint.com/cprogramming/c_while_loop.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;do while&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm"&gt;https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;for&lt;/code&gt;: &lt;a href="https://www.tutorialspoint.com/cprogramming/c_for_loop.htm"&gt;https://www.tutorialspoint.com/cprogramming/c_for_loop.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c12.php"&gt;Podmínky a cykly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pro
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/c_decision_making.htm"&gt;větvení&lt;/a&gt; se
+  používá výraz:
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm"&gt;&lt;code&gt;if&lt;/code&gt;&lt;/a&gt;,
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm"&gt;&lt;code&gt;if .. else&lt;/code&gt;&lt;/a&gt;,
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm"&gt;&lt;code&gt;switch&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/c_loops.htm"&gt;Cykly&lt;/a&gt; máme k
+  dispozici ve třech podobách:
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/c_while_loop.htm"&gt;&lt;code&gt;while&lt;/code&gt;&lt;/a&gt;,
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm"&gt;&lt;code&gt;do while&lt;/code&gt;&lt;/a&gt;,
+  &lt;a href="https://www.tutorialspoint.com/cprogramming/c_for_loop.htm"&gt;&lt;code&gt;for&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="cisla-a-operace"&gt;Čísla a operace&lt;a class="headerlink" href="#cisla-a-operace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Čísla a
@@ -1905,6 +1908,7 @@ udává datový typ.&lt;/p&gt;
 &lt;span class="mi"&gt;30U&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned int */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mf"&gt;30L&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="cm"&gt;/* long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="mi"&gt;30UL&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;55123123123ULL&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="cm"&gt;/* unsigned long long */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Znaková konstanta&lt;/strong&gt; je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
 hodnota konkrétního znaku je dána &lt;a href="https://cs.wikipedia.org/wiki/ASCII"&gt;Ascii
@@ -1946,13 +1950,13 @@ s čísly.&lt;/p&gt;
 &lt;h3 id="pravda-a-nepravda"&gt;Pravda a nepravda&lt;a class="headerlink" href="#pravda-a-nepravda" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Pravdivostní hodnota je reprezentována čísly &lt;code&gt;0&lt;/code&gt; a &lt;code&gt;1&lt;/code&gt;. To ale není vše.
 &lt;strong&gt;Každé číslo může být použito jako pravdivostní hodnota.&lt;/strong&gt; Jako Nepravda –
-False se interpretuje pouze číslo &lt;code&gt;0&lt;/code&gt;. Všechna další čísla od nuly různá se
-interpretují jako Pravda – True. Tohoto se často využívá. Typické je to
+&lt;code&gt;false&lt;/code&gt; se interpretuje pouze číslo &lt;code&gt;0&lt;/code&gt;. Všechna další čísla od nuly různá se
+interpretují jako Pravda – &lt;code&gt;true&lt;/code&gt;. Tohoto se často využívá. Typické je to
 například, když překládáme &lt;em&gt;masku&lt;/em&gt; přes číslo, abychom zjistili stav
 jednotlivých bitů.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;// tisk binární podoby čísla&lt;/span&gt;
 &lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x5A&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;maska&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mb"&gt;0b1000000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;maska&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"0b"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maska&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;maska&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -1964,6 +1968,17 @@ jednotlivých bitů.&lt;/p&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/maska#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Maska zde nabývá hodnot 
+&lt;code&gt;0b10000000&lt;/code&gt;,
+&lt;code&gt;0b01000000&lt;/code&gt;,
+&lt;code&gt;0b00100000&lt;/code&gt;,
+&lt;code&gt;0b00010000&lt;/code&gt;,
+&lt;code&gt;0b00001000&lt;/code&gt;,
+&lt;code&gt;0b00000100&lt;/code&gt;,
+&lt;code&gt;0b00000010&lt;/code&gt; a 
+&lt;code&gt;0b00000001&lt;/code&gt;. Ve chvíli kdy nabude hodnotu &lt;code&gt;0b00000000&lt;/code&gt; z cyklu se vyskočí.
+Podobných hodnot nabývá výraz &lt;code&gt;cislo &amp;amp; maska&lt;/code&gt; v podmínce &lt;code&gt;if&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id="navratova-hodnota"&gt;Návratová hodnota&lt;a class="headerlink" href="#navratova-hodnota" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;V Céčku má každý výraz vždy sou návratovou hodnotu a tuto návratovou hodnotu
 lze uložit do proměnné.&lt;/p&gt;
@@ -1980,13 +1995,17 @@ potom teprve se vrátí hodnota již inkrementovaného &lt;code&gt;i&lt;/code&gt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Podobně lze  návratovou hodnotu použít jako pravdivostní výraz v podmínkách a
 cyklech. Například takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;// tisk binární podoby čísla&lt;/span&gt;
-&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"%d&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/navratovahodnota#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="ukazatele-pole-retezce"&gt;Ukazatele, pole, řetězce&lt;a class="headerlink" href="#ukazatele-pole-retezce" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c09.php"&gt;Pole a ukazatele&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="ukazatel-pointer"&gt;Ukazatel – pointer&lt;a class="headerlink" href="#ukazatel-pointer" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Ukazatel&lt;/strong&gt; je proměnná, která neobsahuje data, ale adresu na které se nachází
 data. Prostě a jednoduše ukazatel je proměnná obsahující adresu proměnné.
 Proměnná typu ‘ukazatel na &lt;code&gt;int&lt;/code&gt;&lt;span class="quo"&gt;‘&lt;/span&gt; obsahuje adresu, na které se v paměti nachází
@@ -2009,18 +2028,8 @@ Adresa paměti se získá pomocí operátoru &lt;code&gt;&amp;amp;&lt;/code&gt;.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/ukazatel#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ukazatelů se dá použít, když mám například 32-bitovou proměnnou a potřebuji z
-ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat například takto:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x12345678&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-
-&lt;span class="c1"&gt;// ukazatel na int přetypujeme na ukazatel na char&lt;/span&gt;
-&lt;span class="c1"&gt;// tím se jedna velká buňka rozdělí na 4 malé buňky&lt;/span&gt;
-&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Bytes: %02X %02X %02X %02X&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/bajty#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
+ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat 
+&lt;a href="#3-ukazatele"&gt;například takto&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id="pole-array"&gt;Pole – array&lt;a class="headerlink" href="#pole-array" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Pole&lt;/strong&gt; představuje kolekci několika hodnot stejného datového typu umístěného
 v paměti vedle sebe jednu položku po druhé. Ke každé položce této kolekce lze
@@ -2129,10 +2138,60 @@ efektivně číst a zapisovat stav jednotlivých pinů (operátor &lt;code&gt;##
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;HIGH(CLK);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Kód se tak lépe zapisuje, čte i portuje na jinou platformu.&lt;/p&gt;
-&lt;h2 id="struktury-a-uniony"&gt;Struktury a Uniony&lt;a class="headerlink" href="#struktury-a-uniony" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#define ...&lt;/span&gt;
+&lt;h2 id="dalsi-datove-typy"&gt;Další datové typy&lt;a class="headerlink" href="#dalsi-datove-typy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c15.php#struct"&gt;&lt;code&gt;struct&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c16.php#enum"&gt;&lt;code&gt;enum&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sallyx.org/sally/c/c16.php#union"&gt;&lt;code&gt;union&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte"&gt;Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte.&lt;a class="headerlink" href="#jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Pří práci s µkontrolerem a různými periferiemi lze poměrně často narazit na
+úlohy typu: Mám data v 32-bitové (4-Bytové) proměnné, ale abych je mohl
+zobrazit potřebuji každý Byte zvláště. Potřebuji tedy 32-bitovou proměnnou
+rozdělit na čtyři 8-bitové proměnné. Dá se to udělat celkem asi třemi různými
+způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.&lt;/p&gt;
+&lt;h3 id="1-masky"&gt;1. Masky&lt;a class="headerlink" href="#1-masky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x12345678&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0xFF000000L&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x00FF0000L&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x0000FF00L&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x000000FFL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Bytes: %02x %02x %02x %02x&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byte&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/masky#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="2-uniony"&gt;2. Uniony&lt;a class="headerlink" href="#2-uniony" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;union&lt;/span&gt; &lt;span class="nc"&gt;Number&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;whole&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bytes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;union&lt;/span&gt; &lt;span class="nc"&gt;Number&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;whole&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x12345678&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Bytes: %02x %02x %02x %02x&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bytes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bytes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bytes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bytes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/union#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="3-ukazatele"&gt;3. Ukazatele&lt;a class="headerlink" href="#3-ukazatele" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x12345678&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="c1"&gt;// ukazatel na int přetypujeme na ukazatel na char&lt;/span&gt;
+&lt;span class="c1"&gt;// tím se jedna velká buňka rozdělí na 4 malé buňky&lt;/span&gt;
+&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;unsigned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;cislo&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Bytes: %02X %02X %02X %02X&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ukazatel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://replit.com/@MarrekNozka/bajty#main.c"&gt;Vyzkoušet&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="moduly-a-externi-promenne"&gt;Moduly a externí proměnné&lt;a class="headerlink" href="#moduly-a-externi-promenne" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Toto téma rozvedeno v postu
+&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Oddělená kompilace a vlastní knihovny&lt;/a&gt;.&lt;/p&gt;
 &lt;hr/&gt;
 &lt;p&gt;&lt;img alt="Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%" src="https://chytrosti.marrek.cz/mit/market2.jpg"/&gt;&lt;/p&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category></entry><entry><title>Oddělená kompilace a vlastní knihovny</title><link href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-01-02T12:17:45+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/oddelena-kompilace-a-vlastni-knihovny.html</id><summary type="html">&lt;p&gt;Zde se pokusím&amp;nbsp;ukázatttt&lt;/p&gt;</summary><content type="html">&lt;p&gt;ahoj aaa
 aaa&amp;nbsp;bbb&lt;/p&gt;
