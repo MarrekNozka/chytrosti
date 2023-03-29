@@ -42,6 +42,7 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu `while` nebo 
 ```c
 void main(void)
 {
+    setup();
 
     while (1) {
         udelej_to();
@@ -53,6 +54,7 @@ void main(void)
 ```c
 void main(void)
 {
+    setup();
 
     for (;;) {
         udelej_to();
@@ -61,7 +63,11 @@ void main(void)
 }
 
 ```
-Obecně vypadá hlavička [funkce](https://www.w3schools.com/c/c_functions.php) takto:
+
+* [více o struktuře programu a funkci `main`](https://www.sallyx.org/sally/c/c04.php)
+
+
+Obecně vypadá hlavička [funkce](https://www.sallyx.org/sally/c/c13.php) takto:
 
 `datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)`
 
@@ -219,7 +225,7 @@ datové typy které to zaručují a kde je vše jasné hned na první pohled.
 My je máme definovány v knihovně SPL a jsou dostupné jakmile zavoláme
 `#include stm8s.h`.
 
-Je pravidlem, že vlastní/uživatelské datové typy užívají posfix `_t`.
+Je pravidlem, že vlastní/uživatelské datové typy užívají postfix `_t`.
 Písmeno `u` na začátku znamená `unsigned` -- tedy bez znaménka. Do takové
 proměnné můžeme tedy ukládat pouze kladná čísla.
 
@@ -241,25 +247,18 @@ znak, jehož číselná hodnota je v ní uložena.
 Řízení běhu programu
 =======================
 
-Větvení
-------------
- 
-Pro
-[větvení](https://www.tutorialspoint.com/cprogramming/c_decision_making.htm) se
-používá výraz:
-
-* `if`: <https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm>
-* `if .. else`: <https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm>
-* `switch`: <https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm>
-
-
-Cykly
-----------------
-
-* <https://www.tutorialspoint.com/cprogramming/c_loops.htm>
-* `while`: <https://www.tutorialspoint.com/cprogramming/c_while_loop.htm>
-* `do while`: <https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm>
-* `for`: <https://www.tutorialspoint.com/cprogramming/c_for_loop.htm>
+* [Podmínky a cykly](https://www.sallyx.org/sally/c/c12.php)
+* Pro
+  [větvení](https://www.tutorialspoint.com/cprogramming/c_decision_making.htm) se
+  používá výraz:
+  [`if`](https://www.tutorialspoint.com/cprogramming/if_statement_in_c.htm),
+  [`if .. else`](https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm),
+  [`switch`](https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm).
+* [Cykly](https://www.tutorialspoint.com/cprogramming/c_loops.htm) máme k
+  dispozici ve třech podobách:
+  [`while`](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm),
+  [`do while`](https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm),
+  [`for`](https://www.tutorialspoint.com/cprogramming/c_for_loop.htm).
 
 
 Čísla a operace
@@ -280,6 +279,7 @@ udává datový typ.
 30U        /* unsigned int */
 30L        /* long */
 30UL       /* unsigned long */
+55123123123ULL       /* unsigned long long */
 ```
 
 **Znaková konstanta** je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
@@ -346,15 +346,15 @@ Pravda a nepravda
 
 Pravdivostní hodnota je reprezentována čísly `0` a `1`. To ale není vše.
 **Každé číslo může být použito jako pravdivostní hodnota.** Jako Nepravda --
-False se interpretuje pouze číslo `0`. Všechna další čísla od nuly různá se
-interpretují jako Pravda -- True. Tohoto se často využívá. Typické je to
+`false` se interpretuje pouze číslo `0`. Všechna další čísla od nuly různá se
+interpretují jako Pravda -- `true`. Tohoto se často využívá. Typické je to
 například, když překládáme *masku* přes číslo, abychom zjistili stav
 jednotlivých bitů.
 
 ```c
 // tisk binární podoby čísla
 cislo = 0x5A;
-maska = 0b1000000;
+maska = 1 << 7;
 printf("0b");
 while (maska) {
   if (cislo & maska) {
@@ -367,6 +367,18 @@ while (maska) {
 printf("\n");
 
 ```
+[Vyzkoušet](https://replit.com/@MarrekNozka/maska#main.c)
+
+Maska zde nabývá hodnot 
+`0b10000000`,
+`0b01000000`,
+`0b00100000`,
+`0b00010000`,
+`0b00001000`,
+`0b00000100`,
+`0b00000010` a 
+`0b00000001`. Ve chvíli kdy nabude hodnotu `0b00000000` z cyklu se vyskočí.
+Podobných hodnot nabývá výraz `cislo & maska` v podmínce `if`.
 
 Návratová hodnota
 ---------------------
@@ -393,16 +405,21 @@ Podobně lze  návratovou hodnotu použít jako pravdivostní výraz v podmínk�
 cyklech. Například takto:
 
 ```c
-// tisk binární podoby čísla
-i = 0
+i = 0;
 while (i++ > 5) {
   printf("%d\n", i);
 }
 ```
+[Vyzkoušet](https://replit.com/@MarrekNozka/navratovahodnota#main.c)
 
 
 Ukazatele, pole, řetězce
 =======================================
+
+* [Pole a ukazatele](https://www.sallyx.org/sally/c/c09.php)
+
+Ukazatel -- pointer
+------------------------
 
 **Ukazatel** je proměnná, která neobsahuje data, ale adresu na které se nachází
 data. Prostě a jednoduše ukazatel je proměnná obsahující adresu proměnné.
@@ -430,21 +447,9 @@ printf("%d\n", *ukazatel_dalsi);   // vytiskne 123
 
 
 Ukazatelů se dá použít, když mám například 32-bitovou proměnnou a potřebuji z
-ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat například
-takto:
+ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat 
+[například takto](#3-ukazatele).
 
-```c
-unsigned int cislo = 0x12345678;
-unsigned char *ukazatel;
-
-// ukazatel na int přetypujeme na ukazatel na char
-// tím se jedna velká buňka rozdělí na 4 malé buňky
-ukazatel = (unsigned char *)&cislo;
-
-printf("Bytes: %02X %02X %02X %02X\n", *ukazatel, *(ukazatel + 1),
-        *(ukazatel + 2), *(ukazatel + 3));
-```
-<a href="https://replit.com/@MarrekNozka/bajty#main.c">Vyzkoušet</a>
 
 Pole -- array
 ----------------
@@ -586,12 +591,82 @@ Místo poměrně těžkopádného:
 Kód se tak lépe zapisuje, čte i portuje na jinou platformu.
 
 
-Struktury a Uniony
+Další datové typy
 ===========================
 
+* [`struct`](https://www.sallyx.org/sally/c/c15.php#struct)
+* [`enum`](https://www.sallyx.org/sally/c/c16.php#enum)
+* [`union`](https://www.sallyx.org/sally/c/c16.php#union)
+
+
+Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte.
+========================================================
+
+Pří práci s µkontrolerem a různými periferiemi lze poměrně často narazit na
+úlohy typu: Mám data v 32-bitové (4-Bytové) proměnné, ale abych je mohl
+zobrazit potřebuji každý Byte zvláště. Potřebuji tedy 32-bitovou proměnnou
+rozdělit na čtyři 8-bitové proměnné. Dá se to udělat celkem asi třemi různými
+způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.
+
+1. Masky
+----------
+
 ```c
+unsigned int num = 0x12345678;
+unsigned char byte[4];
+
+byte[0] = (num & 0xFF000000L) >> 24;
+byte[1] = (num & 0x00FF0000L) >> 16;
+byte[2] = (num & 0x0000FF00L) >> 8;
+byte[3] = (num & 0x000000FFL);
+
+printf("Bytes: %02x %02x %02x %02x\n", byte[0], byte[1], byte[2], byte[3]);
+```
+[Vyzkoušet](https://replit.com/@MarrekNozka/masky#main.c)
+
+2. Uniony
+----------
+
+```c
+union Number {
+  unsigned int whole;
+  unsigned char bytes[4];
+};
+
+int main() {
+  union Number num;
+  num.whole = 0x12345678;
+  printf("Bytes: %02x %02x %02x %02x\n", num.bytes[0], num.bytes[1],
+         num.bytes[2], num.bytes[3]);
+  return 0;
+}
 ```
 <a href="https://replit.com/@MarrekNozka/union#main.c">Vyzkoušet</a>
+
+3. Ukazatele 
+---------------
+
+```c
+unsigned int cislo = 0x12345678;
+unsigned char *ukazatel;
+
+// ukazatel na int přetypujeme na ukazatel na char
+// tím se jedna velká buňka rozdělí na 4 malé buňky
+ukazatel = (unsigned char *)&cislo;
+
+printf("Bytes: %02X %02X %02X %02X\n", *ukazatel, *(ukazatel + 1),
+        *(ukazatel + 2), *(ukazatel + 3));
+```
+<a href="https://replit.com/@MarrekNozka/bajty#main.c">Vyzkoušet</a>
+
+
+Moduly a externí proměnné
+=============================
+
+Toto téma rozvedeno v postu
+[Oddělená kompilace a vlastní knihovny]({filename}./kompilace_knihovny.md).
+
+
 
 -----------------------------------------------------
 
