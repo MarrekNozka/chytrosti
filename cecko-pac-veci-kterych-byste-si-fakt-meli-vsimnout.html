@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
-<meta property="og:article:modified_time" content="2023-03-29T14:05:10.154160+02:00" />
+<meta property="og:article:modified_time" content="2023-03-29T14:05:10.154159+02:00" />
 <meta name="twitter:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout ">
 <meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …">
 
@@ -150,6 +150,7 @@
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -187,25 +188,25 @@ se tím měli vážně zabývat. </p>
 programu/projektu. V našem případě by funkce <code>main</code> měla obsahovat nekonečnou
 smyčku hlavního programu. Procesor musí stále něco dělat, proto musí běžet v
 nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</code> nebo <code>for</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">setup</span><span class="p">();</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">setup</span><span class="p">();</span>
 
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span>
+<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">setup</span><span class="p">();</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">setup</span><span class="p">();</span>
 
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">udelej_to</span><span class="p">();</span>
+<span class="w">        </span><span class="n">udelej_tohle</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="https://www.sallyx.org/sally/c/c04.php">více o struktuře programu a funkci <code>main</code></a></li>
@@ -213,37 +214,37 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</
 <p>Obecně vypadá hlavička <a href="https://www.sallyx.org/sally/c/c13.php">funkce</a> takto:</p>
 <p><code>datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)</code></p>
 <p>konkrétně pak takto:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="nf">prevod</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="nf">prevod</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
 
-<span class="w">    </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">c</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">c</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Funkce jménem <code>prevod</code> vrací 16-bitové číslo datového typu <code>int16_t</code>. Jako
 parametry funkce přebírá dvě 8-bitová čísla <code>a</code> a <code>b</code> typu <code>int8_t</code>.
 Funkci potom můžeme volat třeba takto:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span><span class="w"></span>
-<span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prevod</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
+<span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prevod</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
 </code></pre></div>
 <p>Pokud funkce nic nevrací, nebo nemá žádné parametry použijeme klíčové slovo
 <code>void</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">delay_1ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">248</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">delay_1ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">248</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Když funkci voláme, musíme vždy uvést závorky, i když nepřebírá žádné parametry:</p>
-<div class="highlight"><pre><span></span><code><span class="n">delay_1ms</span><span class="p">();</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">delay_1ms</span><span class="p">();</span>
 </code></pre></div>
 <h2 id="jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?<a class="headerlink" href="#jak-je-to-vlastne-s-kompilaci" title="Permanent link">¶</a></h2>
 <p>Mějme tento zdrojový text:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stm8s.h"</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">"milis.h"</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stm8s.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"milis.h"</span>
 
 <span class="cp">#define LED_PORT GPIOC</span>
 <span class="cp">#define LED_PIN  GPIO_PIN_5</span>
@@ -251,31 +252,31 @@ Funkci potom můžeme volat třeba takto:</p>
 <span class="cp">#define LED_LOW  GPIO_WriteLow(LED_PORT, LED_PIN)</span>
 <span class="cp">#define LED_REVERSE GPIO_WriteReverse(LED_PORT, LED_PIN)</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">CLK_HSIPrescalerConfig</span><span class="p">(</span><span class="n">CLK_PRESCALER_HSIDIV1</span><span class="p">);</span><span class="w">      </span><span class="c1">// taktovani MCU na 16MHz</span>
-<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">LED_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">BTN_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">BTN_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">LED_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">BTN_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">BTN_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">init_milis</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">init_milis</span><span class="p">();</span>
+<span class="p">}</span>
 
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 
-<span class="w">    </span><span class="n">setup</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">setup</span><span class="p">();</span>
 
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">333</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">milis</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">333</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">LED_REVERSE</span><span class="p">;</span><span class="w"> </span>
-<span class="w">            </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="n">time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">milis</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
 několika fázích.</p>
@@ -313,7 +314,7 @@ pro nás ale z důvodů omezené paměti není většinou vhodný.</p>
 Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
 použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
 Jediná zaručená věc je toto:</p>
-<div class="highlight"><pre><span></span><code><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span>
 </code></pre></div>
 <p>Operátor <a href="https://www.tutorialspoint.com/sizeof-operator-in-c"><code>sizeof</code></a>
 vrací počet bytů, použitých v paměti pro danou proměnnou.</p>
@@ -435,24 +436,24 @@ znak, jehož číselná hodnota je v ní uložena.</p>
 možné zapisovat v desítkové, osmičkové (prefix <code>0</code>), šestnáctkové (prefix <code>0x</code>)
 nebo dvojkové (prefix <code>0b</code>)soustavě. Přičemž písmenko na konci čísla (<code>U</code>, <code>L</code>)
 udává datový typ.</p>
-<div class="highlight"><pre><span></span><code><span class="mi">85</span><span class="w">         </span><span class="cm">/* decimal */</span><span class="w"></span>
-<span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span><span class="w"></span>
-<span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span><span class="w"></span>
-<span class="mb">0b100101</span><span class="w">   </span><span class="cm">/* binar */</span><span class="w"></span>
-<span class="mi">30</span><span class="w">         </span><span class="cm">/* int */</span><span class="w"></span>
-<span class="mi">30U</span><span class="w">        </span><span class="cm">/* unsigned int */</span><span class="w"></span>
-<span class="mf">30L</span><span class="w">        </span><span class="cm">/* long */</span><span class="w"></span>
-<span class="mi">30UL</span><span class="w">       </span><span class="cm">/* unsigned long */</span><span class="w"></span>
-<span class="mi">55123123123ULL</span><span class="w">       </span><span class="cm">/* unsigned long long */</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="mi">85</span><span class="w">         </span><span class="cm">/* decimal */</span>
+<span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span>
+<span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span>
+<span class="mb">0b100101</span><span class="w">   </span><span class="cm">/* binar */</span>
+<span class="mi">30</span><span class="w">         </span><span class="cm">/* int */</span>
+<span class="mi">30U</span><span class="w">        </span><span class="cm">/* unsigned int */</span>
+<span class="mf">30L</span><span class="w">        </span><span class="cm">/* long */</span>
+<span class="mi">30UL</span><span class="w">       </span><span class="cm">/* unsigned long */</span>
+<span class="mi">55123123123ULL</span><span class="w">       </span><span class="cm">/* unsigned long long */</span>
 </code></pre></div>
 <p><strong>Znaková konstanta</strong> je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
 hodnota konkrétního znaku je dána <a href="https://cs.wikipedia.org/wiki/ASCII">Ascii
 tabulkou</a>. Zapisuje se do apostrofů.</p>
 <p>Oba tyto zápisy jsou ekvivalentní:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">znak</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">znak</span><span class="p">;</span>
 
-<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'@'</span><span class="p">;</span><span class="w"></span>
-<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span><span class="w"></span>
+<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'@'</span><span class="p">;</span>
+<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span>
 </code></pre></div>
 <p><a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm">Operátory</a> zde
 nebudu zevrubně popisovat ale jen zdůrazním následující:</p>
@@ -465,9 +466,9 @@ Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže vý
 <p>Dále je třeba si dát pozor a neplést si <em>bitové</em> a <em>logické</em> operátory.
 Logické operátory <code>&amp;&amp;</code> <span class="caps">AND</span>, <code>||</code> <span class="caps">OR</span> a <code>!</code> <span class="caps">NOT</span> pracují s pravdivostní hodnotou.</p>
 <p>Například:</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">12</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">a</span><span class="o">&lt;</span><span class="mi">24</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d je cislo mezi 13 a 23"</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">12</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">a</span><span class="o">&lt;</span><span class="mi">24</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d je cislo mezi 13 a 23"</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Bitové operátory <code>&amp;</code> <span class="caps">AND</span>, <code>|</code> <span class="caps">OR</span>, <code>^</code> <span class="caps">EXOR</span> a <code>~</code> <span class="caps">NOT</span>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code> provádí bitové
 s čísly.</p>
@@ -490,18 +491,18 @@ interpretují jako Pravda – <code>true</code>. Tohoto se často využívá. Ty
 například, když překládáme <em>masku</em> přes číslo, abychom zjistili stav
 jednotlivých bitů.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// tisk binární podoby čísla</span>
-<span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x5A</span><span class="p">;</span><span class="w"></span>
-<span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"></span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"0b"</span><span class="p">);</span><span class="w"></span>
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cislo</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"1"</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"0"</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maska</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="w"></span>
+<span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x5A</span><span class="p">;</span>
+<span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"0b"</span><span class="p">);</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cislo</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"1"</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"0"</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maska</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/maska#main.c">Vyzkoušet</a></p>
 <p>Maska zde nabývá hodnot 
@@ -522,18 +523,18 @@ návratové hodnotě. Pokud použijete <code>i++</code>, nejprve se je vrácena 
 potom teprve se přičte jedna. Pokud použijete <code>++i</code>, nejprve se přičte jedna a
 potom teprve se vrátí hodnota již inkrementovaného <code>i</code>. Analogicky platí totéž pro
 <code>i--</code> a <code>--i</code>;</p>
-<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
 <span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// v j bude 3, v i bude 4</span>
 
-<span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
 <span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">// v j bude 4, v i bude 4</span>
 </code></pre></div>
 <p>Podobně lze  návratovou hodnotu použít jako pravdivostní výraz v podmínkách a
 cyklech. Například takto:</p>
-<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">++</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">++</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/navratovahodnota#main.c">Vyzkoušet</a></p>
 <h2 id="ukazatele-pole-retezce">Ukazatele, pole, řetězce<a class="headerlink" href="#ukazatele-pole-retezce" title="Permanent link">¶</a></h2>
@@ -546,9 +547,9 @@ data. Prostě a jednoduše ukazatel je proměnná obsahující adresu proměnné
 Proměnná typu ‘ukazatel na <code>int</code><span class="quo">‘</span> obsahuje adresu, na které se v paměti nachází
 číslo typu <code>int</code>. Ukazatel se deklaruje a vyhodnocuje pomocí operátoru <code>*</code>.
 Adresa paměti se získá pomocí operátoru <code>&amp;</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_cislo</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_dalsi</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_cislo</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_dalsi</span><span class="p">;</span>
 
 <span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w">              </span><span class="c1">// do proměnné cislo uložím 77</span>
 <span class="n">ukazatel_cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cislo</span><span class="p">;</span><span class="w"> </span><span class="c1">// ukazatel_cislo má v sobě uloženou adresu proměnné cislo</span>
@@ -556,7 +557,7 @@ Adresa paměti se získá pomocí operátoru <code>&amp;</code>.</p>
 <span class="o">*</span><span class="n">ukazatel_cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">;</span><span class="w">   </span><span class="c1">// v proměnné cislo je 123</span>
 <span class="w">                         </span><span class="c1">// (protože ukazatel_cislo ma v sobě adresu promenne cislo)</span>
 
-<span class="n">ukazatel_dalsi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ukazatel_cislo</span><span class="p">;</span><span class="w"></span>
+<span class="n">ukazatel_dalsi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ukazatel_cislo</span><span class="p">;</span>
 
 <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">cislo</span><span class="p">);</span><span class="w">             </span><span class="c1">// vytiskne 123</span>
 <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_dalsi</span><span class="p">);</span><span class="w">   </span><span class="c1">// vytiskne 123</span>
@@ -569,22 +570,22 @@ ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat
 <p><strong>Pole</strong> představuje kolekci několika hodnot stejného datového typu umístěného
 v paměti vedle sebe jednu položku po druhé. Ke každé položce této kolekce lze
 přistupovat zvlášť pomocí indexu.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">pole</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">pole</span><span class="p">;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">cislo</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">cislo</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="n">pole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span><span class="w"></span>
+<span class="n">pole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
 
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace pomocí []: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span><span class="w"></span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace ukazatele:  %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">pole</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span><span class="w"></span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace pomocí []: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace ukazatele:  %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">pole</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/pole#main.c">Vyzkoušet</a></p>
 <p><strong>Pole a ukazatel jsou v Céčku velmi úzce svázané</strong>. Proměnná <code>cislo</code> je typově
@@ -596,12 +597,12 @@ se část pamětí ve které se v danou chvíli nachází třeba jiná proměnn�
 vést k naprosto neočekávanému pseudonáhodnému chování.</p>
 <h3 id="retezec-string">Řetězec – string<a class="headerlink" href="#retezec-string" title="Permanent link">¶</a></h3>
 <p><strong>Řetězec</strong> je “jen” pole znaků. Dá se s ním tedy pracovat stejně jako s polem.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Cecko je nejlepsi."</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Cecko je nejlepsi."</span><span class="p">;</span>
 
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%c, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"KONEC"</span><span class="p">);</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%c, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"KONEC"</span><span class="p">);</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/retezec#main.c">Vyzkoušet</a></p>
 <p>Každý správný řetězec v Céčku končí znakem <code>\0</code> s ascii hodnou 0 (nula). Podle
@@ -618,25 +619,25 @@ ve zdrojovém kódu vyskytne toto makro, je nahrazeno jeho obsahem. Případná
 <em>změna</em> tedy proběhne jen jednom místě – při definici. <strong>Makra se provádí
 (expandují) ještě před zahájením kompilace</strong>. To je velký a zásadní rozdíl
 oproti proměnným, které se nachází v paměti.</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 
 <span class="cp">#define MAX 12</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">putchar</span><span class="p">(</span><span class="sc">'\n'</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">putchar</span><span class="p">(</span><span class="sc">'\n'</span><span class="p">);</span>
 
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/makro#main.c">Vyzkoušet</a></p>
 <p>V našem případě budeme marka používat pro pojmenování jednotlivých pinů. To je
@@ -649,13 +650,13 @@ jednotlivé periferie nebo portovat projekt na jiný mikrokontroler.</p>
 <span class="cp">#define NCODER_DATA_PORT GPIOB</span>
 <span class="cp">#define NCODER_DATA_PIN GPIO_PIN_4</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">LED_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">LED_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">LED_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">NCODER_CLK_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">NCODER_CLK_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">NCODER_DATA_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">NCODER_DATA_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">NCODER_CLK_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">NCODER_CLK_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">NCODER_DATA_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">NCODER_DATA_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Já osobně si ještě dělám vždy sadu maker s parametrem, která mi umožňuje
 efektivně číst a zapisovat stav jednotlivých pinů (operátor <code>##</code> provádí sřetězení):</p>
@@ -686,42 +687,42 @@ zobrazit potřebuji každý Byte zvláště. Potřebuji tedy 32-bitovou proměnn
 rozdělit na čtyři 8-bitové proměnné. Dá se to udělat celkem asi třemi různými
 způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
 <h3 id="1-masky">1. Masky<a class="headerlink" href="#1-masky" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span><span class="w"></span>
-<span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
+<span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
 
-<span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xFF000000L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">24</span><span class="p">;</span><span class="w"></span>
-<span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x00FF0000L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"></span>
-<span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0000FF00L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w"></span>
-<span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x000000FFL</span><span class="p">);</span><span class="w"></span>
+<span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xFF000000L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">24</span><span class="p">;</span>
+<span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x00FF0000L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
+<span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0000FF00L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x000000FFL</span><span class="p">);</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span><span class="w"></span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/masky#main.c">Vyzkoušet</a></p>
 <h3 id="2-uniony">2. Uniony<a class="headerlink" href="#2-uniony" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">union</span> <span class="nc">Number</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">whole</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">bytes</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">union</span><span class="w"> </span><span class="nc">Number</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">whole</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">bytes</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="p">};</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">union</span> <span class="nc">Number</span><span class="w"> </span><span class="n">num</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">num</span><span class="p">.</span><span class="n">whole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"></span>
-<span class="w">         </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">union</span><span class="w"> </span><span class="nc">Number</span><span class="w"> </span><span class="n">num</span><span class="p">;</span>
+<span class="w">  </span><span class="n">num</span><span class="p">.</span><span class="n">whole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">         </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/union#main.c">Vyzkoušet</a></p>
 <h3 id="3-ukazatele">3. Ukazatele<a class="headerlink" href="#3-ukazatele" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span><span class="w"></span>
-<span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
+<span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">;</span>
 
 <span class="c1">// ukazatel na int přetypujeme na ukazatel na char</span>
 <span class="c1">// tím se jedna velká buňka rozdělí na 4 malé buňky</span>
-<span class="n">ukazatel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">cislo</span><span class="p">;</span><span class="w"></span>
+<span class="n">ukazatel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">cislo</span><span class="p">;</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02X %02X %02X %02X</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"></span>
-<span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02X %02X %02X %02X</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span>
 </code></pre></div>
 <p><a href="https://replit.com/@MarrekNozka/bajty#main.c">Vyzkoušet</a></p>
 <h2 id="moduly-a-externi-promenne">Moduly a externí proměnné<a class="headerlink" href="#moduly-a-externi-promenne" title="Permanent link">¶</a></h2>
@@ -755,6 +756,7 @@ způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -775,10 +777,10 @@ způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="./tags.html#cecko-ref">Céčko
-                    <span class="superscript">9</span>
+                    <span class="superscript">10</span>
 </a></li>
                 <li><a href="./tags.html#stm8-ref">STM8
-                    <span class="superscript">10</span>
+                    <span class="superscript">11</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

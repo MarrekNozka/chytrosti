@@ -23,8 +23,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-03-12T09:31:24.940137+01:00" />
-<meta property="og:article:modified_time" content="2022-03-12T09:31:24.940137+01:00" />
+<meta property="og:article:published_time" content="2022-03-12T09:31:24.940138+01:00" />
+<meta property="og:article:modified_time" content="2022-03-12T09:31:24.940138+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -164,9 +164,9 @@
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -213,7 +213,7 @@ nástrojů, které budete potřebovat.</p>
 <p>Nejprve nainstalujte <a href="./chocolatey.html">Chocolatye</a>. Tedy:</p>
 <p>Pomocí <code>Win+X</code> a spustíte PowerShell jako Administrátor
 a zadáte příkaz:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Set</span><span class="o">-</span><span class="n">ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-</span><span class="n">Scope</span> <span class="n">Process</span> <span class="o">-</span><span class="n">Force</span><span class="p">;</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">=</span> <span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span> <span class="o">-</span><span class="n">bor</span> <span class="mi">3072</span><span class="p">;</span> <span class="n">iex</span> <span class="p">((</span><span class="n">New</span><span class="o">-</span><span class="nb nb-Type">Object</span> <span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">WebClient</span><span class="p">)</span><span class="o">.</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">Set</span><span class="o">-</span><span class="n">ExecutionPolicy</span><span class="w"> </span><span class="n">Bypass</span><span class="w"> </span><span class="o">-</span><span class="n">Scope</span><span class="w"> </span><span class="n">Process</span><span class="w"> </span><span class="o">-</span><span class="n">Force</span><span class="p">;</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span><span class="w"> </span><span class="o">-</span><span class="n">bor</span><span class="w"> </span><span class="mi">3072</span><span class="p">;</span><span class="w"> </span><span class="n">iex</span><span class="w"> </span><span class="p">((</span><span class="n">New</span><span class="o">-</span><span class="nb nb-Type">Object</span><span class="w"> </span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">WebClient</span><span class="p">)</span><span class="o">.</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="p">))</span>
 </code></pre></div>
 <p>Potom doinstalujte další potřebné nástroje:</p>
 <div class="highlight"><pre><span></span><code>choco install vscodium git make mingw openocd
@@ -306,15 +306,15 @@ můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno�
 <p>K dispozici jsou tedy celkem tři <code>Makefile</code> v adresáři 
 <a href="https://github.com/spseol/STM8-start-toolchain/tree/main/.make"><code>.make</code></a>.
 Přepnutí jen realizováno jako symlink <code>Makefile</code> do root-adresáře projektu.</p>
-<div class="highlight"><pre><span></span><code>$ ls -l
-lrwx <span class="m">1</span> mar <span class="m">23</span> <span class="m">14</span>. led <span class="m">21</span>.14 Makefile -&gt; .make/Makefile-sdcc-gas
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ls<span class="w"> </span>-l
+lrwx<span class="w"> </span><span class="m">1</span><span class="w"> </span>mar<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">14</span>.<span class="w"> </span>led<span class="w"> </span><span class="m">21</span>.14<span class="w"> </span>Makefile<span class="w"> </span>-&gt;<span class="w"> </span>.make/Makefile-sdcc-gas
 </code></pre></div>
 <p>Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
 takže tato operace může být ztrátová. V <em>Makefile</em> je vše připraveno, takže
 stačí volat <code>make</code>.</p>
-<div class="highlight"><pre><span></span><code>    make switch-sdcc      <span class="c1"># respektive</span>
-    make switch-sdccrm    <span class="c1"># respektive</span>
-    make switch-sdcc-gas  <span class="c1"># respektive</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>make<span class="w"> </span>switch-sdcc<span class="w">      </span><span class="c1"># respektive</span>
+<span class="w">    </span>make<span class="w"> </span>switch-sdccrm<span class="w">    </span><span class="c1"># respektive</span>
+<span class="w">    </span>make<span class="w"> </span>switch-sdcc-gas<span class="w">  </span><span class="c1"># respektive</span>
 </code></pre></div>
 <h3 id="reseni-1-sdcc">Řešení 1: <span class="caps">SDCC</span><a class="headerlink" href="#reseni-1-sdcc" title="Permanent link">¶</a></h3>
 <p><a href="http://sdcc.sourceforge.net/"><span class="caps">SDCC</span> - Small Device C Compiler</a> je kompilátor
@@ -337,9 +337,9 @@ Velikost výsledného binárního souboru se tak rapidně zmenší, ale pokud bu
 pracovat s čipem, který má jen 8 kB paměti programu, obávám se, že to
 nemusí stačit….</p>
 <p>V <em>Makefile</em> někde kolem řádku 77 najdete toto:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">SPL_SOURCE</span>  <span class="o">=</span> stm8s_gpio.c stm8s_clk.c stm8s_tim4.c stm8s_itc.c 
+<div class="highlight"><pre><span></span><code><span class="nv">SPL_SOURCE</span><span class="w">  </span><span class="o">=</span><span class="w"> </span>stm8s_gpio.c<span class="w"> </span>stm8s_clk.c<span class="w"> </span>stm8s_tim4.c<span class="w"> </span>stm8s_itc.c<span class="w"> </span>
 <span class="c">#SPL_SOURCE += stm8s_uart1.c</span>
-<span class="nv">SPL_SOURCE</span> <span class="o">+=</span> stm8s_adc2.c
+<span class="nv">SPL_SOURCE</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>stm8s_adc2.c
 <span class="c">#SPL_SOURCE += stm8s_flash.c</span>
 <span class="c">#SPL_SOURCE += stm8s_tim1.c</span>
 <span class="c">#SPL_SOURCE += stm8s_tim2.c</span>
@@ -376,10 +376,10 @@ toolsetu</a> a je v souboru <code>.make/sdccrm.exe</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">mingw</span>
 </code></pre></div>
 <p>nebo v Linuxu:</p>
-<div class="highlight"><pre><span></span><code>apt install gcc
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>install<span class="w"> </span>gcc
 </code></pre></div>
 <p>a pak jen:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> sdccrm
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>sdccrm
 make
 </code></pre></div>
 <h3 id="reseni-3-sdcc-gas">Řešení 3: <span class="caps">SDCC</span>-gas<a class="headerlink" href="#reseni-3-sdcc-gas" title="Permanent link">¶</a></h3>
@@ -400,41 +400,41 @@ assembleru a vám nezbude, než to nějak obejít nebo danou funkci přepsat do 
 a 
 <a href="https://github.com/XaviDCR92/stm8-dce-example/issues/2#issuecomment-700907460">zde</a></p>
 <p>Toto je důvod proč v <em>Makefile</em> sdcc-gas jsou tyto řádky:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">SDCC_LIB_SRC_DIR</span> <span class="o">=</span> /usr/local/stow/sdcc-gas/share/sdcc/lib/src/
-<span class="nv">SDCC_LIB_SOURCE</span> <span class="o">=</span> _mullong.c _divulong.c _mulint.c _modsint.c
+<div class="highlight"><pre><span></span><code><span class="nv">SDCC_LIB_SRC_DIR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/local/stow/sdcc-gas/share/sdcc/lib/src/
+<span class="nv">SDCC_LIB_SOURCE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>_mullong.c<span class="w"> </span>_divulong.c<span class="w"> </span>_mulint.c<span class="w"> </span>_modsint.c
 <span class="c">#SDCC_LIB_SOURCE  = $(notdir $(wildcard /usr/local/stow/sdcc-gas/share/sdcc/lib/src/_*.c))</span>
-<span class="nv">SDCC_LIB_OBJECTS</span> <span class="o">:=</span> <span class="k">$(</span>addprefix <span class="k">$(</span>OUTPUT_DIR<span class="k">)</span>/, <span class="k">$(</span>SDCC_LIB_SOURCE:.c<span class="o">=</span>.o<span class="k">))</span>
+<span class="nv">SDCC_LIB_OBJECTS</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">$(</span>addprefix<span class="w"> </span><span class="k">$(</span>OUTPUT_DIR<span class="k">)</span>/,<span class="w"> </span><span class="k">$(</span>SDCC_LIB_SOURCE:.c<span class="o">=</span>.o<span class="k">))</span>
 </code></pre></div>
 <p>Případné problémy chybějících funkcí lze tedy vyřešit doplněním jména souboru
 do proměnné <code>SDCC_LIB_SOURCE</code>.</p>
 <p>Aby vše fungovalo musíte si <a href="https://github.com/XaviDCR92/sdcc-gas">stáhnout</a>
 výše zmíněné zdrojové kódy a buildnout je. Já to dělám takto (používám
 <a href="https://packages.debian.org/stable/stow">stow</a>):</p>
-<div class="highlight"><pre><span></span><code>sudo apt install stow
-sudo apt build-dep sdcc
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>stow
+sudo<span class="w"> </span>apt<span class="w"> </span>build-dep<span class="w"> </span>sdcc
 
-<span class="nb">cd</span> sdcc-gas
-./configure --prefix<span class="o">=</span>/usr/local/stow/sdcc-gas
+<span class="nb">cd</span><span class="w"> </span>sdcc-gas
+./configure<span class="w"> </span>--prefix<span class="o">=</span>/usr/local/stow/sdcc-gas
 make
-sudo make install
+sudo<span class="w"> </span>make<span class="w"> </span>install
 
-<span class="nb">cd</span> /usr/local/stow
-sudo stow sdcc-gas
+<span class="nb">cd</span><span class="w"> </span>/usr/local/stow
+sudo<span class="w"> </span>stow<span class="w"> </span>sdcc-gas
 </code></pre></div>
 <p>Podobný postup použijete pro 
 <a href="https://stm8-binutils-gdb.sourceforge.io/"><span class="caps">STM8</span> port</a> <span class="caps">GNU</span> binutils, který 
 je potřeba pro <a href="https://cs.wikipedia.org/wiki/Linker">linkování</a> a 
 <a href="https://cs.wikipedia.org/wiki/GNU_Debugger">debug</a>.:</p>
-<div class="highlight"><pre><span></span><code>tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
-<span class="nb">cd</span> stm8-binutils-gdb-sources
-<span class="nb">export</span> <span class="nv">PREFIX</span><span class="o">=</span>/usr/local/stow/stm8-binutils-gdb
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>xzf<span class="w"> </span>stm8-binutils-gdb-sources-2021-07-18.tar.gz
+<span class="nb">cd</span><span class="w"> </span>stm8-binutils-gdb-sources
+<span class="nb">export</span><span class="w"> </span><span class="nv">PREFIX</span><span class="o">=</span>/usr/local/stow/stm8-binutils-gdb
 ./patch_binutils.sh
-<span class="nb">cd</span> binutils-2.30
+<span class="nb">cd</span><span class="w"> </span>binutils-2.30
 make
-sudo make install
+sudo<span class="w"> </span>make<span class="w"> </span>install
 
-<span class="nb">cd</span> /usr/local/stow
-sudo stow  stm8-binutils-gdb
+<span class="nb">cd</span><span class="w"> </span>/usr/local/stow
+sudo<span class="w"> </span>stow<span class="w">  </span>stm8-binutils-gdb
 </code></pre></div>
 <p>Tato výše popsaná kompilace ze zdrojových kódů je teoreticky možná i na Windows,
 pomocí projektu <a href="https://www.cygwin.com/">Cygwin</a>. Prakticky jsem to nikdy
@@ -468,15 +468,15 @@ Verze 0.11: <code>openocd  -f interface/stlink-dap.cfg -f target/stm8s.cfg</code
 který to umí. Ten je buď součástí
 <a href="#startovaci-toolchain">startovacího toolsetu</a> nebo ho můžete přidat
 na konec konfiguračního souboru <code>stm8s.cfg</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">proc</span> <span class="nv">program_device</span> <span class="err">{</span><span class="nv">filename</span> <span class="nv">flashstart</span><span class="err">}</span> <span class="err">{</span>
-  <span class="nf">halt</span>
-  <span class="nf">wait_halt</span>
-  <span class="nf">load_image</span> <span class="kc">$</span><span class="nv">filename</span> <span class="kc">$</span><span class="nv">flashstart</span>
-  <span class="nf">sleep</span> <span class="mi">10</span>
-  <span class="nf">reset</span> <span class="nv">halt</span>
-  <span class="nf">resume</span>
-  <span class="nf">sleep</span> <span class="mi">10</span>
-  <span class="nf">shutdown</span>
+<div class="highlight"><pre><span></span><code><span class="k">proc</span><span class="w"> </span><span class="nv">program_device</span><span class="w"> </span><span class="err">{</span><span class="nv">filename</span><span class="w"> </span><span class="nv">flashstart</span><span class="err">}</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="nf">halt</span>
+<span class="w">  </span><span class="nf">wait_halt</span>
+<span class="w">  </span><span class="nf">load_image</span><span class="w"> </span><span class="kc">$</span><span class="nv">filename</span><span class="w"> </span><span class="kc">$</span><span class="nv">flashstart</span>
+<span class="w">  </span><span class="nf">sleep</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">  </span><span class="nf">reset</span><span class="w"> </span><span class="nv">halt</span>
+<span class="w">  </span><span class="nf">resume</span>
+<span class="w">  </span><span class="nf">sleep</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">  </span><span class="nf">shutdown</span>
 <span class="err">}</span><span class="c1">;</span>
 </code></pre></div>
 <p>V Linuxu by celá cesta mohla vypadat takto: <code>/usr/share/openocd/scripts/target/stm8s.cfg</code>. 
@@ -497,16 +497,16 @@ a <a href="#openocd">OpenOCD</a> (Open On Chip Debuger).</p>
 <h3 id="stm8-gdb"><span class="caps">STM8</span>-<span class="caps">GDB</span><a class="headerlink" href="#stm8-gdb" title="Permanent link">¶</a></h3>
 <p><span class="caps">STM8</span>-<span class="caps">GDB</span> je součástí <span class="caps">GNU</span> binutils. Instalaci jsem popsal výše. Pro přehlednost
 ještě jednou:</p>
-<div class="highlight"><pre><span></span><code>tar xzf stm8-binutils-gdb-sources-2021-07-18.tar.gz
-<span class="nb">cd</span> stm8-binutils-gdb-sources
-<span class="nb">export</span> <span class="nv">PREFIX</span><span class="o">=</span>/usr/local/stow/stm8-binutils-gdb
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>xzf<span class="w"> </span>stm8-binutils-gdb-sources-2021-07-18.tar.gz
+<span class="nb">cd</span><span class="w"> </span>stm8-binutils-gdb-sources
+<span class="nb">export</span><span class="w"> </span><span class="nv">PREFIX</span><span class="o">=</span>/usr/local/stow/stm8-binutils-gdb
 ./patch_binutils.sh
-<span class="nb">cd</span> binutils-2.30
+<span class="nb">cd</span><span class="w"> </span>binutils-2.30
 make
-sudo make install
+sudo<span class="w"> </span>make<span class="w"> </span>install
 
-<span class="nb">cd</span> /usr/local/stow
-sudo stow  stm8-binutils-gdb
+<span class="nb">cd</span><span class="w"> </span>/usr/local/stow
+sudo<span class="w"> </span>stow<span class="w">  </span>stm8-binutils-gdb
 </code></pre></div>
 <p>No a teď samotný postup ladění:</p>
 <h4 id="openocd_1">OpenOCD<a class="headerlink" href="#openocd_1" title="Permanent link">¶</a></h4>
@@ -594,9 +594,9 @@ a <a href="https://visualgdb.com/gdbreference/commands/display">display</a>.</p>
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
 <li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -613,13 +613,13 @@ a <a href="https://visualgdb.com/gdbreference/commands/display">display</a>.</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="./tags.html#cecko-ref">Céčko
-                    <span class="superscript">9</span>
+                    <span class="superscript">10</span>
 </a></li>
                 <li><a href="./tags.html#programovani-ref">programování
                     <span class="superscript">8</span>
 </a></li>
                 <li><a href="./tags.html#stm8-ref">STM8
-                    <span class="superscript">10</span>
+                    <span class="superscript">11</span>
 </a></li>
             </ul>
 <h4>Kontakt</h4>

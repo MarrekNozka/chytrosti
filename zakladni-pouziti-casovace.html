@@ -23,8 +23,8 @@
 <meta property="og:description" content="Náš STM8S208RB má na těle celkem čtyři časovače: TIM1, TIM2, TIM3 a TIM4. TIM4¶ TIM4 je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet /1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude čítat – tedy nastavuje strop časovače. Nastavení se děje pomocí …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2021-05-07T11:36:34.573239+02:00" />
-<meta property="og:article:modified_time" content="2021-05-07T11:36:34.573239+02:00" />
+<meta property="og:article:published_time" content="2021-05-07T11:36:34.573240+02:00" />
+<meta property="og:article:modified_time" content="2021-05-07T11:36:34.573240+02:00" />
 <meta name="twitter:title" content="Základní použití časovače ">
 <meta name="twitter:description" content="Náš STM8S208RB má na těle celkem čtyři časovače: TIM1, TIM2, TIM3 a TIM4. TIM4¶ TIM4 je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet /1, /2, /4, /8, /16, /32, /64 a /128. Auto-reload register říká kam až se bude čítat – tedy nastavuje strop časovače. Nastavení se děje pomocí …">
 
@@ -129,6 +129,7 @@
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -147,7 +148,7 @@
 <p><img alt="TIM4" src="./mit/img/tim4.png"/></p>
 <p>Nastavení se děje pomocí funkce <code>TIM4_TimeBaseInit(PRESCALER, PERIOD)</code>, kde
 <code>PRESCALER</code> je makro, pro nastavení děličky a <code>PERIOD</code> je 8-bitové číslo.</p>
-<div class="highlight"><pre><span></span><code><span class="n">TIM4_TimeBaseInit</span><span class="p">(</span><span class="n">TIM4_PRESCALER_128</span><span class="p">,</span><span class="w"> </span><span class="mi">125</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">TIM4_TimeBaseInit</span><span class="p">(</span><span class="n">TIM4_PRESCALER_128</span><span class="p">,</span><span class="w"> </span><span class="mi">125</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
 </code></pre></div>
 <p>Takže pokud máme nastaven kmitočet na 16MHz znamená to že čítač čítá do hodnoty
 125 (respektive 124 protože čítáme od nuly) s frekvencí <code>16MHz/128 == 125 kHz</code>.
@@ -160,12 +161,12 @@ přerušení od časovače <span class="caps">TIM4</span>.</p>
 <li>globálně povolit přerušení</li>
 <li>napsat tělo obslužné rutiny přerušení.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">TIM4_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w">                       </span><span class="c1">// povolí TIM4</span>
 <span class="w">  </span><span class="n">TIM4_ITConfig</span><span class="p">(</span><span class="n">TIM4_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w">  </span><span class="c1">// povolí přerušení od TIM4</span>
 <span class="w">  </span><span class="n">enableInterrupts</span><span class="p">();</span><span class="w">                     </span><span class="c1">// globálně povolí přerušení</span>
-<span class="w">  </span><span class="p">......</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">......</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Rutina přerušení se standardně nachází v souboru <code>stm8_it.c</code>. Stačí ji najít
 přepsat. Pokud potřebujete v rutině přerušení pracovat s proměnnou definovanou
@@ -173,12 +174,12 @@ v <code>main.c</code> (což je myslím téměř vždy) je třeba tuto proměnnou
 direktivou <code>extern</code> nebo rutinu přesunout přímo do souboru <code>main.c</code>.
 Více o tom se dočtete v postu
 <a href="./oddelena-kompilace-a-vlastni-knihovny.html">Kompilace a knihovny</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="cm">/*---        rutina obsluhy přerušení         ---*/</span><span class="w"></span>
-<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM4_UPD_OVF_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">23</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="cm">/*---        rutina obsluhy přerušení         ---*/</span>
+<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM4_UPD_OVF_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">23</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">TIM4_ClearFlag</span><span class="p">(</span><span class="n">TIM4_FLAG_UPDATE</span><span class="p">);</span><span class="w"> </span><span class="c1">// vymažu vlajku signalizující přerušení</span>
 <span class="w">    </span><span class="n">miliseconds</span><span class="o">++</span><span class="p">;</span><span class="w">                    </span><span class="c1">// udělám co je třeba....</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Všimněte si prosím, že první, co se v rutině přerušení dělá, je, že se <strong>vymaže
 vlajka</strong>, která označuje, že k přerušení došlo.</p>
@@ -195,35 +196,35 @@ která umožňuje zjistit počet milisekund uplynulých od “spuštění progr
 <p>Takže například pokud vytváříme cokoli, co pracuje s časem a potřebujeme
 spustit určitý kód vždy přesně v intervalu <span class="math">\(1\,\mathrm{s}\)</span>, může inicializace
 časovače vypadat například takto:</p>
-<div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM2 setup           ---------*/</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM2 setup           ---------*/</span>
 <span class="n">TIM2_TimeBaseInit</span><span class="p">(</span><span class="n">TIM2_PRESCALER_512</span><span class="p">,</span><span class="w"> </span><span class="mi">31250</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">);</span><span class="w">  </span><span class="c1">// 16MHz/512/31250 == 1Hz</span>
 <span class="n">TIM2_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w">                       </span><span class="c1">// povolí TIM2</span>
 <span class="n">TIM2_ITConfig</span><span class="p">(</span><span class="n">TIM2_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w">  </span><span class="c1">// povolí přerušení od TIM2</span>
 <span class="n">enableInterrupts</span><span class="p">();</span><span class="w">                     </span><span class="c1">// globálně povolí přerušení</span>
 </code></pre></div>
 <p>nastavení <span class="caps">TIM3</span> je analogické:</p>
-<div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM3 setup           ---------*/</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="cm">/*----           TIM3 setup           ---------*/</span>
 <span class="n">TIM3_TimeBaseInit</span><span class="p">(</span><span class="n">TIM3_PRESCALER_16</span><span class="p">,</span><span class="w"> </span><span class="mi">12345</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">);</span><span class="w"> </span><span class="c1">// ~81Hz</span>
-<span class="n">TIM3_ITConfig</span><span class="p">(</span><span class="n">TIM3_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span><span class="w"></span>
-<span class="n">TIM3_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span><span class="w"></span>
+<span class="n">TIM3_ITConfig</span><span class="p">(</span><span class="n">TIM3_IT_UPDATE</span><span class="p">,</span><span class="w"> </span><span class="n">ENABLE</span><span class="p">);</span>
+<span class="n">TIM3_Cmd</span><span class="p">(</span><span class="n">ENABLE</span><span class="p">);</span>
 </code></pre></div>
 <p>No a ještě rutiny přerušení… Opět platí, že <strong>rutiny přerušení buď necháme v souboru
 <code>stm8_it.c</code> a proměnné označíme pomocí direktivy <code>extern</code> nebo si rutiny
 přesuneme do modulu/souboru ve kterém je proměnná definována</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM2_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM2_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">TIM2_ClearFlag</span><span class="p">(</span><span class="n">TIM2_FLAG_UPDATE</span><span class="p">);</span><span class="w">   </span><span class="c1">// vymažu vlaku signalizující </span>
 
-<span class="w">    </span><span class="n">udelam_neco_zajimaveho</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">sec</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">a_jeste_neco_jineho</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">udelam_neco_zajimaveho</span><span class="p">();</span>
+<span class="w">    </span><span class="n">sec</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="n">a_jeste_neco_jineho</span><span class="p">();</span>
+<span class="p">}</span>
 
-<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM3_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="n">INTERRUPT_HANDLER</span><span class="p">(</span><span class="n">TIM3_UPD_OVF_BRK_IRQHandler</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">TIM3_ClearFlag</span><span class="p">(</span><span class="n">TIM3_FLAG_UPDATE</span><span class="p">);</span><span class="w"> </span>
-<span class="w">    </span><span class="n">LED_REVERSE</span><span class="p">(</span><span class="n">G</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">LED_REVERSE</span><span class="p">(</span><span class="n">G</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="zdrojove-kody">Zdrojové kódy<a class="headerlink" href="#zdrojove-kody" title="Permanent link">¶</a></h2>
 <p>Kompletní zdrojové kódy naleznete v repositáři na GitHubu: <br/>
@@ -316,6 +317,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována</strong>.</p>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -332,10 +334,10 @@ přesuneme do modulu/souboru ve kterém je proměnná definována</strong>.</p>
             <h4>Tagy</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="./tags.html#cecko-ref">Céčko
-                    <span class="superscript">9</span>
+                    <span class="superscript">10</span>
 </a></li>
                 <li><a href="./tags.html#stm8-ref">STM8
-                    <span class="superscript">10</span>
+                    <span class="superscript">11</span>
 </a></li>
                 <li><a href="./tags.html#timer-ref">timer
                     <span class="superscript">3</span>
