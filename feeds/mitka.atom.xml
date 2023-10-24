@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-10-24T21:24:31+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-10-24T21:24:31+02:00</published><updated>2023-10-24T21:24:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - MITka</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/mitka.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-10-24T21:49:34+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2023-10-24T21:24:31+02:00</published><updated>2023-10-24T21:24:31+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
@@ -237,7 +237,7 @@ Projekt vypadá velmi slibně.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Dělení v pevné řadové čárce</title><link href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html" rel="alternate"></link><published>2023-10-24T19:00:00+02:00</published><updated>2023-10-24T21:05:16+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/deleni-v-pevne-radove-carce.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Dělení v pevné řadové čárce</title><link href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html" rel="alternate"></link><published>2023-10-24T19:00:00+02:00</published><updated>2023-10-24T21:49:34+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/deleni-v-pevne-radove-carce.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
 způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo
 (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná&amp;nbsp;čárka.&lt;/p&gt;
 &lt;p&gt;Například číslo &lt;span class="math"&gt;\(31.4160\)&lt;/span&gt; je v paměti uloženo jako celé číslo &lt;span class="math"&gt;\(314160\)&lt;/span&gt;.
@@ -249,7 +249,7 @@ Programátor ale ví, že číslo má dvě celá místa a čtyři desetinná mí
 S&amp;nbsp;číslem se pracuje jakoby šlo o celé číslo. Jen je třeba dát si pozor,
 aby se nám při výpočtech a matematických operacích desetinná čárka nepatřičně
 neposunula. Nejlépe je ukázat si vše na malém příkladu, kde bude vše snad&amp;nbsp;pochopitelné.&lt;/p&gt;
-&lt;p&gt;Dejme tomu že chci vydělit čísla 54321 a&amp;nbsp;1024.&lt;/p&gt;
+&lt;p&gt;Dejme tomu, že chci vydělit čísla 54321 a&amp;nbsp;1024.&lt;/p&gt;
 &lt;div class="math"&gt;$$\frac{54321}{1024} = 53.0478 $$&lt;/div&gt;
 &lt;p&gt;Dejme tomu, že chci pracovat s přesností na 2 desetinná&amp;nbsp;místa.&lt;/p&gt;
 &lt;div class="math"&gt;$$\frac{54321}{1024} \cong 53.05 $$&lt;/div&gt;
@@ -274,6 +274,9 @@ vytiskneme celou část &amp;ndash; tedy výsledek podělený číslem 100 a pot
 &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%d.%02d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;Celý příklad: 
+&lt;a href="https://gitlab.com/spseol/mit-no/priklad-deleni_fixedpoint/-/blob/main/main.c?ref_type=heads"&gt;GitLab&lt;/a&gt;,
+&lt;a href="https://replit.com/@MarrekNozka/deleni-fixedpoint#main.c"&gt;Repl.it&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pozor desetinnou část je třeba tisknout jako &lt;code&gt;"%02d"&lt;/code&gt;: to znamená a dvě místa
 včetně nul na začátku.   &lt;br&gt;
 Pokud bychom použili &lt;code&gt;"%d"&lt;/code&gt; vytisklo by se &lt;code&gt;53.5&lt;/code&gt;. &lt;br&gt;
