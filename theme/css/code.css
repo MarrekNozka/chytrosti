@@ -1,9 +1,9 @@
 /* For highlighting lines in code snippets */
-.highlight span.hll span {
-  background-color: black;
-  display: inline-block;
-  width: 100%;
-}
+/*.highlight span.hll span {*/
+/*  background-color: black;*/
+/*  display: inline-block;*/
+/*  width: 100%;*/
+/*}*/
 div.highlight {
   margin-bottom: 20px;
   border-radius: var(--borderRadius);
@@ -16,7 +16,9 @@ pre {
   white-space: pre;
   word-break: normal;
   word-wrap: normal;
-  color: #ebdbb2; /* This is needed due to bug in Pygments. It does not wraps some part of the code of some lagauges, like reST. This is for fallback. */
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  /*color: #ebdbb2; [> This is needed due to bug in Pygments. It does not wraps some part of the code of some lagauges, like reST. This is for fallback. <]*/
 }
 /* liquid_tags.include_code */
 figure.code {

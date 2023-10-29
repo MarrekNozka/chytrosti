@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout "/>
 <meta property="og:url" content="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" />
-<meta property="og:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …" />
+<meta property="og:description" content="Funkce main a ostatní funkce Jak je to vlastně s kompilací? Základní datový typy Řízení běhu programu Čísla a operace Pravda a nepravda Návratová hodnota Ukazatele, pole, řetězce Ukazatel – pointer Pole – array Řetězec – string Makra Další datové typy Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte. 1. Masky 2. Uniony 3 …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-04-23T07:44:00+02:00" />
 <meta property="og:article:modified_time" content="2023-03-29T14:05:10.154159+02:00" />
 <meta name="twitter:title" content="Céčko — pác věcí, kterých byste si fakt měli všimnout ">
-<meta name="twitter:description" content="Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba napsat malý přehled toho, co byste měli v souvislosti s programováním mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by …">
+<meta name="twitter:description" content="Funkce main a ostatní funkce Jak je to vlastně s kompilací? Základní datový typy Řízení běhu programu Čísla a operace Pravda a nepravda Návratová hodnota Ukazatele, pole, řetězce Ukazatel – pointer Pole – array Řetězec – string Makra Další datové typy Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte. 1. Masky 2. Uniony 3 …">
 
         <title>Céčko — pác věcí, kterých byste si fakt měli všimnout  · Chytrosti
 </title>
@@ -108,82 +108,60 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h2 class="related-post-header">Obsah</h2>
-        <div class="toc">
+        <div class="span8 offset2 article-content">
+            
+
+            <div class="toc">
 <ul>
-<li><a href="#funkce-main-a-ostatni-funkce">Funkce main a ostatní funkce</a></li>
-<li><a href="#jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?</a></li>
-<li><a href="#zakladni-datovy-typy">Základní datový typy</a></li>
-<li><a href="#rizeni-behu-programu">Řízení běhu programu</a></li>
+<li><a href="#funkce-main-a-ostatni-funkce">Funkce main a ostatní&nbsp;funkce</a></li>
+<li><a href="#jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s&nbsp;kompilací?</a></li>
+<li><a href="#zakladni-datovy-typy">Základní datový&nbsp;typy</a></li>
+<li><a href="#rizeni-behu-programu">Řízení běhu&nbsp;programu</a></li>
 <li><a href="#cisla-a-operace">Čísla a operace</a><ul>
-<li><a href="#pravda-a-nepravda">Pravda a nepravda</a></li>
-<li><a href="#navratova-hodnota">Návratová hodnota</a></li>
+<li><a href="#pravda-a-nepravda">Pravda a&nbsp;nepravda</a></li>
+<li><a href="#navratova-hodnota">Návratová&nbsp;hodnota</a></li>
 </ul>
 </li>
 <li><a href="#ukazatele-pole-retezce">Ukazatele, pole, řetězce</a><ul>
-<li><a href="#ukazatel-pointer">Ukazatel – pointer</a></li>
-<li><a href="#pole-array">Pole – array</a></li>
-<li><a href="#retezec-string">Řetězec – string</a></li>
+<li><a href="#ukazatel-pointer">Ukazatel &ndash;&nbsp;pointer</a></li>
+<li><a href="#pole-array">Pole &ndash;&nbsp;array</a></li>
+<li><a href="#retezec-string">Řetězec &ndash;&nbsp;string</a></li>
 </ul>
 </li>
 <li><a href="#makra">Makra</a></li>
-<li><a href="#dalsi-datove-typy">Další datové typy</a></li>
+<li><a href="#dalsi-datove-typy">Další datové&nbsp;typy</a></li>
 <li><a href="#jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte">Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte.</a><ul>
-<li><a href="#1-masky">1. Masky</a></li>
-<li><a href="#2-uniony">2. Uniony</a></li>
-<li><a href="#3-ukazatele">3. Ukazatele</a></li>
+<li><a href="#1-masky">1.&nbsp;Masky</a></li>
+<li><a href="#2-uniony">2.&nbsp;Uniony</a></li>
+<li><a href="#3-ukazatele">3.&nbsp;Ukazatele</a></li>
 </ul>
 </li>
-<li><a href="#moduly-a-externi-promenne">Moduly a externí proměnné</a></li>
+<li><a href="#moduly-a-externi-promenne">Moduly a externí&nbsp;proměnné</a></li>
 </ul>
 </div>
-<section>
-    <h2 class="related-post-header">Související posty</h2>
-<ul class="related-posts-list">
-<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
-<li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
-<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
-<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
-<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
-<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
-</ul>
-<hr />
-</section>
-        </nav>
-    </div>
-    <div class="span8 article-content">
-            
-
-            
 <p>Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
 mikroprocesorů vzít jistě v potaz. Zde tedy nabízím výcuc, který by každý náš
-student měl během 3. ročníku zvládnout.</p>
+student měl během 3. ročníku&nbsp;zvládnout.</p>
 <p>Nebo možná jinak: Vše, co je zde zmíněno (i to, na co se jen odkazuji) byste
 fakt měli znát! Bez toho se nehnete. Buď je to zde přímo vysvětleno, nebo je 
 zde odkaz na zdroj ze kterého byste to měli pochopit, ale v každém případě byste 
-se tím měli vážně zabývat. </p>
+se tím měli vážně&nbsp;zabývat. </p>
 <dl>
 <dt>Učebnice:</dt>
-<dd>Klasika je <a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;source=web">učebnice jazyka C je ta od Pavla Herouta</a>. Patří k ní i druhý díl, ale ten není pro embeded programování tolik důležitý.</dd>
-<dd>Další je <a href="https://search.brave.com/search?q=kniha+%22C+pro+mikrokontrolery%22&amp;source=web">C pro mikrokontrolery</a></dd>
-<dd>… a <a href="https://search.brave.com/search?q=kniha+%22Programovac%C3%AD+jazyk+C+pro+zelen%C3%A1%C4%8De%22&amp;source=web">Programovací jazyk C pro zelenáče</a></dd>
+<dd>Klasika je <a href="https://search.brave.com/search?q=+Pavel+Herout+U%C4%8Debnice+jazyka+C&amp;source=web">učebnice jazyka C je ta od Pavla Herouta</a>. Patří k ní i druhý díl, ale ten není pro embeded programování tolik&nbsp;důležitý.</dd>
+<dd>Další je <a href="https://search.brave.com/search?q=kniha+%22C+pro+mikrokontrolery%22&amp;source=web">C pro&nbsp;mikrokontrolery</a></dd>
+<dd>&hellip; a <a href="https://search.brave.com/search?q=kniha+%22Programovac%C3%AD+jazyk+C+pro+zelen%C3%A1%C4%8De%22&amp;source=web">Programovací jazyk C pro&nbsp;zelenáče</a></dd>
 </dl>
-<p><img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="./mit/market1.jpg"/></p>
-<p>Pokud hledáte nějaký online návod nebo referenční příručku, můžete začít třeba tu:</p>
+<p><img alt="Nejlepší učebnice jazyka C je ta od Pavla Herouta %%" src="./mit/market1.jpg"></p>
+<p>Pokud hledáte nějaký online návod nebo referenční příručku, můžete začít třeba&nbsp;tu:</p>
 <ul>
 <li><a href="https://www.sallyx.org/sally/c/">https://www.sallyx.org/sally/c/</a></li>
 <li><a href="https://www.w3schools.com/c/">https://www.w3schools.com/c/</a></li>
 <li><a href="https://www.tutorialspoint.com/cprogramming/index.htm">https://www.tutorialspoint.com/cprogramming/index.htm</a></li>
 </ul>
-<h2 id="funkce-main-a-ostatni-funkce">Funkce <code>main</code> a ostatní funkce<a class="headerlink" href="#funkce-main-a-ostatni-funkce" title="Permanent link">¶</a></h2>
+<h2 id="funkce-main-a-ostatni-funkce">Funkce <code>main</code> a ostatní funkce<a class="headerlink" href="#funkce-main-a-ostatni-funkce" title="Permanent link">&para;</a></h2>
 <p>Hlavní program se nachází v funkci <code>main</code>. Funkce main tedy musí být v každém
 programu/projektu. V našem případě by funkce <code>main</code> měla obsahovat nekonečnou
 smyčku hlavního programu. Procesor musí stále něco dělat, proto musí běžet v
@@ -198,6 +176,7 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">setup</span><span class="p">();</span>
@@ -208,12 +187,13 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <ul>
 <li><a href="https://www.sallyx.org/sally/c/c04.php">více o struktuře programu a funkci <code>main</code></a></li>
 </ul>
-<p>Obecně vypadá hlavička <a href="https://www.sallyx.org/sally/c/c13.php">funkce</a> takto:</p>
+<p>Obecně vypadá hlavička <a href="https://www.sallyx.org/sally/c/c13.php">funkce</a>&nbsp;takto:</p>
 <p><code>datový_typ_návratové_hodnoty název_funkce(datový_typ_parametru jméno_parametru)</code></p>
-<p>konkrétně pak takto:</p>
+<p>konkrétně pak&nbsp;takto:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="nf">prevod</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
@@ -222,12 +202,14 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu <code>while</
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">c</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Funkce jménem <code>prevod</code> vrací 16-bitové číslo datového typu <code>int16_t</code>. Jako
 parametry funkce přebírá dvě 8-bitová čísla <code>a</code> a <code>b</code> typu <code>int8_t</code>.
-Funkci potom můžeme volat třeba takto:</p>
+Funkci potom můžeme volat třeba&nbsp;takto:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int16_t</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
 <span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prevod</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
 </code></pre></div>
+
 <p>Pokud funkce nic nevrací, nebo nemá žádné parametry použijeme klíčové slovo
 <code>void</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">delay_1ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -238,13 +220,15 @@ Funkci potom můžeme volat třeba takto:</p>
 <span class="w">    </span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">248</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Když funkci voláme, musíme vždy uvést závorky, i když nepřebírá žádné parametry:</p>
+
+<p>Když funkci voláme, musíme vždy uvést závorky, i když nepřebírá žádné&nbsp;parametry:</p>
 <div class="highlight"><pre><span></span><code><span class="n">delay_1ms</span><span class="p">();</span>
 </code></pre></div>
-<h2 id="jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?<a class="headerlink" href="#jak-je-to-vlastne-s-kompilaci" title="Permanent link">¶</a></h2>
-<p>Mějme tento zdrojový text:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stm8s.h"</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">"milis.h"</span>
+
+<h2 id="jak-je-to-vlastne-s-kompilaci">Jak je to vlastně s kompilací?<a class="headerlink" href="#jak-je-to-vlastne-s-kompilaci" title="Permanent link">&para;</a></h2>
+<p>Mějme tento zdrojový&nbsp;text:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stm8s.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;milis.h&quot;</span>
 
 <span class="cp">#define LED_PORT GPIOC</span>
 <span class="cp">#define LED_PIN  GPIO_PIN_5</span>
@@ -278,12 +262,13 @@ Funkci potom můžeme volat třeba takto:</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>U jazyka C se převod zdrojového textu do strojové hexadecimální podoby děje v
-několika fázích.</p>
-<p>Nejprve se zdrojový text předzpracuje pomocí <strong>preprocesoru</strong> – ten vloží do
+několika&nbsp;fázích.</p>
+<p>Nejprve se zdrojový text předzpracuje pomocí <strong>preprocesoru</strong> &ndash; ten vloží do
 zdrojového textu hlavičkové soubory a expanduje všechna <a href="#makra"><em>makra</em></a>.
 Všechny <em>direktivy</em>, kterým rozumí preprocesor začínají znakem <code>#</code>.</p>
-<p><img alt="překlad %%" src="./mit/compilation.png"/></p>
+<p><img alt="překlad %%" src="./mit/compilation.png"></p>
 <p>Následuje zpravování <strong>kompilátorem</strong>. Ten převede zdrojový text do podoby
 <strong>relativního objektového kódu</strong> příslušného mikroprocesoru. To je již téměř
 hotový program ve strojovém kódu, ale adresy použitých <em>proměnný</em> a <em>funkcí</em>
@@ -291,34 +276,35 @@ ještě nejsou známé a jsou tedy jen relativní. Výsledkem je objektový soub
 příponou <code>.o</code> nebo <code>.obj</code>.</p>
 <p>V našem příkladu je volána funkce <code>GPIO_Init</code>, jejíž tělo (definice) je ale
 uvedena v jiném souboru, který se překládá samostatně. <strong>Kompilátor</strong> tedy v
-tuto chvíli nezná konkrétní adresu, na které se funkce nachází – proto/protože
-neví na jaké konkrétní adrese v paměti mikropočítače bude funkce uložena.</p>
+tuto chvíli nezná konkrétní adresu, na které se funkce nachází &ndash; proto/protože
+neví na jaké konkrétní adrese v paměti mikropočítače bude funkce&nbsp;uložena.</p>
 <p>V poslední fázi se relativní adresy proměnných a funkcí nahradí skutečnými
 adresami na kterých budou tyto proměnné a funkce uloženy v paměti
 mikropočítače. Tato fáze se označuje jako <strong>linkování (linking time)</strong> a
 provádí je <strong>linker</strong>. Jsou k tomu potřeba všechny objektové soubory celého
 projektu: tedy zdrojový text s funkcí <code>main</code> a všechny knihovny, které také
 museli projít procesem kompilace. Teď už bude možné zavolat funkci <code>GPIO_Init</code>,
-protože linker do strojového kódu vloží její skutečnou adresu.</p>
+protože linker do strojového kódu vloží její skutečnou&nbsp;adresu.</p>
 <p>Více je toto téma rozvedeno v postu
 <a href="./oddelena-kompilace-a-vlastni-knihovny.html">Oddělená kompilace a vlastní knihovny</a>.</p>
-<h2 id="zakladni-datovy-typy">Základní datový typy<a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link">¶</a></h2>
+<h2 id="zakladni-datovy-typy">Základní datový typy<a class="headerlink" href="#zakladni-datovy-typy" title="Permanent link">&para;</a></h2>
 <p>Při embeded programování potřebuje v naprosté většině případů pracovat s celými
 čísly nebo s reálnými čísly pomocí <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">pevné řádové
 čárky</a>. Je tedy třeba si
 vystačit s celočíselnými datovými typy. C sice nabízí datový typ <code>float</code>, ten
-pro nás ale z důvodů omezené paměti není většinou vhodný.</p>
+pro nás ale z důvodů omezené paměti není většinou&nbsp;vhodný.</p>
 <p>Klasické C nabízí 
 <a href="https://www.tutorialspoint.com/cprogramming/c_variables.htm">datové typy</a>
 <code>char</code>, <code>short int</code>, <code>int</code>, <code>long int</code>, <code>long long int</code>.
 Specifikace ale neuvádí konkrétní počet bitů, který se pro daný datový typ má 
-použít – toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
-Jediná zaručená věc je toto:</p>
+použít &ndash; toto závisí na konkrétním kompilátoru a každý kompilátor to má jinak.
+Jediná zaručená věc je&nbsp;toto:</p>
 <div class="highlight"><pre><span></span><code><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span>
 </code></pre></div>
+
 <p>Operátor <a href="https://www.tutorialspoint.com/sizeof-operator-in-c"><code>sizeof</code></a>
-vrací počet bytů, použitých v paměti pro danou proměnnou.</p>
-<p>Například kompilátor <span class="caps">SDCC</span> to má takto:</p>
+vrací počet bytů, použitých v paměti pro danou&nbsp;proměnnou.</p>
+<p>Například kompilátor <span class="caps">SDCC</span> to má&nbsp;takto:</p>
 <table>
 <thead>
 <tr>
@@ -361,8 +347,8 @@ datové typy které to zaručují a kde je vše jasné hned na první pohled.
 My je máme definovány v knihovně <span class="caps">SPL</span> a jsou dostupné jakmile zavoláme
 <code>#include stm8s.h</code>.</p>
 <p>Je pravidlem, že vlastní/uživatelské datové typy užívají postfix <code>_t</code>.
-Písmeno <code>u</code> na začátku znamená <code>unsigned</code> – tedy bez znaménka. Do takové
-proměnné můžeme tedy ukládat pouze kladná čísla.</p>
+Písmeno <code>u</code> na začátku znamená <code>unsigned</code> &ndash; tedy bez znaménka. Do takové
+proměnné můžeme tedy ukládat pouze kladná&nbsp;čísla.</p>
 <table>
 <thead>
 <tr>
@@ -414,10 +400,10 @@ proměnné můžeme tedy ukládat pouze kladná čísla.</p>
 <p>Je myslím také dobré zmínit, že <code>int8_t</code> je ekvivalent k <code>char</code> a <code>uint8_t</code> je
 ekvivalent k <code>unsigned char</code>. Rozdíl je ale v čitelnosti programu. Pokud
 proměnnou deklaruji jako <code>char</code> bude její hodnota zřejmě představovat nějaký
-znak, jehož číselná hodnota je v ní uložena.</p>
-<h2 id="rizeni-behu-programu">Řízení běhu programu<a class="headerlink" href="#rizeni-behu-programu" title="Permanent link">¶</a></h2>
+znak, jehož číselná hodnota je v ní&nbsp;uložena.</p>
+<h2 id="rizeni-behu-programu">Řízení běhu programu<a class="headerlink" href="#rizeni-behu-programu" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.sallyx.org/sally/c/c12.php">Podmínky a cykly</a></li>
+<li><a href="https://www.sallyx.org/sally/c/c12.php">Podmínky a&nbsp;cykly</a></li>
 <li>Pro
   <a href="https://www.tutorialspoint.com/cprogramming/c_decision_making.htm">větvení</a> se
   používá výraz:
@@ -430,12 +416,12 @@ znak, jehož číselná hodnota je v ní uložena.</p>
   <a href="https://www.tutorialspoint.com/cprogramming/c_do_while_loop.htm"><code>do while</code></a>,
   <a href="https://www.tutorialspoint.com/cprogramming/c_for_loop.htm"><code>for</code></a>.</li>
 </ul>
-<h2 id="cisla-a-operace">Čísla a operace<a class="headerlink" href="#cisla-a-operace" title="Permanent link">¶</a></h2>
+<h2 id="cisla-a-operace">Čísla a operace<a class="headerlink" href="#cisla-a-operace" title="Permanent link">&para;</a></h2>
 <p>Čísla a
 <a href="https://www.tutorialspoint.com/cprogramming/c_constants.htm">konstanty</a> je
 možné zapisovat v desítkové, osmičkové (prefix <code>0</code>), šestnáctkové (prefix <code>0x</code>)
 nebo dvojkové (prefix <code>0b</code>)soustavě. Přičemž písmenko na konci čísla (<code>U</code>, <code>L</code>)
-udává datový typ.</p>
+udává datový&nbsp;typ.</p>
 <div class="highlight"><pre><span></span><code><span class="mi">85</span><span class="w">         </span><span class="cm">/* decimal */</span>
 <span class="mo">0213</span><span class="w">       </span><span class="cm">/* octal */</span>
 <span class="mh">0x4b</span><span class="w">       </span><span class="cm">/* hexadecimal */</span>
@@ -446,17 +432,19 @@ udává datový typ.</p>
 <span class="mi">30UL</span><span class="w">       </span><span class="cm">/* unsigned long */</span>
 <span class="mi">55123123123ULL</span><span class="w">       </span><span class="cm">/* unsigned long long */</span>
 </code></pre></div>
+
 <p><strong>Znaková konstanta</strong> je číselná hodnota zadaná pomocí znaku. Konkrétní číselná
 hodnota konkrétního znaku je dána <a href="https://cs.wikipedia.org/wiki/ASCII">Ascii
-tabulkou</a>. Zapisuje se do apostrofů.</p>
-<p>Oba tyto zápisy jsou ekvivalentní:</p>
+tabulkou</a>. Zapisuje se do&nbsp;apostrofů.</p>
+<p>Oba tyto zápisy jsou&nbsp;ekvivalentní:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">znak</span><span class="p">;</span>
 
-<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'@'</span><span class="p">;</span>
+<span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;@&#39;</span><span class="p">;</span>
 <span class="n">znak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span>
 </code></pre></div>
+
 <p><a href="https://www.tutorialspoint.com/cprogramming/c_operators.htm">Operátory</a> zde
-nebudu zevrubně popisovat ale jen zdůrazním následující:</p>
+nebudu zevrubně popisovat ale jen zdůrazním&nbsp;následující:</p>
 <p><strong>Zaokrouhlování:</strong>
 Operátor <code>/</code> je dělení a jeho výsledek závisí na tom, s jakým datovým typem je
 proveden. My používáme většinou celá čísla. Je to tedy <strong>celočíselné</strong> dělení.
@@ -464,46 +452,50 @@ Nedochází zde k zaokrouhlování, ale useknutí desetinné části, takže vý
 <code>40 / 21</code> bude <code>1</code>.</p>
 <p>Operátor <code>%</code> je zbytek po celočíselném dělení takže <code>40 % 21</code> je <code>19</code>.</p>
 <p>Dále je třeba si dát pozor a neplést si <em>bitové</em> a <em>logické</em> operátory.
-Logické operátory <code>&amp;&amp;</code> <span class="caps">AND</span>, <code>||</code> <span class="caps">OR</span> a <code>!</code> <span class="caps">NOT</span> pracují s pravdivostní hodnotou.</p>
+Logické operátory <code>&amp;&amp;</code> <span class="caps">AND</span>, <code>||</code> <span class="caps">OR</span> a <code>!</code> <span class="caps">NOT</span> pracují s pravdivostní&nbsp;hodnotou.</p>
 <p>Například:</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">12</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">a</span><span class="o">&lt;</span><span class="mi">24</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d je cislo mezi 13 a 23"</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d je cislo mezi 13 a 23&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Bitové operátory <code>&amp;</code> <span class="caps">AND</span>, <code>|</code> <span class="caps">OR</span>, <code>^</code> <span class="caps">EXOR</span> a <code>~</code> <span class="caps">NOT</span>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code> provádí bitové
-s čísly.</p>
+s&nbsp;čísly.</p>
 <p>Například:</p>
 <div class="highlight"><pre><span></span><code><span class="w">               </span><span class="c1">// 1010</span>
 <span class="w">               </span><span class="c1">// 0111</span>
 <span class="w">               </span><span class="c1">//------ &amp; --</span>
 <span class="mi">10</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w">    </span><span class="c1">// 0010</span>
 </code></pre></div>
+
 <p>nebo</p>
 <div class="highlight"><pre><span></span><code><span class="w">               </span><span class="c1">// 00000011</span>
 <span class="w">               </span><span class="c1">//----------- &lt;&lt; --</span>
 <span class="mi">3</span><span class="o">&lt;&lt;</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">12</span><span class="w">    </span><span class="c1">//  00001100</span>
 </code></pre></div>
-<h3 id="pravda-a-nepravda">Pravda a nepravda<a class="headerlink" href="#pravda-a-nepravda" title="Permanent link">¶</a></h3>
+
+<h3 id="pravda-a-nepravda">Pravda a nepravda<a class="headerlink" href="#pravda-a-nepravda" title="Permanent link">&para;</a></h3>
 <p>Pravdivostní hodnota je reprezentována čísly <code>0</code> a <code>1</code>. To ale není vše.
-<strong>Každé číslo může být použito jako pravdivostní hodnota.</strong> Jako Nepravda –
+<strong>Každé číslo může být použito jako pravdivostní hodnota.</strong> Jako Nepravda &ndash;
 <code>false</code> se interpretuje pouze číslo <code>0</code>. Všechna další čísla od nuly různá se
-interpretují jako Pravda – <code>true</code>. Tohoto se často využívá. Typické je to
+interpretují jako Pravda &ndash; <code>true</code>. Tohoto se často využívá. Typické je to
 například, když překládáme <em>masku</em> přes číslo, abychom zjistili stav
-jednotlivých bitů.</p>
+jednotlivých&nbsp;bitů.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// tisk binární podoby čísla</span>
 <span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x5A</span><span class="p">;</span>
 <span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"0b"</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;0b&quot;</span><span class="p">);</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cislo</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">maska</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"1"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"0"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;0&quot;</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="n">maska</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maska</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/maska#main.c">Vyzkoušet</a></p>
 <p>Maska zde nabývá hodnot 
 <code>0b10000000</code>,
@@ -515,9 +507,9 @@ jednotlivých bitů.</p>
 <code>0b00000010</code> a 
 <code>0b00000001</code>. Ve chvíli kdy nabude hodnotu <code>0b00000000</code> z cyklu se vyskočí.
 Podobných hodnot nabývá výraz <code>cislo &amp; maska</code> v podmínce <code>if</code>.</p>
-<h3 id="navratova-hodnota">Návratová hodnota<a class="headerlink" href="#navratova-hodnota" title="Permanent link">¶</a></h3>
+<h3 id="navratova-hodnota">Návratová hodnota<a class="headerlink" href="#navratova-hodnota" title="Permanent link">&para;</a></h3>
 <p>V Céčku má každý výraz vždy sou návratovou hodnotu a tuto návratovou hodnotu
-lze uložit do proměnné.</p>
+lze uložit do&nbsp;proměnné.</p>
 <p>Například <code>i++</code>  nebo <code>++i</code> přičítá k proměnné jedna. Rozdíl je ale právě v
 návratové hodnotě. Pokud použijete <code>i++</code>, nejprve se je vrácena hodnota <code>i</code> a
 potom teprve se přičte jedna. Pokud použijete <code>++i</code>, nejprve se přičte jedna a
@@ -529,22 +521,24 @@ potom teprve se vrátí hodnota již inkrementovaného <code>i</code>. Analogick
 <span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
 <span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">// v j bude 4, v i bude 4</span>
 </code></pre></div>
+
 <p>Podobně lze  návratovou hodnotu použít jako pravdivostní výraz v podmínkách a
-cyklech. Například takto:</p>
+cyklech. Například&nbsp;takto:</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">++</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/navratovahodnota#main.c">Vyzkoušet</a></p>
-<h2 id="ukazatele-pole-retezce">Ukazatele, pole, řetězce<a class="headerlink" href="#ukazatele-pole-retezce" title="Permanent link">¶</a></h2>
+<h2 id="ukazatele-pole-retezce">Ukazatele, pole, řetězce<a class="headerlink" href="#ukazatele-pole-retezce" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.sallyx.org/sally/c/c09.php">Pole a ukazatele</a></li>
+<li><a href="https://www.sallyx.org/sally/c/c09.php">Pole a&nbsp;ukazatele</a></li>
 </ul>
-<h3 id="ukazatel-pointer">Ukazatel – pointer<a class="headerlink" href="#ukazatel-pointer" title="Permanent link">¶</a></h3>
+<h3 id="ukazatel-pointer">Ukazatel &ndash; pointer<a class="headerlink" href="#ukazatel-pointer" title="Permanent link">&para;</a></h3>
 <p><strong>Ukazatel</strong> je proměnná, která neobsahuje data, ale adresu na které se nachází
 data. Prostě a jednoduše ukazatel je proměnná obsahující adresu proměnné.
-Proměnná typu ‘ukazatel na <code>int</code><span class="quo">‘</span> obsahuje adresu, na které se v paměti nachází
+Proměnná typu &lsquo;ukazatel na <code>int</code><span class="quo">&lsquo;</span> obsahuje adresu, na které se v paměti nachází
 číslo typu <code>int</code>. Ukazatel se deklaruje a vyhodnocuje pomocí operátoru <code>*</code>.
 Adresa paměti se získá pomocí operátoru <code>&amp;</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
@@ -559,17 +553,18 @@ Adresa paměti se získá pomocí operátoru <code>&amp;</code>.</p>
 
 <span class="n">ukazatel_dalsi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ukazatel_cislo</span><span class="p">;</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">cislo</span><span class="p">);</span><span class="w">             </span><span class="c1">// vytiskne 123</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_dalsi</span><span class="p">);</span><span class="w">   </span><span class="c1">// vytiskne 123</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cislo</span><span class="p">);</span><span class="w">             </span><span class="c1">// vytiskne 123</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel_dalsi</span><span class="p">);</span><span class="w">   </span><span class="c1">// vytiskne 123</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/ukazatel#main.c">Vyzkoušet</a></p>
 <p>Ukazatelů se dá použít, když mám například 32-bitovou proměnnou a potřebuji z
 ní dostat odděleně čtyři 8-bitové (1B) proměnné. Mohlo by to vypadat 
 <a href="#3-ukazatele">například takto</a>.</p>
-<h3 id="pole-array">Pole – array<a class="headerlink" href="#pole-array" title="Permanent link">¶</a></h3>
+<h3 id="pole-array">Pole &ndash; array<a class="headerlink" href="#pole-array" title="Permanent link">&para;</a></h3>
 <p><strong>Pole</strong> představuje kolekci několika hodnot stejného datového typu umístěného
 v paměti vedle sebe jednu položku po druhé. Ke každé položce této kolekce lze
-přistupovat zvlášť pomocí indexu.</p>
+přistupovat zvlášť pomocí&nbsp;indexu.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
 <span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">pole</span><span class="p">;</span>
 
@@ -581,34 +576,36 @@ přistupovat zvlášť pomocí indexu.</p>
 <span class="n">pole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cislo</span><span class="p">;</span>
 
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
 <span class="p">}</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace pomocí []: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"Indexace ukazatele:  %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">pole</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Indexace pomocí []: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pole</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Indexace ukazatele:  %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">pole</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/pole#main.c">Vyzkoušet</a></p>
 <p><strong>Pole a ukazatel jsou v Céčku velmi úzce svázané</strong>. Proměnná <code>cislo</code> je typově
 kompatibilní s ukazatelem na int <code>int *</code>. V proměnné <code>cislo</code> je uložena adresa,
-na které začíná kolekce deseti po sobě jdoucích hodnot.</p>
+na&nbsp;které začíná kolekce deseti po sobě jdoucích&nbsp;hodnot.</p>
 <p>Ještě je potřeba říct, že Céčko nijak nehlídá jestli náhodou index nepřesáhl
 stanovenou mez. Takže výraz <code>cislo[22] = 51;</code> se normálně provede, ale přepíše
 se část pamětí ve které se v danou chvíli nachází třeba jiná proměnná. To může
-vést k naprosto neočekávanému pseudonáhodnému chování.</p>
-<h3 id="retezec-string">Řetězec – string<a class="headerlink" href="#retezec-string" title="Permanent link">¶</a></h3>
-<p><strong>Řetězec</strong> je “jen” pole znaků. Dá se s ním tedy pracovat stejně jako s polem.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Cecko je nejlepsi."</span><span class="p">;</span>
+vést k naprosto neočekávanému pseudonáhodnému&nbsp;chování.</p>
+<h3 id="retezec-string">Řetězec &ndash; string<a class="headerlink" href="#retezec-string" title="Permanent link">&para;</a></h3>
+<p><strong>Řetězec</strong> je &ldquo;jen&rdquo; pole znaků. Dá se s ním tedy pracovat stejně jako s&nbsp;polem.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="mi">22</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cecko je nejlepsi.&quot;</span><span class="p">;</span>
 
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%c, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%c, %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">retezec</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
 <span class="p">}</span>
-<span class="n">printf</span><span class="p">(</span><span class="s">"KONEC"</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;KONEC&quot;</span><span class="p">);</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/retezec#main.c">Vyzkoušet</a></p>
 <p>Každý správný řetězec v Céčku končí znakem <code>\0</code> s ascii hodnou 0 (nula). Podle
-tohoto se dá spolehlivě rozpoznat, že řetězec už na konci – přestože paměť je
-alokovaná pro více znaků než řetězec obsahuje.</p>
-<h2 id="makra">Makra<a class="headerlink" href="#makra" title="Permanent link">¶</a></h2>
+tohoto se dá spolehlivě rozpoznat, že řetězec už na konci &ndash; přestože paměť je
+alokovaná pro více znaků než řetězec&nbsp;obsahuje.</p>
+<h2 id="makra">Makra<a class="headerlink" href="#makra" title="Permanent link">&para;</a></h2>
 <p><strong>Makra</strong> <a href="#jak-je-to-vlastne-s-kompilaci">preprocesoru</a> představují velmi
 mocný nástroj jak si zpřehlednit zdrojový kód. Při programování mikrokontrolérů
 představuje definice správných maker více-méně nutnost, bez které se v kódu
@@ -616,9 +613,9 @@ velmi rychle ztratíte. Poměrně dobře jsou možnosti preprocesoru popsány
 na <a href="https://www.sallyx.org/sally/c/c11.php">www.sallyx.org</a>.</p>
 <p>V nejjednodušším případě je makro nějaká zkratka nebo konstanta. Všude, kde se
 ve zdrojovém kódu vyskytne toto makro, je nahrazeno jeho obsahem. Případná
-<em>změna</em> tedy proběhne jen jednom místě – při definici. <strong>Makra se provádí
+<em>změna</em> tedy proběhne jen jednom místě &ndash; při definici. <strong>Makra se provádí
 (expandují) ještě před zahájením kompilace</strong>. To je velký a zásadní rozdíl
-oproti proměnným, které se nachází v paměti.</p>
+oproti proměnným, které se nachází v&nbsp;paměti.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 
 <span class="cp">#define MAX 12</span>
@@ -632,17 +629,18 @@ oproti proměnným, které se nachází v paměti.</p>
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
 <span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="n">putchar</span><span class="p">(</span><span class="sc">'\n'</span><span class="p">);</span>
+<span class="w">  </span><span class="n">putchar</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">);</span>
 
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/makro#main.c">Vyzkoušet</a></p>
 <p>V našem případě budeme marka používat pro pojmenování jednotlivých pinů. To je
 velmi užitečné, protože budeme moci s minimálním zásahem do kódu přemístit
-jednotlivé periferie nebo portovat projekt na jiný mikrokontroler.</p>
+jednotlivé periferie nebo portovat projekt na jiný&nbsp;mikrokontroler.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#define LED_PORT GPIOC</span>
 <span class="cp">#define LED_PIN  GPIO_PIN_5</span>
 <span class="cp">#define NCODER_CLK_PORT GPIOB</span>
@@ -658,8 +656,9 @@ jednotlivé periferie nebo portovat projekt na jiný mikrokontroler.</p>
 <span class="w">    </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">NCODER_DATA_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">NCODER_DATA_PIN</span><span class="p">,</span><span class="w"> </span><span class="n">GPIO_MODE_IN_FL_NO_IT</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p>Já osobně si ještě dělám vždy sadu maker s parametrem, která mi umožňuje
-efektivně číst a zapisovat stav jednotlivých pinů (operátor <code>##</code> provádí sřetězení):</p>
+efektivně číst a zapisovat stav jednotlivých pinů (operátor <code>##</code> provádí&nbsp;sřetězení):</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#define LOW(BAGR) GPIO_WriteLow(BAGR##_PORT, BAGR##_PIN)</span>
 <span class="cp">#define HIGH(BAGR) GPIO_WriteHigh(BAGR##_PORT, BAGR##_PIN)</span>
 <span class="cp">#define REVERSE(BAGR) GPIO_WriteReverse(BAGR##_PORT, BAGR##_PIN)</span>
@@ -667,26 +666,29 @@ efektivně číst a zapisovat stav jednotlivých pinů (operátor <code>##</code
 <span class="cp">#define READ(BAGR) GPIO_ReadInputPin(BAGR##_PORT, BAGR##_PIN) </span>
 <span class="cp">#define PUSH(BAGR) (GPIO_ReadInputPin(BAGR##_PORT, BAGR##_PIN)==RESET) </span>
 </code></pre></div>
-<p>Místo poměrně těžkopádného:</p>
+
+<p>Místo poměrně&nbsp;těžkopádného:</p>
 <div class="highlight"><pre><span></span><code>GPIO_WriteHigh(CLK_PORT, CLK_PIN);
 </code></pre></div>
-<p>… můžu napsat </p>
+
+<p>&hellip; můžu&nbsp;napsat </p>
 <div class="highlight"><pre><span></span><code>HIGH(CLK);
 </code></pre></div>
-<p>Kód se tak lépe zapisuje, čte i portuje na jinou platformu.</p>
-<h2 id="dalsi-datove-typy">Další datové typy<a class="headerlink" href="#dalsi-datove-typy" title="Permanent link">¶</a></h2>
+
+<p>Kód se tak lépe zapisuje, čte i portuje na jinou&nbsp;platformu.</p>
+<h2 id="dalsi-datove-typy">Další datové typy<a class="headerlink" href="#dalsi-datove-typy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.sallyx.org/sally/c/c15.php#struct"><code>struct</code></a></li>
 <li><a href="https://www.sallyx.org/sally/c/c16.php#enum"><code>enum</code></a></li>
 <li><a href="https://www.sallyx.org/sally/c/c16.php#union"><code>union</code></a></li>
 </ul>
-<h2 id="jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte">Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte.<a class="headerlink" href="#jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte" title="Permanent link">¶</a></h2>
+<h2 id="jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte">Jak více-Bytovou proměnnou rozřezat na jednotlivé Byte.<a class="headerlink" href="#jak-vice-bytovou-promennou-rozrezat-na-jednotlive-byte" title="Permanent link">&para;</a></h2>
 <p>Pří práci s µkontrolerem a různými periferiemi lze poměrně často narazit na
 úlohy typu: Mám data v 32-bitové (4-Bytové) proměnné, ale abych je mohl
 zobrazit potřebuji každý Byte zvláště. Potřebuji tedy 32-bitovou proměnnou
 rozdělit na čtyři 8-bitové proměnné. Dá se to udělat celkem asi třemi různými
-způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
-<h3 id="1-masky">1. Masky<a class="headerlink" href="#1-masky" title="Permanent link">¶</a></h3>
+způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten&nbsp;druhý.</p>
+<h3 id="1-masky">1. Masky<a class="headerlink" href="#1-masky" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
 <span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
 
@@ -695,10 +697,11 @@ způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
 <span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0000FF00L</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
 <span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x000000FFL</span><span class="p">);</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">byte</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/masky#main.c">Vyzkoušet</a></p>
-<h3 id="2-uniony">2. Uniony<a class="headerlink" href="#2-uniony" title="Permanent link">¶</a></h3>
+<h3 id="2-uniony">2. Uniony<a class="headerlink" href="#2-uniony" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">union</span><span class="w"> </span><span class="nc">Number</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">whole</span><span class="p">;</span>
 <span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">bytes</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
@@ -707,13 +710,14 @@ způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">union</span><span class="w"> </span><span class="nc">Number</span><span class="w"> </span><span class="n">num</span><span class="p">;</span>
 <span class="w">  </span><span class="n">num</span><span class="p">.</span><span class="n">whole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Bytes: %02x %02x %02x %02x</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
 <span class="w">         </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">num</span><span class="p">.</span><span class="n">bytes</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/union#main.c">Vyzkoušet</a></p>
-<h3 id="3-ukazatele">3. Ukazatele<a class="headerlink" href="#3-ukazatele" title="Permanent link">¶</a></h3>
+<h3 id="3-ukazatele">3. Ukazatele<a class="headerlink" href="#3-ukazatele" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cislo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span><span class="p">;</span>
 <span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">;</span>
 
@@ -721,15 +725,16 @@ způsoby. Mě osobně přijde nejhezčí a nejpřehlednější ten druhý.</p>
 <span class="c1">// tím se jedna velká buňka rozdělí na 4 malé buňky</span>
 <span class="n">ukazatel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">cislo</span><span class="p">;</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes: %02X %02X %02X %02X</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Bytes: %02X %02X %02X %02X</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ukazatel</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
 <span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">ukazatel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span>
 </code></pre></div>
+
 <p><a href="https://replit.com/@MarrekNozka/bajty#main.c">Vyzkoušet</a></p>
-<h2 id="moduly-a-externi-promenne">Moduly a externí proměnné<a class="headerlink" href="#moduly-a-externi-promenne" title="Permanent link">¶</a></h2>
+<h2 id="moduly-a-externi-promenne">Moduly a externí proměnné<a class="headerlink" href="#moduly-a-externi-promenne" title="Permanent link">&para;</a></h2>
 <p>Toto téma naleznete v samostatném postu
 <a href="./oddelena-kompilace-a-vlastni-knihovny.html">Oddělená kompilace a vlastní knihovny</a>.</p>
-<hr/>
-<p><img alt="Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%" src="./mit/market2.jpg"/></p>
+<hr>
+<p><img alt="Pavel Herout napsal i druhý díl učebnice, který ale pro mikroprocesory nevyužijeme %%" src="./mit/market2.jpg"></p>
 
 
              

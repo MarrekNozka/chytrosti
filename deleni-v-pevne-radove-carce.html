@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="Dělení v pevné řadové čárce "/>
 <meta property="og:url" content="./deleni-v-pevne-radove-carce.html" />
-<meta property="og:description" content="Pevná řádová čárka je způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná čárka. Například číslo \(31.4160\) je v paměti uloženo jako celé číslo \(314160\). Programátor ale ví, že číslo má …" />
+<meta property="og:description" content="Pevná řádová čárka je způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná čárka. Proč bych něco takového chtěl? V Céčku přece můžu použít flat a nemusím se dál o nic starat …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2023-10-24T19:00:00+02:00" />
-<meta property="og:article:modified_time" content="2023-10-24T21:49:34.684776+02:00" />
+<meta property="og:article:modified_time" content="2023-10-29T15:59:41.890479+01:00" />
 <meta name="twitter:title" content="Dělení v pevné řadové čárce ">
-<meta name="twitter:description" content="Pevná řádová čárka je způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná čárka. Například číslo \(31.4160\) je v paměti uloženo jako celé číslo \(314160\). Programátor ale ví, že číslo má …">
+<meta name="twitter:description" content="Pevná řádová čárka je způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná čárka. Proč bych něco takového chtěl? V Céčku přece můžu použít flat a nemusím se dál o nic starat …">
 
         <title>Dělení v pevné řadové čárce  · Chytrosti
 </title>
@@ -114,12 +114,59 @@
             <p><a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">Pevná řádová čárka</a> je 
 způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo
 (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná&nbsp;čárka.</p>
+<div class="admonition hint">
+<p class="admonition-title">Proč bych něco takového chtěl? V Céčku přece můžu použít <code>flat</code> a nemusím se dál o nic starat&hellip; Nebo je to&nbsp;jinak?</p>
+<p>Použití datového tipu <code>float</code> není vždy možné nebo vás stojí příliš mnoho
+paměti. Obzvlášť pokud programujete mikrokontrolery nemůžete s paměti
+příliš plýtvat. A pokud byste chtěli použít <code>%f</code> v funkci <code>printf</code>
+zjistíte, že váš program má najednou o 20kB víc. Tohle si nemůžete často&nbsp;dovolit.</p>
+</div>
 <p>Například číslo <span class="math">\(31.4160\)</span> je v paměti uloženo jako celé číslo <span class="math">\(314160\)</span>.
 Programátor ale ví, že číslo má dvě celá místa a čtyři desetinná místa.
 S&nbsp;číslem se pracuje jakoby šlo o celé číslo. Jen je třeba dát si pozor,
 aby se nám při výpočtech a matematických operacích desetinná čárka nepatřičně
 neposunula. Nejlépe je ukázat si vše na malém příkladu, kde bude vše snad&nbsp;pochopitelné.</p>
 <p>Dejme tomu, že chci vydělit čísla 54321 a&nbsp;1024.</p>
+<figure class='code'>
+<figcaption><span class="liquid-tags-code-filename">main.c</span><a href='/code/main.c'>download</a></figcaption>
+<div class="highlight"><pre><span></span><code><span class="c1">// Vzorový projekt </span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stm8s.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;assert.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;delay.h&quot;</span>
+<span class="c1">//#include &quot;milis.h&quot;</span>
+<span class="c1">//#include &quot;spse_stm8.h&quot;</span>
+<span class="c1">//#include &quot;stm8_hd44780.h&quot;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">delay1s</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+
+
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+<span class="c1">//CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); // taktovat MCU na 16MHz</span>
+<span class="c1">//init_milis(); // rozběhnout milis časovač</span>
+
+<span class="w">	</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">	</span>
+<span class="w">  </span><span class="n">GPIO_Init</span><span class="p">(</span><span class="n">GPIOC</span><span class="p">,</span><span class="n">GPIO_PIN_5</span><span class="p">,</span><span class="n">GPIO_MODE_OUT_PP_LOW_SLOW</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+<span class="w">		</span><span class="n">GPIO_WriteHigh</span><span class="p">(</span><span class="n">GPIOC</span><span class="p">,</span><span class="n">GPIO_PIN_5</span><span class="p">);</span>
+<span class="w">		</span><span class="n">delay1s</span><span class="p">();</span>
+<span class="w">		</span><span class="n">GPIO_WriteLow</span><span class="p">(</span><span class="n">GPIOC</span><span class="p">,</span><span class="n">GPIO_PIN_5</span><span class="p">);</span>
+<span class="w">		</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="n">_delay_us</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="w">	  </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</figure>
 <div class="math">$$\frac{54321}{1024} = 53.0478 $$</div>
 <p>Dejme tomu, že chci pracovat s přesností na 2 desetinná&nbsp;místa.</p>
 <div class="math">$$\frac{54321}{1024} \cong 53.05 $$</div>
@@ -252,8 +299,8 @@ Až při použili <code>"%02d"</code> se výsledek tiskne jako <code>53.05</code
               Út 24. říj 2023 19:00
             </time>
 <h4>Aktualizováno</h4>
-<time datetime="2023-10-24T21:49:34+02:00">
-  Út 24. říj 2023 21:49
+<time datetime="2023-10-29T15:59:41+01:00">
+  Ne 29. říj 2023 15:59
 </time>
 
             <h4>Kategorie</h4>

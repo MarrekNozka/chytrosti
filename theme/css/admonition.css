@@ -48,7 +48,8 @@ div.admonition ol {
 /* -- danger, error -- */
 div.danger,
 div.error {
-  color: #b94a48;
+  /*color: #b94a48;*/
+  color: inherit;
   background-color: #f2dede;
 }
 
@@ -61,7 +62,8 @@ div.error p.admonition-title {
 div.warning,
 div.caution,
 div.attention {
-  color: #c09853;
+  /*color: #c09853;*/
+  color: inherit;
 }
 div.warning p.admonition-title,
 div.caution p.admonition-title,
@@ -72,7 +74,8 @@ div.attention p.admonition-title {
 /* -- note, important -- */
 div.note,
 div.important {
-  color: #468847;
+  /*color: #468847;*/
+  color: inherit;
   background-color: #dff0d8;
 }
 
@@ -84,7 +87,8 @@ div.important p.admonition-title {
 /* -- hint, tip -- */
 div.hint,
 div.tip {
-  color: #3a87ad;
+  /*color: #3a87ad;*/
+  color: inherit;
   background-color: #d9edf7;
 }
 
