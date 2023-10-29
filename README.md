@@ -1,7 +1,8 @@
-chytrosti.marrek.cz :-)
+Chytrosti.Marrek.cz :-)
 ========================
 
 Moje školní chytrosti.
+
 
 
 Pelican
@@ -15,6 +16,13 @@ Tento projekt používá generátor statických webových stránek
 
 * Větev `master/main`  obsahuje zdrojové soubory pro [pelican][].
 * Větev `gh-pages` obsahuje vygenerované HTML. 
+
+Pluginy a virtuální prostředí.
+------------------------------------------------------------
+
+
+Elegantní téma
+------------------------------------------------------------
 
 
 ### Odkazy

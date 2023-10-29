@@ -8,7 +8,7 @@ const copyToClipboardSuccessText = {
 };
 
 // Get all pre. But ignore line numbers section
-document.querySelectorAll("div.highlight .code pre").forEach(snippet => {
+document.querySelectorAll("div.highlight > pre, div.highlight .code pre").forEach(snippet => {
   // create div.codecopy
   const wrapper = document.createElement("div");
   wrapper.classList.add("codecopy");
