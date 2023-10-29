@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="Generování zvuku — základy "/>
 <meta property="og:url" content="./generovani-zvuku-zaklady.html" />
-<meta property="og:description" content="Zdrojové kódy Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je …" />
+<meta property="og:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-05-07T11:37:15.976664+02:00" />
 <meta property="og:article:modified_time" content="2021-05-07T11:37:15.976664+02:00" />
 <meta name="twitter:title" content="Generování zvuku — základy ">
-<meta name="twitter:description" content="Zdrojové kódy Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je …">
+<meta name="twitter:description" content="Zvuk je jak známo mechanické vlnění. Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto: (Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro budík je 100 Hz …">
 
         <title>Generování zvuku — základy  · Chytrosti
 </title>
@@ -108,31 +108,53 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h2 class="related-post-header">Obsah</h2>
+        <div class="toc">
 <ul>
-<li><a href="#zdrojove-kody">Zdrojové&nbsp;kódy</a></li>
+<li><a href="#zdrojove-kody">Zdrojové kódy</a></li>
 </ul>
 </div>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko — pác věcí, kterých byste si fakt měli všimnout">Céčko — pác věcí, kterých byste si fakt měli všimnout</a></li>
+<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
+<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
+<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
+<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+</ul>
+<hr />
+</section>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+
+            
 <p><a href="https://cs.wikipedia.org/wiki/Zvuk">Zvuk</a> je jak známo mechanické vlnění.
-Pro jeho vyloudění tedy potřebujeme nějaký &ldquo;vlnič&rdquo; &ndash; tedy elektro-akustický&nbsp;měnič. </p>
-<p><img alt="&gt;&gt;" src="./mit/img/piezo_obr.png"></p>
+Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. </p>
+<p><img alt="&gt;&gt;" src="./mit/img/piezo_obr.png"/></p>
 <p>Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
-frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například&nbsp;takto:</p>
-<p><img alt="|=|" src="./mit/img/piezo_f_ch.png"></p>
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:</p>
+<p><img alt="|=|" src="./mit/img/piezo_f_ch.png"/></p>
 <p>(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
 budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
 bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
-pískají a pípají a my vstáváme potom&nbsp;naštvaní.)</p>
+pískají a pípají a my vstáváme potom naštvaní.)</p>
 <p>Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
-tranzistorem. Zapojení tedy může vypadat například&nbsp;takto: </p>
-<p><img alt="micro-controller, piezo, repro" src="./mit/img/stm8-zvuk-1.png"></p>
+tranzistorem. Zapojení tedy může vypadat například takto: </p>
+<p><img alt="micro-controller, piezo, repro" src="./mit/img/stm8-zvuk-1.png"/></p>
 <p>Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
 Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
 Do výchylky odpovídající zápornému proudu se membrána nedostane, protože proud
-protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru, při sestupné&nbsp;hraně.</p>
+protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru, při sestupné hraně.</p>
 <p>Program, který nám vyloudí frekvenci <span class="math">\(500\,\mathrm{Hz}\)</span> může vypadat například takto. 
 Perioda je <span class="math">\(2\,\mathrm{ms}\)</span>. Půl periody tedy <span class="math">\(1\,\mathrm{ms}\)</span>.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -147,10 +169,9 @@ Perioda je <span class="math">\(2\,\mathrm{ms}\)</span>. Půl periody tedy <span
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
-<p><img alt="obdélníkový časový průběh %%" src="./mit/img/obdelnik.png"></p>
+<p><img alt="obdélníkový časový průběh %%" src="./mit/img/obdelnik.png"/></p>
 <p>Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
-membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 2\,\mathrm{ms}\)</span>) a pak nechám chvilku&nbsp;ticho.</p>
+membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 2\,\mathrm{ms}\)</span>) a pak nechám chvilku ticho.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">init</span><span class="p">();</span>
@@ -168,8 +189,7 @@ membránou do nekonečna, ale pouze několikrát (<span class="math">\(20 \cdot 
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
-<p><img alt="Pípání %%" src="./mit/img/pipani.png"></p>
+<p><img alt="Pípání %%" src="./mit/img/pipani.png"/></p>
 <p>Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
 vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
 <a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">multitasking</a> <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> a <a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">stavový automat</a>.</p>
@@ -228,15 +248,14 @@ vlastně pořádně nemůže dělat nic jiného. Proto použijeme
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
-<h2 id="zdrojove-kody">Zdrojové kódy<a class="headerlink" href="#zdrojove-kody" title="Permanent link">&para;</a></h2>
-<p>Kompletní zdrojové kódy naleznete v repositáři na GitHubu: <br>
+<h2 id="zdrojove-kody">Zdrojové kódy<a class="headerlink" href="#zdrojove-kody" title="Permanent link">¶</a></h2>
+<p>Kompletní zdrojové kódy naleznete v repositáři na GitHubu: <br/>
 <a href="https://github.com/spseol/STM8-zvuk-zaklad">https://github.com/spseol/<span class="caps">STM8</span>-zvuk-zaklad</a></p>
 <div class="footnote">
-<hr>
+<hr/>
 <ol>
 <li id="fn:1">
-<p><a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c">knihovna milis</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p><a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c">knihovna milis</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
 </div>

@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="DBI  - Databázové a informační systémy "/>
 <meta property="og:url" content="./dbi.html" />
-<meta property="og:description" content="Python Instalace knihoven Video – jak to rozjet na Windows Git Dokumentace SQLite Repositáře nejen z výuky Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu a virtuálnímu prostředí. Ve …" />
+<meta property="og:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu a virtuálnímu prostředí. Ve Windows to může vypadat třeba takto: pip install flask V Linuxu spíš takto: pip3 install --user …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2022-12-31T20:44:51.043038+01:00" />
 <meta property="og:article:modified_time" content="2022-12-31T20:44:51.043038+01:00" />
 <meta name="twitter:title" content="DBI  - Databázové a informační systémy ">
-<meta name="twitter:description" content="Python Instalace knihoven Video – jak to rozjet na Windows Git Dokumentace SQLite Repositáře nejen z výuky Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu a virtuálnímu prostředí. Ve …">
+<meta name="twitter:description" content="Python¶ Programujeme v jazyce Python, proto zde platí prakticky vše, co pro PRG. Instalace knihoven¶ Budeme potřebovat modul Flask. Jeho instalaci zajistí pip. Doporučuji přečíst si celý post věnovaný pipu a virtuálnímu prostředí. Ve Windows to může vypadat třeba takto: pip install flask V Linuxu spíš takto: pip3 install --user …">
 
         <title>DBI  - Databázové a informační systémy  · Chytrosti
 </title>
@@ -111,54 +111,71 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h2 class="related-post-header">Obsah</h2>
+        <div class="toc">
 <ul>
 <li><a href="#python">Python</a></li>
 <li><a href="#instalace-knihoven">Instalace knihoven</a><ul>
-<li><a href="#video-jak-to-rozjet-na-windows">Video &ndash; jak to rozjet na&nbsp;Windows</a></li>
+<li><a href="#video-jak-to-rozjet-na-windows">Video – jak to rozjet na Windows</a></li>
 </ul>
 </li>
 <li><a href="#git">Git</a></li>
 <li><a href="#dokumentace">Dokumentace</a></li>
 <li><a href="#sqlite">SQLite</a></li>
-<li><a href="#repositare-nejen-z-vyuky">Repositáře nejen z&nbsp;výuky</a></li>
+<li><a href="#repositare-nejen-z-vyuky">Repositáře nejen z výuky</a></li>
 </ul>
 </div>
-<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="./pip-a-venv.html" title="pip a venv - Jak nainstalovat balíček pro Python">pip a venv <small>Jak nainstalovat balíček pro Python</small></a></li>
+<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+</ul>
+<hr />
+</section>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+
+            
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">¶</a></h2>
 <p>Programujeme v jazyce Python, proto zde platí prakticky vše,
 co pro <a href="./prg.html"><span class="caps">PRG</span></a>.</p>
-<h2 id="instalace-knihoven">Instalace knihoven<a class="headerlink" href="#instalace-knihoven" title="Permanent link">&para;</a></h2>
+<h2 id="instalace-knihoven">Instalace knihoven<a class="headerlink" href="#instalace-knihoven" title="Permanent link">¶</a></h2>
 <p>Budeme potřebovat modul <a href="https://flask.palletsprojects.com/">Flask</a>. Jeho instalaci 
 zajistí <a href="https://pip.pypa.io">pip</a>. Doporučuji přečíst si celý 
 <a href="./pip-a-venv.html">post věnovaný pipu a virtuálnímu prostředí</a>.</p>
-<p>Ve Windows to může vypadat třeba&nbsp;takto:</p>
+<p>Ve Windows to může vypadat třeba takto:</p>
 <div class="highlight"><pre><span></span><code>pip install flask
 </code></pre></div>
-
-<p>V Linuxu spíš&nbsp;takto:</p>
+<p>V Linuxu spíš takto:</p>
 <div class="highlight"><pre><span></span><code>pip3 install --user flask
 </code></pre></div>
-
-<h3 id="video-jak-to-rozjet-na-windows">Video &ndash; jak to rozjet na Windows<a class="headerlink" href="#video-jak-to-rozjet-na-windows" title="Permanent link">&para;</a></h3>
-<p><a class="video-preview" href="https://odysee.com/@MarrekNozka/flask-run"><img alt="Jak rozjet Flask na Windows" data-frames="16" src="./dbi/img/flask-run_preview.jpg"></a></p>
-<h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
+<h3 id="video-jak-to-rozjet-na-windows">Video – jak to rozjet na Windows<a class="headerlink" href="#video-jak-to-rozjet-na-windows" title="Permanent link">¶</a></h3>
+<p><a class="video-preview" href="https://odysee.com/@MarrekNozka/flask-run"><img alt="Jak rozjet Flask na Windows" data-frames="16" src="./dbi/img/flask-run_preview.jpg"/></a></p>
+<h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
 <p>Pro sdílení práce a odevzdávání domácích úkolů používáme systém
 <a href="https://git-scm.org">Git</a> a server <a href="https://github.com">GitHub</a>.
 Stojí také za to, zmínit se 
 o <a href="https://education.github.com/">GitHub programu pro vzdělávání</a>.</p>
 <p>Gitu se věnuji v <a href="./git.html">samostatném postu</a>.</p>
-<h2 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">&para;</a></h2>
+<h2 id="dokumentace">Dokumentace<a class="headerlink" href="#dokumentace" title="Permanent link">¶</a></h2>
 <p>Krátkou českou dokumentaci najdete na adrese
-<a href="http://spseol.github.io/CzechFlaskDoc/">http://spseol.github.io/CzechFlaskDoc/</a>. Dále poslouží oficiální&nbsp;dokumentace:</p>
+<a href="http://spseol.github.io/CzechFlaskDoc/">http://spseol.github.io/CzechFlaskDoc/</a>. Dále poslouží oficiální dokumentace:</p>
 <ul>
 <li>Python: <a href="https://docs.python.org/">https://docs.python.org/</a></li>
 <li>Flask: <a href="https://flask.palletsprojects.com/">https://flask.palletsprojects.com/</a><ul>
 <li><a href="https://flask.palletsprojects.com/quickstart/">Quickstart</a></li>
-<li><a href="https://flask.palletsprojects.com/patterns/flashing/">Message&nbsp;Flashing</a></li>
-<li><a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data">Incoming Request&nbsp;Data</a></li>
+<li><a href="https://flask.palletsprojects.com/patterns/flashing/">Message Flashing</a></li>
+<li><a href="https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data">Incoming Request Data</a></li>
 <li><a href="https://flask.palletsprojects.com/patterns/">Patterns</a></li>
 </ul>
 </li>
@@ -166,12 +183,12 @@ o <a href="https://education.github.com/">GitHub programu pro vzdělávání</a>
 </ul>
 <p>Velmi užitečná je i best practices kniha <a href="http://exploreflask.com/">Explore Flask</a>
 a <a href="https://docs.python-guide.org">Stopařův průvodce Pythontem</a>.</p>
-<h2 id="sqlite">SQLite<a class="headerlink" href="#sqlite" title="Permanent link">&para;</a></h2>
+<h2 id="sqlite">SQLite<a class="headerlink" href="#sqlite" title="Permanent link">¶</a></h2>
 <ul>
 <li>klikátko: <a href="https://sqlitebrowser.org/dl/">https://sqlitebrowser.org/dl/</a></li>
 <li>textový auto-completion client: <a href="https://litecli.com">https://litecli.com</a></li>
 </ul>
-<h2 id="repositare-nejen-z-vyuky">Repositáře nejen z výuky<a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link">&para;</a></h2>
+<h2 id="repositare-nejen-z-vyuky">Repositáře nejen z výuky<a class="headerlink" href="#repositare-nejen-z-vyuky" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="https://github.com/spseol?q=DBI-&amp;type=all&amp;language=&amp;sort=">https://github.com/spseol?q=<span class="caps">DBI</span>-&amp;type=all&amp;language=&amp;sort=</a></li>
 </ul>

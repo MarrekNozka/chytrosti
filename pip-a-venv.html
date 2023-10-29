@@ -20,13 +20,13 @@
 
 <meta property="og:title" content="pip a venv  - Jak nainstalovat balíček pro Python "/>
 <meta property="og:url" content="./pip-a-venv.html" />
-<meta property="og:description" content="Globální instalace Uživatelská instalace Virtuální prostředí? venv Vytvoření Aktivace Práce Deaktivace Aktualizace Balíčků pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy …" />
+<meta property="og:description" content="pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy se stane, že při zadání příkazu pip obdržíte pouze hlášení, že příkaz neexistuje …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
 <meta property="og:article:published_time" content="2021-11-17T15:35:00+01:00" />
 <meta property="og:article:modified_time" content="2022-10-20T06:38:20.864286+02:00" />
 <meta name="twitter:title" content="pip a venv  - Jak nainstalovat balíček pro Python ">
-<meta name="twitter:description" content="Globální instalace Uživatelská instalace Virtuální prostředí? venv Vytvoření Aktivace Práce Deaktivace Aktualizace Balíčků pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy …">
+<meta name="twitter:description" content="pip je instalátor balíčků pro Python. Kromě toho, že umí nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky spravovat. To znamená, že kromě akce install existuje i akce unistall nebo list. Někdy se stane, že při zadání příkazu pip obdržíte pouze hlášení, že příkaz neexistuje …">
 
         <title>pip a venv  - Jak nainstalovat balíček pro Python  · Chytrosti
 </title>
@@ -111,13 +111,13 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-
-            <div class="toc">
+    <div class="span2 table-of-content">
+        <nav>
+        <h2 class="related-post-header">Obsah</h2>
+        <div class="toc">
 <ul>
-<li><a href="#globalni-instalace">Globální&nbsp;instalace</a></li>
-<li><a href="#uzivatelska-instalace">Uživatelská&nbsp;instalace</a></li>
+<li><a href="#globalni-instalace">Globální instalace</a></li>
+<li><a href="#uzivatelska-instalace">Uživatelská instalace</a></li>
 <li><a href="#virtualni-prostredi-venv">Virtuální prostředí? venv</a><ul>
 <li><a href="#vytvoreni">Vytvoření</a></li>
 <li><a href="#aktivace">Aktivace</a></li>
@@ -125,9 +125,28 @@
 <li><a href="#deaktivace">Deaktivace</a></li>
 </ul>
 </li>
-<li><a href="#aktualizace-balicku">Aktualizace&nbsp;Balíčků</a></li>
+<li><a href="#aktualizace-balicku">Aktualizace Balíčků</a></li>
 </ul>
 </div>
+<section>
+    <h2 class="related-post-header">Související posty</h2>
+<ul class="related-posts-list">
+<li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
+<li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
+<li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
+<li><a href="./prg.html" title="PRG - Programování v jazyce Python">PRG <small>Programování v jazyce Python</small></a></li>
+<li><a href="./dbi.html" title="DBI - Databázové a informační systémy">DBI <small>Databázové a informační systémy</small></a></li>
+<li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
+</ul>
+<hr />
+</section>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+
+            
 <p><a href="https://pip.pypa.io">pip</a> je instalátor balíčků pro Python. Kromě toho, že umí
 nainstalovat balíček, tak umí nainstalovat i všechny jeho závislosti a umí tyto balíčky 
 spravovat. To znamená, že kromě akce <code>install</code> existuje i akce <code>unistall</code> nebo 
@@ -136,127 +155,112 @@ spravovat. To znamená, že kromě akce <code>install</code> existuje i akce <co
 neexistuje. Buď jste při instalaci nezadali, že se má nainstalovat, nebo 
 nejsou příslušné cesty obsaženy v proměnné <code>PATH</code>. V obou dvou případech doporučuji
 znovu <a href="https://github.com/spseol/PRG-No/blob/master/instalace.md">spustit instalátor</a>
-a zaškrtnou příslušná&nbsp;políčka.</p>
-<p>V Linuxu potom stačí něco&nbsp;jako: </p>
+a zaškrtnou příslušná políčka.</p>
+<p>V Linuxu potom stačí něco jako: </p>
 <div class="highlight"><pre><span></span><code>apt install python3-pip python3-venv
 </code></pre></div>
-
 <div class="admonition note">
-<p class="admonition-title">Malá poznámka k&nbsp;Linuxu</p>
+<p class="admonition-title">Malá poznámka k Linuxu</p>
 <p>V Linuxových distribucích bývá Python
-většinou už nainstalován &ndash; a to dokonce dvakrát. Příkazem <code>python</code>
+většinou už nainstalován – a to dokonce dvakrát. Příkazem <code>python</code>
 spustíte <strong>Python2</strong> a příkazem <code>python3</code> spustíte <strong>Python3</strong>. Obdobně
 to platí pro příkaz <code>pip</code> a <code>pip3</code>.</p>
 </div>
 <p>Také se může stát, že modul pip nainstalován je, ale příkaz <code>pip</code> ne.
 Pro tyto případy a také pro vysvětlení některých nejasností: místo příkazu <code>pip</code>
-můžete zadat delší&nbsp;příkaz</p>
+můžete zadat delší příkaz</p>
 <div class="highlight"><pre><span></span><code>python -m pip
 </code></pre></div>
-
-<p>případně&hellip;</p>
+<p>případně…</p>
 <div class="highlight"><pre><span></span><code>python3 -m pip
 </code></pre></div>
-
-<p>celý příkaz může tedy vypadat například&nbsp;takto:</p>
+<p>celý příkaz může tedy vypadat například takto:</p>
 <div class="highlight"><pre><span></span><code>python3 -m pip install -U --user flask
 </code></pre></div>
-
-<p>namísto&hellip;</p>
+<p>namísto…</p>
 <div class="highlight"><pre><span></span><code>pip install -U --user flask
 </code></pre></div>
-
-<hr>
+<hr/>
 <p>Ještě než se dáte do instalace zvažte zda instalovat pro celý systém, virtuální
-prostředí nebo jen pro jednoho&nbsp;uživatele? </p>
-<p>Dále je dobré si všímat žlutých varovných hlášení a řídit se jejich&nbsp;radou:</p>
+prostředí nebo jen pro jednoho uživatele? </p>
+<p>Dále je dobré si všímat žlutých varovných hlášení a řídit se jejich radou:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><span class="caps">WARNING</span>: You are using pip version 21.2.4; however, version 21.3.1 is available.
-You should consider upgrading via the &lsquo;/usr/bin/python3.9 -m pip install 
-&ndash;upgrade pip&rsquo;&nbsp;command.</p>
+You should consider upgrading via the ‘/usr/bin/python3.9 -m pip install 
+–upgrade pip’ command.</p>
 </div>
-<p>Hodně zásadní je chybové hlášení, které může vypadat například&nbsp;takto:</p>
+<p>Hodně zásadní je chybové hlášení, které může vypadat například takto:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><span class="caps">WARNING</span>: The scripts pip, pip3 and pip3.9 are installed in
-&lsquo;/home/marek/.local/bin&rsquo; which is not on <span class="caps">PATH</span>. Consider adding this directory
-to <span class="caps">PATH</span> or, if you prefer to suppress this warning, use&nbsp;&ndash;no-warn-script-location.</p>
+‘/home/marek/.local/bin’ which is not on <span class="caps">PATH</span>. Consider adding this directory
+to <span class="caps">PATH</span> or, if you prefer to suppress this warning, use –no-warn-script-location.</p>
 </div>
 <p>Spustitelný skript se nainstaloval tam, kde ho váš shell nenajde. Je třeba toto místo
 přidat do proměnné <code>PATH</code>. Ve Windows to musíte naklikat, v Linuxu je to soubor
-<code>~/.profile</code> nebo <code>~/.zprofile</code> (podle toho, jaký používáte&nbsp;shell).</p>
+<code>~/.profile</code> nebo <code>~/.zprofile</code> (podle toho, jaký používáte shell).</p>
 <div class="highlight"><pre><span></span><code>PATH=~.local/bin:$PATH
 </code></pre></div>
-
-<h2 id="globalni-instalace">Globální instalace<a class="headerlink" href="#globalni-instalace" title="Permanent link">&para;</a></h2>
+<h2 id="globalni-instalace">Globální instalace<a class="headerlink" href="#globalni-instalace" title="Permanent link">¶</a></h2>
 <p>Pokud budete balíček instalovat globálně pro celý systém potřebujete
 administrátorská práva. Je třeba se ujistit, že si tím nepokazíte něco, co už
 nainstalované máte. Mohlo by se stát, že máte nainstalovanou nějakou aplikaci,
 která potřebuje knihovnu verze <code>x.y</code> a vy nyní nainstalujete tu stejnou
 knihovnu verze <code>y.z</code>. Na Windows toto většinou (někdy tedy ano) řešit nemusíte,
 na Linuxu typicky ano. (Na druhou stranu v Linuxu můžete spoustu knihoven
-nainstalovat i bez <code>pip</code>u z&nbsp;repositářů vaší distribuce: <code>apt install
+nainstalovat i bez <code>pip</code>u z repositářů vaší distribuce: <code>apt install
 pytho3-flask</code>.)</p>
-<p>Takže spustíte si příkazový řádek a jako superuživatel a zadáte něco&nbsp;jako:</p>
+<p>Takže spustíte si příkazový řádek a jako superuživatel a zadáte něco jako:</p>
 <div class="highlight"><pre><span></span><code>pip install flask
 pip install pyglet
 pip install jmeno_balicku
 </code></pre></div>
-
-<h2 id="uzivatelska-instalace">Uživatelská instalace<a class="headerlink" href="#uzivatelska-instalace" title="Permanent link">&para;</a></h2>
+<h2 id="uzivatelska-instalace">Uživatelská instalace<a class="headerlink" href="#uzivatelska-instalace" title="Permanent link">¶</a></h2>
 <p>K uživatelské instalaci nepotřebujete administrátorská práva, protože balíčky se
 instalují do vašeho domovského adresáře (profilu). Na Linuxu je to typicky adresář
-<code>~/.local/lib/python3.X</code> pro balíčky a <code>~/.local/bin</code> pro spustitelné&nbsp;skripty.</p>
+<code>~/.local/lib/python3.X</code> pro balíčky a <code>~/.local/bin</code> pro spustitelné skripty.</p>
 <div class="highlight"><pre><span></span><code>pip install --user flask 
 pip install --user pyglet
 </code></pre></div>
-
 <p>Pokud už je daný balíček nainstalován v systému a vy chcete novější verzi jen
 do uživatelského profilu, je třeba to vynutit parametrem <code>-U</code>, který říká, že má
-balíček povýšit/instalovat na nejnovější dostupnou&nbsp;verzi.</p>
+balíček povýšit/instalovat na nejnovější dostupnou verzi.</p>
 <div class="highlight"><pre><span></span><code>pip install -U --user flask
 </code></pre></div>
-
-<h2 id="virtualni-prostredi-venv">Virtuální prostředí? venv<a class="headerlink" href="#virtualni-prostredi-venv" title="Permanent link">&para;</a></h2>
+<h2 id="virtualni-prostredi-venv">Virtuální prostředí? venv<a class="headerlink" href="#virtualni-prostredi-venv" title="Permanent link">¶</a></h2>
 <p><a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments">Virtuální prostředí</a>
 umožňuje mít instalaci Pythonu (jakoby) oddělenou od instalace
 v systému. Pro každý projekt si vytvoříte vlastní virtuální prostředí a do něj
 instalujete potřebné balíčky v potřebné verzi. Ostatní systém a ostatní balíčky si
-toho vůbec&nbsp;nevšimnou.</p>
-<h3 id="vytvoreni">Vytvoření<a class="headerlink" href="#vytvoreni" title="Permanent link">&para;</a></h3>
+toho vůbec nevšimnou.</p>
+<h3 id="vytvoreni">Vytvoření<a class="headerlink" href="#vytvoreni" title="Permanent link">¶</a></h3>
 <p>Nejprve je třeba virtuální prostředí vytvořit. Např. do adresáře <code>.venv-projekt1</code>:</p>
 <div class="highlight"><pre><span></span><code>python3 -m venv .venv-projekt1
 </code></pre></div>
-
-<h3 id="aktivace">Aktivace<a class="headerlink" href="#aktivace" title="Permanent link">&para;</a></h3>
-<p>Před začátkem práce je třeba vždy prostředí&nbsp;aktivovat.</p>
-<p>V&nbsp;Linuxu:</p>
+<h3 id="aktivace">Aktivace<a class="headerlink" href="#aktivace" title="Permanent link">¶</a></h3>
+<p>Před začátkem práce je třeba vždy prostředí aktivovat.</p>
+<p>V Linuxu:</p>
 <div class="highlight"><pre><span></span><code>source .venv-projekt1/bin/activate
 </code></pre></div>
-
-<p>Ve&nbsp;Windows</p>
+<p>Ve Windows</p>
 <div class="highlight"><pre><span></span><code><span class="na">.venv-projekt1</span><span class="err">\</span><span class="no">Scripts</span><span class="err">\</span><span class="no">activate.bat</span>
 </code></pre></div>
-
-<h3 id="prace">Práce<a class="headerlink" href="#prace" title="Permanent link">&para;</a></h3>
+<h3 id="prace">Práce<a class="headerlink" href="#prace" title="Permanent link">¶</a></h3>
 <p>Prostředí je aktivováno a pokud tu pustíte Python bude vidět jen to, co je
 zahrnuto v tomto virtuálním prostředí. Pokud pustíte <code>pip</code>, bude instalovat do
-tohoto&nbsp;prostředí.</p>
+tohoto prostředí.</p>
 <div class="highlight"><pre><span></span><code>pip install -U pip
 pip install flask
 </code></pre></div>
-
-<h3 id="deaktivace">Deaktivace<a class="headerlink" href="#deaktivace" title="Permanent link">&para;</a></h3>
+<h3 id="deaktivace">Deaktivace<a class="headerlink" href="#deaktivace" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>deactivate
 </code></pre></div>
-
-<h2 id="aktualizace-balicku">Aktualizace Balíčků<a class="headerlink" href="#aktualizace-balicku" title="Permanent link">&para;</a></h2>
+<h2 id="aktualizace-balicku">Aktualizace Balíčků<a class="headerlink" href="#aktualizace-balicku" title="Permanent link">¶</a></h2>
 <p>Aktualizace balíčků na nejnovější dostupnou verzi provedete parametrem <code>-U</code>.</p>
 <div class="highlight"><pre><span></span><code>pip install -U pip
 pip install -U flask
 </code></pre></div>
-
 <p>nebo </p>
 <div class="highlight"><pre><span></span><code>pip install --user -U pip
 pip install --user -U pyglet
