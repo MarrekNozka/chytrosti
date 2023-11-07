@@ -10,6 +10,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 div#content {
   flex: 1 0 auto;
