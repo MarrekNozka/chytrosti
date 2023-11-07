@@ -180,7 +180,7 @@ div.recent-posts time,
 ul.list-articles-under-tag-category li time,
 div.recent-posts-posted {
   font-family: var(--sansFontFamily);
-  font-size: rfs(0.8rem);
+  /*font-size: rfs(0.8rem);*/
 }
 span.superscript {
   font-size: rfs(0.67rem);

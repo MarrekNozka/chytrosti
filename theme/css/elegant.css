@@ -92,6 +92,7 @@ ul.list-projects,
 .tags-in-article li {
   float: none;
   line-height: 28px;
+  margin-left: 10px;
 }
 /* Article */
 .article-content,
@@ -174,6 +175,40 @@ ul.multi-parts-list a:hover {
 ul.multi-parts-list li.active-part {
   font-style: italic;
 }
+
+[class*=span].table-of-content {
+    font-size: 115%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 10rem;
+    bottom: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+[class*=span].table-of-content::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+[class*=span].table-of-content nav .toc ul li {
+    margin-top: 0.11rem;
+    margin-bottom: 0.11rem;
+    list-style-position: outside;
+    margin-left: 1.33em;
+}
+ul.related-posts-list li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    list-style-position: outside;
+    margin-left: 1.33em;
+}
+
+#article-sidebar time {
+    font-size: 1.2rem;
+    color: #305;
+    margin-left: 10px;
+}
+
 .table-of-content .toc ul {
   margin: 0;
   padding: 0 0 0 0.2rem;
@@ -206,13 +241,17 @@ ul.list-articles-under-tag-category {
 }
 a.category-link {
   color: #333;
+  background-color: #eee;
+  font-size: 1.22rem;
+  padding: 3px 6px 4px 5px;
+  margin-left: 10px;
 }
 a.category-link:hover {
   text-decoration: none;
 }
 a.category-title-inside-accordion:hover,
 a:not(.collapsed).accordion-toggle.category-title-inside-accordion {
-  background-color: #08c;
+  background-color: darkred;
   border-radius: var(--borderRadius);
   color: #fff;
 }
@@ -233,7 +272,7 @@ div.recent-posts-article {
   padding: 0.3rem 0.2rem;
 }
 ul.list-articles-under-tag-category li {
-  padding: 0.1rem 0.2rem;
+  padding: 0.5rem 0.2rem;
 }
 div.blog-archives div {
   margin-left: rfs(6rem);
@@ -269,6 +308,10 @@ div.recent-posts-posted {
   ul.list-articles-under-tag-category li time {
     float: none;
     display: block;
+  }
+
+  [class*=span].table-of-content {
+    position: static;
   }
 }
 /* MailChimp */

@@ -79,7 +79,7 @@ td {
   }
 }
 .linenos {
-  width: 30px;
+  width: 5ex;
 }
 .linenos div pre {
   text-align: right;

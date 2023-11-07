@@ -456,6 +456,9 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  .row-fluid .span12 {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
