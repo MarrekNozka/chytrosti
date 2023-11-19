@@ -16,3 +16,17 @@
     font-size: rfs(1.125rem);
   }
 }
+
+
+#stork-search {
+    background-color: #eee;
+    font-size: 150%;
+    padding: 11px;
+    border-radius: 8px;
+}
+#stork-input {
+    font-size: 120%;
+    border-radius: 6px;
+    color: darkslategrey;
+    padding: 5px 1ex;
+}
