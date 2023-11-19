@@ -663,7 +663,7 @@ printf("Bytes: %02X %02X %02X %02X\n", *ukazatel, *(ukazatel + 1),
 Moduly a externí proměnné
 =============================
 
-Toto téma rozvedeno v postu
+Toto téma naleznete v samostatném postu
 [Oddělená kompilace a vlastní knihovny]({filename}./kompilace_knihovny.md).
 
 

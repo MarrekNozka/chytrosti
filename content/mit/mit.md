@@ -20,6 +20,7 @@ Pro potřeby svojí výuky jsem sestavil následující:
 
 * [Céčko --  pác věcí, kterých byste si fakt měli všimnout]({filename}./cecko.md)
 * [Oddělená kompilace a vlastní knihovny]({filename}./kompilace_knihovny.md)
+* [Dělení v pevné řadové čárce]({filename}./deleni_fixpoint.md)
 * [Generování zvuku -- základy]({filename}./zvuk-zaklad.md)
 * [Základní použití časovače]({filename}./casovace.md)
 * [Použití časovače jako generátoru PWM]({filename}./pwm.md)

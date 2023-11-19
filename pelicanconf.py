@@ -44,7 +44,9 @@ PLUGINS.append("jinja2content")
 JINJA2CONTENT_TEMPLATES = ["."]
 
 PLUGINS += ["liquid_tags", "liquid_tags.include_code"]
+LIQUID_MARKS = r"\{~.*?~\}"
 CODE_DIR = "code"
+LIQUID_TAGS = ["include_code"]
 
 PLUGINS += ["related_posts"]
 RELATED_POSTS_MAX = 12
@@ -91,6 +93,17 @@ PROJECTS = [
         "description": "-- osobní webové stránky a blog.",
     },
     {
+        "name": "Mamut.SPSEol.cz/nozka/",
+        "url": "https://mamut.spseol.cz/nozka/",
+        "description": "-- starší (již neudržovaná) verze těchto stránek.",
+    },
+    {
+        "name": "GitLab project interactive CLI",
+        "url": "https://gitlab.com/MarrekNozka/gitlab-project-icli",
+        "description": "-- interaktivní, automatizované vytváření a "
+        "mazání repositářů na GitLabu.",
+    },
+    {
         "name": "OpenZone",
         "url": "https://mamut.spseol.cz/openzone/",
         "description": "-- volnočasové aktivity související se vším, "
@@ -131,11 +144,15 @@ MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.codehilite": {
             "css_class": "highlight",
-            "linenums": False,
+            # "linenums": True,
         },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {"permalink": "true", "baselevel": 2},
+        "markdown.extensions.toc": {
+            "permalink": "true",
+            "baselevel": 2,
+            "toc_depth": 3,
+        },
         "markdown.extensions.admonition": {},
         "markdown.extensions.smarty": {},
         "mdx_include": {"base_path": PATH},
