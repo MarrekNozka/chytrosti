@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - SÍTě</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/site.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2022-12-31T20:56:22+01:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2022-12-31T20:56:22+01:00</published><updated>2022-12-31T20:56:22+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2022-12-31:/site.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - SÍTě</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/site.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-12-03T15:41:03+01:00</updated><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2023-12-03T15:41:03+01:00</published><updated>2023-12-03T15:41:03+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-12-03:/site.html</id><summary type="html">
 &lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;dl&gt;
 &lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
@@ -34,11 +34,11 @@
 &lt;/dl&gt;
 &lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;dl&gt;
-&lt;dt&gt;Toto je více méně …&lt;/dt&gt;&lt;/dl&gt;</summary><content type="html">
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</summary><content type="html">
 &lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;dl&gt;
 &lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
@@ -73,24 +73,34 @@
 &lt;/dl&gt;
 &lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;&lt;img alt="Maska sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;&lt;img alt="Rozdělení na podsítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
 &lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;dl&gt;
 &lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="VirtualBox jako malá síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;VirtualBox jako malá síťová laboratoř&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;&lt;img alt="VirtualBoxu a NAT" data-frames="16" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;VirtualBox a &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;&lt;img alt="Host-only, Network bridge, Internal network" data-frames="16" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;Host-only, Network bridge, Internal network&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;&lt;img alt="Připojení do sítě" data-frames="16" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;Připojení do sítě&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/smerovani"&gt;&lt;img alt="Směrování. Jak funguje Internet" data-frames="16" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/smerovani"&gt;Směrování. Jak funguje Internet&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;img alt="ARP" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/a&gt;
+&lt;img alt="" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;]&lt;/dd&gt;
 &lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;&lt;img alt="Síťová laboratoř" data-frames="16" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;Síťová laboratoř&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
-&lt;dd&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;img alt="DHCP server" data-frames="16" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;span class="caps"&gt;DHCP&lt;/span&gt; server&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/dd&gt;
 &lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry></feed>

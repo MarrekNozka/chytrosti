@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-01-02T11:37:37+01:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2023-01-02T11:37:37+01:00</published><updated>2023-01-02T11:37:37+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-01-02:/git.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2023-11-30T14:51:50+01:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2023-11-30T14:51:50+01:00</published><updated>2023-11-30T14:51:50+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-11-30:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -36,8 +36,10 @@ kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/
 &lt;/ul&gt;
 &lt;p&gt;Zde referenční příručka: &lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="videa"&gt;Videa&lt;a class="headerlink" href="#videa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;&lt;img alt="Základy systému Git" data-frames="16" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="video-preview" href="https://odysee.com/@MarrekNozka/git-remote"&gt;&lt;img alt="Git a GitHub" data-frames="16" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;Základy systému Git&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-remote"&gt;Git a GitHub&lt;/a&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/p&gt;
 &lt;h2 id="instalace"&gt;Instalace&lt;a class="headerlink" href="#instalace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Ve Windows doporučuji použít &lt;a href="https://chytrosti.marrek.cz/chocolatey.html"&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;choco install git

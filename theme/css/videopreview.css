@@ -1,5 +1,8 @@
 .video-preview {
-    display: inline-block;
+    display: block;
+}
+.video-preview a {
+    display: inline-block !important; 
     position: relative;
     background: #ddd;
     overflow: hidden;
@@ -11,7 +14,11 @@
     text-indent: 0em;
 }
 
-.video-preview span {
+.video-preview img {
+    display: none;
+}
+
+.video-preview a span#title {
     display: inline-block;
     color: red;
     padding: 5px 9px;
@@ -26,6 +33,6 @@
     border-radius: 3px;
 }
 
-.video-preview span:hover {
+.video-preview a span#title:hover {
     opacity: 0%;
 }
