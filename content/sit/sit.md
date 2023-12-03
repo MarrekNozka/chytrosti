@@ -56,37 +56,57 @@ Video-návody
 Maska sítě
 ------------
 
-[![Maska sítě]({static}01-maska_site_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/01-maska_site){.video-preview}
+[Maska sítě](https://odysee.com/@MarrekNozka/01-maska_site)
+![]({static}01-maska_site_preview.jpg)
+{.video-preview data-frames="16"}
 
-[![Rozdělení na podsítě]({static}02-maska-rozdeleni_na_podsite_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite){.video-preview}
+[Rozdělení na podsítě](https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite)
+![]({static}02-maska-rozdeleni_na_podsite_preview.jpg)
+{.video-preview data-frames="16"}
 
 Síťování ve Virtualboxu
 ---------------------------
 
 Toto je více méně poslední video, ale možná jím budete chtít začít
-: [![VirtualBox jako malá síťová laboratoř]({static}08-sitova_laborator_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator){.video-preview}
+: [VirtualBox jako malá síťová laboratoř](https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator)
+![]({static}08-sitova_laborator_preview.jpg)
+{.video-preview data-frames="16"}
+
 
 Z uživatelského hlediska nejjednodušší nastavení sítě je NAT
-: [![VirtualBoxu a NAT]({static}03-virtualbox-nat_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/virtualbox-nat){.video-preview}
+: [VirtualBox a NAT](https://odysee.com/@MarrekNozka/virtualbox-nat)
+![]({static}03-virtualbox-nat_preview.jpg)
+{.video-preview data-frames="16"}
+
 
 Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network
-: [![Host-only, Network bridge, Internal network]({static}04-virutalbox-only_bridge_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/virutalbox2){.video-preview}
+: [Host-only, Network bridge, Internal network](https://odysee.com/@MarrekNozka/virutalbox2)
+![]({static}04-virutalbox-only_bridge_preview.jpg)
+{.video-preview data-frames="16"}
+
 
 Jak připojit PC do sítě?
-: [![Připojení do sítě]({static}05-pripojeni_do_site_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/pripojeni-do-site){.video-preview}
+: [Připojení do sítě](https://odysee.com/@MarrekNozka/pripojeni-do-site)
+![]({static}05-pripojeni_do_site_preview.jpg)
+{.video-preview data-frames="16"}
 
 Směrování... a jak funguje Internet
-: [![Směrování. Jak funguje Internet]({static}06-smerovani_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/smerovani){.video-preview}
+: [Směrování. Jak funguje Internet](https://odysee.com/@MarrekNozka/smerovani)
+![]({static}06-smerovani_preview.jpg)
+{.video-preview data-frames="16"}
 
 Něco málo o protokolu ARP
-: [![ARP]({static}07-ARP_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/ARP){.video-preview}
+: [ARP](https://odysee.com/@MarrekNozka/ARP)
+![]({static}07-ARP_preview.jpg){data-frames="16"}]
+{.video-preview data-frames="16"}
 
 VirtualBox jako malá síťová laboratoř
-: [![Síťová laboratoř]({static}08-sitova_laborator_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator){.video-preview}
-
+: [Síťová laboratoř](https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator)
+![]({static}08-sitova_laborator_preview.jpg)
+{.video-preview data-frames="16"}
 
 Nastavení DHCP serveru na Mikrotik RoterBoardOS.
-: [![DHCP server]({static}09-DHCP_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/DHCP){.video-preview}
-
-
+: [DHCP server](https://odysee.com/@MarrekNozka/DHCP)
+![]({static}09-DHCP_preview.jpg)
+{.video-preview data-frames="16"}
 

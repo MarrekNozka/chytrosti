@@ -46,10 +46,13 @@ Zde referenční příručka: <https://git-scm.com/docs>
 Videa
 ================
 
-[![Základy systému Git]({static}images/git-zaklad_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/git-zaklad){.video-preview}
+[Základy systému Git](https://odysee.com/@MarrekNozka/git-zaklad)
+![]({static}images/git-zaklad_preview.jpg)
+{.video-preview data-frames="16"}
 
-[![Git a GitHub]({static}images/git-github-2_preview.jpg){data-frames="16"}](https://odysee.com/@MarrekNozka/git-remote){.video-preview}
-
+[Git a GitHub](https://odysee.com/@MarrekNozka/git-remote)
+![]({static}images/git-github-2_preview.jpg)
+{.video-preview data-frames="16"}
 
 
 Instalace
