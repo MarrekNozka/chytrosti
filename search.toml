@@ -13,6 +13,11 @@ url = "/pages/o-mne.html"
 title = "O mně"
 
 [[input.files]]
+path = "stm8oss.html"
+url = "/stm8oss.html"
+title = "Vývoj STM8 s OpenSource nástroji"
+
+[[input.files]]
 path = "site.html"
 url = "/site.html"
 title = "Sítě"
@@ -46,11 +51,6 @@ title = "PRG"
 path = "psk.html"
 url = "/psk.html"
 title = "PSK"
-
-[[input.files]]
-path = "stm8oss.html"
-url = "/stm8oss.html"
-title = "Vývoj STM8 s OpenSource nástroji"
 
 [[input.files]]
 path = "vscodecodium.html"

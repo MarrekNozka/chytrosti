@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="../theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../theme/css/videopreview.css" media="screen">
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
@@ -108,6 +107,17 @@
             <h1 id="recent-posts">Nedávné Posty <a id="allposts" href="../archives.html">všechny posty</a></h1>
             </header>
         <div class="recent-posts">
+            <div itemscope class="recent-posts-article">
+                <a href="../stm8oss.html">
+                    Vývoj <span class="caps">STM8</span> s OpenSource&nbsp;nástroji
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="../categories.html#mitka-ref">MITka</a>
+                    <time itemprop="dateCreated" datetime="2023-12-10T21:23:16+01:00">Neděle 10. prosince 2023</time>
+                </div>
+                    <p>Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …</p>
+            </div>
             <div itemscope class="recent-posts-article">
                 <a href="../site.html">
                     Sítě
@@ -240,17 +250,6 @@
                     <p>Vše, co se týká PSK najdete zatím ma mém starším webu https://mamut.spseol.cz/nozka/psk. Snad se mi podaří tento obsah v nějaké dohledné době aktualizovat a přesunout sem. Linux¶ Mnou vytvořené studijní materiály o příkazovém řádku najdete zde: https://mamut.spseol.cz/nozka/psk/#_3 Základy počítačových …</p>
             </div>
             <div itemscope class="recent-posts-article">
-                <a href="../stm8oss.html">
-                    Vývoj <span class="caps">STM8</span> s OpenSource&nbsp;nástroji
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="../categories.html#mitka-ref">MITka</a>
-                    <time itemprop="dateCreated" datetime="2022-03-12T09:31:24+01:00">Sobota 12. března 2022</time>
-                </div>
-                    <p>Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …</p>
-            </div>
-            <div itemscope class="recent-posts-article">
                 <a href="../vscodecodium.html">
                     VSCode/Codium
                     <small class="subtitle">
@@ -354,7 +353,6 @@
             }
         </script>
         <script src="../theme/js/medium-zoom.min.js"></script>
-        <script src="../theme/js/videopreview.js"></script>
         <script>
           mediumZoom('img[alt*="%%"]', {background: '#00111111',});
         </script>

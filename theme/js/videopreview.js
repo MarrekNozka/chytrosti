@@ -21,7 +21,7 @@ function video_preview_create() {
         let src = img.src;
         a.addEventListener('mousemove', mouseMove)
         let text = a.innerHTML
-        a.innerHTML = '<span id="title">▷ ' + text + '</span>'
+        a.innerHTML = '<span class="videotitle">▷ ' + text + '</span>'
 
         img.remove();
         img = new Image();

@@ -18,7 +18,7 @@
     display: none;
 }
 
-.video-preview a span#title {
+.video-preview a span.videotitle {
     display: inline-block;
     color: red;
     padding: 5px 9px;
@@ -28,11 +28,11 @@
     font-size: 120%;
     color: white;
     background-color: #333;
-    opacity: 88%;
     box-shadow: 0 0 6px #bbb;
-    border-radius: 3px;
+    border-radius: 5px;
+    opacity: 0.88;
 }
 
-.video-preview a span#title:hover {
-    opacity: 0%;
+.video-preview a span.videotitle:hover {
+    opacity: 0;
 }

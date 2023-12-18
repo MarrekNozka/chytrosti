@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 03 Dec 2023 15:41:03 +0100</lastBuildDate><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Sun, 10 Dec 2023 21:23:16 +0100</lastBuildDate><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
+&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
+dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
+(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
+které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
+na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
+kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 10 Dec 2023 21:23:16 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2023-12-10:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>
 &lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;dl&gt;
 &lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
@@ -92,13 +98,7 @@ dohledné době aktualizovat a přesunout&amp;nbsp;sem.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="blik :-O" src="https://chytrosti.marrek.cz/images/matrix.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Mnou vytvořené studijní materiály o příkazovém řádku najdete zde:
 &lt;a href="https://mamut.spseol.cz/nozka/psk/#_3"&gt;https://mamut.spseol.cz/nozka/psk/#_3&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 13 Sep 2022 22:12:20 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-09-13:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
-&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
-dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
-(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
-které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
-na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
-kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sat, 12 Mar 2022 09:31:24 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-03-12:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
+&lt;h2 id="zaklady-pocitacovych-siti"&gt;Základy počítačových …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 13 Sep 2022 22:12:20 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2022-09-13:/psk.html</guid><category>PSKáčko</category><category>PSK</category><category>Linux</category></item><item><title>VSCode/Codium</title><link>https://chytrosti.marrek.cz/vscodecodium.html</link><description>
 &lt;p&gt;V poslední době se mi jako editor nejvíc osvědčil VSCode/Codium. Já osobně sice
 používáme &lt;a href="https://cs.wikipedia.org/wiki/Vim"&gt;VIm&lt;/a&gt;, ale ve výuce a se studenty
 používáme VSCode/Codium. &lt;/p&gt;

@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./theme/css/elegant.prod.9e9d5ce754.css" media="screen">
         <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/css/videopreview.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -23,8 +22,8 @@
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2022-03-12T09:31:24.940138+01:00" />
-<meta property="og:article:modified_time" content="2022-03-12T09:31:24.940138+01:00" />
+<meta property="og:article:published_time" content="2023-12-10T21:23:16.918748+01:00" />
+<meta property="og:article:modified_time" content="2023-12-10T21:23:16.918748+01:00" />
 <meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
@@ -116,8 +115,8 @@
 
         <section id="article-sidebar">
               <h4>Aktualizováno:</h4>
-            <time itemprop="dateCreated" datetime="2022-03-12T09:31:24+01:00">
-              So 12. bře 2022 9:31
+            <time itemprop="dateCreated" datetime="2023-12-10T21:23:16+01:00">
+              Ne 10. pro 2023 21:23
             </time>
 
             <h4>Kategorie:</h4>
@@ -208,7 +207,7 @@ dodává vývojové prostředí <span class="caps">STVD</span>
 které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
 na nějakém <span class="caps">PC</span> je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
 kontrola licence, je fakt opruz; … a jeho chybová hlášení mi taky
-nepřišly úplně srozumitelná.  <br/>
+nepřišla úplně srozumitelná.  <br/>
 A to jsem ještě nezmínil to hlavní: <strong>Na Linuxu to nejede!</strong></p>
 <p><img alt="tools %%" src="./mit/img/tools.jpg"/></p>
 <p>Takže, co s tím? Použijeme
@@ -583,6 +582,8 @@ příkazy</a>.</p>
 <p>V programu funguje <strong>tabulátor</strong>. To znamená, že při stisku klávesy <code>TAB</code> se
 <span class="caps">GDB</span> pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná.</p>
 <dl>
+<dt><code>list main</code>, <code>list main.c:20</code>, <code>list main.c:setup</code></dt>
+<dd>nalistuje ve zdrojovém kódu příslušné místo, řádek, funkci</dd>
 <dt><code>b main</code>, <code>break main</code></dt>
 <dd>nastaví breakpoint na vstup do funkce <code>main</code></dd>
 <dt><code>b 48</code>, <code>break 48</code></dt>
@@ -599,8 +600,11 @@ příkazy</a>.</p>
 <dd>spustí program</dd>
 <dt><code>interrupt</code>, Ctrl+C</dt>
 <dd>přeruší program, program se zastaví tam, kde zrovna teď je</dd>
+<dt><code>s</code>, <code>step</code></dt>
+<dd>vykoná jeden příkaz/řádek zdrojového kódu</dd>
 <dt><code>n</code>, <code>next</code></dt>
-<dd>vykoná jeden řádek zdrojového kódu</dd>
+<dd>vykoná jeden příkaz/řádek zdrojového kódu, funkci vykoná jako jeden příkaz – nebude
+vstupovat do funkce</dd>
 <dt><code>fin</code>, <code>finish</code></dt>
 <dd>dokončí funkci, ve které se program právě nachází (pokud v ní není další breakpoint)</dd>
 <dt><code>c</code>, <code>cont</code>, <code>continue</code></dt>
@@ -748,7 +752,6 @@ a <a href="https://visualgdb.com/gdbreference/commands/display">display</a>.</p>
             }
         </script>
         <script src="./theme/js/medium-zoom.min.js"></script>
-        <script src="./theme/js/videopreview.js"></script>
         <script>
           mediumZoom('img[alt*="%%"]', {background: '#00111111',});
         </script>
