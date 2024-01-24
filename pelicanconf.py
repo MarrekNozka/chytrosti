@@ -35,10 +35,7 @@ TRANSLATION_FEED_ATOM = None
 PLUGIN_PATHS = ["../pelican-plugins"]
 PLUGINS = ["extract_toc"]
 
-PLUGINS += ["tipue_search"]
-DIRECT_TEMPLATES = ["index", "categories", "tags", "archives"]
-DIRECT_TEMPLATES += ["search"]
-DIRECT_TEMPLATES += ["authors"]
+# PLUGINS += ["tipue_search"]
 
 PLUGINS.append("jinja2content")
 JINJA2CONTENT_TEMPLATES = ["."]
@@ -56,6 +53,12 @@ PLUGINS += ["series"]
 SERIES_TITLE = "Další posty v této sérii"
 
 PLUGINS += ["render_math"]
+
+PLUGINS += ["search"]
+STORK_INPUT_OPTIONS = {"html_selector": "article"}
+DIRECT_TEMPLATES = ["index", "categories", "tags", "archives"]
+DIRECT_TEMPLATES += ["search"]
+DIRECT_TEMPLATES += ["authors"]
 
 # Blogroll
 LINKS = (

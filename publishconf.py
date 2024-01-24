@@ -19,6 +19,10 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
 
+if "search" not in PLUGINS:
+    PLUGINS += ["search"]
+    STORK_INPUT_OPTIONS = {"html_selector": "article"}
+
 # Following items are often useful when publishing
 
 # DISQUS_SITENAME = ""
