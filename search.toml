@@ -18,6 +18,11 @@ url = "/stm8oss.html"
 title = "Vývoj STM8 s OpenSource nástroji"
 
 [[input.files]]
+path = "mit.html"
+url = "/mit.html"
+title = "MIT"
+
+[[input.files]]
 path = "site.html"
 url = "/site.html"
 title = "Sítě"
@@ -26,11 +31,6 @@ title = "Sítě"
 path = "git.html"
 url = "/git.html"
 title = "Git"
-
-[[input.files]]
-path = "mit.html"
-url = "/mit.html"
-title = "MIT"
 
 [[input.files]]
 path = "deleni-v-pevne-radove-carce.html"
