@@ -26,7 +26,7 @@ Pro potřeby svojí výuky jsem sestavil následující:
 * [Použití časovače jako generátoru PWM]({filename}./pwm.md)
 * [Ultrazvukový měřič vzdálenosti pomocí timeru TIM2]({filename}./tim2_ultrasonic.md)
 
-Michal Dudka píše skvělý web o programování mikrokontrokérů:
+**Michal Dudka** píše skvělý web o programování mikrokontrokérů:
 <http://elektromys.eu>. V sekci [STM8](http://elektromys.eu/stm8.php)
 najdete spoustu pro nás zajímavých věcí:
 
@@ -53,7 +53,7 @@ najdete spoustu pro nás zajímavých věcí:
 * [Buzení 7segmentového displeje](Buzení 7segmentového displeje)
 * [AD převodník](http://elektromys.eu/clanky/stm8_15_adc1/clanek.html)
 
-Honza Vykydal pak napsal:
+**Honza Vykydal** pak napsal:
 
 * [Externí přerušení - EXTI](https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti)
 * [Čítače / Časovače](https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim)
@@ -232,7 +232,7 @@ seznamy. Je asi jasné, že mi nejde o konkrétní obchod, ale spíše o zboží
 se jistě dá zakoupit i někde jinde.
 
 * [seznam na TME](https://www.tme.eu/cz/parking/c9f279be1feb850079cc8bdf88943222467af88d.html)
-* [seznam na LaskKit](https://www.laskakit.cz/oblibene/89af72c11f9e5e738f3074e7aa8a0bba4200e647)
+* [seznam na LaskKit](https://www.laskakit.cz/oblibene/#4201a1230bd4c7afdbff365f68038a1d42723116)
 * [seznam na AliExpressu](https://www.aliexpress.com/p/wishlist/shareReflux.html?groupId=dGW2uj4YNVGDbjN2VCLzOJhU39eDkEz4y9Z4CGz2UIM%3D)
 
 
@@ -255,7 +255,7 @@ Ve zkratce to vypadá takto:
 
 * Kompilátor [SDCC](http://sdcc.sourceforge.net/)
 * Jako vývojové prostředí doporučuji [VSCodium](https://vscodium.com/)
-* Moje šablona pro vývoj SDCC a GNU Make <https://github.com/spseol/start-stm8>
+* Toolchain pro kompilátor SDCC a GNU Make: <https://gitlab.com/spseol/mit-no/STM8S-toolchain>
 * Starší anglický návod s několika mouchama: <https://github.com/hbendalibraham/stm8_started>
 
 Cosmic STM8+Eclipse balíček pro Linux

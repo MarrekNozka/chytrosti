@@ -13,7 +13,7 @@ dodává vývojové prostředí STVD
 které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
 na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
 kontrola licence, je fakt opruz; ... a jeho chybová hlášení mi taky
-nepřišly úplně srozumitelná.    
+nepřišla úplně srozumitelná.    
 A to jsem ještě nezmínil to hlavní: **Na Linuxu to
 nejede!**
 
@@ -40,11 +40,10 @@ kde je vše již nastaveno a nainstalováno. Nemusíte tedy vše ručně instalo
 nainstalovat [VirtualBox](https://www.virtualbox.org/) -- včetně 
 [Extension Pack](https://www.virtualbox.org/wiki/Downloads)
 a stáhnout si image:
-[Devuan-X-MIT.ova](https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova).
+[Devuan-X-MIT.ova](https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova).
 I tak si ale přečtěte následující text ať víte, jak to máte použít.
 
-
-<https://mamut.spseol.cz/nozka/public/site+VirtuaBox/000-obrazy-OVA/Devuan-X-MIT.ova>
+<https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova>
 {: .center }
 
 
@@ -77,19 +76,25 @@ Pokud ještě nemáte Python, můžete i Python:
 Instalace SDCC se musí naklikat. Instalátor stáhnete zde:
 <https://sourceforge.net/projects/sdcc/files/sdcc-win64/>
 
+Pro flashování se na Windows používá
+[STVP](https://www.st.com/en/development-tools/stvp-stm8.html). Pokud už jste
+nainstalovali [STVD](https://www.st.com/en/development-tools/stvd-stm8.html)
+máte už STVP nainstalováno, protože je součástí jeho instalace. Je možné ho
+naistalovat i zvlášť -- bez STVD.
+
 Linux
 --------
 
     sudo apt install sdcc sdcc-libraries git make openocd
 
 
-Startovací toolchain
+Toolchain
 ====================
 
 Připravil jsem startovací *strom zdrojových kódů* a 
 [Makefile](https://cs.wikipedia.org/wiki/Make).
 
-<https://github.com/spseol/STM8-start-toolchain>
+<https://gitlab.com/spseol/mit-no/STM8S-toolchain>
 {: .center }
 
 
@@ -115,44 +120,41 @@ domovského adresáře.
 
     cp .make/bashrc ~/.bashrc
 
+Jak bylo [popsáno výše](#rychla-instalace) je třeba nainstalovat i
+[SDCC](sdcc.sf.net) a [STVP](https://www.st.com/en/development-tools/stvp-stm8.html).
+
 ### Projekty a knihovna SPL
 
 Adresářová struktura jednotlivých projektů vypadá takto:
 
-```
+<pre>
 MIT
-├── Projekt-1
+├── <strong>Projekt-1</strong>
 │   ├── inc
 │   ├── lib
 │   └── src
-├── Projekt-2
+├── <strong>Projekt-blikblik</strong>
 │   ├── inc
 │   ├── lib
 │   └── src
-├── SPL
+├── <strong>SPL</strong>
 │   ├── inc
 │   └── src
-├── SPL-STM8S103
-│   ├── inc
-│   └── src
-├── SPL-STM8S105
-│   ├── inc
-│   └── src
-└── SPL-STM8S208
+└── <strong>SPLSPL</strong>
     ├── inc
     └── src
-```
+</pre>
 
 Udělejte si adresář, kde budou všechny vaše projekty -- v uvedeném příkladu je
-to `MIT`. V tom stejném adresáři budou i adresáře nazvané `SPL`. V `SPL`
-adresářích je *Standard peripheral library* od firmy [ST](https://st.com/).
-Tato knihovna má dost divnou licenci a proto vám ji nemůžu jen tak dát. Měli
-byste si ji
+to `MIT`. V tom stejném adresáři budou i adresáře nazvané `SPL` a `SPLSPL`. V
+`SPL` adresářích je *Standard peripheral library* od firmy
+[ST](https://st.com/). Tato knihovna má dost divnou licenci a proto vám ji
+nemůžu jen tak dát. *Měli byste* si ji
 [najít](https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&t=vivaldi&ia=software)
 a [stáhnout](https://www.st.com/en/embedded-software/stsw-stm8069.html). Pak je
 třeba ještě aplikovat [patch](https://github.com/gicking/STM8-SPL_SDCC_patch),
-který knihovnu předělá tak, aby se dala použít s naším *SDCC* kompilátorem. Celé je
-to docela pracné, ale zkuste napsat `make spl` třeba se to zařídí samo.
+který knihovnu předělá tak, aby se dala použít s naším *SDCC* kompilátorem.
+Celé je to docela pracné, ... ale zkuste napsat `make spl` třeba se to zařídí samo.
 
 
 ### Použití
@@ -191,10 +193,10 @@ Popíšu tu celkem tři různá, mezi sebou se prolínající řešení. Špatn�
 můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout.
 
 K dispozici jsou tedy celkem tři `Makefile` v adresáři 
-[`.make`](https://github.com/spseol/STM8-start-toolchain/tree/main/.make).
+[`.make`](https://gitlab.com/spseol/mit-no/STM8S-toolchain/-/tree/main/.make).
 Přepnutí jen realizováno jako symlink `Makefile` do root-adresáře projektu.
 
-    $ ls -l
+    $ ls -l Makefile
     lrwx 1 mar 23 14. led 21.14 Makefile -> .make/Makefile-sdcc-gas
 
 Na divných systémech, které symlink neumí (například Windows) se natvrdo kopíruje,
@@ -206,6 +208,8 @@ stačí volat `make`.
     make switch-sdccrm    # respektive
     make switch-sdcc-gas  # respektive
 ```
+
+Pokud váháte který zvolit, zvolte hned [první řešení: SDCC](#reseni-1-sdcc)
 
 Řešení 1: SDCC
 --------------------
@@ -222,10 +226,19 @@ použít. Tyto funkce nejsou nikde volány a proto by je měl
 se nestane `:-(`.
 Ve výsledku program, který by mohl mít cca 2-3&nbsp;kB má 30&nbsp;kB.
 
-Jediné skutečné řešení tohoto problému je použít níže uvedené 
-[sdccrm](#reseni-2-sdccrm) nebo
-[SDCC-gas](#reseni-3-sdcc-gas).
+Naštěstí existuje jeden [hack](https://github.com/bschwand/STM8-SPL-SDCC),
+který funguje asi takto: Knihovna SPL se rozdělí do malých souborů a každý se
+kompiluje jako samostatný modul. Z těchto modulů se udělá knihovna se kterou
+SDCC linker už umí správně pracovat. Proto je v adresářové struktuře knihovna
+SPL dvakrát. `SPLSPL` znamená 
+[SPLit SPL](https://gitlab.com/spseol/mit-no/spl/-/tree/main/SPLSPL)
+a používá se právě na toto.
 
+Další řešení tohoto problému je použít níže uvedené 
+[SDCC-gas](#reseni-2-sdcc-gas) nebo
+[sdccrm](#reseni-3-sdccrm).
+
+<!--
 Pokud zůstanete u SDCC dá se tento problém částečně obejít tím, že budete
 kompilovat jen ty části *SPL*, které právě v tomto projektu potřebujete.
 Velikost výsledného binárního souboru se tak rapidně zmenší, ale pokud budete
@@ -245,6 +258,7 @@ V *Makefile* někde kolem řádku 77 najdete toto:
 
 ... měli byste zakomentovat to, co nepotřebujete a odkomentovat jen to, co potřebujete.
 
+-->
 
 
 **Instalace SDCC v Linuxu** je poměrně snadná, protože SDCC je součásti většiny
@@ -257,54 +271,7 @@ instalátor](https://sourceforge.net/projects/sdcc/files/) a pokračujte, ve
 Windows oblíbeným klikáním.
 
 
-Řešení 2: sdccrm
---------------------
-
-`sdccrm` je nástroj pro optimalizaci mrtvého kódu pro port stm8 SDCC, který
-odstraňuje nepoužívané funkce.
-
-<https://github.com/XaviDCR92/sdccrm>
-{: .center }
-
-Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
-[SDCC](#reseni-1-sdcc), poté se pomocí `sdccrm` vymaže kód, který se nepoužívá,
-celý proces se dokončí a kód se převede z assembleru do strojového kódu.
-
-Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
-ale tato možnost **[vylučuje použití
-debugeru](https://github.com/XaviDCR92/sdccrm#known-issues)**. To někdy, někomu
-vadit může, jindy jinému to vadit nemusí.
-
-Dále je nutné **ručně zadat** funkce, které nechcete "optimalizovat" -- tedy vyhodit.
-Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
-souboru `exclude_reference ` uvnitř projektového adresáře.
-
-### Instalace
-
-`sdccrm` si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
-závislostí, takže jde jednoduše kompilovat v&nbsp;Linuxu i ve&nbsp;Windows --
-nicméně pro jistotu je Windows binárka součástí [startovacího
-toolsetu](#startovaci-toolchain) a je v souboru `.make/sdccrm.exe`.
-    
-Ve Windows:
-
-    :::powershell
-    choco install mingw
-
-nebo v Linuxu:
-
-    :::bash
-    apt install gcc
-
-a pak jen:
-      
-    :::bash
-    cd sdccrm
-    make
-
-
-
-Řešení 3: SDCC-gas
+Řešení 2: SDCC-gas
 --------------------
 
 <https://github.com/XaviDCR92/sdcc-gas>
@@ -388,15 +355,77 @@ Bohužel do WSL se nativně nedá připojit USB -- ale dá se to
 [řešit](https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/).
 
 
+Řešení 3: sdccrm
+--------------------
+
+!!!note " Poznámka:"
+
+    Toto řešení je v současné době spíše historický pozůstak a v 99,9% případů
+    není třeba se jim zabývat. Klidně si tento odstavec přečtěte, ale asi toto
+    řešení nebudete chtít použít...
+
+`sdccrm` je nástroj pro optimalizaci mrtvého kódu pro port stm8 SDCC, který
+odstraňuje nepoužívané funkce.
+
+<https://github.com/XaviDCR92/sdccrm>
+{: .center }
+
+Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
+[SDCC](#reseni-1-sdcc), poté se pomocí `sdccrm` vymaže kód, který se nepoužívá,
+celý proces se dokončí a kód se převede z assembleru do strojového kódu.
+
+Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
+ale tato možnost **[vylučuje použití
+debugeru](https://github.com/XaviDCR92/sdccrm#known-issues)**. To někdy, někomu
+vadit může, jindy jinému to vadit nemusí.
+
+Dále je nutné **ručně zadat** funkce, které nechcete "optimalizovat" -- tedy vyhodit.
+Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
+souboru `exclude_reference ` uvnitř projektového adresáře.
+
+### Instalace
+
+`sdccrm` si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
+závislostí, takže jde jednoduše kompilovat v&nbsp;Linuxu i ve&nbsp;Windows --
+nicméně pro jistotu je Windows binárka součástí [startovacího
+toolsetu](#startovaci-toolchain) a je v souboru `.make/sdccrm.exe`.
+    
+Ve Windows:
+
+    :::powershell
+    choco install mingw
+
+nebo v Linuxu:
+
+    :::bash
+    apt install gcc
+
+a pak jen:
+      
+    :::bash
+    cd sdccrm
+    make
+
 
 Flashing
 ================
+
+STVP
+------------
+
+[STVP](https://www.st.com/en/development-tools/stvp-stm8.html) je software od
+výrobce čipů ST. Umožňuje přístup do všech částí paměti mikrokontrolérů. Má
+grafickou verzi i verzi pro příkazový řádek. Právě na verze pro příkazový řádek
+se spoléhá zde zmiňovaný
+[toolchain](https://gitlab.com/spseol/mit-no/STM8S-toolchain).
+
 
 OpenOCD
 ------------
 
 [Open On-Chip Debugger](https://openocd.org) je nástroj pro debug a krokování
 programu přímo na čipu. `openocd` umí i nahrát program do paměti zařízení.
+Funguje v Linuxu i ve Windows.
 
 Instalaci zajistí na Linuxu jednoduchý příkaz:
 
@@ -406,19 +435,20 @@ na Windows je to díky [Chocolatye][] podobně jednoduché.
 
     choco install openodc
 
-Zdá se, že
+<!--
 [Chocolatye už nabízí](https://community.chocolatey.org/packages?q=openocd)
 verzi 0.11. Dříve to bylo jen 0.10. Tyto verze používají trochu jiné názvy
 souborů, proto i příkaz vypadá jinak.     
 Verze 0.10: `openocd  -f interface/stlink.cfg -f target/stm8s.cfg`      
 Verze 0.11: `openocd  -f interface/stlink-dap.cfg -f target/stm8s.cfg`     
+-->
 
 Toto se řeší v *Makefile* pomocí proměnné `OPENOCD`, takže si ji případně upravte.
 
 Aby `openodc` umělo i pouhé flashování, je třeba přidat 
 [skript](https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0),
 který to umí. Ten je buď součástí
-[startovacího toolsetu](#startovaci-toolchain) nebo ho můžete přidat
+[startovacího toolsetu](#toolchain) nebo ho můžete přidat
 na konec konfiguračního souboru `stm8s.cfg`:
 
     proc program_device {filename flashstart} {
@@ -512,6 +542,8 @@ příkazy](https://sourceware.org/gdb/onlinedocs/gdb/Continuing-and-Stepping.htm
 V programu funguje **tabulátor**. To znamená, že při stisku klávesy `TAB` se
 GDB pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná.
 
+`list main`, `list main.c:20`, `list main.c:setup`
+: nalistuje ve zdrojovém kódu příslušné místo, řádek, funkci
 
 `b main`, `break main`
 : nastaví breakpoint na vstup do funkce `main`
@@ -537,8 +569,12 @@ GDB pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná
 `interrupt`, Ctrl+C
 : přeruší program, program se zastaví tam, kde zrovna teď je
 
+`s`, `step`
+: vykoná jeden příkaz/řádek zdrojového kódu
+
 `n`, `next`
-: vykoná jeden řádek zdrojového kódu
+: vykoná jeden příkaz/řádek zdrojového kódu, funkci vykoná jako jeden příkaz -- nebude
+vstupovat do funkce
 
 `fin`, `finish`
 : dokončí funkci, ve které se program právě nachází (pokud v ní není další breakpoint)
