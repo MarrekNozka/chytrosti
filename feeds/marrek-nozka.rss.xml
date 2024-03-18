@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 24 Jan 2024 20:31:40 +0100</lastBuildDate><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Fri, 09 Feb 2024 10:31:21 +0100</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 09 Feb 2024 10:31:21 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-02-09:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
@@ -56,14 +63,7 @@ kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xm
 &lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
 &lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 03 Dec 2023 15:41:03 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2023-12-03:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 30 Nov 2023 14:51:50 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2023-11-30:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Dělení v pevné řadové čárce</title><link>https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html</link><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 03 Dec 2023 15:41:03 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2023-12-03:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>Dělení v pevné řadové čárce</title><link>https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html</link><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
 způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo
 (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná&amp;nbsp;čárka.&lt;/p&gt;
 &lt;div class="admonition hint"&gt;
