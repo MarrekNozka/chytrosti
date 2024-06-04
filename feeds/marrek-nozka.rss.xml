@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 04 Jun 2024 09:38:24 +0200</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 04 Jun 2024 12:01:18 +0200</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
 co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
 &lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 04 Jun 2024 09:38:24 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-06-04:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Projektové úlohy MIT</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit.html</link><description>
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 04 Jun 2024 12:01:18 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-06-04:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Projektové úlohy MIT</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit.html</link><description>
 &lt;p&gt;Co se ode mě očekává?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -15,7 +15,7 @@ ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://p
   pokud nemáte žádný nápad.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Vypracovaný projekt bude obsahovat&lt;/p&gt;
+&lt;p&gt;Vypracovaný projekt bude obsahovat:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Původní zadání.&lt;/li&gt;
 &lt;li&gt;Funkční zapojení – můžete použít vlastní &lt;span class="caps"&gt;PCB&lt;/span&gt;, univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt; nebo nepájivé pole.&lt;/li&gt;

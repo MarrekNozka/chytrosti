@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-06-04T09:38:24+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-06-04T09:38:24+02:00</published><updated>2024-06-04T09:38:24+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-06-04:/git.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti - Programování</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/programovani.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-06-04T12:01:18+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-06-04T12:01:18+02:00</published><updated>2024-06-04T12:01:18+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-06-04:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -36,6 +36,9 @@ kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/
 &lt;li&gt;… nebo další &lt;a href="https://www.kutac.cz/pocitace-a-internety/git-tutorialy-a-navody"&gt;sada tutoriálů&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;dl&gt;
+&lt;dt&gt;Tahák&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/media/git_tahak.svg"&gt;&lt;span class="caps"&gt;SVG&lt;/span&gt;&lt;/a&gt; &lt;a href="https://chytrosti.marrek.cz/media/git_tahak.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/images/git_tahak.png"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Referenční příručka&lt;/dt&gt;
 &lt;dd&gt;&lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt; &lt;/dd&gt;
 &lt;dt&gt;Hezké HowTo&lt;/dt&gt;

@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448 1052.3622"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="git_tahak.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <marker
+       style="overflow:visible"
+       id="marker13998"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path13996"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5433"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path5431"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4973"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path4971"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4531"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path4529"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4107"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path4105"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3701"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path3699"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3313"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path3311"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2943"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path2941"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2591"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path2589"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Tail"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Tail"
+       markerWidth="10.33044"
+       markerHeight="7"
+       viewBox="0 0 10.33044 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="tail"
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="m -3.0000001,-3 -3.1102256,3 3.1102256,3 M -4.0952644e-8,-3 -3.0000001,0 -4.0952644e-8,3 M 3,3 -4.0952644e-8,0 3,-3"
+         sodipodi:nodetypes="ccccccccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6222"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="1.5"
+       markerHeight="1.734104"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6220" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4786"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart">
+      <path
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4788" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4778"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4780"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4682"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4684"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4678"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart">
+      <path
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4680"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4668"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4670"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4664"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart">
+      <path
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4666"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4634"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4636"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path8393"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10827"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path10829"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path8363"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path8384"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path8369"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8662"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path8664"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Sstart"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       viewBox="0 0 4.4434635 2.539122"
+       markerWidth="4.4434633"
+       markerHeight="2.5391221"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path8372"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       viewBox="0 0 17.773854 10.156488"
+       markerWidth="17.773853"
+       markerHeight="10.156488"
+       preserveAspectRatio="xMidYMid">
+      <path
+         id="path8360"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <pattern
+       id="pattern4928"
+       patternTransform="translate(234.03455,606.34225)"
+       height="6.65"
+       width="8.75"
+       patternUnits="userSpaceOnUse">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-0.17626907"
+         y="6.6500001"
+         id="text4880"><tspan
+           sodipodi:role="line"
+           id="tspan4882"
+           x="-0.17626907"
+           y="6.6500001"
+           dx="0.12626907"
+           style="font-size:10px;line-height:1.25">W</tspan></text>
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4000714"
+     inkscape:cx="451.76267"
+     inkscape:cy="429.26382"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1908"
+     inkscape:window-height="1023"
+     inkscape:window-x="4"
+     inkscape:window-y="1075"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-center="false"
+     inkscape:snap-global="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true"
+     showguides="true"
+     inkscape:snap-page="true"
+     inkscape:snap-to-guides="false"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3371"
+       units="mm"
+       spacingx="3.5433073"
+       spacingy="3.5433072"
+       empspacing="12"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <g
+       id="text6559"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-787.21998,-199.43488)" />
+    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot9910"
+       xml:space="preserve"
+       transform="translate(-787.21998,-199.43488)"><flowRegion
+         id="flowRegion9912"><rect
+           y="216.14174"
+           x="-148.81889"
+           height="109.84252"
+           width="145.27559"
+           id="rect9914" /></flowRegion><flowPara
+         id="flowPara9916"
+         style="font-size:10px;line-height:1.25"> </flowPara></flowRoot>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="347.97913"
+       y="354.33026"
+       id="text7244"><tspan
+         sodipodi:role="line"
+         id="tspan7246"
+         x="347.97913"
+         y="354.33026"
+         style="font-size:25px;line-height:1.25">Základy Gitu</tspan></text>
+    <g
+       id="g2214"
+       transform="translate(-48.75,-16.875)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.87112;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 131.06291,936.79231 V 1306.74"
+         id="path1915" />
+      <rect
+         style="fill:#beffbe;fill-opacity:0.629696;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;-inkscape-stroke:none;stop-color:#000000"
+         id="rect833"
+         width="95.567474"
+         height="37.574421"
+         x="82.581894"
+         y="899.52161"
+         ry="9.6945333"
+         rx="11.43467" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+         x="98.194763"
+         y="913.42395"
+         id="text1798"><tspan
+           sodipodi:role="line"
+           id="tspan1796"
+           style="font-size:15px;stroke-width:0.9375"
+           x="98.194763"
+           y="913.42395">Working</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;stroke-width:0.9375"
+           x="98.194763"
+           y="932.17395"
+           id="tspan1800">Directory</tspan></text>
+    </g>
+    <g
+       id="g2226"
+       transform="translate(116.25,-16.875)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.87112;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 131.06291,936.79231 V 1306.74"
+         id="path2216" />
+      <rect
+         style="fill:#beffbe;fill-opacity:0.629696;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;-inkscape-stroke:none;stop-color:#000000"
+         id="rect2218"
+         width="95.567474"
+         height="37.574421"
+         x="82.581894"
+         y="899.52161"
+         ry="9.6945333"
+         rx="11.43467" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+         x="131.01476"
+         y="913.42395"
+         id="text2224"><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="913.42395"
+           id="tspan2230">Staging</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="932.17395"
+           id="tspan2234">Area</tspan></text>
+    </g>
+    <g
+       id="g2246"
+       transform="translate(286.875,-16.875)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.87112;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 131.06291,936.79231 V 1306.74"
+         id="path2236" />
+      <rect
+         style="fill:#beffbe;fill-opacity:0.629696;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;-inkscape-stroke:none;stop-color:#000000"
+         id="rect2238"
+         width="95.567474"
+         height="37.574421"
+         x="82.581894"
+         y="899.52161"
+         ry="9.6945333"
+         rx="11.43467" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+         x="131.01476"
+         y="913.42395"
+         id="text2244"><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="913.42395"
+           id="tspan2240">Local</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="932.17395"
+           id="tspan2248">Repo</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="950.92395"
+           id="tspan2242" /></text>
+    </g>
+    <g
+       id="g2262"
+       transform="translate(504.375,-16.875)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3.87112;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 131.06291,936.79232 V 1118.1281"
+         id="path2250" />
+      <rect
+         style="fill:#beffbe;fill-opacity:0.629696;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;-inkscape-stroke:none;stop-color:#000000"
+         id="rect2252"
+         width="95.567474"
+         height="37.574421"
+         x="82.581894"
+         y="899.52161"
+         ry="9.6945333"
+         rx="11.43467" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+         x="131.01476"
+         y="913.42395"
+         id="text2260"><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="913.42395"
+           id="tspan2264">Remote</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="932.17395"
+           id="tspan2256">Repo</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:15px;text-align:center;text-anchor:middle;stroke-width:0.9375"
+           x="131.01476"
+           y="950.92395"
+           id="tspan2258" /></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker2591)"
+       d="M 236.06035,950.99173 91.812658,951.19839"
+       id="path2430"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+       x="130.2977"
+       y="945.39423"
+       id="text2925"><tspan
+         sodipodi:role="line"
+         id="tspan2923"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="130.2977"
+         y="945.39423">git add</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker2943)"
+       d="m 406.48966,950.99173 -146.22918,0.0936"
+       id="path3094"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="293.4227"
+       y="943.51923"
+       id="text3100"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';stroke-width:0.9375"
+         x="293.4227"
+         y="943.51923"
+         id="tspan3106">git commit</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.87441;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#Tail)"
+       d="m 405.50495,980.9916 c -93.77065,3.603 -172.37056,9.6217 -313.710991,0.1834"
+       id="path3112"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g5628"
+       transform="translate(-16.875,-16.875)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect4913"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="194.48753"
+         y="992.93121"
+         id="text3122"><tspan
+           sodipodi:role="line"
+           id="tspan3120"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="194.48753"
+           y="992.93121">git commint -a</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker3313)"
+       d="M 620.29936,999.7417 H 428.38121"
+       id="path5417" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+       x="481.15482"
+       y="994.32422"
+       id="text5425"><tspan
+         sodipodi:role="line"
+         id="tspan5423"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="481.15482"
+         y="994.32422">git push</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker3701)"
+       d="m 431.22987,1035.4654 193.01373,-0.3428"
+       id="path5429"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+       x="481.0838"
+       y="1030.9552"
+       id="text5435"><tspan
+         sodipodi:role="line"
+         id="tspan5433"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="481.0838"
+         y="1030.9552">git fetch</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker4107)"
+       d="m 93.72212,1040.9916 c 93.77065,3.603 171.44655,9.6798 312.78698,0.2415"
+       id="path5621"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g5636"
+       transform="translate(-16.875,45)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect5630"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="226.36253"
+         y="992.93121"
+         id="text5634"><tspan
+           sodipodi:role="line"
+           id="tspan5632"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="226.36253"
+           y="992.93121">git merge</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.87501;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker4531)"
+       d="m 95.93522,1074.7416 c 156.07882,3.603 294.66733,9.4383 529.92481,0"
+       id="path5642"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g5654"
+       transform="translate(80.9598,78.75)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect5648"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="196.36253"
+         y="992.93121"
+         id="text5652"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="196.36253"
+           y="992.93121"
+           id="tspan5686">git pull</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker5433)"
+       d="m 94.11495,1124.3593 143.70811,0.1528"
+       id="path5658"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker13998)"
+       d="m 94.57201,1153.6827 c 110.49042,6.0371 212.1197,3.8318 312.00036,0"
+       id="path5666"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+       x="102.1727"
+       y="1116.0192"
+       id="text5676"><tspan
+         sodipodi:role="line"
+         id="tspan5674"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="102.1727"
+         y="1116.0192">git reset &lt;file&gt;</tspan></text>
+    <g
+       id="g5684"
+       transform="translate(-20.2902,157.5)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect5678"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="196.36253"
+         y="992.93121"
+         id="text5682"><tspan
+           sodipodi:role="line"
+           id="tspan5680"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="196.36253"
+           y="992.93121">git reset &lt;commit&gt;</tspan></text>
+    </g>
+    <g
+       id="g5696"
+       transform="translate(80.9598,105)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect5690"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="196.36253"
+         y="989.18121"
+         id="text5694"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="196.36253"
+           y="989.18121"
+           id="tspan5692">git clone</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="38.439663"
+       y="1216.8248"
+       id="text7792"><tspan
+         sodipodi:role="line"
+         id="tspan7790"
+         style="stroke-width:0.9375"
+         x="38.439663"
+         y="1216.8248" /></text>
+    <g
+       id="g7908"
+       transform="translate(-16.875,43.125)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:28.125;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6222);marker-end:url(#marker6222)"
+         d="m 128.53871,1188.7142 106.45272,-0.54"
+         id="path5702" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="143.4227"
+         y="1192.8942"
+         id="text7796"><tspan
+           sodipodi:role="line"
+           id="tspan7794"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF) Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="143.4227"
+           y="1192.8942">git diff</tspan></text>
+    </g>
+    <g
+       id="g7925"
+       transform="translate(-16.875,42.254412)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:28.125;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6222);marker-end:url(#marker6222)"
+         d="m 290.60192,1188.7142 116.45543,-0.54"
+         id="path7802" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="274.6727"
+         y="1192.8942"
+         id="text7806"><tspan
+           sodipodi:role="line"
+           id="tspan7804"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF) Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="274.6727"
+           y="1192.8942">git diff --cached</tspan></text>
+    </g>
+    <g
+       id="g7891"
+       transform="translate(-16.875,43.125)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:28.1249;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6222);marker-end:url(#marker6222)"
+         d="m 131.34304,1243.0892 272.38261,-0.54"
+         id="path7832" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="210.9227"
+         y="1247.2692"
+         id="text7836"><tspan
+           sodipodi:role="line"
+           id="tspan7834"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF) Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="210.9227"
+           y="1247.2692">git diff HEAD</tspan></text>
+    </g>
+    <g
+       id="g7945"
+       transform="translate(-29.6652,187.5)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.87501;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect7939"
+         width="148.67831"
+         height="20.097116"
+         x="180.0327"
+         y="977.55737"
+         rx="11.43467"
+         ry="9.6945333" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="196.36253"
+         y="992.93121"
+         id="text7943"><tspan
+           sodipodi:role="line"
+           id="tspan7941"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+           x="196.36253"
+           y="992.93121">git checkout &lt;commit&gt;</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker4973)"
+       d="M 260.98995,1124.3593 H 407.45308"
+       id="path8171" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+       x="272.7977"
+       y="1116.0192"
+       id="text8177"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
+         x="272.7977"
+         y="1116.0192"
+         id="tspan8179">git reset HEAD</tspan></text>
+    <text
+       id="text7248-2"
+       y="506.87317"
+       x="34.628975"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="506.87317"
+         x="34.628975"
+         id="tspan7250-8"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Založení repozitáře</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.17231"
+       y="521.04639"
+       id="text7252-9"><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="521.04639"
+         id="tspan7303-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git init</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="535.22137"
+         id="tspan4418"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git clone &lt;url&gt;</tspan></text>
+    <text
+       id="text4696-3"
+       y="563.5661"
+       x="34.628975"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="563.5661"
+         x="34.628975"
+         id="tspan4698-6"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Přidání souborů</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.17231"
+       y="577.73932"
+       id="text4700-1"><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="577.73932"
+         id="tspan4702-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git status</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="591.91431"
+         id="tspan4706-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git add &lt;soubor&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="606.08929"
+         id="tspan4704-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git commit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="34.628975"
+       y="634.43225"
+       id="text4708-1"><tspan
+         sodipodi:role="line"
+         id="tspan4710-9"
+         x="34.628975"
+         y="634.43225"
+         style="font-size:11.25px;line-height:1.25;-inkscape-font-specification:'Bree Serif Bold';font-family:'Bree Serif';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">Prohlížení změn</tspan></text>
+    <text
+       id="text4712-4"
+       y="648.60547"
+       x="38.17231"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4714-7"
+         y="648.60547"
+         x="38.17231"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git diff</tspan><tspan
+         y="662.78046"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4437"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git diff &lt;soubor&gt;</tspan><tspan
+         y="676.95544"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4722-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log</tspan><tspan
+         y="691.13049"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4726-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git show</tspan><tspan
+         y="705.30548"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4728-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git show &lt;revize&gt;</tspan><tspan
+         y="719.48047"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4766-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">gitk --all</tspan></text>
+    <text
+       id="text4825-3"
+       y="521.04639"
+       x="180.40892"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4827-6"
+         y="521.04639"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Založit repozitář v aktuálním adresáři</tspan><tspan
+         y="535.22137"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4420">Naklonovat repozitář z 'netu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="179.90459"
+       y="578.15039"
+       id="text4841-1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="179.90459"
+         y="578.15039"
+         id="tspan4843-0">Kontrola stavu</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="179.90459"
+         y="592.32538"
+         id="tspan4434">Přidat soubor.py do <tspan
+   style="fill:#225500"
+   id="tspan4849-6">Stage</tspan></tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="179.90459"
+         y="606.50037"
+         id="tspan4847-3">Vytvořit novou revizi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="180.40892"
+       y="648.60547"
+       id="text4851-2"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="648.60547"
+         id="tspan4853-0">Vypsat změny (viz diagram)</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="662.78046"
+         id="tspan4439">Vypsat změny v konkrétním souboru</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="676.95544"
+         id="tspan4861-6">Výpis všech revizí</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="691.13049"
+         id="tspan4865-1">Zobrazení poslední revize</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="705.30548"
+         id="tspan4867-5">Zobrazení konkrétní revize</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="180.40892"
+         y="719.48047"
+         id="tspan4869-5">Grafické klikátko</tspan></text>
+    <text
+       id="text4379"
+       y="383.246"
+       x="34.628975"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="383.246"
+         x="34.628975"
+         id="tspan4381"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Konfigurace</tspan></text>
+    <text
+       id="text4383"
+       y="397.03067"
+       x="38.17231"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4385"
+         y="397.03067"
+         x="38.17231"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global user.name &quot;Jan Novotný&quot;</tspan><tspan
+         y="411.20566"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4387"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global user.email &quot;jnov@example.com&quot;</tspan><tspan
+         y="425.38068"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4389"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global ui.color auto</tspan><tspan
+         y="439.55566"
+         x="38.17231"
+         sodipodi:role="line"
+         id="tspan4391"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global core.editor nano</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.17231"
+       y="464.35352"
+       id="text4393"><tspan
+         id="tspan4401"
+         sodipodi:role="line"
+         x="38.17231"
+         y="464.35352"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global core.editor notepad</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="478.5285"
+         id="tspan4416"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git config --global format.commitMessageColumns 80</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="34.628975"
+       y="453.72357"
+       id="text4403"><tspan
+         sodipodi:role="line"
+         id="tspan4405"
+         x="34.628975"
+         y="453.72357"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif'">Ve Windows navíc:</tspan></text>
+    <text
+       id="text4463"
+       y="747.81805"
+       x="34.628975"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="747.81805"
+         x="34.628975"
+         id="tspan4465"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Příprava revize</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.17231"
+       y="761.99127"
+       id="text4467"><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="761.99127"
+         id="tspan4469"
+         style="font-size:11.25px;line-height:1.26">git add &lt;soubor&gt;</tspan><tspan
+         id="tspan4471"
+         sodipodi:role="line"
+         x="38.17231"
+         y="776.16626"
+         style="font-size:11.25px;line-height:1.26">git reset &lt;soubor&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="790.34125"
+         id="tspan4521"
+         style="font-size:11.25px;line-height:1.26">git add -p</tspan><tspan
+         id="tspan4473"
+         sodipodi:role="line"
+         x="38.17231"
+         y="804.5163"
+         style="font-size:11.25px;line-height:1.26">git rm &lt;soubor&gt;</tspan><tspan
+         id="tspan4475"
+         sodipodi:role="line"
+         x="38.17231"
+         y="818.69128"
+         style="font-size:11.25px;line-height:1.26">git rm --cached &lt;s&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="38.17231"
+         y="832.86627"
+         id="tspan4517"
+         style="font-size:11.25px;line-height:1.26">git mv &lt;z&gt; &lt;na&gt;</tspan></text>
+    <text
+       id="text4481"
+       y="761.99127"
+       x="180.40892"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4483"
+         y="761.99127"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Přidat soubor do <tspan
+   style="fill:#225500"
+   id="tspan4499">Stage</tspan></tspan><tspan
+         id="tspan4485"
+         y="776.16626"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"><tspan
+   style="fill:#225500"
+   id="tspan4507"><tspan
+   style="fill:#000000"
+   id="tspan4699">Reset</tspan> Stage</tspan> (zachová změny v <tspan
+   style="fill:#550000"
+   id="tspan4495">prac. adr.</tspan>)</tspan><tspan
+         id="tspan4487"
+         y="790.34125"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Vybrat jednotlivé změny k přidání</tspan><tspan
+         id="tspan4489"
+         y="804.5163"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Smazat soubor</tspan><tspan
+         id="tspan4491"
+         y="818.69128"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Smazat ze <tspan
+   style="fill:#225500"
+   id="tspan4513">Stage</tspan>, ale nechat v <tspan
+   style="fill:#550000"
+   id="tspan4511">prac. adr.</tspan></tspan><tspan
+         id="tspan4493"
+         y="832.86627"
+         x="180.40892"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Přejmenovat/přesunout soubor</tspan></text>
+    <text
+       id="text4730-3"
+       y="382.02621"
+       x="400.5864"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="382.02621"
+         x="400.5864"
+         id="tspan4732-6"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Větvení</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="404.12973"
+       y="396.19943"
+       id="text4734-7"><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="396.19943"
+         id="tspan4736-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git branch</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="409.81192"
+         id="tspan4744-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git branch &lt;b&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="423.42444"
+         id="tspan4525"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git branch &lt;b&gt; &lt;hash&gt;</tspan><tspan
+         id="tspan4738-6"
+         sodipodi:role="line"
+         x="404.12973"
+         y="437.03693"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git checkout &lt;b&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="450.64944"
+         id="tspan4748-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git merge &lt;b&gt;</tspan><tspan
+         id="tspan4742-1"
+         sodipodi:role="line"
+         x="404.12973"
+         y="464.26193"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.21;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git branch -d <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:121%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"
+   id="tspan4819-2">vetev</tspan></tspan></text>
+    <text
+       id="text4871-7"
+       y="396.19943"
+       x="545.862"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4873-0"
+         y="396.19943"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Vypsat všechny větve</tspan><tspan
+         id="tspan4879-9"
+         y="410.37442"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Založit novou větev</tspan><tspan
+         y="424.54944"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4527">Založit větev na dané revizi</tspan><tspan
+         id="tspan4881-3"
+         y="438.72446"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Přepnout na větev</tspan><tspan
+         id="tspan4883-6"
+         y="452.89944"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Sloučit &lt;v&gt; s aktuální větví</tspan><tspan
+         id="tspan4885-0"
+         y="467.07443"
+         x="545.862"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Smazat větev</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400.5864"
+       y="491.8688"
+       id="text4529"><tspan
+         sodipodi:role="line"
+         id="tspan4531"
+         x="400.5864"
+         y="491.8688"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif Bold'">Ignorování</tspan></text>
+    <text
+       id="text4533"
+       y="520.21521"
+       x="404.1297"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="520.21521"
+         x="404.1297"
+         sodipodi:role="line"
+         id="tspan4549"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">build.log</tspan><tspan
+         y="534.3902"
+         x="404.1297"
+         sodipodi:role="line"
+         id="tspan4667"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#803300"
+   id="tspan4675">*</tspan>.aux</tspan><tspan
+         y="548.56519"
+         x="404.1297"
+         sodipodi:role="line"
+         id="tspan4636"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#803300"
+   id="tspan4677">/</tspan>a.out</tspan><tspan
+         y="562.74023"
+         x="404.1297"
+         sodipodi:role="line"
+         id="tspan4638"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">__pycache__<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#803300"
+   id="tspan4679">/</tspan></tspan><tspan
+         y="576.91522"
+         x="404.1297"
+         sodipodi:role="line"
+         id="tspan4687"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126%;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)';fill:#803300"
+   id="tspan4691">!</tspan>good.aux</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="499.79904"
+       y="520.21521"
+       id="text4553"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="499.79904"
+         y="520.21521"
+         id="tspan4565">Daný soubor, i v podadresářích</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="499.79904"
+         y="534.3902"
+         id="tspan4669">Všechno s danou příponou</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="499.79904"
+         y="548.56519"
+         id="tspan4663">Abs. cesta z adresáře, kde je .gitignore</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="499.79904"
+         y="562.74023"
+         id="tspan4673">Musí být adresář</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="499.79904"
+         y="576.91522"
+         id="tspan4689">Negace (tenhle soubor neignorovat)</tspan></text>
+    <text
+       id="text4567"
+       y="506.04202"
+       x="404.1297"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="506.04202"
+         x="404.1297"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4603">Podle záznamů v souboru <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"
+   id="tspan26223">.gitignore</tspan>:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400.5864"
+       y="591.08136"
+       id="text4681"><tspan
+         id="tspan4683"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="400.5864"
+         y="591.08136">Osobní záznamy – <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"
+   id="tspan4685">git config core.excludesfile</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400.5864"
+       y="619.4278"
+       id="text4701"><tspan
+         sodipodi:role="line"
+         id="tspan4703"
+         x="400.5864"
+         y="619.4278"
+         style="font-size:11.25px;line-height:1.25;font-weight:bold">Synchronizace</tspan></text>
+    <text
+       id="text4705"
+       y="633.60101"
+       x="404.12973"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4707"
+         y="633.60101"
+         x="404.12973"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git remote add &lt;r&gt; &lt;url&gt;</tspan><tspan
+         y="647.66351"
+         x="404.12973"
+         sodipodi:role="line"
+         id="tspan4764"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git remote -v</tspan><tspan
+         id="tspan4709"
+         y="661.72601"
+         x="404.12973"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git fetch &lt;r&gt;</tspan><tspan
+         id="tspan4713"
+         y="675.78851"
+         x="404.12973"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git push &lt;r&gt; &lt;b&gt;</tspan><tspan
+         y="689.85101"
+         x="404.12973"
+         sodipodi:role="line"
+         id="tspan4721"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git pull &lt;r&gt; &lt;b&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="570.66516"
+       y="633.60107"
+       id="text4725"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="633.60107"
+         id="tspan4767">Přidat repo na 'netu</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="647.77606"
+         id="tspan4760">Vypsat přidané repa</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="661.95105"
+         id="tspan4857-6">Stáhnout změny</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="676.1261"
+         id="tspan4773">Poslat změny</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="690.30109"
+         id="tspan4775">fetch+merge najednou</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="570.66516"
+         y="704.47607"
+         id="tspan4762"> </tspan></text>
+    <text
+       id="text4782"
+       y="718.64044"
+       x="400.5864"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="718.64044"
+         x="400.5864"
+         id="tspan4784"
+         sodipodi:role="line"
+         style="font-size:11.25px;line-height:1.25;font-weight:bold">Jména revizí</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="404.12973"
+       y="732.81366"
+       id="text4786"><tspan
+         id="tspan4796"
+         sodipodi:role="line"
+         x="404.12973"
+         y="732.81366"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">3abe48df9832</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="746.87616"
+         id="tspan4856"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="760.93866"
+         id="tspan4840"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">master</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="775.00116"
+         id="tspan4842"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD~</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="789.06366"
+         id="tspan4844"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD~3</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="803.12616"
+         id="tspan4848"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD^</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="817.18866"
+         id="tspan4852"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD^2</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="831.25116"
+         id="tspan4870"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">projekt/vetev</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="845.31366"
+         id="tspan4874"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">HEAD^{/regex}</tspan><tspan
+         sodipodi:role="line"
+         x="404.12973"
+         y="859.37616"
+         id="tspan4854"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"> </tspan></text>
+    <text
+       id="text4798"
+       y="732.81366"
+       x="528.14545"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4808"
+         y="732.81366"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Zkrácené jméno revize</tspan><tspan
+         y="746.98865"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4860">Aktuální revize</tspan><tspan
+         y="761.16364"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4858">Větev - její poslední revize</tspan><tspan
+         y="775.33868"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4862">&quot;Rodič&quot; aktuální revize</tspan><tspan
+         y="789.51367"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4864">&quot;Pra-prarodič&quot; aktuální revize</tspan><tspan
+         y="803.68866"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4866">&quot;Rodič&quot; akruální revize</tspan><tspan
+         y="817.86365"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4868">&quot;Druhý rodič&quot; akruální revize</tspan><tspan
+         y="832.03864"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4872">Větev z externího repa (po git fetch)</tspan><tspan
+         y="846.21368"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4876">Posledí revize s &quot;regex&quot; v popisku</tspan><tspan
+         id="tspan4810"
+         y="860.38867"
+         x="528.14545"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"> </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="430.13373"
+       y="1107.5608"
+       id="text4427"><tspan
+         sodipodi:role="line"
+         id="tspan4429"
+         x="430.13373"
+         y="1107.5608"
+         style="font-weight:bold;font-size:11.25px;line-height:1.25">Archeologie</tspan></text>
+    <text
+       id="text4431"
+       y="1121.7339"
+       x="433.67706"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4452"
+         y="1121.7339"
+         x="433.67706"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git blame &lt;soubor&gt;</tspan><tspan
+         y="1135.7964"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4620"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log A...B</tspan><tspan
+         y="1149.8589"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4533"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log --author &lt;a&gt;</tspan><tspan
+         y="1163.9214"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4537"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log --oneline</tspan><tspan
+         y="1177.9839"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4539"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log --graph</tspan><tspan
+         y="1192.0464"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4541"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log --all</tspan><tspan
+         y="1206.1089"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4543"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log --decorate</tspan><tspan
+         y="1220.1714"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4606"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log -7</tspan><tspan
+         y="1234.2339"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4545"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git log -S &lt;regex&gt;</tspan><tspan
+         y="1248.2964"
+         x="433.67706"
+         sodipodi:role="line"
+         id="tspan4535"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'"> </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="571.86603"
+       y="1121.7339"
+       id="text4454"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1121.7339"
+         id="tspan4474">Autorství jednotlivých řádků</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1135.9089"
+         id="tspan4608">Porovnání dvou větví</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1150.0839"
+         id="tspan4626">Revize daného autora</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1164.2589"
+         id="tspan4624">Jeden řádek na revizi</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1178.4338"
+         id="tspan4610">&quot;Nakreslit&quot; graf</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1192.6089"
+         id="tspan4612">Vypsat všechny větve</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1206.7839"
+         id="tspan4614">Popsat větve</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1220.9589"
+         id="tspan4616">Posledních 7 revizí</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1235.1339"
+         id="tspan4618">Revize přidávající/odebírající </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1249.3088"
+         id="tspan38446">   text</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         sodipodi:role="line"
+         x="571.86603"
+         y="1263.4839"
+         id="tspan4604"> </tspan></text>
+    <text
+       id="text4628"
+       y="1263.4662"
+       x="430.13373"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Bree Serif';-inkscape-font-specification:'Bree Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1263.4662"
+         x="430.13373"
+         id="tspan4630"
+         sodipodi:role="line"
+         style="font-weight:bold;font-size:11.25px;line-height:1.25">Přepisování historie</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="433.67706"
+       y="1277.6394"
+       id="text4632"><tspan
+         sodipodi:role="line"
+         x="433.67706"
+         y="1277.6394"
+         id="tspan4634"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git commit --amend</tspan><tspan
+         id="tspan4653"
+         sodipodi:role="line"
+         x="433.67706"
+         y="1291.7019"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.25;font-family:'Terminus (TTF)';-inkscape-font-specification:'Terminus (TTF)'">git rebase -i HEAD~3</tspan></text>
+    <text
+       id="text4655"
+       y="1277.6394"
+       x="571.86603"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oxygen Mono';-inkscape-font-specification:'Oxygen Mono';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4674"
+         y="1277.6394"
+         x="571.86603"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen">Přepsat poslední revizi</tspan><tspan
+         y="1291.8145"
+         x="571.86603"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"
+         id="tspan4725">Přeskládat poslední 3 revize</tspan><tspan
+         id="tspan4678"
+         y="1305.9894"
+         x="571.86603"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:1.26;font-family:Oxygen;-inkscape-font-specification:Oxygen"> </tspan></text>
+    <text
+       id="text10059-0"
+       y="1338.9434"
+       x="686.60236"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Oxygen;-inkscape-font-specification:Oxygen;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1338.9434"
+         x="686.60236"
+         id="tspan10061-1"
+         sodipodi:role="line"
+         style="font-size:5px;line-height:1.25">© 2015 Petr Viktorin, Marek Nožka. Ke stažení na https://github.com/pyvec/cheatsheets. Šířeno pod licencí CC BY-SA: http://creativecommons.org/licenses/by-sa/4.0/</tspan></text>
+    <g
+       transform="matrix(0.23622046,0,0,0.23622046,690.14561,1328.5744)"
+       inkscape:label="Layer 1"
+       id="layer1-5-7">
+      <g
+         transform="matrix(1.064765,0,0,1.0646458,-198.95796,-80.858434)"
+         id="g287-0"
+         inkscape:export-filename="/mnt/hgfs/Bov/Documents/Work/2007/cc/identity/srr buttons/big/by-sa.png"
+         inkscape:export-xdpi="300.23013"
+         inkscape:export-ydpi="300.23013">
+        <path
+           inkscape:connector-curvature="0"
+           id="path3817_2_-1"
+           nodetypes="ccccccc"
+           d="m 182.23532,75.39014 114.06396,0.20312 c 1.59375,0 3.01758,-0.23682 3.01758,3.18018 l -0.13965,37.56689 H 179.3569 V 78.63379 c 0,-1.68457 0.16309,-3.24365 2.87842,-3.24365 z"
+           style="fill:#aab2ab" />
+        <g
+           id="g5908_2_-8"
+           transform="matrix(0.872921,0,0,0.872921,50.12536,143.2144)">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5906_2_-8"
+             cx="296.35416"
+             ry="22.939548"
+             cy="264.3577"
+             type="arc"
+             rx="22.939548"
+             d="m 187.20944,-55.6792 c 0.006,8.68024 -7.02786,15.72095 -15.7081,15.72708 -8.68021,0.005 -15.72205,-7.02786 -15.72708,-15.70804 0,-0.0067 0,-0.01233 0,-0.01904 -0.005,-8.68134 7.02783,-15.72205 15.70807,-15.72711 8.68134,-0.0056 15.72208,7.02789 15.72711,15.70807 0,0.0056 0,0.01233 0,0.01904 z"
+             style="fill:#ffffff" />
+          <g
+             id="g5706_2_-1"
+             transform="translate(-289.6157,99.0653)">
+            <path
+               inkscape:connector-curvature="0"
+               id="path5708_2_-5"
+               d="m 473.88455,-167.54724 c 3.48541,3.48596 5.22839,7.75391 5.22839,12.80273 0,5.04938 -1.7128,9.27148 -5.13834,12.66736 -3.63531,3.5766 -7.93179,5.36432 -12.88947,5.36432 -4.89777,0 -9.11987,-1.77261 -12.6651,-5.31955 -3.54584,-3.54581 -5.31845,-7.78299 -5.31845,-12.71213 0,-4.92859 1.77261,-9.19598 5.31845,-12.80273 3.4552,-3.48651 7.67725,-5.22894 12.6651,-5.22894 5.04829,0 9.31401,1.74243 12.79942,5.22894 z m -23.11798,2.34485 c -2.94675,2.97638 -4.41956,6.46289 -4.41956,10.46234 0,3.99835 1.45828,7.4552 4.37424,10.37067 2.91653,2.9165 6.38849,4.37476 10.41705,4.37476 4.02853,0 7.53018,-1.47281 10.50656,-4.41901 2.8259,-2.73584 4.23941,-6.17706 4.23941,-10.32642 0,-4.11804 -1.43646,-7.61292 -4.30768,-10.48474 -2.87064,-2.87067 -6.34988,-4.30652 -10.43829,-4.30652 -4.08837,0 -7.54638,1.44318 -10.37173,4.32892 z m 7.75449,8.70312 c -0.45032,-0.98163 -1.12433,-1.47223 -2.02325,-1.47223 -1.58914,0 -2.38342,1.06952 -2.38342,3.2085 0,2.13959 0.79428,3.20911 2.38342,3.20911 1.04938,0 1.79895,-0.5213 2.24866,-1.56512 l 2.20276,1.17303 c -1.04993,1.86548 -2.62506,2.79901 -4.72549,2.79901 -1.6199,0 -2.91763,-0.4967 -3.89206,-1.48956 -0.97607,-0.99341 -1.46274,-2.36273 -1.46274,-4.10797 0,-1.71558 0.50229,-3.07709 1.50748,-4.08563 1.00519,-1.00793 2.25705,-1.51251 3.75781,-1.51251 2.22012,0 3.80984,0.87488 4.77081,2.62286 z m 10.36334,0 c -0.45087,-0.98163 -1.11148,-1.47223 -1.98239,-1.47223 -1.62106,0 -2.43213,1.06952 -2.43213,3.2085 0,2.13959 0.81107,3.20911 2.43213,3.20911 1.05103,0 1.78717,-0.5213 2.20724,-1.56512 l 2.25201,1.17303 c -1.04825,1.86548 -2.62119,2.79901 -4.71768,2.79901 -1.61771,0 -2.91263,-0.4967 -3.88647,-1.48956 -0.97217,-0.99341 -1.45938,-2.36273 -1.45938,-4.10797 0,-1.71558 0.49448,-3.07709 1.48288,-4.08563 0.98782,-1.00793 2.24527,-1.51251 3.77347,-1.51251 2.21619,0 3.80368,0.87488 4.76132,2.62286 z" />
+          </g>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           d="M 297.29639,74.91064 H 181.06688 c -1.24658,0 -2.26074,1.01465 -2.26074,2.26123 v 39.49561 c 0,0.28174 0.22852,0.51074 0.51025,0.51074 h 119.73 c 0.28174,0 0.51074,-0.229 0.51074,-0.51074 v -39.4956 c 0,-1.24659 -1.01416,-2.26124 -2.26074,-2.26124 z m -116.22951,1.02149 h 116.22951 c 0.68359,0 1.23926,0.55615 1.23926,1.23975 0,0 0,15.91943 0,27.41846 H 215.4619 c -3.04492,5.50537 -8.91113,9.24365 -15.64355,9.24365 -6.73535,0 -12.6001,-3.73486 -15.64355,-9.24365 h -4.34814 c 0,-11.49902 0,-27.41846 0,-27.41846 -2e-5,-0.6836 0.55663,-1.23975 1.24022,-1.23975 z"
+           id="path294-6" />
+        <g
+           enable-background="new    "
+           id="g296-3">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 265.60986,112.8833 c 0.0801,0.15576 0.1875,0.28174 0.32129,0.37842 0.13379,0.0962 0.29004,0.16797 0.46973,0.21436 0.18066,0.0469 0.36719,0.0703 0.55957,0.0703 0.12988,0 0.26953,-0.0107 0.41895,-0.0327 0.14844,-0.0215 0.28809,-0.064 0.41895,-0.12598 0.12988,-0.062 0.23926,-0.14795 0.3252,-0.25684 0.0879,-0.10889 0.13086,-0.24707 0.13086,-0.41553 0,-0.18018 -0.0576,-0.32617 -0.17285,-0.43848 -0.11426,-0.1123 -0.26562,-0.20508 -0.45215,-0.28027 -0.18555,-0.0742 -0.39746,-0.13965 -0.63281,-0.1958 -0.23633,-0.0562 -0.47559,-0.11816 -0.71777,-0.18701 -0.24902,-0.062 -0.49121,-0.13818 -0.72754,-0.22852 -0.23535,-0.0898 -0.44727,-0.20703 -0.63379,-0.3501 -0.18652,-0.14307 -0.33691,-0.32178 -0.45215,-0.53662 -0.11426,-0.21484 -0.17188,-0.47461 -0.17188,-0.7793 0,-0.34277 0.0732,-0.63965 0.21875,-0.8916 0.14648,-0.25195 0.33789,-0.46191 0.57422,-0.63037 0.23535,-0.16797 0.50293,-0.29248 0.80176,-0.37354 0.29785,-0.0806 0.59668,-0.12109 0.89453,-0.12109 0.34863,0 0.68262,0.0391 1.00293,0.11719 0.31934,0.0776 0.60449,0.2041 0.85254,0.37842 0.24902,0.17432 0.44629,0.39697 0.59277,0.66797 0.14551,0.271 0.21875,0.59961 0.21875,0.98535 h -1.42188 c -0.0127,-0.19922 -0.0547,-0.36426 -0.125,-0.49463 -0.0713,-0.13086 -0.16602,-0.2334 -0.2832,-0.30859 -0.11816,-0.0742 -0.25293,-0.12744 -0.4043,-0.1582 -0.15234,-0.0312 -0.31738,-0.0469 -0.49707,-0.0469 -0.11719,0 -0.23535,0.0127 -0.35254,0.0371 -0.11816,0.0254 -0.22461,0.0688 -0.32031,0.13086 -0.0967,0.0625 -0.17578,0.14014 -0.2373,0.2334 -0.0615,0.0937 -0.0928,0.21191 -0.0928,0.35498 0,0.13086 0.0244,0.23682 0.0742,0.31738 0.0498,0.0811 0.14844,0.15576 0.29395,0.22412 0.14551,0.0684 0.34766,0.13721 0.60547,0.20557 0.25781,0.0684 0.59473,0.15576 1.01172,0.26123 0.12402,0.0249 0.2959,0.0703 0.5166,0.13574 0.2207,0.0654 0.43945,0.16943 0.65723,0.3125 0.21777,0.14355 0.40527,0.33496 0.56445,0.57422 0.1582,0.23975 0.2373,0.54639 0.2373,0.91992 0,0.30518 -0.0596,0.58838 -0.17773,0.84961 -0.11816,0.26172 -0.29395,0.4873 -0.52734,0.67676 -0.2334,0.19043 -0.52246,0.33789 -0.86719,0.44385 -0.3457,0.10596 -0.74609,0.15869 -1.19922,0.15869 -0.36719,0 -0.72363,-0.0454 -1.06934,-0.13574 -0.34473,-0.0903 -0.65039,-0.23242 -0.91504,-0.42578 -0.26367,-0.19336 -0.47363,-0.43994 -0.62988,-0.73877 -0.15527,-0.29932 -0.22949,-0.65381 -0.22363,-1.06494 h 1.42188 c -3e-5,0.22412 0.04,0.41406 0.12106,0.56933 z"
+             id="path298-6"
+             style="fill:#ffffff" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 273.8667,107.8667 2.49316,6.66406 h -1.52246 l -0.50391,-1.48438 h -2.49316 l -0.52246,1.48438 h -1.47461 l 2.52051,-6.66406 z m 0.084,4.08594 -0.83984,-2.44336 h -0.0186 l -0.86914,2.44336 h 1.72753 z"
+             id="path300-3"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           enable-background="new    "
+           id="g302-7">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 239.17821,107.8667 c 0.31738,0 0.60742,0.0283 0.86914,0.084 0.26172,0.0561 0.48633,0.14795 0.67383,0.27539 0.18652,0.12744 0.33203,0.29688 0.43457,0.5083 0.10254,0.21142 0.1543,0.47266 0.1543,0.78369 0,0.33594 -0.0762,0.61523 -0.22949,0.83936 -0.15234,0.22412 -0.37891,0.40723 -0.67773,0.55029 0.41211,0.11816 0.71973,0.3252 0.92285,0.62109 0.20312,0.29589 0.30469,0.65234 0.30469,1.06934 0,0.33594 -0.0654,0.62695 -0.19629,0.87305 -0.13086,0.24561 -0.30762,0.44629 -0.52832,0.60205 -0.22168,0.15576 -0.47461,0.271 -0.75781,0.34521 -0.28418,0.0752 -0.5752,0.1123 -0.875,0.1123 h -3.23633 v -6.66406 h 3.14159 v 1e-5 z m -0.1875,2.69531 c 0.26172,0 0.47656,-0.062 0.64551,-0.18604 0.16797,-0.12451 0.25195,-0.32568 0.25195,-0.60498 0,-0.15527 -0.0283,-0.28271 -0.084,-0.38184 -0.0566,-0.0996 -0.13086,-0.17676 -0.22461,-0.23291 -0.0937,-0.0557 -0.20117,-0.0947 -0.32227,-0.11621 -0.12207,-0.022 -0.24805,-0.0327 -0.37891,-0.0327 h -1.37305 v 1.55469 h 1.48536 z m 0.0859,2.82813 c 0.14355,0 0.28027,-0.0137 0.41113,-0.042 0.13086,-0.0278 0.24707,-0.0747 0.34668,-0.13965 0.0996,-0.0654 0.17871,-0.1543 0.23828,-0.26611 0.0596,-0.11181 0.0889,-0.25488 0.0889,-0.4292 0,-0.3418 -0.0967,-0.58594 -0.29004,-0.73193 -0.19336,-0.14599 -0.44922,-0.21924 -0.7666,-0.21924 h -1.59961 v 1.82812 h 1.57129 z"
+             id="path304-1"
+             style="fill:#ffffff" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 241.88914,107.8667 h 1.64355 l 1.56055,2.63184 1.55078,-2.63184 h 1.63379 l -2.47363,4.10645 v 2.55762 h -1.46875 v -2.59473 z"
+             id="path306-8"
+             style="fill:#ffffff" />
+        </g>
+        <g
+           id="g6316_1_-8"
+           transform="matrix(0.624995,0,0,0.624995,391.2294,176.9332)">
+          <path
+             inkscape:connector-curvature="0"
+             id="path6318_1_-5"
+             cx="475.97119"
+             ry="29.209877"
+             cy="252.08646"
+             type="arc"
+             rx="29.209877"
+             d="m -175.0083,-139.1153 c 0.006,9.4118 -7.61725,17.04779 -17.02982,17.05481 -9.41101,0.007 -17.047,-7.61725 -17.05481,-17.02979 0,-0.008 0,-0.0172 0,-0.025 -0.006,-9.41254 7.6188,-17.047 17.02982,-17.05481 9.41257,-0.007 17.04855,7.61804 17.05481,17.02985 0,0.009 0,0.0164 0,0.025 z"
+             style="fill:#ffffff" />
+          <g
+             id="g6320_1_-9"
+             transform="translate(-23.9521,-89.72962)">
+            <path
+               inkscape:connector-curvature="0"
+               id="path6322_1_-1"
+               d="m -168.2204,-68.05536 c -5.17194,0 -9.54852,1.80469 -13.13135,5.41333 -3.67661,3.73444 -5.51413,8.1532 -5.51413,13.25635 0,5.10315 1.83752,9.49152 5.51413,13.1626 3.67502,3.67194 8.05316,5.50787 13.13135,5.50787 5.14066,0 9.59537,-1.85156 13.36728,-5.55475 3.55005,-3.51562 5.3266,-7.88831 5.3266,-13.11572 0,-5.22662 -1.8078,-9.64697 -5.42191,-13.25635 -3.61407,-3.60864 -8.03756,-5.41333 -13.27197,-5.41333 z m 0.0469,3.36017 c 4.23752,0 7.836,1.49298 10.79697,4.48053 2.98907,2.9563 4.48441,6.56567 4.48441,10.82898 0,4.29382 -1.46252,7.85712 -4.39224,10.68915 -3.08438,3.04926 -6.71411,4.57349 -10.88913,4.57349 -4.17505,0 -7.7735,-1.5094 -10.79541,-4.52661 -3.02188,-3.01953 -4.53284,-6.59692 -4.53284,-10.73602 0,-4.13831 1.52658,-7.74847 4.57971,-10.82898 2.92815,-2.98756 6.51098,-4.48054 10.74853,-4.48054 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path6324_1_-1"
+               d="m -176.49548,-52.02087 c 0.74377,-4.69769 4.05161,-7.20862 8.1954,-7.20862 5.96097,0 9.59225,4.32501 9.59225,10.09229 0,5.62738 -3.86411,9.99927 -9.686,9.99927 -4.00473,0 -7.58914,-2.46484 -8.24228,-7.30084 h 4.70319 c 0.14062,2.51099 1.77032,3.39459 4.09845,3.39459 2.65317,0 4.37817,-2.4649 4.37817,-6.23291 0,-3.95233 -1.49063,-6.04535 -4.28598,-6.04535 -2.04846,0 -3.8172,0.74457 -4.19064,3.30157 l 1.36874,-0.007 -3.70316,3.7016 -3.7016,-3.7016 z" />
+          </g>
+        </g>
+        <g
+           id="g313-8">
+          <circle
+             cx="242.56226"
+             cy="90.224609"
+             r="10.8064"
+             id="circle315-2"
+             style="fill:#ffffff" />
+          <g
+             id="g317-4">
+            <path
+               inkscape:connector-curvature="0"
+               d="m 245.68994,87.09766 c 0,-0.4165 -0.33789,-0.75342 -0.75391,-0.75342 h -4.77246 c -0.41602,0 -0.75391,0.33691 -0.75391,0.75342 v 4.77295 h 1.33105 v 5.65234 h 3.61719 v -5.65234 h 1.33203 v -4.77295 z"
+               id="path319-8" />
+            <circle
+               cx="242.5498"
+               cy="84.083008"
+               r="1.63232"
+               id="circle321-8" />
+          </g>
+          <path
+             inkscape:connector-curvature="0"
+             d="m 242.53467,78.31836 c -3.23145,0 -5.96826,1.12744 -8.20752,3.38379 -2.29785,2.33301 -3.44629,5.09521 -3.44629,8.28418 0,3.18897 1.14844,5.93213 3.44629,8.22705 2.29785,2.29443 5.03418,3.44189 8.20752,3.44189 3.21289,0 5.99805,-1.15674 8.35352,-3.47168 2.2207,-2.19678 3.33008,-4.92969 3.33008,-8.19727 0,-3.26758 -1.12891,-6.02881 -3.3877,-8.28418 -2.25879,-2.25634 -5.02442,-3.38378 -8.2959,-3.38378 z m 0.0293,2.09961 c 2.64844,0 4.89746,0.93359 6.74707,2.80078 1.87012,1.84717 2.80469,4.10352 2.80469,6.76758 0,2.68359 -0.91504,4.91113 -2.74609,6.68066 -1.92773,1.90576 -4.19629,2.8584 -6.80566,2.8584 -2.60937,0 -4.8584,-0.94287 -6.74658,-2.82959 -1.88965,-1.88623 -2.8335,-4.12256 -2.8335,-6.70947 0,-2.58643 0.9541,-4.84229 2.8623,-6.76758 1.83057,-1.86719 4.07031,-2.80078 6.71777,-2.80078 z"
+             id="path323-8"
+             style="clip-rule:evenodd;fill-rule:evenodd" />
+        </g>
+      </g>
+    </g>
+    <text
+       id="text9143-7"
+       y="1331.8568"
+       x="686.60236"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Oxygen;-inkscape-font-specification:Oxygen;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1331.8568"
+         x="686.60236"
+         id="tspan9145-1"
+         sodipodi:role="line"
+         style="font-size:5px;line-height:1.25">Přehled operací v Gitu.</tspan></text>
+    <text
+       id="text15296"
+       y="1344.5684"
+       x="499.10236"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Oxygen;-inkscape-font-specification:Oxygen;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1344.5684"
+         x="499.10236"
+         id="tspan15294"
+         sodipodi:role="line"
+         style="font-size:5px;line-height:1.25">https://chytrosti.marrek.cz/git.html</tspan></text>
+  </g>
+</svg>

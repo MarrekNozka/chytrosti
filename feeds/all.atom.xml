@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-06-04T09:38:24+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-06-04T09:38:24+02:00</published><updated>2024-06-04T09:38:24+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-06-04:/git.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-06-04T12:01:18+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-06-04T12:01:18+02:00</published><updated>2024-06-04T12:01:18+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-06-04:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -36,6 +36,9 @@ kapitoly&lt;/strong&gt;. Nenechte se tedy odradit, stojí to jistě za to.&lt;/
 &lt;li&gt;… nebo další &lt;a href="https://www.kutac.cz/pocitace-a-internety/git-tutorialy-a-navody"&gt;sada tutoriálů&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;dl&gt;
+&lt;dt&gt;Tahák&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/media/git_tahak.svg"&gt;&lt;span class="caps"&gt;SVG&lt;/span&gt;&lt;/a&gt; &lt;a href="https://chytrosti.marrek.cz/media/git_tahak.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dd&gt;&lt;img alt="" src="https://chytrosti.marrek.cz/images/git_tahak.png"/&gt;&lt;/dd&gt;
 &lt;dt&gt;Referenční příručka&lt;/dt&gt;
 &lt;dd&gt;&lt;a href="https://git-scm.com/docs"&gt;https://git-scm.com/docs&lt;/a&gt; &lt;/dd&gt;
 &lt;dt&gt;Hezké HowTo&lt;/dt&gt;
@@ -117,7 +120,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;Základy systému Git&lt;/a&gt;
 &lt;img alt="" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/p&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-remote"&gt;Git a GitHub&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/p&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>Projektové úlohy MIT</title><link href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html" rel="alternate"></link><published>2024-04-09T09:13:00+02:00</published><updated>2024-06-04T09:33:12+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-04-09:/projektove-ulohy-mit.html</id><summary type="html">
+&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/p&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>Projektové úlohy MIT</title><link href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html" rel="alternate"></link><published>2024-04-09T09:13:00+02:00</published><updated>2024-06-04T09:44:11+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-04-09:/projektove-ulohy-mit.html</id><summary type="html">
 &lt;p&gt;Co se ode mě očekává?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -126,7 +129,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
   pokud nemáte žádný nápad.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Vypracovaný projekt bude obsahovat&lt;/p&gt;
+&lt;p&gt;Vypracovaný projekt bude obsahovat:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Původní zadání.&lt;/li&gt;
 &lt;li&gt;Funkční zapojení – můžete použít vlastní &lt;span class="caps"&gt;PCB&lt;/span&gt;, univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt; nebo nepájivé pole.&lt;/li&gt;
@@ -139,7 +142,7 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
   pokud nemáte žádný nápad.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Vypracovaný projekt bude obsahovat&lt;/p&gt;
+&lt;p&gt;Vypracovaný projekt bude obsahovat:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Původní zadání.&lt;/li&gt;
 &lt;li&gt;Funkční zapojení – můžete použít vlastní &lt;span class="caps"&gt;PCB&lt;/span&gt;, univerzální &lt;span class="caps"&gt;PCB&lt;/span&gt; nebo nepájivé pole.&lt;/li&gt;
@@ -154,6 +157,8 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 &lt;li&gt;Vše bude uloženo ve veřejném Git repositáři – tedy vše kromě &lt;span class="caps"&gt;HW&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;Formu projektové dokumentace nechám na vás. Může to být &lt;span class="caps"&gt;PDF&lt;/span&gt; dokument nebo &lt;span class="caps"&gt;README&lt;/span&gt;
+  na GitLabu.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Vzorové zadání:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;
