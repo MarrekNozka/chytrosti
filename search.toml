@@ -18,6 +18,11 @@ url = "/git.html"
 title = "Git"
 
 [[input.files]]
+path = "projektove-ulohy-mit.html"
+url = "/projektove-ulohy-mit.html"
+title = "Projektové úlohy MIT"
+
+[[input.files]]
 path = "stm8oss.html"
 url = "/stm8oss.html"
 title = "Vývoj STM8 s OpenSource nástroji"
