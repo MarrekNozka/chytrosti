@@ -11,7 +11,7 @@ Co se ode mě očekává?
   vyučujícím, potom se můžete dát do práce. Níže uvádím náměty na zadáni,
   pokud nemáte žádný nápad.
  
-* Vypracovaný projekt bude obsahovat
+* Vypracovaný projekt bude obsahovat:
     - Původní zadání.
     - Funkční zapojení -- můžete použít vlastní PCB, univerzální PCB nebo nepájivé
       pole.
@@ -22,6 +22,8 @@ Co se ode mě očekává?
         + okomentovaný zdrojový kód (hezký a barevný) v podobě textu; 
             žádné screenshoty obrazovky vývojového prostředí
     - Vše bude uloženo ve veřejném Git repositáři -- tedy vše kromě HW.
+* Formu projektové dokumentace nechám na vás. Může to být PDF dokument nebo README
+  na GitLabu.
 
 **Vzorové zadání:**
 

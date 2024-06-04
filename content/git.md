@@ -42,6 +42,10 @@ Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):
 * ... nebo jeden [stručný návod](https://gitlab.com/wykys/stm8-xikon/-/tree/main/git)
 * ... nebo další [sada tutoriálů](https://www.kutac.cz/pocitace-a-internety/git-tutorialy-a-navody)
 
+Tahák
+: [SVG]({static}./media/git_tahak.svg) [PDF]({static}./media/git_tahak.pdf)
+: ![]({static}./images/git_tahak.png)
+
 Referenční příručka
 : <https://git-scm.com/docs>      
 
