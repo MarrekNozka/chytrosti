@@ -40,19 +40,18 @@ Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):
 ----------------
 
 * ... nebo jeden [stručný návod](https://gitlab.com/wykys/stm8-xikon/-/tree/main/git)
+* ... nebo další [sada tutoriálů](https://www.kutac.cz/pocitace-a-internety/git-tutorialy-a-navody)
 
-Zde referenční příručka: <https://git-scm.com/docs>
+Referenční příručka
+: <https://git-scm.com/docs>      
 
-Videa
-================
+Hezké HowTo
+: <https://githowto.com/>
 
-[Základy systému Git](https://odysee.com/@MarrekNozka/git-zaklad)
-![]({static}images/git-zaklad_preview.jpg)
-{.video-preview data-frames="16"}
+Když se něco pokazí....
+: <https://ohshitgit.com/cs>
 
-[Git a GitHub](https://odysee.com/@MarrekNozka/git-remote)
-![]({static}images/git-github-2_preview.jpg)
-{.video-preview data-frames="16"}
+
 
 
 Instalace
@@ -145,9 +144,11 @@ Veřejná (webová) úložiště
 
 Nejznámější veřejná úložiště pro Git jsou asi tyto:
 
-* <https://github.com>
 * <https://gitlab.com>
 * <https://bitbucket.org>
+* <https://codeberg.org>
+* <https://gitea.com>
+* <https://github.com>
 
 Kromě ukládaní repositářů zde naleznete i rozměr sociální sítě.
 Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro a proti.
@@ -158,4 +159,17 @@ Pokusy a hračičky
 
 * <https://learngitbranching.js.org/>
 * Oh my Git: <https://ohmygit.org/>
+
+Videotutoriál
+================
+
+Zde je můj pokus o videotutoriál....
+
+[Základy systému Git](https://odysee.com/@MarrekNozka/git-zaklad)
+![]({static}images/git-zaklad_preview.jpg)
+{.video-preview data-frames="16"}
+
+[Git a GitHub](https://odysee.com/@MarrekNozka/git-remote)
+![]({static}images/git-github-2_preview.jpg)
+{.video-preview data-frames="16"}
 
