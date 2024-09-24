@@ -13,24 +13,24 @@ url = "/pages/o-mne.html"
 title = "O mně"
 
 [[input.files]]
-path = "git.html"
-url = "/git.html"
-title = "Git"
-
-[[input.files]]
-path = "projektove-ulohy-mit.html"
-url = "/projektove-ulohy-mit.html"
-title = "Projektové úlohy MIT"
-
-[[input.files]]
-path = "stm8oss.html"
-url = "/stm8oss.html"
-title = "Vývoj STM8 s OpenSource nástroji"
+path = "projektove-ulohy-mit-20242025.html"
+url = "/projektove-ulohy-mit-20242025.html"
+title = "Projektové úlohy MIT 2024/2025"
 
 [[input.files]]
 path = "mit.html"
 url = "/mit.html"
 title = "MIT"
+
+[[input.files]]
+path = "git.html"
+url = "/git.html"
+title = "Git"
+
+[[input.files]]
+path = "stm8oss.html"
+url = "/stm8oss.html"
+title = "Vývoj STM8 s OpenSource nástroji"
 
 [[input.files]]
 path = "site.html"

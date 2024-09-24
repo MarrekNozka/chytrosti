@@ -19,13 +19,13 @@
 
 <meta property="og:title" content="MIT  - Mikroprocesorová technika "/>
 <meta property="og:url" content="./mit.html" />
-<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Pro potřeby svojí výuky jsem sestavil následující: Céčko – pác věcí, kterých byste si fakt měli všimnout Oddělená kompilace a vlastní knihovny Dělení v pevné řadové čárce Generování zvuku – základy Základní použití časovače Použití časovače jako generátoru PWM Ultrazvukový …" />
+<meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Zde je malý rozcestník návodů; některé jsem vytvořil já, některé Michal Dudka, některé Honza Vykydal. Céčko – pác věcí, kterých byste si fakt měli všimnout Oddělená kompilace a vlastní knihovny Dělení v pevné řadové čárce Generování zvuku – základy Základní …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2024-01-24T19:41:32.452584+01:00" />
-<meta property="og:article:modified_time" content="2024-01-24T19:41:32.452584+01:00" />
+<meta property="og:article:published_time" content="2024-09-16T18:05:36.347718+02:00" />
+<meta property="og:article:modified_time" content="2024-09-16T18:05:36.347718+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
-<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Pro potřeby svojí výuky jsem sestavil následující: Céčko – pác věcí, kterých byste si fakt měli všimnout Oddělená kompilace a vlastní knihovny Dělení v pevné řadové čárce Generování zvuku – základy Základní použití časovače Použití časovače jako generátoru PWM Ultrazvukový …">
+<meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Návody¶ Zde je malý rozcestník návodů; některé jsem vytvořil já, některé Michal Dudka, některé Honza Vykydal. Céčko – pác věcí, kterých byste si fakt měli všimnout Oddělená kompilace a vlastní knihovny Dělení v pevné řadové čárce Generování zvuku – základy Základní …">
 
         <title>MIT  - Mikroprocesorová technika  · Chytrosti
 </title>
@@ -118,8 +118,8 @@
 
         <section id="article-sidebar">
               <h4>Aktualizováno:</h4>
-            <time itemprop="dateCreated" datetime="2024-01-24T19:41:32+01:00">
-              St 24. led 2024 19:41
+            <time itemprop="dateCreated" datetime="2024-09-16T18:05:36+02:00">
+              Po 16. zář 2024 18:05
             </time>
 
             <h4>Kategorie:</h4>
@@ -189,8 +189,8 @@
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./projektove-ulohy-mit-20242025.html" title="Projektové úlohy MIT 2024/2025">Projektové úlohy MIT 2024/2025</a></li>
 </ul>
 <hr />
 </section>
@@ -203,16 +203,21 @@
 <p>Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 <a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"><span class="caps">STM8S</span></a>.</p>
 <h2 id="navody">Návody<a class="headerlink" href="#navody" title="Permanent link">¶</a></h2>
-<p>Pro potřeby svojí výuky jsem sestavil následující:</p>
-<ul>
-<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html">Céčko –  pác věcí, kterých byste si fakt měli všimnout</a></li>
-<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="./deleni-v-pevne-radove-carce.html">Dělení v pevné řadové čárce</a></li>
-<li><a href="./generovani-zvuku-zaklady.html">Generování zvuku – základy</a></li>
-<li><a href="./zakladni-pouziti-casovace.html">Základní použití časovače</a></li>
-<li><a href="./pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></li>
-<li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></li>
-</ul>
+<p>Zde je malý rozcestník návodů; některé jsem vytvořil já, některé <a href="http://elektromys.eu">Michal
+Dudka</a>, některé <a href="https://gitlab.com/wykys/">Honza
+Vykydal</a>.</p>
+<div class="dlazdice">
+<p><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html">
+<img alt="" src="./mit/dlazdice/cecko.png"/>
+Céčko –  pác věcí, kterých byste si fakt měli všimnout
+</a></p>
+<p><a href="./oddelena-kompilace-a-vlastni-knihovny.html">Oddělená kompilace a vlastní knihovny</a></p>
+<p><a href="./deleni-v-pevne-radove-carce.html">Dělení v pevné řadové čárce</a></p>
+<p><a href="./generovani-zvuku-zaklady.html">Generování zvuku – základy</a></p>
+<p><a href="./zakladni-pouziti-casovace.html">Základní použití časovače</a></p>
+<p><a href="./pouziti-casovace-jako-generatoru-pwm.html">Použití časovače jako generátoru <span class="caps">PWM</span></a></p>
+<p><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></p>
+</div>
 <p><strong>Michal Dudka</strong> píše skvělý web o programování mikrokontrokérů:
 <a href="http://elektromys.eu">http://elektromys.eu</a>. V sekci <a href="http://elektromys.eu/stm8.php"><span class="caps">STM8</span></a>
 najdete spoustu pro nás zajímavých věcí:</p>
@@ -454,8 +459,8 @@ Projekt vypadá velmi slibně.</p>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
 <li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
-<li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./projektove-ulohy-mit-20242025.html" title="Projektové úlohy MIT 2024/2025">Projektové úlohy MIT 2024/2025</a></li>
 </ul>
 <hr />
 </section>
