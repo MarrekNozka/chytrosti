@@ -319,6 +319,8 @@ img[alt*="90%%"] {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
+    justify-content: center; /* Horizontální zarovnání na střed */
+    align-items: center; /* Vertikální zarovnání na střed */
 }
 
 
@@ -328,16 +330,23 @@ img[alt*="90%%"] {
     font-weight: bold;
     font-size: 110%;
     background-color: #ffe2e2;
-    padding: 1ex;
     display: inline-block;
-    width: 13em;
-    border: darkred 1px solid;
+    width: 30%;
+    min-width: 12em;
+    border: darkred 3px solid;
     text-align: center;
     color: black;
 }
 
+.dlazdice p:hover {
+    background-image: none;
+    background-color: inherit;
+}
+
 .dlazdice p a, .dlazdice p a:visited {
     color: black !important;   
+    display: block !important;
+    padding: 0.5ex;
 }
 
 .dlazdice p img{
@@ -345,4 +354,5 @@ img[alt*="90%%"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 95%;
 }

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 24 Sep 2024 15:13:00 +0200</lastBuildDate><item><title>Projektové úlohy MIT 2024/2025</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit-20242025.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 22 Oct 2024 20:42:06 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
+Projektové úlohy
+&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:42:06 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Projektové úlohy MIT</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit.html</link><description>
+&lt;p&gt;&lt;img alt=" |=| 60%% " src="https://chytrosti.marrek.cz/mit/img/jezevec.webp"/&gt;&lt;/p&gt;
 &lt;h2 id="co-se-od-vas-ocekava"&gt;Co se od vás očekává?&lt;a class="headerlink" href="#co-se-od-vas-ocekava" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Každý žák vypracuje dvě projektové úlohy dle vlastní volby. Zadání bude
-    nejprve schváleno vyučujícím, potom se můžete dát do práce. Níže uvádím
-    několik nápadů na zadání, kterými se můžete nechat inspirovat pokud 
-    žádný nápad nemáte.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Každý žák vypracuje dvě projektové úlohy dle vlastní volby. Zadání bude nejprve
+&lt;strong&gt;schváleno vyučujícím&lt;/strong&gt;, potom se můžete dát do práce. 
+Níže (
+ &lt;a href="#nekolik-napadu-pro-mensi-projekt"&gt;tady&lt;/a&gt; a
+ &lt;a href="#nekolik-napadu-pro-vetsi-projekt"&gt;tam&lt;/a&gt;
+) uvádím několik nápadů
+na zadání, kterými se můžete nechat inspirovat pokud žádný nápad nemáte.&lt;/p&gt;
 &lt;h3 id="vzorove-zadani"&gt;Vzorové zadání&lt;a class="headerlink" href="#vzorove-zadani" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.odt"&gt;&lt;span class="caps"&gt;ODT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu&lt;a class="headerlink" href="#povinne-komponenty-projektu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Volte zadání tak …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 24 Sep 2024 15:13:00 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-09-24:/projektove-ulohy-mit-20242025.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Zde je malý rozcestník návodů; některé jsem vytvořil já, některé &lt;a href="http://elektromys.eu"&gt;Michal
-Dudka&lt;/a&gt;, některé &lt;a href="https://gitlab.com/wykys/"&gt;Honza
-Vykydal&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="dlazdice"&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/cecko.png"/&gt;
-Céčko –  pác věcí, kterých byste si fakt měli všimnout
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;Oddělená kompilace a vlastní knihovny&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html"&gt;Dělení v pevné řadové čárce&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;Generování zvuku – základy&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;Základní …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Mon, 16 Sep 2024 18:05:36 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-09-16:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:13:19 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
