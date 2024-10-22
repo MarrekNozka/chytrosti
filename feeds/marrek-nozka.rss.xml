@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 22 Oct 2024 20:42:06 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 22 Oct 2024 21:08:44 +0200</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 21:08:44 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="dlazdice"&gt;
@@ -26,14 +33,7 @@ na zadání, kterými se můžete nechat inspirovat pokud žádný nápad nemá
 &lt;h3 id="vzorove-zadani"&gt;Vzorové zadání&lt;a class="headerlink" href="#vzorove-zadani" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;
 &lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.odt"&gt;&lt;span class="caps"&gt;ODT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:13:19 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 04 Jun 2024 12:23:05 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-06-04:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
+&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:13:19 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
 &lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
 dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
 (&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),

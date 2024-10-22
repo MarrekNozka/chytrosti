@@ -13,6 +13,11 @@ url = "/pages/o-mne.html"
 title = "O mně"
 
 [[input.files]]
+path = "git.html"
+url = "/git.html"
+title = "Git"
+
+[[input.files]]
 path = "mit.html"
 url = "/mit.html"
 title = "MIT"
@@ -21,11 +26,6 @@ title = "MIT"
 path = "projektove-ulohy-mit.html"
 url = "/projektove-ulohy-mit.html"
 title = "Projektové úlohy MIT"
-
-[[input.files]]
-path = "git.html"
-url = "/git.html"
-title = "Git"
 
 [[input.files]]
 path = "stm8oss.html"
