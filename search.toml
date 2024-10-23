@@ -13,14 +13,24 @@ url = "/pages/o-mne.html"
 title = "O mně"
 
 [[input.files]]
-path = "git.html"
-url = "/git.html"
-title = "Git"
-
-[[input.files]]
 path = "mit.html"
 url = "/mit.html"
 title = "MIT"
+
+[[input.files]]
+path = "generovani-zvuku-zaklady.html"
+url = "/generovani-zvuku-zaklady.html"
+title = "Generování zvuku — základy"
+
+[[input.files]]
+path = "site.html"
+url = "/site.html"
+title = "Sítě"
+
+[[input.files]]
+path = "git.html"
+url = "/git.html"
+title = "Git"
 
 [[input.files]]
 path = "projektove-ulohy-mit.html"
@@ -31,11 +41,6 @@ title = "Projektové úlohy MIT"
 path = "stm8oss.html"
 url = "/stm8oss.html"
 title = "Vývoj STM8 s OpenSource nástroji"
-
-[[input.files]]
-path = "site.html"
-url = "/site.html"
-title = "Sítě"
 
 [[input.files]]
 path = "deleni-v-pevne-radove-carce.html"
@@ -81,11 +86,6 @@ title = "Ultrazvukový měřič vzdálenosti pomocí timeru TIM2"
 path = "pouziti-casovace-jako-generatoru-pwm.html"
 url = "/pouziti-casovace-jako-generatoru-pwm.html"
 title = "Použití časovače jako generátoru PWM"
-
-[[input.files]]
-path = "generovani-zvuku-zaklady.html"
-url = "/generovani-zvuku-zaklady.html"
-title = "Generování zvuku — základy"
 
 [[input.files]]
 path = "zakladni-pouziti-casovace.html"

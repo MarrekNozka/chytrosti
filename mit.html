@@ -22,8 +22,8 @@
 <meta property="og:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Projektové úlohy Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2024-10-22T20:42:06.043140+02:00" />
-<meta property="og:article:modified_time" content="2024-10-22T20:42:06.043140+02:00" />
+<meta property="og:article:published_time" content="2024-10-23T19:32:20.433989+02:00" />
+<meta property="og:article:modified_time" content="2024-10-23T19:32:20.433989+02:00" />
 <meta name="twitter:title" content="MIT  - Mikroprocesorová technika ">
 <meta name="twitter:description" content="Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady STM8S. Projektové úlohy Dokumentace¶ Celá řada STM8S používá stejnou sadu periferií. Jejich popis najdete v reference manuálu zde. Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na kterém čipu (plus další specifické věci) lze najít v …">
 
@@ -118,8 +118,8 @@
 
         <section id="article-sidebar">
               <h4>Aktualizováno:</h4>
-            <time itemprop="dateCreated" datetime="2024-10-22T20:42:06+02:00">
-              Út 22. říj 2024 20:42
+            <time itemprop="dateCreated" datetime="2024-10-23T19:32:20+02:00">
+              St 23. říj 2024 19:32
             </time>
 
             <h4>Kategorie:</h4>
@@ -156,7 +156,10 @@
 <ul>
 <li><a href="#dokumentace">Dokumentace</a></li>
 <li><a href="#hardware">Hardware</a></li>
-<li><a href="#navody">Návody</a></li>
+<li><a href="#navody">Návody</a><ul>
+<li><a href="#dalsi-velice-cenne-informace">Další velice cenné informace</a></li>
+</ul>
+</li>
 <li><a href="#vyvojove-nastroje">Vývojové nástroje</a><ul>
 <li><a href="#opensource-nastroje-nejen-pro-linux">OpenSource nástroje nejen pro Linux</a></li>
 <li><a href="#cosmic-stm8eclipse-balicek-pro-linux">Cosmic <span class="caps">STM8</span>+Eclipse balíček pro Linux</a></li>
@@ -173,7 +176,6 @@
 <li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko — pác věcí, kterých byste si fakt měli všimnout">Céčko — pác věcí, kterých byste si fakt měli všimnout</a></li>
 <li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
@@ -182,6 +184,7 @@
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 </ul>
 <hr />
 </section>
@@ -193,7 +196,7 @@
             
 <p>Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 <a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"><span class="caps">STM8S</span></a>.</p>
-<div class="dlazdice">
+<div class="dlazdice flex-center">
 <p><a href="./projektove-ulohy-mit.html">
 <img alt="" src="./mit/dlazdice/projekty.png"/>
 Projektové úlohy
@@ -228,72 +231,110 @@ pak najdete zde:</p>
 <li>viz sekce <a href="./projektove-ulohy-mit.html">Projektové úlohy</a>.</li>
 </ul>
 <h2 id="navody">Návody<a class="headerlink" href="#navody" title="Permanent link">¶</a></h2>
-<p>Zde je malý rozcestník návodů; některé jsem vytvořil já, některé <a href="http://elektromys.eu">Michal
-Dudka</a>, některé <a href="https://gitlab.com/wykys/">Honza
-Vykydal</a>.</p>
+<p>Zde je malý rozcestník návodů: některé jsem vytvořil já, některé 
+<a href="http://elektromys.eu/stm8.php">Michal Dudka</a>, některé 
+<a href="https://gitlab.com/wykys/">Honza Vykydal</a>.</p>
 <div class="dlazdice">
 <p><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html">
-<img alt="" src="./mit/dlazdice/cecko2.png"/>
+<img alt=" " src="./mit/dlazdice/cecko2.png"/>
  Céčko –  pác věcí, kterých byste si fakt měli všimnout
 </a></p>
 <p><a href="./oddelena-kompilace-a-vlastni-knihovny.html">
-<img alt="" src="./mit/dlazdice/clib.png"/>
+<img alt=" " src="./mit/dlazdice/clib.png"/>
  Oddělená kompilace a vlastní knihovny
 </a></p>
-<p><a href="./deleni-v-pevne-radove-carce.html"> <img alt="" src="./mit/dlazdice/deleni.png"/>
+<p><a href="./deleni-v-pevne-radove-carce.html"> <img alt=" " src="./mit/dlazdice/deleni.png"/>
    Dělení v pevné řadové čárce
 </a></p>
 <p><a href="./generovani-zvuku-zaklady.html">
-<img alt="" src="./mit/dlazdice/zvuk.png"/>
+<img alt=" " src="./mit/dlazdice/zvuk.png"/>
 Generování zvuku – základy</a></p>
 <p><a href="./zakladni-pouziti-casovace.html">
-<img alt="" src="./mit/dlazdice/casovac.png"/>
+<img alt=" " src="./mit/dlazdice/casovac.png"/>
 Základní použití časovače</a></p>
 <p><a href="./pouziti-casovace-jako-generatoru-pwm.html">
-<img alt="" src="./mit/dlazdice/pwm.png"/>
+<img alt=" " src="./mit/dlazdice/pwm.png"/>
 Použití časovače jako generátoru <span class="caps">PWM</span></a></p>
 <p><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html">
-<img alt="" src="./mit/dlazdice/ultrasonic.png"/>
+<img alt=" " src="./mit/dlazdice/ultrasonic.png"/>
 Ultrazvukový měřič vzdálenosti pomocí timeru <span class="caps">TIM2</span></a></p>
 </div>
-<p><strong>Michal Dudka</strong> píše skvělý web o programování mikrokontrokérů:
-<a href="http://elektromys.eu">http://elektromys.eu</a>. V sekci <a href="http://elektromys.eu/stm8.php"><span class="caps">STM8</span></a>
-najdete spoustu pro nás zajímavých věcí:</p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"><span class="caps">STM8</span> Programátory a Debuggery</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html">Instalace a vytvoření projektu ve Windows</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"><span class="caps">STM8S208</span> Nucleo</a></li>
-</ul>
-<p> </p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html">Vstupy a výstupy 1 – základy</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html">Vstupy a výstupy 2 – tlačítko</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html">Vstupy a výstupy 3 – logické úrovně</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html">Vstupy a výstupy 4 – PullUp rezistory</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html">Vstupy a výstupy 5 – Open-Drain</a></li>
-</ul>
-<p> </p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html">Ovládání displeje s <span class="caps">MAX7219</span></a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html">Clock</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html">Alfanumerické <span class="caps">LCD</span></a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">Knihovna milis – “Multitasking”</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">Stavový automat</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html">Nábojová pumpa</a></li>
-<li><a href="Buzení 7segmentového displeje">Buzení 7segmentového displeje</a></li>
-<li><a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"><span class="caps">AD</span> převodník</a></li>
-</ul>
-<p><strong>Honza Vykydal</strong> pak napsal:</p>
-<ul>
-<li><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti">Externí přerušení - <span class="caps">EXTI</span></a></li>
-<li><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim">Čítače / Časovače</a></li>
-</ul>
-<p>Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:</p>
-<ul>
-<li><a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"><span class="caps">IR</span> senzor</a></li>
-<li><a href="http://elektromys.eu/clanky/ele_i2c/clanek.html"><span class="caps">I2C</span> – Relativně jednoduše</a></li>
-</ul>
-<p>Další velice cenné informace nejdete v sekcích:</p>
+<hr/>
+<div class="dlazdice">
+<p><a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html">
+<img alt=" " src="./mit/dlazdice/progdebug.png"/>
+<span class="caps">STM8</span> Programátory a Debuggery</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html">
+<img alt=" " src="./mit/dlazdice/install.png"/>
+Instalace a vytvoření projektu ve Windows</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html">
+<img alt=" " src="./mit/dlazdice/nucleo.png"/>
+<span class="caps">STM8S208</span> Nucleo</a></p>
+</div>
+<hr/>
+<div class="dlazdice">
+<p><a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html">
+<img alt=" " src="./mit/dlazdice/i-o.png"/>
+Vstupy a výstupy 1 – základy</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html">
+<img alt=" " src="./mit/dlazdice/button.png"/>
+Vstupy a výstupy 2 – tlačítko</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html">
+<img alt=" " src="./mit/dlazdice/urovne.png"/>
+Vstupy a výstupy 3 – logické úrovně</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html">
+<img alt=" " src="./mit/dlazdice/pullup.png"/>
+Vstupy a výstupy 4 – PullUp rezistory</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html">
+<img alt=" " src="./mit/dlazdice/opendrain.png"/>
+Vstupy a výstupy 5 – Open-Drain</a></p>
+</div>
+<hr/>
+<div class="dlazdice">
+<p><a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html">
+<img alt=" " src="./mit/dlazdice/max7219.png"/>
+Ovládání displeje s <span class="caps">MAX7219</span></a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html">
+<img alt=" " src="./mit/dlazdice/clock-signal.png"/> Clock</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html">
+<img alt=" " src="./mit/dlazdice/lcd-2x16.png"/>
+Alfanumerické <span class="caps">LCD</span></a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html">
+<img alt=" " src="./mit/dlazdice/multitasking.png"/>
+Knihovna milis – “Multitasking”</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html">
+<img alt=" " src="./mit/dlazdice/stavovy_automat.png"/>
+Stavový automat</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html">
+<img alt=" " src="./mit/dlazdice/nabojova_pumpa.png"/>
+Nábojová pumpa</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_14_7seg/clanek.html">
+<img alt=" " src="./mit/dlazdice/7segment.png"/>
+Buzení 7segmentového displeje</a></p>
+<p><a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html">
+<img alt=" " src="./mit/dlazdice/adc.png"/>
+<span class="caps">AD</span> převodník</a></p>
+</div>
+<hr/>
+<div class="dlazdice">
+<p><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti">
+<img alt=" " src="./mit/dlazdice/ext-irq.png"/>
+Externí přerušení - <span class="caps">EXTI</span></a></p>
+<p><a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim">
+<img alt=" " src="./mit/dlazdice/counter.png"/>
+Čítače / Časovače</a></p>
+</div>
+<hr/>
+<div class="dlazdice">
+<p><a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html">
+<img alt=" " src="./mit/dlazdice/ir-sensor.png"/>
+<span class="caps">IR</span> senzor</a></p>
+<p><a href="http://elektromys.eu/clanky/ele_i2c/clanek.html">
+<img alt=" " src="./mit/dlazdice/i2c.png"/>
+<span class="caps">I2C</span> – Relativně jednoduše</a></p>
+</div>
+<h3 id="dalsi-velice-cenne-informace">Další velice cenné informace<a class="headerlink" href="#dalsi-velice-cenne-informace" title="Permanent link">¶</a></h3>
+<p>… najdete u Michala v sekcích:</p>
 <ul>
 <li><a href="http://elektromys.eu/elektro.php">Elektro</a></li>
 <li><a href="http://elektromys.eu/kratke.php">Různé krátké poznámky</a></li>
@@ -364,7 +405,6 @@ Projekt vypadá velmi slibně.</p>
 <li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko — pác věcí, kterých byste si fakt měli všimnout">Céčko — pác věcí, kterých byste si fakt měli všimnout</a></li>
 <li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
 <li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
-<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 <li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
@@ -373,6 +413,7 @@ Projekt vypadá velmi slibně.</p>
 <li><a href="./stm8oss.html" title="Vývoj STM8 s OpenSource nástroji">Vývoj STM8 s OpenSource nástroji</a></li>
 <li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
 </ul>
 <hr />
 </section>

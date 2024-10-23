@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Tue, 22 Oct 2024 21:08:44 +0200</lastBuildDate><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
-&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
-toužíte po nějakém grafickém ovládání stačí si vybrat 
-z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
-co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
-&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
-ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 21:08:44 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 23 Oct 2024 19:32:20 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="dlazdice"&gt;
+&lt;div class="dlazdice flex-center"&gt;
 &lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
 &lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
 Projektové úlohy
@@ -20,26 +13,15 @@ Projektové úlohy
 v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:42:06 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Projektové úlohy MIT</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit.html</link><description>
-&lt;p&gt;&lt;img alt=" |=| 60%% " src="https://chytrosti.marrek.cz/mit/img/jezevec.webp"/&gt;&lt;/p&gt;
-&lt;h2 id="co-se-od-vas-ocekava"&gt;Co se od vás očekává?&lt;a class="headerlink" href="#co-se-od-vas-ocekava" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Každý žák vypracuje dvě projektové úlohy dle vlastní volby. Zadání bude nejprve
-&lt;strong&gt;schváleno vyučujícím&lt;/strong&gt;, potom se můžete dát do práce. 
-Níže (
- &lt;a href="#nekolik-napadu-pro-mensi-projekt"&gt;tady&lt;/a&gt; a
- &lt;a href="#nekolik-napadu-pro-vetsi-projekt"&gt;tam&lt;/a&gt;
-) uvádím několik nápadů
-na zadání, kterými se můžete nechat inspirovat pokud žádný nápad nemáte.&lt;/p&gt;
-&lt;h3 id="vzorove-zadani"&gt;Vzorové zadání&lt;a class="headerlink" href="#vzorove-zadani" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.odt"&gt;&lt;span class="caps"&gt;ODT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:13:19 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
-&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
-dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
-(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
-které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
-na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
-kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 24 Jan 2024 20:31:40 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-01-24:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>
+kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 23 Oct 2024 19:32:20 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-23:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 23 Oct 2024 18:17:06 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-23:/generovani-zvuku-zaklady.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>zvuk</category></item><item><title>Sítě</title><link>https://chytrosti.marrek.cz/site.html</link><description>
 &lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;dl&gt;
 &lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
@@ -75,10 +57,36 @@ kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xm
 &lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Sun, 03 Dec 2023 15:41:03 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2023-12-03:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>Dělení v pevné řadové čárce</title><link>https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html</link><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 23 Oct 2024 15:42:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-23:/site.html</guid><category>SÍTě</category><category>SIT</category></item><item><title>Git</title><link>https://chytrosti.marrek.cz/git.html</link><description>
+&lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
+toužíte po nějakém grafickém ovládání stačí si vybrat 
+z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
+co se vám bude zdát nejhezčí. GitHub má svou vlastní grafickou
+&lt;a href="https://desktop.github.com"&gt;aplikaci&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vynikajícím začátkem s Gitem je volně šiřitelná kniha &lt;a href="https://knihy.nic.cz/#ProGit"&gt;Pro Git&lt;/a&gt;,
+ve které najdete vše …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 23 Oct 2024 15:39:35 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-23:/git.html</guid><category>Programování</category><category>programování</category><category>Git</category></item><item><title>Projektové úlohy MIT</title><link>https://chytrosti.marrek.cz/projektove-ulohy-mit.html</link><description>
+&lt;p&gt;&lt;img alt=" |=| 60%% " src="https://chytrosti.marrek.cz/mit/img/jezevec.webp"/&gt;&lt;/p&gt;
+&lt;h2 id="co-se-od-vas-ocekava"&gt;Co se od vás očekává?&lt;a class="headerlink" href="#co-se-od-vas-ocekava" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Každý žák vypracuje dvě projektové úlohy dle vlastní volby. Zadání bude nejprve
+&lt;strong&gt;schváleno vyučujícím&lt;/strong&gt;, potom se můžete dát do práce. 
+Níže (
+ &lt;a href="#nekolik-napadu-pro-mensi-projekt"&gt;tady&lt;/a&gt; a
+ &lt;a href="#nekolik-napadu-pro-vetsi-projekt"&gt;tam&lt;/a&gt;
+) uvádím několik nápadů
+na zadání, kterými se můžete nechat inspirovat pokud žádný nápad nemáte.&lt;/p&gt;
+&lt;h3 id="vzorove-zadani"&gt;Vzorové zadání&lt;a class="headerlink" href="#vzorove-zadani" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/mit/media/zadani_projektu-3R-vzor.odt"&gt;&lt;span class="caps"&gt;ODT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="povinne-komponenty-projektu"&gt;Povinné komponenty projektu …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Tue, 22 Oct 2024 20:13:19 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</guid><category>MITka</category><category>Céčko</category><category>programování</category><category>projekt</category><category>bastl</category></item><item><title>Vývoj STM8 s OpenSource nástroji</title><link>https://chytrosti.marrek.cz/stm8oss.html</link><description>
+&lt;p&gt;Vývojové nástroje jsou asi největší slabinou celého ekosystému &lt;span class="caps"&gt;STM8&lt;/span&gt;. Výrobce
+dodává vývojové prostředí &lt;span class="caps"&gt;STVD&lt;/span&gt; 
+(&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;návod zde&lt;/a&gt;),
+které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
+na nějakém &lt;span class="caps"&gt;PC&lt;/span&gt; je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
+kontrola licence, je fakt opruz; … a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 24 Jan 2024 20:31:40 +0100</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-01-24:/stm8oss.html</guid><category>MITka</category><category>STM8</category><category>programování</category><category>Céčko</category></item><item><title>Dělení v pevné řadové čárce</title><link>https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html</link><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
 způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo
 (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná&amp;nbsp;čárka.&lt;/p&gt;
 &lt;div class="admonition hint"&gt;
@@ -157,15 +165,7 @@ neexistuje …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/e
 &lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/blob/RGB_LED/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:30:25 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/pouziti-casovace-jako-generatoru-pwm.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>pwm</category></item><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>
-&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
-Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
-frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
-&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
-budík je 100 Hz …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 11:37:15 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/generovani-zvuku-zaklady.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>zvuk</category></item><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Fri, 07 May 2021 12:30:25 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2021-05-07:/pouziti-casovace-jako-generatoru-pwm.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>timer</category><category>pwm</category></item><item><title>Základní použití časovače</title><link>https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html</link><description>
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet

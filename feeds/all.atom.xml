@@ -1,5 +1,517 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-10-22T21:08:44+02:00</updated><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-10-22T21:08:44+02:00</published><updated>2024-10-22T21:08:44+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-22:/git.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-10-23T19:32:20+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2024-10-23T19:32:20+02:00</published><updated>2024-10-23T19:32:20+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-23:/mit.html</id><summary type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="dlazdice flex-center"&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
+Projektové úlohy
+&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="dlazdice flex-center"&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
+Projektové úlohy
+&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
+v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
+&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
+kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg"/&gt;&lt;/p&gt;
+&lt;p&gt;Přehled jednotlivých čipů jednotlivých řad
+&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;rodiny &lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;
+pak najdete zde:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-application-specific-line.html"&gt; Application Specific Line&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-value-line.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Value line&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s103-105.html"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;/105&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"&gt;&lt;span class="caps"&gt;STM8S207&lt;/span&gt;/208&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hardware"&gt;Hardware&lt;a class="headerlink" href="#hardware" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;viz sekce &lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;Projektové úlohy&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Zde je malý rozcestník návodů: některé jsem vytvořil já, některé 
+&lt;a href="http://elektromys.eu/stm8.php"&gt;Michal Dudka&lt;/a&gt;, některé 
+&lt;a href="https://gitlab.com/wykys/"&gt;Honza Vykydal&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/cecko2.png"/&gt;
+ Céčko –  pác věcí, kterých byste si fakt měli všimnout
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/clib.png"/&gt;
+ Oddělená kompilace a vlastní knihovny
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html"&gt; &lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/deleni.png"/&gt;
+   Dělení v pevné řadové čárce
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/zvuk.png"/&gt;
+Generování zvuku – základy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/casovac.png"/&gt;
+Základní použití časovače&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/pwm.png"/&gt;
+Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/ultrasonic.png"/&gt;
+Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/progdebug.png"/&gt;
+&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/install.png"/&gt;
+Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/nucleo.png"/&gt;
+&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/i-o.png"/&gt;
+Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/button.png"/&gt;
+Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/urovne.png"/&gt;
+Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/pullup.png"/&gt;
+Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/opendrain.png"/&gt;
+Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/max7219.png"/&gt;
+Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/clock-signal.png"/&gt; Clock&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/lcd-2x16.png"/&gt;
+Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/multitasking.png"/&gt;
+Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/stavovy_automat.png"/&gt;
+Stavový automat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/nabojova_pumpa.png"/&gt;
+Nábojová pumpa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_14_7seg/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/7segment.png"/&gt;
+Buzení 7segmentového displeje&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/adc.png"/&gt;
+&lt;span class="caps"&gt;AD&lt;/span&gt; převodník&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/ext-irq.png"/&gt;
+Externí přerušení - &lt;span class="caps"&gt;EXTI&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/counter.png"/&gt;
+Čítače / Časovače&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/ir-sensor.png"/&gt;
+&lt;span class="caps"&gt;IR&lt;/span&gt; senzor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/ele_i2c/clanek.html"&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/mit/dlazdice/i2c.png"/&gt;
+&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="dalsi-velice-cenne-informace"&gt;Další velice cenné informace&lt;a class="headerlink" href="#dalsi-velice-cenne-informace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;… najdete u Michala v sekcích:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vyvojove-nastroje"&gt;Vývojové nástroje&lt;a class="headerlink" href="#vyvojove-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
+ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
+&lt;a href="https://www.st.com/en/development-tools/stm8cubemx.html"&gt;STM8CubeMX&lt;/a&gt;.
+Doporučuji si ho nainstalovat. Není nijak klíčový, ale hodí se.&lt;/p&gt;
+&lt;h3 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Celou problematiku jsem zpracoval v samostatném návodu: 
+&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/stm8oss.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
+Ve zkratce to vypadá takto: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Toolchain pro kompilátor &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make: &lt;a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain"&gt;https://gitlab.com/spseol/mit-no/&lt;span class="caps"&gt;STM8S&lt;/span&gt;-toolchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="cosmic-stm8eclipse-balicek-pro-linux"&gt;Cosmic &lt;span class="caps"&gt;STM8&lt;/span&gt;+Eclipse balíček pro Linux&lt;a class="headerlink" href="#cosmic-stm8eclipse-balicek-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Zatím je vše ve fázi testování. Zveřejněno v lednu 2022:
+&lt;a href="https://www.cosmicsoftware.com/download_stm8_eclipse.php"&gt;https://www.cosmicsoftware.com/download_stm8_eclipse.php&lt;/a&gt;
+Projekt vypadá velmi slibně.&lt;/p&gt;
+&lt;h3 id="nastroje-pro-m-windows"&gt;Nástroje pro M$ Windows&lt;a class="headerlink" href="#nastroje-pro-m-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vše velmi hezky zpracoval 
+  &lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.
+  Součástí je i vzorový projekt s knihovnami pro &lt;span class="caps"&gt;STM8S103&lt;/span&gt;, &lt;span class="caps"&gt;STM8S105&lt;/span&gt; a &lt;span class="caps"&gt;STM8S208&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Jako vývojové prostředí leze použít
+  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
+  s komipilátorem
+  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
+  nejsou ani jeden 
+  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="dalsi-uzitecne-nastroje"&gt;Další užitečné nástroje&lt;a class="headerlink" href="#dalsi-uzitecne-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;The Dot Factory&lt;/dt&gt;
+&lt;dd&gt;Generátor obrázků a fontů pro maticové displaye&lt;/dd&gt;
+&lt;dd&gt;&lt;a href="http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/"&gt;http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2024-10-23T18:17:06+02:00</published><updated>2024-10-23T18:17:06+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-23:/generovani-zvuku-zaklady.html</id><summary type="html">
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
+Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
+frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
+&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
+budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
+bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
+pískají a pípají a my vstáváme potom naštvaní.)&lt;/p&gt;
+&lt;p&gt;Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
+tranzistorem. Zapojení tedy může vypadat například takto: &lt;/p&gt;
+&lt;p&gt;&lt;img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/img/stm8-zvuk-1.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
+Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
+Do výchylky odpovídající zápornému proudu se membrána nedostane, protože proud
+protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru, při sestupné hraně.&lt;/p&gt;
+&lt;p&gt;Program, který nám vyloudí frekvenci &lt;span class="math"&gt;\(500\,\mathrm{Hz}\)&lt;/span&gt; může vypadat například takto. 
+Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl periody tedy &lt;span class="math"&gt;\(1\,\mathrm{ms}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
+membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 \cdot 2\,\mathrm{ms}\)&lt;/span&gt;) a pak nechám chvilku ticho.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
+vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
+&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;multitasking&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; a &lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;stavový automat&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;enum&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;state_of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_DOWN&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="c1"&gt;// v pauze dám repráček do klodového stavu&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4321&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_DOWN&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
+&lt;a href="https://github.com/spseol/STM8-zvuk-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-zvuk-zaklad&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="beeper"&gt;Beeper&lt;a class="headerlink" href="#beeper" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Také je dobré poznamenat, že dnešní mikroprocesory mají pro generování zvuků nízkých
+kmitočtů vlastní periferii nazvanou Beeper. Její použití bude pro váš program jistě 
+jednodušší než si zvuk generovat samy. Ne nedá se nastavit libovolný kmitočet a krok je 
+poměrně hrubý; ale často to potřebám jednoduché zvukové signalizace plně postačí.&lt;/p&gt;
+&lt;p&gt;Více o této periferii nejdete 
+v &lt;a href="http://elektromys.eu/clanky/stm8_17_beeper/clanek.html"&gt;Michalově článku&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="dlazdice"&gt;
+&lt;p&gt;&lt;a href="http://elektromys.eu/clanky/stm8_17_beeper/clanek.html"&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/beeper.png"/&gt;
+&lt;span class="caps"&gt;STM8&lt;/span&gt; Beeper
+&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="footnote"&gt;
+&lt;hr/&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;knihovna milis&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2024-10-23T15:42:30+02:00</published><updated>2024-10-23T15:42:30+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-23:/site.html</id><summary type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</summary><content type="html">
+&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
+&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
+&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
+&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;VirtualBox jako malá síťová laboratoř&lt;/a&gt;
+&lt;img alt="  " src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;VirtualBox a &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;Host-only, Network bridge, Internal network&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;Připojení do sítě&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/smerovani"&gt;Směrování. Jak funguje Internet&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/a&gt;
+&lt;img alt=" " data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;]&lt;/dd&gt;
+&lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;Síťová laboratoř&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
+&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;span class="caps"&gt;DHCP&lt;/span&gt; server&lt;/a&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/dd&gt;
+&lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>Git</title><link href="https://chytrosti.marrek.cz/git.html" rel="alternate"></link><published>2024-10-23T15:39:35+02:00</published><updated>2024-10-23T15:39:35+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-23:/git.html</id><summary type="html">
 &lt;p&gt;Git najdete na &lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;. Ovládá se z příkazové řádky. Pokud
 toužíte po nějakém grafickém ovládání stačí si vybrat 
 z &lt;a href="https://git-scm.com/downloads/guis/"&gt;dlouhého seznamu&lt;/a&gt; ten,
@@ -118,175 +630,9 @@ Asi se nedá říct, že jeden je lepší a druhý horší. Každý má svá pro
 &lt;h2 id="videotutorial"&gt;Videotutoriál&lt;a class="headerlink" href="#videotutorial" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Zde je můj pokus o videotutoriál….&lt;/p&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-zaklad"&gt;Základy systému Git&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/p&gt;
+&lt;img alt=" " src="https://chytrosti.marrek.cz/images/git-zaklad_preview.jpg"/&gt;&lt;/p&gt;
 &lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/git-remote"&gt;Git a GitHub&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/p&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2024-10-22T20:42:06+02:00</published><updated>2024-10-22T20:42:06+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-22:/mit.html</id><summary type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="dlazdice"&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
-Projektové úlohy
-&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="dlazdice"&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/projekty.png"/&gt;
-Projektové úlohy
-&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
-v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
-&lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze najít v datasheetu:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S103+datasheet"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s103f2.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S105+datasheet"&gt;&lt;span class="caps"&gt;STM8S105&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s105c4.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://search.brave.com/search?q=STM8S208+datasheet"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt;&lt;/a&gt;
-&lt;a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf"&gt;zde&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt="103/105 line" src="https://www.st.com/content/ccc/fragment/product_related/line_information/line_level_diagram/group0/b0/7b/7c/ec/41/2e/4a/8e/obn-stm8s103105-line-ln754/files/obn-stm8s103105-line-ln754.jpg/jcr:content/translations/en.obn-stm8s103105-line-ln754.jpg"/&gt;&lt;/p&gt;
-&lt;p&gt;Přehled jednotlivých čipů jednotlivých řad
-&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;rodiny &lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;
-pak najdete zde:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-application-specific-line.html"&gt; Application Specific Line&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-value-line.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt; Value line&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s103-105.html"&gt;&lt;span class="caps"&gt;STM8S103&lt;/span&gt;/105&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s207-208.html"&gt;&lt;span class="caps"&gt;STM8S207&lt;/span&gt;/208&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="hardware"&gt;Hardware&lt;a class="headerlink" href="#hardware" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;viz sekce &lt;a href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html"&gt;Projektové úlohy&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="navody"&gt;Návody&lt;a class="headerlink" href="#navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Zde je malý rozcestník návodů; některé jsem vytvořil já, některé &lt;a href="http://elektromys.eu"&gt;Michal
-Dudka&lt;/a&gt;, některé &lt;a href="https://gitlab.com/wykys/"&gt;Honza
-Vykydal&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="dlazdice"&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/cecko2.png"/&gt;
- Céčko –  pác věcí, kterých byste si fakt měli všimnout
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/oddelena-kompilace-a-vlastni-knihovny.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/clib.png"/&gt;
- Oddělená kompilace a vlastní knihovny
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html"&gt; &lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/deleni.png"/&gt;
-   Dělení v pevné řadové čárce
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/zvuk.png"/&gt;
-Generování zvuku – základy&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/casovac.png"/&gt;
-Základní použití časovače&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/pouziti-casovace-jako-generatoru-pwm.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/pwm.png"/&gt;
-Použití časovače jako generátoru &lt;span class="caps"&gt;PWM&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://chytrosti.marrek.cz/ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/ultrasonic.png"/&gt;
-Ultrazvukový měřič vzdálenosti pomocí timeru &lt;span class="caps"&gt;TIM2&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Michal Dudka&lt;/strong&gt; píše skvělý web o programování mikrokontrokérů:
-&lt;a href="http://elektromys.eu"&gt;http://elektromys.eu&lt;/a&gt;. V sekci &lt;a href="http://elektromys.eu/stm8.php"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt;&lt;/a&gt;
-najdete spoustu pro nás zajímavých věcí:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_0_stvp/clanek.html"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Programátory a Debuggery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Instalace a vytvoření projektu ve Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_1_nucleo/clanek.html"&gt;&lt;span class="caps"&gt;STM8S208&lt;/span&gt; Nucleo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_3_gpio1/clanek.html"&gt;Vstupy a výstupy 1 – základy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_4_gpio2/clanek.html"&gt;Vstupy a výstupy 2 – tlačítko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_5_gpio3/clanek.html"&gt;Vstupy a výstupy 3 – logické úrovně&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_6_gpio4/clanek.html"&gt;Vstupy a výstupy 4 – PullUp rezistory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_7_gpio5/clanek.html"&gt;Vstupy a výstupy 5 – Open-Drain&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_8_max7219/clanek.html"&gt;Ovládání displeje s &lt;span class="caps"&gt;MAX7219&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_9_clock/clanek.html"&gt;Clock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_10_lcd/clanek.html"&gt;Alfanumerické &lt;span class="caps"&gt;LCD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;Knihovna milis – “Multitasking”&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;Stavový automat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_13_chargepump/clanek.html"&gt;Nábojová pumpa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="Buzení 7segmentového displeje"&gt;Buzení 7segmentového displeje&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/stm8_15_adc1/clanek.html"&gt;&lt;span class="caps"&gt;AD&lt;/span&gt; převodník&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Honza Vykydal&lt;/strong&gt; pak napsal:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/exti"&gt;Externí přerušení - &lt;span class="caps"&gt;EXTI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gitlab.com/wykys/stm8-xikon/-/tree/main/tim"&gt;Čítače / Časovače&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ze dílny Michala Dudky pochází tyto pro nás zajímavé články:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/avr1_adc2/clanek.html"&gt;&lt;span class="caps"&gt;IR&lt;/span&gt; senzor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/clanky/ele_i2c/clanek.html"&gt;&lt;span class="caps"&gt;I2C&lt;/span&gt; – Relativně jednoduše&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Další velice cenné informace nejdete v sekcích:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/elektro.php"&gt;Elektro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://elektromys.eu/kratke.php"&gt;Různé krátké poznámky&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="vyvojove-nastroje"&gt;Vývojové nástroje&lt;a class="headerlink" href="#vyvojove-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Vývojové nástroje jsou &lt;span class="caps"&gt;IMHO&lt;/span&gt; největší slabina platformy &lt;span class="caps"&gt;STM8&lt;/span&gt;,
-ale při troše snahy se to dá &lt;code&gt;:)&lt;/code&gt;. Co se ale &lt;span class="caps"&gt;ST&lt;/span&gt; povedlo, to je nástrtoj
-&lt;a href="https://www.st.com/en/development-tools/stm8cubemx.html"&gt;STM8CubeMX&lt;/a&gt;.
-Doporučuji si ho nainstalovat. Není nijak klíčový, ale hodí se.&lt;/p&gt;
-&lt;h3 id="opensource-nastroje-nejen-pro-linux"&gt;OpenSource nástroje nejen pro Linux&lt;a class="headerlink" href="#opensource-nastroje-nejen-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Celou problematiku jsem zpracoval v samostatném návodu: 
-&lt;strong&gt;&lt;a href="https://chytrosti.marrek.cz/stm8oss.html"&gt;Vývoj &lt;span class="caps"&gt;STM8&lt;/span&gt; s OpenSource nástroji&lt;/a&gt;&lt;/strong&gt;. 
-Ve zkratce to vypadá takto: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kompilátor &lt;a href="http://sdcc.sourceforge.net/"&gt;&lt;span class="caps"&gt;SDCC&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí doporučuji &lt;a href="https://vscodium.com/"&gt;VSCodium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Toolchain pro kompilátor &lt;span class="caps"&gt;SDCC&lt;/span&gt; a &lt;span class="caps"&gt;GNU&lt;/span&gt; Make: &lt;a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain"&gt;https://gitlab.com/spseol/mit-no/&lt;span class="caps"&gt;STM8S&lt;/span&gt;-toolchain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starší anglický návod s několika mouchama: &lt;a href="https://github.com/hbendalibraham/stm8_started"&gt;https://github.com/hbendalibraham/stm8_started&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="cosmic-stm8eclipse-balicek-pro-linux"&gt;Cosmic &lt;span class="caps"&gt;STM8&lt;/span&gt;+Eclipse balíček pro Linux&lt;a class="headerlink" href="#cosmic-stm8eclipse-balicek-pro-linux" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Zatím je vše ve fázi testování. Zveřejněno v lednu 2022:
-&lt;a href="https://www.cosmicsoftware.com/download_stm8_eclipse.php"&gt;https://www.cosmicsoftware.com/download_stm8_eclipse.php&lt;/a&gt;
-Projekt vypadá velmi slibně.&lt;/p&gt;
-&lt;h3 id="nastroje-pro-m-windows"&gt;Nástroje pro M$ Windows&lt;a class="headerlink" href="#nastroje-pro-m-windows" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Vše velmi hezky zpracoval 
-  &lt;a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html"&gt;Michal Dudka na Elektromyši&lt;/a&gt;.
-  Součástí je i vzorový projekt s knihovnami pro &lt;span class="caps"&gt;STM8S103&lt;/span&gt;, &lt;span class="caps"&gt;STM8S105&lt;/span&gt; a &lt;span class="caps"&gt;STM8S208&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Jako vývojové prostředí leze použít
-  &lt;a href="https://www.st.com/en/development-tools/stvd-stm8.html"&gt;&lt;span class="caps"&gt;STVD&lt;/span&gt;&lt;/a&gt;
-  s komipilátorem
-  &lt;a href="https://www.cosmicsoftware.com/download_stm8_free.php"&gt;Cosmic&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oba nástroje je možné bezplatně používat, když se zaregistrujete. Bohužel
-  nejsou ani jeden 
-  &lt;a href="https://cs.wikipedia.org/wiki/Otevřený_software"&gt;OpenSource&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="dalsi-uzitecne-nastroje"&gt;Další užitečné nástroje&lt;a class="headerlink" href="#dalsi-uzitecne-nastroje" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;The Dot Factory&lt;/dt&gt;
-&lt;dd&gt;Generátor obrázků a fontů pro maticové displaye&lt;/dd&gt;
-&lt;dd&gt;&lt;a href="http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/"&gt;http://www.eran.io/the-dot-factory-an-lcd-font-and-image-generator/&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="odkazy"&gt;Odkazy&lt;a class="headerlink" href="#odkazy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.fit.vutbr.cz/~martinek/clang/"&gt;http://www.fit.vutbr.cz/~martinek/clang/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jaknaprojekty.davidm.cz/"&gt;http://jaknaprojekty.davidm.cz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tutorialspoint.com/cprogramming/"&gt;https://www.tutorialspoint.com/cprogramming/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikibook &lt;a href="https://cs.wikipedia.org/wiki/C_(programovací_jazyk)"&gt;Programuje v jazyce C&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="programování"></category></entry><entry><title>Projektové úlohy MIT</title><link href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html" rel="alternate"></link><published>2024-10-22T20:13:19+02:00</published><updated>2024-10-22T20:13:19+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</id><summary type="html">
+&lt;img alt=" " src="https://chytrosti.marrek.cz/images/git-github-2_preview.jpg"/&gt;&lt;/p&gt;</content><category term="Programování"></category><category term="programování"></category><category term="Git"></category></entry><entry><title>Projektové úlohy MIT</title><link href="https://chytrosti.marrek.cz/projektove-ulohy-mit.html" rel="alternate"></link><published>2024-10-22T20:13:19+02:00</published><updated>2024-10-22T20:13:19+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-22:/projektove-ulohy-mit.html</id><summary type="html">
 &lt;p&gt;&lt;img alt=" |=| 60%% " src="https://chytrosti.marrek.cz/mit/img/jezevec.webp"/&gt;&lt;/p&gt;
 &lt;h2 id="co-se-od-vas-ocekava"&gt;Co se od vás očekává?&lt;a class="headerlink" href="#co-se-od-vas-ocekava" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Každý žák vypracuje dvě projektové úlohy dle vlastní volby. Zadání bude nejprve
@@ -1343,111 +1689,7 @@ vstupovat do funkce&lt;/dd&gt;
 a &lt;a href="https://visualgdb.com/gdbreference/commands/display"&gt;display&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="GDB %%" src="https://chytrosti.marrek.cz/mit/img/gdb.png"/&gt;&lt;/p&gt;
 &lt;h3 id="stm8-debugger-for-vscodecodium"&gt;&lt;span class="caps"&gt;STM8&lt;/span&gt; Debugger for vsCode/Codium&lt;a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p class="center"&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug"&gt;https://marketplace.visualstudio.com/items?itemName=&lt;span class="caps"&gt;CL&lt;/span&gt;.stm8-debug&lt;/a&gt;&lt;/p&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>Sítě</title><link href="https://chytrosti.marrek.cz/site.html" rel="alternate"></link><published>2023-12-03T15:41:03+01:00</published><updated>2023-12-03T15:41:03+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-12-03:/site.html</id><summary type="html">
-&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
-&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve …&lt;/h3&gt;</summary><content type="html">
-&lt;h2 id="tahaky"&gt;Taháky&lt;a class="headerlink" href="#tahaky" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Příkazy pro Linux a Router &lt;span class="caps"&gt;OS&lt;/span&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/010-prikazy.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/010-prikazy.odt"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Malá pomůcka pro dělení na podsítě&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/subnet_cheat.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/subnet_cheat.ods"&gt;&lt;img alt="oo" src="https://chytrosti.marrek.cz/images/ico/OO.png" title="LibreOffice"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="pracovni-listy"&gt;Pracovní listy&lt;a class="headerlink" href="#pracovni-listy" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;dl&gt;
-&lt;dt&gt;Všechny pracovní listy v jediném souboru:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/vse.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt; vse.pdf&lt;/a&gt;.&lt;/dd&gt;
-&lt;dt&gt;Připojení do sítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/020-pripojeni.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/020-pripojeni.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – Linux router:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/030-smerovani-linux.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/030-smerovani-linux.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování – spousta místa pro vaše poznámky:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/032-smerovani_.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/032-smerovani_.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování s dělením na podsítě:&lt;/dt&gt;
-&lt;dd&gt;&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="PDF" src="https://chytrosti.marrek.cz/sit/035-smerovani2.png"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.pdf"&gt;&lt;img alt="pdf" src="https://chytrosti.marrek.cz/images/ico/pdf.png" title="PDF"/&gt;&lt;/a&gt;
-&lt;a href="https://chytrosti.marrek.cz/sit/035-smerovani2.svg"&gt;&lt;img alt="svg" src="https://chytrosti.marrek.cz/images/ico/svg.png" title="SVG"/&gt;&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h2 id="video-navody"&gt;Video-návody&lt;a class="headerlink" href="#video-navody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="maska-site"&gt;Maska sítě&lt;a class="headerlink" href="#maska-site" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/01-maska_site"&gt;Maska sítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/01-maska_site_preview.jpg"/&gt;&lt;/p&gt;
-&lt;p class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/02-maska-rozdeleni_na_podsite"&gt;Rozdělení na podsítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/02-maska-rozdeleni_na_podsite_preview.jpg"/&gt;&lt;/p&gt;
-&lt;h3 id="sitovani-ve-virtualboxu"&gt;Síťování ve Virtualboxu&lt;a class="headerlink" href="#sitovani-ve-virtualboxu" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-&lt;dl&gt;
-&lt;dt&gt;Toto je více méně poslední video, ale možná jím budete chtít začít&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;VirtualBox jako malá síťová laboratoř&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Z uživatelského hlediska nejjednodušší nastavení sítě je &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virtualbox-nat"&gt;VirtualBox a &lt;span class="caps"&gt;NAT&lt;/span&gt;&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/03-virtualbox-nat_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Více možností pro síťování dává nastavení Host-only, Network bridge a Internal network&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/virutalbox2"&gt;Host-only, Network bridge, Internal network&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/04-virutalbox-only_bridge_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Jak připojit &lt;span class="caps"&gt;PC&lt;/span&gt; do sítě?&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/pripojeni-do-site"&gt;Připojení do sítě&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/05-pripojeni_do_site_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Směrování… a jak funguje Internet&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/smerovani"&gt;Směrování. Jak funguje Internet&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/06-smerovani_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Něco málo o protokolu &lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/ARP"&gt;&lt;span class="caps"&gt;ARP&lt;/span&gt;&lt;/a&gt;
-&lt;img alt="" data-frames="16" src="https://chytrosti.marrek.cz/sit/07-ARP_preview.jpg"/&gt;]&lt;/dd&gt;
-&lt;dt&gt;VirtualBox jako malá síťová laboratoř&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/VirtualBox-sitova_laborator"&gt;Síťová laboratoř&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/08-sitova_laborator_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;dt&gt;Nastavení &lt;span class="caps"&gt;DHCP&lt;/span&gt; serveru na Mikrotik RoterBoardOS.&lt;/dt&gt;
-&lt;dd class="video-preview" data-frames="16"&gt;&lt;a href="https://odysee.com/@MarrekNozka/DHCP"&gt;&lt;span class="caps"&gt;DHCP&lt;/span&gt; server&lt;/a&gt;
-&lt;img alt="" src="https://chytrosti.marrek.cz/sit/09-DHCP_preview.jpg"/&gt;&lt;/dd&gt;
-&lt;/dl&gt;</content><category term="SÍTě"></category><category term="SIT"></category></entry><entry><title>Dělení v pevné řadové čárce</title><link href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html" rel="alternate"></link><published>2023-10-24T19:00:00+02:00</published><updated>2023-11-01T19:33:59+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/deleni-v-pevne-radove-carce.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
+&lt;p class="center"&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug"&gt;https://marketplace.visualstudio.com/items?itemName=&lt;span class="caps"&gt;CL&lt;/span&gt;.stm8-debug&lt;/a&gt;&lt;/p&gt;</content><category term="MITka"></category><category term="STM8"></category><category term="programování"></category><category term="Céčko"></category></entry><entry><title>Dělení v pevné řadové čárce</title><link href="https://chytrosti.marrek.cz/deleni-v-pevne-radove-carce.html" rel="alternate"></link><published>2023-10-24T19:00:00+02:00</published><updated>2023-11-01T19:33:59+01:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2023-10-24:/deleni-v-pevne-radove-carce.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic"&gt;Pevná řádová čárka&lt;/a&gt; je 
 způsob jak v paměti reprezentovat reálné číslo. To je v paměti uloženo jako celé číslo
 (int) ale při jeho reprezentaci se uvažuje, že je někde pomyslná desetinná&amp;nbsp;čárka.&lt;/p&gt;
 &lt;div class="admonition hint"&gt;
@@ -2000,198 +2242,7 @@ pip install --user -U pyglet
 &lt;li&gt;&lt;a href="https://github.com/spseol/STM8-TIM2-PWM/blob/RGB_LED/src/main.c"&gt;main.c&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="pwm"></category></entry><entry><title>Generování zvuku — základy</title><link href="https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html" rel="alternate"></link><published>2021-05-07T11:37:15+02:00</published><updated>2021-05-07T11:37:15+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/generovani-zvuku-zaklady.html</id><summary type="html">
-&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
-Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
-frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
-&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
-budík je 100 Hz …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
-Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Nejjednodušší je asi použít piezo měnič. Ten má ovšem poněkud omezený
-frekvenční rozsah. Jeho frekvenční charakteristika může vypadat například takto:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="|=|" src="https://chytrosti.marrek.cz/mit/img/piezo_f_ch.png"/&gt;&lt;/p&gt;
-&lt;p&gt;(Mimochodem prý existuje nějaký výzkum, podle kterého optimální frekvence pro
-budík je 100 Hz; nebo to bylo 300 Hz? Prostě poměrně nízký kmitočet. Ale levné
-bezporuchové piezo-měniče takto nízko prostě nejdou. Tak na nás ty budíky
-pískají a pípají a my vstáváme potom naštvaní.)&lt;/p&gt;
-&lt;p&gt;Další možností je použít reproduktorek. V tomto případě je třeba posílit výstup
-tranzistorem. Zapojení tedy může vypadat například takto: &lt;/p&gt;
-&lt;p&gt;&lt;img alt="micro-controller, piezo, repro" src="https://chytrosti.marrek.cz/mit/img/stm8-zvuk-1.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Tranzistor je ve spínacím režimu a membrána reproduktoru má pouze dvě polohy.
-Tedy klidovou polohu (bez proudu) nebo výchylku odpovídající kladnému proudu.
-Do výchylky odpovídající zápornému proudu se membrána nedostane, protože proud
-protéká vždy jedním směrem. Dioda D1 vybíjí cívku reproduktoru, při sestupné hraně.&lt;/p&gt;
-&lt;p&gt;Program, který nám vyloudí frekvenci &lt;span class="math"&gt;\(500\,\mathrm{Hz}\)&lt;/span&gt; může vypadat například takto. 
-Perioda je &lt;span class="math"&gt;\(2\,\mathrm{ms}\)&lt;/span&gt;. Půl periody tedy &lt;span class="math"&gt;\(1\,\mathrm{ms}\)&lt;/span&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img alt="obdélníkový časový průběh %%" src="https://chytrosti.marrek.cz/mit/img/obdelnik.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Pokud chci jen pípnout a poté nechat chvilku ticho jednoduše nebudu cvičit s
-membránou do nekonečna, ale pouze několikrát (&lt;span class="math"&gt;\(20 \cdot 2\,\mathrm{ms}\)&lt;/span&gt;) a pak nechám chvilku ticho.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img alt="Pípání %%" src="https://chytrosti.marrek.cz/mit/img/pipani.png"/&gt;&lt;/p&gt;
-&lt;p&gt;Tento způsob práce je ale blokující, protože se pořád jen čeká. Mikroprocesor
-vlastně pořádně nemůže dělat nic jiného. Proto použijeme 
-&lt;a href="http://elektromys.eu/clanky/stm8_11_milis/clanek.html"&gt;multitasking&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt; a &lt;a href="http://elektromys.eu/clanky/stm8_12_automat/clanek.html"&gt;stavový automat&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;enum&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;state_of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;STATE_DOWN&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;uint32_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="c1"&gt;// v pauze dám repráček do klodového stavu&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4321&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;case&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;STATE_DOWN&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;PZ_DOWN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;lastTime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_UP&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STATE_PAUSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;timeL&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;milis&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="n"&gt;LED_REVERSE&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="zdrojove-kody"&gt;Zdrojové kódy&lt;a class="headerlink" href="#zdrojove-kody" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Kompletní zdrojové kódy naleznete v repositáři na GitHubu: &lt;br/&gt;
-&lt;a href="https://github.com/spseol/STM8-zvuk-zaklad"&gt;https://github.com/spseol/&lt;span class="caps"&gt;STM8&lt;/span&gt;-zvuk-zaklad&lt;/a&gt;&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr/&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spseol/start-stm8/blob/main/src/milis.c"&gt;knihovna milis&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="zvuk"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-05-07T11:36:34+02:00</published><updated>2021-05-07T11:36:34+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/zakladni-pouziti-casovace.html</id><summary type="html">
+&lt;/ul&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category><category term="pwm"></category></entry><entry><title>Základní použití časovače</title><link href="https://chytrosti.marrek.cz/zakladni-pouziti-casovace.html" rel="alternate"></link><published>2021-05-07T11:36:34+02:00</published><updated>2021-05-07T11:36:34+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-05-07:/zakladni-pouziti-casovace.html</id><summary type="html">
 &lt;p&gt;Náš &lt;span class="caps"&gt;STM8S208RB&lt;/span&gt; má na těle celkem čtyři časovače: &lt;span class="caps"&gt;TIM1&lt;/span&gt;, &lt;span class="caps"&gt;TIM2&lt;/span&gt;, &lt;span class="caps"&gt;TIM3&lt;/span&gt; a &lt;span class="caps"&gt;TIM4&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="tim4"&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt;&lt;a class="headerlink" href="#tim4" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TIM4&lt;/span&gt; je nejjednodušší. Čítač je 8-bitový a předdělička umožňuje dělit kmitočet

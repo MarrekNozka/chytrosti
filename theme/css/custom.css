@@ -319,10 +319,13 @@ img[alt*="90%%"] {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
-    justify-content: center; /* Horizontální zarovnání na střed */
     align-items: center; /* Vertikální zarovnání na střed */
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center; /* Horizontální zarovnání na střed */
+}
 
 .dlazdice p {
     background-image: url("../images/tile.jpeg");
@@ -333,7 +336,7 @@ img[alt*="90%%"] {
     display: inline-block;
     width: 30%;
     min-width: 12em;
-    border: darkred 3px solid;
+    border: white 2px solid;
     text-align: center;
     color: black;
 }
@@ -341,6 +344,7 @@ img[alt*="90%%"] {
 .dlazdice p:hover {
     background-image: none;
     background-color: inherit;
+    border: darkred 2px solid;
 }
 
 .dlazdice p a, .dlazdice p a:visited {
