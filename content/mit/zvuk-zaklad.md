@@ -150,3 +150,25 @@ Zdrojové kódy
 
 Kompletní zdrojové kódy naleznete v repositáři na GitHubu:   
 <https://github.com/spseol/STM8-zvuk-zaklad>
+
+
+Beeper
+=======================
+
+Také je dobré poznamenat, že dnešní mikroprocesory mají pro generování zvuků nízkých
+kmitočtů vlastní periferii nazvanou Beeper. Její použití bude pro váš program jistě 
+jednodušší než si zvuk generovat samy. Ne nedá se nastavit libovolný kmitočet a krok je 
+poměrně hrubý; ale často to potřebám jednoduché zvukové signalizace plně postačí.
+
+Více o této periferii nejdete 
+v [Michalově článku](http://elektromys.eu/clanky/stm8_17_beeper/clanek.html).
+
+
+<div markdown="1" class="dlazdice">
+
+[
+![alt]({static} ./dlazdice/beeper.png)
+STM8 Beeper
+](http://elektromys.eu/clanky/stm8_17_beeper/clanek.html)
+
+</div>

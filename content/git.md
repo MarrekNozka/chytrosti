@@ -44,7 +44,7 @@ Zde je ještě malý rychlokurs (pokud někdo není spokojen s knihou):
 
 Tahák
 : [SVG]({static}./media/git_tahak.svg) [PDF]({static}./media/git_tahak.pdf)
-: ![]({static}./images/git_tahak.png)
+: ![  ]({static}./images/git_tahak.png)
 
 Referenční příručka
 : <https://git-scm.com/docs>      
@@ -170,10 +170,10 @@ Videotutoriál
 Zde je můj pokus o videotutoriál....
 
 [Základy systému Git](https://odysee.com/@MarrekNozka/git-zaklad)
-![]({static}images/git-zaklad_preview.jpg)
+![ ]({static}images/git-zaklad_preview.jpg)
 {.video-preview data-frames="16"}
 
 [Git a GitHub](https://odysee.com/@MarrekNozka/git-remote)
-![]({static}images/git-github-2_preview.jpg)
+![ ]({static}images/git-github-2_preview.jpg)
 {.video-preview data-frames="16"}
 

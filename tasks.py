@@ -5,6 +5,8 @@ import shlex
 import shutil
 import sys
 import datetime
+from subprocess import run
+from pathlib import Path
 
 from invoke import task
 from invoke.main import program
@@ -26,9 +28,7 @@ CONFIG = {
     "deploy_path": SETTINGS["OUTPUT_PATH"],
     # Github Pages configuration
     "github_pages_branch": "gh-pages",
-    "commit_message": "'Publish site on {}'".format(
-        datetime.date.today().isoformat()
-    ),
+    "commit_message": "'Publish site on {}'".format(datetime.date.today().isoformat()),
     # Host and port for `serve`
     "host": "localhost",
     "port": 8002,
@@ -47,6 +47,17 @@ def clean(c):
 def build(c):
     """Build local version of site"""
     pelican_run("-s {settings_base}".format(**CONFIG))
+    run(
+        [
+            "notify-send",
+            "-i",
+            Path("~/Obrázky/ikony.loga/pelican.png").expanduser(),
+            "-t",
+            "1",
+            "Hotovo",
+            "🎯",
+        ]
+    )
 
 
 @task
@@ -108,14 +119,13 @@ def livereload(c):
     # Watch the theme's templates and static assets
     theme_path = SETTINGS["THEME"]
     server.watch("{}/templates/*.html".format(theme_path), lambda: build(c))
+    server.watch("content/theme/css/*.css", lambda: build(c))
     static_file_extensions = [".css", ".js"]
     for extension in static_file_extensions:
         static_file = "{0}/static/**/*{1}".format(theme_path, extension)
         server.watch(static_file, lambda: build(c))
     # Serve output path on configured host and port
-    server.serve(
-        host=CONFIG["host"], port=CONFIG["port"], root=CONFIG["deploy_path"]
-    )
+    server.serve(host=CONFIG["host"], port=CONFIG["port"], root=CONFIG["deploy_path"])
 
 
 @task
@@ -168,13 +178,9 @@ def devserver(c):
     for glob in watched_globs:
         server.watch(glob, cached_html)
     cached_html()
-    server.serve(
-        host=CONFIG["host"], port=CONFIG["port"], root=CONFIG["deploy_path"]
-    )
+    server.serve(host=CONFIG["host"], port=CONFIG["port"], root=CONFIG["deploy_path"])
 
 
 def pelican_run(cmd):
-    cmd += (
-        " " + program.core.remainder
-    )  # allows to pass-through args to pelican
+    cmd += " " + program.core.remainder  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))
