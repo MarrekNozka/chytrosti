@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Wed, 23 Oct 2024 19:53:30 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
+<rss version="2.0"><channel><title>Chytrosti - Marrek Nožka</title><link>https://chytrosti.marrek.cz/</link><description></description><lastBuildDate>Thu, 24 Oct 2024 12:04:52 +0200</lastBuildDate><item><title>MIT</title><link>https://chytrosti.marrek.cz/mit.html</link><description>
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="dlazdice flex-center"&gt;
@@ -11,13 +11,17 @@ Projektové úlohy
 &lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/toolchain.png"/&gt;
 OpenSource toolchain
 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gitlab.com/spseol/mit-no/"&gt;
+&lt;img alt="" src="https://chytrosti.marrek.cz/mit/dlazdice/gitlab.png"/&gt;
+Gitlab: Zdrojáky
+&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id="dokumentace"&gt;Dokumentace&lt;a class="headerlink" href="#dokumentace" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Celá řada &lt;span class="caps"&gt;STM8S&lt;/span&gt; používá stejnou sadu periferií. Jejich popis najdete
 v &lt;a href="https://duckduckgo.com/?q=STM8S+reference+manual"&gt;reference manuálu&lt;/a&gt;
 &lt;a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/9a/1b/85/07/ca/eb/4f/dd/CD00190271.pdf/files/CD00190271.pdf/jcr:content/translations/en.CD00190271.pdf"&gt;zde&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Různé čipy pak obsahují různou sadu těchto periferií. Co přesně se nachází na
-kterém čipu (plus další specifické věci) lze …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Wed, 23 Oct 2024 19:53:30 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-23:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>
+kterém čipu (plus další specifické …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marrek Nožka</dc:creator><pubDate>Thu, 24 Oct 2024 12:04:52 +0200</pubDate><guid isPermaLink="false">tag:chytrosti.marrek.cz,2024-10-24:/mit.html</guid><category>MITka</category><category>Céčko</category><category>STM8</category><category>programování</category></item><item><title>Generování zvuku — základy</title><link>https://chytrosti.marrek.cz/generovani-zvuku-zaklady.html</link><description>
 &lt;p&gt;&lt;a href="https://cs.wikipedia.org/wiki/Zvuk"&gt;Zvuk&lt;/a&gt; je jak známo mechanické vlnění.
 Pro jeho vyloudění tedy potřebujeme nějaký “vlnič” – tedy elektro-akustický měnič. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="&amp;gt;&amp;gt;" src="https://chytrosti.marrek.cz/mit/img/piezo_obr.png"/&gt;&lt;/p&gt;
