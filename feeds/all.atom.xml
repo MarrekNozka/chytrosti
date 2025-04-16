@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2024-10-24T12:04:52+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2024-10-24T12:04:52+02:00</published><updated>2024-10-24T12:04:52+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-24:/mit.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chytrosti</title><link href="https://chytrosti.marrek.cz/" rel="alternate"></link><link href="https://chytrosti.marrek.cz/feeds/all.atom.xml" rel="self"></link><id>https://chytrosti.marrek.cz/</id><updated>2025-04-16T09:29:43+02:00</updated><entry><title>MIT</title><link href="https://chytrosti.marrek.cz/mit.html" rel="alternate"></link><published>2024-10-24T12:04:52+02:00</published><updated>2024-10-24T12:04:52+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2024-10-24:/mit.html</id><summary type="html">
 &lt;p&gt;Pro výuku mikroprocesorové techniky používáme v současné době mikroprocesory řady 
 &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm8s-series.html"&gt;&lt;span class="caps"&gt;STM8S&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="dlazdice flex-center"&gt;
@@ -2416,7 +2416,7 @@ přesuneme do modulu/souboru ve kterém je proměnná definována&lt;/strong&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2023-03-29T14:05:10+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
+&lt;/script&gt;</content><category term="MITka"></category><category term="Céčko"></category><category term="STM8"></category><category term="timer"></category></entry><entry><title>Céčko — pác věcí, kterých byste si fakt měli všimnout</title><link href="https://chytrosti.marrek.cz/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" rel="alternate"></link><published>2021-04-23T07:44:00+02:00</published><updated>2025-04-16T09:29:43+02:00</updated><author><name>Marrek Nožka</name></author><id>tag:chytrosti.marrek.cz,2021-04-23:/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html</id><summary type="html">
 &lt;p&gt;Je hodně věcí, o kterých se dá mluvit v souvislosti s jazykem C. Nechci sem
 psát učebnici, protože je jich napsaných spousta. Mám ale dojem, že je potřeba
 napsat malý přehled toho, co byste měli v souvislosti s programováním
@@ -2476,7 +2476,7 @@ nekonečné smyčce. Nekonečnou smyčku vytvoříme pomocí cyklu &lt;code&gt;w
 &lt;p&gt;konkrétně pak takto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;int16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;prevod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int8_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="kt"&gt;int16_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;
@@ -2919,7 +2919,7 @@ jednotlivé periferie nebo portovat projekt na jiný mikrokontroler.&lt;/p&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Já osobně si ještě dělám vždy sadu maker s parametrem, která mi umožňuje
-efektivně číst a zapisovat stav jednotlivých pinů (operátor &lt;code&gt;##&lt;/code&gt; provádí sřetězení):&lt;/p&gt;
+efektivně číst a zapisovat stav jednotlivých pinů (operátor &lt;code&gt;##&lt;/code&gt; provádí zřetězení):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#define LOW(BAGR) GPIO_WriteLow(BAGR##_PORT, BAGR##_PIN)&lt;/span&gt;
 &lt;span class="cp"&gt;#define HIGH(BAGR) GPIO_WriteHigh(BAGR##_PORT, BAGR##_PIN)&lt;/span&gt;
 &lt;span class="cp"&gt;#define REVERSE(BAGR) GPIO_WriteReverse(BAGR##_PORT, BAGR##_PIN)&lt;/span&gt;
