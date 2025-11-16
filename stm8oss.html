@@ -17,17 +17,17 @@
 
 <meta name="keywords" content="STM8, programování, Céčko, MITka, " />
 
-<meta property="og:title" content="Vývoj STM8 s OpenSource nástroji "/>
+<meta property="og:title" content="Vývoj STM8 s OpenSource nástroji "/>
 <meta property="og:url" content="./stm8oss.html" />
 <meta property="og:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …" />
 <meta property="og:site_name" content="Chytrosti" />
 <meta property="og:article:author" content="Marrek Nožka" />
-<meta property="og:article:published_time" content="2024-01-24T20:31:40.624516+01:00" />
-<meta property="og:article:modified_time" content="2024-01-24T20:31:40.624516+01:00" />
-<meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
+<meta property="og:article:published_time" content="2024-01-24T20:31:40.624517+01:00" />
+<meta property="og:article:modified_time" content="2024-01-24T20:31:40.624517+01:00" />
+<meta name="twitter:title" content="Vývoj STM8 s OpenSource nástroji ">
 <meta name="twitter:description" content="Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce dodává vývojové prostředí STVD (návod zde), které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá kontrola licence, je fakt opruz; … a …">
 
-        <title>Vývoj STM8 s OpenSource nástroji  · Chytrosti
+        <title>Vývoj STM8 s OpenSource nástroji  · Chytrosti
 </title>
         <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
@@ -65,23 +65,23 @@
                                     >Index</a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./dbi.html" ><span class="caps">DBI</span></a>
+                                  <a href="./dbi.html" >DBI</a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./mit.html" ><span class="caps">MIT</span></a>
+                                  <a href="./mit.html" >MIT</a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./prg.html" ><span class="caps">PRG</span></a>
+                                  <a href="./prg.html" >PRG</a>
                                 </li>
                                 <li class="menupost">
-                                  <a href="./psk.html" ><span class="caps">PSK</span></a>
+                                  <a href="./psk.html" >PSK</a>
                                 </li>
                                 <li class="menupost">
                                   <a href="./site.html" >Sítě</a>
                                 </li>
 
-                                <li ><a href="./pages/chyba.html">Chyba&nbsp;&#128027;</a></li>
-                                <li ><a href="./pages/o-mne.html">O&nbsp;mně</a></li>
+                                <li ><a href="./pages/chyba.html">Chyba &#128027;</a></li>
+                                <li ><a href="./pages/o-mne.html">O mně</a></li>
                                 <li ><a href="./categories.html">Kategorie</a></li>
                                 <li ><a href="./tags.html">Tagy</a></li>
                                 <li ><a href="./archives.html">Vše</a></li>
@@ -104,7 +104,7 @@
     <header class="page-header span8 offset3">
         <h1>
             <a href="./stm8oss.html">
-                Vývoj <span class="caps">STM8</span> s OpenSource&nbsp;nástroji
+                Vývoj STM8 s OpenSource nástroji
             </a>
         </h1>
     </header>
@@ -116,7 +116,7 @@
         <section id="article-sidebar">
               <h4>Aktualizováno:</h4>
             <time itemprop="dateCreated" datetime="2024-01-24T20:31:40+01:00">
-              St 24. led 2024 20:31
+              st 24. led 2024 20:31
             </time>
 
             <h4>Kategorie:</h4>
@@ -151,29 +151,29 @@
         <h2 class="related-post-header">Obsah</h2>
         <div class="toc">
 <ul>
-<li><a href="#predpripravena-instalace">Předpřipravená instalace</a></li>
+<li><a href="#predpripravena-instalace">Předpřipravená instalace</a></li>
 <li><a href="#rychla-instalace">Rychlá instalace</a><ul>
 <li><a href="#windows">Windows</a></li>
 <li><a href="#linux">Linux</a></li>
 </ul>
 </li>
 <li><a href="#toolchain">Toolchain</a></li>
-<li><a href="#vyvojove-prostredi">Vývojové prostředí</a></li>
+<li><a href="#vyvojove-prostredi">Vývojové prostředí</a></li>
 <li><a href="#kompilace">Kompilace</a><ul>
-<li><a href="#reseni-1-sdcc">Řešení 1: <span class="caps">SDCC</span></a></li>
-<li><a href="#reseni-2-sdcc-gas">Řešení 2: <span class="caps">SDCC</span>-gas</a></li>
-<li><a href="#reseni-3-sdccrm">Řešení 3: sdccrm</a></li>
+<li><a href="#reseni-1-sdcc">Řešení 1: SDCC</a></li>
+<li><a href="#reseni-2-sdcc-gas">Řešení 2: SDCC-gas</a></li>
+<li><a href="#reseni-3-sdccrm">Řešení 3: sdccrm</a></li>
 </ul>
 </li>
 <li><a href="#flashing">Flashing</a><ul>
-<li><a href="#stvp"><span class="caps">STVP</span></a></li>
+<li><a href="#stvp">STVP</a></li>
 <li><a href="#openocd">OpenOCD</a></li>
 <li><a href="#stm8flash">stm8flash</a></li>
 </ul>
 </li>
 <li><a href="#debuging-ladeni">Debuging – Ladění</a><ul>
-<li><a href="#stm8-gdb"><span class="caps">STM8</span>-<span class="caps">GDB</span></a></li>
-<li><a href="#stm8-debugger-for-vscodecodium"><span class="caps">STM8</span> Debugger for vsCode/Codium</a></li>
+<li><a href="#stm8-gdb">STM8-GDB</a></li>
+<li><a href="#stm8-debugger-for-vscodecodium">STM8 Debugger for vsCode/Codium</a></li>
 </ul>
 </li>
 </ul>
@@ -181,17 +181,17 @@
 <section>
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
-<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko — pác věcí, kterých byste si fakt měli všimnout">Céčko — pác věcí, kterých byste si fakt měli všimnout</a></li>
-<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko -- pác věcí, kterých byste si fakt měli všimnout">Céčko -- pác věcí, kterých byste si fakt měli všimnout</a></li>
+<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 <li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
-<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku -- základy">Generování zvuku -- základy</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />
@@ -202,22 +202,23 @@
             
 
             
-<p>Vývojové nástroje jsou asi největší slabinou celého ekosystému <span class="caps">STM8</span>. Výrobce
-dodává vývojové prostředí <span class="caps">STVD</span> 
+<p>Vývojové nástroje jsou asi největší slabinou celého ekosystému STM8. Výrobce
+dodává vývojové prostředí STVD 
 (<a href="http://elektromys.eu/clanky/stm8_2_stvd/clanek.html">návod zde</a>),
 které je sice dostačující, ale staré a již nevyvíjené. Navíc se občas stane, že
-na nějakém <span class="caps">PC</span> je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
+na nějakém PC je problém to rozjet. Kompilátor Cosmic sice funguje, ale ta neustálá
 kontrola licence, je fakt opruz; … a jeho chybová hlášení mi taky
 nepřišla úplně srozumitelná.  <br/>
-A to jsem ještě nezmínil to hlavní: <strong>Na Linuxu to nejede!</strong></p>
+A to jsem ještě nezmínil to hlavní: <strong>Na Linuxu to
+nejede!</strong></p>
 <p><img alt="tools %%" src="./mit/img/tools.jpg"/></p>
 <p>Takže, co s tím? Použijeme
 <a href="https://cs.wikipedia.org/wiki/Otev%C5%99en%C3%BD_software">OpenSource</a>
-nástroje! Co je potřeba?</p>
+nástroje! Co je potřeba?</p>
 <ol>
-<li>Vývojové prostředí</li>
+<li>Vývojové prostředí</li>
 <li>Kompilátor</li>
-<li>Programátor/Flasher – software, kterým program do čipu nahraju</li>
+<li>Programátor/Flasher – software, kterým program do čipu nahraju</li>
 <li>Debuger</li>
 </ol>
 <p>Když jsem to celé tvořil hodně mi pomohla tato stránka, tak se tam můžete
@@ -228,43 +229,43 @@ kde je vše již nastaveno a nainstalováno. Nemusíte tedy vše ručně instalo
 nainstalovat <a href="https://www.virtualbox.org/">VirtualBox</a> – včetně 
 <a href="https://www.virtualbox.org/wiki/Downloads">Extension Pack</a>
 a stáhnout si image:
-<a href="https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova">Devuan-X-<span class="caps">MIT</span>.ova</a>.
-I tak si ale přečtěte následující text ať víte, jak to máte použít.</p>
-<p class="center"><a href="https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova">https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+<span class="caps">MIT</span>.ova</a></p>
+<a href="https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova">Devuan-X-MIT.ova</a>.
+I tak si ale přečtěte následující text ať víte, jak to máte použít.</p>
+<p class="center"><a href="https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova">https://mamut.spseol.cz/nozka/public/virtual-img-ova/Devuan-X+MIT.ova</a></p>
 <h2 id="rychla-instalace">Rychlá instalace<a class="headerlink" href="#rychla-instalace" title="Permanent link">¶</a></h2>
 <p>Dále v textu jsou popsány detaily. Zde je na jednom místě sepsána rychlá instalace
-nástrojů, které budete potřebovat.</p>
+nástrojů, které budete potřebovat.</p>
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">¶</a></h3>
-<p>Nejprve nainstalujte <a href="./chocolatey.html">Chocolatye</a>. Tedy:</p>
+<p>Nejprve nainstalujte <a href="./chocolatey.html">Chocolatye</a>. Tedy:</p>
 <p>Pomocí <code>Win+X</code> a spustíte PowerShell jako Administrátor
-a zadáte příkaz:</p>
+a zadáte příkaz:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Set</span><span class="o">-</span><span class="n">ExecutionPolicy</span><span class="w"> </span><span class="n">Bypass</span><span class="w"> </span><span class="o">-</span><span class="n">Scope</span><span class="w"> </span><span class="n">Process</span><span class="w"> </span><span class="o">-</span><span class="n">Force</span><span class="p">;</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">ServicePointManager</span><span class="p">]::</span><span class="n">SecurityProtocol</span><span class="w"> </span><span class="o">-</span><span class="n">bor</span><span class="w"> </span><span class="mi">3072</span><span class="p">;</span><span class="w"> </span><span class="n">iex</span><span class="w"> </span><span class="p">((</span><span class="n">New</span><span class="o">-</span><span class="nb nb-Type">Object</span><span class="w"> </span><span class="n">System</span><span class="o">.</span><span class="n">Net</span><span class="o">.</span><span class="n">WebClient</span><span class="p">)</span><span class="o">.</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="p">))</span>
 </code></pre></div>
-<p>Potom doinstalujte další potřebné nástroje:</p>
+<p>Potom doinstalujte další potřebné nástroje:</p>
 <div class="highlight"><pre><span></span><code>choco install vscodium git make mingw openocd
 </code></pre></div>
-<p>Pokud ještě nemáte Python, můžete i Python:</p>
+<p>Pokud ještě nemáte Python, můžete i Python:</p>
 <div class="highlight"><pre><span></span><code>choco install python
 </code></pre></div>
-<p>Instalace <span class="caps">SDCC</span> se musí naklikat. Instalátor stáhnete zde:
+<p>Instalace SDCC se musí naklikat. Instalátor stáhnete zde:
 <a href="https://sourceforge.net/projects/sdcc/files/sdcc-win64/">https://sourceforge.net/projects/sdcc/files/sdcc-win64/</a></p>
 <p>Pro flashování se na Windows používá
-<a href="https://www.st.com/en/development-tools/stvp-stm8.html"><span class="caps">STVP</span></a>. Pokud už jste
-nainstalovali <a href="https://www.st.com/en/development-tools/stvd-stm8.html"><span class="caps">STVD</span></a>
-máte už <span class="caps">STVP</span> nainstalováno, protože je součástí jeho instalace. Je možné ho
-naistalovat i zvlášť – bez <span class="caps">STVD</span>.</p>
+<a href="https://www.st.com/en/development-tools/stvp-stm8.html">STVP</a>. Pokud už jste
+nainstalovali <a href="https://www.st.com/en/development-tools/stvd-stm8.html">STVD</a>
+máte už STVP nainstalováno, protože je součástí jeho instalace. Je možné ho
+naistalovat i zvlášť – bez STVD.</p>
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>sudo apt install sdcc sdcc-libraries git make openocd
 </code></pre></div>
 <h2 id="toolchain">Toolchain<a class="headerlink" href="#toolchain" title="Permanent link">¶</a></h2>
 <p>Připravil jsem startovací <em>strom zdrojových kódů</em> a 
 <a href="https://cs.wikipedia.org/wiki/Make">Makefile</a>.</p>
-<p class="center"><a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain">https://gitlab.com/spseol/mit-no/<span class="caps">STM8S</span>-toolchain</a></p>
+<p class="center"><a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain">https://gitlab.com/spseol/mit-no/STM8S-toolchain</a></p>
 <p>Tento toolchain se dá použít jak v Linuxu tak ve Windows. Stačí nainstalovat 
 <a href="https://cs.wikipedia.org/wiki/Make">Make</a>,
 <a href="https://cs.wikipedia.org/wiki/Bash">Bash</a> a/také <a href="./git.html">Git</a>.</p>
 <h4 id="instalace">Instalace<a class="headerlink" href="#instalace" title="Permanent link">¶</a></h4>
-<p>V Linuxu zavoláte něco jako:</p>
+<p>V Linuxu zavoláte něco jako:</p>
 <div class="highlight"><pre><span></span><code>apt install make git
 </code></pre></div>
 <p>Ve Windows je nejsnadnější instalovat pomocí <a href="./chocolatey.html">Chocolatye</a>:</p>
@@ -274,13 +275,13 @@ choco install python
 </code></pre></div>
 <p>Bash je součásti balíčku Git. Ve Windows ještě stojí za to malinko si Bash připravit,
 aby fungoval dobře s <code>make</code>. Proto si si nakopírujte konfiguraci s <code>.make/bashrc</code> do
-domovského adresáře.</p>
+domovského adresáře.</p>
 <div class="highlight"><pre><span></span><code>cp .make/bashrc ~/.bashrc
 </code></pre></div>
 <p>Jak bylo <a href="#rychla-instalace">popsáno výše</a> je třeba nainstalovat i
-<a href="sdcc.sf.net"><span class="caps">SDCC</span></a> a <a href="https://www.st.com/en/development-tools/stvp-stm8.html"><span class="caps">STVP</span></a>.</p>
-<h4 id="projekty-a-knihovna-spl">Projekty a knihovna <span class="caps">SPL</span><a class="headerlink" href="#projekty-a-knihovna-spl" title="Permanent link">¶</a></h4>
-<p>Adresářová struktura jednotlivých projektů vypadá takto:</p>
+<a href="sdcc.sf.net">SDCC</a> a <a href="https://www.st.com/en/development-tools/stvp-stm8.html">STVP</a>.</p>
+<h4 id="projekty-a-knihovna-spl">Projekty a knihovna SPL<a class="headerlink" href="#projekty-a-knihovna-spl" title="Permanent link">¶</a></h4>
+<p>Adresářová struktura jednotlivých projektů vypadá takto:</p>
 <pre>
 MIT
 ├── <strong>Projekt-1</strong>
@@ -301,26 +302,26 @@ MIT
 <p>Udělejte si adresář, kde budou všechny vaše projekty – v uvedeném příkladu je
 to <code>MIT</code>. V tom stejném adresáři budou i adresáře nazvané <code>SPL</code> a <code>SPLSPL</code>. V
 <code>SPL</code> adresářích je <em>Standard peripheral library</em> od firmy
-<a href="https://st.com/"><span class="caps">ST</span></a>. Tato knihovna má dost divnou licenci a proto vám ji
+<a href="https://st.com/">ST</a>. Tato knihovna má dost divnou licenci a proto vám ji
 nemůžu jen tak dát. <em>Měli byste</em> si ji
 <a href="https://duckduckgo.com/?q=stm8S+Standard+peripheral+library&amp;t=vivaldi&amp;ia=software">najít</a>
 a <a href="https://www.st.com/en/embedded-software/stsw-stm8069.html">stáhnout</a>. Pak je
 třeba ještě aplikovat <a href="https://github.com/gicking/STM8-SPL_SDCC_patch">patch</a>,
-který knihovnu předělá tak, aby se dala použít s naším <em><span class="caps">SDCC</span></em> kompilátorem.
-Celé je to docela pracné, … ale zkuste napsat <code>make spl</code> třeba se to zařídí samo.</p>
+který knihovnu předělá tak, aby se dala použít s naším <em>SDCC</em> kompilátorem.
+Celé je to docela pracné, … ale zkuste napsat <code>make spl</code> třeba se to zařídí samo.</p>
 <h4 id="pouziti">Použití<a class="headerlink" href="#pouziti" title="Permanent link">¶</a></h4>
 <ul>
-<li><code>make spl</code> – stáhne a nachystá knihovny</li>
-<li><code>make</code> – provede kompilaci</li>
-<li><code>make flash</code> – nahraje program do chipu</li>
-<li><code>make clean</code> – smaže všechno, co nakompiloval</li>
-<li><code>make rebuild</code> – smaže vše a znovu zkompiluje</li>
-<li><code>make openocd</code> – spustí <code>openocd</code> pro debug</li>
-<li><code>make debug</code> – spustí <span class="caps">STM8</span>-gdb</li>
+<li><code>make spl</code> – stáhne a nachystá knihovny</li>
+<li><code>make</code> – provede kompilaci</li>
+<li><code>make flash</code> – nahraje program do chipu</li>
+<li><code>make clean</code> – smaže všechno, co nakompiloval</li>
+<li><code>make rebuild</code> – smaže vše a znovu zkompiluje</li>
+<li><code>make openocd</code> – spustí <code>openocd</code> pro debug</li>
+<li><code>make debug</code> – spustí STM8-gdb</li>
 </ul>
 <h4 id="konkurence">Konkurence :)<a class="headerlink" href="#konkurence" title="Permanent link">¶</a></h4>
 <p>Ještě bych měl zmínit, že kolega <strong>Wykys</strong> vytvořil také toolchain, který je o dost
-jednodušší a tím pádem i přehlednější:</p>
+jednodušší a tím pádem i přehlednější:</p>
 <p class="center"><a href="https://gitlab.com/wykys/stm8-tools">https://gitlab.com/wykys/stm8-tools</a></p>
 <h2 id="vyvojove-prostredi">Vývojové prostředí<a class="headerlink" href="#vyvojove-prostredi" title="Permanent link">¶</a></h2>
 <p>Jako editor a vývojové prostředí doporučuji 
@@ -329,10 +330,10 @@ jednodušší a tím pádem i přehlednější:</p>
 <h2 id="kompilace">Kompilace<a class="headerlink" href="#kompilace" title="Permanent link">¶</a></h2>
 <p>Popíšu tu celkem tři různá, mezi sebou se prolínající řešení. Špatná zpráva je,
 že ani jedno z nich není 100%. Dobrá zpráva je, že při troše snahy se těm 100%
-můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout.</p>
+můžeme hodně přiblížit. Mezi jednotlivými řešeními se můžete snadno přepnout.</p>
 <p>K dispozici jsou tedy celkem tři <code>Makefile</code> v adresáři 
 <a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain/-/tree/main/.make"><code>.make</code></a>.
-Přepnutí jen realizováno jako symlink <code>Makefile</code> do root-adresáře projektu.</p>
+Přepnutí jen realizováno jako symlink <code>Makefile</code> do root-adresáře projektu.</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>Makefile
 lrwx<span class="w"> </span><span class="m">1</span><span class="w"> </span>mar<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">14</span>.<span class="w"> </span>led<span class="w"> </span><span class="m">21</span>.14<span class="w"> </span>Makefile<span class="w"> </span>-&gt;<span class="w"> </span>.make/Makefile-sdcc-gas
 </code></pre></div>
@@ -343,28 +344,28 @@ stačí volat <code>make</code>.</p>
 <span class="w">    </span>make<span class="w"> </span>switch-sdccrm<span class="w">    </span><span class="c1"># respektive</span>
 <span class="w">    </span>make<span class="w"> </span>switch-sdcc-gas<span class="w">  </span><span class="c1"># respektive</span>
 </code></pre></div>
-<p>Pokud váháte který zvolit, zvolte hned <a href="#reseni-1-sdcc">první řešení: <span class="caps">SDCC</span></a></p>
-<h3 id="reseni-1-sdcc">Řešení 1: <span class="caps">SDCC</span><a class="headerlink" href="#reseni-1-sdcc" title="Permanent link">¶</a></h3>
-<p><a href="http://sdcc.sourceforge.net/"><span class="caps">SDCC</span> - Small Device C Compiler</a> je kompilátor
-pro různé, více či méně známé 8-bitové architektury. Z hlediska <span class="caps">STM8</span> má jednu
+<p>Pokud váháte který zvolit, zvolte hned <a href="#reseni-1-sdcc">první řešení: SDCC</a></p>
+<h3 id="reseni-1-sdcc">Řešení 1: SDCC<a class="headerlink" href="#reseni-1-sdcc" title="Permanent link">¶</a></h3>
+<p><a href="http://sdcc.sourceforge.net/">SDCC - Small Device C Compiler</a> je kompilátor
+pro různé, více či méně známé 8-bitové architektury. Z hlediska STM8 má jednu
 zásadní nevýhodu: <strong>nedokáže odstranit nepoužívaný kód</strong>. Co to znamená? No…
 pokud si všechno píšete sami, tak to prakticky neznamená nic. Pokud ovšem
-použijete nějakou knihovnu (jako například <em><span class="caps">SPL</span></em>), tak už vám to začne hodně
+použijete nějakou knihovnu (jako například <em>SPL</em>), tak už vám to začne hodně
 vadit, protože výsledný strojový kód obsahuje spoustu funkcí, které jste
 kompilovali jen proto, že byli součástí knihovny a ne proto, že jste je chtěli
 použít. Tyto funkce nejsou nikde volány a proto by je měl 
 <a href="https://cs.wikipedia.org/wiki/Linker">linker</a> odstranit. No a to je přesně to, co
 se nestane <code>:-(</code>.
-Ve výsledku program, který by mohl mít cca 2-3 kB má 30 kB.</p>
+Ve výsledku program, který by mohl mít cca 2-3 kB má 30 kB.</p>
 <p>Naštěstí existuje jeden <a href="https://github.com/bschwand/STM8-SPL-SDCC">hack</a>,
-který funguje asi takto: Knihovna <span class="caps">SPL</span> se rozdělí do malých souborů a každý se
+který funguje asi takto: Knihovna SPL se rozdělí do malých souborů a každý se
 kompiluje jako samostatný modul. Z těchto modulů se udělá knihovna se kterou
-<span class="caps">SDCC</span> linker už umí správně pracovat. Proto je v adresářové struktuře knihovna
-<span class="caps">SPL</span> dvakrát. <code>SPLSPL</code> znamená 
-<a href="https://gitlab.com/spseol/mit-no/spl/-/tree/main/SPLSPL">SPLit <span class="caps">SPL</span></a>
-a používá se právě na toto.</p>
+SDCC linker už umí správně pracovat. Proto je v adresářové struktuře knihovna
+SPL dvakrát. <code>SPLSPL</code> znamená 
+<a href="https://gitlab.com/spseol/mit-no/spl/-/tree/main/SPLSPL">SPLit SPL</a>
+a používá se právě na toto.</p>
 <p>Další řešení tohoto problému je použít níže uvedené 
-<a href="#reseni-2-sdcc-gas"><span class="caps">SDCC</span>-gas</a> nebo
+<a href="#reseni-2-sdcc-gas">SDCC-gas</a> nebo
 <a href="#reseni-3-sdccrm">sdccrm</a>.</p>
 <!--
 Pokud zůstanete u SDCC dá se tento problém částečně obejít tím, že budete
@@ -387,31 +388,32 @@ V *Makefile* někde kolem řádku 77 najdete toto:
 ... měli byste zakomentovat to, co nepotřebujete a odkomentovat jen to, co potřebujete.
 
 -->
-<p><strong>Instalace <span class="caps">SDCC</span> v Linuxu</strong> je poměrně snadná, protože <span class="caps">SDCC</span> je součásti většiny
-Linuxových distribucí; takže zavoláte něco jako:</p>
+<p><strong>Instalace SDCC v Linuxu</strong> je poměrně snadná, protože SDCC je součásti většiny
+Linuxových distribucí; takže zavoláte něco jako:</p>
 <div class="highlight"><pre><span></span><code>apt install sdcc sdcc-libraries
 </code></pre></div>
 <p><strong>Ve Windows</strong> si <a href="https://sourceforge.net/projects/sdcc/files/">stáhnete
 instalátor</a> a pokračujte, ve
-Windows oblíbeným klikáním.</p>
-<h3 id="reseni-2-sdcc-gas">Řešení 2: <span class="caps">SDCC</span>-gas<a class="headerlink" href="#reseni-2-sdcc-gas" title="Permanent link">¶</a></h3>
+Windows oblíbeným klikáním.</p>
+<h3 id="reseni-2-sdcc-gas">Řešení 2: SDCC-gas<a class="headerlink" href="#reseni-2-sdcc-gas" title="Permanent link">¶</a></h3>
 <p class="center"><a href="https://github.com/XaviDCR92/sdcc-gas">https://github.com/XaviDCR92/sdcc-gas</a></p>
 <p>Toto je asi nejlepší řešení optimalizace (vyhození) mrtvého kódu. Vzniklo
-přidáním podpory <a href="https://cs.wikipedia.org/wiki/GNU_Assembler"><span class="caps">GNU</span> Assembleru</a>
-tedy <em>gas</em> do <span class="caps">SDCC</span> 3.9.0. <a href="https://codedocs.org/what-is/gnu-assembler">gas</a> je
+přidáním podpory <a href="https://cs.wikipedia.org/wiki/GNU_Assembler">GNU Assembleru</a>
+tedy <em>gas</em> do SDCC 3.9.0. <a href="https://codedocs.org/what-is/gnu-assembler">gas</a> je
 výhodou i nevýhodou tohoto řešení. Na jednu stranu to znamená, že můžeme
-používat klasické nástroje z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span>
+používat klasické nástroje z <a href="https://cs.wikipedia.org/wiki/GNU_binutils">GNU
 binutils</a>, na druhou stranu to
-znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v <span class="caps">STM8</span>
-assembleru a je nutné použít méně optimální kód napsaný v C nebo <span class="caps">STM8</span> assembler
-přepsat do <span class="caps">GNU</span> assembleru. …no a zřídka se stane, že nějaká vnitřní
-funkcionalita (například násobení 64-bitových integerů) je napsaná jen v <span class="caps">STM8</span>
-assembleru a vám nezbude, než to nějak obejít nebo danou funkci přepsat do <span class="caps">GNU</span> assembleru.</p>
+znamená, že nelze použít ty části <code>sdcc-libraries</code>, které jsou napsané v STM8
+assembleru a je nutné použít méně optimální kód napsaný v C nebo STM8 assembler
+přepsat do GNU assembleru. …no a zřídka se stane, že nějaká vnitřní
+funkcionalita (například násobení 64-bitových integerů) je napsaná jen v STM8
+assembleru a vám nezbude, než to nějak obejít nebo danou funkci přepsat do GNU
+assembleru.</p>
 <p>Pokud vás to zajímá více můžete si počíst
 <a href="https://github.com/XaviDCR92/stm8-dce-example/issues/4#issuecomment-785013397">zde</a>
 a 
 <a href="https://github.com/XaviDCR92/stm8-dce-example/issues/2#issuecomment-700907460">zde</a></p>
-<p>Toto je důvod proč v <em>Makefile</em> sdcc-gas jsou tyto řádky:</p>
+<p>Toto je důvod proč v <em>Makefile</em> sdcc-gas jsou tyto řádky:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">SDCC_LIB_SRC_DIR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/local/stow/sdcc-gas/share/sdcc/lib/src/
 <span class="nv">SDCC_LIB_SOURCE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>_mullong.c<span class="w"> </span>_divulong.c<span class="w"> </span>_mulint.c<span class="w"> </span>_modsint.c
 <span class="c">#SDCC_LIB_SOURCE  = $(notdir $(wildcard /usr/local/stow/sdcc-gas/share/sdcc/lib/src/_*.c))</span>
@@ -443,7 +445,7 @@ sudo<span class="w"> </span>make<span class="w"> </span>install
 sudo<span class="w"> </span>stow<span class="w"> </span>sdcc-gas
 </code></pre></div></td></tr></table></div>
 <p>Podobný postup použijete pro 
-<a href="https://stm8-binutils-gdb.sourceforge.io/"><span class="caps">STM8</span> port</a> <span class="caps">GNU</span> binutils, který 
+<a href="https://stm8-binutils-gdb.sourceforge.io/">STM8 port</a> GNU binutils, který 
 je potřeba pro <a href="https://cs.wikipedia.org/wiki/Linker">linkování</a> a 
 <a href="https://cs.wikipedia.org/wiki/GNU_Debugger">debug</a>.:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -472,60 +474,60 @@ nezkoušel. Osobně bych šel (tedy pokud by mě někdo donutil používat Widow
 spíše cestou
 <a href="https://cs.wikipedia.org/wiki/Windows_Subsystem_for_Linux">Windows Subsystem for 
 Linux</a>.
-Instalace <span class="caps">WSL</span> 2 je 
+Instalace WSL 2 je 
 <a href="https://docs.microsoft.com/en-us/windows/wsl/install">velice jednoduchá</a>.
-Bohužel do <span class="caps">WSL</span> se nativně nedá připojit <span class="caps">USB</span> – ale dá se to
+Bohužel do WSL se nativně nedá připojit USB – ale dá se to
 <a href="https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/">řešit</a>.</p>
 <h3 id="reseni-3-sdccrm">Řešení 3: sdccrm<a class="headerlink" href="#reseni-3-sdccrm" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title"> Poznámka:</p>
 <p>Toto řešení je v současné době spíše historický pozůstak a v 99,9% případů
 není třeba se jim zabývat. Klidně si tento odstavec přečtěte, ale asi toto
-řešení nebudete chtít použít…</p>
+řešení nebudete chtít použít…</p>
 </div>
-<p><code>sdccrm</code> je nástroj pro optimalizaci mrtvého kódu pro port stm8 <span class="caps">SDCC</span>, který
-odstraňuje nepoužívané funkce.</p>
+<p><code>sdccrm</code> je nástroj pro optimalizaci mrtvého kódu pro port stm8 SDCC, který
+odstraňuje nepoužívané funkce.</p>
 <p class="center"><a href="https://github.com/XaviDCR92/sdccrm">https://github.com/XaviDCR92/sdccrm</a></p>
 <p>Jak to funguje?: Kód se nejprve zkompiluje do assembleru klasickým
-<a href="#reseni-1-sdcc"><span class="caps">SDCC</span></a>, poté se pomocí <code>sdccrm</code> vymaže kód, který se nepoužívá,
-celý proces se dokončí a kód se převede z assembleru do strojového kódu.</p>
+<a href="#reseni-1-sdcc">SDCC</a>, poté se pomocí <code>sdccrm</code> vymaže kód, který se nepoužívá,
+celý proces se dokončí a kód se převede z assembleru do strojového kódu.</p>
 <p>Je to řešení tak nějak na půl cesty: Funguje, strojový kód je opravdu menší,
 ale tato možnost <strong><a href="https://github.com/XaviDCR92/sdccrm#known-issues">vylučuje použití
 debugeru</a></strong>. To někdy, někomu
-vadit může, jindy jinému to vadit nemusí.</p>
+vadit může, jindy jinému to vadit nemusí.</p>
 <p>Dále je nutné <strong>ručně zadat</strong> funkce, které nechcete “optimalizovat” – tedy vyhodit.
 Proto je třeba sledovat chybová hlášení a název chybějící funkce zadat do
-souboru <code>exclude_reference</code> uvnitř projektového adresáře.</p>
+souboru <code>exclude_reference</code> uvnitř projektového adresáře.</p>
 <h4 id="instalace_1">Instalace<a class="headerlink" href="#instalace_1" title="Permanent link">¶</a></h4>
 <p><code>sdccrm</code> si musíte buildnout ze zdrojových kódů. Jde o celkem malý program bez
 závislostí, takže jde jednoduše kompilovat v Linuxu i ve Windows –
 nicméně pro jistotu je Windows binárka součástí <a href="#startovaci-toolchain">startovacího
 toolsetu</a> a je v souboru <code>.make/sdccrm.exe</code>.</p>
-<p>Ve Windows:</p>
+<p>Ve Windows:</p>
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">mingw</span>
 </code></pre></div>
-<p>nebo v Linuxu:</p>
+<p>nebo v Linuxu:</p>
 <div class="highlight"><pre><span></span><code>apt<span class="w"> </span>install<span class="w"> </span>gcc
 </code></pre></div>
-<p>a pak jen:</p>
+<p>a pak jen:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>sdccrm
 make
 </code></pre></div>
 <h2 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">¶</a></h2>
-<h3 id="stvp"><span class="caps">STVP</span><a class="headerlink" href="#stvp" title="Permanent link">¶</a></h3>
-<p><a href="https://www.st.com/en/development-tools/stvp-stm8.html"><span class="caps">STVP</span></a> je software od
-výrobce čipů <span class="caps">ST</span>. Umožňuje přístup do všech částí paměti mikrokontrolérů. Má
+<h3 id="stvp">STVP<a class="headerlink" href="#stvp" title="Permanent link">¶</a></h3>
+<p><a href="https://www.st.com/en/development-tools/stvp-stm8.html">STVP</a> je software od
+výrobce čipů ST. Umožňuje přístup do všech částí paměti mikrokontrolérů. Má
 grafickou verzi i verzi pro příkazový řádek. Právě na verze pro příkazový řádek
 se spoléhá zde zmiňovaný
 <a href="https://gitlab.com/spseol/mit-no/STM8S-toolchain">toolchain</a>.</p>
 <h3 id="openocd">OpenOCD<a class="headerlink" href="#openocd" title="Permanent link">¶</a></h3>
 <p><a href="https://openocd.org">Open On-Chip Debugger</a> je nástroj pro debug a krokování
 programu přímo na čipu. <code>openocd</code> umí i nahrát program do paměti zařízení.
-Funguje v Linuxu i ve Windows.</p>
-<p>Instalaci zajistí na Linuxu jednoduchý příkaz:</p>
+Funguje v Linuxu i ve Windows.</p>
+<p>Instalaci zajistí na Linuxu jednoduchý příkaz:</p>
 <div class="highlight"><pre><span></span><code>sudo apt install openocd
 </code></pre></div>
-<p>na Windows je to díky <a href="./chocolatey.html">Chocolatye</a> podobně jednoduché.</p>
+<p>na Windows je to díky <a href="./chocolatey.html">Chocolatye</a> podobně jednoduché.</p>
 <div class="highlight"><pre><span></span><code>choco install openodc
 </code></pre></div>
 <!--
@@ -535,7 +537,7 @@ souborů, proto i příkaz vypadá jinak.
 Verze 0.10: `openocd  -f interface/stlink.cfg -f target/stm8s.cfg`      
 Verze 0.11: `openocd  -f interface/stlink-dap.cfg -f target/stm8s.cfg`     
 -->
-<p>Toto se řeší v <em>Makefile</em> pomocí proměnné <code>OPENOCD</code>, takže si ji případně upravte.</p>
+<p>Toto se řeší v <em>Makefile</em> pomocí proměnné <code>OPENOCD</code>, takže si ji případně upravte.</p>
 <p>Aby <code>openodc</code> umělo i pouhé flashování, je třeba přidat 
 <a href="https://gist.github.com/fabiovila/cbcf073928c0eb8036d2d2da023629d0">skript</a>,
 který to umí. Ten je buď součástí
@@ -557,19 +559,19 @@ Pokud jste do Windows instalovali pomocí Chocolatye, bude to nejspíš tato ces
 <code>C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20190828-0.10.0\share\openocd\scripts\target\stm8s.cfg</code>.</p>
 <h3 id="stm8flash">stm8flash<a class="headerlink" href="#stm8flash" title="Permanent link">¶</a></h3>
 <p>Druhá možnost je program <code>stm8flash</code>. Ve většině linuxových distribucí je třeba
-ho ručně buildnout.</p>
+ho ručně buildnout.</p>
 <p class="center"><a href="https://github.com/vdudouyt/stm8flash">https://github.com/vdudouyt/stm8flash</a></p>
 <h2 id="debuging-ladeni">Debuging – Ladění<a class="headerlink" href="#debuging-ladeni" title="Permanent link">¶</a></h2>
 <p><img alt="GDB maskot &gt;&gt;" src="https://sourceware.org/gdb/images/archer.svg"/></p>
-<p><span class="caps">GDB</span> (<a href="https://cs.wikipedia.org/wiki/GNU_Debugger"><span class="caps">GNU</span> Debugger</a>) je standardní
+<p>GDB (<a href="https://cs.wikipedia.org/wiki/GNU_Debugger">GNU Debugger</a>) je standardní
 nástroj na hledání chyb v software. Pokud budeme chtít program krokovat a  za
 běhu se dívat do proměnných budeme potřebovat právě upravený 
-<a href="https://stm8-binutils-gdb.sourceforge.io/"><span class="caps">STM8</span>-<span class="caps">GDB</span></a>
-z <a href="https://cs.wikipedia.org/wiki/GNU_binutils"><span class="caps">GNU</span> binutils</a>
-a <a href="#openocd">OpenOCD</a> (Open On Chip Debuger).</p>
-<h3 id="stm8-gdb"><span class="caps">STM8</span>-<span class="caps">GDB</span><a class="headerlink" href="#stm8-gdb" title="Permanent link">¶</a></h3>
-<p><span class="caps">STM8</span>-<span class="caps">GDB</span> je součástí <span class="caps">GNU</span> binutils. Instalaci jsem popsal výše. Pro přehlednost
-ještě jednou:</p>
+<a href="https://stm8-binutils-gdb.sourceforge.io/">STM8-GDB</a>
+z <a href="https://cs.wikipedia.org/wiki/GNU_binutils">GNU binutils</a>
+a <a href="#openocd">OpenOCD</a> (Open On Chip Debuger).</p>
+<h3 id="stm8-gdb">STM8-GDB<a class="headerlink" href="#stm8-gdb" title="Permanent link">¶</a></h3>
+<p>STM8-GDB je součástí GNU binutils. Instalaci jsem popsal výše. Pro přehlednost
+ještě jednou:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -590,17 +592,17 @@ sudo<span class="w"> </span>make<span class="w"> </span>install
 <span class="nb">cd</span><span class="w"> </span>/usr/local/stow
 sudo<span class="w"> </span>stow<span class="w">  </span>stm8-binutils-gdb
 </code></pre></div></td></tr></table></div>
-<p>No a teď samotný postup ladění:</p>
+<p>No a teď samotný postup ladění:</p>
 <h4 id="openocd_1">OpenOCD<a class="headerlink" href="#openocd_1" title="Permanent link">¶</a></h4>
-<p>Nejprve je třeba pustit komunikaci s <span class="caps">STM8</span> čipem pomocí <code>openocd</code></p>
+<p>Nejprve je třeba pustit komunikaci s STM8 čipem pomocí <code>openocd</code></p>
 <div class="highlight"><pre><span></span><code>openocd -f interface/stlink-dap.cfg -f target/stm8s.cfg -c "init" -c "reset halt"
 </code></pre></div>
 <p>Nebojte nemusíte to vždy znovu vypisovat. Je to napsané v <em>Makefile</em>, takže
-stačí zavolat</p>
+stačí zavolat</p>
 <div class="highlight"><pre><span></span><code>make openocd
 </code></pre></div>
-<h4 id="gdb"><span class="caps">GDB</span><a class="headerlink" href="#gdb" title="Permanent link">¶</a></h4>
-<p>…. a teď v dalším terminálu otevřeme <code>gdb</code> a dáme se do ladění. <strong>Než
+<h4 id="gdb">GDB<a class="headerlink" href="#gdb" title="Permanent link">¶</a></h4>
+<p>.... a teď v dalším terminálu otevřeme <code>gdb</code> a dáme se do ladění. <strong>Než
 provedete toto, ujistěte se, že <a href="#openocd_1">openocd</a> již běží</strong>.</p>
 <div class="highlight"><pre><span></span><code>stm8-gdb --tui build-STM8S208/out-STM8S208.elf
 </code></pre></div>
@@ -609,52 +611,52 @@ provedete toto, ujistěte se, že <a href="#openocd_1">openocd</a> již běží<
 </code></pre></div>
 <p>Ano, je to textové rozhraní, žádná klikátka ani pouťové efekty. Pouze <a href="https://sourceware.org/gdb/onlinedocs/gdb/Continuing-and-Stepping.html">textové
 příkazy</a>.</p>
-<h4 id="rychlokurz-stm8-gdb">Rychlokurz <span class="caps">STM8</span>-<span class="caps">GDB</span><a class="headerlink" href="#rychlokurz-stm8-gdb" title="Permanent link">¶</a></h4>
+<h4 id="rychlokurz-stm8-gdb">Rychlokurz STM8-GDB<a class="headerlink" href="#rychlokurz-stm8-gdb" title="Permanent link">¶</a></h4>
 <p>V programu funguje <strong>tabulátor</strong>. To znamená, že při stisku klávesy <code>TAB</code> se
-<span class="caps">GDB</span> pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná.</p>
+GDB pokusí uhodnout, co chcete napsat a doplní slova tak, aby byla smysluplná.</p>
 <dl>
 <dt><code>list main</code>, <code>list main.c:20</code>, <code>list main.c:setup</code></dt>
-<dd>nalistuje ve zdrojovém kódu příslušné místo, řádek, funkci</dd>
+<dd>nalistuje ve zdrojovém kódu příslušné místo, řádek, funkci</dd>
 <dt><code>b main</code>, <code>break main</code></dt>
 <dd>nastaví breakpoint na vstup do funkce <code>main</code></dd>
 <dt><code>b 48</code>, <code>break 48</code></dt>
-<dd>nastaví breakpoint na řádek 48</dd>
+<dd>nastaví breakpoint na řádek 48</dd>
 <dt><code>b milis.c:48</code>, <code>break milis.c:48</code></dt>
 <dd>nastaví breakpoint na řádek 48 v souboru <code>milis.c</code></dd>
 <dt><code>info b</code>, <code>info breakpoints</code></dt>
-<dd>vypíše informace o breakpointech</dd>
+<dd>vypíše informace o breakpointech</dd>
 <dt><code>info sources</code></dt>
-<dd>vypíše seznam zdrojových souborů</dd>
+<dd>vypíše seznam zdrojových souborů</dd>
 <dt><code>d 2</code>. <code>delete 2</code></dt>
-<dd>vymaže breakpoint 2</dd>
+<dd>vymaže breakpoint 2</dd>
 <dt><code>r</code>, <code>run</code></dt>
-<dd>spustí program</dd>
-<dt><code>interrupt</code>, Ctrl+C</dt>
-<dd>přeruší program, program se zastaví tam, kde zrovna teď je</dd>
+<dd>spustí program</dd>
+<dt><code>interrupt</code>, Ctrl+C</dt>
+<dd>přeruší program, program se zastaví tam, kde zrovna teď je</dd>
 <dt><code>s</code>, <code>step</code></dt>
-<dd>vykoná jeden příkaz/řádek zdrojového kódu</dd>
+<dd>vykoná jeden příkaz/řádek zdrojového kódu</dd>
 <dt><code>n</code>, <code>next</code></dt>
 <dd>vykoná jeden příkaz/řádek zdrojového kódu, funkci vykoná jako jeden příkaz – nebude
-vstupovat do funkce</dd>
+vstupovat do funkce</dd>
 <dt><code>fin</code>, <code>finish</code></dt>
-<dd>dokončí funkci, ve které se program právě nachází (pokud v ní není další breakpoint)</dd>
+<dd>dokončí funkci, ve které se program právě nachází (pokud v ní není další breakpoint)</dd>
 <dt><code>c</code>, <code>cont</code>, <code>continue</code></dt>
-<dd>pokračuje v běhu programu, dokud nenarazí na breakpoint</dd>
+<dd>pokračuje v běhu programu, dokud nenarazí na breakpoint</dd>
 <dt><code>p time</code>, <code>print time</code></dt>
 <dd>vypíše obsah proměnné <code>time</code></dd>
 <dt><code>p time</code>, <code>print time</code></dt>
 <dd>vypíše obsah proměnné <code>time</code></dd>
 <dt><code>display time</code></dt>
-<dd>vypíše obsah proměnné <code>time</code> pokaždé, když se program zastaví</dd>
+<dd>vypíše obsah proměnné <code>time</code> pokaždé, když se program zastaví</dd>
 <dt><code>undisplay 2</code></dt>
-<dd>už nebude vypisovat řádek 2, když se program zastaví</dd>
+<dd>už nebude vypisovat řádek 2, když se program zastaví</dd>
 </dl>
 <p>Zde něco málo více k příkazům 
 <a href="https://visualgdb.com/gdbreference/commands/print">print</a>
 a <a href="https://visualgdb.com/gdbreference/commands/display">display</a>.</p>
 <p><img alt="GDB %%" src="./mit/img/gdb.png"/></p>
-<h3 id="stm8-debugger-for-vscodecodium"><span class="caps">STM8</span> Debugger for vsCode/Codium<a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link">¶</a></h3>
-<p class="center"><a href="https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug">https://marketplace.visualstudio.com/items?itemName=<span class="caps">CL</span>.stm8-debug</a></p>
+<h3 id="stm8-debugger-for-vscodecodium">STM8 Debugger for vsCode/Codium<a class="headerlink" href="#stm8-debugger-for-vscodecodium" title="Permanent link">¶</a></h3>
+<p class="center"><a href="https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug">https://marketplace.visualstudio.com/items?itemName=CL.stm8-debug</a></p>
 
 
              
@@ -673,17 +675,17 @@ a <a href="https://visualgdb.com/gdbreference/commands/display">display</a>.</p>
 <section>
     <h2 class="related-post-header">Související posty</h2>
 <ul class="related-posts-list">
-<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko — pác věcí, kterých byste si fakt měli všimnout">Céčko — pác věcí, kterých byste si fakt měli všimnout</a></li>
-<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
-<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
+<li><a href="./cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html" title="Céčko -- pác věcí, kterých byste si fakt měli všimnout">Céčko -- pác věcí, kterých byste si fakt měli všimnout</a></li>
+<li><a href="./oddelena-kompilace-a-vlastni-knihovny.html" title="Oddělená kompilace a vlastní knihovny">Oddělená kompilace a vlastní knihovny</a></li>
+<li><a href="./zakladni-pouziti-casovace.html" title="Základní použití časovače">Základní použití časovače</a></li>
 <li><a href="./pouziti-casovace-jako-generatoru-pwm.html" title="Použití časovače jako generátoru PWM">Použití časovače jako generátoru PWM</a></li>
 <li><a href="./ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html" title="Ultrazvukový měřič vzdálenosti pomocí timeru TIM2">Ultrazvukový měřič vzdálenosti pomocí timeru TIM2</a></li>
 <li><a href="./chocolatey.html" title="Chocolatey - The package manager for Windows">Chocolatey <small>The package manager for Windows</small></a></li>
 <li><a href="./vscodecodium.html" title="VSCode/Codium - Pokročilý editor zdrojových kódů">VSCode/Codium <small>Pokročilý editor zdrojových kódů</small></a></li>
-<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
+<li><a href="./deleni-v-pevne-radove-carce.html" title="Dělení v pevné řadové čárce">Dělení v pevné řadové čárce</a></li>
 <li><a href="./projektove-ulohy-mit.html" title="Projektové úlohy MIT">Projektové úlohy MIT</a></li>
 <li><a href="./git.html" title="Git - Distribuovaný systém správy verzí">Git <small>Distribuovaný systém správy verzí</small></a></li>
-<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku — základy">Generování zvuku — základy</a></li>
+<li><a href="./generovani-zvuku-zaklady.html" title="Generování zvuku -- základy">Generování zvuku -- základy</a></li>
 <li><a href="./mit.html" title="MIT - Mikroprocesorová technika">MIT <small>Mikroprocesorová technika</small></a></li>
 </ul>
 <hr />

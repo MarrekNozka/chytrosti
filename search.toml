@@ -5,12 +5,12 @@ base_directory = "output"
 [[input.files]]
 path = "pages/chyba.html"
 url = "/pages/chyba.html"
-title = "Chyba 🐛"
+title = "Chyba 🐛"
 
 [[input.files]]
 path = "pages/o-mne.html"
 url = "/pages/o-mne.html"
-title = "O mně"
+title = "O mně"
 
 [[input.files]]
 path = "mit.html"
@@ -20,7 +20,7 @@ title = "MIT"
 [[input.files]]
 path = "generovani-zvuku-zaklady.html"
 url = "/generovani-zvuku-zaklady.html"
-title = "Generování zvuku — základy"
+title = "Generování zvuku -- základy"
 
 [[input.files]]
 path = "site.html"
@@ -40,12 +40,12 @@ title = "Projektové úlohy MIT"
 [[input.files]]
 path = "stm8oss.html"
 url = "/stm8oss.html"
-title = "Vývoj STM8 s OpenSource nástroji"
+title = "Vývoj STM8 s OpenSource nástroji"
 
 [[input.files]]
 path = "deleni-v-pevne-radove-carce.html"
 url = "/deleni-v-pevne-radove-carce.html"
-title = "Dělení v pevné řadové čárce"
+title = "Dělení v pevné řadové čárce"
 
 [[input.files]]
 path = "dbi.html"
@@ -75,7 +75,7 @@ title = "Chocolatey"
 [[input.files]]
 path = "pip-a-venv.html"
 url = "/pip-a-venv.html"
-title = "pip a venv"
+title = "pip a venv"
 
 [[input.files]]
 path = "ultrazvukovy-meric-vzdalenosti-pomoci-timeru-tim2.html"
@@ -90,14 +90,14 @@ title = "Použití časovače jako generátoru PWM"
 [[input.files]]
 path = "zakladni-pouziti-casovace.html"
 url = "/zakladni-pouziti-casovace.html"
-title = "Základní použití časovače"
+title = "Základní použití časovače"
 
 [[input.files]]
 path = "cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"
 url = "/cecko-pac-veci-kterych-byste-si-fakt-meli-vsimnout.html"
-title = "Céčko — pác věcí, kterých byste si fakt měli všimnout"
+title = "Céčko -- pác věcí, kterých byste si fakt měli všimnout"
 
 [[input.files]]
 path = "oddelena-kompilace-a-vlastni-knihovny.html"
 url = "/oddelena-kompilace-a-vlastni-knihovny.html"
-title = "Oddělená kompilace a vlastní knihovny"
+title = "Oddělená kompilace a vlastní knihovny"
